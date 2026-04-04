@@ -7,146 +7,146 @@
     "2603.25040": {
       "title": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale",
       "hf_link": "https://huggingface.co/papers/2603.25040",
-      "votes": 0
+      "votes": 125
     },
     "2603.25728": {
       "title": "PixelSmile: Toward Fine-Grained Facial Expression Editing",
       "hf_link": "https://huggingface.co/papers/2603.25728",
-      "votes": 0
+      "votes": 116
     },
     "2603.24800": {
       "title": "Calibri: Enhancing Diffusion Transformers via Parameter-Efficient Calibration",
       "hf_link": "https://huggingface.co/papers/2603.24800",
-      "votes": 0
+      "votes": 65
     },
     "2603.25551": {
       "title": "Voxtral TTS",
       "hf_link": "https://huggingface.co/papers/2603.25551",
-      "votes": 0
+      "votes": 56
     },
     "2603.25502": {
       "title": "RealRestorer: Towards Generalizable Real-World Image Restoration with Large-Scale Image Editing Models",
       "hf_link": "https://huggingface.co/papers/2603.25502",
-      "votes": 0
+      "votes": 55
     },
     "2603.23516": {
       "title": "MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens",
       "hf_link": "https://huggingface.co/papers/2603.23516",
-      "votes": 0
+      "votes": 45
     },
     "2603.25319": {
       "title": "MACRO: Advancing Multi-Reference Image Generation with Structured Long-Context Data",
       "hf_link": "https://huggingface.co/papers/2603.25319",
-      "votes": 0
+      "votes": 32
     },
     "2603.24755": {
       "title": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
       "hf_link": "https://huggingface.co/papers/2603.24755",
-      "votes": 0
+      "votes": 27
     },
     "2603.24793": {
       "title": "AVControl: Efficient Framework for Training Audio-Visual Controls",
       "hf_link": "https://huggingface.co/papers/2603.24793",
-      "votes": 0
+      "votes": 25
     },
     "2603.24575": {
       "title": "VFIG: Vectorizing Complex Figures in SVG with Vision-Language Models",
       "hf_link": "https://huggingface.co/papers/2603.24575",
-      "votes": 0
+      "votes": 18
     },
     "2603.25745": {
       "title": "Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting",
       "hf_link": "https://huggingface.co/papers/2603.25745",
-      "votes": 0
+      "votes": 13
     },
     "2603.14366": {
       "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
       "hf_link": "https://huggingface.co/papers/2603.14366",
-      "votes": 0
+      "votes": 13
     },
     "2603.25744": {
       "title": "MuRF: Unlocking the Multi-Scale Potential of Vision Foundation Models",
       "hf_link": "https://huggingface.co/papers/2603.25744",
-      "votes": 0
+      "votes": 12
     },
     "2603.24943": {
       "title": "FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol",
       "hf_link": "https://huggingface.co/papers/2603.24943",
-      "votes": 0
+      "votes": 12
     },
     "2603.24517": {
       "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
       "hf_link": "https://huggingface.co/papers/2603.24517",
-      "votes": 0
+      "votes": 10
     },
     "2603.18718": {
       "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
       "hf_link": "https://huggingface.co/papers/2603.18718",
-      "votes": 0
+      "votes": 10
     },
     "2603.24844": {
       "title": "Reaching Beyond the Mode: RL for Distributional Reasoning in Language Models",
       "hf_link": "https://huggingface.co/papers/2603.24844",
-      "votes": 0
+      "votes": 9
     },
     "2603.25562": {
       "title": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes",
       "hf_link": "https://huggingface.co/papers/2603.25562",
-      "votes": 0
+      "votes": 8
     },
     "2603.25741": {
       "title": "Vega: Learning to Drive with Natural Language Instructions",
       "hf_link": "https://huggingface.co/papers/2603.25741",
-      "votes": 0
+      "votes": 6
     },
     "2603.25702": {
       "title": "S2D2: Fast Decoding for Diffusion LLMs via Training-Free Self-Speculation",
       "hf_link": "https://huggingface.co/papers/2603.25702",
-      "votes": 0
+      "votes": 6
     },
     "2603.23883": {
       "title": "BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment",
       "hf_link": "https://huggingface.co/papers/2603.23883",
-      "votes": 0
+      "votes": 6
     },
     "2603.24836": {
       "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
       "hf_link": "https://huggingface.co/papers/2603.24836",
-      "votes": 0
-    },
-    "2603.16733": {
-      "title": "IQuest-Coder-V1 Technical Report",
-      "hf_link": "https://huggingface.co/papers/2603.16733",
-      "votes": 0
+      "votes": 5
     },
     "2603.25718": {
       "title": "Electrostatic Photoluminescence Tuning in All-Solid-State Perovskite Transistors",
       "hf_link": "https://huggingface.co/papers/2603.25718",
-      "votes": 0
+      "votes": 4
     },
     "2603.24961": {
       "title": "Can MLLMs Read Students' Minds? Unpacking Multimodal Error Analysis in Handwritten Math",
       "hf_link": "https://huggingface.co/papers/2603.24961",
-      "votes": 0
+      "votes": 4
     },
     "2603.14636": {
       "title": "Nudging Hidden States: Training-Free Model Steering for Chain-of-Thought Reasoning in Large Audio-Language Models",
       "hf_link": "https://huggingface.co/papers/2603.14636",
-      "votes": 0
+      "votes": 4
     },
     "2603.13904": {
       "title": "Pixel-level Scene Understanding in One Token: Visual States Need What-is-Where Composition",
       "hf_link": "https://huggingface.co/papers/2603.13904",
-      "votes": 0
+      "votes": 4
     },
     "2603.21768": {
       "title": "Extending Precipitation Nowcasting Horizons via Spectral Fusion of Radar Observations and Foundation Model Priors",
       "hf_link": "https://huggingface.co/papers/2603.21768",
-      "votes": 0
+      "votes": 3
     },
     "2603.25398": {
       "title": "PMT: Plain Mask Transformer for Image and Video Segmentation with Frozen Vision Encoders",
       "hf_link": "https://huggingface.co/papers/2603.25398",
+      "votes": 2
+    },
+    "2603.16733": {
+      "title": "IQuest-Coder-V1 Technical Report",
+      "hf_link": "https://huggingface.co/papers/2603.16733",
       "votes": 0
     }
   },
@@ -173,13 +173,13 @@
     "2603.25702": "自然语言处理；生成模型  \n背景/任务是提升语言模型生成速度，解决块扩散模型中置信度阈值解码在少步生成时质量与效率难以平衡的问题。  \n他们提出了S2D2，一种无需训练的自推测解码框架，利用同一模型在不同块大小下的能力，通过推测验证和轻量级路由策略优化解码轨迹，显著提高了生成速度与准确性的权衡。",
     "2603.23883": "计算机视觉;多模态学习  \n背景/任务：解决动物物种识别中整合音频模态的问题，以增强多模态生物多样性理解。  \n做了什么：提出了BioVITA框架，包括构建多模态数据集、训练视觉-文本-音频对齐模型，并建立了跨模态检索基准进行评估。",
     "2603.24836": "计算机视觉；三维重建与理解  \n该研究针对立体匹配任务，提出了一种无需构建代价体积的新方法。  \n该方法通过高效的图像扭曲操作替代传统代价体积，在多个基准数据集上取得了领先的性能和速度。",
-    "2603.16733": "自然语言处理；代码智能  \n背景/任务：为提升代码智能模型的动态逻辑理解与软件工程能力，超越静态代码表示。  \n所做工作：提出了代码流多阶段训练范式，开发了IQuest-Coder-V1系列模型，通过包含预训练、中期训练和后期专业化路径的流程，在代理软件工程、竞赛编程等任务上取得了先进性能。",
     "2603.25718": "材料科学；半导体器件<br>背景：研究开发基于金属卤化物钙钛矿的固态半导体器件，以实现高效率光电调控。<br>工作：他们构建了钙钛矿光致发光场效应晶体管，通过栅极电压调控界面载流子密度，从而改变光致发光强度，实现了高外量子效率的大面积电控光学开关。",
     "2603.24961": "计算机科学;自然语言处理  \n背景/任务：评估学生手写数学草稿以提供个性化教育反馈，但面临笔迹多样、布局复杂和方法各异等挑战。  \n所做工作：提出ScratchMath基准数据集，包含1,720个手写数学样本，支持错误原因解释和分类任务，并系统评估了16个多模态大模型的性能。",
     "2603.14636": "自然语言处理；多模态学习  \n本文研究在无需额外训练的情况下，如何通过推理时干预提升大型视听语言模型的推理能力。  \n作者提出了三种基于不同信息源的干预策略，在多个模型和基准上验证了其有效性，发现该方法能显著提升准确率并实现跨模态的高效知识迁移。",
     "2603.13904": "计算机科学；机器人学  \n在动态环境中，机器人需要从视频流中学习视觉状态表征以支持序列决策。  \n作者提出了CroBo框架，通过全局到局部的重建目标学习能编码场景元素语义、位置及动态的视觉状态，提升了策略学习性能。",
     "2603.21768": "计算机视觉；气象学\n背景/任务是解决雷达降水临近预报因缺乏大尺度气象背景而性能下降的问题。\n提出PW-FouCast模型，通过频率域融合Pangu-Weather预测作为先验，并引入三项创新技术以提升长期预报性能。",
-    "2603.25398": "计算机视觉；图像分割与视频分割  \n现有视觉基础模型在分割任务中需微调编码器，牺牲了多任务共享性。  \n提出Plain Mask Decoder，结合冻结编码器实现快速图像与视频分割，兼顾速度与性能。"
+    "2603.25398": "计算机视觉；图像分割与视频分割  \n现有视觉基础模型在分割任务中需微调编码器，牺牲了多任务共享性。  \n提出Plain Mask Decoder，结合冻结编码器实现快速图像与视频分割，兼顾速度与性能。",
+    "2603.16733": "自然语言处理；代码智能  \n背景/任务：为提升代码智能模型的动态逻辑理解与软件工程能力，超越静态代码表示。  \n所做工作：提出了代码流多阶段训练范式，开发了IQuest-Coder-V1系列模型，通过包含预训练、中期训练和后期专业化路径的流程，在代理软件工程、竞赛编程等任务上取得了先进性能。"
   },
   "deep_analysis": {
     "2603.25745": "这篇论文《Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting》来自计算机视觉领域，主要做**3D场景重建和高质量新视角渲染**。我给你用简单的语言解释一下：\n\n---\n\n### (1) 任务是什么？\n- **输入**：一个场景的几张图片（比如1张、2张或多张），可以知道相机拍摄角度（有相机位姿），也可以不知道（无位姿）。\n- **输出**：一个可以**实时渲染**的3D模型，能从任意新视角生成高清（比如4K分辨率）的图片。\n- **功能**：就像你拍了几张房间的照片，系统能立刻生成一个3D模型，让你在电脑里从任意角度看到这个房间的高清画面，而且不需要对这个新场景进行额外的长时间训练。\n\n---\n\n### (2) 想解决什么问题？\n当前技术有两个主要瓶颈：\n1. **现有“前馈式”方法（Feed-forward）做不到高清**：之前的方法（如基于3D Gaussian Splatting的模型）在预测3D元素时，数量和图像分辨率呈**平方级增长**。比如从512p做到4K（约4000p），需要的3D元素数量要涨64倍，计算量和内存根本吃不消，所以之前的方法最高只能做到几百p的分辨率。\n2. **现有“带纹理的高斯”方法做不到即用即走**：另一些研究给3D元素贴上了纹理贴图（类似游戏里给3D模型贴皮肤），这样可以用更少的3D元素表现丰富细节。但是这些方法都需要**针对每个新场景单独优化训练**（几十分钟到几小时），无法做到输入图片就立刻输出结果。\n\n这篇论文的目标就是：\n- **一次性解决这两个问题**：做一个既能**立刻生成**（前馈式）、又能**输出4K高清**、并且**用的3D元素很少**的系统。\n\n---\n\n### (3) 核心思路是什么？\n作者提出了一个叫 **LGTM** 的系统，核心思想是 **“几何”和“纹理”分开预测**：\n\n1. **双网络架构**：\n   - **几何网络**：输入**低分辨率**的图片，预测一组**数量少、但位置形状准确**的3D高斯元素（负责几何形状）。\n   - **纹理网络**：输入**高分辨率**的图片，为每个3D高斯元素预测一个**小纹理贴图**（负责表面颜色细节）。\n\n2. **分阶段训练**：\n   - 先训练几何网络，让它学会预测准确的3D形状。\n   - 再固定几何网络，训练纹理网络，让它学会根据高分辨率图片补上细节纹理。\n\n3. **渲染时**：把几何网络输出的3D元素，贴上纹理网络给的纹理，然后用3D Gaussian Splatting技术实时渲染出4K图片。\n\n**打个比方**：\n- 传统方法：像用乐高积木拼画，每块积木只有一个颜色，要拼出高清图就需要巨量的积木。\n- LGTM：像先用少量积木拼出轮廓（几何网络），然后给每块积木贴上一个小贴纸，贴纸上印着高清图案（纹理网络）。这样既省积木，又能出高清效果。\n\n---\n\n### (4) 结果怎么样？\n论文实验表明：\n- **效果**：能生成4K分辨率的新视角图片，细节清晰，质量明显优于之前的feed-forward方法。\n- **效率**：用的3D高斯元素数量**大幅减少**（比之前少很多），渲染速度快，适合实时应用。\n- **通用性**：可以接入不同的基础模型（无论输入是单张、两张还是多张图，无论有没有相机位姿信息），都能提升效果。\n- **开源**：代码和项目页面已公开。\n\n---\n\n### 总结\n这篇论文**首次实现了前馈式的、带纹理的高斯泼溅系统**，突破了以往方法在高清渲染上的计算瓶颈，让即时生成4K级别的3D场景成为可能，是迈向实用化高保真3D重建的重要一步。\n\n如果你有某个部分想进一步了解（比如3D Gaussian Splatting是什么，或者纹理是怎么贴上去的），我可以再展开讲讲。"
@@ -292,10 +292,6 @@
       "abstract": "We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching. WAFT-Stereo demonstrates that cost volumes, a common design used in many leading methods, are not necessary for strong performance and can be replaced by warping with improved efficiency. WAFT-Stereo ranks first on ETH3D (BP-0.5), Middlebury (RMSE), and KITTI (all metrics), reducing the zero-shot error by 81% on ETH3D, while being 1.8-6.7x faster than competitive methods. Code and model weights are available atthis https URL.",
       "comments": ""
     },
-    "2603.16733": {
-      "abstract": "In this report, we introduce the IQuest-Coder-V1 series-(7B/14B/40B/40B-Loop), a new family of code large language models (LLMs). Moving beyond static code representations, we propose the code-flow multi-stage training paradigm, which captures the dynamic evolution of software logic through different phases of the pipeline. Our models are developed through the evolutionary pipeline, starting with the initial pre-training consisting of code facts, repository, and completion data. Following that, we implement a specialized mid-training stage that integrates reasoning and agentic trajectories in 32k-context and repository-scale in 128k-context to forge deep logical foundations. The models are then finalized with post-training of specialized coding capabilities, which is bifurcated into two specialized paths: the thinking path (utilizing reasoning-driven RL) and the instruct path (optimized for general assistance). IQuest-Coder-V1 achieves state-of-the-art performance among competitive models across critical dimensions of code intelligence: agentic software engineering, competitive programming, and complex tool use. To address deployment constraints, the IQuest-Coder-V1-Loop variant introduces a recurrent mechanism designed to optimize the trade-off between model capacity and deployment footprint, offering an architecturally enhanced path for efficacy-efficiency trade-off. We believe the release of the IQuest-Coder-V1 series, including the complete white-box chain of checkpoints from pre-training bases to the final thinking and instruction models, will advance research in autonomous code intelligence and real-world agentic systems.",
-      "comments": ""
-    },
     "2603.25718": {
       "abstract": "We demonstrate an all solid state semiconductor device, based on epitaxial single crystalline metal halide perovskites, enabling reversible control of a perovskite photoluminescence with a gate voltage. Fundamentally distinct from electroluminescent diodes, such a photoluminescence field effect transistor uses the gate electric field to electrostatically modulate the interfacial density of mobile charges, thereby affecting the radiative and nonradiative recombination channels of photocarriers. Varying the gate voltage in such transistors efficiently changes the rate of nonradiative interfacial recombination and modulates the photoluminescence intensity by 65 to 98 percent (depending on temperature). At favorable gating, nearly complete elimination of non-radiative losses can be achieved. This functionality, coupled with the strong visible-range absorption and emission, possible due to the high absorption coefficient, as well as controllable thickness and macroscopically homogeneous morphology of epitaxial perovskite films, leads to high external photoluminescence quantum efficiencies realized in large-area, thin-film devices. Such high-efficiency, scalable, electrostatically tunable optoelectronic switches broaden the potential applications of metal-halide perovskites in photonics and optoelectronics.",
       "comments": ""
@@ -319,6 +315,10 @@
     "2603.25398": {
       "abstract": "Vision Foundation Models (VFMs) pre-trained at scale enable a single frozen encoder to serve multiple downstream tasks simultaneously. Recent VFM-based encoder-only models for image and video segmentation, such as EoMT and VidEoMT, achieve competitive accuracy with remarkably low latency, yet they require finetuning the encoder, sacrificing the multi-task encoder sharing that makes VFMs practically attractive for large-scale deployment. To reconcile encoder-only simplicity and speed with frozen VFM features, we propose the Plain Mask Decoder (PMD), a fast Transformer-based segmentation decoder that operates on top of frozen VFM features. The resulting model, the Plain Mask Transformer (PMT), preserves the architectural simplicity and low latency of encoder-only designs while keeping the encoder representation unchanged and shareable. The design seamlessly applies to both image and video segmentation, inheriting the generality of the encoder-only framework. On standard image segmentation benchmarks, PMT matches the frozen-encoder state of the art while running up to ~3x faster. For video segmentation, it even performs on par with fully finetuned methods, while being up to 8x faster than state-of-the-art frozen-encoder models. Code:this https URL.",
       "comments": "8 pages, ECV 2026, CVPR Workshop"
+    },
+    "2603.16733": {
+      "abstract": "In this report, we introduce the IQuest-Coder-V1 series-(7B/14B/40B/40B-Loop), a new family of code large language models (LLMs). Moving beyond static code representations, we propose the code-flow multi-stage training paradigm, which captures the dynamic evolution of software logic through different phases of the pipeline. Our models are developed through the evolutionary pipeline, starting with the initial pre-training consisting of code facts, repository, and completion data. Following that, we implement a specialized mid-training stage that integrates reasoning and agentic trajectories in 32k-context and repository-scale in 128k-context to forge deep logical foundations. The models are then finalized with post-training of specialized coding capabilities, which is bifurcated into two specialized paths: the thinking path (utilizing reasoning-driven RL) and the instruct path (optimized for general assistance). IQuest-Coder-V1 achieves state-of-the-art performance among competitive models across critical dimensions of code intelligence: agentic software engineering, competitive programming, and complex tool use. To address deployment constraints, the IQuest-Coder-V1-Loop variant introduces a recurrent mechanism designed to optimize the trade-off between model capacity and deployment footprint, offering an architecturally enhanced path for efficacy-efficiency trade-off. We believe the release of the IQuest-Coder-V1 series, including the complete white-box chain of checkpoints from pre-training bases to the final thinking and instruction models, will advance research in autonomous code intelligence and real-world agentic systems.",
+      "comments": ""
     }
   }
 }

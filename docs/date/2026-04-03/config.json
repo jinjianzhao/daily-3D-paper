@@ -11,207 +11,207 @@
     "2603.26164": {
       "title": "DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models",
       "hf_link": "https://huggingface.co/papers/2603.26164",
-      "votes": 0
+      "votes": 148
     },
     "2604.02029": {
       "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
       "hf_link": "https://huggingface.co/papers/2604.02029",
-      "votes": 0
+      "votes": 106
     },
     "2604.02329": {
       "title": "Generative World Renderer",
       "hf_link": "https://huggingface.co/papers/2604.02329",
-      "votes": 0
+      "votes": 79
     },
     "2604.02268": {
       "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
       "hf_link": "https://huggingface.co/papers/2604.02268",
-      "votes": 0
+      "votes": 74
     },
     "2604.02327": {
       "title": "Steerable Visual Representations",
       "hf_link": "https://huggingface.co/papers/2604.02327",
-      "votes": 0
+      "votes": 34
     },
     "2604.01658": {
       "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
       "hf_link": "https://huggingface.co/papers/2604.01658",
-      "votes": 0
+      "votes": 31
     },
     "2604.01001": {
       "title": "EgoSim: Egocentric World Simulator for Embodied Interaction Generation",
       "hf_link": "https://huggingface.co/papers/2604.01001",
-      "votes": 0
+      "votes": 31
     },
     "2604.01973": {
       "title": "NearID: Identity Representation Learning via Near-identity Distractors",
       "hf_link": "https://huggingface.co/papers/2604.01973",
-      "votes": 0
+      "votes": 23
     },
     "2604.02097": {
       "title": "LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model",
       "hf_link": "https://huggingface.co/papers/2604.02097",
-      "votes": 0
+      "votes": 20
     },
     "2604.02296": {
       "title": "VOID: Video Object and Interaction Deletion",
       "hf_link": "https://huggingface.co/papers/2604.02296",
-      "votes": 0
+      "votes": 18
     },
     "2604.01007": {
       "title": "Omni-SimpleMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
       "hf_link": "https://huggingface.co/papers/2604.01007",
-      "votes": 0
+      "votes": 18
     },
     "2604.01202": {
       "title": "Therefore I am. I Think",
       "hf_link": "https://huggingface.co/papers/2604.01202",
-      "votes": 0
+      "votes": 16
     },
     "2604.02190": {
       "title": "UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",
       "hf_link": "https://huggingface.co/papers/2604.02190",
-      "votes": 0
+      "votes": 13
     },
     "2604.00917": {
       "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
       "hf_link": "https://huggingface.co/papers/2604.00917",
-      "votes": 0
+      "votes": 11
     },
     "2603.29640": {
       "title": "ASI-Evolve: AI Accelerates AI",
       "hf_link": "https://huggingface.co/papers/2603.29640",
-      "votes": 0
+      "votes": 11
     },
     "2603.28068": {
       "title": "AIBench: Evaluating Visual-Logical Consistency in Academic Illustration Generation",
       "hf_link": "https://huggingface.co/papers/2603.28068",
-      "votes": 0
+      "votes": 8
     },
     "2604.01676": {
       "title": "GPA: Learning GUI Process Automation from Demonstrations",
       "hf_link": "https://huggingface.co/papers/2604.01676",
-      "votes": 0
+      "votes": 7
     },
     "2604.01618": {
       "title": "Tex3D: Objects as Attack Surfaces via Adversarial 3D Textures for Vision-Language-Action Models",
       "hf_link": "https://huggingface.co/papers/2604.01618",
-      "votes": 0
+      "votes": 7
     },
     "2603.30043": {
       "title": "Video Models Reason Early: Exploiting Plan Commitment for Maze Solving",
       "hf_link": "https://huggingface.co/papers/2603.30043",
-      "votes": 0
+      "votes": 7
     },
     "2604.01569": {
       "title": "VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification",
       "hf_link": "https://huggingface.co/papers/2604.01569",
-      "votes": 0
+      "votes": 5
     },
     "2604.01014": {
       "title": "AutoMIA: Improved Baselines for Membership Inference Attack via Agentic Self-Exploration",
       "hf_link": "https://huggingface.co/papers/2604.01014",
-      "votes": 0
+      "votes": 5
     },
     "2603.28130": {
       "title": "MDPBench: A Benchmark for Multilingual Document Parsing in Real-World Scenarios",
       "hf_link": "https://huggingface.co/papers/2603.28130",
-      "votes": 0
+      "votes": 5
     },
     "2604.02088": {
       "title": "FlowSlider: Training-Free Continuous Image Editing via Fidelity-Steering Decomposition",
       "hf_link": "https://huggingface.co/papers/2604.02088",
-      "votes": 0
+      "votes": 4
     },
     "2604.01328": {
       "title": "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial",
       "hf_link": "https://huggingface.co/papers/2604.01328",
-      "votes": 0
+      "votes": 4
     },
     "2604.00829": {
       "title": "LinguDistill: Recovering Linguistic Ability in Vision- Language Models via Selective Cross-Modal Distillation",
       "hf_link": "https://huggingface.co/papers/2604.00829",
-      "votes": 0
+      "votes": 4
     },
     "2604.01298": {
       "title": "Forecasting Supply Chain Disruptions with Foresight Learning",
       "hf_link": "https://huggingface.co/papers/2604.01298",
-      "votes": 0
+      "votes": 4
     },
     "2604.02289": {
       "title": "Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation",
       "hf_link": "https://huggingface.co/papers/2604.02289",
-      "votes": 0
+      "votes": 3
     },
     "2604.01666": {
       "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
       "hf_link": "https://huggingface.co/papers/2604.01666",
-      "votes": 0
+      "votes": 3
     },
     "2604.01760": {
       "title": "T5Gemma-TTS Technical Report",
       "hf_link": "https://huggingface.co/papers/2604.01760",
-      "votes": 0
+      "votes": 3
     },
     "2604.02007": {
       "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
       "hf_link": "https://huggingface.co/papers/2604.02007",
-      "votes": 0
+      "votes": 3
     },
     "2603.27666": {
       "title": "Gated Condition Injection without Multimodal Attention: Towards Controllable Linear-Attention Transformers",
       "hf_link": "https://huggingface.co/papers/2603.27666",
-      "votes": 0
+      "votes": 3
     },
     "2603.26259": {
       "title": "Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models",
       "hf_link": "https://huggingface.co/papers/2603.26259",
-      "votes": 0
+      "votes": 3
     },
     "2604.02330": {
       "title": "ActionParty: Multi-Subject Action Binding in Generative Video Games",
       "hf_link": "https://huggingface.co/papers/2604.02330",
-      "votes": 0
+      "votes": 2
     },
     "2604.01929": {
       "title": "Woosh: A Sound Effects Foundation Model",
       "hf_link": "https://huggingface.co/papers/2604.01929",
-      "votes": 0
+      "votes": 2
     },
     "2604.00491": {
       "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
       "hf_link": "https://huggingface.co/papers/2604.00491",
-      "votes": 0
+      "votes": 2
     },
     "2604.01479": {
       "title": "UniRecGen: Unifying Multi-View 3D Reconstruction and Generation",
       "hf_link": "https://huggingface.co/papers/2604.01479",
-      "votes": 0
+      "votes": 2
     },
     "2603.24257": {
       "title": "Memory-Augmented Vision-Language Agents for Persistent and Semantically Consistent Object Captioning",
       "hf_link": "https://huggingface.co/papers/2603.24257",
-      "votes": 0
+      "votes": 2
     },
     "2603.26233": {
       "title": "Ask or Assume? Uncertainty-Aware Clarification-Seeking in Coding Agents",
       "hf_link": "https://huggingface.co/papers/2603.26233",
-      "votes": 0
+      "votes": 2
     },
     "2604.01619": {
       "title": "Automatic Image-Level Morphological Trait Annotation for Organismal Images",
       "hf_link": "https://huggingface.co/papers/2604.01619",
-      "votes": 0
+      "votes": 1
     },
     "2604.00356": {
       "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
       "hf_link": "https://huggingface.co/papers/2604.00356",
-      "votes": 0
+      "votes": 1
     },
     "2604.01404": {
       "title": "Friends and Grandmothers in Silico: Localizing Entity Cells in Language Models",
       "hf_link": "https://huggingface.co/papers/2604.01404",
-      "votes": 0
+      "votes": 1
     },
     "2604.01152": {
       "title": "Brainstacks: Cross-Domain Cognitive Capabilities via Frozen MoE-LoRA Stacks for Continual LLM Learning",

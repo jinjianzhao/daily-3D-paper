@@ -83,7 +83,6 @@ python scheduler.py
 部署到 GitHub Pages 后可通过以下地址浏览：
 
 - **日期索引**：https://jinjianzhao.github.io/daily-3D-paper/date/
-- **今日自动跳转**：https://jinjianzhao.github.io/daily-3D-paper/
 
 > `output/papers/` 入口会自动跳转到当天（或昨天）的日期页面。
 

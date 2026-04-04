@@ -23,6 +23,25 @@ def pipeline_debug(step: str, title: str, msg: str = ""):
     print(f"[{step}][{title}]{suffix}", flush=True)
 
 
+def _extract_vote_count(article_tag) -> int:
+    """从 article 标签中提取投票数。
+
+    直接在第三个子元素中搜索 div.leading-none 获取投票数。
+    """
+    assert hasattr(article_tag, 'children'), "article_tag 必须是 BeautifulSoup Tag 对象"
+
+    non_empty = [child for child in article_tag.children if child.name is not None]
+    if len(non_empty) < 3:
+        return 0
+    third = non_empty[2]
+    vote_div = third.select_one("div.leading-none")
+    if vote_div:
+        text = vote_div.get_text(strip=True)
+        if text.isdigit():
+            return int(text)
+    return 0
+
+
 def _count_json_files(cache_dir: str) -> int:
     assert isinstance(cache_dir, str)
     assert os.path.isdir(cache_dir)
@@ -326,13 +345,10 @@ class PaperPipeline:
                 id_match = re.search(self.cfg.hf_href_arxiv_id_regex, title_tag["href"])
                 if id_match:
                     aid = id_match.group(1)
-                    # 提取点赞数：在 label 标签内的 div.leading-none 中
-                    vote_count = 0
-                    vote_div = a.select_one("label div.leading-none")
-                    if vote_div:
-                        vote_text = vote_div.get_text(strip=True)
-                        if vote_text.isdigit():
-                            vote_count = int(vote_text)
+                    # 提取点赞数：article 的第三个子元素
+                    vote_count = _extract_vote_count(a)
+                    if vote_count == 0:
+                        pass
                     results_with_votes.append({
                         "aid": aid,
                         "title": title_tag.get_text(strip=True),

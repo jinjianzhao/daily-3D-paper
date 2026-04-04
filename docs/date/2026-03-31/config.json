@@ -7,177 +7,177 @@
     "2603.27027": {
       "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
       "hf_link": "https://huggingface.co/papers/2603.27027",
-      "votes": 0
+      "votes": 139
     },
     "2603.28589": {
       "title": "Towards a Medical AI Scientist",
       "hf_link": "https://huggingface.co/papers/2603.28589",
-      "votes": 0
+      "votes": 84
     },
     "2603.28767": {
       "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
       "hf_link": "https://huggingface.co/papers/2603.28767",
-      "votes": 0
+      "votes": 53
     },
     "2603.27771": {
       "title": "Emergent Social Intelligence Risks in Generative Multi-Agent Systems",
       "hf_link": "https://huggingface.co/papers/2603.27771",
-      "votes": 0
+      "votes": 48
     },
     "2603.27304": {
       "title": "EpochX: Building the Infrastructure for an Emergent Agent Civilization",
       "hf_link": "https://huggingface.co/papers/2603.27304",
-      "votes": 0
+      "votes": 45
     },
     "2603.27481": {
       "title": "On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models",
       "hf_link": "https://huggingface.co/papers/2603.27481",
-      "votes": 0
+      "votes": 34
     },
     "2603.28458": {
       "title": "HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention",
       "hf_link": "https://huggingface.co/papers/2603.28458",
-      "votes": 0
+      "votes": 33
     },
     "2603.28547": {
       "title": "GEditBench v2: A Human-Aligned Benchmark for General Image Editing",
       "hf_link": "https://huggingface.co/papers/2603.28547",
-      "votes": 0
+      "votes": 31
     },
     "2603.26639": {
       "title": "Make Geometry Matter for Spatial Reasoning",
       "hf_link": "https://huggingface.co/papers/2603.26639",
-      "votes": 0
+      "votes": 30
     },
     "2603.28489": {
       "title": "Video Generation Models as World Models: Efficient Paradigms, Architectures and Algorithms",
       "hf_link": "https://huggingface.co/papers/2603.28489",
-      "votes": 0
+      "votes": 28
     },
     "2603.27646": {
       "title": "PRBench: End-to-end Paper Reproduction in Physics Research",
       "hf_link": "https://huggingface.co/papers/2603.27646",
-      "votes": 0
+      "votes": 28
     },
     "2603.27862": {
       "title": "ImagenWorld: Stress-Testing Image Generation Models with Explainable Human Evaluation on Open-ended Real-World Tasks",
       "hf_link": "https://huggingface.co/papers/2603.27862",
-      "votes": 0
+      "votes": 25
     },
     "2603.28762": {
       "title": "On-the-fly Repulsion in the Contextual Space for Rich Diversity in Diffusion Transformers",
       "hf_link": "https://huggingface.co/papers/2603.28762",
-      "votes": 0
+      "votes": 23
     },
     "2603.28342": {
       "title": "Kernel-Smith: A Unified Recipe for Evolutionary Kernel Optimization",
       "hf_link": "https://huggingface.co/papers/2603.28342",
-      "votes": 0
+      "votes": 22
     },
     "2603.27813": {
       "title": "MuSEAgent: A Multimodal Reasoning Agent with Stateful Experiences",
       "hf_link": "https://huggingface.co/papers/2603.27813",
-      "votes": 0
+      "votes": 22
     },
     "2603.27065": {
       "title": "Story2Proposal: A Scaffold for Structured Scientific Paper Writing",
       "hf_link": "https://huggingface.co/papers/2603.27065",
-      "votes": 0
+      "votes": 20
     },
     "2603.27064": {
       "title": "ChartNet: A Million-Scale, High-Quality Multimodal Dataset for Robust Chart Understanding",
       "hf_link": "https://huggingface.co/papers/2603.27064",
-      "votes": 0
+      "votes": 20
     },
     "2603.28610": {
       "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
       "hf_link": "https://huggingface.co/papers/2603.28610",
-      "votes": 0
+      "votes": 19
     },
     "2603.28376": {
       "title": "Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design",
       "hf_link": "https://huggingface.co/papers/2603.28376",
-      "votes": 0
+      "votes": 18
     },
     "2603.28713": {
       "title": "DreamLite: A Lightweight On-Device Unified Model for Image Generation and Editing",
       "hf_link": "https://huggingface.co/papers/2603.28713",
-      "votes": 0
+      "votes": 16
     },
     "2603.28766": {
       "title": "HandX: Scaling Bimanual Motion and Interaction Generation",
       "hf_link": "https://huggingface.co/papers/2603.28766",
-      "votes": 0
+      "votes": 11
     },
     "2603.27593": {
       "title": "STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding",
       "hf_link": "https://huggingface.co/papers/2603.27593",
-      "votes": 0
+      "votes": 10
     },
     "2603.26728": {
       "title": "SEAR: Schema-Based Evaluation and Routing for LLM Gateways",
       "hf_link": "https://huggingface.co/papers/2603.26728",
-      "votes": 0
+      "votes": 10
     },
     "2603.27703": {
       "title": "KAT-Coder-V2 Technical Report",
       "hf_link": "https://huggingface.co/papers/2603.27703",
-      "votes": 0
+      "votes": 7
     },
     "2603.27341": {
       "title": "A Comparative Study in Surgical AI: Datasets, Foundation Models, and Barriers to Med-AGI",
       "hf_link": "https://huggingface.co/papers/2603.27341",
-      "votes": 0
+      "votes": 7
     },
     "2603.27055": {
       "title": "Text Data Integration",
       "hf_link": "https://huggingface.co/papers/2603.27055",
-      "votes": 0
+      "votes": 7
     },
     "2603.26610": {
       "title": "Think over Trajectories: Leveraging Video Generation to Reconstruct GPS Trajectories from Cellular Signaling",
       "hf_link": "https://huggingface.co/papers/2603.26610",
-      "votes": 0
+      "votes": 7
     },
     "2603.25926": {
       "title": "Density-aware Soft Context Compression with Semi-Dynamic Compression Ratio",
       "hf_link": "https://huggingface.co/papers/2603.25926",
-      "votes": 0
+      "votes": 7
     },
     "2603.28669": {
       "title": "Superintelligence and Law",
       "hf_link": "https://huggingface.co/papers/2603.28669",
-      "votes": 0
+      "votes": 6
     },
     "2603.28069": {
       "title": "MolmoPoint: Better Pointing for VLMs with Grounding Tokens",
       "hf_link": "https://huggingface.co/papers/2603.28069",
-      "votes": 0
+      "votes": 6
     },
     "2603.27048": {
       "title": "MOOZY: A Patient-First Foundation Model for Computational Pathology",
       "hf_link": "https://huggingface.co/papers/2603.27048",
-      "votes": 0
+      "votes": 6
     },
     "2603.28696": {
       "title": "AdaptToken: Entropy-based Adaptive Token Selection for MLLM Long Video Understanding",
       "hf_link": "https://huggingface.co/papers/2603.28696",
-      "votes": 0
+      "votes": 5
     },
     "2603.28480": {
       "title": "INSID3: Training-Free In-Context Segmentation with DINOv3",
       "hf_link": "https://huggingface.co/papers/2603.28480",
-      "votes": 0
+      "votes": 4
     },
     "2603.27040": {
       "title": "Unified Number-Free Text-to-Motion Generation Via Flow Matching",
       "hf_link": "https://huggingface.co/papers/2603.27040",
-      "votes": 0
+      "votes": 4
     },
     "2603.25832": {
       "title": "A Neural Score-Based Particle Method for the Vlasov-Maxwell-Landau System",
       "hf_link": "https://huggingface.co/papers/2603.25832",
-      "votes": 0
+      "votes": 3
     }
   },
   "summaries": {

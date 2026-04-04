@@ -9,112 +9,112 @@
     "2603.24440": {
       "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents",
       "hf_link": "https://huggingface.co/papers/2603.24440",
-      "votes": 0
+      "votes": 93
     },
     "2603.24472": {
       "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
       "hf_link": "https://huggingface.co/papers/2603.24472",
-      "votes": 0
+      "votes": 47
     },
     "2603.24533": {
       "title": "UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience",
       "hf_link": "https://huggingface.co/papers/2603.24533",
-      "votes": 0
+      "votes": 46
     },
     "2603.22918": {
       "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
       "hf_link": "https://huggingface.co/papers/2603.22918",
-      "votes": 0
+      "votes": 43
     },
     "2603.22341": {
       "title": "T-MAP: Red-Teaming LLM Agents with Trajectory-aware Evolutionary Search",
       "hf_link": "https://huggingface.co/papers/2603.22341",
-      "votes": 0
+      "votes": 36
     },
     "2603.21289": {
       "title": "When Models Judge Themselves: Unsupervised Self-Evolution for Multimodal Reasoning",
       "hf_link": "https://huggingface.co/papers/2603.21289",
-      "votes": 0
+      "votes": 34
     },
     "2603.23994": {
       "title": "Understanding the Challenges in Iterative Generative Optimization with LLMs",
       "hf_link": "https://huggingface.co/papers/2603.23994",
-      "votes": 0
+      "votes": 26
     },
     "2603.24329": {
       "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
       "hf_link": "https://huggingface.co/papers/2603.24329",
-      "votes": 0
+      "votes": 25
     },
     "2603.14375": {
       "title": "The Pulse of Motion: Measuring Physical Frame Rate from Visual Dynamics",
       "hf_link": "https://huggingface.co/papers/2603.14375",
-      "votes": 0
+      "votes": 19
     },
     "2603.21618": {
       "title": "4DGS360: 360° Gaussian Reconstruction of Dynamic Objects from a Single Video",
       "hf_link": "https://huggingface.co/papers/2603.21618",
-      "votes": 0
+      "votes": 15
     },
     "2603.24036": {
       "title": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
       "hf_link": "https://huggingface.co/papers/2603.24036",
-      "votes": 0
+      "votes": 13
     },
     "2603.22120": {
       "title": "StreamingClaw Technical Report",
       "hf_link": "https://huggingface.co/papers/2603.22120",
-      "votes": 0
+      "votes": 13
     },
     "2603.24157": {
       "title": "CarePilot: A Multi-Agent Framework for Long-Horizon Computer Task Automation in Healthcare",
       "hf_link": "https://huggingface.co/papers/2603.24157",
-      "votes": 0
+      "votes": 10
     },
     "2603.23638": {
       "title": "Can LLM Agents Be CFOs? A Benchmark for Resource Allocation in Dynamic Enterprise Environments",
       "hf_link": "https://huggingface.co/papers/2603.23638",
-      "votes": 0
+      "votes": 10
     },
     "2603.20176": {
       "title": "LagerNVS: Latent Geometry for Fully Neural Real-time Novel View Synthesis",
       "hf_link": "https://huggingface.co/papers/2603.20176",
-      "votes": 0
+      "votes": 10
     },
     "2603.18742": {
       "title": "6Bit-Diffusion: Inference-Time Mixed-Precision Quantization for Video Diffusion Models",
       "hf_link": "https://huggingface.co/papers/2603.18742",
-      "votes": 0
+      "votes": 10
     },
     "2603.23522": {
       "title": "Qworld: Question-Specific Evaluation Criteria for LLMs",
       "hf_link": "https://huggingface.co/papers/2603.23522",
-      "votes": 0
+      "votes": 10
     },
     "2603.24458": {
       "title": "OmniWeaving: Towards Unified Video Generation with Free-form Composition and Reasoning",
       "hf_link": "https://huggingface.co/papers/2603.24458",
-      "votes": 0
+      "votes": 8
     },
     "2603.23404": {
       "title": "Unleashing Spatial Reasoning in Multimodal Large Language Models via Textual Representation Guided Reasoning",
       "hf_link": "https://huggingface.co/papers/2603.23404",
-      "votes": 0
+      "votes": 7
     },
     "2603.24506": {
       "title": "Toward Physically Consistent Driving Video World Models under Challenging Trajectories",
       "hf_link": "https://huggingface.co/papers/2603.24506",
-      "votes": 0
+      "votes": 6
     },
     "2603.23539": {
       "title": "PLDR-LLMs Reason At Self-Organized Criticality",
       "hf_link": "https://huggingface.co/papers/2603.23539",
-      "votes": 0
+      "votes": 5
     },
     "2603.23478": {
       "title": "UniFunc3D: Unified Active Spatial-Temporal Grounding for 3D Functionality Segmentation",
       "hf_link": "https://huggingface.co/papers/2603.23478",
-      "votes": 0
+      "votes": 3
     }
   },
   "summaries": {
