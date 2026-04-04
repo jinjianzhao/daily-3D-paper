@@ -17,7 +17,7 @@ if ! git diff-index --quiet HEAD --; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') 检测到修改，正在提交并 push..."
     git add .
     git commit -m "Auto commit $(date '+%Y-%m-%d %H:%M:%S')"
-    git push 
+    git push origin "$BRANCH"
 else
     echo "$(date '+%Y-%m-%d %H:%M:%S') 没有修改，跳过 push"
 fi
