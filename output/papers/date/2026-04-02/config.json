@@ -1,0 +1,304 @@
+{
+  "date": "2026-04-02",
+  "focus_ids": [
+    "2603.26661"
+  ],
+  "base_info": {
+    "2603.24414": {
+      "title": "ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers",
+      "hf_link": "https://huggingface.co/papers/2603.24414"
+    },
+    "2604.00073": {
+      "title": "Terminal Agents Suffice for Enterprise Automation",
+      "hf_link": "https://huggingface.co/papers/2604.00073"
+    },
+    "2603.28407": {
+      "title": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome",
+      "hf_link": "https://huggingface.co/papers/2603.28407"
+    },
+    "2603.25823": {
+      "title": "ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners?",
+      "hf_link": "https://huggingface.co/papers/2603.25823"
+    },
+    "2603.26648": {
+      "title": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
+      "hf_link": "https://huggingface.co/papers/2603.26648"
+    },
+    "2603.26017": {
+      "title": "QuitoBench: A High-Quality Open Time Series Forecasting Benchmark",
+      "hf_link": "https://huggingface.co/papers/2603.26017"
+    },
+    "2604.01161": {
+      "title": "Reasoning Shift: How Context Silently Shortens LLM Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.01161"
+    },
+    "2604.01221": {
+      "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
+      "hf_link": "https://huggingface.co/papers/2604.01221"
+    },
+    "2604.00025": {
+      "title": "Brevity Constraints Reverse Performance Hierarchies in Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.00025"
+    },
+    "2604.01193": {
+      "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+      "hf_link": "https://huggingface.co/papers/2604.01193"
+    },
+    "2603.26661": {
+      "title": "GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation",
+      "hf_link": "https://huggingface.co/papers/2603.26661"
+    },
+    "2603.26653": {
+      "title": "PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning",
+      "hf_link": "https://huggingface.co/papers/2603.26653"
+    },
+    "2604.01220": {
+      "title": "Universal YOCO for Efficient Depth Scaling",
+      "hf_link": "https://huggingface.co/papers/2604.01220"
+    },
+    "2604.01128": {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
+      "hf_link": "https://huggingface.co/papers/2604.01128"
+    },
+    "2604.00842": {
+      "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+      "hf_link": "https://huggingface.co/papers/2604.00842"
+    },
+    "2604.00590": {
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "hf_link": "https://huggingface.co/papers/2604.00590"
+    },
+    "2604.00528": {
+      "title": "Think, Act, Build: An Agentic Framework with Vision Language Models for Zero-Shot 3D Visual Grounding",
+      "hf_link": "https://huggingface.co/papers/2604.00528"
+    },
+    "2604.00986": {
+      "title": "Do Phone-Use Agents Respect Your Privacy?",
+      "hf_link": "https://huggingface.co/papers/2604.00986"
+    },
+    "2604.00626": {
+      "title": "A Survey of On-Policy Distillation for Large Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.00626"
+    },
+    "2604.01029": {
+      "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
+      "hf_link": "https://huggingface.co/papers/2604.01029"
+    },
+    "2604.00886": {
+      "title": "PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding",
+      "hf_link": "https://huggingface.co/papers/2604.00886"
+    },
+    "2604.00892": {
+      "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
+      "hf_link": "https://huggingface.co/papers/2604.00892"
+    },
+    "2603.29002": {
+      "title": "Understand and Accelerate Memory Processing Pipeline for Disaggregated LLM Inference",
+      "hf_link": "https://huggingface.co/papers/2603.29002"
+    },
+    "2604.01168": {
+      "title": "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models",
+      "hf_link": "https://huggingface.co/papers/2604.01168"
+    },
+    "2604.00913": {
+      "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
+      "hf_link": "https://huggingface.co/papers/2604.00913"
+    },
+    "2603.29247": {
+      "title": "MemRerank: Preference Memory for Personalized Product Reranking",
+      "hf_link": "https://huggingface.co/papers/2603.29247"
+    },
+    "2603.25406": {
+      "title": "MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation",
+      "hf_link": "https://huggingface.co/papers/2603.25406"
+    },
+    "2603.25764": {
+      "title": "Consistency Amplifies: How Behavioral Variance Shapes Agent Accuracy",
+      "hf_link": "https://huggingface.co/papers/2603.25764"
+    },
+    "2604.01194": {
+      "title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
+      "hf_link": "https://huggingface.co/papers/2604.01194"
+    },
+    "2603.23582": {
+      "title": "AI Generalisation Gap In Comorbid Sleep Disorder Staging",
+      "hf_link": "https://huggingface.co/papers/2603.23582"
+    }
+  },
+  "summaries": {
+    "2603.24414": "人工智能安全；可信人工智能  \nOpenClaw等开源自主智能体运行时因广泛的操作权限而存在严重安全风险，现有防护措施零散且不全面。  \n研究者提出了ClawKeeper安全框架，通过技能层、插件层和观察者层三位一体的实时防护机制，为自主智能体系统提供全生命周期的安全保障。",
+    "2604.00073": "自然语言处理；智能体  \n背景/任务：探索自主执行企业任务的智能体架构，比较复杂代理系统与简单编程接口代理的优劣。  \n所做工作：提出并验证仅配备终端和文件系统的编程代理能更有效地通过平台API完成任务，其性能匹配或超越复杂架构。",
+    "2603.28407": "自然语言处理；信息检索与抽取  \n背景/任务是现有研究系统评估方法存在局限，难以反映真实用户需求和研究过程。  \n作者构建了MiroEval基准框架，从合成质量、事实核查和研究过程三个维度评估深度研究系统。",
+    "2603.25823": "计算机视觉;图像生成  \n当前AI生成内容模型在逻辑推理上存在缺陷，但评估方法存在局限性。  \n该研究提出了ViGoR基准框架，通过多维度评估揭示了先进模型的推理短板。",
+    "2603.26648": "自然语言处理;智能体与多智能体系统  \n当前对编码智能体在复杂端到端网站开发中的评估存在系统性不足。  \n研究者构建了Vision2Web分层基准并提出工作流验证方法，评估发现先进模型在全栈开发上仍面临困难。",
+    "2603.26017": "机器学习;时间序列分析  \n时间序列预测领域因缺乏大规模高质量基准而受限。  \n研究者构建了覆盖八种趋势×季节性×可预测性机制的平衡基准，通过大规模评估揭示了不同模型家族在上下文长度、参数效率和数据规模上的表现差异。",
+    "2604.01161": "自然语言处理；机器学习  \n背景/任务是探究大语言模型在复杂推理任务中的鲁棒性。  \n研究通过三种情境系统评估了多个推理模型，发现上下文变化会导致推理轨迹显著压缩及自验证行为减弱。",
+    "2604.01221": "人工智能;机器学习  \n现有基准主要关注通用环境下的代理任务，而HippoCamp旨在评估代理在用户中心环境中的多模态文件管理能力。  \n它构建了一个包含大规模真实文件系统和密集标注问答对的基准，用于测试代理的检索、感知和推理能力，并揭示了当前模型的局限。",
+    "2604.00025": "大语言模型；评估方法  \n该研究针对大语言模型在标准评估中出现的规模增大反而性能下降的反常现象进行探究。  \n研究者通过系统实验发现，大模型因过度详细回答而引入错误，并证明通过约束回答长度能显著提升其准确性，甚至逆转性能排名。",
+    "2604.01193": "自然语言处理；代码生成  \n该论文的背景是探索能否仅利用大型语言模型自身的原始输出来提升其代码生成能力，而不依赖外部验证器、教师模型或强化学习。  \n研究者提出了一种名为简单自蒸馏（SSD）的方法，通过对模型在特定温度和截断配置下生成的样本进行标准监督微调，显著提升了模型在代码生成基准上的性能，并揭示了该方法通过重塑令牌分布来解决解码中的精度与探索冲突的机制。",
+    "2603.26661": "计算机图形学；三维建模<br>\n背景/任务是探索一种完全自回归的替代方案，用于生成三维场景，以弥补当前流行的扩散或流匹配方法的不足。<br>\n作者提出了GaussianGPT模型，它通过离散化压缩和序列化自回归生成，实现了基于变换器的三维高斯直接生成，支持可控和上下文感知的场景构建。",
+    "2603.26653": "计算机视觉;;视频理解  \n该论文针对现有模型在复杂、长时序、以感知为中心的视频推理任务上的不足，提出了新的评估需求。  \n作者构建了一个名为PerceptionComp的手动标注基准测试集，用于评估模型在需要多步视觉证据和组合逻辑的视频问答任务上的性能，并验证了当前先进模型在此任务上存在显著瓶颈。",
+    "2604.01220": "自然语言处理；模型架构  \n背景/任务是提升大语言模型的推理和智能体能力，同时解决标准Transformer在推理时计算扩展效率低下的问题。  \n他们提出了YOCO-U架构，结合YOCO解码器-解码器结构和递归计算，以实现更高的能力-效率权衡。",
+    "2604.01128": "自然语言处理;机器写作  \n背景/任务是：针对AI代写学术论文的质量与风险缺乏系统评估框架。  \n所做工作是：提出了PaperRecon评估框架和PaperWrite-Bench基准，量化了AI写论文在呈现质量与幻觉之间的权衡。",
+    "2604.00842": "人机交互；智能体与多智能体系统  \n论文背景是现有数字助手研究因缺乏真实用户模拟框架而受阻，任务为开发能主动预测需求并执行任务的智能体。  \n作者提出了Pare框架以状态机建模应用程序，并创建了Pare-Bench基准测试来评估智能体的多维度能力。",
+    "2604.00590": "机器学习;推荐系统  \n该论文关注推荐模型的规模扩展规律，探讨模型性能与参数/计算量之间的关系。  \n论文提出了一种统一的推荐系统扩展架构UniMixer，通过泛化的参数化特征混合模块连接主流扩展方法，并设计了轻量化模块以提升扩展效率。",
+    "2604.00528": "计算机视觉;三维视觉  \n3D视觉定位任务旨在通过自然语言描述在三维场景中定位物体，但现有方法依赖预处理点云，将任务简化为候选框匹配。  \n本文提出TAB框架，将任务解耦为利用二维视觉语言模型处理语义，再通过多视图几何重建三维结构，无需预处理的点云数据。",
+    "2604.00986": "人工智能安全;智能体评估  \n研究手机智能体在执行任务时是否尊重用户隐私，但缺乏可操作的衡量标准和方法。  \n作者提出了MyPhoneBench评估框架，通过模拟应用和规则审计来量化隐私合规行为，并测试多个模型发现任务成功与隐私保护能力并不一致。",
+    "2604.00626": "机器学习;自然语言处理  \n背景/任务是解决大型语言模型知识蒸馏中的暴露偏差问题，提升小模型在推理时的自生成准确性。  \n他首次提出了一个统一的f-散度框架来系统化梳理和分类在策略蒸馏方法，并分析了其核心维度、应用与开放问题。",
+    "2604.01029": "自然语言处理;大语言模型  \n背景/任务：研究多LLM修订流程（第二模型审核改进第一模型的草稿）中性能提升的来源是否仅为纠错。  \n工作内容：通过分解实验将修订收益分为再解答、脚手架和内容三部分，并在不同任务和模型对上验证，发现收益取决于任务结构、草稿质量和信息类型。",
+    "2604.00886": "计算机视觉;视觉语言模型  \n背景/任务：文档理解和GUI交互是视觉语言模型的重要应用，但高分辨率输入导致计算负担沉重，存在大量冗余图像块。  \n方法：提出PixelPrune方法，通过预测编码压缩在视觉Transformer编码前剪枝冗余图像块，实现训练自由、无损或可控有损压缩，加速推理和训练。",
+    "2604.00892": "人工智能应用；智能体与多智能体系统  \n背景/任务：研究LLM智能体在执行复杂、长流程任务时，如何有效处理用户的中断请求，如新增、修改或撤销任务要求。  \n做了什么：提出了InterruptBench基准，并评估了多种LLM在动态环境中的中断处理能力，发现现有模型在此方面仍面临挑战。",
+    "2603.29002": "机器学习;系统与架构  \n现代大语言模型需要高效处理长上下文，但现有优化方法存在显著内存处理开销。  \n作者提出一个统一的内存处理四步框架，并通过在GPU-FPGA异构系统上卸载部分操作，实现了更快速、更节能的推理。",
+    "2604.01168": "机器学习; 模型优化  \n背景/任务：在监督数据稀缺的情况下，如何对混合架构语言模型进行高效参数微调。  \n他做了什么：提出了一种名为S0调优的方法，通过仅优化循环层的初始状态矩阵（冻结所有权重），实现了零推理开销的性能提升，并在多个基准测试中验证了其有效性。",
+    "2604.00913": "计算机视觉;人机交互  \n背景/任务：针对2D组装图抽象难懂的问题，需智能助手在混合现实中监控进度、检测错误并提供指导，但现有视觉语言模型面临图示与实景视频的视觉特征差异挑战。  \n所做工作：构建了IKEA-Bench基准数据集，评估了19个视觉语言模型在三种对齐策略下的表现，发现视觉编码是提升跨图示鲁棒性的关键瓶颈，并通过机制分析揭示了图文特征空间分离问题。",
+    "2603.29247": "自然语言处理;推荐系统  \n现有购物助手依赖冗长购买历史进行个性化推荐，但直接使用原始历史存在噪声和效率问题。  \n论文提出MemRerank框架，将用户历史提炼为紧凑偏好记忆，并通过强化学习优化提取过程，显著提升个性化商品重排序准确率。",
+    "2603.25406": "机器人技术；计算机视觉与模式识别  \n背景/任务是解决现有视觉-语言-动作模型在机器人操控中存在的架构冗余、时序不一致、长程误差累积及缺乏环境动态建模机制的问题。  \n提出了一种原生离散扩散模型MMaDA-VLA，通过将多模态信息嵌入统一离散令牌空间并训练单一主干网络来并行生成未来目标观测和动作块，以优化长程一致性和动作的视觉基础。",
+    "2603.25764": "自然语言处理;智能体研究<br>\n研究背景/任务是评估大型语言模型在复杂软件工程任务中的行为一致性对生产系统可靠性的影响。<br>\n研究比较了Claude、GPT-5和Llama模型在SWE-bench上的表现，发现一致性会放大结果（无论正确与否）而非保证正确，其中模型的理解准确性比执行一致性更重要。",
+    "2604.01194": "人工智能安全；大语言模型安全  \n背景/任务：针对大语言模型及其应用（如智能体）易受提示注入攻击，且现有检测方法在长上下文场景效果差、决策不透明的现状，需要提升检测能力。  \n所做工作：提出了AgentWatcher方法，通过将模型输出归因于少量关键上下文片段来适应长文本，并利用规则和监控LLM进行可解释的推理检测。",
+    "2603.23582": "机器学习;深度学习\n背景/任务是开发自动化睡眠分期模型以辅助诊断中风患者的阻塞性睡眠呼吸暂停和低通气。\n作者揭示了现有模型在临床患者中泛化能力差的问题，并提出了一个新的中风患者数据集及一个混合神经网络模型，强调了疾病特异性模型和临床验证的必要性。"
+  },
+  "deep_analysis": {
+    "2603.26661": "这是一篇关于**3D场景生成**的论文。我试着用简单的语言为你解释它的核心内容。\n\n### (1) 任务是什么\n*   **任务输入**： 训练时，需要大量的3D场景数据（比如室内房间的3D模型）。\n*   **任务输出**： 能够生成全新的、完整的、逼真的3D室内场景。\n*   **任务功能**： 这是一个**无条件生成**模型。你可以把它想象成一个“3D场景画家”，给它一个“开始”信号，它就能自动画出一个从未存在过的房间，里面有家具、墙壁、装饰等，并且所有东西的3D结构和外观都是合理的。\n\n### (2) 想解决什么问题\n当前3D生成的主流方法是**扩散模型**（类似Stable Diffusion在2D图像上的工作方式）。扩散模型是通过“去噪”过程一次性生成整个场景。这存在一个问题：不够灵活。\n*   **不自然**：现实中，我们设计或构建一个场景（比如布置房间）通常是**一步一步、逐步添加**的。\n*   **难以控制**：很难让扩散模型“接着已有的半成品场景继续往下画”（比如场景补全），或者有选择地生成场景的某一部分。\n\n这篇论文想探索一个不同的路径：**能否像生成文字（GPT）一样，一个接一个地“生成”3D场景的组成部分？** 也就是用**自回归模型**（Autoregressive Model）来做3D生成，以获得更好的可控性和灵活性。\n\n### (3) 核心思路是什么\n核心思路可以概括为：**“把3D场景变成文字，用GPT来生成它”**。分两步走：\n\n**第一步：把3D场景“翻译”成离散序列（Tokenization）**\n1.  他们用一种叫 **“3D高斯泼溅”** 的技术来表示3D场景。你可以把它想象成用无数个微小的、有颜色、有形状、有透明度的“彩色棉花糖”来堆积成一个3D模型，渲染速度很快。\n2.  设计一个**稀疏3D卷积自编码器**，把这些密密麻麻的“棉花糖”（高斯）压缩成一个低分辨率的、稀疏的 **“3D特征网格”** 。这就像把一幅高清图片压缩成一个缩略图，但保留了核心信息。\n3.  对这个3D特征网格进行**向量量化**，把每个小格子里的连续特征，映射到一本“字典”里最近的“词”。最终，整个3D场景就被表示成了一个由离散“词”（Token）组成的**3D网格**。\n\n**第二步：用Transformer（GPT）学习并生成序列**\n1.  **序列化**：将这个3D Token网格，按照一种特定的空间顺序（比如从房间一角开始扫描），**拉直成一个一维的序列**。这就把3D结构“变成了一句话”。\n2.  **训练GPT**：用一个类似GPT的**因果Transformer模型**来学习这个序列。它每次只看前面的“词”，然后预测下一个“词”应该是什么。通过这种方式，模型学会了3D场景中物体如何布局、如何组合的内在规律。\n3.  **生成**：要生成新场景时，就给模型一个“开始”Token，然后让它像写文章一样，**自回归地（一个接一个地）预测出整个Token序列**。\n4.  **解码**：把生成的Token序列通过第一步训练好的**解码器**，还原回具体的“3D高斯泼溅”表示，就能渲染出最终的3D场景了。\n\n**关键优势**：因为采用了自回归方式，所以很自然地支持**场景补全**（给模型看一半的场景序列，让它预测后半部分）和**灵活控制**（通过调整采样温度等）。\n\n### (4) 结果怎么样\n根据论文摘要和引言部分的描述：\n*   **成功了**：他们证明了用纯自回归Transformer生成复杂3D室内场景是可行的。\n*   **功能多**：他们的单一模型（GaussianGPT）不仅能做无条件场景生成，还能做**场景补全**和**大规模场景合成**，展示了自回归方法在可控性上的优势。\n*   **新范式**：这项工作为3D生成提供了一个**互补的新范式**（自回归），区别于当前主流的扩散模型。它更贴合“逐步构建”的直觉，可能在交互式编辑、可控生成等方向有更大潜力。\n\n**简单总结**：这篇论文就像给3D场景造了一本“乐高说明书”（Token化），然后训练了一个AI（GPT）来学习这本说明书上的拼装规律。以后想要新场景，AI就能自己写一本新的说明书（自回归生成序列），我们按图索骥就能拼出全新的3D场景。这个方法的特点是**一步步生成，灵活可控**。"
+  },
+  "images_meta": {
+    "2603.26661": [
+      {
+        "path": "https://arxiv.org/html/2603.26661v1/x1.png",
+        "caption": "Figure 1:GaussianGPT is a purely autoregressive approach for 3D Gaussian scene generation.\nOur approach enables unconditional scene generation, scene completion, and large-scale scene synthesis using only a single model.",
+        "caption_zh": "图1：GaussianGPT是一种纯粹自回归的三维高斯场景生成方法。我们的方法仅使用单一模型即可实现无条件场景生成、场景补全与大规模场景合成。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.26661v1/x2.png",
+        "caption": "Figure 2:Overview ofGaussianGPT.\nA 3D Gaussian scene is subsampled into a sparse voxel grid and encoded into per-voxel features.\nA sparse 3D CNN compresses the grid into discrete codebook indices.\nThe resulting latent grid is serialized viax​y​zxyzordering and represented as interleaved position tokenspip_{i}and feature tokensfif_{i}.\nA causal transformer with 3D RoPE predicts alternating position and feature tokens, which are mapped back to voxel locations and decoded through LFQ to reconstruct the 3D Gaussian scene.",
+        "caption_zh": "图2：GaussianGPT概述。三维高斯场景经下采样得到稀疏体素网格，并编码为逐体素特征。稀疏三维CNN将网格压缩为离散码本索引。得到的潜在网格通过x​y​z排序序列化，并表示为交错的位置标记pᵢ与特征标记fᵢ。配备三维RoPE的因果Transformer交替预测位置标记与特征标记，这些标记被映射回体素位置，并通过LFQ解码以重建三维高斯场景。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.26661v1/x3.png",
+        "caption": "Figure 3:Qualitative results on unconditional chair generation.\nFrom left to right: DiffRF[muller_diffrf_2023], L3DG[roessle_l3dg_2024], and GaussianGPT (ours).\nAll models generate high-fidelity shapes; our method produces clean Gaussian allocations with consistent geometric structure.",
+        "caption_zh": "图3：无条件椅子生成的定性结果。从左至右：DiffRF（Müller等人，2023）、L3DG（Rössle等人，2024）以及GaussianGPT（本方法）。所有模型均生成高保真形状；我们的方法产生了具有一致几何结构的清晰高斯分布。"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2603.24414": {
+      "abstract": "OpenClaw has rapidly established itself as a leading open-source autonomous agent runtime, offering powerful capabilities including tool integration, local file access, and shell command execution. However, these broad operational privileges introduce critical security vulnerabilities, transforming model errors into tangible system-level threats such as sensitive data leakage, privilege escalation, and malicious third-party skill execution. Existing security measures for the OpenClaw ecosystem remain highly fragmented, addressing only isolated stages of the agent lifecycle rather than providing holistic protection. To bridge this gap, we present ClawKeeper, a real-time security framework that integrates multi-dimensional protection mechanisms across three complementary architectural layers. (1) \\textbf{Skill-based protection} operates at the instruction level, injecting structured security policies directly into the agent context to enforce environment-specific constraints and cross-platform boundaries. (2) \\textbf{Plugin-based protection} serves as an internal runtime enforcer, providing configuration hardening, proactive threat detection, and continuous behavioral monitoring throughout the execution pipeline. (3) \\textbf{Watcher-based protection} introduces a novel, decoupled system-level security middleware that continuously verifies agent state evolution. It enables real-time execution intervention without coupling to the agent's internal logic, supporting operations such as halting high-risk actions or enforcing human confirmation. We argue that this Watcher paradigm holds strong potential to serve as a foundational building block for securing next-generation autonomous agent systems. Extensive qualitative and quantitative evaluations demonstrate the effectiveness and robustness of ClawKeeper across diverse threat scenarios. We release our code.",
+      "comments": "22 pages, 14 figures, 5 tables"
+    },
+    "2604.00073": {
+      "abstract": "There has been growing interest in building agents that can interact with digital platforms to execute meaningful enterprise tasks autonomously. Among the approaches explored are tool-augmented agents built on abstractions such as Model Context Protocol (MCP) and web agents that operate through graphical interfaces. Yet, it remains unclear whether such complex agentic systems are necessary given their cost and operational overhead. We argue that a coding agent equipped only with a terminal and a filesystem can solve many enterprise tasks more effectively by interacting directly with platform APIs. We evaluate this hypothesis across diverse real-world systems and show that these low-level terminal agents match or outperform more complex agent architectures. Our findings suggest that simple programmatic interfaces, combined with strong foundation models, are sufficient for practical enterprise automation.",
+      "comments": "Pre-print. Under review for COLM2026"
+    },
+    "2603.28407": {
+      "abstract": "Recent progress in deep research systems has been impressive, but evaluation still lags behind real user needs. Existing benchmarks predominantly assess final reports using fixed rubrics, failing to evaluate the underlying research process. Most also offer limited multimodal coverage, rely on synthetic tasks that do not reflect real-world query complexity, and cannot be refreshed as knowledge evolves. To address these gaps, we introduce MiroEval, a benchmark and evaluation framework for deep research systems. The benchmark comprises 100 tasks (70 text-only, 30 multimodal), all grounded in real user needs and constructed via a dual-path pipeline that supports periodic updates, enabling a live and evolving setting. The proposed evaluation suite assesses deep research systems along three complementary dimensions: adaptive synthesis quality evaluation with task-specific rubrics, agentic factuality verification via active retrieval and reasoning over both web sources and multimodal attachments, and process-centric evaluation audits how the system searches, reasons, and refines throughout its investigation. Evaluation across 13 systems yields three principal findings: the three evaluation dimensions capture complementary aspects of system capability, with each revealing distinct strengths and weaknesses across systems; process quality serves as a reliable predictor of overall outcome while revealing weaknesses invisible to output-level metrics; and multimodal tasks pose substantially greater challenges, with most systems declining by 3 to 10 points. The MiroThinker series achieves the most balanced performance, with MiroThinker-H1 ranking the highest overall in both settings. Human verification and robustness results confirm the reliability of the benchmark and evaluation framework. MiroEval provides a holistic diagnostic tool for the next generation of deep research agents.",
+      "comments": "GitHub: <a class=\"link-external link-https\" href=\"https://github.com/MiroMindAI/MiroEval\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.25823": {
+      "abstract": "Beneath the stunning visual fidelity of modern AIGC models lies a \"logical desert\", where systems fail tasks that require physical, causal, or complex spatial reasoning. Current evaluations largely rely on superficial metrics or fragmented benchmarks, creating a ``performance mirage'' that overlooks the generative process. To address this, we introduce ViGoR Vision-G}nerative Reasoning-centric Benchmark), a unified framework designed to dismantle this mirage. ViGoR distinguishes itself through four key innovations: 1) holistic cross-modal coverage bridging Image-to-Image and Video tasks; 2) a dual-track mechanism evaluating both intermediate processes and final results; 3) an evidence-grounded automated judge ensuring high human alignment; and 4) granular diagnostic analysis that decomposes performance into fine-grained cognitive dimensions. Experiments on over 20 leading models reveal that even state-of-the-art systems harbor significant reasoning deficits, establishing ViGoR as a critical ``stress test'' for the next generation of intelligent vision models. The demo have been available atthis https URL",
+      "comments": ""
+    },
+    "2603.26648": {
+      "abstract": "Recent advances in large language models have improved the capabilities of coding agents, yet systematic evaluation of complex, end-to-end website development remains limited. To address this gap, we introduce Vision2Web, a hierarchical benchmark for visual website development, spanning from static UI-to-code generation, interactive multi-page frontend reproduction, to long-horizon full-stack website development. The benchmark is constructed from real-world websites and comprises a total of 193 tasks across 16 categories, with 918 prototype images and 1,255 test cases. To support flexible, thorough and reliable evaluation, we propose workflow-based agent verification paradigm based on two complementary components: a GUI agent verifier and a VLM-based judge. We evaluate multiple visual language models instantiated under different coding-agent frameworks, revealing substantial performance gaps at all task levels, with state-of-the-art models still struggling on full-stack development.",
+      "comments": ""
+    },
+    "2603.26017": {
+      "abstract": "Time series forecasting is critical across finance, healthcare, and cloud computing, yet progress is constrained by a fundamental bottleneck: the scarcity of large-scale, high-quality benchmarks. To address this gap, we introduce \\textsc{QuitoBench}, a regime-balanced benchmark for time series forecasting with coverage across eight trend$\\times$seasonality$\\times$forecastability (TSF) regimes, designed to capture forecasting-relevant properties rather than application-defined domain labels. The benchmark is built upon \\textsc{Quito}, a billion-scale time series corpus of application traffic from Alipay spanning nine business domains. Benchmarking 10 models from deep learning, foundation models, and statistical baselines across 232,200 evaluation instances, we report four key findings: (i) a context-length crossover where deep learning models lead at short context ($L=96$) but foundation models dominate at long context ($L \\ge 576$); (ii) forecastability is the dominant difficulty driver, producing a $3.64 \\times$ MAE gap across regimes; (iii) deep learning models match or surpass foundation models at $59 \\times$ fewer parameters; and (iv) scaling the amount of training data provides substantially greater benefit than scaling model size for both model families. These findings are validated by strong cross-benchmark and cross-metric consistency. Our open-source release enables reproducible, regime-aware evaluation for time series forecasting research.",
+      "comments": "project site: <a class=\"link-external link-https\" href=\"https://hq-bench.github.io/quito/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.01161": {
+      "abstract": "Large language models (LLMs) exhibiting test-time scaling behavior, such as extended reasoning traces and self-verification, have demonstrated remarkable performance on complex, long-term reasoning tasks. However, the robustness of these reasoning behaviors remains underexplored. To investigate this, we conduct a systematic evaluation of multiple reasoning models across three scenarios: (1) problems augmented with lengthy, irrelevant context; (2) multi-turn conversational settings with independent tasks; and (3) problems presented as a subtask within a complex task. We observe an interesting phenomenon: reasoning models tend to produce much shorter reasoning traces (up to 50%) for the same problem under different context conditions compared to the traces produced when the problem is presented in isolation. A finer-grained analysis reveals that this compression is associated with a decrease in self-verification and uncertainty management behaviors, such as double-checking. While this behavioral shift does not compromise performance on straightforward problems, it might affect performance on more challenging tasks. We hope our findings draw additional attention to both the robustness of reasoning models and the problem of context management for LLMs and LLM-based agents.",
+      "comments": "Preprint, work in progress"
+    },
+    "2604.01221": {
+      "abstract": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents' capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://hippocamp-ai.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.00025": {
+      "abstract": "Standard evaluation protocols reveal a counterintuitive phenomenon: on 7.7% of benchmark problems spanning five datasets, larger language models underperform smaller ones by 28.4 percentage points despite 10-100x more parameters. Through systematic evaluation of 31 models (0.5B-405B parameters) across 1,485 problems, we identify the mechanism as spontaneous scale-dependent verbosity that introduces errors through overelaboration. Causal intervention experiments demonstrate this reflects correctable prompt design rather than fundamental capability limitations. Constraining large models to produce brief responses improves accuracy by 26 percentage points and reduces performance gaps by up to two-thirds. Most critically, brevity constraints completely reverse performance hierarchies on mathematical reasoning and scientific knowledge benchmarks, with large models achieving 7.7-15.9 percentage point advantages over small models -- direct inversions of the original gaps. These reversals prove large models possess superior latent capabilities that universal prompting masks. We validate findings through three independent contamination tests and demonstrate inverse scaling operates continuously across the full parameter spectrum, with dataset-specific optimal scales ranging from 0.5B to 3.0B parameters. Our results establish that maximizing large model performance requires scale-aware prompt engineering rather than universal evaluation protocols, with immediate implications for deployment: prompt adaptation simultaneously improves accuracy and reduces computational costs.",
+      "comments": ""
+    },
+    "2604.01193": {
+      "abstract": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+      "comments": ""
+    },
+    "2603.26661": {
+      "abstract": "Most recent advances in 3D generative modeling rely on diffusion or flow-matching formulations. We instead explore a fully autoregressive alternative and introduce GaussianGPT, a transformer-based model that directly generates 3D Gaussians via next-token prediction, thus facilitating full 3D scene generation. We first compress Gaussian primitives into a discrete latent grid using a sparse 3D convolutional autoencoder with vector quantization. The resulting tokens are serialized and modeled using a causal transformer with 3D rotary positional embedding, enabling sequential generation of spatial structure and appearance. Unlike diffusion-based methods that refine scenes holistically, our formulation constructs scenes step-by-step, naturally supporting completion, outpainting, controllable sampling via temperature, and flexible generation horizons. This formulation leverages the compositional inductive biases and scalability of autoregressive modeling while operating on explicit representations compatible with modern neural rendering pipelines, positioning autoregressive transformers as a complementary paradigm for controllable and context-aware 3D generation.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://nicolasvonluetzow.github.io/GaussianGPT/\" rel=\"external noopener nofollow\">this https URL</a> - Project video: <a class=\"link-external link-https\" href=\"https://youtu.be/zVnMHkFzHDg\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.26653": {
+      "abstract": "We introduce PerceptionComp, a manually annotated benchmark for complex, long-horizon, perception-centric video reasoning. PerceptionComp is designed so that no single moment is sufficient: answering each question requires multiple temporally separated pieces of visual evidence and compositional constraints under conjunctive and sequential logic, spanning perceptual subtasks such as objects, attributes, relations, locations, actions, and events, and requiring skills including semantic recognition, visual correspondence, temporal reasoning, and spatial reasoning. The benchmark contains 1,114 highly complex questions on 279 videos from diverse domains including city walk tours, indoor villa tours, video games, and extreme outdoor sports, with 100% manual annotation. Human studies show that PerceptionComp requires substantial test-time thinking and repeated perception steps: participants take much longer than on prior benchmarks, and accuracy drops to near chance (18.97%) when rewatching is disallowed. State-of-the-art MLLMs also perform substantially worse on PerceptionComp than on existing benchmarks: the best model in our evaluation, Gemini-3-Flash, reaches only 45.96% accuracy in the five-choice setting, while open-source models remain below 40%. These results suggest that perception-centric long-horizon video reasoning remains a major bottleneck, and we hope PerceptionComp will help drive progress in perceptual reasoning.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://perceptioncomp.github.io\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.01220": {
+      "abstract": "The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.",
+      "comments": ""
+    },
+    "2604.01128": {
+      "abstract": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still lacking. We introduce Paper Reconstruction Evaluation (PaperRecon), an evaluation framework in which an overview (this http URL) is created from an existing paper, after which an agent generates a full paper based on the overview and minimal additional resources, and the result is subsequently compared against the original paper. PaperRecon disentangles the evaluation of the AI-written papers into two orthogonal dimensions, Presentation and Hallucination, where Presentation is evaluated using a rubric and Hallucination is assessed via agentic evaluation grounded in the original paper source. For evaluation, we introduce PaperWrite-Bench, a benchmark of 51 papers from top-tier venues across diverse domains published after 2025. Our experiments reveal a clear trade-off: while both ClaudeCode and Codex improve with model advances, ClaudeCode achieves higher presentation quality at the cost of more than 10 hallucinations per paper on average, whereas Codex produces fewer hallucinations but lower presentation quality. This work takes a first step toward establishing evaluation frameworks for AI-driven paper writing and improving the understanding of its risks within the research community.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://agent4science-utokyo.github.io/PaperRecon_HP/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.00842": {
+      "abstract": "Proactive agents that anticipate user needs and autonomously execute tasks hold great promise as digital assistants, yet the lack of realistic user simulation frameworks hinders their development. Existing approaches model apps as flat tool-calling APIs, failing to capture the stateful and sequential nature of user interaction in digital environments and making realistic user simulation infeasible. We introduce Proactive Agent Research Environment (Pare), a framework for building and evaluating proactive agents in digital environments. Pare models applications as finite state machines with stateful navigation and state-dependent action space for the user simulator, enabling active user simulation. Building on this foundation, we present Pare-Bench, a benchmark of 143 diverse tasks spanning communication, productivity, scheduling, and lifestyle apps, designed to test context observation, goal inference, intervention timing, and multi-app orchestration.",
+      "comments": "34 pages, 8 figures, 5 tables"
+    },
+    "2604.00590": {
+      "abstract": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely \\textbf{UniMixer}, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, \\textbf{UniMixing-Lite}, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of \\textbf{UniMixer}.",
+      "comments": ""
+    },
+    "2604.00528": {
+      "abstract": "3D Visual Grounding (3D-VG) aims to localize objects in 3D scenes via natural language descriptions. While recent advancements leveraging Vision-Language Models (VLMs) have explored zero-shot possibilities, they typically suffer from a static workflow relying on preprocessed 3D point clouds, essentially degrading grounding into proposal matching. To bypass this reliance, our core motivation is to decouple the task: leveraging 2D VLMs to resolve complex spatial semantics, while relying on deterministic multi-view geometry to instantiate the 3D structure. Driven by this insight, we propose \"Think, Act, Build (TAB)\", a dynamic agentic framework that reformulates 3D-VG tasks as a generative 2D-to-3D reconstruction paradigm operating directly on raw RGB-D streams. Specifically, guided by a specialized 3D-VG skill, our VLM agent dynamically invokes visual tools to track and reconstruct the target across 2D frames. Crucially, to overcome the multi-view coverage deficit caused by strict VLM semantic tracking, we introduce the Semantic-Anchored Geometric Expansion, a mechanism that first anchors the target in a reference video clip and then leverages multi-view geometry to propagate its spatial location across unobserved frames. This enables the agent to \"Build\" the target's 3D representation by aggregating these multi-view features via camera parameters, directly mapping 2D visual cues to 3D coordinates. Furthermore, to ensure rigorous assessment, we identify flaws such as reference ambiguity and category errors in existing benchmarks and manually refine the incorrect queries. Extensive experiments on ScanRefer and Nr3D demonstrate that our framework, relying entirely on open-source models, significantly outperforms previous zero-shot methods and even surpasses fully supervised baselines.",
+      "comments": ""
+    },
+    "2604.00986": {
+      "abstract": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~this https URL.",
+      "comments": "work in progress"
+    },
+    "2604.00626": {
+      "abstract": "Knowledge distillation has become a primary mechanism for transferring reasoning and domain expertise from frontier Large Language Models (LLMs) to smaller, deployable students. However, the dominant paradigm remains \\textit{off-policy}: students train on static teacher-generated data and never encounter their own errors during learning. This train--test mismatch, an instance of \\textit{exposure bias}, causes prediction errors to compound autoregressively at inference time. On-Policy Distillation (OPD) addresses this by letting the student generate its own trajectories and receive teacher feedback on these self-generated outputs, grounding distillation in the theory of interactive imitation learning. Despite rapid growth spanning divergence minimization, reward-guided learning, and self-play, the OPD literature remains fragmented with no unified treatment. This survey provides the first comprehensive overview of OPD for LLMs. We introduce a unified $f$-divergence framework over on-policy samples and organize the landscape along three orthogonal dimensions: \\emph{feedback signal} (logit-based, outcome-based, or self-play), \\emph{teacher access} (white-box, black-box, or teacher-free), and \\emph{loss granularity} (token-level, sequence-level, or hybrid). We systematically analyze representative methods, examine industrial deployments, and identify open problems including distillation scaling laws, uncertainty-aware feedback, and agent-level distillation.",
+      "comments": ""
+    },
+    "2604.01029": {
+      "abstract": "Multi-LLM revision pipelines, in which a second model reviews and improves a draft produced by a first, are widely assumed to derive their gains from genuine error correction. We question this assumption with a controlled decomposition experiment that uses four matched conditions to separate second-pass gains into three additive components: re-solving, scaffold, and content. We evaluate this design across two model pairs on three benchmarks spanning knowledge-intensive MCQ and competitive programming. Our results show that the gains of multi-LLM revision are not monolithic, but depend on task structure, draft quality, and the type of draft information. On MCQ tasks, where the answer space is constrained and drafts provide little structural guidance, most gains are consistent with stronger-model re-solving, and directly routing queries to the stronger model can be more effective than revising a weak draft. On code generation tasks, however, two-stage prompting remains useful because even semantically null drafts can provide substantial structural scaffolding, while weak draft content can be harmful. Finally, role-reversed experiments show that strong drafts clearly benefit weak reviewers. Ultimately, our findings demonstrate that the utility of multi-LLM revision is dynamically bottlenecked by task structure and draft quality, necessitating more targeted pipeline designs rather than blanket revision strategies.",
+      "comments": ""
+    },
+    "2604.00886": {
+      "abstract": "Document understanding and GUI interaction are among the highest-value applications of Vision-Language Models (VLMs), yet they impose exceptionally heavy computational burden: fine-grained text and small UI elements demand high-resolution inputs that produce tens of thousands of visual tokens. We observe that this cost is largely wasteful -- across document and GUI benchmarks, only 22--71\\% of image patches are pixel-unique, the rest being exact duplicates of another patch in the same image. We propose \\textbf{PixelPrune}, which exploits this pixel-level redundancy through predictive-coding-based compression, pruning redundant patches \\emph{before} the Vision Transformer (ViT) encoder. Because it operates in pixel space prior to any neural computation, PixelPrune accelerates both the ViT encoder and the downstream LLM, covering the full inference pipeline. The method is training-free, requires no learnable parameters, and supports pixel-lossless compression ($\\tau{=}0$) as well as controlled lossy compression ($\\tau{>}0$). Experiments across three model scales and document and GUI benchmarks show that PixelPrune maintains competitive task accuracy while delivering up to 4.2$\\times$ inference speedup and 1.9$\\times$ training acceleration. Code is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.00892": {
+      "abstract": "As LLM agents transition from short, static problem solving to executing complex, long-horizon tasks in dynamic environments, the ability to handle user interruptions, such as adding requirement or revising goals, during mid-task execution is becoming a core requirement for realistic deployment. However, existing benchmarks largely assume uninterrupted agent behavior or study interruptions only in short, unconstrained language tasks. In this paper, we present the first systematic study of interruptible agents in long-horizon, environmentally grounded web navigation tasks, where actions induce persistent state changes. We formalize three realistic interruption types, including addition, revision, and retraction, and introduce InterruptBench, a benchmark derived from WebArena-Lite that synthesizes high-quality interruption scenarios under strict semantic constraints. Using a unified interruption simulation framework, we evaluate six strong LLM backbones across single- and multi-turn interruption settings, analyzing both their effectiveness in adapting to updated intents and their efficiency in recovering from mid-task changes. Our results show that handling user interruptions effectively and efficiently during long-horizon agentic tasks remains challenging for powerful large-scale LLMs. Code and dataset are available atthis https URL.",
+      "comments": ""
+    },
+    "2603.29002": {
+      "abstract": "Modern large language models (LLMs) increasingly depends on efficient long-context processing and generation mechanisms, including sparse attention, retrieval-augmented generation (RAG), and compressed contextual memory, to support complex reasoning. We show that these optimizations can be unified into a four-step memory processing pipeline: Prepare Memory, Compute Relevancy, Retrieval, and Apply to Inference. Through systematic profiling, we identify a 22%-97% memory processing overhead in LLM inference and strong heterogeneity in its computational characteristics. Motivated by this insight, we argue that \\textbf{heterogeneous systems} are well-suited to accelerate memory processing and thus end-to-end inference. We demonstrate this approach on a GPU-FPGA system by offloading sparse, irregular, and memory-bounded operations to FPGAs while retaining compute-intensive operations on GPUs. Evaluated on an AMD MI210 GPU and an Alveo U55C FPGA, our system is $1.04\\sim2.2\\times$ faster and requires $1.11\\sim4.7\\times$ less energy across multiple LLM inference optimizations than the GPU baseline (similar results hold on NVIDIA A100). These results establish heterogeneous systems as a practical direction for efficient LLM memory processing and inform future heterogeneous hardware design.",
+      "comments": ""
+    },
+    "2604.01168": {
+      "abstract": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library:this https URL.",
+      "comments": "15 pages (10 main + 5 appendix), 3 figures, code at <a class=\"link-external link-https\" href=\"https://github.com/jackyoung27/s0-tuning\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.00913": {
+      "abstract": "2D assembly diagrams are often abstract and hard to follow, creating a need for intelligent assistants that can monitor progress, detect errors, and provide step-by-step guidance. In mixed reality settings, such systems must recognize completed and ongoing steps from the camera feed and align them with the diagram instructions. Vision Language Models (VLMs) show promise for this task, but face a depiction gap because assembly diagrams and video frames share few visual features. To systematically assess this gap, we construct IKEA-Bench, a benchmark of 1,623 questions across 6 task types on 29 IKEA furniture products, and evaluate 19 VLMs (2B-38B) under three alignment strategies. Our key findings: (1) assembly instruction understanding is recoverable via text, but text simultaneously degrades diagram-to-video alignment; (2) architecture family predicts alignment accuracy more strongly than parameter count; (3) video understanding remains a hard bottleneck unaffected by strategy. A three-level mechanistic analysis further reveals that diagrams and video occupy disjoint ViT subspaces, and that adding text shifts models from visual to text-driven reasoning. These results identify visual encoding as the primary target for improving cross-depiction robustness. Project page:this https URL",
+      "comments": ""
+    },
+    "2603.29247": {
+      "abstract": "LLM-based shopping agents increasingly rely on long purchase histories and multi-turn interactions for personalization, yet naively appending raw history to prompts is often ineffective due to noise, length, and relevance mismatch. We propose MemRerank, a preference memory framework that distills user purchase history into concise, query-independent signals for personalized product reranking. To study this problem, we build an end-to-end benchmark and evaluation framework centered on an LLM-based \\textbf{1-in-5} selection task, which measures both memory quality and downstream reranking utility. We further train the memory extractor with reinforcement learning (RL), using downstream reranking performance as supervision. Experiments with two LLM-based rerankers show that MemRerank consistently outperforms no-memory, raw-history, and off-the-shelf memory baselines, yielding up to \\textbf{+10.61} absolute points in 1-in-5 accuracy. These results suggest that explicit preference memory is a practical and effective building block for personalization in agentic e-commerce systems.",
+      "comments": "correct author name in metadata"
+    },
+    "2603.25406": {
+      "abstract": "Vision-Language-Action (VLA) models aim to control robots for manipulation from visual observations and natural-language instructions. However, existing hierarchical and autoregressive paradigms often introduce architectural overhead, suffer from temporal inconsistency and long-horizon error accumulation, and lack a mechanism to capture environment dynamics without extra modules. To this end, we present MMaDA-VLA, a fully native pre-trained large diffusion VLA model that unifies multi-modal understanding and generation in a single framework. Our key idea is a native discrete diffusion formulation that embeds language, images, and continuous robot controls into one discrete token space and trains a single backbone with masked token denoising to jointly generate a future goal observation and an action chunk in parallel. Iterative denoising enables global, order-free refinement, improving long-horizon consistency while grounding actions in predicted future visual outcomes without auxiliary world models. Experiments across simulation benchmarks and real-world tasks show state-of-the-art performance, achieving 98.0% average success on LIBERO and 4.78 average length on CALVIN.",
+      "comments": ""
+    },
+    "2603.25764": {
+      "abstract": "As LLM-based agents are deployed in production systems, understanding their behavioral consistency (whether they produce similar action sequences when given identical tasks) becomes critical for reliability. We study consistency in the context of SWE-bench, a challenging software engineering benchmark requiring complex, multi-step reasoning. Comparing Claude~4.5~Sonnet, GPT-5, and Llama-3.1-70B across 50 runs each (10 tasks $\\times$ 5 runs), we find that across models, higher consistency aligns with higher accuracy: Claude achieves the lowest variance (CV: 15.2\\%) and highest accuracy (58\\%), GPT-5 is intermediate (CV: 32.2\\%, accuracy: 32\\%), and Llama shows the highest variance (CV: 47.0\\%) with lowest accuracy (4\\%). However, within a model, consistency can amplify both correct and incorrect interpretations. Our analysis reveals a critical nuance: \\textbf{consistency amplifies outcomes rather than guaranteeing correctness}. 71\\% of Claude's failures stem from \"consistent wrong interpretation\": making the same incorrect assumption across all runs. Interestingly, GPT-5 achieves similar early strategic agreement as Claude (diverging at step 3.4 vs.\\ 3.2) but exhibits 2.1$\\times$ higher variance, suggesting that divergence timing alone does not determine consistency. These findings suggest that for production deployment, interpretation accuracy matters more than execution consistency, with implications for agent evaluation and training.",
+      "comments": "8 pages, 8 figures"
+    },
+    "2604.01194": {
+      "abstract": "Large language models (LLMs) and their applications, such as agents, are highly vulnerable to prompt injection attacks. State-of-the-art prompt injection detection methods have the following limitations: (1) their effectiveness degrades significantly as context length increases, and (2) they lack explicit rules that define what constitutes prompt injection, causing detection decisions to be implicit, opaque, and difficult to reason about. In this work, we propose AgentWatcher to address the above two limitations. To address the first limitation, AgentWatcher attributes the LLM's output (e.g., the action of an agent) to a small set of causally influential context segments. By focusing detection on a relatively short text, AgentWatcher can be scalable to long contexts. To address the second limitation, we define a set of rules specifying what does and does not constitute a prompt injection, and use a monitor LLM to reason over these rules based on the attributed text, making the detection decisions more explainable. We conduct a comprehensive evaluation on tool-use agent benchmarks and long-context understanding datasets. The experimental results demonstrate that AgentWatcher can effectively detect prompt injection and maintain utility without attacks. The code is available atthis https URL.",
+      "comments": "The code is available at <a class=\"link-external link-https\" href=\"https://github.com/wang-yanting/AgentWatcher\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.23582": {
+      "abstract": "Accurate sleep staging is essential for diagnosing OSA and hypopnea in stroke patients. Although PSG is reliable, it is costly, labor-intensive, and manually scored. While deep learning enables automated EEG-based sleep staging in healthy subjects, our analysis shows poor generalization to clinical populations with disrupted sleep. Using Grad-CAM interpretations, we systematically demonstrate this limitation. We introduce iSLEEPS, a newly clinically annotated ischemic stroke dataset (to be publicly released), and evaluate a SE-ResNet plus bidirectional LSTM model for single-channel EEG sleep staging. As expected, cross-domain performance between healthy and diseased subjects is poor. Attention visualizations, supported by clinical expert feedback, show the model focuses on physiologically uninformative EEG regions in patient data. Statistical and computational analyses further confirm significant sleep architecture differences between healthy and ischemic stroke cohorts, highlighting the need for subject-aware or disease-specific models with clinical validation before deployment. A summary of the paper and the code is available atthis https URL",
+      "comments": ""
+    }
+  }
+}

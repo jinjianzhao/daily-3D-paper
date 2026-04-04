@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在定位报告…</title>
+</head>
+<body>
+    <script>
+        function ymdLocal(d) {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return y + '-' + m + '-' + day;
+        }
+
+        async function headOk(url) {
+            try {
+                const r = await fetch(url, { method: 'HEAD' });
+                return r.ok;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        async function smartRedirect() {
+            const todayStr = ymdLocal(new Date());
+            const y = new Date();
+            y.setDate(y.getDate() - 1);
+            const yesterdayStr = ymdLocal(y);
+
+            const candidates = [
+                { label: '今天', url: './date/' + todayStr + '/index.html' },
+                { label: '昨天', url: './date/' + yesterdayStr + '/index.html' },
+            ];
+
+            for (const c of candidates) {
+                if (await headOk(c.url)) {
+                    window.location.replace(c.url);
+                    return;
+                }
+            }
+            window.location.replace('./');
+        }
+
+        smartRedirect();
+    </script>
+    <p style="font-family: system-ui, sans-serif; color: #64748b; padding: 1rem;">正在跳转…</p>
+</body>
+</html>
