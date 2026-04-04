@@ -1,0 +1,169 @@
+{
+  "date": "2026-03-30",
+  "focus_ids": [
+    "2603.22782"
+  ],
+  "base_info": {
+    "2603.25746": {
+      "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
+      "hf_link": "https://huggingface.co/papers/2603.25746"
+    },
+    "2603.25716": {
+      "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+      "hf_link": "https://huggingface.co/papers/2603.25716"
+    },
+    "2603.25730": {
+      "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
+      "hf_link": "https://huggingface.co/papers/2603.25730"
+    },
+    "2603.25158": {
+      "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
+      "hf_link": "https://huggingface.co/papers/2603.25158"
+    },
+    "2603.25750": {
+      "title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
+      "hf_link": "https://huggingface.co/papers/2603.25750"
+    },
+    "2603.24649": {
+      "title": "MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies",
+      "hf_link": "https://huggingface.co/papers/2603.24649"
+    },
+    "2603.25804": {
+      "title": "RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation",
+      "hf_link": "https://huggingface.co/papers/2603.25804"
+    },
+    "2603.25723": {
+      "title": "Natural-Language Agent Harnesses",
+      "hf_link": "https://huggingface.co/papers/2603.25723"
+    },
+    "2603.22782": {
+      "title": "Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models",
+      "hf_link": "https://huggingface.co/papers/2603.22782"
+    },
+    "2603.23607": {
+      "title": "LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset",
+      "hf_link": "https://huggingface.co/papers/2603.23607"
+    },
+    "2603.24477": {
+      "title": "Composer 2 Technical Report",
+      "hf_link": "https://huggingface.co/papers/2603.24477"
+    },
+    "2603.23906": {
+      "title": "GenMask: Adapting DiT for Segmentation via Direct Mask",
+      "hf_link": "https://huggingface.co/papers/2603.23906"
+    },
+    "2603.20466": {
+      "title": "Diffutron: A Masked Diffusion Language Model for Turkish Language",
+      "hf_link": "https://huggingface.co/papers/2603.20466"
+    },
+    "2603.26664": {
+      "title": "Learning to Commit: Generating Organic Pull Requests via Online Repository Memory",
+      "hf_link": "https://huggingface.co/papers/2603.26664"
+    },
+    "2603.22582": {
+      "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
+      "hf_link": "https://huggingface.co/papers/2603.22582"
+    }
+  },
+  "summaries": {
+    "2603.25746": "计算机视觉；视频生成\n现有双向架构在长叙事多镜头视频生成中存在交互性差和延迟高的问题。\n作者提出了ShotStream，一种新型因果多镜头架构，通过双缓存记忆和两阶段蒸馏实现交互式叙事和实时帧生成。",
+    "2603.25716": "计算机视觉；生成模型  \n现有视频世界模型在处理动态主体离屏重入时存在主体冻结、扭曲或消失的问题。  \n作者提出混合记忆范式，构建HM-World数据集，并设计HyDRA架构来保持动态主体的身份与运动连续性。",
+    "2603.25730": "计算机科学；多媒体技术  \n作者针对自回归视频扩散模型在生成长视频时遇到的KV缓存线性增长等问题，提出了一种新的框架。  \n该框架通过三分区KV缓存策略和层次化上下文压缩，实现了高效、高质量的长视频生成。",
+    "2603.25158": "机器学习; 智能体  \n当前LLM智能体需要手动编写领域技能，存在可扩展性瓶颈，而自动方法常生成脆弱或碎片化的技能。  \n本文提出Trace2Skill框架，通过并行分析多样化执行轨迹，归纳整合为统一、可迁移的声明式技能，显著提升了LLM智能体在复杂任务中的表现和泛化能力。",
+    "2603.25750": "自然语言处理；语音识别  \n背景/任务是应对AI范式从文本LLM转向语音SLM，解决全双工实时人机交互所需高质量多说话人对话数据稀缺的挑战。  \n他们开发了一个针对全双工模型的、鲁棒且可扩展的开源数据处理流水线。",
+    "2603.24649": "计算机视觉；医学影像分析  \n当前基于预选2D图像的医学视觉语言模型评估方法脱离临床实际，无法模拟真实诊断中需动态导航多序列影像的挑战。  \n为此，研究者开发了支持动态交互的运行时系统MEDOPENCLAW和全研究影像基准MEDFLOWBENCH，以评估并揭示现有模型在工具使用中的空间定位缺陷。",
+    "2603.25804": "计算机科学; 自然语言处理  \nVision-Language Models在代码生成方面表现出色，但目前尚缺乏对其依据真实数据生成复杂可视化图表能力的系统评估。  \n该研究为此创建了RealChart2Code基准并评估了14个领先模型，发现它们在处理复杂图表和真实数据时存在显著性能下降和局限性。",
+    "2603.25723": "人工智能;自然语言处理  \n背景/任务是解决智能体框架设计嵌入代码和运行时惯例中导致的移植、比较和研究困难的问题。  \n研究提出了用可编辑自然语言表达框架行为的自然语言智能体框架和通过明确合约、持久化构件等执行该框架的智能运行时，并在编码和计算机使用基准上进行了实验评估。",
+    "2603.22782": "计算机视觉；三维重建\n现有单视图三维生成方法因视角局限和训练数据不足，导致生成不可控且几何不合理。\n提出Know3D框架，通过注入多模态大语言模型知识，实现了对三维资产背面几何的语言可控生成。",
+    "2603.23607": "计算机视觉;自动驾驶  \n为应对自动驾驶在罕见场景中泛化能力不足的问题，该研究构建了一个专注于长尾驾驶事件的新数据集。  \n该数据集提供了多视角视频、轨迹、高级指令及多语言推理轨迹，旨在支持端到端驾驶模型的上下文学习与少样本泛化，并建立了一个用于评估多模态模型指令跟随与语义一致性的新基准。",
+    "2603.24477": "自然语言处理；代码生成\n背景/任务：开发一个专注于智能体软件工程的模型，旨在处理长程规划和复杂编码任务。\n做了什么：通过两阶段训练（持续预训练和大规模强化学习）提升模型能力，并在真实软件工程问题基准测试中取得显著性能提升。",
+    "2603.23906": "计算机视觉；图像分割  \n当前图像分割任务依赖预训练生成模型提取特征，存在表征错位和流程复杂的问题。  \n该研究提出GenMask，通过调整时间步采样策略，直接在生成框架下统一训练图像生成与分割，无需额外特征提取流程。",
+    "2603.20466": "自然语言处理；生成模型  \n背景/任务是探索掩码扩散语言模型在形态丰富的土耳其语上的应用，以提供非自回归的文本生成方案。  \n该研究提出了Diffutron模型，通过资源高效的LoRA持续预训练和多阶段指令调优策略，使模型在多项基准测试中取得了与更大规模模型竞争的生成性能。",
+    "2603.26664": "自然语言处理;智能体  \nLLM代码代理在基准测试中表现出色，但在真实项目中常因生成的代码不符合项目特定惯例而被拒绝。  \n该研究提出Learning to Commit框架，通过在线仓库记忆学习历史提交模式，使代理生成更符合项目演化规律的代码。",
+    "2603.22582": "自然语言处理；可信人工智能  \n背景/任务：在安全关键部署中，评估思维链推理作为大语言模型透明度机制的有效性，尤其关注其忠实性（即模型能否准确表达影响输出的真实因素）。  \n做了什么：研究了12个开源推理模型在6类提示影响下的忠实性，发现忠实性受架构和训练方法影响显著，且模型内部认知与输出表达存在系统性差距。"
+  },
+  "deep_analysis": {
+    "2603.22782": "这篇论文名为 **《Know3D: 通过视觉语言模型的知识提示进行 3D 生成》**。我来用简单的语言为你解释它的核心内容。\n\n---\n\n### （1）任务是什么？\n\n*   **任务输入**：一张**单视角的图片**（比如一个物体的正面照片）。\n*   **任务输出**：一个**完整的、高质量的 3D 模型**。\n*   **任务功能**：**单图生成 3D**。这是一个非常热门且实用的方向，可以快速从一张图片创建出可用于游戏、电影、虚拟现实等领域的 3D 资产。\n\n---\n\n### （2）想解决什么问题？\n\n单图生成 3D 有一个天生的巨大难题：**“看不见”的部分怎么生成？**\n*   比如给你一个马克杯的正面照，你看不见它的背面是什么样。模型只能“猜”（学术上叫“幻觉”）。\n*   现有的模型猜得很**随机**，而且缺乏**常识**。这会导致两个问题：\n    1.  **不符合用户意图**：用户可能希望背面有个把手，但模型随机生成了别的。\n    2.  **结构不合理**：模型可能生成一个“反物理”的奇怪形状，比如把手长在了不可能的位置，如论文图1所示。\n\n**根本原因**：训练3D模型的数据（3D数据集）远少于训练图像、文本模型的数据。所以3D模型本身学到的“世界知识”和“常识”很有限，猜背面时容易瞎猜。\n\n---\n\n### （3）核心思路是什么？\n\n**核心思想**：既然3D模型自己知识不够，那就请一个“知识渊博的助手”来帮忙！这个助手就是**视觉语言模型（VLM，比如GPT-4V）**。\n\nVLM 看过海量的图文数据，拥有丰富的**语义理解**和**常识推理**能力。论文的目标就是把 VLM 的“知识”注入到 3D 生成过程中，让背面生成变得**可控**且**合理**。\n\n**具体怎么做的？（两步走）**\n\n1.  **语义感知的前后视图生成**：\n    *   目标：先生成一张可控的、符合语义的**背面图片**。\n    *   方法：训练一个**扩散模型**。这个模型的特别之处在于，它不仅能看图，还能接受 **VLM 提取的“知识特征”** 作为额外输入。\n    *   过程：给模型看正面图和一个**文本指令**（比如“背面有个把手”），VLM 会理解这个指令并提取相关知识，然后扩散模型利用这些知识特征，生成一张符合描述的背面图。这样，背面生成就从“随机猜”变成了“按知识生成”。\n\n2.  **用知识提示进行 3D 生成**：\n    *   目标：利用生成的前后两张图，合成完整的 3D 模型。\n    *   方法：采用一个先进的 **3D 生成主干网络**（如 Hunyuan3D）。关键一步是，将第一步中 VLM 提供的“知识特征”也注入到这个 3D 生成网络中。\n    *   作用：这相当于在构建 3D 几何时，持续用 VLM 的知识进行“提示”和“纠正”，确保生成的 3D 形状不仅在多视角上一致，而且在整体结构上符合常识。\n\n**简单比喻**：\n*   **传统方法**：像一个只会临摹的3D雕塑家，看到正面就照着做正面，看不到的背面就随便捏一个。\n*   **Know3D**：这个雕塑家身边配了一个“博物学家”（VLM）。当雕塑家要做背面时，博物学家会根据正面图和你的描述（“这是个杯子，背面应该也有个把手”），告诉他背后的常识和合理结构。雕塑家再结合这个知识，雕刻出合理且符合你要求的背面。\n\n---\n\n### （4）结果怎么样？\n\n论文通过大量实验证明：\n\n1.  **可控性更强**：通过改变文本指令（如“加个蝴蝶结”、“加个口袋”），可以精确控制生成物体背面的**语义属性**（颜色、纹理、部件）。\n2.  **质量更高**：与之前的单图生成3D方法相比，Know3D 生成的物体**几何结构更合理、更完整**，减少了奇怪或不可能的形状。\n3.  **有效性验证**：论文做了详尽的“消融实验”，证明了使用 VLM 知识特征的有效性，以及在不同生成阶段注入这些特征的最佳方式。\n\n**总结**：\n这篇论文提出了一个巧妙的框架，**将视觉语言模型的“知识”与3D生成模型的“能力”相结合**，成功解决了单图生成3D中“背面不可控、不合理”的核心痛点。它指明了一个很有前途的方向：通过借助大模型的知识先验，来弥补3D数据稀缺的短板，从而实现更智能、更用户友好的3D内容生成。"
+  },
+  "images_meta": {
+    "2603.22782": [
+      {
+        "path": "https://arxiv.org/html/2603.22782v1/figure/teaser.jpg",
+        "caption": "Figure 1:We propose Know3D, a knowledge-guided 3D generation framework that enables semantic control over the back-view of target objects. As shown in the coffee-cup scene, by simply varying the text, Know3D can synthesize diverse and structurally consistent back-view components. The bottom-row results demonstrate the potential of our method to improve the structural plausibility of unseen parts in 3D generation.",
+        "caption_zh": "图1：我们提出Know3D——一种知识引导的三维生成框架，能够对目标物体的背面进行语义控制。如咖啡杯场景所示，仅通过改变文本，Know3D即能合成多样且结构一致的背面组件。底行结果表明，我们的方法有潜力提升三维生成中不可见部分的结构合理性。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.22782v1/figure/qwen_image.png",
+        "caption": "Figure 2:Text annotation pipeline.Given paired front and back views of a 3D asset, a VLM generates initial part-level descriptions.",
+        "caption_zh": "图2：文本标注流程。给定三维资产配对的正面与背面视图，视觉语言模型（VLM）生成初始的部件级描述。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.22782v1/figure/pipeline.png",
+        "caption": "Figure 3:Overview. Given an input image and a text prompt, Know3D leverages Qwen-Image-Edit-2511[wu2025qwen], which integrates Qwen2.5-VL with a Diffusion Transformer (DiT). Qwen2.5-VL[Qwen2.5-VL]encodes the multimodal inputs to guide a latent denoising process, enabling semantically aligned backside generation. The latent hidden states from intermediate DiT layers, which embed rich semantic and structural priors, are subsequently injected as conditioning signals into the 3D generation model to guide complete shape synthesis.",
+        "caption_zh": "图3：方法总览。给定输入图像和文本提示，Know3D利用Qwen-Image-Edit-2511[wu2025qwen]——该模型将Qwen2.5-VL与扩散Transformer（DiT）相结合。Qwen2.5-VL[Qwen2.5-VL]对多模态输入进行编码，以引导潜在去噪过程，从而实现语义对齐的背面生成。来自中间DiT层的潜在隐藏状态蕴含丰富的语义与结构先验，随后被注入三维生成模型作为条件信号，以指导完整形状的合成。"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2603.25746": {
+      "abstract": "Multi-shot video generation is crucial for long narrative storytelling, yet current bidirectional architectures suffer from limited interactivity and high latency. We propose ShotStream, a novel causal multi-shot architecture that enables interactive storytelling and efficient on-the-fly frame generation. By reformulating the task as next-shot generation conditioned on historical context, ShotStream allows users to dynamically instruct ongoing narratives via streaming prompts. We achieve this by first fine-tuning a text-to-video model into a bidirectional next-shot generator, which is then distilled into a causal student via Distribution Matching Distillation. To overcome the challenges of inter-shot consistency and error accumulation inherent in autoregressive generation, we introduce two key innovations. First, a dual-cache memory mechanism preserves visual coherence: a global context cache retains conditional frames for inter-shot consistency, while a local context cache holds generated frames within the current shot for intra-shot consistency. And a RoPE discontinuity indicator is employed to explicitly distinguish the two caches to eliminate ambiguity. Second, to mitigate error accumulation, we propose a two-stage distillation strategy. This begins with intra-shot self-forcing conditioned on ground-truth historical shots and progressively extends to inter-shot self-forcing using self-generated histories, effectively bridging the train-test gap. Extensive experiments demonstrate that ShotStream generates coherent multi-shot videos with sub-second latency, achieving 16 FPS on a single GPU. It matches or exceeds the quality of slower bidirectional models, paving the way for real-time interactive storytelling. Training and inference code, as well as the models, are available on our",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://luo0207.github.io/ShotStream/\" rel=\"external noopener nofollow\">this https URL</a> Code: <a class=\"link-external link-https\" href=\"https://github.com/KlingAIResearch/ShotStream\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.25716": {
+      "abstract": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality. Code is publicly available atthis https URL.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://kj-chen666.github.io/Hybrid-Memory-in-Video-World-Models/\" rel=\"external noopener nofollow\">this https URL</a> Code: <a class=\"link-external link-https\" href=\"https://github.com/H-EmbodVis/HyDRA\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.25730": {
+      "abstract": "Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlenecked by intractable linear KV-cache growth, temporal repetition, and compounding errors during long-video generation. To address these challenges, we present PackForcing, a unified framework that efficiently manages the generation history through a novel three-partition KV-cache strategy. Specifically, we categorize the historical context into three distinct types: (1) Sink tokens, which preserve early anchor frames at full resolution to maintain global semantics; (2) Mid tokens, which achieve a massive spatiotemporal compression (32x token reduction) via a dual-branch network fusing progressive 3D convolutions with low-resolution VAE re-encoding; and (3) Recent tokens, kept at full resolution to ensure local temporal coherence. To strictly bound the memory footprint without sacrificing quality, we introduce a dynamic top-$k$ context selection mechanism for the mid tokens, coupled with a continuous Temporal RoPE Adjustment that seamlessly re-aligns position gaps caused by dropped tokens with negligible overhead. Empowered by this principled hierarchical context compression, PackForcing can generate coherent 2-minute, 832x480 videos at 16 FPS on a single H200 GPU. It achieves a bounded KV cache of just 4 GB and enables a remarkable 24x temporal extrapolation (5s to 120s), operating effectively either zero-shot or trained on merely 5-second clips. Extensive results on VBench demonstrate state-of-the-art temporal consistency (26.07) and dynamic degree (56.25), proving that short-video supervision is sufficient for high-quality, long-video synthesis.this https URL",
+      "comments": ""
+    },
+    "2603.25158": {
+      "abstract": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
+      "comments": "Work in Progress"
+    },
+    "2603.25750": {
+      "abstract": "As the paradigm of AI shifts from text-based LLMs to Speech Language Models (SLMs), there is a growing demand for full-duplex systems capable of real-time, natural human-computer interaction. However, the development of such models is constrained by the scarcity of high-quality, multi-speaker conversational data, as existing large-scale resources are predominantly single-speaker or limited in volume. Addressing the complex dynamics of natural dialogue, such as overlapping and back-channeling remains a challenge, with standard processing pipelines suffering from diarization errors and ASR hallucinations. To bridge this gap, we present a robust and scalable open-source data processing pipeline designed for full-duplex model.",
+      "comments": "34 pages, 7 figures, 11 tables"
+    },
+    "2603.24649": {
+      "abstract": "Currently, evaluating vision-language models (VLMs) in medical imaging tasks oversimplifies clinical reality by relying on pre-selected 2D images that demand significant manual labor to curate. This setup misses the core challenge of realworld diagnostics: a true clinical agent must actively navigate full 3D volumes across multiple sequences or modalities to gather evidence and ultimately support a final decision. To address this, we propose MEDOPENCLAW, an auditable runtime designed to let VLMs operate dynamically within standard medical tools or viewers (e.g., 3D Slicer). On top of this runtime, we introduce MEDFLOWBENCH, a full-study medical imaging benchmark covering multi-sequence brain MRI and lung CT/PET. It systematically evaluates medical agentic capabilities across viewer-only, tool-use, and open-method tracks. Initial results reveal a critical insight: while state-of-the-art LLMs/VLMs (e.g., Gemini 3.1 Pro and GPT-5.4) can successfully navigate the viewer to solve basic study-level tasks, their performance paradoxically degrades when given access to professional support tools due to a lack of precise spatial grounding. By bridging the gap between static-image perception and interactive clinical workflows, MEDOPENCLAW and MEDFLOWBENCH establish a reproducible foundation for developing auditable, full-study medical imaging agents.",
+      "comments": "11 pages, 2 figures"
+    },
+    "2603.25804": {
+      "abstract": "Vision-Language Models (VLMs) have demonstrated impressive capabilities in code generation across various domains. However, their ability to replicate complex, multi-panel visualizations from real-world data remains largely unassessed. To address this gap, we introduce \\textbf{\\texttt{RealChart2Code}}, a new large-scale benchmark with over 2,800 instances grounded in authentic datasets and featuring tasks with clear analytical intent. Crucially, it is the first benchmark to systematically evaluate chart generation from large-scale raw data and assess iterative code refinement in a multi-turn conversational setting. Our comprehensive evaluation of 14 leading VLMs on \\texttt{RealChart2Code} reveals significant performance degradation compared to simpler benchmarks, highlighting their struggles with complex plot structures and authentic data. Our analysis uncovers a substantial performance gap between proprietary and open-weight models and confirms that even state-of-the-art VLMs often fail to accurately replicate intricate, multi-panel charts. These findings provide valuable insights into the current limitations of VLMs and guide future research directions. We release the benchmark and code at \\url{this https URL}.",
+      "comments": ""
+    },
+    "2603.25723": {
+      "abstract": "Agent performance increasingly depends on \\emph{harness engineering}, yet harness design is usually buried in controller code and runtime-specific conventions, making it hard to transfer, compare, and study as a scientific object. We ask whether the high-level control logic of an agent harness can instead be externalized as a portable executable artifact. We introduce \\textbf{Natural-Language Agent Harnesses} (NLAHs), which express harness behavior in editable natural language, and \\textbf{Intelligent Harness Runtime} (IHR), a shared runtime that executes these harnesses through explicit contracts, durable artifacts, and lightweight adapters. Across coding and computer-use benchmarks, we conduct controlled evaluations of operational viability, module ablation, and code-to-text harness migration.",
+      "comments": "under review"
+    },
+    "2603.22782": {
+      "abstract": "Recent advances in 3D generation have improved the fidelity and geometric details of synthesized 3D assets. However, due to the inherent ambiguity of single-view observations and the lack of robust global structural priors caused by limited 3D training data, the unseen regions generated by existing models are often stochastic and difficult to control, which may sometimes fail to align with user intentions or produce implausible geometries. In this paper, we propose Know3D, a novel framework that incorporates rich knowledge from multimodal large language models into 3D generative processes via latent hidden-state injection, enabling language-controllable generation of the back-view for 3D assets. We utilize a VLM-diffusion-based model, where the VLM is responsible for semantic understanding and guidance. The diffusion model acts as a bridge that transfers semantic knowledge from the VLM to the 3D generation model. In this way, we successfully bridge the gap between abstract textual instructions and the geometric reconstruction of unobserved regions, transforming the traditionally stochastic back-view hallucination into a semantically controllable process, demonstrating a promising direction for future 3D generation models.",
+      "comments": "page: <a class=\"link-external link-https\" href=\"https://xishuxishu.github.io/Know3D.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.23607": {
+      "abstract": "In real-world domains such as self-driving, generalization to rare scenarios remains a fundamental challenge. To address this, we introduce a new dataset designed for end-to-end driving that focuses on long-tail driving events. We provide multi-view video data, trajectories, high-level instructions, and detailed reasoning traces, facilitating in-context learning and few-shot generalization. The resulting benchmark for multimodal models, such as VLMs and VLAs, goes beyond safety and comfort metrics by evaluating instruction following and semantic coherence between model outputs. The multilingual reasoning traces in English, Spanish, and Chinese are from domain experts with diverse cultural backgrounds. Thus, our dataset is a unique resource for studying how different forms of reasoning affect driving competence. Our dataset is available at:this https URL",
+      "comments": "21 pages"
+    },
+    "2603.24477": {
+      "abstract": "Composer 2 is a specialized model designed for agentic software engineering. The model demonstrates strong long-term planning and coding intelligence while maintaining the ability to efficiently solve problems for interactive use. The model is trained in two phases: first, continued pretraining to improve the model's knowledge and latent coding ability, followed by large-scale reinforcement learning to improve end-to-end coding performance through stronger reasoning, accurate multi-step execution, and coherence on long-horizon realistic coding problems. We develop infrastructure to support training in the same Cursor harness that is used by the deployed model, with equivalent tools and structure, and use environments that match real problems closely. To measure the ability of the model on increasingly difficult tasks, we introduce a benchmark derived from real software engineering problems in large codebases including our own. Composer 2 is a frontier-level coding model and demonstrates a process for training strong domain-specialized models. On our CursorBench evaluations the model achieves a major improvement in accuracy compared to previous Composer models (61.3). On public benchmarks the model scores 61.7 on Terminal-Bench and 73.7 on SWE-bench Multilingual in our harness, comparable to state-of-the-art systems.",
+      "comments": ""
+    },
+    "2603.23906": {
+      "abstract": "Recent approaches for segmentation have leveraged pretrained generative models as feature extractors, treating segmentation as a downstream adaptation task via indirect feature retrieval. This implicit use suffers from a fundamental misalignment in representation. It also depends heavily on indirect feature extraction pipelines, which complicate the workflow and limit adaptation. In this paper, we argue that instead of indirect adaptation, segmentation tasks should be trained directly in a generative manner. We identify a key obstacle to this unified formulation: VAE latents of binary masks are sharply distributed, noise robust, and linearly separable, distinct from natural image latents. To bridge this gap, we introduce timesteps sampling strategy for binary masks that emphasizes extreme noise levels for segmentation and moderate noise for image generation, enabling harmonious joint training. We present GenMask, a DiT trains to generate black-and-white segmentation masks as well as colorful images in RGB space under the original generative objective. GenMask preserves the original DiT architecture while removing the need of feature extraction pipelines tailored for segmentation tasks. Empirically, GenMask attains state-of-the-art performance on referring and reasoning segmentation benchmarks and ablations quantify the contribution of each component.",
+      "comments": "Accepted by cvpr 2026"
+    },
+    "2603.20466": {
+      "abstract": "Masked Diffusion Language Models (MDLMs) have emerged as a compelling non-autoregressive alternative to standard large language models; however, their application to morphologically rich languages remains limited. In this paper, we introduce $\\textit{Diffutron}$, a masked diffusion language model specifically designed for Turkish. Our approach leverages a resource-efficient training pipeline, starting with LoRA-based continual pre-training of a multilingual encoder on a large-scale corpus. To enable generative capabilities, we employ a progressive instruction-tuning strategy, sequentially adapting the model on general and task-specific instruction sets. Experimental results across comprehensive benchmarks demonstrate that, despite its compact size, our model achieves competitive performance compared to existing multi-billion-parameter baselines. These findings validate the effectiveness of masked diffusion modeling combined with multi-stage tuning for non-autoregressive text generation in Turkish.",
+      "comments": ""
+    },
+    "2603.26664": {
+      "abstract": "Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicates functionality already provided by internal APIs, and violates implicit architectural constraints accumulated over years of development. Simply exposing an agent to the latest repository snapshot is not enough: the snapshot reveals the final state of the codebase, but not the repository-specific change patterns by which that state was reached. We introduce Learning to Commit, a framework that closes this gap through Online Repository Memory. Given a repository with a strict chronological split, the agent performs supervised contrastive reflection on earlier commits: it blindly attempts to resolve each historical issue, compares its prediction against the oracle diff, and distils the gap into a continuously growing set of skills-reusable patterns capturing coding style, internal API usage, and architectural invariants. When a new PR description arrives, the agent conditions its generation on these accumulated skills, producing changes grounded in the project's own evolution rather than generic pretraining priors. Evaluation is conducted on genuinely future, merged pull requests that could not have been seen during the skill-building phase, and spans multiple dimensions including functional correctness, code-style consistency, internal API reuse rate, and modified-region plausibility. Experiments on an expert-maintained repository with rich commit history show that Online Repository Memory effectively improves organicity scores on held-out future tasks.",
+      "comments": "Preprint. Work in progress"
+    },
+    "2603.22582": {
+      "abstract": "Chain-of-thought (CoT) reasoning has been proposed as a transparency mechanism for large language models in safety-critical deployments, yet its effectiveness depends on faithfulness (whether models accurately verbalize the factors that actually influence their outputs), a property that prior evaluations have examined in only two proprietary models, finding acknowledgment rates as low as 25% for Claude 3.7 Sonnet and 39% for DeepSeek-R1. To extend this evaluation across the open-weight ecosystem, this study tests 12 open-weight reasoning models spanning 9 architectural families (7B-685B parameters) on 498 multiple-choice questions from MMLU and GPQA Diamond, injecting six categories of reasoning hints (sycophancy, consistency, visual pattern, metadata, grader hacking, and unethical information) and measuring the rate at which models acknowledge hint influence in their CoT when hints successfully alter answers. Across 41,832 inference runs, overall faithfulness rates range from 39.7% (Seed-1.6-Flash) to 89.9% (DeepSeek-V3.2-Speciale) across model families, with consistency hints (35.5%) and sycophancy hints (53.9%) exhibiting the lowest acknowledgment rates. Training methodology and model family predict faithfulness more strongly than parameter count, and keyword-based analysis reveals a striking gap between thinking-token acknowledgment (approximately 87.5%) and answer-text acknowledgment (approximately 28.6%), suggesting that models internally recognize hint influence but systematically suppress this acknowledgment in their outputs. These findings carry direct implications for the viability of CoT monitoring as a safety mechanism and suggest that faithfulness is not a fixed property of reasoning models but varies systematically with architecture, training method, and the nature of the influencing cue.",
+      "comments": "27 pages, 7 figures, 12 tables"
+    }
+  }
+}

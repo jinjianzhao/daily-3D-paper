@@ -1,0 +1,270 @@
+{
+  "date": "2026-03-26",
+  "focus_ids": [
+    "2603.21618",
+    "2603.24036",
+    "2603.20176"
+  ],
+  "base_info": {
+    "2603.24440": {
+      "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents",
+      "hf_link": "https://huggingface.co/papers/2603.24440"
+    },
+    "2603.24472": {
+      "title": "Why Does Self-Distillation (Sometimes) Degrade the Reasoning Capability of LLMs?",
+      "hf_link": "https://huggingface.co/papers/2603.24472"
+    },
+    "2603.24533": {
+      "title": "UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience",
+      "hf_link": "https://huggingface.co/papers/2603.24533"
+    },
+    "2603.22918": {
+      "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
+      "hf_link": "https://huggingface.co/papers/2603.22918"
+    },
+    "2603.22341": {
+      "title": "T-MAP: Red-Teaming LLM Agents with Trajectory-aware Evolutionary Search",
+      "hf_link": "https://huggingface.co/papers/2603.22341"
+    },
+    "2603.21289": {
+      "title": "When Models Judge Themselves: Unsupervised Self-Evolution for Multimodal Reasoning",
+      "hf_link": "https://huggingface.co/papers/2603.21289"
+    },
+    "2603.23994": {
+      "title": "Understanding the Challenges in Iterative Generative Optimization with LLMs",
+      "hf_link": "https://huggingface.co/papers/2603.23994"
+    },
+    "2603.24329": {
+      "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+      "hf_link": "https://huggingface.co/papers/2603.24329"
+    },
+    "2603.14375": {
+      "title": "The Pulse of Motion: Measuring Physical Frame Rate from Visual Dynamics",
+      "hf_link": "https://huggingface.co/papers/2603.14375"
+    },
+    "2603.21618": {
+      "title": "4DGS360: 360° Gaussian Reconstruction of Dynamic Objects from a Single Video",
+      "hf_link": "https://huggingface.co/papers/2603.21618"
+    },
+    "2603.24036": {
+      "title": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
+      "hf_link": "https://huggingface.co/papers/2603.24036"
+    },
+    "2603.22120": {
+      "title": "StreamingClaw Technical Report",
+      "hf_link": "https://huggingface.co/papers/2603.22120"
+    },
+    "2603.24157": {
+      "title": "CarePilot: A Multi-Agent Framework for Long-Horizon Computer Task Automation in Healthcare",
+      "hf_link": "https://huggingface.co/papers/2603.24157"
+    },
+    "2603.23638": {
+      "title": "Can LLM Agents Be CFOs? A Benchmark for Resource Allocation in Dynamic Enterprise Environments",
+      "hf_link": "https://huggingface.co/papers/2603.23638"
+    },
+    "2603.20176": {
+      "title": "LagerNVS: Latent Geometry for Fully Neural Real-time Novel View Synthesis",
+      "hf_link": "https://huggingface.co/papers/2603.20176"
+    },
+    "2603.18742": {
+      "title": "6Bit-Diffusion: Inference-Time Mixed-Precision Quantization for Video Diffusion Models",
+      "hf_link": "https://huggingface.co/papers/2603.18742"
+    },
+    "2603.23522": {
+      "title": "Qworld: Question-Specific Evaluation Criteria for LLMs",
+      "hf_link": "https://huggingface.co/papers/2603.23522"
+    },
+    "2603.24458": {
+      "title": "OmniWeaving: Towards Unified Video Generation with Free-form Composition and Reasoning",
+      "hf_link": "https://huggingface.co/papers/2603.24458"
+    },
+    "2603.23404": {
+      "title": "Unleashing Spatial Reasoning in Multimodal Large Language Models via Textual Representation Guided Reasoning",
+      "hf_link": "https://huggingface.co/papers/2603.23404"
+    },
+    "2603.24506": {
+      "title": "Toward Physically Consistent Driving Video World Models under Challenging Trajectories",
+      "hf_link": "https://huggingface.co/papers/2603.24506"
+    },
+    "2603.23539": {
+      "title": "PLDR-LLMs Reason At Self-Organized Criticality",
+      "hf_link": "https://huggingface.co/papers/2603.23539"
+    },
+    "2603.23478": {
+      "title": "UniFunc3D: Unified Active Spatial-Temporal Grounding for 3D Functionality Segmentation",
+      "hf_link": "https://huggingface.co/papers/2603.23478"
+    }
+  },
+  "summaries": {
+    "2603.24440": "人工智能;智能体与多智能体系统  \n计算机使用智能体（CUAs）的发展受限于高质量连续演示视频的稀缺。  \n研究者构建了CUA-Suite数据集，包含大量连续屏幕录像与密集标注，以支持专业桌面智能体的训练与评估。",
+    "2603.24472": "机器学习;自然语言处理  \n论文背景是研究自蒸馏在大型语言模型后训练中对数学推理任务的影响。  \n研究发现自蒸馏会抑制模型表达不确定性的行为，导致在未知问题上性能显著下降。",
+    "2603.24533": "人工智能应用；自动化软件测试  \n背景/任务是解决自主移动GUI代理在长时程任务中学习效率低和奖励稀疏下的信用分配模糊问题。  \n研究提出了一种名为UI-Voyager的两阶段自进化移动GUI代理，通过拒绝微调和组相对自蒸馏技术，实现了数据与模型的自主协同进化和从成功轨迹中构建密集监督以修正失败轨迹。",
+    "2603.22918": "计算机视觉;多模态学习  \n背景/任务是视频理解因视频序列长、依赖复杂、冗余帧多而存在效率低下问题。  \n提出EVA框架，通过总结-计划-行动-反思的迭代推理实现查询驱动的高效视频理解，并设计三阶段训练方法提升性能。",
+    "2603.22341": "人工智能安全；对抗性攻击\n现有红队测试主要关注文本输出，难以发现智能体在多步工具执行中的漏洞。\n提出轨迹感知演化搜索方法T-MAP，在MCP环境中自动生成能通过工具交互实现有害目标的攻击。",
+    "2603.21289": "机器学习；多模态学习  \n背景/任务：提升多模态大型语言模型的推理能力，避免依赖高成本的人工标注数据或教师模型蒸馏。  \n所做工作：提出一种无监督自演化训练框架，通过采样多推理轨迹、利用自一致性信号和分组相对策略优化（GRPO），在无标注数据上持续提升模型推理性能。",
+    "2603.23994": "机器学习；智能体与多智能体系统  \n背景/任务：生成式优化利用大语言模型通过执行反馈迭代改进代码等工作产物，但实际应用仍脆弱，需探索如何稳定建立学习循环。  \n研究内容：通过案例研究分析了起始工作产物、信用分配视野和批次处理等设计选择对优化效果的影响，并提供了实践指导。",
+    "2603.24329": "计算机视觉；多模态学习  \n该论文针对现有基准无法充分评估自主代理在3D环境中的感知与推理能力（如状态追踪、多智能体行为理解）的问题，提出了GameplayQA评估框架。  \n该框架通过密集标注多人3D游戏视频，构建了结构化问答数据集，用于诊断多模态大模型在时序理解、智能体角色归属等核心任务上的不足。",
+    "2603.14375": "计算机视觉;视频生成  \n当前生成式视频模型虽能模拟逼真运动，但缺乏对真实物理时间尺度的准确建模，导致运动速度不稳定。  \n该研究提出视觉计时器方法，通过估计视频的物理帧率来校正时间尺度，并构建基准验证了其提升生成视频自然度的效果。",
+    "2603.21618": "计算机视觉；三维重建  \n背景/任务：从单目视频进行360度动态物体重建，现有方法因依赖2D先验导致几何一致性差。  \n所做工作：提出4DGS360框架，通过3D原生初始化和AnchorTAP3D轨迹跟踪抑制漂移，并创建iPhone360数据集进行评估。",
+    "2603.24036": "计算机视觉；三维重建与建模  \n背景/任务是解决3D高斯泼溅（3DGS）在模型视频跟踪中因空间梯度消失导致的脆弱性问题。  \n他们提出了SpectralSplats框架，通过在频域使用全局频谱矩监督和频率退火策略，实现从严重错位初始化中鲁棒恢复复杂变形。",
+    "2603.22120": "计算机视觉；人机交互  \n现有智能体在流式视频理解与实时决策方面存在能力碎片化问题，难以支撑复杂物理环境中的感知-决策-行动闭环。  \n本文提出StreamingClaw框架，通过集成实时流推理、主动交互、多模态记忆与闭环行动能力，以支持动态开放世界中的具身智能应用。",
+    "2603.24157": "人机交互；多模态学习  \n现有研究缺乏针对医疗领域长流程任务的自动化解决方案。  \n作者构建了CareFlow医疗软件操作基准，并提出了多代理框架CarePilot以显著提升自动化执行性能。",
+    "2603.23638": "自然语言处理;智能体  \n背景/任务：评估大型语言模型在长期不确定性下进行企业资源分配的能力。  \n做了什么：创建了EnterpriseArena基准测试环境，实验表明现有模型在此任务上存在明显能力差距。",
+    "2603.20176": "计算机视觉；三维视觉\n背景/任务：研究神经网络的3D归纳偏置对无需显式三维重建的新视角合成任务的影响。\n所做工作：提出LagerNVS模型，利用经3D监督预训练的编码器提取三维感知特征，并与轻量解码器结合进行端到端训练，在确定性新视角合成任务上达到了先进性能并具备多项优势。",
+    "2603.18742": "计算机科学;计算机视觉  \n背景/任务是关于视频扩散变换器（Video DiTs）的部署，其面临高内存占用和计算成本的问题，需要通过后训练量化来提升效率。  \n他们提出了一种混合精度量化框架，通过动态分配不同精度（NVFP4/INT8）来平衡内存压缩和生成质量，并引入时间增量缓存（TDC）来跳过冗余计算，从而加速推理并减少内存使用。",
+    "2603.23522": "自然语言处理; 大语言模型评估  \n当前评估大语言模型开放性问题时，难以捕捉答案质量与问题上下文的关联，而现有评估方法存在局限。  \n该研究提出了一种名为Qworld的新方法，通过递归扩展树为每个问题生成定制化的评估标准，从而更精细地揭示不同模型的性能差异。",
+    "2603.24458": "计算机视觉；视频生成  \n针对开源统一视频生成模型落后于闭源系统的问题，提出了一种全能级视频生成模型OmniWeaving。  \n该模型通过大规模预训练学习多模态组合与推理，并构建了首个智能统一视频生成基准IntelligentVBench来评估性能。",
+    "2603.23404": "计算机视觉;多模态学习  \n现有MLLM在3D空间推理方面存在不足，无法从视频输入构建结构化环境抽象。  \n作者提出TRACE方法，通过生成文本化空间表征作为中间推理链，显著提升了MLLM在视频空间问答任务中的性能。",
+    "2603.24506": "计算机视觉；自动驾驶  \n现有驾驶视频生成模型在真实数据上训练，难以应对挑战性轨迹，导致物理不一致。  \n提出PhyGenesis模型，通过物理条件生成器和增强视频生成器，利用仿真数据学习极端场景，提升生成视频的物理一致性和真实性。",
+    "2603.23539": "机器学习；自然语言处理  \n论文研究大型语言模型在临界点训练时推理能力的涌现。  \n作者通过定义序参量并分析模型稳态输出来量化推理能力，证明了临界态训练可提升模型泛化与推理性能。",
+    "2603.23478": "计算机视觉；场景理解  \n现有方法在3D场景功能分割任务中存在视觉信息利用不足的问题。  \n该研究提出了一种无需训练的统一框架，通过主动时空定位和分层推理实现指令到交互元素的精准分割。"
+  },
+  "deep_analysis": {
+    "2603.21618": "这篇论文（4DGS360）是计算机视觉领域关于**动态场景三维重建**的一篇工作。我用通俗易懂的方式为你梳理一下它的核心内容：\n\n---\n\n### **（1）这篇论文所在的任务是什么？**\n\n*   **任务功能**：从**一段普通的、单视角的手机视频**中，重建出一个**可以360度无死角观看的动态3D物体模型**。\n    *   想象一下，你只用手机围着一个人或物体拍了一段视频（就像平常拍短视频那样），然后这个技术就能生成一个完整的、可以任意角度旋转、并且能播放其动作的3D模型。\n*   **任务输入**：一段**单目视频**（只有一个相机视角在运动拍摄）。\n*   **任务输出**：一个**4D高斯溅射模型**。简单理解，就是一个由无数个会随时间移动、变形的“小粒子”（高斯）构成的模型，它可以被渲染成任意新视角、任意时刻的高质量图像或视频。\n\n---\n\n### **（2）这篇论文想解决什么问题？**\n\n**核心问题：现有方法无法重建物体“背面”等被遮挡区域的准确3D形状。**\n\n*   **问题根源**：在单视角视频中，每一帧你只能看到物体的一个面（比如正面）。现有的方法严重依赖**2D跟踪模型**（比如追踪视频里一个像素点在不同帧的位置）来初始化3D点的运动轨迹。\n*   **关键缺陷**：当某个点被遮挡时（比如从正面看，物体的背面点被挡住了），2D跟踪会失效，深度信息（这个点离相机多远）也变得非常模糊。这导致初始化出的3D点轨迹**只附着在每一帧能看到的物体表面上**，而忽略了被遮挡区域的真实3D结构。即使这个“背面”在其他帧里出现过，模型也无法正确恢复它。\n*   **后果**：当你想从视频没拍过的、比如物体正背后（>90度）的极端新视角去观看模型时，现有方法渲染出的画面就会很奇怪、不真实。\n\n---\n\n### **（3）论文的核心思路是什么？**\n\n为了解决上述问题，论文提出了一个名为 **“4DGS360”** 的完整框架，其**核心创新点在于一个更好的3D初始化方法**。\n\n**核心思路：用更可靠的“3D原生”跟踪来初始化，减少对“2D原生”跟踪的依赖。**\n\n1.  **新工具：AnchorTAP3D（锚点辅助的3D跟踪器）**\n    *   他们设计了一个新的**3D点跟踪器**。它巧妙地结合了2D和3D跟踪的优点：\n        *   **利用2D锚点**：首先使用**可靠的**2D跟踪结果（那些在大部分帧里都清晰可见、跟踪很准的点）作为“锚点”。\n        *   **稳定3D跟踪**：然后，以这些可靠的2D锚点为基准，去**引导和修正一个基础3D跟踪器**的预测。这就像在茫茫大海中设置了几个GPS信标，让船（3D跟踪）不容易漂移。\n    *   **好处**：这个新跟踪器能产生更**稳定、更长程、对遮挡更鲁棒**的3D点轨迹。即使一个点暂时被挡住，它也能根据周围的“锚点”和运动一致性，更好地估计其3D位置。\n\n2.  **更好的初始化与优化**：\n    *   用 `AnchorTAP3D` 得到的优质3D点轨迹来初始化动态高斯模型中的点。\n    *   由于初始化更准确（特别是对于遮挡区域），后续的优化过程（论文中使用了“尽可能刚性”等正则化约束）就能更好地发挥作用，从而重建出**完整、连贯的360度3D几何**。\n\n3.  **新基准：iPhone360数据集**\n    *   作者发现，现有评测数据集训练和测试的相机视角相差不够大（通常<90度），无法真正考验模型的“360度重建”能力。\n    *   因此，他们创建了 **iPhone360** 新数据集，其中**测试相机的视角与训练视角可以相差高达135度**，专门用于严格评估模型的**全角度重建质量**。\n\n---\n\n### **（4）结果怎么样？**\n\n论文在多个数据集上进行了验证，结果表明：\n\n1.  **定量结果优秀**：在PSNR、SSIM、LPIPS等图像质量评价指标上，4DGS360在**iPhone360**（他们自己的新数据集）、**iPhone** 和 **DAVIS** 数据集上均达到了**最先进的水平**。\n2.  **定性效果显著**：\n    *   **在普通新视角下**：渲染的图像更清晰、细节更好。\n    *   **在极端新视角下（如物体背面）**：其优势**尤其明显**。如图1(b)所示，相比其他方法（MOSCA, HiMOR）渲染出的破碎、扭曲的图像，4DGS360能生成**完整、合理、高保真**的背面视图，证明了其真正实现了360度重建。\n3.  **消融实验有效**：通过实验证明了他们提出的 `AnchorTAP3D` 初始化方法是性能提升的关键。\n\n---\n\n### **总结一下**\n\n这篇论文就像一位“3D侦探”，它解决了从单视角视频破案（重建完整3D模型）时的一个老大难问题——**如何还原“案发现场”（视频帧）中看不到的角落（遮挡区域）**。\n\n它的破案新工具（`AnchorTAP3D`）通过引入可靠的“目击者证词”（2D锚点）来修正和增强对“犯罪现场三维推演”（3D跟踪）的把握，从而得到了更完整、更准确的现场复原图（360度3D模型）。同时，它还设立了一个更严格的“破案考核标准”（iPhone360数据集），并证明了自己的新方法在这个严苛标准下表现最优。",
+    "2603.24036": "这篇论文叫《SpectralSplats：通过谱矩监督实现鲁棒可微跟踪》，我来用通俗的语言给你解释一下它的核心内容。你可以把它想象成一个“让3D模型动起来”的技术。\n\n### (1) 任务是什么？\n- **任务输入**：\n    1.  一个用“3D高斯泼溅”（3DGS）技术重建好的、静止的3D物体模型（比如一个人、一只猫）。\n    2.  一段新的视频，视频里这个物体在动或者变形了。\n- **任务输出**：一套**运动参数**。这些参数能精确描述3D模型在每一帧视频里应该如何移动、旋转、变形，才能和视频画面完全对上。\n- **任务功能**：这就是**模型驱动（model-based）的视频跟踪**。你可以理解为，给一个做好的3D娃娃（模型），然后让它学会模仿视频里真人的动作，自动“演”出来。\n\n### (2) 想解决什么问题？\n论文要解决一个叫 **“梯度消失”** 的根本性问题。\n\n打个比方：你蒙着眼睛，要去摸墙上的一个靶心。如果你一开始手离靶心很近，稍微动一动就能感觉到摸没摸到（有“梯度”信号），很容易对准。但如果一开始手放得离靶心**十万八千里**，根本碰不到墙，你就完全感觉不到靶心在哪（“梯度”为零），只能乱摸，最后可能摸到旁边一个花瓶（陷入错误的局部最优解）。\n\n在技术层面：\n- 现有的方法依靠“像素级”的差异（比如渲染的图片和真实视频帧的像素颜色差）来调整模型。\n- 3DGS模型是由很多小“高斯球”组成的，每个球只影响图像上很小一块区域。\n- **问题**：如果一开始模型的位置和视频里的目标位置偏差太大，模型渲染出来的图像和真实图像在像素上**完全没有重叠**。那么计算像素差异时，梯度信号就是0，优化器就“懵了”，不知道往哪个方向改，导致跟踪彻底失败。\n\n### (3) 核心思路是什么？\n论文想出了一个巧妙的办法：**不直接看“位置”，改为看“频率”**。\n\n- **从空间域到频率域**：想象一下，不管一张图片里猫在左边还是右边，它的“整体纹理节奏”、“轮廓起伏的规律”这些**频率特征**是相对稳定的。论文提出用一组**全局的、复数正弦波特征（称为“谱矩”）** 来描述图像。\n- **构建全局吸引力盆**：在频率域里进行监督，即使模型渲染的图和目标图在像素上完全不重叠，它们在频率特征上仍然有相似之处。这就好比，即使蒙眼的手离靶心很远，但你如果能听到靶心发出的特定频率的声音，你就能朝着声音的方向走。这就创造了一个**全局有效的梯度方向**，让模型能从很远的地方开始被“吸引”到正确位置附近。\n- **频率退火策略**：但是，只用高频信号会产生很多周期性、重复的局部极小值（就像正弦波有很多波峰波谷）。为此，论文从原理推导了一个**频率退火计划**：**开始时用低频信号**（看得宏观，吸引盆宽但粗糙），**逐渐过渡到高频信号**（看得精细，实现精确定位）。这就像先用耳朵听个大概方向走过去，走近了再用眼睛仔细瞄准。\n\n简单说，核心思路是：**用“全局听音辨位”（谱矩监督）代替“局部摸墙找点”（像素监督），并设计一个从“听”到“看”的平滑过渡策略（频率退火），从而解决严重初始偏差下的跟踪失败问题。**\n\n### (4) 结果怎么样？\n论文在两个标准数据集（SC4D和GART）上进行了实验，证明了其方法的优越性：\n\n1.  **鲁棒性大幅提升**：在**严重初始位置偏差**（甚至零重叠）的情况下，现有基于像素或深度学习特征（如LPIPS）的方法完全失败，而SpectralSplats能够**成功恢复**复杂的运动和变形。\n2.  **通用即插即用**：这个方法可以作为一个**即插即用的替换模块**，无缝集成到各种不同的运动参数化方案中（比如用MLP预测运动，或用稀疏控制点驱动变形），提升它们的鲁棒性。\n3.  **实现精准跟踪**：在顺利将模型吸引到目标附近后，结合高频信号，最终能达到与现有方法相当甚至更好的**精确对齐效果**。\n\n**总结**：这篇论文通过将监督信号从容易“迷路”的像素空间，转换到具有全局引导能力的频率空间，并配以巧妙的退火策略，从根本上增强了3D高斯模型在复杂、未经严格对齐的视频中进行跟踪的鲁棒性，使其更适用于“野外”实际场景。",
+    "2603.20176": "好的，没问题。让我们像聊天一样，用简单的语言来拆解这篇论文。\n\n### (1) 任务是什么：新视角合成\n\n*   **任务输入**：\n    *   **已知信息**：几张从不同角度拍摄的**场景照片**（比如，你拿着手机对着同一个房间拍了几张）。\n    *   **可选信息**：这些照片的**相机参数**（比如，你的手机当时的位置和朝向）。\n    *   **目标信息**：你想要的**新相机位置和朝向**（比如，你想看看如果站在房间另一边会看到什么）。\n*   **任务输出**：一张**从你指定的新角度看到的、逼真的场景图片**。\n*   **任务功能**：就像是在3D游戏里自由移动视角看一个3D模型。但这里更厉害，它不需要一个现成的3D模型，而是直接从一个神经网络里“变”出新角度的图片。\n\n### (2) 想解决什么问题\n\n这篇论文想解决新视角合成中的两个关键矛盾：\n\n1.  **速度 vs 质量**：\n    *   传统的“显式3D重建”方法（比如NeRF、3D高斯）质量很高，但需要为每个新场景花很长时间（几分钟甚至几小时）来优化，很慢。\n    *   一些“全神经”方法（比如LVSM）很快，一次前向传播就能出图，但以前的质量比不上那些慢方法。\n    *   **问题**：能不能又快又好？\n\n2.  **3D信息 vs 网络设计**：\n    *   显式3D重建方法，本质上就是把3D信息（点、体素、高斯球）塞进一个模型里，然后渲染。\n    *   有些研究者认为，既然我们最终目标是生成2D图片，那干脆让神经网络直接学从输入图片到输出图片的映射，跳过中间的3D重建步骤，这样可能更直接、更高效。\n    *   **本文的观点**：虽然我们“跳过”了显式的3D重建（比如不输出点云），但**在网络内部，保留对3D世界的“感觉”（即3D先验）仍然非常重要**。没有这种“感觉”，网络很难学好。\n\n**所以，这篇论文的核心目标**就是：**设计一个又快又好的、不依赖显式3D重建的全神经网络，并且要向这个网络巧妙地注入3D先验知识。**\n\n### (3) 核心思路是什么\n\n论文提出了一个叫 **LagerNVS** 的模型，它的核心思路可以用一个比喻来理解：**“一个懂3D的专家（编码器） + 一个快速的画师（解码器）”**。\n\n**1. 找一个懂3D的专家当编码器：**\n*   他们不从头训练一个编码器，而是直接“请”了一个**已经受过3D任务训练**的强大网络（VGGT）来帮忙。\n*   这个VGGT网络之前是专门做3D重建的，所以它的“大脑”里已经装满了关于物体形状、深度、遮挡关系的知识（这就是**3D先验**）。\n*   输入几张图片，这个“专家编码器”就能提取出一种**富含3D信息的特征**。这些特征虽然不是显式的3D模型，但隐含着对场景的3D理解。\n\n**2. 设计一个轻量快速的画师当解码器：**\n*   解码器的工作是：拿到“专家”提取的3D特征，再结合你想要的**新相机角度**，然后画出新视角的图片。\n*   作者把解码器设计得非常小巧高效。它的结构是一种“高速公路”式的，可以直接访问编码器生成的所有特征，而不需要先压缩到一个很小的瓶颈里，这样信息损失少，画得更准。\n\n**3. 分工协作，效率极高：**\n*   **编码（一次搞定）**：对于一个新场景，你只需要把输入图片喂给“专家编码器”一次，它就会计算出这个场景的“3D特征包”。这个过程只需要几秒钟。\n*   **解码（实时渲染）**：之后，无论你想看哪个新角度，只需要把这个角度告诉“画师解码器”，它就能飞快地（>30帧/秒）从那个“3D特征包”里画出对应的图片。\n\n**简单总结**：**LagerNVS的核心创新在于，它用一个在3D任务上预训练好的强大网络来“感受”3D，然后配上一个高效的渲染网络来“画”2D图片，从而在保持全神经网络快速、灵活优点的同时，大大提升了生成图片的质量。**\n\n### (4) 结果怎么样\n\n论文的结果非常出色，可以说是“又快又好”的典范：\n\n1.  **质量刷新纪录**：在多个标准测试集上，它的图片质量（用PSNR等指标衡量）都超过了之前最好的**全神经**方法（比如LVSM），甚至也超过了那些需要**显式3D重建**的快速前馈方法。\n    *   例如，在RealEstate10k数据集上，PSNR达到了31.4，比LVSM高了1.7 dB，这是个很大的提升。\n\n2.  **速度快得飞起**：\n    *   在单张顶级显卡（H100）上，对于512x512分辨率的图片，**渲染速度能超过每秒30帧**，达到了真正的“实时”水平。\n    *   相比之下，传统的优化式方法（NeRF）完全无法做到这一点。\n\n3.  **泛化能力很强**：\n    *   因为用了大规模混合数据训练，LagerNVS**一套参数**就能处理各种类型的图片：室内、室外、360度全景、非正方形图片，甚至是“野外”收集的、不知道相机参数的照片。\n\n4.  **功能拓展**：\n    *   作者还展示了，可以把LagerNVS的“画师解码器”换成扩散模型，让它具备**生成能力**。当输入视角信息不足时（比如要生成被遮挡的部分），它能“想象”出合理的内容，而不是模糊平均。\n\n**总而言之**，这篇论文通过**引入强大的3D先验**到全神经网络的框架中，成功地在新视角合成任务上实现了**质量与速度的双重突破**，并且具有很强的实用性和泛化性。"
+  },
+  "images_meta": {
+    "2603.21618": [
+      {
+        "path": "https://arxiv.org/html/2603.21618v1/x1.png",
+        "caption": "Figure 1:Our 4DGS360 model reconstructs 360° dynamic object geometry from a monocular video and produces higher-fidelity renderings than prior methods under both ordinary and extreme novel-view conditions. We also introduce the iPhone360 dataset, which captures dynamic objects in a monocular setting and includes test cameras far outside the training trajectory for 360° evaluation.",
+        "caption_zh": "图1：我们的4DGS360模型从单目视频中重建360°动态物体几何，并在常规及极端新视角条件下均生成比先前方法保真度更高的渲染结果。我们还引入了iPhone360数据集，该数据集在单目设置下捕捉动态物体，并包含远离训练轨迹的测试相机用于360°评估。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.21618v1/x2.png",
+        "caption": "Figure 2:Overview of 4DGS360(a) illustrates the initialization stage using AnchorTAP3D, where reliable geometry can be obtained even when tracked points become occluded. This contrasts with 2D-based models, which cannot estimate depth for occluded points. (b) presents the overall architecture of AnchorTAP3D, and (c) highlights the difference between tracking with and without anchors, showing that anchors effectively prevent error drift. (d) depicts the training process that follows initialization, and (e) shows that our model finally enables full360∘360^{\\circ}reconstruction. The blue pyramids represent training cameras, while the red pyramids indicate test cameras.",
+        "caption_zh": "图2：4DGS360概述。(a)展示使用AnchorTAP3D的初始化阶段，即使在跟踪点被遮挡时仍能获得可靠的几何信息，这与基于2D的模型（无法估计被遮挡点的深度）形成对比。(b)呈现AnchorTAP3D的整体架构，(c)强调带锚点与无锚点跟踪的差异，表明锚点能有效防止误差漂移。(d)描绘初始化后的训练过程，(e)显示我们的模型最终实现完整的360°重建。蓝色金字塔代表训练相机，红色金字塔表示测试相机。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.21618v1/x3.png",
+        "caption": "Figure 3:Tracking Comparison. We compare the naive 3D tracking model TAPIP3D[tapip3d]with our anchor-based AnchorTAP3D (Ours). At the target time after undergoing rotation and occlusion, AnchorTAP3D produces noticeably more stable tracking results. This indicates that anchor-guided tracking is advantageous under challenging conditions such as occlusion.",
+        "caption_zh": "图3：跟踪对比。我们将朴素的3D跟踪模型TAPIP3D[tapip3d]与基于锚点的AnchorTAP3D（我们的方法）进行对比。在经历旋转和遮挡后的目标时刻，AnchorTAP3D产生明显更稳定的跟踪结果，这表明在遮挡等挑战性条件下，锚点引导的跟踪具有优势。"
+      }
+    ],
+    "2603.24036": [
+      {
+        "path": "https://arxiv.org/html/2603.24036v1/x1.png",
+        "caption": "Figure 1:SpectralSplats enables robust tracking from zero-overlap initializations.Left:A 3DGS asset is initialized (see transparent overlay) far from some target\npose image (solid image), resulting in strictly zero spatial overlap in the rendered camera view.Right:We compare the optimization progression. Standard photometric tracking (Pixel loss) implicitly requires spatial overlap; without it, directional gradients vanish, causing the optimizer to strand the asset and eventually collapse into spurious local minima. SpectralSplats (Ours) shifts supervision to the frequency domain viaSpectral Moments. This establishes a global basin of attraction, allowing the Gaussians to smoothly flow across the image domain and successfully recover the extreme displacement.",
+        "caption_zh": "图1：SpectralSplats 能够实现从零重叠初始化的鲁棒跟踪。左图：一个3DGS资产被初始化（见透明叠加层）在远离某个目标姿态图像（实线图像）的位置，导致在渲染的相机视图中严格零空间重叠。右图：我们比较优化过程。标准光度跟踪（像素损失）隐式依赖于空间重叠；若无重叠，方向梯度消失，导致优化器使资产停滞并最终坍缩至伪局部极小值。SpectralSplats（我们的方法）通过谱矩将监督转移至频域。这建立了一个全局的吸引域，使高斯函数能够平滑地流过图像域，并成功恢复极端位移。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.24036v1/x2.png",
+        "caption": "Figure 2:Breaking the Locality Trap: A 1D Optimization Analysis.We simulate the optimization landscape (bottom) for aligning a rendered 1D Gaussian pulse (top, red) to a target (top, green) under a large initial spatial displacement (Θ0=6\\Theta_{0}=6).Standard𝐋𝟐\\mathbf{L_{2}}(Col 1):Photometric objectives implicitly rely on spatial overlap; without it, the gradient strictly vanishes, leaving the optimizer stranded.No Annealing (Col 2):Projecting the loss onto a static, high-frequency spectral basis (k=5k=5) ensures the gradient no longer vanishes globally, but introduces severe phase-wrapping that traps the optimizer in false local minima.Ours (Cols 3-6):Spectral Moment Supervision with Frequency Annealing. By restricting initial supervision to low frequencies, we construct a globally convex basin of attraction that provides a valid, directional gradient from any initialization. As the spatial error strictly decreases, our principled annealing schedule safely expands the active bandwidth, seamlessly transitioning the landscape to achieve high-frequency spatial precision without phase-wrapping.",
+        "caption_zh": "图2：打破局部性陷阱：一维优化分析。我们模拟了在大初始空间位移（Θ₀=6）下，将渲染的一维高斯脉冲（上图，红色）与目标（上图，绿色）对齐的优化情况（下图）。标准L₂损失（第一列）：光度目标隐式依赖空间重叠；若无重叠，梯度严格消失，使优化器停滞。无退火（第二列）：将损失投影到静态高频谱基（k=5）上确保梯度不再全局消失，但引入了严重的相位缠绕，将优化器困在错误的局部极小值中。我们的方法（第三至六列）：带频率退火的谱矩监督。通过将初始监督限制在低频，我们构建了一个全局凸的吸引域，为任何初始化提供有效且方向性的梯度。随着空间误差严格减小，我们有原则的退火策略安全地扩展了有效带宽，将优化情况无缝过渡到实现高频空间精度，且无相位缠绕。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.24036v1/x3.png",
+        "caption": "Figure 3:A long low-frequency “warm-up” phase (right) leads to loss of high frequency details (tail), compared to a shorter “warm-up” phase (left).",
+        "caption_zh": "图3：较长的低频“预热”阶段（右图）会导致高频细节（尾部）的丢失，相比之下，较短的“预热”阶段（左图）则能保留更多细节。"
+      }
+    ],
+    "2603.20176": [
+      {
+        "path": "https://arxiv.org/html/2603.20176v2/x2.png",
+        "caption": "Figure 2:Method.The model takes any number of images and, optionally, their camera parameters as input.\nA large network initialized from a reconstruction model[wang2025vggt]outputs an intermediate feature representation with implicit 3D information.\nA lightweight network is queried on a target camera pose and renders a512×512512\\times 512image at more than 30 FPS on a single H100 GPU when provided with up to 9 input images.",
+        "caption_zh": "图 2：方法。模型接收任意数量的图像，并可选择性地接收其相机参数作为输入。一个基于重建模型 [wang2025vggt] 初始化的大型网络输出一个包含隐式 3D 信息的中间特征表示。一个轻量级网络在目标相机位姿上进行查询，并在提供最多 9 张输入图像时，于单块 H100 GPU 上以超过 30 FPS 的速度渲染出 512×512 的图像。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.20176v2/x3.png",
+        "caption": "Figure 3:Generalization.Our model generalizes to a wide range of input types and applications, including (a) internet photos with unknown camera poses, (b) embodied applications (logos removed as postprocessing), (c) 360∘scenes and (d) non-square aspect ratios.",
+        "caption_zh": "图 3：泛化能力。我们的模型能够泛化到广泛的输入类型和应用，包括 (a) 相机位姿未知的网络照片，(b) 具身应用（标识已作为后处理移除），(c) 360° 场景，以及 (d) 非正方形宽高比。"
+      },
+      {
+        "path": "https://arxiv.org/html/2603.20176v2/x4.png",
+        "caption": "Figure 4:Architectures.Our highway encoder-decoder (left) maximizes information flow from source images to the latent representation (R), making it more expressive than the bottleneck encoder-decoder (middle).\nUnlike decoder-only models (right), our design allows scaling the encoder without slowing decoding.",
+        "caption_zh": "图 4：架构。我们的高速编码器-解码器（左）最大化从源图像到潜在表示 (R) 的信息流，使其比瓶颈编码器-解码器（中）更具表现力。与仅解码器模型（右）不同，我们的设计允许扩展编码器而不会降低解码速度。"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2603.24440": {
+      "abstract": "Computer-use agents (CUAs) hold great promise for automating complex desktop workflows, yet progress toward general-purpose agents is bottlenecked by the scarcity of continuous, high-quality human demonstration videos. Recent work emphasizes that continuous video, not sparse screenshots, is the critical missing ingredient for scaling these agents. However, the largest existing open dataset, ScaleCUA, contains only 2 million screenshots, equating to less than 20 hours of video. To address this bottleneck, we introduce CUA-Suite, a large-scale ecosystem of expert video demonstrations and dense annotations for professional desktop computer-use agents. At its core is VideoCUA, which provides approximately 10,000 human-demonstrated tasks across 87 diverse applications with continuous 30 fps screen recordings, kinematic cursor traces, and multi-layerfed reasoning annotations, totaling approximately 55 hours and 6 million frames of expert video. Unlike sparse datasets that capture only final click coordinates, these continuous video streams preserve the full temporal dynamics of human interaction, forming a superset of information that can be losslessly transformed into the formats required by existing agent frameworks. CUA-Suite further provides two complementary resources: UI-Vision, a rigorous benchmark for evaluating grounding and planning capabilities in CUAs, and GroundCUA, a large-scale grounding dataset with 56K annotated screenshots and over 3.6 million UI element annotations. Preliminary evaluation reveals that current foundation action models struggle substantially with professional desktop applications (~60% task failure rate). Beyond evaluation, CUA-Suite's rich multimodal corpus supports emerging research directions including generalist screen parsing, continuous spatial control, video-based reward modeling, and visual world models. All data and models are publicly released.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://cua-suite.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.24472": {
+      "abstract": "Self-distillation has emerged as an effective post-training paradigm for LLMs, often improving performance while shortening reasoning traces. However, in mathematical reasoning, we find that it can reduce response length while degrading performance. We trace this degradation to the suppression of epistemic verbalization - the model's expression of uncertainty during reasoning. Through controlled experiments varying conditioning context richness and task coverage, we show that conditioning the teacher on rich information suppresses uncertainty expression, enabling rapid in-domain optimization with limited task coverage but harming OOD performance, where unseen problems benefit from expressing uncertainty and adjusting accordingly. Across Qwen3-8B, DeepSeek-Distill-Qwen-7B, and Olmo3-7B-Instruct, we observe performance drops of up to 40%. Our findings highlight that exposing appropriate levels of uncertainty is crucial for robust reasoning and underscore the importance of optimizing reasoning behavior beyond merely reinforcing correct answer traces.",
+      "comments": ""
+    },
+    "2603.24533": {
+      "abstract": "Autonomous mobile GUI agents have attracted increasing attention along with the advancement of Multimodal Large Language Models (MLLMs). However, existing methods still suffer from inefficient learning from failed trajectories and ambiguous credit assignment under sparse rewards for long-horizon GUI tasks. To that end, we propose UI-Voyager, a novel two-stage self-evolving mobile GUI agent. In the first stage, we employ Rejection Fine-Tuning (RFT), which enables the continuous co-evolution of data and models in a fully autonomous loop. The second stage introduces Group Relative Self-Distillation (GRSD), which identifies critical fork points in group rollouts and constructs dense step-level supervision from successful trajectories to correct failed ones. Extensive experiments on AndroidWorld show that our 4B model achieves an 81.0% Pass@1 success rate, outperforming numerous recent baselines and exceeding human-level performance. Ablation and case studies further verify the effectiveness of GRSD. Our method represents a significant leap toward efficient, self-evolving, and high-performance mobile GUI automation without expensive manual data annotation.",
+      "comments": "Code and models are available at <a class=\"link-external link-https\" href=\"https://github.com/ui-voyager/UI-Voyager\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.22918": {
+      "abstract": "Video understanding with multimodal large language models (MLLMs) remains challenging due to the long token sequences of videos, which contain extensive temporal dependencies and redundant frames. Existing approaches typically treat MLLMs as passive recognizers, processing entire videos or uniformly sampled frames without adaptive reasoning. Recent agent-based methods introduce external tools, yet still depend on manually designed workflows and perception-first strategies, resulting in inefficiency on long videos. We present EVA, an Efficient Reinforcement Learning framework for End-to-End Video Agent, which enables planning-before-perception through iterative summary-plan-action-reflection reasoning. EVA autonomously decides what to watch, when to watch, and how to watch, achieving query-driven and efficient video understanding. To train such agents, we design a simple yet effective three-stage learning pipeline - comprising supervised fine-tuning (SFT), Kahneman-Tversky Optimization (KTO), and Group Relative Policy Optimization (GRPO) - that bridges supervised imitation and reinforcement learning. We further construct high-quality datasets for each stage, supporting stable and reproducible training. We evaluate EVA on six video understanding benchmarks, demonstrating its comprehensive capabilities. Compared with existing baselines, EVA achieves a substantial improvement of 6-12% over general MLLM baselines and a further 1-3% gain over prior adaptive agent methods.",
+      "comments": "CVPR2026"
+    },
+    "2603.22341": {
+      "abstract": "While prior red-teaming efforts have focused on eliciting harmful text outputs from large language models (LLMs), such approaches fail to capture agent-specific vulnerabilities that emerge through multi-step tool execution, particularly in rapidly growing ecosystems such as the Model Context Protocol (MCP). To address this gap, we propose a trajectory-aware evolutionary search method, T-MAP, which leverages execution trajectories to guide the discovery of adversarial prompts. Our approach enables the automatic generation of attacks that not only bypass safety guardrails but also reliably realize harmful objectives through actual tool interactions. Empirical evaluations across diverse MCP environments demonstrate that T-MAP substantially outperforms baselines in attack realization rate (ARR) and remains effective against frontier models, including GPT-5.2, Gemini-3-Pro, Qwen3.5, and GLM-5, thereby revealing previously underexplored vulnerabilities in autonomous LLM agents.",
+      "comments": ""
+    },
+    "2603.21289": {
+      "abstract": "Recent progress in multimodal large language models has led to strong performance on reasoning tasks, but these improvements largely rely on high-quality annotated data or teacher-model distillation, both of which are costly and difficult to scale. To address this, we propose an unsupervised self-evolution training framework for multimodal reasoning that achieves stable performance improvements without using human-annotated answers or external reward models. For each input, we sample multiple reasoning trajectories and jointly model their within group structure. We use the Actor's self-consistency signal as a training prior, and introduce a bounded Judge based modulation to continuously reweight trajectories of different quality. We further model the modulated scores as a group level distribution and convert absolute scores into relative advantages within each group, enabling more robust policy updates. Trained with Group Relative Policy Optimization (GRPO) on unlabeled data, our method consistently improves reasoning performance and generalization on five mathematical reasoning benchmarks, offering a scalable path toward self-evolving multimodal models. The code are available atthis https URL.",
+      "comments": "21 pages, 7 figures"
+    },
+    "2603.23994": {
+      "abstract": "Generative optimization uses large language models (LLMs) to iteratively improve artifacts (such as code, workflows or prompts) using execution feedback. It is a promising approach to building self-improving agents, yet in practice remains brittle: despite active research, only 9% of surveyed agents used any automated optimization. We argue that this brittleness arises because, to set up a learning loop, an engineer must make ``hidden'' design choices: What can the optimizer edit and what is the \"right\" learning evidence to provide at each update? We investigate three factors that affect most applications: the starting artifact, the credit horizon for execution traces, and batching trials and errors into learning evidence. Through case studies in MLAgentBench, Atari, and BigBench Extra Hard, we find that these design decisions can determine whether generative optimization succeeds, yet they are rarely made explicit in prior work. Different starting artifacts determine which solutions are reachable in MLAgentBench, truncated traces can still improve Atari agents, and larger minibatches do not monotonically improve generalization on BBEH. We conclude that the lack of a simple, universal way to set up learning loops across domains is a major hurdle for productionization and adoption. We provide practical guidance for making these choices.",
+      "comments": "36 pages, 17 figures"
+    },
+    "2603.24329": {
+      "abstract": "Multimodal LLMs are increasingly deployed as perceptual backbones for autonomous agents in 3D environments, from robotics to virtual worlds. These applications require agents to perceive rapid state changes, attribute actions to the correct entities, and reason about concurrent multi-agent behaviors from a first-person perspective, capabilities that existing benchmarks do not adequately evaluate. We introduce GameplayQA, a framework for evaluating agentic-centric perception and reasoning through video understanding. Specifically, we densely annotate multiplayer 3D gameplay videos at 1.22 labels/second, with time-synced, concurrent captions of states, actions, and events structured around a triadic system of Self, Other Agents, and the World, a natural decomposition for multi-agent environments. From these annotations, we refined 2.4K diagnostic QA pairs organized into three levels of cognitive complexity, accompanied by a structured distractor taxonomy that enables fine-grained analysis of where models hallucinate. Evaluation of frontier MLLMs reveals a substantial gap from human performance, with common failures in temporal and cross-video grounding, agent-role attribution, and handling the decision density of the game. We hope GameplayQA stimulates future research at the intersection of embodied AI, agentic perception, and world modeling.",
+      "comments": ""
+    },
+    "2603.14375": {
+      "abstract": "While recent generative video models have achieved remarkable visual realism and are being explored as world models, true physical simulation requires mastering both space and time. Current models can produce visually smooth kinematics, yet they lack a reliable internal motion pulse to ground these motions in a consistent, real-world time scale. This temporal ambiguity stems from the common practice of indiscriminately training on videos with vastly different real-world speeds, forcing them into standardized frame rates. This leads to what we term chronometric hallucination: generated sequences exhibit ambiguous, unstable, and uncontrollable physical motion speeds. To address this, we propose Visual Chronometer, a predictor that recovers the Physical Frames Per Second (PhyFPS) directly from the visual dynamics of an input video. Trained via controlled temporal resampling, our method estimates the true temporal scale implied by the motion itself, bypassing unreliable metadata. To systematically quantify this issue, we establish two benchmarks, PhyFPS-Bench-Real and PhyFPS-Bench-Gen. Our evaluations reveal a harsh reality: state-of-the-art video generators suffer from severe PhyFPS misalignment and temporal instability. Finally, we demonstrate that applying PhyFPS corrections significantly improves the human-perceived naturalness of AI-generated videos. Our project page isthis https URL.",
+      "comments": ""
+    },
+    "2603.21618": {
+      "abstract": "We introduce 4DGS360, a diffusion-free framework for 360$^{\\circ}$ dynamic object reconstruction from casual monocular video. Existing methods often fail to reconstruct consistent 360$^{\\circ}$ geometry, as their heavy reliance on 2D-native priors causes initial points to overfit to visible surface in each training view. 4DGS360 addresses this challenge through a advanced 3D-native initialization that mitigates the geometric ambiguity of occluded regions. Our proposed 3D tracker, AnchorTAP3D, produces reinforced 3D point trajectories by leveraging confident 2D track points as anchors, suppressing drift and providing reliable initialization that preserves geometry in occluded regions. This initialization, combined with optimization, yields coherent 360$^{\\circ}$ 4D reconstructions. We further present iPhone360, a new benchmark where test cameras are placed up to 135$^{\\circ}$ apart from training views, enabling 360$^{\\circ}$ evaluation that existing datasets cannot provide. Experiments show that 4DGS360 achieves state-of-the-art performance on the iPhone360, iPhone, and DAVIS datasets, both qualitatively and quantitatively.",
+      "comments": ""
+    },
+    "2603.24036": {
+      "abstract": "3D Gaussian Splatting (3DGS) enables real-time, photorealistic novel view synthesis, making it a highly attractive representation for model-based video tracking. However, leveraging the differentiability of the 3DGS renderer \"in the wild\" remains notoriously fragile. A fundamental bottleneck lies in the compact, local support of the Gaussian primitives. Standard photometric objectives implicitly rely on spatial overlap; if severe camera misalignment places the rendered object outside the target's local footprint, gradients strictly vanish, leaving the optimizer stranded. We introduce SpectralSplats, a robust tracking framework that resolves this \"vanishing gradient\" problem by shifting the optimization objective from the spatial to the frequency domain. By supervising the rendered image via a set of global complex sinusoidal features (Spectral Moments), we construct a global basin of attraction, ensuring that a valid, directional gradient toward the target exists across the entire image domain, even when pixel overlap is completely nonexistent. To harness this global basin without introducing periodic local minima associated with high frequencies, we derive a principled Frequency Annealing schedule from first principles, gracefully transitioning the optimizer from global convexity to precise spatial alignment. We demonstrate that SpectralSplats acts as a seamless, drop-in replacement for spatial losses across diverse deformation parameterizations (from MLPs to sparse control points), successfully recovering complex deformations even from severely misaligned initializations where standard appearance-based tracking catastrophically fails.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://avigailco.github.io/SpectralSplats/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.22120": {
+      "abstract": "Emerging applications such as embodied intelligence, AI hardware, autonomous driving, and intelligent cockpits rely on a real-time perception-decision-action closed loop, posing stringent challenges for streaming video understanding. However, current agents mostly suffer from fragmented capabilities, such as supporting only offline video understanding, lacking long-term multimodal memory mechanisms, or struggling to achieve real-time reasoning and proactive interaction under streaming input. These shortcomings have become a key bottleneck for preventing agents from sustaining perception, making real-time decisions, and executing closed-loop actions in complex real-world environments, constraining their deployment and potential in dynamic, open physical worlds. To alleviate these issues, we propose StreamingClaw, a unified agent framework for streaming video understanding and embodied intelligence. Beyond maintaining full compatibility with the OpenClaw framework, it natively supports real-time, multimodal streaming interactions. StreamingClaw integrates five core capabilities: (1) It supports real-time streaming reasoning. (2) It supports reasoning about future events and proactive interaction under the online evolution of interaction objectives. (3) It supports multimodal long-term memory storage, hierarchical memory evolution, efficient memory retrieval, and memory sharing across multiple agents. (4) It supports a closed loop of perception-decision-action. In addition to conventional tools and skills, it also provides streaming tools and action-centric skills tailored for real-world physical environments. (5) It is compatible with the OpenClaw framework, allowing it to leverage the resources and support of the open-source community.",
+      "comments": "Under Progress"
+    },
+    "2603.24157": {
+      "abstract": "Multimodal agentic pipelines are transforming human-computer interaction by enabling efficient and accessible automation of complex, real-world tasks. However, recent efforts have focused on short-horizon or general-purpose applications (e.g., mobile or desktop interfaces), leaving long-horizon automation for domain-specific systems, particularly in healthcare, largely unexplored. To address this, we introduce CareFlow, a high-quality human-annotated benchmark comprising complex, long-horizon software workflows across medical annotation tools, DICOM viewers, EHR systems, and laboratory information systems. On this benchmark, existing vision-language models (VLMs) perform poorly, struggling with long-horizon reasoning and multi-step interactions in medical contexts. To overcome this, we propose CarePilot, a multi-agent framework based on the actor-critic paradigm. The Actor integrates tool grounding with dual-memory mechanisms (long-term and short-term experience) to predict the next semantic action from the visual interface and system state. The Critic evaluates each action, updates memory based on observed effects, and either executes or provides corrective feedback to refine the workflow. Through iterative agentic simulation, the Actor learns to perform more robust and reasoning-aware predictions during inference. Our experiments show that CarePilot achieves state-of-the-art performance, outperforming strong closed-source and open-source multimodal baselines by approximately 15.26% and 3.38%, respectively, on our benchmark and out-of-distribution dataset.",
+      "comments": "CVPR 2026 Findings"
+    },
+    "2603.23638": {
+      "abstract": "Large language models (LLMs) have enabled agentic systems that can reason, plan, and act across complex tasks, but it remains unclear whether they can allocate resources effectively under uncertainty. Unlike short-horizon reactive decisions, allocation requires committing scarce resources over time while balancing competing objectives and preserving flexibility for future needs. We introduce EnterpriseArena, the first benchmark for evaluating agents on long-horizon enterprise resource allocation. It instantiates CFO-style decision-making in a 132-month enterprise simulator combining firm-level financial data, anonymized business documents, macroeconomic and industry signals, and expert-validated operating rules. The environment is partially observable and reveals the state only through budgeted organizational tools, forcing agents to trade off information acquisition against conserving scarce resources. Experiments on eleven advanced LLMs show that this setting remains highly challenging: only 16% of runs survive the full horizon, and larger models do not reliably outperform smaller ones. These results identify long-horizon resource allocation under uncertainty as a distinct capability gap for current LLM agents.",
+      "comments": ""
+    },
+    "2603.20176": {
+      "abstract": "Recent work has shown that neural networks can perform 3D tasks such as Novel View Synthesis (NVS) without explicit 3D reconstruction. Even so, we argue that strong 3D inductive biases are still helpful in the design of such networks. We show this point by introducing LagerNVS, an encoder-decoder neural network for NVS that builds on `3D-aware' latent features. The encoder is initialized from a 3D reconstruction network pre-trained using explicit 3D supervision. This is paired with a lightweight decoder, and trained end-to-end with photometric losses. LagerNVS achieves state-of-the-art deterministic feed-forward Novel View Synthesis (including 31.4 PSNR on Re10k), with and without known cameras, renders in real time, generalizes to in-the-wild data, and can be paired with a diffusion decoder for generative extrapolation.",
+      "comments": "IEEE CVF Conference on Computer Vision and Pattern Recognition 2026. Project page with code, models and examples: <a class=\"link-external link-http\" href=\"http://szymanowiczs.github.io/lagernvs\" rel=\"external noopener nofollow\">this http URL</a>"
+    },
+    "2603.18742": {
+      "abstract": "Diffusion transformers have demonstrated remarkable capabilities in generating videos. However, their practical deployment is severely constrained by high memory usage and computational cost. Post-Training Quantization provides a practical way to reduce memory usage and boost computation speed. Existing quantization methods typically apply a static bit-width allocation, overlooking the quantization difficulty of activations across diffusion timesteps, leading to a suboptimal trade-off between efficiency and quality. In this paper, we propose a inference time NVFP4/INT8 Mixed-Precision Quantization framework. We find a strong linear correlation between a block's input-output difference and the quantization sensitivity of its internal linear layers. Based on this insight, we design a lightweight predictor that dynamically allocates NVFP4 to temporally stable layers to maximize memory compression, while selectively preserving INT8 for volatile layers to ensure robustness. This adaptive precision strategy enables aggressive quantization without compromising generation quality. Beside this, we observe that the residual between the input and output of a Transformer block exhibits high temporal consistency across timesteps. Leveraging this temporal redundancy, we introduce Temporal Delta Cache (TDC) to skip computations for these invariant blocks, further reducing the computational cost. Extensive experiments demonstrate that our method achieves 1.92$\\times$ end-to-end acceleration and 3.32$\\times$ memory reduction, setting a new baseline for efficient inference in Video DiTs.",
+      "comments": ""
+    },
+    "2603.23522": {
+      "abstract": "Evaluating large language models (LLMs) on open-ended questions is difficult because response quality depends on the question's context. Binary scores and static rubrics fail to capture these context-dependent requirements. Existing methods define criteria at the dataset level or generate them in a single pass, which limits their ability to explore the evaluation space implied by each question. We introduce One-Question-One-World (Qworld), a method that generates question-specific evaluation criteria using a recursive expansion tree. Given a question, Qworld decomposes it into scenarios, perspectives, and fine-grained binary criteria through structured hierarchical and horizontal expansion. The resulting criteria specify what a high-quality answer must address for that question. On HealthBench, Qworld covers 89% of expert-authored criteria and generates 79% novel criteria validated by human experts. Experts rate Qworld criteria higher in insight and granularity than those produced by prior methods. When applied to 11 frontier LLMs on HealthBench and Humanity's Last Exam, Qworld reveals capability differences in dimensions such as long-term impact, equity, error handling, and interdisciplinary reasoning that coarse rubrics do not distinguish. By formulating criteria generation as structured coverage of question-implied evaluation axes, Qworld enables evaluation that adapts to each question rather than relying on fixed task-level criteria.",
+      "comments": ""
+    },
+    "2603.24458": {
+      "abstract": "While proprietary systems such as Seedance-2.0 have achieved remarkable success in omni-capable video generation, open-source alternatives significantly lag behind. Most academic models remain heavily fragmented, and the few existing efforts toward unified video generation still struggle to seamlessly integrate diverse tasks within a single framework. To bridge this gap, we propose OmniWeaving, an omni-level video generation model featuring powerful multimodal composition and reasoning-informed capabilities. By leveraging a massive-scale pretraining dataset that encompasses diverse compositional and reasoning-augmented scenarios, OmniWeaving learns to temporally bind interleaved text, multi-image, and video inputs while acting as an intelligent agent to infer complex user intentions for sophisticated video creation. Furthermore, we introduce IntelligentVBench, the first comprehensive benchmark designed to rigorously assess next-level intelligent unified video generation. Extensive experiments demonstrate that OmniWeaving achieves SoTA performance among open-source unified models. The codes and model have already been publicly available. Project Page:this https URL.",
+      "comments": "32 pages, 22 figures. Project Page: <a class=\"link-external link-https\" href=\"https://omniweaving.github.io\" rel=\"external noopener nofollow\">this https URL</a>. Github: <a class=\"link-external link-https\" href=\"https://github.com/Tencent-Hunyuan/OmniWeaving\" rel=\"external noopener nofollow\">this https URL</a>. Model: <a class=\"link-external link-https\" href=\"https://huggingface.co/tencent/HY-OmniWeaving\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2603.23404": {
+      "abstract": "Existing Multimodal Large Language Models (MLLMs) struggle with 3D spatial reasoning, as they fail to construct structured abstractions of the 3D environment depicted in video inputs. To bridge this gap, drawing inspiration from cognitive theories of allocentric spatial reasoning, we investigate how to enable MLLMs to model and reason over text-based spatial representations of video. Specifically, we introduce Textual Representation of Allocentric Context from Egocentric Video (TRACE), a prompting method that induces MLLMs to generate text-based representations of 3D environments as intermediate reasoning traces for more accurate spatial question answering. TRACE encodes meta-context, camera trajectories, and detailed object entities to support structured spatial reasoning over egocentric videos. Extensive experiments on VSI-Bench and OST-Bench demonstrate that TRACE yields notable and consistent improvements over prior prompting strategies across a diverse range of MLLM backbones, spanning different parameter scales and training schemas. We further present ablation studies to validate our design choices, along with detailed analyses that probe the bottlenecks of 3D spatial reasoning in MLLMs.",
+      "comments": "26 pages, 6 figures"
+    },
+    "2603.24506": {
+      "abstract": "Video generation models have shown strong potential as world models for autonomous driving simulation. However, existing approaches are primarily trained on real-world driving datasets, which mostly contain natural and safe driving scenarios. As a result, current models often fail when conditioned on challenging or counterfactual trajectories-such as imperfect trajectories generated by simulators or planning systems-producing videos with severe physical inconsistencies and artifacts. To address this limitation, we propose PhyGenesis, a world model designed to generate driving videos with high visual fidelity and strong physical consistency. Our framework consists of two key components: (1) a physical condition generator that transforms potentially invalid trajectory inputs into physically plausible conditions, and (2) a physics-enhanced video generator that produces high-fidelity multi-view driving videos under these conditions. To effectively train these components, we construct a large-scale, physics-rich heterogeneous dataset. Specifically, in addition to real-world driving videos, we generate diverse challenging driving scenarios using the CARLA simulator, from which we derive supervision signals that guide the model to learn physically grounded dynamics under extreme conditions. This challenging-trajectory learning strategy enables trajectory correction and promotes physically consistent video generation. Extensive experiments demonstrate that PhyGenesis consistently outperforms state-of-the-art methods, especially on challenging trajectories. Our project page is available at:this https URL.",
+      "comments": ""
+    },
+    "2603.23539": {
+      "abstract": "We show that PLDR-LLMs pretrained at self-organized criticality exhibit reasoning at inference time. The characteristics of PLDR-LLM deductive outputs at criticality is similar to second-order phase transitions. At criticality, the correlation length diverges, and the deductive outputs attain a metastable steady state. The steady state behaviour suggests that deductive outputs learn representations equivalent to scaling functions, universality classes and renormalization groups from the training dataset, leading to generalization and reasoning capabilities in the process. We can then define an order parameter from the global statistics of the model's deductive output parameters at inference. The reasoning capabilities of a PLDR-LLM is better when its order parameter is close to zero at criticality. This observation is supported by the benchmark scores of the models trained at near-criticality and sub-criticality. Our results provide a self-contained explanation on how reasoning manifests in large language models, and the ability to reason can be quantified solely from global model parameter values of the deductive outputs at steady state, without any need for evaluation of curated benchmark datasets through inductive output for reasoning and comprehension.",
+      "comments": ""
+    },
+    "2603.23478": {
+      "abstract": "Functionality segmentation in 3D scenes requires an agent to ground implicit natural-language instructions into precise masks of fine-grained interactive elements. Existing methods rely on fragmented pipelines that suffer from visual blindness during initial task parsing. We observe that these methods are limited by single-scale, passive and heuristic frame selection. We present UniFunc3D, a unified and training-free framework that treats the multimodal large language model as an active observer. By consolidating semantic, temporal, and spatial reasoning into a single forward pass, UniFunc3D performs joint reasoning to ground task decomposition in direct visual evidence. Our approach introduces active spatial-temporal grounding with a coarse-to-fine strategy. This allows the model to select correct video frames adaptively and focus on high-detail interactive parts while preserving the global context necessary for disambiguation. On SceneFun3D, UniFunc3D achieves state-of-the-art performance, surpassing both training-free and training-based methods by a large margin with a relative 59.9\\% mIoU improvement, without any task-specific training. Code will be released on our project page:this https URL.",
+      "comments": ""
+    }
+  }
+}

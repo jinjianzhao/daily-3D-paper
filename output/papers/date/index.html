@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Paper Daily - 日期索引</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .date-card {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .date-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 24px -5px rgb(0 0 0 / 0.06), 0 6px 8px -6px rgb(0 0 0 / 0.04);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50/30 to-slate-100">
+    <!-- 顶部导航 -->
+    <header class="glass sticky top-0 z-50 border-b border-slate-200/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-md shadow-indigo-500/25">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-extrabold text-slate-900 tracking-tight">AI Paper Daily</h1>
+                    <p class="text-xs text-slate-500">日期索引</p>
+                </div>
+            </div>
+            <a href="../" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium transition-colors">返回首页 &rarr;</a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+        <div id="loading" class="text-center py-20 text-slate-400">
+            <svg class="animate-spin h-8 w-8 mx-auto mb-3 text-indigo-400" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+            </svg>
+            正在加载日期列表…
+        </div>
+
+        <div id="date-list" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+        <div id="error" class="hidden text-center py-20">
+            <p class="text-slate-400 text-sm">未找到 config.json 或内容为空</p>
+        </div>
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-center text-xs text-slate-400">
+        <p>每次运行 pipeline 后 config.json 会自动更新</p>
+    </footer>
+
+    <script>
+        async function loadDates() {
+            const loadingEl = document.getElementById('loading');
+            const listEl = document.getElementById('date-list');
+            const errorEl = document.getElementById('error');
+
+            try {
+                const resp = await fetch('./config.json', { cache: 'no-store' });
+                if (!resp.ok) throw new Error('config.json not found');
+                const data = await resp.json();
+
+                if (!Array.isArray(data.dates) || data.dates.length === 0) {
+                    loadingEl.classList.add('hidden');
+                    errorEl.classList.remove('hidden');
+                    return;
+                }
+
+                // 日期倒序（最新的在前）
+                const dates = data.dates.sort((a, b) => b.localeCompare(a));
+
+                listEl.innerHTML = '';
+                for (const d of dates) {
+                    const dateObj = new Date(d + 'T00:00:00');
+                    const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+                    const weekday = weekdays[dateObj.getDay()];
+                    const paperCount = (data.paper_counts && data.paper_counts[d]) || null;
+
+                    const card = document.createElement('a');
+                    card.href = './' + d + '/index.html';
+                    card.className = 'date-card block bg-white rounded-2xl border border-slate-200/70 px-6 py-5 hover:border-indigo-300';
+
+                    let countHtml = '';
+                    if (paperCount !== null) {
+                        countHtml = `<span class="ml-auto text-xs font-medium px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-600">${paperCount} 篇</span>`;
+                    }
+
+                    card.innerHTML = `
+                        <div class="flex items-center gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                                ${String(dateObj.getDate()).padStart(2, '0')}
+                            </div>
+                            <div class="flex items-center gap-3 flex-1 min-w-0">
+                                <div>
+                                    <p class="font-semibold text-slate-900">${d}</p>
+                                    <p class="text-xs text-slate-400">${weekday}</p>
+                                </div>
+                                ${countHtml}
+                            </div>
+                        </div>
+                    `;
+                    listEl.appendChild(card);
+                }
+
+                loadingEl.classList.add('hidden');
+                listEl.classList.remove('hidden');
+            } catch (e) {
+                loadingEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        loadDates();
+    </script>
+</body>
+</html>

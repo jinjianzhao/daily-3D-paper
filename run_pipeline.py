@@ -844,7 +844,49 @@ class PaperPipeline:
                 f"未找到 {self.cfg.frontend_template_path}，已跳过复制",
             )
 
+        # 更新日期索引：output/papers/date/config.json
+        self._update_date_index_config()
+
         print(f"\n✅ 完成！数据目录: {pub_dir}")
+
+    def _update_date_index_config(self):
+        """扫描 output/papers/date/ 下所有日期目录，生成索引 config.json。"""
+        date_dir_root = "output/papers/date"
+        if not os.path.isdir(date_dir_root):
+            return
+
+        date_pattern = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+        dates = []
+        paper_counts = {}
+
+        for name in sorted(os.listdir(date_dir_root)):
+            dir_path = os.path.join(date_dir_root, name)
+            if not os.path.isdir(dir_path) or not date_pattern.match(name):
+                continue
+            dates.append(name)
+            # 尝试读取该日期目录的 config.json 获取论文篇数
+            date_config_path = os.path.join(dir_path, "config.json")
+            if os.path.exists(date_config_path):
+                try:
+                    with open(date_config_path, 'r', encoding='utf-8') as f:
+                        dc = json.load(f)
+                    if isinstance(dc, dict) and "base_info" in dc and isinstance(dc["base_info"], dict):
+                        paper_counts[name] = len(dc["base_info"])
+                except (json.JSONDecodeError, KeyError, TypeError):
+                    pass
+
+        index_config = {
+            "dates": sorted(dates, reverse=True),
+            "paper_counts": paper_counts,
+        }
+        out_path = os.path.join(date_dir_root, "config.json")
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump(index_config, f, indent=2, ensure_ascii=False)
+        pipeline_debug(
+            "step09",
+            "更新日期索引",
+            f"已写入 {out_path} 日期数={len(dates)}",
+        )
 
 
 # ---------------------------------------------------------------------------
