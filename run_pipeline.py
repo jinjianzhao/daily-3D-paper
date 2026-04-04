@@ -1005,13 +1005,5 @@ if __name__ == "__main__":
     pipeline = PaperPipeline(my_api_key, cfg)
     today_cst = datetime.now(CST).strftime("%Y-%m-%d")
     pipeline.run_pipeline(today_cst, force_rerun=["step01"])
-    pipeline.run_pipeline("2026-04-02", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-04-01", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-31", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-30", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-29", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-28", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-27", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-26", force_rerun=["step01"])
-    pipeline.run_pipeline("2026-03-25", force_rerun=["step01"])
+ 
     
