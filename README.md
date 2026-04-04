@@ -1,6 +1,7 @@
 # Daily Paper 3D — 每日 3D 论文自动摘要系统
 
 自动从 [Hugging Face Daily Papers](https://huggingface.co/papers) 抓取当日论文列表，利用 LLM 筛选 **3D 生成 / 3D 重建 / 计算机图形学 / Mesh 几何处理** 等方向的重点论文，生成短文摘要与深度解析，并输出一个可直接浏览的静态站点。
+- **日期索引**：https://jinjianzhao.github.io/daily-3D-paper/date/
 
 > **本项目代码由 AI 编写（Cursor）。**
 
