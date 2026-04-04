@@ -29,6 +29,17 @@ def build_daily_slots() -> list[int]:
 
 
 def run_pipeline_once():
+    # 执行 auto_push.sh
+    auto_pull = os.path.join(SCRIPT_DIR, "auto_pull.sh")
+    cmd_pull = f'cd "{SCRIPT_DIR}" && bash "{auto_pull}"'
+    print(f"[scheduler] 执行: {cmd_pull}", flush=True)
+    ret_pull = os.system(cmd_pull)
+    if ret_pull != 0:
+        print(f"[scheduler] auto_pull.sh 返回非零 exit code: {ret_pull}", flush=True)
+    else:
+        print(f"[scheduler] auto_pull.sh 执行完毕", flush=True)
+
+
     """通过 os.system 调用 run_pipeline.py，继承当前进程环境变量。"""
     cmd = f'"{sys.executable}" "{PIPELINE}"'
     print(f"[scheduler] 执行: {cmd}", flush=True)
