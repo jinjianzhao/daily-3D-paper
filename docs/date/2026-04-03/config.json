@@ -11,227 +11,227 @@
     "2603.26164": {
       "title": "DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models",
       "hf_link": "https://huggingface.co/papers/2603.26164",
-      "votes": 148
+      "votes": 152
     },
     "2604.02029": {
       "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
       "hf_link": "https://huggingface.co/papers/2604.02029",
-      "votes": 106
+      "votes": 114
     },
     "2604.02329": {
       "title": "Generative World Renderer",
       "hf_link": "https://huggingface.co/papers/2604.02329",
-      "votes": 79
+      "votes": 85
     },
     "2604.02268": {
       "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
       "hf_link": "https://huggingface.co/papers/2604.02268",
-      "votes": 74
+      "votes": 80
     },
     "2604.02327": {
       "title": "Steerable Visual Representations",
       "hf_link": "https://huggingface.co/papers/2604.02327",
-      "votes": 34
+      "votes": 39
     },
     "2604.01658": {
       "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
       "hf_link": "https://huggingface.co/papers/2604.01658",
-      "votes": 31
+      "votes": 36
     },
     "2604.01001": {
       "title": "EgoSim: Egocentric World Simulator for Embodied Interaction Generation",
       "hf_link": "https://huggingface.co/papers/2604.01001",
-      "votes": 31
+      "votes": 33
     },
     "2604.01973": {
       "title": "NearID: Identity Representation Learning via Near-identity Distractors",
       "hf_link": "https://huggingface.co/papers/2604.01973",
-      "votes": 23
+      "votes": 26
     },
     "2604.02097": {
       "title": "LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model",
       "hf_link": "https://huggingface.co/papers/2604.02097",
-      "votes": 20
+      "votes": 25
     },
     "2604.02296": {
       "title": "VOID: Video Object and Interaction Deletion",
       "hf_link": "https://huggingface.co/papers/2604.02296",
-      "votes": 18
-    },
-    "2604.01007": {
-      "title": "Omni-SimpleMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
-      "hf_link": "https://huggingface.co/papers/2604.01007",
-      "votes": 18
+      "votes": 23
     },
     "2604.01202": {
       "title": "Therefore I am. I Think",
       "hf_link": "https://huggingface.co/papers/2604.01202",
-      "votes": 16
+      "votes": 19
+    },
+    "2604.01007": {
+      "title": "Omni-SimpleMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+      "hf_link": "https://huggingface.co/papers/2604.01007",
+      "votes": 19
     },
     "2604.02190": {
       "title": "UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",
       "hf_link": "https://huggingface.co/papers/2604.02190",
-      "votes": 13
-    },
-    "2604.00917": {
-      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
-      "hf_link": "https://huggingface.co/papers/2604.00917",
-      "votes": 11
+      "votes": 17
     },
     "2603.29640": {
       "title": "ASI-Evolve: AI Accelerates AI",
       "hf_link": "https://huggingface.co/papers/2603.29640",
-      "votes": 11
+      "votes": 15
+    },
+    "2603.27666": {
+      "title": "Gated Condition Injection without Multimodal Attention: Towards Controllable Linear-Attention Transformers",
+      "hf_link": "https://huggingface.co/papers/2603.27666",
+      "votes": 14
+    },
+    "2604.00917": {
+      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+      "hf_link": "https://huggingface.co/papers/2604.00917",
+      "votes": 12
     },
     "2603.28068": {
       "title": "AIBench: Evaluating Visual-Logical Consistency in Academic Illustration Generation",
       "hf_link": "https://huggingface.co/papers/2603.28068",
+      "votes": 9
+    },
+    "2604.01569": {
+      "title": "VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification",
+      "hf_link": "https://huggingface.co/papers/2604.01569",
       "votes": 8
     },
     "2604.01676": {
       "title": "GPA: Learning GUI Process Automation from Demonstrations",
       "hf_link": "https://huggingface.co/papers/2604.01676",
-      "votes": 7
+      "votes": 8
     },
     "2604.01618": {
       "title": "Tex3D: Objects as Attack Surfaces via Adversarial 3D Textures for Vision-Language-Action Models",
       "hf_link": "https://huggingface.co/papers/2604.01618",
-      "votes": 7
+      "votes": 8
     },
     "2603.30043": {
       "title": "Video Models Reason Early: Exploiting Plan Commitment for Maze Solving",
       "hf_link": "https://huggingface.co/papers/2603.30043",
-      "votes": 7
-    },
-    "2604.01569": {
-      "title": "VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification",
-      "hf_link": "https://huggingface.co/papers/2604.01569",
-      "votes": 5
-    },
-    "2604.01014": {
-      "title": "AutoMIA: Improved Baselines for Membership Inference Attack via Agentic Self-Exploration",
-      "hf_link": "https://huggingface.co/papers/2604.01014",
-      "votes": 5
+      "votes": 8
     },
     "2603.28130": {
       "title": "MDPBench: A Benchmark for Multilingual Document Parsing in Real-World Scenarios",
       "hf_link": "https://huggingface.co/papers/2603.28130",
+      "votes": 7
+    },
+    "2604.02289": {
+      "title": "Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation",
+      "hf_link": "https://huggingface.co/papers/2604.02289",
+      "votes": 6
+    },
+    "2604.01666": {
+      "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
+      "hf_link": "https://huggingface.co/papers/2604.01666",
+      "votes": 6
+    },
+    "2604.01014": {
+      "title": "AutoMIA: Improved Baselines for Membership Inference Attack via Agentic Self-Exploration",
+      "hf_link": "https://huggingface.co/papers/2604.01014",
+      "votes": 6
+    },
+    "2604.01328": {
+      "title": "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial",
+      "hf_link": "https://huggingface.co/papers/2604.01328",
+      "votes": 6
+    },
+    "2604.02007": {
+      "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.02007",
       "votes": 5
     },
     "2604.02088": {
       "title": "FlowSlider: Training-Free Continuous Image Editing via Fidelity-Steering Decomposition",
       "hf_link": "https://huggingface.co/papers/2604.02088",
-      "votes": 4
-    },
-    "2604.01328": {
-      "title": "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial",
-      "hf_link": "https://huggingface.co/papers/2604.01328",
-      "votes": 4
+      "votes": 5
     },
     "2604.00829": {
       "title": "LinguDistill: Recovering Linguistic Ability in Vision- Language Models via Selective Cross-Modal Distillation",
       "hf_link": "https://huggingface.co/papers/2604.00829",
-      "votes": 4
+      "votes": 5
     },
     "2604.01298": {
       "title": "Forecasting Supply Chain Disruptions with Foresight Learning",
       "hf_link": "https://huggingface.co/papers/2604.01298",
-      "votes": 4
-    },
-    "2604.02289": {
-      "title": "Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation",
-      "hf_link": "https://huggingface.co/papers/2604.02289",
-      "votes": 3
-    },
-    "2604.01666": {
-      "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
-      "hf_link": "https://huggingface.co/papers/2604.01666",
-      "votes": 3
-    },
-    "2604.01760": {
-      "title": "T5Gemma-TTS Technical Report",
-      "hf_link": "https://huggingface.co/papers/2604.01760",
-      "votes": 3
-    },
-    "2604.02007": {
-      "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
-      "hf_link": "https://huggingface.co/papers/2604.02007",
-      "votes": 3
-    },
-    "2603.27666": {
-      "title": "Gated Condition Injection without Multimodal Attention: Towards Controllable Linear-Attention Transformers",
-      "hf_link": "https://huggingface.co/papers/2603.27666",
-      "votes": 3
-    },
-    "2603.26259": {
-      "title": "Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models",
-      "hf_link": "https://huggingface.co/papers/2603.26259",
-      "votes": 3
+      "votes": 5
     },
     "2604.02330": {
       "title": "ActionParty: Multi-Subject Action Binding in Generative Video Games",
       "hf_link": "https://huggingface.co/papers/2604.02330",
-      "votes": 2
+      "votes": 4
     },
-    "2604.01929": {
-      "title": "Woosh: A Sound Effects Foundation Model",
-      "hf_link": "https://huggingface.co/papers/2604.01929",
-      "votes": 2
-    },
-    "2604.00491": {
-      "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
-      "hf_link": "https://huggingface.co/papers/2604.00491",
-      "votes": 2
+    "2604.01760": {
+      "title": "T5Gemma-TTS Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.01760",
+      "votes": 4
     },
     "2604.01479": {
       "title": "UniRecGen: Unifying Multi-View 3D Reconstruction and Generation",
       "hf_link": "https://huggingface.co/papers/2604.01479",
-      "votes": 2
-    },
-    "2603.24257": {
-      "title": "Memory-Augmented Vision-Language Agents for Persistent and Semantically Consistent Object Captioning",
-      "hf_link": "https://huggingface.co/papers/2603.24257",
-      "votes": 2
+      "votes": 4
     },
     "2603.26233": {
       "title": "Ask or Assume? Uncertainty-Aware Clarification-Seeking in Coding Agents",
       "hf_link": "https://huggingface.co/papers/2603.26233",
-      "votes": 2
+      "votes": 4
+    },
+    "2603.26259": {
+      "title": "Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models",
+      "hf_link": "https://huggingface.co/papers/2603.26259",
+      "votes": 4
     },
     "2604.01619": {
       "title": "Automatic Image-Level Morphological Trait Annotation for Organismal Images",
       "hf_link": "https://huggingface.co/papers/2604.01619",
-      "votes": 1
+      "votes": 3
     },
-    "2604.00356": {
-      "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
-      "hf_link": "https://huggingface.co/papers/2604.00356",
-      "votes": 1
+    "2604.01929": {
+      "title": "Woosh: A Sound Effects Foundation Model",
+      "hf_link": "https://huggingface.co/papers/2604.01929",
+      "votes": 3
     },
-    "2604.01404": {
-      "title": "Friends and Grandmothers in Silico: Localizing Entity Cells in Language Models",
-      "hf_link": "https://huggingface.co/papers/2604.01404",
-      "votes": 1
-    },
-    "2604.01152": {
-      "title": "Brainstacks: Cross-Domain Cognitive Capabilities via Frozen MoE-LoRA Stacks for Continual LLM Learning",
-      "hf_link": "https://huggingface.co/papers/2604.01152",
-      "votes": 0
-    },
-    "2603.29042": {
-      "title": "An Empirical Recipe for Universal Phone Recognition",
-      "hf_link": "https://huggingface.co/papers/2603.29042",
-      "votes": 0
+    "2604.00491": {
+      "title": "Executing as You Generate: Hiding Execution Latency in LLM Code Generation",
+      "hf_link": "https://huggingface.co/papers/2604.00491",
+      "votes": 3
     },
     "2603.06679": {
       "title": "MultiGen: Level-Design for Editable Multiplayer Worlds in Diffusion Game Engines",
       "hf_link": "https://huggingface.co/papers/2603.06679",
-      "votes": 0
+      "votes": 3
+    },
+    "2603.24257": {
+      "title": "Memory-Augmented Vision-Language Agents for Persistent and Semantically Consistent Object Captioning",
+      "hf_link": "https://huggingface.co/papers/2603.24257",
+      "votes": 3
+    },
+    "2604.01152": {
+      "title": "Brainstacks: Cross-Domain Cognitive Capabilities via Frozen MoE-LoRA Stacks for Continual LLM Learning",
+      "hf_link": "https://huggingface.co/papers/2604.01152",
+      "votes": 2
+    },
+    "2604.00356": {
+      "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
+      "hf_link": "https://huggingface.co/papers/2604.00356",
+      "votes": 2
+    },
+    "2604.01404": {
+      "title": "Friends and Grandmothers in Silico: Localizing Entity Cells in Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.01404",
+      "votes": 2
     },
     "2603.27449": {
       "title": "LOME: Learning Human-Object Manipulation with Action-Conditioned Egocentric World Model",
       "hf_link": "https://huggingface.co/papers/2603.27449",
-      "votes": 0
+      "votes": 2
+    },
+    "2603.29042": {
+      "title": "An Empirical Recipe for Universal Phone Recognition",
+      "hf_link": "https://huggingface.co/papers/2603.29042",
+      "votes": 1
     }
   },
   "summaries": {
@@ -245,41 +245,41 @@
     "2604.01973": "计算机视觉；模式识别与机器学习  \n现有视觉编码器在身份相关任务中，因身份与背景信息纠缠导致评估不可靠。  \n作者提出NearID框架和数据集，通过对比学习增强身份表征，显著提升了身份判别准确率。",
     "2604.02097": "计算机视觉;多模态学习  \n背景/任务是研究如何统一跨模态理解与生成模型，以支持更高效的视觉推理和生成。  \n他们提出了LatentUM模型，通过在共享潜在空间中表示所有模态，无需像素解码桥接，实现了跨模态推理和生成。",
     "2604.02296": "计算机视觉;视频处理  \n现有视频物体移除方法在处理物体移除后的物理交互（如碰撞）时效果不佳，导致结果不真实。  \n论文提出VOID框架，通过生成对抗性数据集并利用视觉语言模型和视频扩散模型，实现物理合理的视频修复。",
-    "2604.01007": "人工智能工程；自主智能体<br>背景/任务：处理AI智能体在长期运行中的多模态记忆保留、组织和检索问题，其设计空间复杂难以手动探索。<br>做了什么：通过自主研究流程发现了Omni-SimpleMem框架，大幅提升了两个基准测试的性能，并展示了超越传统AutoML的发现能力。",
     "2604.01202": "机器学习;自然语言处理  \n研究背景是探索大语言模型在推理决策时是“先思考后决定”还是“先决定后思考”。  \n研究发现模型在生成思维链前就已编码决策，通过线性探针可提前解码选择，且激活干预能翻转其决策和行为。",
+    "2604.01007": "人工智能工程；自主智能体<br>背景/任务：处理AI智能体在长期运行中的多模态记忆保留、组织和检索问题，其设计空间复杂难以手动探索。<br>做了什么：通过自主研究流程发现了Omni-SimpleMem框架，大幅提升了两个基准测试的性能，并展示了超越传统AutoML的发现能力。",
     "2604.02190": "计算机科学；自动驾驶  \n背景/任务：适应Vision-Language-Action模型于自动驾驶任务时面临空间感知与语义推理的冲突。  \n核心工作：提出UniDriveVLA模型，通过专家解耦和混合Transformer架构分离感知与推理，并采用渐进训练策略提升性能。",
-    "2604.00917": "软件工程;软件维护  \n背景/任务是研究AI编码代理在开源项目中日益增长的角色及其对软件开发过程的影响。  \n研究构建了一个包含约11万条开源拉取请求的数据集，比较了五种主流编码代理的使用差异，并评估了AI生成代码与人类编写代码在长期维护中的表现。",
     "2603.29640": "机器学习;强化学习  \n背景/任务：探索AI能否加速AI自身发展，特别是处理成本高、周期长、弱监督的研究循环。  \n做了什么：提出了ASI-Evolve框架，通过进化代理和认知模块，在架构设计、数据管理和算法优化中实现了AI驱动的发现，提升了多项任务性能。",
+    "2603.27666": "计算机视觉;生成模型  \n背景/任务：解决云部署扩散模型带来的数据隐私问题，探索适用于边缘设备的可控视觉生成方法。  \n所做工作：提出一种基于线性注意力架构的统一门控条件模块，支持多类型条件输入，在多个任务上实现了优于现有方法的生成性能。",
+    "2604.00917": "软件工程;软件维护  \n背景/任务是研究AI编码代理在开源项目中日益增长的角色及其对软件开发过程的影响。  \n研究构建了一个包含约11万条开源拉取请求的数据集，比较了五种主流编码代理的使用差异，并评估了AI生成代码与人类编写代码在长期维护中的表现。",
     "2603.28068": "计算机视觉；自然语言处理  \n背景/任务是评估现有图像生成模型能否为学术论文生成可直接使用的插图，但现有评估方法存在不足。  \n他们提出了AIBench基准，通过VQA评估逻辑正确性和VLM评估美学质量，并发现模型在该任务上性能差异显著且逻辑与美学难以同时优化。",
+    "2604.01569": "计算机视觉；多模态学习  \n现有视频多模态大语言模型的评测存在分数虚高和缺乏证据验证的缺陷。  \n该研究提出了一个分层基准VideoZeroBench，通过五级评估协议揭示模型在长视频问答中基于时空证据推理的严重不足。",
     "2604.01676": "计算机科学;软件工程  \n背景/任务：解决传统RPA的脆弱性和当前视觉语言模型GUI代理的非确定性问题，以实现稳定、可靠的图形用户界面流程自动化。  \n所做工作：提出了一种轻量级、基于视觉的通用RPA方法（GPA），通过序贯蒙特卡洛定位和就绪校准来提升鲁棒性与确定性，并以完全本地化执行保障隐私和速度，实验证明其成功率与执行速度优于对比方法。",
     "2604.01618": "计算机视觉;机器人学  \n背景/任务是研究视觉-语言-动作模型在机器人操纵中对抗物理可实现的三维对抗纹理攻击的鲁棒性不足问题。  \n他们提出了Tex3D框架，通过前景-背景解耦和轨迹感知对抗优化方法，在仿真和真实机器人环境中实现了对三维对抗纹理的端到端优化，显著降低了模型性能。",
     "2603.30043": "计算机视觉;生成模型  \n研究视频扩散模型在解决迷宫任务中的内部推理机制。  \n发现模型早期规划承诺和路径长度主导迷宫难度，并提出了ChEaP方法提升长序列生成性能。",
-    "2604.01569": "计算机视觉；多模态学习  \n现有视频多模态大语言模型的评测存在分数虚高和缺乏证据验证的缺陷。  \n该研究提出了一个分层基准VideoZeroBench，通过五级评估协议揭示模型在长视频问答中基于时空证据推理的严重不足。",
-    "2604.01014": "人工智能安全; 机器学习隐私与安全  \n现有成员推理攻击方法依赖静态启发式规则，难以适配不同大模型，导致性能受限。  \n本文提出AutoMIA框架，将成员推理转化为自动化策略探索与进化过程，通过闭环评估生成并优化攻击策略，实现了模型无关的高效攻击。",
     "2603.28130": "自然语言处理;计算机视觉  \n当前文档解析研究集中于少数主流语言的整洁数字文档，缺乏多语言、多场景的评估基准。  \n该研究构建了首个多语言文档解析基准MDPBench，涵盖17种语言与多样拍摄条件，评估发现开源模型在非拉丁脚本和真实拍摄文档上性能显著下降。",
-    "2604.02088": "计算机视觉；图像生成与编辑  \n背景/任务是为图像编辑提供连续滑块式控制，在保持源图像保真度和一致编辑方向的前提下，解决现有方法训练开销大、鲁棒性不足的问题。  \n提出了一种无需训练的方法FlowSlider，通过分解并正交化保真项与导向项，仅缩放导向项即可实现平滑、可靠的编辑强度控制。",
-    "2604.01328": "机器学习;优化算法  \n传统科学发现依赖人工试错的低效循环，需要更智能的实验设计方法。  \n该教程提出用贝叶斯优化框架，通过概率模型和采集函数自动化实验选择，以加速材料、化学等领域的科学发现。",
-    "2604.00829": "自然语言处理;多模态学习  \n背景/任务：将预训练语言模型适配为视觉语言模型时，会因表征偏移和跨模态干扰导致语言能力下降，传统恢复方法通常增加模块，不够高效灵活。  \n所做工作：提出无需额外模块的蒸馏方法LinguDistill，通过层间KV缓存共享利用原始语言模型作为教师，在语言密集数据上选择性蒸馏以恢复语言能力，同时保持多模态任务的视觉基础。",
-    "2604.01298": "自然语言处理；预测模型  \n背景/任务：预测供应链中断事件，这是一个从噪音和非结构化数据中学习罕见高影响事件的挑战。  \n研究内容：提出了一个训练大语言模型生成校准概率预测的端到端框架，其性能超越包括GPT-5在内的基线模型，并开源了评估数据集。",
     "2604.02289": "计算机视觉；图形学  \n背景是现有多模态大模型在3D生成上存在数据稀缺和几何不一致的问题。  \n他们提出了Omni123模型，通过统一2D和3D生成的训练框架，利用2D数据作为几何先验来提升3D生成质量。",
     "2604.01666": "计算机视觉；视频生成  \n视频扩散模型在生成动态运动和精细可控视频上存在局限，主要因训练数据中此类样本稀缺。  \n该研究提出DynaVid框架，利用合成光流数据分阶段生成视频，以合成数据学习动态运动，用真实数据保持视觉真实。",
-    "2604.01760": "自然语言处理;语音合成  \n背景/任务：解决现有自回归神经编解码语言模型在长语音合成中文本条件弱化的问题，提升零样本语音克隆性能。  \n所做工作：提出T5Gemma-TTS模型，采用编码器-解码器架构和PM-RoPE技术，在多语言数据上训练，实现了更好的说话人相似度和时长控制。",
+    "2604.01014": "人工智能安全; 机器学习隐私与安全  \n现有成员推理攻击方法依赖静态启发式规则，难以适配不同大模型，导致性能受限。  \n本文提出AutoMIA框架，将成员推理转化为自动化策略探索与进化过程，通过闭环评估生成并优化攻击策略，实现了模型无关的高效攻击。",
+    "2604.01328": "机器学习;优化算法  \n传统科学发现依赖人工试错的低效循环，需要更智能的实验设计方法。  \n该教程提出用贝叶斯优化框架，通过概率模型和采集函数自动化实验选择，以加速材料、化学等领域的科学发现。",
     "2604.02007": "人工智能;强化学习\n背景是构建能在多领域进行高效推理的通用模型，面临训练与推理效率的挑战。\n研究提出了带自适应采样和难度感知长度惩罚的训练方法，在多个基准上实现了更高精度与更短推理路径。",
-    "2603.27666": "计算机视觉;生成模型  \n背景/任务：解决云部署扩散模型带来的数据隐私问题，探索适用于边缘设备的可控视觉生成方法。  \n所做工作：提出一种基于线性注意力架构的统一门控条件模块，支持多类型条件输入，在多个任务上实现了优于现有方法的生成性能。",
-    "2603.26259": "信息检索;机器学习  \n背景/任务：研究交互式检索模型中潜在的性能瓶颈，特别是长度偏差和相似度分布问题。  \n研究内容：分析了双向和因果交互式模型在NanoBEIR基准上的长度偏差，并验证了MaxSim操作符对顶层令牌相似度的高效利用。",
+    "2604.02088": "计算机视觉；图像生成与编辑  \n背景/任务是为图像编辑提供连续滑块式控制，在保持源图像保真度和一致编辑方向的前提下，解决现有方法训练开销大、鲁棒性不足的问题。  \n提出了一种无需训练的方法FlowSlider，通过分解并正交化保真项与导向项，仅缩放导向项即可实现平滑、可靠的编辑强度控制。",
+    "2604.00829": "自然语言处理;多模态学习  \n背景/任务：将预训练语言模型适配为视觉语言模型时，会因表征偏移和跨模态干扰导致语言能力下降，传统恢复方法通常增加模块，不够高效灵活。  \n所做工作：提出无需额外模块的蒸馏方法LinguDistill，通过层间KV缓存共享利用原始语言模型作为教师，在语言密集数据上选择性蒸馏以恢复语言能力，同时保持多模态任务的视觉基础。",
+    "2604.01298": "自然语言处理；预测模型  \n背景/任务：预测供应链中断事件，这是一个从噪音和非结构化数据中学习罕见高影响事件的挑战。  \n研究内容：提出了一个训练大语言模型生成校准概率预测的端到端框架，其性能超越包括GPT-5在内的基线模型，并开源了评估数据集。",
     "2604.02330": "计算机视觉；生成模型  \n现有视频扩散模型难以在交互环境中同时控制多个智能体并绑定动作与主体。  \n该研究提出ActionParty模型，通过主体状态令牌和空间偏置机制，实现了对多智能体的精确动作控制和状态跟踪。",
+    "2604.01760": "自然语言处理;语音合成  \n背景/任务：解决现有自回归神经编解码语言模型在长语音合成中文本条件弱化的问题，提升零样本语音克隆性能。  \n所做工作：提出T5Gemma-TTS模型，采用编码器-解码器架构和PM-RoPE技术，在多语言数据上训练，实现了更好的说话人相似度和时长控制。",
+    "2604.01479": "计算机视觉；三维重建\n背景/任务是在稀疏视角下进行三维建模，解决重建保真度与生成合理性之间的固有矛盾。\n提出UniRecGen统一框架，通过共享规范空间和分离式协同学习，将前馈重建与扩散生成结合，以生成完整一致的三维模型。",
+    "2603.26233": "自然语言处理；智能体与多智能体系统\n背景/任务是：评估大型语言模型智能体在软件工程等开放领域处理模糊指令时的澄清能力。\n研究设计了一个不确定性感知的多智能体框架，将模糊性检测与代码执行解耦，显著提升了任务解决率并展现出良好的不确定性校准。",
+    "2603.26259": "信息检索;机器学习  \n背景/任务：研究交互式检索模型中潜在的性能瓶颈，特别是长度偏差和相似度分布问题。  \n研究内容：分析了双向和因果交互式模型在NanoBEIR基准上的长度偏差，并验证了MaxSim操作符对顶层令牌相似度的高效利用。",
+    "2604.01619": "计算机视觉;生物信息学  \n背景/任务：传统形态特征提取依赖专家且效率低，限制了大规模生态研究。  \n工作：提出基于稀疏自编码器和视觉语言提示的自动化特征标注流程，构建了大规模昆虫形态特征数据集。",
     "2604.01929": "音频生成；深度学习  \n音频研究社区依赖开放生成模型作为开发新方法和建立基线的基础工具。  \n索尼AI发布了名为Woosh的公开音效基础模型，包括高质量音频编解码器、文本-音频对齐模型以及文本/视频到音频的生成模型，并在评估中展现了优于现有开放模型的性能。",
     "2604.00491": "人工智能系统；并行计算\n背景/任务是传统LLM代码生成代理采用串行执行模式导致生成与执行阶段空闲等待，造成端到端延迟问题。  \n研究提出了并行执行范式，设计实现Eager系统，通过流水线化生成、检测与执行来显著降低延迟。",
-    "2604.01479": "计算机视觉；三维重建\n背景/任务是在稀疏视角下进行三维建模，解决重建保真度与生成合理性之间的固有矛盾。\n提出UniRecGen统一框架，通过共享规范空间和分离式协同学习，将前馈重建与扩散生成结合，以生成完整一致的三维模型。",
+    "2603.06679": "计算机科学; 人机交互  \n背景/任务是提升视频世界模型的用户控制和共享推理能力。  \n它引入了独立的外部记忆模块，将生成分解为记忆、观察和动态模块，以实现可编辑环境和实时多人一致交互。",
     "2603.24257": "计算机视觉;自然语言处理  \n背景/任务是解决视觉语言模型在跨视角下对同一物体描述不一致的问题，这阻碍了具身智能体构建长期一致的语义表示。  \n他们提出了一个统一的、带记忆增强的视觉语言智能体，通过自回归框架同时处理数据关联、物体描述和探索策略，并使用自监督方法训练模型以提升描述一致性和性能。",
-    "2603.26233": "自然语言处理；智能体与多智能体系统\n背景/任务是：评估大型语言模型智能体在软件工程等开放领域处理模糊指令时的澄清能力。\n研究设计了一个不确定性感知的多智能体框架，将模糊性检测与代码执行解耦，显著提升了任务解决率并展现出良好的不确定性校准。",
-    "2604.01619": "计算机视觉;生物信息学  \n背景/任务：传统形态特征提取依赖专家且效率低，限制了大规模生态研究。  \n工作：提出基于稀疏自编码器和视觉语言提示的自动化特征标注流程，构建了大规模昆虫形态特征数据集。",
+    "2604.01152": "机器学习;自然语言处理  \n该论文针对大型语言模型在多领域持续微调中的灾难性遗忘和参数爆炸问题，提出了一种模块化架构。  \n该架构通过冻结的适配器堆栈、专家混合路由、零遗忘约束和基于结果的元路由器，实现了领域知识的可组合积累与高效复用。",
     "2604.00356": "人工智能;机器学习  \n背景/任务是改进已部署的智能体系统时面临轨迹数据量大、审查成本高的挑战。  \n他们提出了一种基于轻量级信号对智能体交互轨迹进行筛选的框架，通过高效识别高信息量的轨迹来优化后续处理效率。",
     "2604.01404": "自然语言处理;模型可解释性  \n背景是研究语言模型回答实体相关事实问题时涉及的内部机制。  \n通过定位和干预MLP神经元，验证了早期层的稀疏神经元能以紧凑方式实现实体检索和规范化。",
-    "2604.01152": "机器学习;自然语言处理  \n该论文针对大型语言模型在多领域持续微调中的灾难性遗忘和参数爆炸问题，提出了一种模块化架构。  \n该架构通过冻结的适配器堆栈、专家混合路由、零遗忘约束和基于结果的元路由器，实现了领域知识的可组合积累与高效复用。",
-    "2603.29042": "自然语言处理；语音识别  \n背景/任务是提升跨语言和低资源语音的phone recognition性能，克服现有模型泛化不足的问题。  \n作者提出了PhoneticXEUS模型，通过大规模多语言数据训练和系统实验，在多项评测中取得最优结果，并公开了数据和代码。",
-    "2603.06679": "计算机科学; 人机交互  \n背景/任务是提升视频世界模型的用户控制和共享推理能力。  \n它引入了独立的外部记忆模块，将生成分解为记忆、观察和动态模块，以实现可编辑环境和实时多人一致交互。",
-    "2603.27449": "计算机视觉；计算机图形学  \n背景/任务是解决传统物理模拟在精细接触式人-物交互动作生成中泛化性和可扩展性不足的问题。  \n他们提出了LOME，这是一个以自我为中心的世界模型，通过联合估计空间人类动作和环境上下文，在输入图像、文本提示和每帧动作条件下生成逼真的人-物交互视频。"
+    "2603.27449": "计算机视觉；计算机图形学  \n背景/任务是解决传统物理模拟在精细接触式人-物交互动作生成中泛化性和可扩展性不足的问题。  \n他们提出了LOME，这是一个以自我为中心的世界模型，通过联合估计空间人类动作和环境上下文，在输入图像、文本提示和每帧动作条件下生成逼真的人-物交互视频。",
+    "2603.29042": "自然语言处理；语音识别  \n背景/任务是提升跨语言和低资源语音的phone recognition性能，克服现有模型泛化不足的问题。  \n作者提出了PhoneticXEUS模型，通过大规模多语言数据训练和系统实验，在多项评测中取得最优结果，并公开了数据和代码。"
   },
   "deep_analysis": {
     "2604.02329": "这篇论文的核心内容可以理解为：**为了解决3D图形学中“渲染”和“逆渲染”任务数据不足的问题，作者们从高质量的电子游戏里“挖”出了一个巨大的数据集，并用这个数据集来训练AI模型，让它们更好地理解和生成真实世界的复杂场景。**\n\n下面我为你详细拆解一下：\n\n**(1) 这篇论文所在的任务是什么？**\n这篇论文属于**计算机视觉（CV）和计算机图形学（CG）的交叉领域**，具体涉及两个核心的“双向”任务：\n*   **任务一：逆渲染**\n    *   **输入**：一张或一段真实的RGB图像/视频。\n    *   **输出**：分解出构成这张图像的内在物理属性。可以想象成把一张照片“拆解”成它的组成部分，比如：\n        *   **深度图**：每个像素离相机有多远。\n        *   **法线图**：每个像素所在表面的朝向。\n        *   **反照率**：物体表面的基础颜色（排除光照影响）。\n        *   **金属度/粗糙度**：描述材质是像金属还是塑料，表面是光滑还是粗糙。\n    *   **功能**：让AI理解真实世界的3D结构和物理属性，是数字重建世界的关键一步。\n*   **任务二：前向渲染 / 可控生成**\n    *   **输入**：上述那些物理属性（比如深度图、法线图等，也叫 **G-buffer**），加上一个文本提示（比如“夕阳下的城市”）。\n    *   **输出**：一张符合这些物理约束和文本描述的高质量、逼真的图像或视频。\n    *   **功能**：根据给定的“蓝图”（G-buffer）和“要求”（文本），生成或编辑逼真的视觉内容，比如改变游戏场景的风格、天气等。\n\n**(2) 这篇论文想解决什么问题？**\n**核心问题：数据瓶颈。**\n现有的用于训练这些AI模型的**合成数据集**（比如用Blender等软件生成的）存在严重局限：\n*   **不够真实**：场景简单、材质单一、缺少复杂的光照和天气效果（如雾、雨、运动模糊）。\n*   **缺乏动态**：很多是静态图片或很短的视频，缺少长时间、连贯的动态场景。\n*   **结果**：用这些数据训练的模型，一旦遇到真实世界复杂、动态的视频，就会“翻车”——分解出的属性不准确，生成的视频闪烁、不连贯，无法处理复杂反射、精细植被、动态物体等。\n\n**(3) 论文的核心思路是什么？**\n**思路非常直接：既然人工合成的数据不够好，那就去“真实”的虚拟世界——顶级3A游戏里找！**\n1.  **造一个强大的数据集**：\n    *   **来源**：从《黑神话：悟空》等高质量游戏中采集。\n    *   **方法**：开发了一个巧妙的“双屏拼接”采集管道，在不修改游戏的情况下，直接从显卡渲染管线中“拦截”出高质量的G-buffer数据，并同步录制对应的游戏画面。\n    *   **规模与质量**：最终得到了**400万帧**连续、高分辨率（720p）、带各种天气和时间效果的视频-G-buffer配对数据。这个数据集的真实性、复杂性和时间连贯性远超以往。\n2.  **用新数据训练和评估模型**：\n    *   **训练**：用这个新数据集去微调现有的先进模型（如DiffusionRenderer）。给模型“喂”更真实、更复杂的数据，让它学得更好。\n    *   **评估**：提出一个新的**基于视觉大模型（VLM）的评估协议**。因为真实世界没有G-buffer的“标准答案”，传统像素级指标（如PSNR）不适用。他们让VLM（如GPT-4V）从**语义正确性、空间准确性和时间一致性**三个维度来评判模型输出，发现这个评判结果与人类的主观评价高度一致。\n\n**(4) 结果怎么样？**\n论文通过实验证明了新数据集的价值：\n*   **逆渲染效果更好**：用他们数据训练的模型，在分解真实世界视频的深度、法线、材质时，**准确性、鲁棒性和时间稳定性都显著提升**，跨越了“合成数据”到“真实数据”的鸿沟。\n*   **前向渲染/编辑能力更强**：他们的模型能够利用G-buffer进行高度可控的内容生成。例如，用户可以通过输入文本提示（如“让它看起来像水墨画”），直接改变一个游戏场景的整体艺术风格，效果非常逼真且符合物理约束。\n*   **评估方法有效**：提出的VLM评估方法与人类判断高度相关，为在没有真实G-buffer的情况下评估逆渲染模型提供了可靠的新工具。\n\n**简单总结：**\n这篇论文可以看作是为3D视觉和图形AI模型打造了一个“终极训练营”。通过从顶级游戏中采集海量、高质量、高动态的数据，他们**解决了该领域长期存在的数据荒问题**，使得AI模型在理解和生成复杂、动态的真实世界场景方面获得了质的飞跃。同时，他们提出的VLM评估方法也巧妙地解决了真实场景下的模型评测难题。",
@@ -416,28 +416,36 @@
       "abstract": "Existing video object removal methods excel at inpainting content \"behind\" the object and correcting appearance-level artifacts such as shadows and reflections. However, when the removed object has more significant interactions, such as collisions with other objects, current models fail to correct them and produce implausible results. We present VOID, a video object removal framework designed to perform physically-plausible inpainting in these complex scenarios. To train the model, we generate a new paired dataset of counterfactual object removals using Kubric and HUMOTO, where removing an object requires altering downstream physical interactions. During inference, a vision-language model identifies regions of the scene affected by the removed object. These regions are then used to guide a video diffusion model that generates physically consistent counterfactual outcomes. Experiments on both synthetic and real data show that our approach better preserves consistent scene dynamics after object removal compared to prior video object removal methods. We hope this framework sheds light on how to make video editing models better simulators of the world through high-level causal reasoning.",
       "comments": ""
     },
-    "2604.01007": {
-      "abstract": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover Omni-SimpleMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at thisthis https URL.",
-      "comments": ""
-    },
     "2604.01202": {
       "abstract": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
+      "comments": ""
+    },
+    "2604.01007": {
+      "abstract": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover Omni-SimpleMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at thisthis https URL.",
       "comments": ""
     },
     "2604.02190": {
       "abstract": "Vision-Language-Action (VLA) models have recently emerged in autonomous driving, with the promise of leveraging rich world knowledge to improve the cognitive capabilities of driving systems. However, adapting such models for driving tasks currently faces a critical dilemma between spatial perception and semantic reasoning. Consequently, existing VLA systems are forced into suboptimal compromises: directly adopting 2D Vision-Language Models yields limited spatial perception, whereas enhancing them with 3D spatial representations often impairs the native reasoning capacity of VLMs. We argue that this dilemma largely stems from the coupled optimization of spatial perception and semantic reasoning within shared model parameters. To overcome this, we propose UniDriveVLA, a Unified Driving Vision-Language-Action model based on Mixture-of-Transformers that addresses the perception-reasoning conflict via expert decoupling. Specifically, it comprises three experts for driving understanding, scene perception, and action planning, which are coordinated through masked joint attention. In addition, we combine a sparse perception paradigm with a three-stage progressive training strategy to improve spatial perception while maintaining semantic reasoning capability. Extensive experiments show that UniDriveVLA achieves state-of-the-art performance in open-loop evaluation on nuScenes and closed-loop evaluation on Bench2Drive. Moreover, it demonstrates strong performance across a broad range of perception, prediction, and understanding tasks, including 3D detection, online mapping, motion forecasting, and driving-oriented VQA, highlighting its broad applicability as a unified model for autonomous driving. Code and model have been released atthis https URL",
       "comments": "code has been released at <a class=\"link-external link-https\" href=\"https://github.com/xiaomi-research/unidrivevla\" rel=\"external noopener nofollow\">this https URL</a>"
     },
-    "2604.00917": {
-      "abstract": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code. We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews. Furthermore, we emphasize that code authoring and review are only a small part of the larger software engineering process, as the resulting code must also be maintained and updated over time. Hence, we offer several longitudinal estimates of survival and churn rates for agent-generated versus human-authored code. Ultimately, our findings indicate an increasing agent activity in open-source projects, although their contributions are associated with more churn over time compared to human-authored code.",
-      "comments": "MSR 2026 Technical Track"
-    },
     "2603.29640": {
       "abstract": "Can AI accelerate the development of AI itself? While recent agentic systems have shown strong performance on well-scoped tasks with rapid feedback, it remains unclear whether they can tackle the costly, long-horizon, and weakly supervised research loops that drive real AI progress. We present ASI-Evolve, an agentic framework for AI-for-AI research that closes this loop through a learn-design-experiment-analyze cycle. ASI-Evolve augments standard evolutionary agents with two key components: a cognition base that injects accumulated human priors into each round of exploration, and a dedicated analyzer that distills complex experimental outcomes into reusable insights for future iterations. To our knowledge, ASI-Evolve is the first unified framework to demonstrate AI-driven discovery across three central components of AI development: data, architectures, and learning algorithms. In neural architecture design, it discovered 105 SOTA linear attention architectures, with the best discovered model surpassing DeltaNet by +0.97 points, nearly 3x the gain of recent human-designed improvements. In pretraining data curation, the evolved pipeline improves average benchmark performance by +3.96 points, with gains exceeding 18 points on MMLU. In reinforcement learning algorithm design, discovered algorithms outperform GRPO by up to +12.5 points on AMC32, +11.67 points on AIME24, and +5.04 points on OlympiadBench. We further provide initial evidence that this AI-for-AI paradigm can transfer beyond the AI stack through experiments in mathematics and biomedicine. Together, these results suggest that ASI-Evolve represents a promising step toward enabling AI to accelerate AI across the foundational stages of development, offering early evidence for the feasibility of closed-loop AI research.",
       "comments": "19 pages, 6 figures, 6 tables. Code available at <a class=\"link-external link-https\" href=\"https://github.com/GAIR-NLP/ASI-Evolve\" rel=\"external noopener nofollow\">this https URL</a>"
     },
+    "2603.27666": {
+      "abstract": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure and efficient on-device generation, we explore in this paper controllable diffusion models built upon linear attention architectures, which offer superior scalability and efficiency, even on edge devices. Yet, our experiments reveal that existing controllable generation frameworks, such as ControlNet and OminiControl, either lack the flexibility to support multiple heterogeneous condition types or suffer from slow convergence on such linear-attention models. To address these limitations, we propose a novel controllable diffusion framework tailored for linear attention backbones like SANA. The core of our method lies in a unified gated conditioning module working in a dual-path pipeline, which effectively integrates multi-type conditional inputs, such as spatially aligned and non-aligned cues. Extensive experiments on multiple tasks and benchmarks demonstrate that our approach achieves state-of-the-art controllable generation performance based on linear-attention models, surpassing existing methods in terms of fidelity and controllability.",
+      "comments": ""
+    },
+    "2604.00917": {
+      "abstract": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code. We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews. Furthermore, we emphasize that code authoring and review are only a small part of the larger software engineering process, as the resulting code must also be maintained and updated over time. Hence, we offer several longitudinal estimates of survival and churn rates for agent-generated versus human-authored code. Ultimately, our findings indicate an increasing agent activity in open-source projects, although their contributions are associated with more churn over time compared to human-authored code.",
+      "comments": "MSR 2026 Technical Track"
+    },
     "2603.28068": {
       "abstract": "Although image generation has boosted various applications via its rapid evolution, whether the state-of-the-art models are able to produce ready-to-use academic illustrations for papers is still largely unexplored. Directly comparing or evaluating the illustration with VLM is native but requires oracle multi-modal understanding ability, which is unreliable for long and complex texts and illustrations. To address this, we propose AIBench, the first benchmark using VQA for evaluating logic correctness of the academic illustrations and VLMs for assessing aesthetics. In detail, we designed four levels of questions proposed from a logic diagram summarized from the method part of the paper, which query whether the generated illustration aligns with the paper on different scales. Our VQA-based approach raises more accurate and detailed evaluations on visual-logical consistency while relying less on the ability of the judger VLM. With our high-quality AIBench, we conduct extensive experiments and conclude that the performance gap between models on this task is significantly larger than general ones, reflecting their various complex reasoning and high-density generation ability. Further, the logic and aesthetics are hard to optimize simultaneously as in handcrafted illustrations. Additional experiments further state that test-time scaling on both abilities significantly boosts the performance on this task.",
+      "comments": ""
+    },
+    "2604.01569": {
+      "abstract": "Recent video multimodal large language models achieve impressive results across various benchmarks. However, current evaluations suffer from two critical limitations: (1) inflated scores can mask deficiencies in fine-grained visual understanding and reasoning, and (2) answer correctness is often measured without verifying whether models identify the precise spatio-temporal evidence supporting their predictions. To address this, we present VideoZeroBench, a hierarchical benchmark designed for challenging long-video question answering that rigorously verifies spatio-temporal evidence. It comprises 500 manually annotated questions across 13 domains, paired with temporal intervals and spatial bounding boxes as evidence. To disentangle answering generation, temporal grounding, and spatial grounding, we introduce a five-level evaluation protocol that progressively tightens evidence requirements. Experiments show that even Gemini-3-Pro correctly answers fewer than 17% of questions under the standard end-to-end QA setting (Level-3). When grounding constraints are imposed, performance drops sharply: No model exceeds 1% accuracy when both correct answering and accurate spatio-temporal localization are required (Level-5), with most failing to achieve any correct grounded predictions. These results expose a significant gap between surface-level answer correctness and genuine evidence-based reasoning, revealing that grounded video understanding remains a bottleneck for long-video QA. We further analyze performance across minimal evidence spans, atomic abilities, and inference paradigms, providing insights for future research in grounded video reasoning. The benchmark and code will be made publicly available.",
       "comments": ""
     },
     "2604.01676": {
@@ -452,32 +460,8 @@
       "abstract": "Video diffusion models exhibit emergent reasoning capabilities like solving mazes and puzzles, yet little is understood about how they reason during generation. We take a first step towards understanding this and study the internal planning dynamics of video models using 2D maze solving as a controlled testbed. Our investigations reveal two findings. Our first finding is early plan commitment: video diffusion models commit to a high-level motion plan within the first few denoising steps, after which further denoising alters visual details but not the underlying trajectory. Our second finding is that path length, not obstacle density, is the dominant predictor of maze difficulty, with a sharp failure threshold at 12 steps. This means video models can only reason over long mazes by chaining together multiple sequential generations. To demonstrate the practical benefits of our findings, we introduce Chaining with Early Planning, or ChEaP, which only spends compute on seeds with promising early plans and chains them together to tackle complex mazes. This improves accuracy from 7% to 67% on long-horizon mazes and by 2.5x overall on hard tasks in Frozen Lake and VR-Bench across Wan2.2-14B and HunyuanVideo-1.5. Our analysis reveals that current video models possess deeper reasoning capabilities than previously recognized, which can be elicited more reliably with better inference-time scaling.",
       "comments": ""
     },
-    "2604.01569": {
-      "abstract": "Recent video multimodal large language models achieve impressive results across various benchmarks. However, current evaluations suffer from two critical limitations: (1) inflated scores can mask deficiencies in fine-grained visual understanding and reasoning, and (2) answer correctness is often measured without verifying whether models identify the precise spatio-temporal evidence supporting their predictions. To address this, we present VideoZeroBench, a hierarchical benchmark designed for challenging long-video question answering that rigorously verifies spatio-temporal evidence. It comprises 500 manually annotated questions across 13 domains, paired with temporal intervals and spatial bounding boxes as evidence. To disentangle answering generation, temporal grounding, and spatial grounding, we introduce a five-level evaluation protocol that progressively tightens evidence requirements. Experiments show that even Gemini-3-Pro correctly answers fewer than 17% of questions under the standard end-to-end QA setting (Level-3). When grounding constraints are imposed, performance drops sharply: No model exceeds 1% accuracy when both correct answering and accurate spatio-temporal localization are required (Level-5), with most failing to achieve any correct grounded predictions. These results expose a significant gap between surface-level answer correctness and genuine evidence-based reasoning, revealing that grounded video understanding remains a bottleneck for long-video QA. We further analyze performance across minimal evidence spans, atomic abilities, and inference paradigms, providing insights for future research in grounded video reasoning. The benchmark and code will be made publicly available.",
-      "comments": ""
-    },
-    "2604.01014": {
-      "abstract": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transferred across different large models. In this work, we propose AutoMIA, an agentic framework that reformulates membership inference as an automated process of self-exploration and strategy evolution. Given high-level scenario specifications, AutoMIA self-explores the attack space by generating executable logits-level strategies and progressively refining them through closed-loop evaluation feedback. By decoupling abstract strategy reasoning from low-level execution, our framework enables a systematic, model-agnostic traversal of the attack search space. Extensive experiments demonstrate that AutoMIA consistently matches or outperforms state-of-the-art baselines while eliminating the need for manual feature engineering.",
-      "comments": ""
-    },
     "2603.28130": {
       "abstract": "We introduce Multilingual Document Parsing Benchmark, the first benchmark for multilingual digital and photographed document parsing. Document parsing has made remarkable strides, yet almost exclusively on clean, digital, well-formatted pages in a handful of dominant languages. No systematic benchmark exists to evaluate how models perform on digital and photographed documents across diverse scripts and low-resource languages. MDPBench comprises 3,400 document images spanning 17 languages, diverse scripts, and varied photographic conditions, with high-quality annotations produced through a rigorous pipeline of expert model labeling, manual correction, and human verification. To ensure fair comparison and prevent data leakage, we maintain separate public and private evaluation splits. Our comprehensive evaluation of both open-source and closed-source models uncovers a striking finding: while closed-source models (notably Gemini3-Pro) prove relatively robust, open-source alternatives suffer dramatic performance collapse, particularly on non-Latin scripts and real-world photographed documents, with an average drop of 17.8% on photographed documents and 14.0% on non-Latin scripts. These results reveal significant performance imbalances across languages and conditions, and point to concrete directions for building more inclusive, deployment-ready parsing systems. Source available atthis https URL.",
-      "comments": ""
-    },
-    "2604.02088": {
-      "abstract": "Continuous image editing aims to provide slider-style control of edit strength while preserving source-image fidelity and maintaining a consistent edit direction. Existing learning-based slider methods typically rely on auxiliary modules trained with synthetic or proxy supervision. This introduces additional training overhead and couples slider behavior to the training distribution, which can reduce reliability under distribution shifts in edits or domains. We propose \\textit{FlowSlider}, a training-free method for continuous editing in Rectified Flow that requires no post-training. \\textit{FlowSlider} decomposes FlowEdit's update into (i) a fidelity term, which acts as a source-conditioned stabilizer that preserves identity and structure, and (ii) a steering term that drives semantic transition toward the target edit. Geometric analysis and empirical measurements show that these terms are approximately orthogonal, enabling stable strength control by scaling only the steering term while keeping the fidelity term unchanged. As a result, \\textit{FlowSlider} provides smooth and reliable control without post-training, improving continuous editing quality across diverse tasks.",
-      "comments": "HuggingFace Space: <a class=\"link-external link-https\" href=\"https://huggingface.co/spaces/dominoer/FlowSlider\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2604.01328": {
-      "abstract": "Traditional scientific discovery relies on an iterative hypothesise-experiment-refine cycle that has driven progress for centuries, but its intuitive, ad-hoc implementation often wastes resources, yields inefficient designs, and misses critical insights. This tutorial presents Bayesian Optimisation (BO), a principled probability-driven framework that formalises and automates this core scientific cycle. BO uses surrogate models (e.g., Gaussian processes) to model empirical observations as evolving hypotheses, and acquisition functions to guide experiment selection, balancing exploitation of known knowledge and exploration of uncharted domains to eliminate guesswork and manual trial-and-error. We first frame scientific discovery as an optimisation problem, then unpack BO's core components, end-to-end workflows, and real-world efficacy via case studies in catalysis, materials science, organic synthesis, and molecule discovery. We also cover critical technical extensions for scientific applications, including batched experimentation, heteroscedasticity, contextual optimisation, and human-in-the-loop integration. Tailored for a broad audience, this tutorial bridges AI advances in BO with practical natural science applications, offering tiered content to empower cross-disciplinary researchers to design more efficient experiments and accelerate principled scientific discovery.",
-      "comments": ""
-    },
-    "2604.00829": {
-      "abstract": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tuning using standard objectives. Prior recovery approaches typically introduce additional modules that act as intermediate alignment layers to maintain or isolate modality-specific subspaces, which increases architectural complexity, adds parameters at inference time, and limits flexibility across models and settings. We propose LinguDistill, an adapter-free distillation method that restores linguistic capability by utilizing the original frozen LM as a teacher. We overcome the key challenge of enabling vision-conditioned teacher supervision by introducing layer-wise KV-cache sharing, which exposes the teacher to the student's multimodal representations without modifying the architecture of either model. We then selectively distill the teacher's strong linguistic signal on language-intensive data to recover language capability, while preserving the student's visual grounding on multimodal tasks. As a result, LinguDistill recovers $\\sim$10% of the performance lost on language and knowledge benchmarks, while maintaining comparable performance on vision-heavy tasks. Our findings demonstrate that linguistic capability can be recovered without additional modules, providing an efficient and practical solution to modality-specific degradation in multimodal models.",
-      "comments": ""
-    },
-    "2604.01298": {
-      "abstract": "Anticipating supply chain disruptions before they materialize is a core challenge for firms and policymakers alike. A key difficulty is learning to reason reliably about infrequent, high-impact events from noisy and unstructured inputs - a setting where general-purpose models struggle without task-specific adaptation. We introduce an end-to-end framework that trains LLMs to produce calibrated probabilistic forecasts using realized disruption outcomes as supervision. The resulting model substantially outperforms strong baselines - including GPT-5 - on accuracy, calibration, and precision. We also show that training induces more structured and reliable probabilistic reasoning without explicit prompting. These results suggest a general pathway for training domain-specific forecasting models that produce decision-ready signals. To support transparency we open-source the evaluation dataset used in this study.Dataset:this https URL",
       "comments": ""
     },
     "2604.02289": {
@@ -488,25 +472,53 @@
       "abstract": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduce DynaVid, a video synthesis framework that leverages synthetic motion data in training, which is represented as optical flow and rendered using computer graphics pipelines. This approach offers two key advantages. First, synthetic motion offers diverse motion patterns and precise control signals that are difficult to obtain from real data. Second, unlike rendered videos with artificial appearances, rendered optical flow encodes only motion and is decoupled from appearance, thereby preventing models from reproducing the unnatural look of synthetic videos. Building on this idea, DynaVid adopts a two-stage generation framework: a motion generator first synthesizes motion, and then a motion-guided video generator produces video frames conditioned on that motion. This decoupled formulation enables the model to learn dynamic motion patterns from synthetic data while preserving visual realism from real-world videos. We validate our framework on two challenging scenarios, vigorous human motion generation and extreme camera motion control, where existing datasets are particularly limited. Extensive experiments demonstrate that DynaVid improves the realism and controllability in dynamic motion generation and camera motion control.",
       "comments": "Accepted to CVPR 2026. Website: <a class=\"link-external link-https\" href=\"https://jinwonjoon.github.io/DynaVid/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
-    "2604.01760": {
-      "abstract": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, an encoder-decoder codec language model that maintains persistent text conditioning by routing bidirectional text representations through cross-attention at every decoder layer. Built on the T5Gemma pretrained encoder-decoder backbone (2B encoder + 2B decoder; 4B parameters), it inherits rich linguistic knowledge without phoneme conversion and processes text directly at the subword level. To improve duration control, we introduce Progress-Monitoring Rotary Position Embedding (PM-RoPE) in all 26 cross-attention layers, injecting normalized progress signals that help the decoder track target speech length. Trained on 170,000 hours of multilingual speech in English, Chinese, and Japanese, T5Gemma-TTS achieves a statistically significant speaker-similarity gain on Japanese over XTTSv2 (0.677 vs. 0.622; non-overlapping 95% confidence intervals) and the highest numerical Korean speaker similarity (0.747) despite Korean not being included in training, although this margin over XTTSv2 (0.741) is not statistically conclusive. It also attains the lowest numerical Japanese character error rate among five baselines (0.126), though this ranking should be interpreted cautiously because of partial confidence-interval overlap with Kokoro. English results on LibriSpeech should be viewed as an upper-bound estimate because LibriHeavy is a superset of LibriSpeech. Using the same checkpoint, disabling PM-RoPE at inference causes near-complete synthesis failure: CER degrades from 0.129 to 0.982 and duration accuracy drops from 79% to 46%. Code and weights are available atthis https URL.",
+    "2604.01014": {
+      "abstract": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transferred across different large models. In this work, we propose AutoMIA, an agentic framework that reformulates membership inference as an automated process of self-exploration and strategy evolution. Given high-level scenario specifications, AutoMIA self-explores the attack space by generating executable logits-level strategies and progressively refining them through closed-loop evaluation feedback. By decoupling abstract strategy reasoning from low-level execution, our framework enables a systematic, model-agnostic traversal of the attack search space. Extensive experiments demonstrate that AutoMIA consistently matches or outperforms state-of-the-art baselines while eliminating the need for manual feature engineering.",
+      "comments": ""
+    },
+    "2604.01328": {
+      "abstract": "Traditional scientific discovery relies on an iterative hypothesise-experiment-refine cycle that has driven progress for centuries, but its intuitive, ad-hoc implementation often wastes resources, yields inefficient designs, and misses critical insights. This tutorial presents Bayesian Optimisation (BO), a principled probability-driven framework that formalises and automates this core scientific cycle. BO uses surrogate models (e.g., Gaussian processes) to model empirical observations as evolving hypotheses, and acquisition functions to guide experiment selection, balancing exploitation of known knowledge and exploration of uncharted domains to eliminate guesswork and manual trial-and-error. We first frame scientific discovery as an optimisation problem, then unpack BO's core components, end-to-end workflows, and real-world efficacy via case studies in catalysis, materials science, organic synthesis, and molecule discovery. We also cover critical technical extensions for scientific applications, including batched experimentation, heteroscedasticity, contextual optimisation, and human-in-the-loop integration. Tailored for a broad audience, this tutorial bridges AI advances in BO with practical natural science applications, offering tiered content to empower cross-disciplinary researchers to design more efficient experiments and accelerate principled scientific discovery.",
       "comments": ""
     },
     "2604.02007": {
       "abstract": "Building general-purpose reasoning models using reinforcement learning with verifiable rewards (RLVR) across diverse domains has been widely adopted by frontier open-weight models. However, their training recipes and domain mixtures are often not disclosed. Joint optimization across domains poses significant challenges: domains vary widely in rollout length, problem difficulty and sample efficiency. Further, models with long chain-of-thought traces increase inference cost and latency, making efficiency critical for practical deployment. We present Apriel-Reasoner, trained with a fully reproducible multi-domain RL post-training recipe on Apriel-Base, a 15B-parameter open-weight LLM, across five domains using public datasets: mathematics, code generation, instruction following, logical puzzles and function calling. We introduce an adaptive domain sampling mechanism that preserves target domain ratios despite heterogeneous rollout dynamics, and a difficulty-aware extension of the standard length penalty that, with no additional training overhead, encourages longer reasoning for difficult problems and shorter traces for easy ones. Trained with a strict 16K-token output budget, Apriel-Reasoner generalizes to 32K tokens at inference and improves over Apriel-Base on AIME 2025, GPQA, MMLU-Pro, and LiveCodeBench while producing 30-50% shorter reasoning traces. It matches strong open-weight models of similar size at lower token cost, thereby pushing the Pareto frontier of accuracy versus token budget.",
       "comments": "20 pages, 4 tables, 6 figures, appendix included"
     },
-    "2603.27666": {
-      "abstract": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure and efficient on-device generation, we explore in this paper controllable diffusion models built upon linear attention architectures, which offer superior scalability and efficiency, even on edge devices. Yet, our experiments reveal that existing controllable generation frameworks, such as ControlNet and OminiControl, either lack the flexibility to support multiple heterogeneous condition types or suffer from slow convergence on such linear-attention models. To address these limitations, we propose a novel controllable diffusion framework tailored for linear attention backbones like SANA. The core of our method lies in a unified gated conditioning module working in a dual-path pipeline, which effectively integrates multi-type conditional inputs, such as spatially aligned and non-aligned cues. Extensive experiments on multiple tasks and benchmarks demonstrate that our approach achieves state-of-the-art controllable generation performance based on linear-attention models, surpassing existing methods in terms of fidelity and controllability.",
+    "2604.02088": {
+      "abstract": "Continuous image editing aims to provide slider-style control of edit strength while preserving source-image fidelity and maintaining a consistent edit direction. Existing learning-based slider methods typically rely on auxiliary modules trained with synthetic or proxy supervision. This introduces additional training overhead and couples slider behavior to the training distribution, which can reduce reliability under distribution shifts in edits or domains. We propose \\textit{FlowSlider}, a training-free method for continuous editing in Rectified Flow that requires no post-training. \\textit{FlowSlider} decomposes FlowEdit's update into (i) a fidelity term, which acts as a source-conditioned stabilizer that preserves identity and structure, and (ii) a steering term that drives semantic transition toward the target edit. Geometric analysis and empirical measurements show that these terms are approximately orthogonal, enabling stable strength control by scaling only the steering term while keeping the fidelity term unchanged. As a result, \\textit{FlowSlider} provides smooth and reliable control without post-training, improving continuous editing quality across diverse tasks.",
+      "comments": "HuggingFace Space: <a class=\"link-external link-https\" href=\"https://huggingface.co/spaces/dominoer/FlowSlider\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.00829": {
+      "abstract": "Adapting pretrained language models (LMs) into vision-language models (VLMs) can degrade their native linguistic capability due to representation shift and cross-modal interference introduced during multimodal adaptation. Such loss is difficult to recover, even with targeted task-specific fine-tuning using standard objectives. Prior recovery approaches typically introduce additional modules that act as intermediate alignment layers to maintain or isolate modality-specific subspaces, which increases architectural complexity, adds parameters at inference time, and limits flexibility across models and settings. We propose LinguDistill, an adapter-free distillation method that restores linguistic capability by utilizing the original frozen LM as a teacher. We overcome the key challenge of enabling vision-conditioned teacher supervision by introducing layer-wise KV-cache sharing, which exposes the teacher to the student's multimodal representations without modifying the architecture of either model. We then selectively distill the teacher's strong linguistic signal on language-intensive data to recover language capability, while preserving the student's visual grounding on multimodal tasks. As a result, LinguDistill recovers $\\sim$10% of the performance lost on language and knowledge benchmarks, while maintaining comparable performance on vision-heavy tasks. Our findings demonstrate that linguistic capability can be recovered without additional modules, providing an efficient and practical solution to modality-specific degradation in multimodal models.",
+      "comments": ""
+    },
+    "2604.01298": {
+      "abstract": "Anticipating supply chain disruptions before they materialize is a core challenge for firms and policymakers alike. A key difficulty is learning to reason reliably about infrequent, high-impact events from noisy and unstructured inputs - a setting where general-purpose models struggle without task-specific adaptation. We introduce an end-to-end framework that trains LLMs to produce calibrated probabilistic forecasts using realized disruption outcomes as supervision. The resulting model substantially outperforms strong baselines - including GPT-5 - on accuracy, calibration, and precision. We also show that training induces more structured and reliable probabilistic reasoning without explicit prompting. These results suggest a general pathway for training domain-specific forecasting models that produce decision-ready signals. To support transparency we open-source the evaluation dataset used in this study.Dataset:this https URL",
+      "comments": ""
+    },
+    "2604.02330": {
+      "abstract": "Recent advances in video diffusion have enabled the development of \"world models\" capable of simulating interactive environments. However, these models are largely restricted to single-agent settings, failing to control multiple agents simultaneously in a scene. In this work, we tackle a fundamental issue of action binding in existing video diffusion models, which struggle to associate specific actions with their corresponding subjects. For this purpose, we propose ActionParty, an action controllable multi-subject world model for generative video games. It introduces subject state tokens, i.e. latent variables that persistently capture the state of each subject in the scene. By jointly modeling state tokens and video latents with a spatial biasing mechanism, we disentangle global video frame rendering from individual action-controlled subject updates. We evaluate ActionParty on the Melting Pot benchmark, demonstrating the first video world model capable of controlling up to seven players simultaneously across 46 diverse environments. Our results show significant improvements in action-following accuracy and identity consistency, while enabling robust autoregressive tracking of subjects through complex interactions.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://action-party.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.01760": {
+      "abstract": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, an encoder-decoder codec language model that maintains persistent text conditioning by routing bidirectional text representations through cross-attention at every decoder layer. Built on the T5Gemma pretrained encoder-decoder backbone (2B encoder + 2B decoder; 4B parameters), it inherits rich linguistic knowledge without phoneme conversion and processes text directly at the subword level. To improve duration control, we introduce Progress-Monitoring Rotary Position Embedding (PM-RoPE) in all 26 cross-attention layers, injecting normalized progress signals that help the decoder track target speech length. Trained on 170,000 hours of multilingual speech in English, Chinese, and Japanese, T5Gemma-TTS achieves a statistically significant speaker-similarity gain on Japanese over XTTSv2 (0.677 vs. 0.622; non-overlapping 95% confidence intervals) and the highest numerical Korean speaker similarity (0.747) despite Korean not being included in training, although this margin over XTTSv2 (0.741) is not statistically conclusive. It also attains the lowest numerical Japanese character error rate among five baselines (0.126), though this ranking should be interpreted cautiously because of partial confidence-interval overlap with Kokoro. English results on LibriSpeech should be viewed as an upper-bound estimate because LibriHeavy is a superset of LibriSpeech. Using the same checkpoint, disabling PM-RoPE at inference causes near-complete synthesis failure: CER degrades from 0.129 to 0.982 and duration accuracy drops from 79% to 46%. Code and weights are available atthis https URL.",
+      "comments": ""
+    },
+    "2604.01479": {
+      "abstract": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generation provides rich geometric details but struggles with multi-view consistency. We present UniRecGen, a unified framework that integrates these two paradigms into a single cooperative system. To overcome inherent conflicts in coordinate spaces, 3D representations, and training objectives, we align both models within a shared canonical space. We employ disentangled cooperative learning, which maintains stable training while enabling seamless collaboration during inference. Specifically, the reconstruction module is adapted to provide canonical geometric anchors, while the diffusion generator leverages latent-augmented conditioning to refine and complete the geometric structure. Experimental results demonstrate that UniRecGen achieves superior fidelity and robustness, outperforming existing methods in creating complete and consistent 3D models from sparse observations.",
+      "comments": ""
+    },
+    "2603.26233": {
+      "abstract": "As Large Language Model (LLM) agents are increasingly deployed in open-ended domains like software engineering, they frequently encounter underspecified instructions that lack crucial context. While human developers naturally resolve underspecification by asking clarifying questions, current agents are largely optimized for autonomous execution. In this work, we systematically evaluate the clarification-seeking abilities of LLM agents on an underspecified variant of SWE-bench Verified. We propose an uncertainty-aware multi-agent scaffold that explicitly decouples underspecification detection from code execution. Our results demonstrate that this multi-agent system using OpenHands + Claude Sonnet 4.5 achieves a 69.40% task resolve rate, significantly outperforming a standard single-agent setup (61.20%) and closing the performance gap with agents operating on fully specified instructions. Furthermore, we find that the multi-agent system exhibits well-calibrated uncertainty, conserving queries on simple tasks while proactively seeking information on more complex issues. These findings indicate that current models can be turned into proactive collaborators, where agents independently recognize when to ask questions to elicit missing information in real-world, underspecified tasks.",
       "comments": ""
     },
     "2603.26259": {
       "abstract": "While Late Interaction models exhibit strong retrieval performance, many of their underlying dynamics remain understudied, potentially hiding performance bottlenecks. In this work, we focus on two topics in Late Interaction retrieval: a length bias that arises when using multi-vector scoring, and the similarity distribution beyond the best scores pooled by the MaxSim operator. We analyze these behaviors for state-of-the-art models on the NanoBEIR benchmark. Results show that while the theoretical length bias of causal Late Interaction models holds in practice, bi-directional models can also suffer from it in extreme cases. We also note that no significant similarity trend lies beyond the top-1 document token, validating that the MaxSim operator efficiently exploits the token-level similarity scores.",
       "comments": "Accepted at The 1st Late Interaction Workshop (LIR) @ ECIR 2026"
     },
-    "2604.02330": {
-      "abstract": "Recent advances in video diffusion have enabled the development of \"world models\" capable of simulating interactive environments. However, these models are largely restricted to single-agent settings, failing to control multiple agents simultaneously in a scene. In this work, we tackle a fundamental issue of action binding in existing video diffusion models, which struggle to associate specific actions with their corresponding subjects. For this purpose, we propose ActionParty, an action controllable multi-subject world model for generative video games. It introduces subject state tokens, i.e. latent variables that persistently capture the state of each subject in the scene. By jointly modeling state tokens and video latents with a spatial biasing mechanism, we disentangle global video frame rendering from individual action-controlled subject updates. We evaluate ActionParty on the Melting Pot benchmark, demonstrating the first video world model capable of controlling up to seven players simultaneously across 46 diverse environments. Our results show significant improvements in action-following accuracy and identity consistency, while enabling robust autoregressive tracking of subjects through complex interactions.",
-      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://action-party.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    "2604.01619": {
+      "abstract": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the absence of high-quality datasets linking biological images to trait-level annotations. In this work, we demonstrate that sparse autoencoders trained on foundation-model features yield monosemantic, spatially grounded neurons that consistently activate on meaningful morphological parts. Leveraging this property, we introduce a trait annotation pipeline that localizes salient regions and uses vision-language prompting to generate interpretable trait descriptions. Using this approach, we construct Bioscan-Traits, a dataset of 80K trait annotations spanning 19K insect images from BIOSCAN-5M. Human evaluation confirms the biological plausibility of the generated morphological descriptions. We assess design sensitivity through a comprehensive ablation study, systematically varying key design choices and measuring their impact on the quality of the resulting trait descriptions. By annotating traits with a modular pipeline rather than prohibitively expensive manual efforts, we offer a scalable way to inject biologically meaningful supervision into foundation models, enable large-scale morphological analyses, and bridge the gap between ecological relevance and machine-learning practicality.",
+      "comments": "ICLR 2026"
     },
     "2604.01929": {
       "abstract": "The audio research community depends on open generative models as foundational tools for building novel approaches and establishing baselines. In this report, we present Woosh, Sony AI's publicly released sound effect foundation model, detailing its architecture, training process, and an evaluation against other popular open models. Being optimized for sound effects, we provide (1) a high-quality audio encoder/decoder model and (2) a text-audio alignment model for conditioning, together with (3) text-to-audio and (4) video-to-audio generative models. Distilled text-to-audio and video-to-audio models are also included in the release, allowing for low-resource operation and fast inference. Our evaluation on both public and private data shows competitive or better performance for each module when compared to existing open alternatives like StableAudio-Open and TangoFlux. Inference code and model weights are available atthis https URL. Demo samples can be found atthis https URL.",
@@ -516,21 +528,17 @@
       "abstract": "Current LLM-based coding agents follow a serial execution paradigm: the model first generates the complete code, then invokes an interpreter to execute it. This sequential workflow leaves the executor idle during generation and the generator idle during execution, resulting in unnecessary end-to-end latency. We observe that, unlike human developers, LLMs produce code tokens sequentially without revision, making it possible to execute code as it is being generated. We formalize this parallel execution paradigm, modeling it as a three-stage pipeline of generation, detection, and execution, and derive closed-form latency bounds that characterize its speedup potential and operating regimes. We then present Eager, a concrete implementation featuring AST-based chunking, dynamic batching with gated execution, and early error interruption. We evaluate Eager across four benchmarks, seven LLMs, and three execution environments. Results show that Eager reduces the non-overlapped execution latency by up to 99.9% and the end-to-end latency by up to 55% across seven LLMs and four benchmarks.",
       "comments": "10 pages"
     },
-    "2604.01479": {
-      "abstract": "Sparse-view 3D modeling represents a fundamental tension between reconstruction fidelity and generative plausibility. While feed-forward reconstruction excels in efficiency and input alignment, it often lacks the global priors needed for structural completeness. Conversely, diffusion-based generation provides rich geometric details but struggles with multi-view consistency. We present UniRecGen, a unified framework that integrates these two paradigms into a single cooperative system. To overcome inherent conflicts in coordinate spaces, 3D representations, and training objectives, we align both models within a shared canonical space. We employ disentangled cooperative learning, which maintains stable training while enabling seamless collaboration during inference. Specifically, the reconstruction module is adapted to provide canonical geometric anchors, while the diffusion generator leverages latent-augmented conditioning to refine and complete the geometric structure. Experimental results demonstrate that UniRecGen achieves superior fidelity and robustness, outperforming existing methods in creating complete and consistent 3D models from sparse observations.",
-      "comments": ""
+    "2603.06679": {
+      "abstract": "Video world models have shown immense promise for interactive simulation and entertainment, but current systems still struggle with two important aspects of interactivity: user control over the environment for reproducible, editable experiences, and shared inference where players hold influence over a common world. To address these limitations, we introduce an explicit external memory into the system, a persistent state operating independent of the model's context window, that is continually updated by user actions and queried throughout the generation roll-out. Unlike conventional diffusion game engines that operate as next-frame predictors, our approach decomposes generation into Memory, Observation, and Dynamics modules. This design gives users direct, editable control over environment structure via an editable memory representation, and it naturally extends to real-time multiplayer rollouts with coherent viewpoints and consistent cross-player interactions.",
+      "comments": "Project page here: <a class=\"link-external link-https\" href=\"https://ryanpo.com/multigen/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2603.24257": {
       "abstract": "Vision-Language Models (VLMs) often yield inconsistent descriptions of the same object across viewpoints, hindering the ability of embodied agents to construct consistent semantic representations over time. Previous methods resolved inconsistencies using offline multi-view aggregation or multi-stage pipelines that decouple exploration, data association, and caption learning, with limited capacity to reason over previously observed objects. In this paper, we introduce a unified, memory-augmented Vision-Language agent that simultaneously handles data association, object captioning, and exploration policy within a single autoregressive framework. The model processes the current RGB observation, a top-down explored map, and an object-level episodic memory serialized into object-level tokens, ensuring persistent object identity and semantic consistency across extended sequences. To train the model in a self-supervised manner, we collect a dataset in photorealistic 3D environments using a disagreement-based policy and a pseudo-captioning model that enforces consistency across multi-view caption histories. Extensive evaluation on a manually annotated object-level test set, demonstrate improvements of up to +11.86% in standard captioning scores and +7.39% in caption self-similarity over baseline models, while enabling scalable performance through a compact scene representation. Code, model weights, and data are available atthis https URL.",
       "comments": "24 pages, 7 figures, 7 tables (including Supplementary Materials)"
     },
-    "2603.26233": {
-      "abstract": "As Large Language Model (LLM) agents are increasingly deployed in open-ended domains like software engineering, they frequently encounter underspecified instructions that lack crucial context. While human developers naturally resolve underspecification by asking clarifying questions, current agents are largely optimized for autonomous execution. In this work, we systematically evaluate the clarification-seeking abilities of LLM agents on an underspecified variant of SWE-bench Verified. We propose an uncertainty-aware multi-agent scaffold that explicitly decouples underspecification detection from code execution. Our results demonstrate that this multi-agent system using OpenHands + Claude Sonnet 4.5 achieves a 69.40% task resolve rate, significantly outperforming a standard single-agent setup (61.20%) and closing the performance gap with agents operating on fully specified instructions. Furthermore, we find that the multi-agent system exhibits well-calibrated uncertainty, conserving queries on simple tasks while proactively seeking information on more complex issues. These findings indicate that current models can be turned into proactive collaborators, where agents independently recognize when to ask questions to elicit missing information in real-world, underspecified tasks.",
-      "comments": ""
-    },
-    "2604.01619": {
-      "abstract": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the absence of high-quality datasets linking biological images to trait-level annotations. In this work, we demonstrate that sparse autoencoders trained on foundation-model features yield monosemantic, spatially grounded neurons that consistently activate on meaningful morphological parts. Leveraging this property, we introduce a trait annotation pipeline that localizes salient regions and uses vision-language prompting to generate interpretable trait descriptions. Using this approach, we construct Bioscan-Traits, a dataset of 80K trait annotations spanning 19K insect images from BIOSCAN-5M. Human evaluation confirms the biological plausibility of the generated morphological descriptions. We assess design sensitivity through a comprehensive ablation study, systematically varying key design choices and measuring their impact on the quality of the resulting trait descriptions. By annotating traits with a modular pipeline rather than prohibitively expensive manual efforts, we offer a scalable way to inject biologically meaningful supervision into foundation models, enable large-scale morphological analyses, and bridge the gap between ecological relevance and machine-learning practicality.",
-      "comments": "ICLR 2026"
+    "2604.01152": {
+      "abstract": "We present Brainstacks, a modular architecture for continual multi-domain fine-tuning of large language models that packages domain expertise as frozen adapter stacks composing additively on a shared frozen base at inference. Five interlocking components: (1) MoE-LoRA with Shazeer-style noisy top-2 routing across all seven transformer projections under QLoRA 4-bit quantization with rsLoRA scaling; (2) an inner loop performing residual boosting by freezing trained stacks and adding new ones; (3) an outer loop training sequential domain-specific stacks with curriculum-ordered dependencies; (4) null-space projection via randomized SVD constraining new stacks to subspaces orthogonal to prior directions, achieving zero forgetting in isolation; (5) an outcome-based sigmoid meta-router trained on empirically discovered domain-combination targets that selectively weights stacks, enabling cross-domain composition. Two boundary experiments: (6) PSN pretraining on a randomly initialized model; (7) per-domain RL (DPO/GRPO) validating compatibility with post-SFT alignment. Validated on TinyLlama-1.1B (4 domains, 9 stacks) and Gemma 3 12B IT (5 domains, 10 stacks), MoE-LoRA achieves 2.5x faster convergence than parameter-matched single LoRA, residual boosting breaks through the single-stack ceiling, and the routed system recovers generation quality destroyed by ungated stack accumulation. The central finding: the outcome-based router discovers that domain stacks encode transferable cognitive primitives (instruction-following clarity, numerical reasoning, procedural logic, chain-of-thought structure) rather than domain-specific knowledge, with medical prompts routing to chat+math stacks in 97% of cases despite zero medical data in those stacks.",
+      "comments": "26 pages, 13 figures, 4 tables"
     },
     "2604.00356": {
       "abstract": "Agentic applications based on large language models increasingly rely on multi-step interaction loops involving planning, action execution, and environment feedback. While such systems are now deployed at scale, improving them post-deployment remains challenging. Agent trajectories are voluminous and non-deterministic, and reviewing each one, whether through human review or auxiliary LLMs, is slow and cost-prohibitive. We propose a lightweight, signal-based framework for triaging agentic interaction trajectories. Our approach computes cheap, broadly applicable signals from live interactions and attaches them as structured attributes for trajectory triage, identifying interactions likely to be informative without affecting online agent behavior. We organize signals into a coarse-grained taxonomy spanning interaction (misalignment, stagnation, disengagement, satisfaction), execution (failure, loop), and environment (exhaustion), designed for computation without model calls. In a controlled annotation study on $\\tau$-bench, a widely used benchmark for tool-augmented agent evaluation, we show that signal-based sampling achieves an 82\\% informativeness rate compared to 74\\% for heuristic filtering and 54\\% for random sampling, with a 1.52x efficiency gain per informative trajectory. The advantage is robust across reward strata and task domains, confirming that signals provide genuine per-trajectory informativeness gains rather than merely oversampling obvious failures. These results show that lightweight signals can serve as practical sampling infrastructure for agentic systems, and suggest a path toward preference data construction and post-deployment optimization.",
@@ -540,21 +548,13 @@
       "abstract": "Language models can answer many entity-centric factual questions, but it remains unclear which internal mechanisms are involved in this process. We study this question across multiple language models. We localize entity-selective MLP neurons using templated prompts about each entity, and then validate them with causal interventions on PopQA-based QA examples. On a curated set of 200 entities drawn from PopQA, localized neurons concentrate in early layers. Negative ablation produces entity-specific amnesia, while controlled injection at a placeholder token improves answer retrieval relative to mean-entity and wrong-cell controls. For many entities, activating a single localized neuron is sufficient to recover entity-consistent predictions once the context is initialized, consistent with compact entity retrieval rather than purely gradual enrichment across depth. Robustness to aliases, acronyms, misspellings, and multilingual forms supports a canonicalization interpretation. The effect is strong but not universal: not every entity admits a reliable single-neuron handle, and coverage is higher for popular entities. Overall, these results identify sparse, causally actionable access points for analyzing and modulating entity-conditioned factual behavior.",
       "comments": ""
     },
-    "2604.01152": {
-      "abstract": "We present Brainstacks, a modular architecture for continual multi-domain fine-tuning of large language models that packages domain expertise as frozen adapter stacks composing additively on a shared frozen base at inference. Five interlocking components: (1) MoE-LoRA with Shazeer-style noisy top-2 routing across all seven transformer projections under QLoRA 4-bit quantization with rsLoRA scaling; (2) an inner loop performing residual boosting by freezing trained stacks and adding new ones; (3) an outer loop training sequential domain-specific stacks with curriculum-ordered dependencies; (4) null-space projection via randomized SVD constraining new stacks to subspaces orthogonal to prior directions, achieving zero forgetting in isolation; (5) an outcome-based sigmoid meta-router trained on empirically discovered domain-combination targets that selectively weights stacks, enabling cross-domain composition. Two boundary experiments: (6) PSN pretraining on a randomly initialized model; (7) per-domain RL (DPO/GRPO) validating compatibility with post-SFT alignment. Validated on TinyLlama-1.1B (4 domains, 9 stacks) and Gemma 3 12B IT (5 domains, 10 stacks), MoE-LoRA achieves 2.5x faster convergence than parameter-matched single LoRA, residual boosting breaks through the single-stack ceiling, and the routed system recovers generation quality destroyed by ungated stack accumulation. The central finding: the outcome-based router discovers that domain stacks encode transferable cognitive primitives (instruction-following clarity, numerical reasoning, procedural logic, chain-of-thought structure) rather than domain-specific knowledge, with medical prompts routing to chat+math stacks in 97% of cases despite zero medical data in those stacks.",
-      "comments": "26 pages, 13 figures, 4 tables"
+    "2603.27449": {
+      "abstract": "Learning human-object manipulation presents significant challenges due to its fine-grained and contact-rich nature of the motions involved. Traditional physics-based animation requires extensive modeling and manual setup, and more importantly, it neither generalizes well across diverse object morphologies nor scales effectively to real-world environment. To address these limitations, we introduce LOME, an egocentric world model that can generate realistic human-object interactions as videos conditioned on an input image, a text prompt, and per-frame human actions, including both body poses and hand gestures. LOME injects strong and precise action guidance into object manipulation by jointly estimating spatial human actions and the environment contexts during training. After finetuning a pretrained video generative model on videos of diverse egocentric human-object interactions, LOME demonstrates not only high action-following accuracy and strong generalization to unseen scenarios, but also realistic physical consequences of hand-object interactions, e.g., liquid flowing from a bottle into a mug after executing a ``pouring'' action. Extensive experiments demonstrate that our video-based framework significantly outperforms state-of-the-art image based and video-based action-conditioned methods and Image/Text-to-Video (I/T2V) generative model in terms of both temporal consistency and motion control. LOME paves the way for photorealistic AR/VR experiences and scalable robotic training, without being limited to simulated environments or relying on explicit 3D/4D modeling.",
+      "comments": ""
     },
     "2603.29042": {
       "abstract": "Phone recognition (PR) is a key enabler of multilingual and low-resource speech processing tasks, yet robust performance remains elusive. Highly performant English-focused models do not generalize across languages, while multilingual models underutilize pretrained representations. It also remains unclear how data scale, architecture, and training objective contribute to multilingual PR. We present PhoneticXEUS -- trained on large-scale multilingual data and achieving state-of-the-art performance on both multilingual (17.7% PFER) and accented English speech (10.6% PFER). Through controlled ablations with evaluations across 100+ languages under a unified scheme, we empirically establish our training recipe and quantify the impact of SSL representations, data scale, and loss objectives. In addition, we analyze error patterns across language families, accented speech, and articulatory features. All data and code are released openly.",
       "comments": "Submitted to Interspeech 2026. Code: <a class=\"link-external link-https\" href=\"https://github.com/changelinglab/PhoneticXeus\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2603.06679": {
-      "abstract": "Video world models have shown immense promise for interactive simulation and entertainment, but current systems still struggle with two important aspects of interactivity: user control over the environment for reproducible, editable experiences, and shared inference where players hold influence over a common world. To address these limitations, we introduce an explicit external memory into the system, a persistent state operating independent of the model's context window, that is continually updated by user actions and queried throughout the generation roll-out. Unlike conventional diffusion game engines that operate as next-frame predictors, our approach decomposes generation into Memory, Observation, and Dynamics modules. This design gives users direct, editable control over environment structure via an editable memory representation, and it naturally extends to real-time multiplayer rollouts with coherent viewpoints and consistent cross-player interactions.",
-      "comments": "Project page here: <a class=\"link-external link-https\" href=\"https://ryanpo.com/multigen/\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2603.27449": {
-      "abstract": "Learning human-object manipulation presents significant challenges due to its fine-grained and contact-rich nature of the motions involved. Traditional physics-based animation requires extensive modeling and manual setup, and more importantly, it neither generalizes well across diverse object morphologies nor scales effectively to real-world environment. To address these limitations, we introduce LOME, an egocentric world model that can generate realistic human-object interactions as videos conditioned on an input image, a text prompt, and per-frame human actions, including both body poses and hand gestures. LOME injects strong and precise action guidance into object manipulation by jointly estimating spatial human actions and the environment contexts during training. After finetuning a pretrained video generative model on videos of diverse egocentric human-object interactions, LOME demonstrates not only high action-following accuracy and strong generalization to unseen scenarios, but also realistic physical consequences of hand-object interactions, e.g., liquid flowing from a bottle into a mug after executing a ``pouring'' action. Extensive experiments demonstrate that our video-based framework significantly outperforms state-of-the-art image based and video-based action-conditioned methods and Image/Text-to-Video (I/T2V) generative model in terms of both temporal consistency and motion control. LOME paves the way for photorealistic AR/VR experiences and scalable robotic training, without being limited to simulated environments or relying on explicit 3D/4D modeling.",
-      "comments": ""
     }
   }
 }
