@@ -6,123 +6,153 @@
   "base_info": {
     "2603.24414": {
       "title": "ClawKeeper: Comprehensive Safety Protection for OpenClaw Agents Through Skills, Plugins, and Watchers",
-      "hf_link": "https://huggingface.co/papers/2603.24414"
+      "hf_link": "https://huggingface.co/papers/2603.24414",
+      "votes": 0
     },
     "2604.00073": {
       "title": "Terminal Agents Suffice for Enterprise Automation",
-      "hf_link": "https://huggingface.co/papers/2604.00073"
+      "hf_link": "https://huggingface.co/papers/2604.00073",
+      "votes": 0
     },
     "2603.28407": {
       "title": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome",
-      "hf_link": "https://huggingface.co/papers/2603.28407"
+      "hf_link": "https://huggingface.co/papers/2603.28407",
+      "votes": 0
     },
     "2603.25823": {
       "title": "ViGoR-Bench: How Far Are Visual Generative Models From Zero-Shot Visual Reasoners?",
-      "hf_link": "https://huggingface.co/papers/2603.25823"
+      "hf_link": "https://huggingface.co/papers/2603.25823",
+      "votes": 0
     },
     "2603.26648": {
       "title": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
-      "hf_link": "https://huggingface.co/papers/2603.26648"
+      "hf_link": "https://huggingface.co/papers/2603.26648",
+      "votes": 0
     },
     "2603.26017": {
       "title": "QuitoBench: A High-Quality Open Time Series Forecasting Benchmark",
-      "hf_link": "https://huggingface.co/papers/2603.26017"
+      "hf_link": "https://huggingface.co/papers/2603.26017",
+      "votes": 0
     },
     "2604.01161": {
       "title": "Reasoning Shift: How Context Silently Shortens LLM Reasoning",
-      "hf_link": "https://huggingface.co/papers/2604.01161"
+      "hf_link": "https://huggingface.co/papers/2604.01161",
+      "votes": 0
     },
     "2604.01221": {
       "title": "HippoCamp: Benchmarking Contextual Agents on Personal Computers",
-      "hf_link": "https://huggingface.co/papers/2604.01221"
-    },
-    "2604.00025": {
-      "title": "Brevity Constraints Reverse Performance Hierarchies in Language Models",
-      "hf_link": "https://huggingface.co/papers/2604.00025"
+      "hf_link": "https://huggingface.co/papers/2604.01221",
+      "votes": 0
     },
     "2604.01193": {
       "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
-      "hf_link": "https://huggingface.co/papers/2604.01193"
+      "hf_link": "https://huggingface.co/papers/2604.01193",
+      "votes": 0
+    },
+    "2604.00025": {
+      "title": "Brevity Constraints Reverse Performance Hierarchies in Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.00025",
+      "votes": 0
     },
     "2603.26661": {
       "title": "GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation",
-      "hf_link": "https://huggingface.co/papers/2603.26661"
+      "hf_link": "https://huggingface.co/papers/2603.26661",
+      "votes": 0
     },
     "2603.26653": {
       "title": "PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning",
-      "hf_link": "https://huggingface.co/papers/2603.26653"
+      "hf_link": "https://huggingface.co/papers/2603.26653",
+      "votes": 0
     },
     "2604.01220": {
       "title": "Universal YOCO for Efficient Depth Scaling",
-      "hf_link": "https://huggingface.co/papers/2604.01220"
+      "hf_link": "https://huggingface.co/papers/2604.01220",
+      "votes": 0
     },
     "2604.01128": {
       "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
-      "hf_link": "https://huggingface.co/papers/2604.01128"
+      "hf_link": "https://huggingface.co/papers/2604.01128",
+      "votes": 0
     },
     "2604.00842": {
       "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
-      "hf_link": "https://huggingface.co/papers/2604.00842"
-    },
-    "2604.00590": {
-      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
-      "hf_link": "https://huggingface.co/papers/2604.00590"
-    },
-    "2604.00528": {
-      "title": "Think, Act, Build: An Agentic Framework with Vision Language Models for Zero-Shot 3D Visual Grounding",
-      "hf_link": "https://huggingface.co/papers/2604.00528"
-    },
-    "2604.00986": {
-      "title": "Do Phone-Use Agents Respect Your Privacy?",
-      "hf_link": "https://huggingface.co/papers/2604.00986"
+      "hf_link": "https://huggingface.co/papers/2604.00842",
+      "votes": 0
     },
     "2604.00626": {
       "title": "A Survey of On-Policy Distillation for Large Language Models",
-      "hf_link": "https://huggingface.co/papers/2604.00626"
+      "hf_link": "https://huggingface.co/papers/2604.00626",
+      "votes": 0
     },
-    "2604.01029": {
-      "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
-      "hf_link": "https://huggingface.co/papers/2604.01029"
+    "2604.00590": {
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "hf_link": "https://huggingface.co/papers/2604.00590",
+      "votes": 0
     },
-    "2604.00886": {
-      "title": "PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding",
-      "hf_link": "https://huggingface.co/papers/2604.00886"
+    "2604.00528": {
+      "title": "Think, Act, Build: An Agentic Framework with Vision Language Models for Zero-Shot 3D Visual Grounding",
+      "hf_link": "https://huggingface.co/papers/2604.00528",
+      "votes": 0
     },
-    "2604.00892": {
-      "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
-      "hf_link": "https://huggingface.co/papers/2604.00892"
-    },
-    "2603.29002": {
-      "title": "Understand and Accelerate Memory Processing Pipeline for Disaggregated LLM Inference",
-      "hf_link": "https://huggingface.co/papers/2603.29002"
+    "2604.00986": {
+      "title": "Do Phone-Use Agents Respect Your Privacy?",
+      "hf_link": "https://huggingface.co/papers/2604.00986",
+      "votes": 0
     },
     "2604.01168": {
       "title": "S0 Tuning: Zero-Overhead Adaptation of Hybrid Recurrent-Attention Models",
-      "hf_link": "https://huggingface.co/papers/2604.01168"
+      "hf_link": "https://huggingface.co/papers/2604.01168",
+      "votes": 0
+    },
+    "2604.01029": {
+      "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
+      "hf_link": "https://huggingface.co/papers/2604.01029",
+      "votes": 0
+    },
+    "2604.00886": {
+      "title": "PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding",
+      "hf_link": "https://huggingface.co/papers/2604.00886",
+      "votes": 0
+    },
+    "2604.00892": {
+      "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
+      "hf_link": "https://huggingface.co/papers/2604.00892",
+      "votes": 0
+    },
+    "2603.29002": {
+      "title": "Understand and Accelerate Memory Processing Pipeline for Disaggregated LLM Inference",
+      "hf_link": "https://huggingface.co/papers/2603.29002",
+      "votes": 0
     },
     "2604.00913": {
       "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
-      "hf_link": "https://huggingface.co/papers/2604.00913"
+      "hf_link": "https://huggingface.co/papers/2604.00913",
+      "votes": 0
     },
     "2603.29247": {
       "title": "MemRerank: Preference Memory for Personalized Product Reranking",
-      "hf_link": "https://huggingface.co/papers/2603.29247"
+      "hf_link": "https://huggingface.co/papers/2603.29247",
+      "votes": 0
     },
     "2603.25406": {
       "title": "MMaDA-VLA: Large Diffusion Vision-Language-Action Model with Unified Multi-Modal Instruction and Generation",
-      "hf_link": "https://huggingface.co/papers/2603.25406"
+      "hf_link": "https://huggingface.co/papers/2603.25406",
+      "votes": 0
     },
     "2603.25764": {
       "title": "Consistency Amplifies: How Behavioral Variance Shapes Agent Accuracy",
-      "hf_link": "https://huggingface.co/papers/2603.25764"
+      "hf_link": "https://huggingface.co/papers/2603.25764",
+      "votes": 0
     },
     "2604.01194": {
       "title": "AgentWatcher: A Rule-based Prompt Injection Monitor",
-      "hf_link": "https://huggingface.co/papers/2604.01194"
+      "hf_link": "https://huggingface.co/papers/2604.01194",
+      "votes": 0
     },
     "2603.23582": {
       "title": "AI Generalisation Gap In Comorbid Sleep Disorder Staging",
-      "hf_link": "https://huggingface.co/papers/2603.23582"
+      "hf_link": "https://huggingface.co/papers/2603.23582",
+      "votes": 0
     }
   },
   "summaries": {
@@ -134,22 +164,22 @@
     "2603.26017": "机器学习;时间序列分析  \n时间序列预测领域因缺乏大规模高质量基准而受限。  \n研究者构建了覆盖八种趋势×季节性×可预测性机制的平衡基准，通过大规模评估揭示了不同模型家族在上下文长度、参数效率和数据规模上的表现差异。",
     "2604.01161": "自然语言处理；机器学习  \n背景/任务是探究大语言模型在复杂推理任务中的鲁棒性。  \n研究通过三种情境系统评估了多个推理模型，发现上下文变化会导致推理轨迹显著压缩及自验证行为减弱。",
     "2604.01221": "人工智能;机器学习  \n现有基准主要关注通用环境下的代理任务，而HippoCamp旨在评估代理在用户中心环境中的多模态文件管理能力。  \n它构建了一个包含大规模真实文件系统和密集标注问答对的基准，用于测试代理的检索、感知和推理能力，并揭示了当前模型的局限。",
-    "2604.00025": "大语言模型；评估方法  \n该研究针对大语言模型在标准评估中出现的规模增大反而性能下降的反常现象进行探究。  \n研究者通过系统实验发现，大模型因过度详细回答而引入错误，并证明通过约束回答长度能显著提升其准确性，甚至逆转性能排名。",
     "2604.01193": "自然语言处理；代码生成  \n该论文的背景是探索能否仅利用大型语言模型自身的原始输出来提升其代码生成能力，而不依赖外部验证器、教师模型或强化学习。  \n研究者提出了一种名为简单自蒸馏（SSD）的方法，通过对模型在特定温度和截断配置下生成的样本进行标准监督微调，显著提升了模型在代码生成基准上的性能，并揭示了该方法通过重塑令牌分布来解决解码中的精度与探索冲突的机制。",
+    "2604.00025": "大语言模型；评估方法  \n该研究针对大语言模型在标准评估中出现的规模增大反而性能下降的反常现象进行探究。  \n研究者通过系统实验发现，大模型因过度详细回答而引入错误，并证明通过约束回答长度能显著提升其准确性，甚至逆转性能排名。",
     "2603.26661": "计算机图形学；三维建模<br>\n背景/任务是探索一种完全自回归的替代方案，用于生成三维场景，以弥补当前流行的扩散或流匹配方法的不足。<br>\n作者提出了GaussianGPT模型，它通过离散化压缩和序列化自回归生成，实现了基于变换器的三维高斯直接生成，支持可控和上下文感知的场景构建。",
     "2603.26653": "计算机视觉;;视频理解  \n该论文针对现有模型在复杂、长时序、以感知为中心的视频推理任务上的不足，提出了新的评估需求。  \n作者构建了一个名为PerceptionComp的手动标注基准测试集，用于评估模型在需要多步视觉证据和组合逻辑的视频问答任务上的性能，并验证了当前先进模型在此任务上存在显著瓶颈。",
     "2604.01220": "自然语言处理；模型架构  \n背景/任务是提升大语言模型的推理和智能体能力，同时解决标准Transformer在推理时计算扩展效率低下的问题。  \n他们提出了YOCO-U架构，结合YOCO解码器-解码器结构和递归计算，以实现更高的能力-效率权衡。",
     "2604.01128": "自然语言处理;机器写作  \n背景/任务是：针对AI代写学术论文的质量与风险缺乏系统评估框架。  \n所做工作是：提出了PaperRecon评估框架和PaperWrite-Bench基准，量化了AI写论文在呈现质量与幻觉之间的权衡。",
     "2604.00842": "人机交互；智能体与多智能体系统  \n论文背景是现有数字助手研究因缺乏真实用户模拟框架而受阻，任务为开发能主动预测需求并执行任务的智能体。  \n作者提出了Pare框架以状态机建模应用程序，并创建了Pare-Bench基准测试来评估智能体的多维度能力。",
+    "2604.00626": "机器学习;自然语言处理  \n背景/任务是解决大型语言模型知识蒸馏中的暴露偏差问题，提升小模型在推理时的自生成准确性。  \n他首次提出了一个统一的f-散度框架来系统化梳理和分类在策略蒸馏方法，并分析了其核心维度、应用与开放问题。",
     "2604.00590": "机器学习;推荐系统  \n该论文关注推荐模型的规模扩展规律，探讨模型性能与参数/计算量之间的关系。  \n论文提出了一种统一的推荐系统扩展架构UniMixer，通过泛化的参数化特征混合模块连接主流扩展方法，并设计了轻量化模块以提升扩展效率。",
     "2604.00528": "计算机视觉;三维视觉  \n3D视觉定位任务旨在通过自然语言描述在三维场景中定位物体，但现有方法依赖预处理点云，将任务简化为候选框匹配。  \n本文提出TAB框架，将任务解耦为利用二维视觉语言模型处理语义，再通过多视图几何重建三维结构，无需预处理的点云数据。",
     "2604.00986": "人工智能安全;智能体评估  \n研究手机智能体在执行任务时是否尊重用户隐私，但缺乏可操作的衡量标准和方法。  \n作者提出了MyPhoneBench评估框架，通过模拟应用和规则审计来量化隐私合规行为，并测试多个模型发现任务成功与隐私保护能力并不一致。",
-    "2604.00626": "机器学习;自然语言处理  \n背景/任务是解决大型语言模型知识蒸馏中的暴露偏差问题，提升小模型在推理时的自生成准确性。  \n他首次提出了一个统一的f-散度框架来系统化梳理和分类在策略蒸馏方法，并分析了其核心维度、应用与开放问题。",
+    "2604.01168": "机器学习; 模型优化  \n背景/任务：在监督数据稀缺的情况下，如何对混合架构语言模型进行高效参数微调。  \n他做了什么：提出了一种名为S0调优的方法，通过仅优化循环层的初始状态矩阵（冻结所有权重），实现了零推理开销的性能提升，并在多个基准测试中验证了其有效性。",
     "2604.01029": "自然语言处理;大语言模型  \n背景/任务：研究多LLM修订流程（第二模型审核改进第一模型的草稿）中性能提升的来源是否仅为纠错。  \n工作内容：通过分解实验将修订收益分为再解答、脚手架和内容三部分，并在不同任务和模型对上验证，发现收益取决于任务结构、草稿质量和信息类型。",
     "2604.00886": "计算机视觉;视觉语言模型  \n背景/任务：文档理解和GUI交互是视觉语言模型的重要应用，但高分辨率输入导致计算负担沉重，存在大量冗余图像块。  \n方法：提出PixelPrune方法，通过预测编码压缩在视觉Transformer编码前剪枝冗余图像块，实现训练自由、无损或可控有损压缩，加速推理和训练。",
     "2604.00892": "人工智能应用；智能体与多智能体系统  \n背景/任务：研究LLM智能体在执行复杂、长流程任务时，如何有效处理用户的中断请求，如新增、修改或撤销任务要求。  \n做了什么：提出了InterruptBench基准，并评估了多种LLM在动态环境中的中断处理能力，发现现有模型在此方面仍面临挑战。",
     "2603.29002": "机器学习;系统与架构  \n现代大语言模型需要高效处理长上下文，但现有优化方法存在显著内存处理开销。  \n作者提出一个统一的内存处理四步框架，并通过在GPU-FPGA异构系统上卸载部分操作，实现了更快速、更节能的推理。",
-    "2604.01168": "机器学习; 模型优化  \n背景/任务：在监督数据稀缺的情况下，如何对混合架构语言模型进行高效参数微调。  \n他做了什么：提出了一种名为S0调优的方法，通过仅优化循环层的初始状态矩阵（冻结所有权重），实现了零推理开销的性能提升，并在多个基准测试中验证了其有效性。",
     "2604.00913": "计算机视觉;人机交互  \n背景/任务：针对2D组装图抽象难懂的问题，需智能助手在混合现实中监控进度、检测错误并提供指导，但现有视觉语言模型面临图示与实景视频的视觉特征差异挑战。  \n所做工作：构建了IKEA-Bench基准数据集，评估了19个视觉语言模型在三种对齐策略下的表现，发现视觉编码是提升跨图示鲁棒性的关键瓶颈，并通过机制分析揭示了图文特征空间分离问题。",
     "2603.29247": "自然语言处理;推荐系统  \n现有购物助手依赖冗长购买历史进行个性化推荐，但直接使用原始历史存在噪声和效率问题。  \n论文提出MemRerank框架，将用户历史提炼为紧凑偏好记忆，并通过强化学习优化提取过程，显著提升个性化商品重排序准确率。",
     "2603.25406": "机器人技术；计算机视觉与模式识别  \n背景/任务是解决现有视觉-语言-动作模型在机器人操控中存在的架构冗余、时序不一致、长程误差累积及缺乏环境动态建模机制的问题。  \n提出了一种原生离散扩散模型MMaDA-VLA，通过将多模态信息嵌入统一离散令牌空间并训练单一主干网络来并行生成未来目标观测和动作块，以优化长程一致性和动作的视觉基础。",
@@ -212,12 +242,12 @@
       "abstract": "We present HippoCamp, a new benchmark designed to evaluate agents' capabilities on multimodal file management. Unlike existing agent benchmarks that focus on tasks like web interaction, tool use, or software automation in generic settings, HippoCamp evaluates agents in user-centric environments to model individual user profiles and search massive personal files for context-aware reasoning. Our benchmark instantiates device-scale file systems over real-world profiles spanning diverse modalities, comprising 42.4 GB of data across over 2K real-world files. Building upon the raw files, we construct 581 QA pairs to assess agents' capabilities in search, evidence perception, and multi-step reasoning. To facilitate fine-grained analysis, we provide 46.1K densely annotated structured trajectories for step-wise failure diagnosis. We evaluate a wide range of state-of-the-art multimodal large language models (MLLMs) and agentic methods on HippoCamp. Our comprehensive experiments reveal a significant performance gap: even the most advanced commercial models achieve only 48.3% accuracy in user profiling, struggling particularly with long-horizon retrieval and cross-modal reasoning within dense personal file systems. Furthermore, our step-wise failure diagnosis identifies multimodal perception and evidence grounding as the primary bottlenecks. Ultimately, HippoCamp exposes the critical limitations of current agents in realistic, user-centric environments and provides a robust foundation for developing next-generation personal AI assistants.",
       "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://hippocamp-ai.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
-    "2604.00025": {
-      "abstract": "Standard evaluation protocols reveal a counterintuitive phenomenon: on 7.7% of benchmark problems spanning five datasets, larger language models underperform smaller ones by 28.4 percentage points despite 10-100x more parameters. Through systematic evaluation of 31 models (0.5B-405B parameters) across 1,485 problems, we identify the mechanism as spontaneous scale-dependent verbosity that introduces errors through overelaboration. Causal intervention experiments demonstrate this reflects correctable prompt design rather than fundamental capability limitations. Constraining large models to produce brief responses improves accuracy by 26 percentage points and reduces performance gaps by up to two-thirds. Most critically, brevity constraints completely reverse performance hierarchies on mathematical reasoning and scientific knowledge benchmarks, with large models achieving 7.7-15.9 percentage point advantages over small models -- direct inversions of the original gaps. These reversals prove large models possess superior latent capabilities that universal prompting masks. We validate findings through three independent contamination tests and demonstrate inverse scaling operates continuously across the full parameter spectrum, with dataset-specific optimal scales ranging from 0.5B to 3.0B parameters. Our results establish that maximizing large model performance requires scale-aware prompt engineering rather than universal evaluation protocols, with immediate implications for deployment: prompt adaptation simultaneously improves accuracy and reduces computational costs.",
-      "comments": ""
-    },
     "2604.01193": {
       "abstract": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+      "comments": ""
+    },
+    "2604.00025": {
+      "abstract": "Standard evaluation protocols reveal a counterintuitive phenomenon: on 7.7% of benchmark problems spanning five datasets, larger language models underperform smaller ones by 28.4 percentage points despite 10-100x more parameters. Through systematic evaluation of 31 models (0.5B-405B parameters) across 1,485 problems, we identify the mechanism as spontaneous scale-dependent verbosity that introduces errors through overelaboration. Causal intervention experiments demonstrate this reflects correctable prompt design rather than fundamental capability limitations. Constraining large models to produce brief responses improves accuracy by 26 percentage points and reduces performance gaps by up to two-thirds. Most critically, brevity constraints completely reverse performance hierarchies on mathematical reasoning and scientific knowledge benchmarks, with large models achieving 7.7-15.9 percentage point advantages over small models -- direct inversions of the original gaps. These reversals prove large models possess superior latent capabilities that universal prompting masks. We validate findings through three independent contamination tests and demonstrate inverse scaling operates continuously across the full parameter spectrum, with dataset-specific optimal scales ranging from 0.5B to 3.0B parameters. Our results establish that maximizing large model performance requires scale-aware prompt engineering rather than universal evaluation protocols, with immediate implications for deployment: prompt adaptation simultaneously improves accuracy and reduces computational costs.",
       "comments": ""
     },
     "2603.26661": {
@@ -240,6 +270,10 @@
       "abstract": "Proactive agents that anticipate user needs and autonomously execute tasks hold great promise as digital assistants, yet the lack of realistic user simulation frameworks hinders their development. Existing approaches model apps as flat tool-calling APIs, failing to capture the stateful and sequential nature of user interaction in digital environments and making realistic user simulation infeasible. We introduce Proactive Agent Research Environment (Pare), a framework for building and evaluating proactive agents in digital environments. Pare models applications as finite state machines with stateful navigation and state-dependent action space for the user simulator, enabling active user simulation. Building on this foundation, we present Pare-Bench, a benchmark of 143 diverse tasks spanning communication, productivity, scheduling, and lifestyle apps, designed to test context observation, goal inference, intervention timing, and multi-app orchestration.",
       "comments": "34 pages, 8 figures, 5 tables"
     },
+    "2604.00626": {
+      "abstract": "Knowledge distillation has become a primary mechanism for transferring reasoning and domain expertise from frontier Large Language Models (LLMs) to smaller, deployable students. However, the dominant paradigm remains \\textit{off-policy}: students train on static teacher-generated data and never encounter their own errors during learning. This train--test mismatch, an instance of \\textit{exposure bias}, causes prediction errors to compound autoregressively at inference time. On-Policy Distillation (OPD) addresses this by letting the student generate its own trajectories and receive teacher feedback on these self-generated outputs, grounding distillation in the theory of interactive imitation learning. Despite rapid growth spanning divergence minimization, reward-guided learning, and self-play, the OPD literature remains fragmented with no unified treatment. This survey provides the first comprehensive overview of OPD for LLMs. We introduce a unified $f$-divergence framework over on-policy samples and organize the landscape along three orthogonal dimensions: \\emph{feedback signal} (logit-based, outcome-based, or self-play), \\emph{teacher access} (white-box, black-box, or teacher-free), and \\emph{loss granularity} (token-level, sequence-level, or hybrid). We systematically analyze representative methods, examine industrial deployments, and identify open problems including distillation scaling laws, uncertainty-aware feedback, and agent-level distillation.",
+      "comments": ""
+    },
     "2604.00590": {
       "abstract": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely \\textbf{UniMixer}, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, \\textbf{UniMixing-Lite}, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of \\textbf{UniMixer}.",
       "comments": ""
@@ -252,9 +286,9 @@
       "abstract": "We study whether phone-use agents respect privacy while completing benign mobile tasks. This question has remained hard to answer because privacy-compliant behavior is not operationalized for phone-use agents, and ordinary apps do not reveal exactly what data agents type into which form entries during execution. To make this question measurable, we introduce MyPhoneBench, a verifiable evaluation framework for privacy behavior in mobile agents. We operationalize privacy-respecting phone use as permissioned access, minimal disclosure, and user-controlled memory through a minimal privacy contract, iMy, and pair it with instrumented mock apps plus rule-based auditing that make unnecessary permission requests, deceptive re-disclosure, and unnecessary form filling observable and reproducible. Across five frontier models on 10 mobile apps and 300 tasks, we find that task success, privacy-compliant task completion, and later-session use of saved preferences are distinct capabilities, and no single model dominates all three. Evaluating success and privacy jointly reshuffles the model ordering relative to either metric alone. The most persistent failure mode across models is simple data minimization: agents still fill optional personal entries that the task does not require. These results show that privacy failures arise from over-helpful execution of benign tasks, and that success-only evaluation overestimates the deployment readiness of current phone-use agents. All code, mock apps, and agent trajectories are publicly available at~this https URL.",
       "comments": "work in progress"
     },
-    "2604.00626": {
-      "abstract": "Knowledge distillation has become a primary mechanism for transferring reasoning and domain expertise from frontier Large Language Models (LLMs) to smaller, deployable students. However, the dominant paradigm remains \\textit{off-policy}: students train on static teacher-generated data and never encounter their own errors during learning. This train--test mismatch, an instance of \\textit{exposure bias}, causes prediction errors to compound autoregressively at inference time. On-Policy Distillation (OPD) addresses this by letting the student generate its own trajectories and receive teacher feedback on these self-generated outputs, grounding distillation in the theory of interactive imitation learning. Despite rapid growth spanning divergence minimization, reward-guided learning, and self-play, the OPD literature remains fragmented with no unified treatment. This survey provides the first comprehensive overview of OPD for LLMs. We introduce a unified $f$-divergence framework over on-policy samples and organize the landscape along three orthogonal dimensions: \\emph{feedback signal} (logit-based, outcome-based, or self-play), \\emph{teacher access} (white-box, black-box, or teacher-free), and \\emph{loss granularity} (token-level, sequence-level, or hybrid). We systematically analyze representative methods, examine industrial deployments, and identify open problems including distillation scaling laws, uncertainty-aware feedback, and agent-level distillation.",
-      "comments": ""
+    "2604.01168": {
+      "abstract": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library:this https URL.",
+      "comments": "15 pages (10 main + 5 appendix), 3 figures, code at <a class=\"link-external link-https\" href=\"https://github.com/jackyoung27/s0-tuning\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2604.01029": {
       "abstract": "Multi-LLM revision pipelines, in which a second model reviews and improves a draft produced by a first, are widely assumed to derive their gains from genuine error correction. We question this assumption with a controlled decomposition experiment that uses four matched conditions to separate second-pass gains into three additive components: re-solving, scaffold, and content. We evaluate this design across two model pairs on three benchmarks spanning knowledge-intensive MCQ and competitive programming. Our results show that the gains of multi-LLM revision are not monolithic, but depend on task structure, draft quality, and the type of draft information. On MCQ tasks, where the answer space is constrained and drafts provide little structural guidance, most gains are consistent with stronger-model re-solving, and directly routing queries to the stronger model can be more effective than revising a weak draft. On code generation tasks, however, two-stage prompting remains useful because even semantically null drafts can provide substantial structural scaffolding, while weak draft content can be harmful. Finally, role-reversed experiments show that strong drafts clearly benefit weak reviewers. Ultimately, our findings demonstrate that the utility of multi-LLM revision is dynamically bottlenecked by task structure and draft quality, necessitating more targeted pipeline designs rather than blanket revision strategies.",
@@ -271,10 +305,6 @@
     "2603.29002": {
       "abstract": "Modern large language models (LLMs) increasingly depends on efficient long-context processing and generation mechanisms, including sparse attention, retrieval-augmented generation (RAG), and compressed contextual memory, to support complex reasoning. We show that these optimizations can be unified into a four-step memory processing pipeline: Prepare Memory, Compute Relevancy, Retrieval, and Apply to Inference. Through systematic profiling, we identify a 22%-97% memory processing overhead in LLM inference and strong heterogeneity in its computational characteristics. Motivated by this insight, we argue that \\textbf{heterogeneous systems} are well-suited to accelerate memory processing and thus end-to-end inference. We demonstrate this approach on a GPU-FPGA system by offloading sparse, irregular, and memory-bounded operations to FPGAs while retaining compute-intensive operations on GPUs. Evaluated on an AMD MI210 GPU and an Alveo U55C FPGA, our system is $1.04\\sim2.2\\times$ faster and requires $1.11\\sim4.7\\times$ less energy across multiple LLM inference optimizations than the GPU baseline (similar results hold on NVIDIA A100). These results establish heterogeneous systems as a practical direction for efficient LLM memory processing and inform future heterogeneous hardware design.",
       "comments": ""
-    },
-    "2604.01168": {
-      "abstract": "Using roughly 48 execution-verified HumanEval training solutions, tuning a single initial state matrix per recurrent layer, with zero inference overhead, outperforms LoRA by +10.8 pp (p < 0.001) on HumanEval. The method, which we call S0 tuning, optimizes one state matrix per recurrent layer while freezing all model weights. On Qwen3.5-4B (GatedDeltaNet hybrid), S0 tuning improves greedy pass@1 by +23.6 +/- 1.7 pp (10 seeds). On FalconH1-7B (Mamba-2 hybrid), S0 reaches 71.8% +/- 1.3 and LoRA reaches 71.4% +/- 2.4 (3 seeds), statistically indistinguishable at this sample size while requiring no weight merging. Cross-domain transfer is significant on MATH-500 (+4.8 pp, p = 0.00002, 8 seeds) and GSM8K (+2.8 pp, p = 0.0003, 10 seeds); a text-to-SQL benchmark (Spider) shows no transfer, consistent with the trajectory-steering mechanism. A prefix-tuning control on a pure Transformer (Qwen2.5-3B) degrades performance by -13.9 pp under all nine configurations tested. On Qwen3.5, a per-step state-offset variant reaches +27.1 pp, above both S0 and LoRA but with per-step inference cost. Taken together, the results show that recurrent state initialization is a strong zero-inference-overhead PEFT surface for hybrid language models when verified supervision is scarce. The tuned state is a ~48 MB file; task switching requires no weight merging or model reload. Code and library:this https URL.",
-      "comments": "15 pages (10 main + 5 appendix), 3 figures, code at <a class=\"link-external link-https\" href=\"https://github.com/jackyoung27/s0-tuning\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2604.00913": {
       "abstract": "2D assembly diagrams are often abstract and hard to follow, creating a need for intelligent assistants that can monitor progress, detect errors, and provide step-by-step guidance. In mixed reality settings, such systems must recognize completed and ongoing steps from the camera feed and align them with the diagram instructions. Vision Language Models (VLMs) show promise for this task, but face a depiction gap because assembly diagrams and video frames share few visual features. To systematically assess this gap, we construct IKEA-Bench, a benchmark of 1,623 questions across 6 task types on 29 IKEA furniture products, and evaluate 19 VLMs (2B-38B) under three alignment strategies. Our key findings: (1) assembly instruction understanding is recoverable via text, but text simultaneously degrades diagram-to-video alignment; (2) architecture family predicts alignment accuracy more strongly than parameter count; (3) video understanding remains a hard bottleneck unaffected by strategy. A three-level mechanistic analysis further reveals that diagrams and video occupy disjoint ViT subspaces, and that adding text shifts models from visual to text-driven reasoning. These results identify visual encoding as the primary target for improving cross-depiction robustness. Project page:this https URL",

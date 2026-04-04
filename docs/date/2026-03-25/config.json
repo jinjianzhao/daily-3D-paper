@@ -9,139 +9,173 @@
   "base_info": {
     "2603.22458": {
       "title": "MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding",
-      "hf_link": "https://huggingface.co/papers/2603.22458"
+      "hf_link": "https://huggingface.co/papers/2603.22458",
+      "votes": 0
     },
     "2603.23497": {
       "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG",
-      "hf_link": "https://huggingface.co/papers/2603.23497"
+      "hf_link": "https://huggingface.co/papers/2603.23497",
+      "votes": 0
     },
     "2603.23483": {
       "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
-      "hf_link": "https://huggingface.co/papers/2603.23483"
+      "hf_link": "https://huggingface.co/papers/2603.23483",
+      "votes": 0
     },
     "2603.22386": {
       "title": "From Static Templates to Dynamic Runtime Graphs: A Survey of Workflow Optimization for LLM Agents",
-      "hf_link": "https://huggingface.co/papers/2603.22386"
+      "hf_link": "https://huggingface.co/papers/2603.22386",
+      "votes": 0
     },
     "2603.23499": {
       "title": "DA-Flow: Degradation-Aware Optical Flow Estimation with Diffusion Models",
-      "hf_link": "https://huggingface.co/papers/2603.23499"
+      "hf_link": "https://huggingface.co/papers/2603.23499",
+      "votes": 0
     },
     "2603.23386": {
       "title": "SIMART: Decomposing Monolithic Meshes into Sim-ready Articulated Assets via MLLM",
-      "hf_link": "https://huggingface.co/papers/2603.23386"
+      "hf_link": "https://huggingface.co/papers/2603.23386",
+      "votes": 0
     },
     "2603.20422": {
       "title": "PEARL: Personalized Streaming Video Understanding Model",
-      "hf_link": "https://huggingface.co/papers/2603.20422"
+      "hf_link": "https://huggingface.co/papers/2603.20422",
+      "votes": 0
     },
     "2603.23500": {
       "title": "UniGRPO: Unified Policy Optimization for Reasoning-Driven Visual Generation",
-      "hf_link": "https://huggingface.co/papers/2603.23500"
+      "hf_link": "https://huggingface.co/papers/2603.23500",
+      "votes": 0
     },
     "2603.23462": {
       "title": "RealMaster: Lifting Rendered Scenes into Photorealistic Video",
-      "hf_link": "https://huggingface.co/papers/2603.23462"
+      "hf_link": "https://huggingface.co/papers/2603.23462",
+      "votes": 0
     },
     "2603.22847": {
       "title": "Rethinking Token-Level Policy Optimization for Multimodal Chain-of-Thought",
-      "hf_link": "https://huggingface.co/papers/2603.22847"
+      "hf_link": "https://huggingface.co/papers/2603.22847",
+      "votes": 0
     },
     "2603.21064": {
       "title": "2Xplat: Two Experts Are Better Than One Generalist",
-      "hf_link": "https://huggingface.co/papers/2603.21064"
+      "hf_link": "https://huggingface.co/papers/2603.21064",
+      "votes": 0
     },
     "2603.12254": {
       "title": "Attend Before Attention: Efficient and Scalable Video Understanding via Autoregressive Gazing",
-      "hf_link": "https://huggingface.co/papers/2603.12254"
+      "hf_link": "https://huggingface.co/papers/2603.12254",
+      "votes": 0
     },
     "2603.22281": {
       "title": "ThinkJEPA: Empowering Latent World Models with Large Vision-Language Reasoning Model",
-      "hf_link": "https://huggingface.co/papers/2603.22281"
+      "hf_link": "https://huggingface.co/papers/2603.22281",
+      "votes": 0
     },
     "2603.22570": {
       "title": "CanViT: Toward Active-Vision Foundation Models",
-      "hf_link": "https://huggingface.co/papers/2603.22570"
+      "hf_link": "https://huggingface.co/papers/2603.22570",
+      "votes": 0
     },
     "2603.22003": {
       "title": "VP-VLA: Visual Prompting as an Interface for Vision-Language-Action Models",
-      "hf_link": "https://huggingface.co/papers/2603.22003"
+      "hf_link": "https://huggingface.co/papers/2603.22003",
+      "votes": 0
     },
     "2603.22327": {
       "title": "AgentSLR: Automating Systematic Literature Reviews in Epidemiology with Agentic AI",
-      "hf_link": "https://huggingface.co/papers/2603.22327"
+      "hf_link": "https://huggingface.co/papers/2603.22327",
+      "votes": 0
     },
     "2603.22446": {
       "title": "Sparse but Critical: A Token-Level Analysis of Distributional Shifts in RLVR Fine-Tuning of LLMs",
-      "hf_link": "https://huggingface.co/papers/2603.22446"
+      "hf_link": "https://huggingface.co/papers/2603.22446",
+      "votes": 0
     },
     "2603.17198": {
       "title": "Abstraction as a Memory-Efficient Inductive Bias for Continual Learning",
-      "hf_link": "https://huggingface.co/papers/2603.17198"
+      "hf_link": "https://huggingface.co/papers/2603.17198",
+      "votes": 0
     },
     "2603.21937": {
       "title": "MultiBind: A Benchmark for Attribute Misbinding in Multi-Subject Generation",
-      "hf_link": "https://huggingface.co/papers/2603.21937"
+      "hf_link": "https://huggingface.co/papers/2603.21937",
+      "votes": 0
     },
     "2603.23481": {
       "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
-      "hf_link": "https://huggingface.co/papers/2603.23481"
+      "hf_link": "https://huggingface.co/papers/2603.23481",
+      "votes": 0
     },
     "2603.22529": {
       "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
-      "hf_link": "https://huggingface.co/papers/2603.22529"
+      "hf_link": "https://huggingface.co/papers/2603.22529",
+      "votes": 0
     },
     "2603.22330": {
       "title": "Fair splits flip the leaderboard: CHANRG reveals limited generalization in RNA secondary-structure prediction",
-      "hf_link": "https://huggingface.co/papers/2603.22330"
+      "hf_link": "https://huggingface.co/papers/2603.22330",
+      "votes": 0
     },
     "2603.23471": {
       "title": "Regulating AI Agents",
-      "hf_link": "https://huggingface.co/papers/2603.23471"
+      "hf_link": "https://huggingface.co/papers/2603.23471",
+      "votes": 0
     },
     "2603.22606": {
       "title": "TrajLoom: Dense Future Trajectory Generation from Video",
-      "hf_link": "https://huggingface.co/papers/2603.22606"
+      "hf_link": "https://huggingface.co/papers/2603.22606",
+      "votes": 0
     },
     "2603.23488": {
       "title": "One View Is Enough! Monocular Training for In-the-Wild Novel View Generation",
-      "hf_link": "https://huggingface.co/papers/2603.23488"
+      "hf_link": "https://huggingface.co/papers/2603.23488",
+      "votes": 0
     },
     "2603.22359": {
       "title": "STEM Agent: A Self-Adapting, Tool-Enabled, Extensible Architecture for Multi-Protocol AI Agent Systems",
-      "hf_link": "https://huggingface.co/papers/2603.22359"
+      "hf_link": "https://huggingface.co/papers/2603.22359",
+      "votes": 0
     },
     "2603.23495": {
       "title": "VISion On Request: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions",
-      "hf_link": "https://huggingface.co/papers/2603.23495"
+      "hf_link": "https://huggingface.co/papers/2603.23495",
+      "votes": 0
     },
     "2603.23376": {
       "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment",
-      "hf_link": "https://huggingface.co/papers/2603.23376"
+      "hf_link": "https://huggingface.co/papers/2603.23376",
+      "votes": 0
     },
     "2603.22758": {
       "title": "Reconstruction-Guided Slot Curriculum: Addressing Object Over-Fragmentation in Video Object-Centric Learning",
-      "hf_link": "https://huggingface.co/papers/2603.22758"
+      "hf_link": "https://huggingface.co/papers/2603.22758",
+      "votes": 0
     },
     "2603.22042": {
       "title": "Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Representativeness in Hyperbolic Vision-Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.22042"
+      "hf_link": "https://huggingface.co/papers/2603.22042",
+      "votes": 0
     },
     "2603.21854": {
       "title": "Reasoning or Rhetoric? An Empirical Analysis of Moral Reasoning Explanations in Large Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.21854"
+      "hf_link": "https://huggingface.co/papers/2603.21854",
+      "votes": 0
     },
     "2603.20576": {
       "title": "Can AI Agents Answer Your Data Questions? A Benchmark for Data Agents",
-      "hf_link": "https://huggingface.co/papers/2603.20576"
+      "hf_link": "https://huggingface.co/papers/2603.20576",
+      "votes": 0
     },
     "2603.22350": {
       "title": "Session Risk Memory (SRM): Temporal Authorization for Deterministic Pre-Execution Safety Gates",
-      "hf_link": "https://huggingface.co/papers/2603.22350"
+      "hf_link": "https://huggingface.co/papers/2603.22350",
+      "votes": 0
     },
     "2603.13669": {
       "title": "SHAMISA: SHAped Modeling of Implicit Structural Associations for Self-supervised No-Reference Image Quality Assessment",
-      "hf_link": "https://huggingface.co/papers/2603.13669"
+      "hf_link": "https://huggingface.co/papers/2603.13669",
+      "votes": 0
     }
   },
   "summaries": {

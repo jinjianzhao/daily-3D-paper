@@ -78,6 +78,15 @@ python scheduler.py
 
 运行完成后，用浏览器打开 `output/papers/date/<YYYY-MM-DD>/index.html` 即可查看当日论文摘要站点。
 
+### 6. 在线访问
+
+部署到 GitHub Pages 后可通过以下地址浏览：
+
+- **日期索引**：https://jinjianzhao.github.io/daily-3D-paper/date/
+- **今日自动跳转**：https://jinjianzhao.github.io/daily-3D-paper/
+
+> `output/papers/` 入口会自动跳转到当天（或昨天）的日期页面。
+
 ## 配置项
 
 所有可调参数集中在 `PipelineConfig` 数据类中：

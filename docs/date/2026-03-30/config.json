@@ -6,63 +6,78 @@
   "base_info": {
     "2603.25746": {
       "title": "ShotStream: Streaming Multi-Shot Video Generation for Interactive Storytelling",
-      "hf_link": "https://huggingface.co/papers/2603.25746"
+      "hf_link": "https://huggingface.co/papers/2603.25746",
+      "votes": 0
     },
     "2603.25716": {
       "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
-      "hf_link": "https://huggingface.co/papers/2603.25716"
+      "hf_link": "https://huggingface.co/papers/2603.25716",
+      "votes": 0
     },
     "2603.25730": {
       "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
-      "hf_link": "https://huggingface.co/papers/2603.25730"
+      "hf_link": "https://huggingface.co/papers/2603.25730",
+      "votes": 0
     },
     "2603.25158": {
       "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
-      "hf_link": "https://huggingface.co/papers/2603.25158"
+      "hf_link": "https://huggingface.co/papers/2603.25158",
+      "votes": 0
     },
     "2603.25750": {
       "title": "Sommelier: Scalable Open Multi-turn Audio Pre-processing for Full-duplex Speech Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.25750"
+      "hf_link": "https://huggingface.co/papers/2603.25750",
+      "votes": 0
     },
     "2603.24649": {
       "title": "MedOpenClaw: Auditable Medical Imaging Agents Reasoning over Uncurated Full Studies",
-      "hf_link": "https://huggingface.co/papers/2603.24649"
+      "hf_link": "https://huggingface.co/papers/2603.24649",
+      "votes": 0
     },
     "2603.25804": {
       "title": "RealChart2Code: Advancing Chart-to-Code Generation with Real Data and Multi-Task Evaluation",
-      "hf_link": "https://huggingface.co/papers/2603.25804"
+      "hf_link": "https://huggingface.co/papers/2603.25804",
+      "votes": 0
     },
     "2603.25723": {
       "title": "Natural-Language Agent Harnesses",
-      "hf_link": "https://huggingface.co/papers/2603.25723"
+      "hf_link": "https://huggingface.co/papers/2603.25723",
+      "votes": 0
     },
     "2603.22782": {
       "title": "Know3D: Prompting 3D Generation with Knowledge from Vision-Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.22782"
+      "hf_link": "https://huggingface.co/papers/2603.22782",
+      "votes": 0
     },
     "2603.23607": {
       "title": "LongTail Driving Scenarios with Reasoning Traces: The KITScenes LongTail Dataset",
-      "hf_link": "https://huggingface.co/papers/2603.23607"
+      "hf_link": "https://huggingface.co/papers/2603.23607",
+      "votes": 0
     },
     "2603.24477": {
       "title": "Composer 2 Technical Report",
-      "hf_link": "https://huggingface.co/papers/2603.24477"
+      "hf_link": "https://huggingface.co/papers/2603.24477",
+      "votes": 0
     },
     "2603.23906": {
       "title": "GenMask: Adapting DiT for Segmentation via Direct Mask",
-      "hf_link": "https://huggingface.co/papers/2603.23906"
+      "hf_link": "https://huggingface.co/papers/2603.23906",
+      "votes": 0
     },
     "2603.20466": {
       "title": "Diffutron: A Masked Diffusion Language Model for Turkish Language",
-      "hf_link": "https://huggingface.co/papers/2603.20466"
+      "hf_link": "https://huggingface.co/papers/2603.20466",
+      "votes": 0
     },
     "2603.26664": {
       "title": "Learning to Commit: Generating Organic Pull Requests via Online Repository Memory",
-      "hf_link": "https://huggingface.co/papers/2603.26664"
+      "hf_link": "https://huggingface.co/papers/2603.26664",
+      "votes": 0
     },
     "2603.22582": {
       "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
-      "hf_link": "https://huggingface.co/papers/2603.22582"
+      "hf_link": "https://huggingface.co/papers/2603.22582",
+      "votes": 0
     }
   },
   "summaries": {

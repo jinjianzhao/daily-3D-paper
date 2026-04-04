@@ -6,6 +6,7 @@ import shutil
 import requests
 from datetime import datetime, timedelta, timezone
 from dataclasses import dataclass
+from collections import OrderedDict
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import urllib3.exceptions
@@ -31,7 +32,7 @@ def _count_json_files(cache_dir: str) -> int:
 @dataclass
 class PipelineConfig:
     """流水线可调参数：实例化后传入 PaperPipeline(..., cfg)。"""
-    output_pub_dir_fmt: str = "output/papers/date/{date_str}"
+    output_pub_dir_fmt: str = "docs/date/{date_str}"
     output_cache_dir_fmt: str = "output/cache/date/{date_str}"
     pub_images_subdir: str = "images"
     frontend_template_path: str = "templates/index.html"
@@ -318,18 +319,39 @@ class PaperPipeline:
         url = f"{self.cfg.hf_mirror_base_url}/papers/date/{date_str}"
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec)
         soup = BeautifulSoup(resp.text, "html.parser")
-        results = {}
+        results_with_votes = []
         for a in soup.find_all("article"):
             title_tag = a.select_one("h3 a")
             if title_tag:
                 id_match = re.search(self.cfg.hf_href_arxiv_id_regex, title_tag["href"])
                 if id_match:
                     aid = id_match.group(1)
-                    results[aid] = {
+                    # 提取点赞数：在 label 标签内的 div.leading-none 中
+                    vote_count = 0
+                    vote_div = a.select_one("label div.leading-none")
+                    if vote_div:
+                        vote_text = vote_div.get_text(strip=True)
+                        if vote_text.isdigit():
+                            vote_count = int(vote_text)
+                    results_with_votes.append({
+                        "aid": aid,
                         "title": title_tag.get_text(strip=True),
-                        "hf_link": f"{self.cfg.hf_paper_link_prefix}{title_tag['href']}"
-                    }
-        pipeline_debug("step01", "拉取论文列表", f"HTTP状态={resp.status_code} 解析篇数={len(results)}")
+                        "hf_link": f"{self.cfg.hf_paper_link_prefix}{title_tag['href']}",
+                        "votes": vote_count,
+                    })
+        
+        # 按点赞数降序排序，转换为 OrderedDict
+        results_with_votes.sort(key=lambda x: x["votes"], reverse=True)
+        results = OrderedDict()
+        for item in results_with_votes:
+            aid = item["aid"]
+            results[aid] = {
+                "title": item["title"],
+                "hf_link": item["hf_link"],
+                "votes": item["votes"],
+            }
+        
+        pipeline_debug("step01", "拉取论文列表", f"HTTP状态={resp.status_code} 解析篇数={len(results)} 点赞最高={results_with_votes[0]['votes'] if results_with_votes else 0}")
         parent = os.path.dirname(cache_path)
         if parent:
             os.makedirs(parent, exist_ok=True)
@@ -675,7 +697,17 @@ class PaperPipeline:
         pipeline_debug(debug_step, debug_title, f"图注翻译 已落盘缓存 文件={fp} 条数={n}")
         return out_meta
 
-    def run_pipeline(self, date_str, force_rerun=False):
+    def run_pipeline(self, date_str, force_rerun=None):
+        assert isinstance(date_str, str)
+        assert force_rerun is None or isinstance(force_rerun, list)
+        if force_rerun is None:
+            force_rerun = []
+        for step in force_rerun:
+            assert isinstance(step, str)
+
+        def _should(step_name: str) -> bool:
+            return step_name in force_rerun
+
         # 先解析 HF 实际可用日期（若 HF 跳转到前一日，跟随）
         date_str = self._resolve_hf_date(date_str)
 
@@ -691,7 +723,7 @@ class PaperPipeline:
         step08_figure_caption_zh = f"{cache_root}/step08_figure_caption_zh"
 
         # step01：拉取 HF 当日列表（无 tqdm，单次请求）
-        base_info = self.fetch_hf_papers(date_str, step01_hf, force_rerun=force_rerun)
+        base_info = self.fetch_hf_papers(date_str, step01_hf, force_rerun=_should("step01"))
         if not base_info:
             pipeline_debug("step01", "拉取论文列表", "当日无论文，停止")
             return print("当日无论文。")
@@ -705,7 +737,7 @@ class PaperPipeline:
             desc="step02 | arxiv摘要页",
             unit="篇",
         ):
-            details_by_aid[aid] = self.get_arxiv_details(aid, step03_arxiv_abs, force_rerun=force_rerun)
+            details_by_aid[aid] = self.get_arxiv_details(aid, step03_arxiv_abs, force_rerun=_should("step02"))
 
         # step03：单篇论文投票判断 3D 相关重点
         focus_ids = []
@@ -721,7 +753,7 @@ class PaperPipeline:
                 details_by_aid[aid]["abstract"],
                 aid,  # arxiv_id
                 vote_cache_dir,
-                force_rerun=force_rerun,
+                force_rerun=_should("step03"),
                 debug_step="step03",
                 debug_title="投票筛选重点",
             )
@@ -741,7 +773,7 @@ class PaperPipeline:
                 PROMPT_STEP04_SUMMARY.format(abstract=details_by_aid[aid]["abstract"]),
                 sum_fp,
                 cache_key=None,
-                force_rerun=force_rerun,
+                force_rerun=_should("step04"),
                 debug_step="step04",
                 debug_title="生成短文摘要",
             )
@@ -753,7 +785,7 @@ class PaperPipeline:
             desc="step05-08 | HTML+深度+图示+图注翻译",
             unit="篇",
         ):
-            h_p, t_p = self.download_arxiv_html(aid, step05_arxiv_html, force_rerun=force_rerun)
+            h_p, t_p = self.download_arxiv_html(aid, step05_arxiv_html, force_rerun=_should("step05"))
             if os.path.exists(h_p):
                 with open(h_p, 'r', encoding='utf-8') as f:
                     full_html = f.read()
@@ -766,7 +798,7 @@ class PaperPipeline:
                     ),
                     deep_fp,
                     cache_key=None,
-                    force_rerun=force_rerun,
+                    force_rerun=_should("step06"),
                     debug_step="step06",
                     debug_title="深度解析",
                 )
@@ -781,7 +813,7 @@ class PaperPipeline:
                     raw_meta,
                     aid,
                     step08_figure_caption_zh,
-                    force_rerun=force_rerun,
+                    force_rerun=_should("step08"),
                     debug_step="step08",
                     debug_title="图注翻译",
                 )
@@ -956,14 +988,14 @@ if __name__ == "__main__":
     cfg = PipelineConfig()
     pipeline = PaperPipeline(my_api_key, cfg)
     today_cst = datetime.now(CST).strftime("%Y-%m-%d")
-    pipeline.run_pipeline(today_cst)
-    pipeline.run_pipeline("2026-04-02")
-    pipeline.run_pipeline("2026-04-01")
-    pipeline.run_pipeline("2026-03-31")
-    pipeline.run_pipeline("2026-03-30")
-    pipeline.run_pipeline("2026-03-29")
-    pipeline.run_pipeline("2026-03-28")
-    pipeline.run_pipeline("2026-03-27")
-    pipeline.run_pipeline("2026-03-26")
-    pipeline.run_pipeline("2026-03-25")
+    pipeline.run_pipeline(today_cst, force_rerun=["step01"])
+    pipeline.run_pipeline("2026-04-02", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-04-01", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-31", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-30", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-29", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-28", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-27", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-26", force_rerun=["step01"])
+    pipeline.run_pipeline("2026-03-25", force_rerun=["step01"])
     

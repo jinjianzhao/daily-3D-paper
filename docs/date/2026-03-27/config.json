@@ -6,119 +6,148 @@
   "base_info": {
     "2603.25040": {
       "title": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale",
-      "hf_link": "https://huggingface.co/papers/2603.25040"
+      "hf_link": "https://huggingface.co/papers/2603.25040",
+      "votes": 0
     },
     "2603.25728": {
       "title": "PixelSmile: Toward Fine-Grained Facial Expression Editing",
-      "hf_link": "https://huggingface.co/papers/2603.25728"
+      "hf_link": "https://huggingface.co/papers/2603.25728",
+      "votes": 0
     },
     "2603.24800": {
       "title": "Calibri: Enhancing Diffusion Transformers via Parameter-Efficient Calibration",
-      "hf_link": "https://huggingface.co/papers/2603.24800"
+      "hf_link": "https://huggingface.co/papers/2603.24800",
+      "votes": 0
     },
     "2603.25551": {
       "title": "Voxtral TTS",
-      "hf_link": "https://huggingface.co/papers/2603.25551"
+      "hf_link": "https://huggingface.co/papers/2603.25551",
+      "votes": 0
     },
     "2603.25502": {
       "title": "RealRestorer: Towards Generalizable Real-World Image Restoration with Large-Scale Image Editing Models",
-      "hf_link": "https://huggingface.co/papers/2603.25502"
+      "hf_link": "https://huggingface.co/papers/2603.25502",
+      "votes": 0
     },
     "2603.23516": {
       "title": "MSA: Memory Sparse Attention for Efficient End-to-End Memory Model Scaling to 100M Tokens",
-      "hf_link": "https://huggingface.co/papers/2603.23516"
+      "hf_link": "https://huggingface.co/papers/2603.23516",
+      "votes": 0
     },
     "2603.25319": {
       "title": "MACRO: Advancing Multi-Reference Image Generation with Structured Long-Context Data",
-      "hf_link": "https://huggingface.co/papers/2603.25319"
+      "hf_link": "https://huggingface.co/papers/2603.25319",
+      "votes": 0
     },
     "2603.24755": {
       "title": "SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks",
-      "hf_link": "https://huggingface.co/papers/2603.24755"
+      "hf_link": "https://huggingface.co/papers/2603.24755",
+      "votes": 0
     },
     "2603.24793": {
       "title": "AVControl: Efficient Framework for Training Audio-Visual Controls",
-      "hf_link": "https://huggingface.co/papers/2603.24793"
+      "hf_link": "https://huggingface.co/papers/2603.24793",
+      "votes": 0
     },
     "2603.24575": {
       "title": "VFIG: Vectorizing Complex Figures in SVG with Vision-Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.24575"
+      "hf_link": "https://huggingface.co/papers/2603.24575",
+      "votes": 0
     },
     "2603.25745": {
       "title": "Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting",
-      "hf_link": "https://huggingface.co/papers/2603.25745"
+      "hf_link": "https://huggingface.co/papers/2603.25745",
+      "votes": 0
     },
     "2603.14366": {
       "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
-      "hf_link": "https://huggingface.co/papers/2603.14366"
+      "hf_link": "https://huggingface.co/papers/2603.14366",
+      "votes": 0
     },
     "2603.25744": {
       "title": "MuRF: Unlocking the Multi-Scale Potential of Vision Foundation Models",
-      "hf_link": "https://huggingface.co/papers/2603.25744"
+      "hf_link": "https://huggingface.co/papers/2603.25744",
+      "votes": 0
     },
     "2603.24943": {
       "title": "FinMCP-Bench: Benchmarking LLM Agents for Real-World Financial Tool Use under the Model Context Protocol",
-      "hf_link": "https://huggingface.co/papers/2603.24943"
+      "hf_link": "https://huggingface.co/papers/2603.24943",
+      "votes": 0
     },
     "2603.24517": {
       "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
-      "hf_link": "https://huggingface.co/papers/2603.24517"
+      "hf_link": "https://huggingface.co/papers/2603.24517",
+      "votes": 0
     },
     "2603.18718": {
       "title": "MemMA: Coordinating the Memory Cycle through Multi-Agent Reasoning and In-Situ Self-Evolution",
-      "hf_link": "https://huggingface.co/papers/2603.18718"
+      "hf_link": "https://huggingface.co/papers/2603.18718",
+      "votes": 0
     },
     "2603.24844": {
       "title": "Reaching Beyond the Mode: RL for Distributional Reasoning in Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.24844"
+      "hf_link": "https://huggingface.co/papers/2603.24844",
+      "votes": 0
     },
     "2603.25562": {
       "title": "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes",
-      "hf_link": "https://huggingface.co/papers/2603.25562"
+      "hf_link": "https://huggingface.co/papers/2603.25562",
+      "votes": 0
     },
     "2603.25741": {
       "title": "Vega: Learning to Drive with Natural Language Instructions",
-      "hf_link": "https://huggingface.co/papers/2603.25741"
+      "hf_link": "https://huggingface.co/papers/2603.25741",
+      "votes": 0
     },
     "2603.25702": {
       "title": "S2D2: Fast Decoding for Diffusion LLMs via Training-Free Self-Speculation",
-      "hf_link": "https://huggingface.co/papers/2603.25702"
+      "hf_link": "https://huggingface.co/papers/2603.25702",
+      "votes": 0
     },
     "2603.23883": {
       "title": "BioVITA: Biological Dataset, Model, and Benchmark for Visual-Textual-Acoustic Alignment",
-      "hf_link": "https://huggingface.co/papers/2603.23883"
+      "hf_link": "https://huggingface.co/papers/2603.23883",
+      "votes": 0
     },
     "2603.24836": {
       "title": "WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching",
-      "hf_link": "https://huggingface.co/papers/2603.24836"
+      "hf_link": "https://huggingface.co/papers/2603.24836",
+      "votes": 0
     },
     "2603.16733": {
       "title": "IQuest-Coder-V1 Technical Report",
-      "hf_link": "https://huggingface.co/papers/2603.16733"
+      "hf_link": "https://huggingface.co/papers/2603.16733",
+      "votes": 0
     },
     "2603.25718": {
       "title": "Electrostatic Photoluminescence Tuning in All-Solid-State Perovskite Transistors",
-      "hf_link": "https://huggingface.co/papers/2603.25718"
+      "hf_link": "https://huggingface.co/papers/2603.25718",
+      "votes": 0
     },
     "2603.24961": {
       "title": "Can MLLMs Read Students' Minds? Unpacking Multimodal Error Analysis in Handwritten Math",
-      "hf_link": "https://huggingface.co/papers/2603.24961"
+      "hf_link": "https://huggingface.co/papers/2603.24961",
+      "votes": 0
     },
     "2603.14636": {
       "title": "Nudging Hidden States: Training-Free Model Steering for Chain-of-Thought Reasoning in Large Audio-Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.14636"
+      "hf_link": "https://huggingface.co/papers/2603.14636",
+      "votes": 0
     },
     "2603.13904": {
       "title": "Pixel-level Scene Understanding in One Token: Visual States Need What-is-Where Composition",
-      "hf_link": "https://huggingface.co/papers/2603.13904"
+      "hf_link": "https://huggingface.co/papers/2603.13904",
+      "votes": 0
     },
     "2603.21768": {
       "title": "Extending Precipitation Nowcasting Horizons via Spectral Fusion of Radar Observations and Foundation Model Priors",
-      "hf_link": "https://huggingface.co/papers/2603.21768"
+      "hf_link": "https://huggingface.co/papers/2603.21768",
+      "votes": 0
     },
     "2603.25398": {
       "title": "PMT: Plain Mask Transformer for Image and Video Segmentation with Frozen Vision Encoders",
-      "hf_link": "https://huggingface.co/papers/2603.25398"
+      "hf_link": "https://huggingface.co/papers/2603.25398",
+      "votes": 0
     }
   },
   "summaries": {

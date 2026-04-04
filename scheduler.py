@@ -38,6 +38,16 @@ def run_pipeline_once():
     else:
         print(f"[scheduler] pipeline 执行完毕", flush=True)
 
+    # 执行 auto_push.sh
+    auto_push = os.path.join(SCRIPT_DIR, "auto_push.sh")
+    cmd_push = f'cd "{SCRIPT_DIR}" && bash "{auto_push}"'
+    print(f"[scheduler] 执行: {cmd_push}", flush=True)
+    ret_push = os.system(cmd_push)
+    if ret_push != 0:
+        print(f"[scheduler] auto_push.sh 返回非零 exit code: {ret_push}", flush=True)
+    else:
+        print(f"[scheduler] auto_push.sh 执行完毕", flush=True)
+
 
 def main():
     # 启动时立刻跑一次，及早发现错误

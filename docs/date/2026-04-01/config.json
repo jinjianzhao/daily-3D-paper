@@ -11,175 +11,218 @@
   "base_info": {
     "2603.19835": {
       "title": "FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization",
-      "hf_link": "https://huggingface.co/papers/2603.19835"
+      "hf_link": "https://huggingface.co/papers/2603.19835",
+      "votes": 0
     },
     "2603.28032": {
       "title": "CARLA-Air: Fly Drones Inside a CARLA World -- A Unified Infrastructure for Air-Ground Embodied Intelligence",
-      "hf_link": "https://huggingface.co/papers/2603.28032"
+      "hf_link": "https://huggingface.co/papers/2603.28032",
+      "votes": 0
     },
     "2603.27538": {
       "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
-      "hf_link": "https://huggingface.co/papers/2603.27538"
+      "hf_link": "https://huggingface.co/papers/2603.27538",
+      "votes": 0
     },
     "2603.28088": {
       "title": "GEMS: Agent-Native Multimodal Generation with Memory and Skills",
-      "hf_link": "https://huggingface.co/papers/2603.28088"
+      "hf_link": "https://huggingface.co/papers/2603.28088",
+      "votes": 0
     },
     "2603.25240": {
       "title": "Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells",
-      "hf_link": "https://huggingface.co/papers/2603.25240"
+      "hf_link": "https://huggingface.co/papers/2603.25240",
+      "votes": 0
     },
     "2603.27460": {
       "title": "Project Imaging-X: A Survey of 1000+ Open-Access Medical Imaging Datasets for Foundation Model Development",
-      "hf_link": "https://huggingface.co/papers/2603.27460"
+      "hf_link": "https://huggingface.co/papers/2603.27460",
+      "votes": 0
     },
     "2603.26599": {
       "title": "VGGRPO: Towards World-Consistent Video Generation with 4D Latent Reward",
-      "hf_link": "https://huggingface.co/papers/2603.26599"
+      "hf_link": "https://huggingface.co/papers/2603.26599",
+      "votes": 0
     },
     "2603.29664": {
       "title": "CutClaw: Agentic Hours-Long Video Editing via Music Synchronization",
-      "hf_link": "https://huggingface.co/papers/2603.29664"
+      "hf_link": "https://huggingface.co/papers/2603.29664",
+      "votes": 0
     },
     "2603.29620": {
       "title": "Unify-Agent: A Unified Multimodal Agent for World-Grounded Image Synthesis",
-      "hf_link": "https://huggingface.co/papers/2603.29620"
+      "hf_link": "https://huggingface.co/papers/2603.29620",
+      "votes": 0
     },
     "2603.27164": {
       "title": "daVinci-LLM:Towards the Science of Pretraining",
-      "hf_link": "https://huggingface.co/papers/2603.27164"
+      "hf_link": "https://huggingface.co/papers/2603.27164",
+      "votes": 0
     },
     "2603.29957": {
       "title": "Think Anywhere in Code Generation",
-      "hf_link": "https://huggingface.co/papers/2603.29957"
+      "hf_link": "https://huggingface.co/papers/2603.29957",
+      "votes": 0
     },
     "2603.29387": {
       "title": "Extend3D: Town-Scale 3D Generation",
-      "hf_link": "https://huggingface.co/papers/2603.29387"
+      "hf_link": "https://huggingface.co/papers/2603.29387",
+      "votes": 0
     },
     "2603.28590": {
       "title": "MonitorBench: A Comprehensive Benchmark for Chain-of-Thought Monitorability in Large Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.28590"
+      "hf_link": "https://huggingface.co/papers/2603.28590",
+      "votes": 0
     },
     "2604.00007": {
       "title": "Dynin-Omni: Omnimodal Unified Large Diffusion Language Model",
-      "hf_link": "https://huggingface.co/papers/2604.00007"
+      "hf_link": "https://huggingface.co/papers/2604.00007",
+      "votes": 0
     },
     "2604.00093": {
       "title": "RawGen: Learning Camera Raw Image Generation",
-      "hf_link": "https://huggingface.co/papers/2604.00093"
+      "hf_link": "https://huggingface.co/papers/2604.00093",
+      "votes": 0
     },
     "2604.00479": {
       "title": "All Roads Lead to Rome: Incentivizing Divergent Thinking in Vision-Language Models",
-      "hf_link": "https://huggingface.co/papers/2604.00479"
+      "hf_link": "https://huggingface.co/papers/2604.00479",
+      "votes": 0
     },
     "2603.29557": {
       "title": "FlowPIE: Test-Time Scientific Idea Evolution with Flow-Guided Literature Exploration",
-      "hf_link": "https://huggingface.co/papers/2603.29557"
+      "hf_link": "https://huggingface.co/papers/2603.29557",
+      "votes": 0
     },
     "2603.29585": {
       "title": "Learn2Fold: Structured Origami Generation with World Model Planning",
-      "hf_link": "https://huggingface.co/papers/2603.29585"
+      "hf_link": "https://huggingface.co/papers/2603.29585",
+      "votes": 0
     },
     "2603.29029": {
       "title": "MMFace-DiT: A Dual-Stream Diffusion Transformer for High-Fidelity Multimodal Face Generation",
-      "hf_link": "https://huggingface.co/papers/2603.29029"
+      "hf_link": "https://huggingface.co/papers/2603.29029",
+      "votes": 0
     },
     "2603.27365": {
       "title": "Falcon Perception",
-      "hf_link": "https://huggingface.co/papers/2603.27365"
+      "hf_link": "https://huggingface.co/papers/2603.27365",
+      "votes": 0
     },
     "2603.25732": {
       "title": "BizGenEval: A Systematic Benchmark for Commercial Visual Content Generation",
-      "hf_link": "https://huggingface.co/papers/2603.25732"
+      "hf_link": "https://huggingface.co/papers/2603.25732",
+      "votes": 0
     },
     "2603.29025": {
       "title": "The Model Says Walk: How Surface Heuristics Override Implicit Constraints in LLM Reasoning",
-      "hf_link": "https://huggingface.co/papers/2603.29025"
+      "hf_link": "https://huggingface.co/papers/2603.29025",
+      "votes": 0
     },
     "2603.28858": {
       "title": "OptiMer: Optimal Distribution Vector Merging Is Better than Data Mixing for Continual Pre-Training",
-      "hf_link": "https://huggingface.co/papers/2603.28858"
+      "hf_link": "https://huggingface.co/papers/2603.28858",
+      "votes": 0
     },
     "2603.28052": {
       "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
-      "hf_link": "https://huggingface.co/papers/2603.28052"
+      "hf_link": "https://huggingface.co/papers/2603.28052",
+      "votes": 0
     },
     "2603.26546": {
       "title": "AutoWeather4D: Autonomous Driving Video Weather Conversion via G-Buffer Dual-Pass Editing",
-      "hf_link": "https://huggingface.co/papers/2603.26546"
+      "hf_link": "https://huggingface.co/papers/2603.26546",
+      "votes": 0
     },
     "2603.29089": {
       "title": "WorldFlow3D: Flowing Through 3D Distributions for Unbounded World Generation",
-      "hf_link": "https://huggingface.co/papers/2603.29089"
+      "hf_link": "https://huggingface.co/papers/2603.29089",
+      "votes": 0
     },
     "2603.28763": {
       "title": "PoseDreamer: Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models",
-      "hf_link": "https://huggingface.co/papers/2603.28763"
+      "hf_link": "https://huggingface.co/papers/2603.28763",
+      "votes": 0
     },
     "2603.29497": {
       "title": "Distilling Human-Aligned Privacy Sensitivity Assessment from Large Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.29497"
+      "hf_link": "https://huggingface.co/papers/2603.29497",
+      "votes": 0
     },
     "2603.29852": {
       "title": "VectorGym: A Multitask Benchmark for SVG Code Generation, Sketching, and Editing",
-      "hf_link": "https://huggingface.co/papers/2603.29852"
+      "hf_link": "https://huggingface.co/papers/2603.29852",
+      "votes": 0
     },
     "2603.28224": {
       "title": "Ghost-FWL: A Large-Scale Full-Waveform LiDAR Dataset for Ghost Detection and Removal",
-      "hf_link": "https://huggingface.co/papers/2603.28224"
+      "hf_link": "https://huggingface.co/papers/2603.28224",
+      "votes": 0
     },
     "2603.27520": {
       "title": "TokenDial: Continuous Attribute Control in Text-to-Video via Spatiotemporal Token Offsets",
-      "hf_link": "https://huggingface.co/papers/2603.27520"
+      "hf_link": "https://huggingface.co/papers/2603.27520",
+      "votes": 0
     },
     "2603.26174": {
       "title": "CREval: An Automated Interpretable Evaluation for Creative Image Manipulation under Complex Instructions",
-      "hf_link": "https://huggingface.co/papers/2603.26174"
+      "hf_link": "https://huggingface.co/papers/2603.26174",
+      "votes": 0
     },
     "2603.25791": {
       "title": "ArtHOI: Taming Foundation Models for Monocular 4D Reconstruction of Hand-Articulated-Object Interactions",
-      "hf_link": "https://huggingface.co/papers/2603.25791"
+      "hf_link": "https://huggingface.co/papers/2603.25791",
+      "votes": 0
     },
     "2603.21460": {
       "title": "When Documents Disagree: Measuring Institutional Variation in Transplant Guidance with Retrieval-Augmented Language Models",
-      "hf_link": "https://huggingface.co/papers/2603.21460"
+      "hf_link": "https://huggingface.co/papers/2603.21460",
+      "votes": 0
     },
     "2603.19195": {
       "title": "How Auditory Knowledge in LLM Backbones Shapes Audio Language Models: A Holistic Evaluation",
-      "hf_link": "https://huggingface.co/papers/2603.19195"
+      "hf_link": "https://huggingface.co/papers/2603.19195",
+      "votes": 0
     },
     "2603.30045": {
       "title": "OmniRoam: World Wandering via Long-Horizon Panoramic Video Generation",
-      "hf_link": "https://huggingface.co/papers/2603.30045"
+      "hf_link": "https://huggingface.co/papers/2603.30045",
+      "votes": 0
     },
     "2603.26357": {
       "title": "MPDiT: Multi-Patch Global-to-Local Transformer Architecture For Efficient Flow Matching and Diffusion Model",
-      "hf_link": "https://huggingface.co/papers/2603.26357"
+      "hf_link": "https://huggingface.co/papers/2603.26357",
+      "votes": 0
     },
     "2603.25645": {
       "title": "Colon-Bench: An Agentic Workflow for Scalable Dense Lesion Annotation in Full-Procedure Colonoscopy Videos",
-      "hf_link": "https://huggingface.co/papers/2603.25645"
+      "hf_link": "https://huggingface.co/papers/2603.25645",
+      "votes": 0
     },
     "2603.29437": {
       "title": "SeGPruner: Semantic-Geometric Visual Token Pruner for 3D Question Answering",
-      "hf_link": "https://huggingface.co/papers/2603.29437"
+      "hf_link": "https://huggingface.co/papers/2603.29437",
+      "votes": 0
     },
     "2603.29092": {
       "title": "TrajectoryMover: Generative Movement of Object Trajectories in Videos",
-      "hf_link": "https://huggingface.co/papers/2603.29092"
+      "hf_link": "https://huggingface.co/papers/2603.29092",
+      "votes": 0
     },
     "2603.17191": {
       "title": "Tabular LLMs for Interpretable Few-Shot Alzheimer's Disease Prediction with Multimodal Biomedical Data",
-      "hf_link": "https://huggingface.co/papers/2603.17191"
+      "hf_link": "https://huggingface.co/papers/2603.17191",
+      "votes": 0
     },
     "2603.26246": {
       "title": "Distilling Conversations: Abstract Compression of Conversational Audio Context for LLM-based ASR",
-      "hf_link": "https://huggingface.co/papers/2603.26246"
+      "hf_link": "https://huggingface.co/papers/2603.26246",
+      "votes": 0
     },
     "2603.22794": {
       "title": "It Takes Two: A Duet of Periodicity and Directionality for Burst Flicker Removal",
-      "hf_link": "https://huggingface.co/papers/2603.22794"
+      "hf_link": "https://huggingface.co/papers/2603.22794",
+      "votes": 0
     }
   },
   "summaries": {
