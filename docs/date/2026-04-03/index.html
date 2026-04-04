@@ -371,7 +371,7 @@
                     const info = data.base_info[aid];
                     const focusDomId = aidToDomId('focus', aid);
                     tocIds.push(focusDomId);
-                    const deep = data.deep_analysis[aid] || "分析生成中...";
+                    const deep = data.deep_analysis[aid] || "暂无解析...";
                     const deepHtml = mdToHtml(deep);
                     const rawComments = data.arxiv_details?.[aid]?.comments;
                     const commentsBlock = (rawComments && String(rawComments).trim())
