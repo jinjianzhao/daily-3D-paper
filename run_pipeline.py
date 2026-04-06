@@ -11,7 +11,6 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import urllib3.exceptions
 
-CST = timezone(timedelta(hours=8))
 
 
 def pipeline_debug(step: str, title: str, msg: str = ""):
@@ -60,7 +59,7 @@ class PipelineConfig:
     llm_temperature: float = 0.7
     llm_max_tokens: int = 2048
     llm_request_timeout_sec: int = 60
-    hf_mirror_base_url: str = "https://hf-mirror.com"
+    # hf_mirror_base_url: str = "https://hf-mirror.com"
     hf_paper_link_prefix: str = "https://huggingface.co"
     hf_href_arxiv_id_regex: str = r"(\d{4}\.\d+)"
     http_user_agent: str = "Mozilla/5.0"
@@ -310,18 +309,20 @@ class PaperPipeline:
         pipeline_debug(debug_step, debug_title, f"多轮合并 已写入 去重后编号数={len(merged_ids)}")
         return res
 
-    def _resolve_hf_date(self, date_str: str) -> str:
+    def _resolve_hf_date(self) -> str:
+        # date_str
         """访问 HF 论文页，若发生跳转则提取实际日期（如周末/未更新时 HF 会跳转到前一日）。"""
-        assert isinstance(date_str, str)
-        url = f"{self.cfg.hf_mirror_base_url}/papers/date/{date_str}"
+        # assert isinstance(date_str, str)
+        url = f"{self.cfg.hf_paper_link_prefix}/papers/"
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec, allow_redirects=True)
         redirect_match = re.search(r"/papers/date/(\d{4}-\d{2}-\d{2})", resp.url)
         if redirect_match:
             actual = redirect_match.group(1)
-            if actual != date_str:
-                pipeline_debug("step01", "日期解析", f"HF 从 {date_str} 跳转到 {actual}")
-                return actual
-        return date_str
+            # if actual != date_str:
+            pipeline_debug("step01", "日期解析", f"HF 跳转到 {actual}")
+            return actual
+        # return date_str
+        raise ValueError("HF 论文页未发生跳转")
 
     def fetch_hf_papers(self, date_str, cache_path, force_rerun=False):
         assert isinstance(date_str, str)
@@ -713,8 +714,8 @@ class PaperPipeline:
         pipeline_debug(debug_step, debug_title, f"图注翻译 已落盘缓存 文件={fp} 条数={n}")
         return out_meta
 
-    def run_pipeline(self, date_str, force_rerun=None):
-        assert isinstance(date_str, str)
+    def run_pipeline(self, force_rerun=None):
+        # assert isinstance(date_str, str)
         assert force_rerun is None or isinstance(force_rerun, list)
         if force_rerun is None:
             force_rerun = []
@@ -725,7 +726,7 @@ class PaperPipeline:
             return step_name in force_rerun
 
         # 先解析 HF 实际可用日期（若 HF 跳转到前一日，跟随）
-        date_str = self._resolve_hf_date(date_str)
+        date_str = self._resolve_hf_date() # date_str
 
         pub_dir = self.cfg.output_pub_dir_fmt.format(date_str=date_str)
         pub_img_dir = f"{pub_dir}/{self.cfg.pub_images_subdir}"
@@ -1003,7 +1004,10 @@ if __name__ == "__main__":
     my_api_key = os.getenv("MY_API_KEY")
     cfg = PipelineConfig()
     pipeline = PaperPipeline(my_api_key, cfg)
-    today_cst = datetime.now(CST).strftime("%Y-%m-%d")
-    pipeline.run_pipeline(today_cst, force_rerun=["step01"])
+    # today = datetime.now(timezone.utc)
+    pipeline.run_pipeline(force_rerun=["step01"])
+        # today.strftime("%Y-%m-%d"), 
+        # f
+    # )
  
     
