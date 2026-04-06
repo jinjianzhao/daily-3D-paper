@@ -899,7 +899,7 @@ class PaperPipeline:
 
     def _update_date_index_config(self):
         """扫描 output/papers/date/ 下所有日期目录，生成索引 config.json。"""
-        date_dir_root = "output/papers/date"
+        date_dir_root = "docs/date"
         if not os.path.isdir(date_dir_root):
             return
 
