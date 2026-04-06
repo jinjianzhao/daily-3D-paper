@@ -312,7 +312,7 @@ class PaperPipeline:
     def _resolve_hf_date(self, date_str: str) -> str:
         """访问 HF 论文页，若发生跳转则提取实际日期（如周末/未更新时 HF 会跳转到前一日）。"""
         assert isinstance(date_str, str)
-        url = f"{self.cfg.hf_paper_link_prefix}/papers/"
+        url = f"{self.cfg.hf_paper_link_prefix}/papers/date/{date_str}"
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec, allow_redirects=True)
         redirect_match = re.search(r"/papers/date/(\d{4}-\d{2}-\d{2})", resp.url)
         if redirect_match:
