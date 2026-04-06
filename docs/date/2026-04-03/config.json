@@ -11,32 +11,32 @@
     "2603.26164": {
       "title": "DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models",
       "hf_link": "https://huggingface.co/papers/2603.26164",
-      "votes": 153
+      "votes": 170
     },
     "2604.02029": {
       "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
       "hf_link": "https://huggingface.co/papers/2604.02029",
-      "votes": 119
+      "votes": 123
     },
     "2604.02329": {
       "title": "Generative World Renderer",
       "hf_link": "https://huggingface.co/papers/2604.02329",
-      "votes": 86
+      "votes": 87
     },
     "2604.02268": {
       "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
       "hf_link": "https://huggingface.co/papers/2604.02268",
-      "votes": 81
-    },
-    "2604.01658": {
-      "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
-      "hf_link": "https://huggingface.co/papers/2604.01658",
-      "votes": 40
+      "votes": 83
     },
     "2604.02327": {
       "title": "Steerable Visual Representations",
       "hf_link": "https://huggingface.co/papers/2604.02327",
-      "votes": 40
+      "votes": 43
+    },
+    "2604.01658": {
+      "title": "CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery",
+      "hf_link": "https://huggingface.co/papers/2604.01658",
+      "votes": 41
     },
     "2604.01001": {
       "title": "EgoSim: Egocentric World Simulator for Embodied Interaction Generation",
@@ -46,7 +46,7 @@
     "2604.02296": {
       "title": "VOID: Video Object and Interaction Deletion",
       "hf_link": "https://huggingface.co/papers/2604.02296",
-      "votes": 28
+      "votes": 29
     },
     "2604.02097": {
       "title": "LatentUM: Unleashing the Potential of Interleaved Cross-Modal Reasoning via a Latent-Space Unified Model",
@@ -58,24 +58,24 @@
       "hf_link": "https://huggingface.co/papers/2604.01973",
       "votes": 26
     },
+    "2604.01202": {
+      "title": "Therefore I am. I Think",
+      "hf_link": "https://huggingface.co/papers/2604.01202",
+      "votes": 21
+    },
     "2604.01007": {
       "title": "Omni-SimpleMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
       "hf_link": "https://huggingface.co/papers/2604.01007",
       "votes": 21
     },
-    "2604.01202": {
-      "title": "Therefore I am. I Think",
-      "hf_link": "https://huggingface.co/papers/2604.01202",
-      "votes": 20
+    "2603.29640": {
+      "title": "ASI-Evolve: AI Accelerates AI",
+      "hf_link": "https://huggingface.co/papers/2603.29640",
+      "votes": 19
     },
     "2604.02190": {
       "title": "UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",
       "hf_link": "https://huggingface.co/papers/2604.02190",
-      "votes": 18
-    },
-    "2603.29640": {
-      "title": "ASI-Evolve: AI Accelerates AI",
-      "hf_link": "https://huggingface.co/papers/2603.29640",
       "votes": 18
     },
     "2603.27666": {
@@ -86,7 +86,7 @@
     "2604.00917": {
       "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
       "hf_link": "https://huggingface.co/papers/2604.00917",
-      "votes": 12
+      "votes": 13
     },
     "2604.01676": {
       "title": "GPA: Learning GUI Process Automation from Demonstrations",
@@ -108,6 +108,11 @@
       "hf_link": "https://huggingface.co/papers/2604.02289",
       "votes": 8
     },
+    "2604.01666": {
+      "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
+      "hf_link": "https://huggingface.co/papers/2604.01666",
+      "votes": 8
+    },
     "2604.01569": {
       "title": "VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification",
       "hf_link": "https://huggingface.co/papers/2604.01569",
@@ -117,11 +122,6 @@
       "title": "Video Models Reason Early: Exploiting Plan Commitment for Maze Solving",
       "hf_link": "https://huggingface.co/papers/2603.30043",
       "votes": 8
-    },
-    "2604.01666": {
-      "title": "DynaVid: Learning to Generate Highly Dynamic Videos using Synthetic Motion Data",
-      "hf_link": "https://huggingface.co/papers/2604.01666",
-      "votes": 7
     },
     "2604.01014": {
       "title": "AutoMIA: Improved Baselines for Membership Inference Attack via Agentic Self-Exploration",
@@ -133,15 +133,15 @@
       "hf_link": "https://huggingface.co/papers/2603.28130",
       "votes": 7
     },
+    "2604.01760": {
+      "title": "T5Gemma-TTS Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.01760",
+      "votes": 6
+    },
     "2604.01328": {
       "title": "Efficient and Principled Scientific Discovery through Bayesian Optimization: A Tutorial",
       "hf_link": "https://huggingface.co/papers/2604.01328",
       "votes": 6
-    },
-    "2604.01760": {
-      "title": "T5Gemma-TTS Technical Report",
-      "hf_link": "https://huggingface.co/papers/2604.01760",
-      "votes": 5
     },
     "2604.02007": {
       "title": "Apriel-Reasoner: RL Post-Training for General-Purpose and Efficient Reasoning",
@@ -239,29 +239,29 @@
     "2604.02029": "自然语言处理；机器学习\n背景/任务是探讨语言模型中潜空间作为计算基质的兴起及其相较于显式标记空间的优势。\n本文通过五个视角系统综述了潜空间的研究进展，并梳理了其机制、能力及未来方向。",
     "2604.02329": "计算机视觉;生成模型\n合成数据真实性不足限制了生成式逆渲染与正向渲染在真实场景的应用。\n构建了大规模动态游戏数据集，并提出评估协议以提升逆渲染的跨数据集泛化与可控生成能力。",
     "2604.02268": "机器学习;强化学习  \n背景/任务：提升LLM智能体通过动态加载技能包执行任务的能力，减少推理时技能检索的噪声和开销，实现技能内化。  \n方法：提出SKILL0框架，通过训练时从完整上下文逐步退出的课程学习方法，将技能内部化到模型参数中，实现零样本自主行为。",
-    "2604.01658": "人工智能;智能体与多智能体系统  \n背景/任务：针对开放性问题，现有基于大语言模型的进化方法依赖固定启发式规则，限制了智能体自主性。  \n工作内容：提出了自主多智能体进化框架CORAL，通过持久记忆、异步协作和心跳干预实现知识积累，在多项任务上取得突破性性能提升。",
     "2604.02327": "计算机视觉；多模态学习  \n背景/任务：视觉表示方法难以通过语言引导关注非显著物体，而多模态大模型的表示则偏向语言中心，影响通用视觉任务性能。  \n作者提出可引导视觉表示，通过在视觉编码器中早期融合文本，使特征能够根据自然语言指令聚焦于任意目标，同时保持通用视觉任务的表现。",
+    "2604.01658": "人工智能;智能体与多智能体系统  \n背景/任务：针对开放性问题，现有基于大语言模型的进化方法依赖固定启发式规则，限制了智能体自主性。  \n工作内容：提出了自主多智能体进化框架CORAL，通过持久记忆、异步协作和心跳干预实现知识积累，在多项任务上取得突破性性能提升。",
     "2604.01001": "计算机视觉;机器人学  \n为克服现有模拟器缺乏3D空间一致性和动态场景更新能力的局限，提出了EgoSim这一闭环第一人称世界模拟器。  \n它通过几何动作感知的观测模拟模型生成交互视频，并利用交互感知状态更新模块持续更新3D场景状态，同时构建了低成本数据采集管道以解决训练数据瓶颈。",
     "2604.02296": "计算机视觉;视频处理  \n现有视频物体移除方法在处理物体移除后的物理交互（如碰撞）时效果不佳，导致结果不真实。  \n论文提出VOID框架，通过生成对抗性数据集并利用视觉语言模型和视频扩散模型，实现物理合理的视频修复。",
     "2604.02097": "计算机视觉;多模态学习  \n背景/任务是研究如何统一跨模态理解与生成模型，以支持更高效的视觉推理和生成。  \n他们提出了LatentUM模型，通过在共享潜在空间中表示所有模态，无需像素解码桥接，实现了跨模态推理和生成。",
     "2604.01973": "计算机视觉；模式识别与机器学习  \n现有视觉编码器在身份相关任务中，因身份与背景信息纠缠导致评估不可靠。  \n作者提出NearID框架和数据集，通过对比学习增强身份表征，显著提升了身份判别准确率。",
-    "2604.01007": "人工智能工程；自主智能体<br>背景/任务：处理AI智能体在长期运行中的多模态记忆保留、组织和检索问题，其设计空间复杂难以手动探索。<br>做了什么：通过自主研究流程发现了Omni-SimpleMem框架，大幅提升了两个基准测试的性能，并展示了超越传统AutoML的发现能力。",
     "2604.01202": "机器学习;自然语言处理  \n研究背景是探索大语言模型在推理决策时是“先思考后决定”还是“先决定后思考”。  \n研究发现模型在生成思维链前就已编码决策，通过线性探针可提前解码选择，且激活干预能翻转其决策和行为。",
-    "2604.02190": "计算机科学；自动驾驶  \n背景/任务：适应Vision-Language-Action模型于自动驾驶任务时面临空间感知与语义推理的冲突。  \n核心工作：提出UniDriveVLA模型，通过专家解耦和混合Transformer架构分离感知与推理，并采用渐进训练策略提升性能。",
+    "2604.01007": "人工智能工程；自主智能体<br>背景/任务：处理AI智能体在长期运行中的多模态记忆保留、组织和检索问题，其设计空间复杂难以手动探索。<br>做了什么：通过自主研究流程发现了Omni-SimpleMem框架，大幅提升了两个基准测试的性能，并展示了超越传统AutoML的发现能力。",
     "2603.29640": "机器学习;强化学习  \n背景/任务：探索AI能否加速AI自身发展，特别是处理成本高、周期长、弱监督的研究循环。  \n做了什么：提出了ASI-Evolve框架，通过进化代理和认知模块，在架构设计、数据管理和算法优化中实现了AI驱动的发现，提升了多项任务性能。",
+    "2604.02190": "计算机科学；自动驾驶  \n背景/任务：适应Vision-Language-Action模型于自动驾驶任务时面临空间感知与语义推理的冲突。  \n核心工作：提出UniDriveVLA模型，通过专家解耦和混合Transformer架构分离感知与推理，并采用渐进训练策略提升性能。",
     "2603.27666": "计算机视觉;生成模型  \n背景/任务：解决云部署扩散模型带来的数据隐私问题，探索适用于边缘设备的可控视觉生成方法。  \n所做工作：提出一种基于线性注意力架构的统一门控条件模块，支持多类型条件输入，在多个任务上实现了优于现有方法的生成性能。",
     "2604.00917": "软件工程;软件维护  \n背景/任务是研究AI编码代理在开源项目中日益增长的角色及其对软件开发过程的影响。  \n研究构建了一个包含约11万条开源拉取请求的数据集，比较了五种主流编码代理的使用差异，并评估了AI生成代码与人类编写代码在长期维护中的表现。",
     "2604.01676": "计算机科学;软件工程  \n背景/任务：解决传统RPA的脆弱性和当前视觉语言模型GUI代理的非确定性问题，以实现稳定、可靠的图形用户界面流程自动化。  \n所做工作：提出了一种轻量级、基于视觉的通用RPA方法（GPA），通过序贯蒙特卡洛定位和就绪校准来提升鲁棒性与确定性，并以完全本地化执行保障隐私和速度，实验证明其成功率与执行速度优于对比方法。",
     "2604.01618": "计算机视觉;机器人学  \n背景/任务是研究视觉-语言-动作模型在机器人操纵中对抗物理可实现的三维对抗纹理攻击的鲁棒性不足问题。  \n他们提出了Tex3D框架，通过前景-背景解耦和轨迹感知对抗优化方法，在仿真和真实机器人环境中实现了对三维对抗纹理的端到端优化，显著降低了模型性能。",
     "2603.28068": "计算机视觉；自然语言处理  \n背景/任务是评估现有图像生成模型能否为学术论文生成可直接使用的插图，但现有评估方法存在不足。  \n他们提出了AIBench基准，通过VQA评估逻辑正确性和VLM评估美学质量，并发现模型在该任务上性能差异显著且逻辑与美学难以同时优化。",
     "2604.02289": "计算机视觉；图形学  \n背景是现有多模态大模型在3D生成上存在数据稀缺和几何不一致的问题。  \n他们提出了Omni123模型，通过统一2D和3D生成的训练框架，利用2D数据作为几何先验来提升3D生成质量。",
+    "2604.01666": "计算机视觉；视频生成  \n视频扩散模型在生成动态运动和精细可控视频上存在局限，主要因训练数据中此类样本稀缺。  \n该研究提出DynaVid框架，利用合成光流数据分阶段生成视频，以合成数据学习动态运动，用真实数据保持视觉真实。",
     "2604.01569": "计算机视觉；多模态学习  \n现有视频多模态大语言模型的评测存在分数虚高和缺乏证据验证的缺陷。  \n该研究提出了一个分层基准VideoZeroBench，通过五级评估协议揭示模型在长视频问答中基于时空证据推理的严重不足。",
     "2603.30043": "计算机视觉;生成模型  \n研究视频扩散模型在解决迷宫任务中的内部推理机制。  \n发现模型早期规划承诺和路径长度主导迷宫难度，并提出了ChEaP方法提升长序列生成性能。",
-    "2604.01666": "计算机视觉；视频生成  \n视频扩散模型在生成动态运动和精细可控视频上存在局限，主要因训练数据中此类样本稀缺。  \n该研究提出DynaVid框架，利用合成光流数据分阶段生成视频，以合成数据学习动态运动，用真实数据保持视觉真实。",
     "2604.01014": "人工智能安全; 机器学习隐私与安全  \n现有成员推理攻击方法依赖静态启发式规则，难以适配不同大模型，导致性能受限。  \n本文提出AutoMIA框架，将成员推理转化为自动化策略探索与进化过程，通过闭环评估生成并优化攻击策略，实现了模型无关的高效攻击。",
     "2603.28130": "自然语言处理;计算机视觉  \n当前文档解析研究集中于少数主流语言的整洁数字文档，缺乏多语言、多场景的评估基准。  \n该研究构建了首个多语言文档解析基准MDPBench，涵盖17种语言与多样拍摄条件，评估发现开源模型在非拉丁脚本和真实拍摄文档上性能显著下降。",
-    "2604.01328": "机器学习;优化算法  \n传统科学发现依赖人工试错的低效循环，需要更智能的实验设计方法。  \n该教程提出用贝叶斯优化框架，通过概率模型和采集函数自动化实验选择，以加速材料、化学等领域的科学发现。",
     "2604.01760": "自然语言处理;语音合成  \n背景/任务：解决现有自回归神经编解码语言模型在长语音合成中文本条件弱化的问题，提升零样本语音克隆性能。  \n所做工作：提出T5Gemma-TTS模型，采用编码器-解码器架构和PM-RoPE技术，在多语言数据上训练，实现了更好的说话人相似度和时长控制。",
+    "2604.01328": "机器学习;优化算法  \n传统科学发现依赖人工试错的低效循环，需要更智能的实验设计方法。  \n该教程提出用贝叶斯优化框架，通过概率模型和采集函数自动化实验选择，以加速材料、化学等领域的科学发现。",
     "2604.02007": "人工智能;强化学习\n背景是构建能在多领域进行高效推理的通用模型，面临训练与推理效率的挑战。\n研究提出了带自适应采样和难度感知长度惩罚的训练方法，在多个基准上实现了更高精度与更短推理路径。",
     "2604.02088": "计算机视觉；图像生成与编辑  \n背景/任务是为图像编辑提供连续滑块式控制，在保持源图像保真度和一致编辑方向的前提下，解决现有方法训练开销大、鲁棒性不足的问题。  \n提出了一种无需训练的方法FlowSlider，通过分解并正交化保真项与导向项，仅缩放导向项即可实现平滑、可靠的编辑强度控制。",
     "2604.00829": "自然语言处理;多模态学习  \n背景/任务：将预训练语言模型适配为视觉语言模型时，会因表征偏移和跨模态干扰导致语言能力下降，传统恢复方法通常增加模块，不够高效灵活。  \n所做工作：提出无需额外模块的蒸馏方法LinguDistill，通过层间KV缓存共享利用原始语言模型作为教师，在语言密集数据上选择性蒸馏以恢复语言能力，同时保持多模态任务的视觉基础。",
@@ -392,13 +392,13 @@
       "abstract": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available atthis https URL.",
       "comments": ""
     },
-    "2604.01658": {
-      "abstract": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared persistent memory, asynchronous multi-agent execution, and heartbeat-based interventions. It also provides practical safeguards, including isolated workspaces, evaluator separation, resource management, and agent session and health management. Evaluated on diverse mathematical, algorithmic, and systems optimization tasks, CORAL sets new state-of-the-art results on 10 tasks, achieving 3-10 times higher improvement rates with far fewer evaluations than fixed evolutionary search baselines across tasks. On Anthropic's kernel engineering task, four co-evolving agents improve the best known score from 1363 to 1103 cycles. Mechanistic analyses further show how these gains arise from knowledge reuse and multi-agent exploration and communication. Together, these results suggest that greater agent autonomy and multi-agent evolution can substantially improve open-ended discovery. Code is available atthis https URL.",
-      "comments": ""
-    },
     "2604.02327": {
       "abstract": "Pretrained Vision Transformers (ViTs) such as DINOv2 and MAE provide generic image features that can be applied to a variety of downstream tasks such as retrieval, classification, and segmentation. However, such representations tend to focus on the most salient visual cues in the image, with no way to direct them toward less prominent concepts of interest. In contrast, Multimodal LLMs can be guided with textual prompts, but the resulting representations tend to be language-centric and lose their effectiveness for generic visual tasks. To address this, we introduce Steerable Visual Representations, a new class of visual representations, whose global and local features can be steered with natural language. While most vision-language models (e.g., CLIP) fuse text with visual features after encoding (late fusion), we inject text directly into the layers of the visual encoder (early fusion) via lightweight cross-attention. We introduce benchmarks for measuring representational steerability, and demonstrate that our steerable visual features can focus on any desired objects in an image while preserving the underlying representation quality. Our method also matches or outperforms dedicated approaches on anomaly detection and personalized object discrimination, exhibiting zero-shot generalization to out-of-distribution tasks.",
       "comments": "preprint"
+    },
+    "2604.01658": {
+      "abstract": "Large language model (LLM)-based evolution is a promising approach for open-ended discovery, where progress requires sustained search and knowledge accumulation. Existing methods still rely heavily on fixed heuristics and hard-coded exploration rules, which limit the autonomy of LLM agents. We present CORAL, the first framework for autonomous multi-agent evolution on open-ended problems. CORAL replaces rigid control with long-running agents that explore, reflect, and collaborate through shared persistent memory, asynchronous multi-agent execution, and heartbeat-based interventions. It also provides practical safeguards, including isolated workspaces, evaluator separation, resource management, and agent session and health management. Evaluated on diverse mathematical, algorithmic, and systems optimization tasks, CORAL sets new state-of-the-art results on 10 tasks, achieving 3-10 times higher improvement rates with far fewer evaluations than fixed evolutionary search baselines across tasks. On Anthropic's kernel engineering task, four co-evolving agents improve the best known score from 1363 to 1103 cycles. Mechanistic analyses further show how these gains arise from knowledge reuse and multi-agent exploration and communication. Together, these results suggest that greater agent autonomy and multi-agent evolution can substantially improve open-ended discovery. Code is available atthis https URL.",
+      "comments": ""
     },
     "2604.01001": {
       "abstract": "We introduce EgoSim, a closed-loop egocentric world simulator that generates spatially consistent interaction videos and persistently updates the underlying 3D scene state for continuous simulation. Existing egocentric simulators either lack explicit 3D grounding, causing structural drift under viewpoint changes, or treat the scene as static, failing to update world states across multi-stage interactions. EgoSim addresses both limitations by modeling 3D scenes as updatable world states. We generate embodiment interactions via a Geometry-action-aware Observation Simulation model, with spatial consistency from an Interaction-aware State Updating module. To overcome the critical data bottleneck posed by the difficulty in acquiring densely aligned scene-interaction training pairs, we design a scalable pipeline that extracts static point clouds, camera trajectories, and embodiment actions from in-the-wild large-scale monocular egocentric videos. We further introduce EgoCap, a capture system that enables low-cost real-world data collection with uncalibrated smartphones. Extensive experiments demonstrate that EgoSim significantly outperforms existing methods in terms of visual quality, spatial consistency, and generalization to complex scenes and in-the-wild dexterous interactions, while supporting cross-embodiment transfer to robotic manipulation. Codes and datasets will be open soon. The project page is atthis http URL.",
@@ -416,21 +416,21 @@
       "abstract": "When evaluating identity-focused tasks such as personalized generation and image editing, existing vision encoders entangle object identity with background context, leading to unreliable representations and metrics. We introduce the first principled framework to address this vulnerability using Near-identity (NearID) distractors, where semantically similar but distinct instances are placed on the exact same background as a reference image, eliminating contextual shortcuts and isolating identity as the sole discriminative signal. Based on this principle, we present the NearID dataset (19K identities, 316K matched-context distractors) together with a strict margin-based evaluation protocol. Under this setting, pre-trained encoders perform poorly, achieving Sample Success Rates (SSR), a strict margin-based identity discrimination metric, as low as 30.7% and often ranking distractors above true cross-view matches. We address this by learning identity-aware representations on a frozen backbone using a two-tier contrastive objective enforcing the hierarchy: same identity > NearID distractor > random negative. This improves SSR to 99.2%, enhances part-level discrimination by 28.0%, and yields stronger alignment with human judgments on DreamBench++, a human-aligned benchmark for personalization. Project page:this https URL",
       "comments": "Code at <a class=\"link-external link-https\" href=\"https://github.com/Gorluxor/NearID\" rel=\"external noopener nofollow\">this https URL</a>"
     },
-    "2604.01007": {
-      "abstract": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover Omni-SimpleMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at thisthis https URL.",
-      "comments": ""
-    },
     "2604.01202": {
       "abstract": "We consider the question: when a large language reasoning model makes a choice, did it think first and then decide to, or decide first and then think? In this paper, we present evidence that detectable, early-encoded decisions shape chain-of-thought in reasoning models. Specifically, we show that a simple linear probe successfully decodes tool-calling decisions from pre-generation activations with very high confidence, and in some cases, even before a single reasoning token is produced. Activation steering supports this causally: perturbing the decision direction leads to inflated deliberation, and flips behavior in many examples (between 7 - 79% depending on model and benchmark). We also show through behavioral analysis that, when steering changes the decision, the chain-of-thought process often rationalizes the flip rather than resisting it. Together, these results suggest that reasoning models can encode action choices before they begin to deliberate in text.",
       "comments": ""
     },
-    "2604.02190": {
-      "abstract": "Vision-Language-Action (VLA) models have recently emerged in autonomous driving, with the promise of leveraging rich world knowledge to improve the cognitive capabilities of driving systems. However, adapting such models for driving tasks currently faces a critical dilemma between spatial perception and semantic reasoning. Consequently, existing VLA systems are forced into suboptimal compromises: directly adopting 2D Vision-Language Models yields limited spatial perception, whereas enhancing them with 3D spatial representations often impairs the native reasoning capacity of VLMs. We argue that this dilemma largely stems from the coupled optimization of spatial perception and semantic reasoning within shared model parameters. To overcome this, we propose UniDriveVLA, a Unified Driving Vision-Language-Action model based on Mixture-of-Transformers that addresses the perception-reasoning conflict via expert decoupling. Specifically, it comprises three experts for driving understanding, scene perception, and action planning, which are coordinated through masked joint attention. In addition, we combine a sparse perception paradigm with a three-stage progressive training strategy to improve spatial perception while maintaining semantic reasoning capability. Extensive experiments show that UniDriveVLA achieves state-of-the-art performance in open-loop evaluation on nuScenes and closed-loop evaluation on Bench2Drive. Moreover, it demonstrates strong performance across a broad range of perception, prediction, and understanding tasks, including 3D detection, online mapping, motion forecasting, and driving-oriented VQA, highlighting its broad applicability as a unified model for autonomous driving. Code and model have been released atthis https URL",
-      "comments": "code has been released at <a class=\"link-external link-https\" href=\"https://github.com/xiaomi-research/unidrivevla\" rel=\"external noopener nofollow\">this https URL</a>"
+    "2604.01007": {
+      "abstract": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover Omni-SimpleMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at thisthis https URL.",
+      "comments": ""
     },
     "2603.29640": {
       "abstract": "Can AI accelerate the development of AI itself? While recent agentic systems have shown strong performance on well-scoped tasks with rapid feedback, it remains unclear whether they can tackle the costly, long-horizon, and weakly supervised research loops that drive real AI progress. We present ASI-Evolve, an agentic framework for AI-for-AI research that closes this loop through a learn-design-experiment-analyze cycle. ASI-Evolve augments standard evolutionary agents with two key components: a cognition base that injects accumulated human priors into each round of exploration, and a dedicated analyzer that distills complex experimental outcomes into reusable insights for future iterations. To our knowledge, ASI-Evolve is the first unified framework to demonstrate AI-driven discovery across three central components of AI development: data, architectures, and learning algorithms. In neural architecture design, it discovered 105 SOTA linear attention architectures, with the best discovered model surpassing DeltaNet by +0.97 points, nearly 3x the gain of recent human-designed improvements. In pretraining data curation, the evolved pipeline improves average benchmark performance by +3.96 points, with gains exceeding 18 points on MMLU. In reinforcement learning algorithm design, discovered algorithms outperform GRPO by up to +12.5 points on AMC32, +11.67 points on AIME24, and +5.04 points on OlympiadBench. We further provide initial evidence that this AI-for-AI paradigm can transfer beyond the AI stack through experiments in mathematics and biomedicine. Together, these results suggest that ASI-Evolve represents a promising step toward enabling AI to accelerate AI across the foundational stages of development, offering early evidence for the feasibility of closed-loop AI research.",
       "comments": "19 pages, 6 figures, 6 tables. Code available at <a class=\"link-external link-https\" href=\"https://github.com/GAIR-NLP/ASI-Evolve\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.02190": {
+      "abstract": "Vision-Language-Action (VLA) models have recently emerged in autonomous driving, with the promise of leveraging rich world knowledge to improve the cognitive capabilities of driving systems. However, adapting such models for driving tasks currently faces a critical dilemma between spatial perception and semantic reasoning. Consequently, existing VLA systems are forced into suboptimal compromises: directly adopting 2D Vision-Language Models yields limited spatial perception, whereas enhancing them with 3D spatial representations often impairs the native reasoning capacity of VLMs. We argue that this dilemma largely stems from the coupled optimization of spatial perception and semantic reasoning within shared model parameters. To overcome this, we propose UniDriveVLA, a Unified Driving Vision-Language-Action model based on Mixture-of-Transformers that addresses the perception-reasoning conflict via expert decoupling. Specifically, it comprises three experts for driving understanding, scene perception, and action planning, which are coordinated through masked joint attention. In addition, we combine a sparse perception paradigm with a three-stage progressive training strategy to improve spatial perception while maintaining semantic reasoning capability. Extensive experiments show that UniDriveVLA achieves state-of-the-art performance in open-loop evaluation on nuScenes and closed-loop evaluation on Bench2Drive. Moreover, it demonstrates strong performance across a broad range of perception, prediction, and understanding tasks, including 3D detection, online mapping, motion forecasting, and driving-oriented VQA, highlighting its broad applicability as a unified model for autonomous driving. Code and model have been released atthis https URL",
+      "comments": "code has been released at <a class=\"link-external link-https\" href=\"https://github.com/xiaomi-research/unidrivevla\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2603.27666": {
       "abstract": "Recent advances in diffusion-based controllable visual generation have led to remarkable improvements in image quality. However, these powerful models are typically deployed on cloud servers due to their large computational demands, raising serious concerns about user data privacy. To enable secure and efficient on-device generation, we explore in this paper controllable diffusion models built upon linear attention architectures, which offer superior scalability and efficiency, even on edge devices. Yet, our experiments reveal that existing controllable generation frameworks, such as ControlNet and OminiControl, either lack the flexibility to support multiple heterogeneous condition types or suffer from slow convergence on such linear-attention models. To address these limitations, we propose a novel controllable diffusion framework tailored for linear attention backbones like SANA. The core of our method lies in a unified gated conditioning module working in a dual-path pipeline, which effectively integrates multi-type conditional inputs, such as spatially aligned and non-aligned cues. Extensive experiments on multiple tasks and benchmarks demonstrate that our approach achieves state-of-the-art controllable generation performance based on linear-attention models, surpassing existing methods in terms of fidelity and controllability.",
@@ -456,6 +456,10 @@
       "abstract": "Recent multimodal large language models have achieved strong performance in unified text and image understanding and generation, yet extending such native capability to 3D remains challenging due to limited data. Compared to abundant 2D imagery, high-quality 3D assets are scarce, making 3D synthesis under-constrained. Existing methods often rely on indirect pipelines that edit in 2D and lift results into 3D via optimization, sacrificing geometric consistency. We present Omni123, a 3D-native foundation model that unifies text-to-2D and text-to-3D generation within a single autoregressive framework. Our key insight is that cross-modal consistency between images and 3D can serve as an implicit structural constraint. By representing text, images, and 3D as discrete tokens in a shared sequence space, the model leverages abundant 2D data as a geometric prior to improve 3D representations. We introduce an interleaved X-to-X training paradigm that coordinates diverse cross-modal tasks over heterogeneous paired datasets without requiring fully aligned text-image-3D triplets. By traversing semantic-visual-geometric cycles (e.g., text to image to 3D to image) within autoregressive sequences, the model jointly enforces semantic alignment, appearance fidelity, and multi-view geometric consistency. Experiments show that Omni123 significantly improves text-guided 3D generation and editing, demonstrating a scalable path toward multimodal 3D world models.",
       "comments": ""
     },
+    "2604.01666": {
+      "abstract": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduce DynaVid, a video synthesis framework that leverages synthetic motion data in training, which is represented as optical flow and rendered using computer graphics pipelines. This approach offers two key advantages. First, synthetic motion offers diverse motion patterns and precise control signals that are difficult to obtain from real data. Second, unlike rendered videos with artificial appearances, rendered optical flow encodes only motion and is decoupled from appearance, thereby preventing models from reproducing the unnatural look of synthetic videos. Building on this idea, DynaVid adopts a two-stage generation framework: a motion generator first synthesizes motion, and then a motion-guided video generator produces video frames conditioned on that motion. This decoupled formulation enables the model to learn dynamic motion patterns from synthetic data while preserving visual realism from real-world videos. We validate our framework on two challenging scenarios, vigorous human motion generation and extreme camera motion control, where existing datasets are particularly limited. Extensive experiments demonstrate that DynaVid improves the realism and controllability in dynamic motion generation and camera motion control.",
+      "comments": "Accepted to CVPR 2026. Website: <a class=\"link-external link-https\" href=\"https://jinwonjoon.github.io/DynaVid/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
     "2604.01569": {
       "abstract": "Recent video multimodal large language models achieve impressive results across various benchmarks. However, current evaluations suffer from two critical limitations: (1) inflated scores can mask deficiencies in fine-grained visual understanding and reasoning, and (2) answer correctness is often measured without verifying whether models identify the precise spatio-temporal evidence supporting their predictions. To address this, we present VideoZeroBench, a hierarchical benchmark designed for challenging long-video question answering that rigorously verifies spatio-temporal evidence. It comprises 500 manually annotated questions across 13 domains, paired with temporal intervals and spatial bounding boxes as evidence. To disentangle answering generation, temporal grounding, and spatial grounding, we introduce a five-level evaluation protocol that progressively tightens evidence requirements. Experiments show that even Gemini-3-Pro correctly answers fewer than 17% of questions under the standard end-to-end QA setting (Level-3). When grounding constraints are imposed, performance drops sharply: No model exceeds 1% accuracy when both correct answering and accurate spatio-temporal localization are required (Level-5), with most failing to achieve any correct grounded predictions. These results expose a significant gap between surface-level answer correctness and genuine evidence-based reasoning, revealing that grounded video understanding remains a bottleneck for long-video QA. We further analyze performance across minimal evidence spans, atomic abilities, and inference paradigms, providing insights for future research in grounded video reasoning. The benchmark and code will be made publicly available.",
       "comments": ""
@@ -463,10 +467,6 @@
     "2603.30043": {
       "abstract": "Video diffusion models exhibit emergent reasoning capabilities like solving mazes and puzzles, yet little is understood about how they reason during generation. We take a first step towards understanding this and study the internal planning dynamics of video models using 2D maze solving as a controlled testbed. Our investigations reveal two findings. Our first finding is early plan commitment: video diffusion models commit to a high-level motion plan within the first few denoising steps, after which further denoising alters visual details but not the underlying trajectory. Our second finding is that path length, not obstacle density, is the dominant predictor of maze difficulty, with a sharp failure threshold at 12 steps. This means video models can only reason over long mazes by chaining together multiple sequential generations. To demonstrate the practical benefits of our findings, we introduce Chaining with Early Planning, or ChEaP, which only spends compute on seeds with promising early plans and chains them together to tackle complex mazes. This improves accuracy from 7% to 67% on long-horizon mazes and by 2.5x overall on hard tasks in Frozen Lake and VR-Bench across Wan2.2-14B and HunyuanVideo-1.5. Our analysis reveals that current video models possess deeper reasoning capabilities than previously recognized, which can be elicited more reliably with better inference-time scaling.",
       "comments": ""
-    },
-    "2604.01666": {
-      "abstract": "Despite recent progress, video diffusion models still struggle to synthesize realistic videos involving highly dynamic motions or requiring fine-grained motion controllability. A central limitation lies in the scarcity of such examples in commonly used training datasets. To address this, we introduce DynaVid, a video synthesis framework that leverages synthetic motion data in training, which is represented as optical flow and rendered using computer graphics pipelines. This approach offers two key advantages. First, synthetic motion offers diverse motion patterns and precise control signals that are difficult to obtain from real data. Second, unlike rendered videos with artificial appearances, rendered optical flow encodes only motion and is decoupled from appearance, thereby preventing models from reproducing the unnatural look of synthetic videos. Building on this idea, DynaVid adopts a two-stage generation framework: a motion generator first synthesizes motion, and then a motion-guided video generator produces video frames conditioned on that motion. This decoupled formulation enables the model to learn dynamic motion patterns from synthetic data while preserving visual realism from real-world videos. We validate our framework on two challenging scenarios, vigorous human motion generation and extreme camera motion control, where existing datasets are particularly limited. Extensive experiments demonstrate that DynaVid improves the realism and controllability in dynamic motion generation and camera motion control.",
-      "comments": "Accepted to CVPR 2026. Website: <a class=\"link-external link-https\" href=\"https://jinwonjoon.github.io/DynaVid/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2604.01014": {
       "abstract": "Membership Inference Attacks (MIAs) serve as a fundamental auditing tool for evaluating training data leakage in machine learning models. However, existing methodologies predominantly rely on static, handcrafted heuristics that lack adaptability, often leading to suboptimal performance when transferred across different large models. In this work, we propose AutoMIA, an agentic framework that reformulates membership inference as an automated process of self-exploration and strategy evolution. Given high-level scenario specifications, AutoMIA self-explores the attack space by generating executable logits-level strategies and progressively refining them through closed-loop evaluation feedback. By decoupling abstract strategy reasoning from low-level execution, our framework enables a systematic, model-agnostic traversal of the attack search space. Extensive experiments demonstrate that AutoMIA consistently matches or outperforms state-of-the-art baselines while eliminating the need for manual feature engineering.",
@@ -476,12 +476,12 @@
       "abstract": "We introduce Multilingual Document Parsing Benchmark, the first benchmark for multilingual digital and photographed document parsing. Document parsing has made remarkable strides, yet almost exclusively on clean, digital, well-formatted pages in a handful of dominant languages. No systematic benchmark exists to evaluate how models perform on digital and photographed documents across diverse scripts and low-resource languages. MDPBench comprises 3,400 document images spanning 17 languages, diverse scripts, and varied photographic conditions, with high-quality annotations produced through a rigorous pipeline of expert model labeling, manual correction, and human verification. To ensure fair comparison and prevent data leakage, we maintain separate public and private evaluation splits. Our comprehensive evaluation of both open-source and closed-source models uncovers a striking finding: while closed-source models (notably Gemini3-Pro) prove relatively robust, open-source alternatives suffer dramatic performance collapse, particularly on non-Latin scripts and real-world photographed documents, with an average drop of 17.8% on photographed documents and 14.0% on non-Latin scripts. These results reveal significant performance imbalances across languages and conditions, and point to concrete directions for building more inclusive, deployment-ready parsing systems. Source available atthis https URL.",
       "comments": ""
     },
-    "2604.01328": {
-      "abstract": "Traditional scientific discovery relies on an iterative hypothesise-experiment-refine cycle that has driven progress for centuries, but its intuitive, ad-hoc implementation often wastes resources, yields inefficient designs, and misses critical insights. This tutorial presents Bayesian Optimisation (BO), a principled probability-driven framework that formalises and automates this core scientific cycle. BO uses surrogate models (e.g., Gaussian processes) to model empirical observations as evolving hypotheses, and acquisition functions to guide experiment selection, balancing exploitation of known knowledge and exploration of uncharted domains to eliminate guesswork and manual trial-and-error. We first frame scientific discovery as an optimisation problem, then unpack BO's core components, end-to-end workflows, and real-world efficacy via case studies in catalysis, materials science, organic synthesis, and molecule discovery. We also cover critical technical extensions for scientific applications, including batched experimentation, heteroscedasticity, contextual optimisation, and human-in-the-loop integration. Tailored for a broad audience, this tutorial bridges AI advances in BO with practical natural science applications, offering tiered content to empower cross-disciplinary researchers to design more efficient experiments and accelerate principled scientific discovery.",
-      "comments": ""
-    },
     "2604.01760": {
       "abstract": "Autoregressive neural codec language models have shown strong zero-shot voice cloning ability, but decoder-only architectures treat input text as a prefix that competes with the growing audio sequence for positional capacity, weakening text conditioning over long utterances. We present T5Gemma-TTS, an encoder-decoder codec language model that maintains persistent text conditioning by routing bidirectional text representations through cross-attention at every decoder layer. Built on the T5Gemma pretrained encoder-decoder backbone (2B encoder + 2B decoder; 4B parameters), it inherits rich linguistic knowledge without phoneme conversion and processes text directly at the subword level. To improve duration control, we introduce Progress-Monitoring Rotary Position Embedding (PM-RoPE) in all 26 cross-attention layers, injecting normalized progress signals that help the decoder track target speech length. Trained on 170,000 hours of multilingual speech in English, Chinese, and Japanese, T5Gemma-TTS achieves a statistically significant speaker-similarity gain on Japanese over XTTSv2 (0.677 vs. 0.622; non-overlapping 95% confidence intervals) and the highest numerical Korean speaker similarity (0.747) despite Korean not being included in training, although this margin over XTTSv2 (0.741) is not statistically conclusive. It also attains the lowest numerical Japanese character error rate among five baselines (0.126), though this ranking should be interpreted cautiously because of partial confidence-interval overlap with Kokoro. English results on LibriSpeech should be viewed as an upper-bound estimate because LibriHeavy is a superset of LibriSpeech. Using the same checkpoint, disabling PM-RoPE at inference causes near-complete synthesis failure: CER degrades from 0.129 to 0.982 and duration accuracy drops from 79% to 46%. Code and weights are available atthis https URL.",
+      "comments": ""
+    },
+    "2604.01328": {
+      "abstract": "Traditional scientific discovery relies on an iterative hypothesise-experiment-refine cycle that has driven progress for centuries, but its intuitive, ad-hoc implementation often wastes resources, yields inefficient designs, and misses critical insights. This tutorial presents Bayesian Optimisation (BO), a principled probability-driven framework that formalises and automates this core scientific cycle. BO uses surrogate models (e.g., Gaussian processes) to model empirical observations as evolving hypotheses, and acquisition functions to guide experiment selection, balancing exploitation of known knowledge and exploration of uncharted domains to eliminate guesswork and manual trial-and-error. We first frame scientific discovery as an optimisation problem, then unpack BO's core components, end-to-end workflows, and real-world efficacy via case studies in catalysis, materials science, organic synthesis, and molecule discovery. We also cover critical technical extensions for scientific applications, including batched experimentation, heteroscedasticity, contextual optimisation, and human-in-the-loop integration. Tailored for a broad audience, this tutorial bridges AI advances in BO with practical natural science applications, offering tiered content to empower cross-disciplinary researchers to design more efficient experiments and accelerate principled scientific discovery.",
       "comments": ""
     },
     "2604.02007": {
