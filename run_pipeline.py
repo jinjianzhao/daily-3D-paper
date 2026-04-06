@@ -1003,6 +1003,8 @@ if __name__ == "__main__":
     cfg = PipelineConfig()
     pipeline = PaperPipeline(my_api_key, cfg)
     today = datetime.now(timezone.utc)
+    yesterday = today - timedelta(days=1)
     pipeline.run_pipeline(today.strftime("%Y-%m-%d"), force_rerun=["step01"])
+    pipeline.run_pipeline(yesterday.strftime("%Y-%m-%d"), force_rerun=["step01"])
  
     
