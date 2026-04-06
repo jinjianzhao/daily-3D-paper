@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Paper Daily Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains+Mono', monospace; }
+        
+        .glass { 
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .paper-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .paper-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+
+        /* 隐藏滚动条但保留功能 */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        pre { white-space: pre-wrap; word-wrap: break-word; }
+
+        /* Marked 渲染后的 Markdown 排版（深度解析 + 简报） */
+        .md-content { font-size: 0.9375rem; line-height: 1.7; color: rgb(51 65 85); }
+        .md-content > :first-child { margin-top: 0; }
+        .md-content > :last-child { margin-bottom: 0; }
+        .md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+            font-weight: 800;
+            color: rgb(15 23 42);
+            margin-top: 1.1em;
+            margin-bottom: 0.45em;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+        .md-content h1 { font-size: 1.35rem; }
+        .md-content h2 { font-size: 1.2rem; }
+        .md-content h3 { font-size: 1.05rem; }
+        .md-content h4 { font-size: 1rem; font-weight: 700; }
+        .md-content p { margin: 0 0 0.65em; }
+        .md-content ul, .md-content ol { margin: 0.4em 0 0.75em 1.35rem; }
+        .md-content li { margin-bottom: 0.3em; }
+        .md-content ul { list-style-type: disc; }
+        .md-content ol { list-style-type: decimal; }
+        .md-content code {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.88em;
+            background: rgb(241 245 249);
+            padding: 0.12em 0.4em;
+            border-radius: 0.3rem;
+        }
+        .md-content pre {
+            background: rgb(30 41 59 / 0.07);
+            padding: 0.85rem 1rem;
+            border-radius: 0.65rem;
+            overflow-x: auto;
+            margin: 0.65em 0;
+            border: 1px solid rgb(226 232 240);
+        }
+        .md-content pre code { background: none; padding: 0; font-size: 0.82em; }
+        .md-content strong { font-weight: 700; color: rgb(30 41 59); }
+        .md-content blockquote {
+            border-left: 4px solid rgb(199 210 254);
+            padding-left: 0.85rem;
+            margin: 0.65em 0;
+            color: rgb(100 116 139);
+        }
+        .md-content a { color: rgb(79 70 229); text-decoration: underline; text-underline-offset: 2px; }
+        .md-content hr { border: 0; border-top: 1px solid rgb(226 232 240); margin: 1rem 0; }
+        .md-summary.md-content { font-size: 0.875rem; line-height: 1.65; }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+
+        details.md-fold > summary { list-style: none; }
+        details.md-fold > summary::-webkit-details-marker { display: none; }
+        details.md-fold > summary .md-fold-chevron {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        details.md-fold[open] > summary .md-fold-chevron {
+            transform: rotate(-180deg);
+        }
+
+        .toc-link { display: block; font-size: 0.7rem; line-height: 1.35; color: rgb(100 116 139); padding: 0.35rem 0.5rem; border-radius: 0.375rem; border-left: 2px solid transparent; transition: color 0.15s, background 0.15s, border-color 0.15s; }
+        .toc-link:hover { color: rgb(79 70 229); background: rgb(238 242 255 / 0.6); }
+        .toc-link.toc-active { color: rgb(67 56 202); font-weight: 600; border-left-color: rgb(99 102 241); background: rgb(238 242 255); }
+        .toc-section-title { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: rgb(148 163 184); margin: 1rem 0 0.4rem 0.25rem; }
+        .toc-section-title:first-child { margin-top: 0; }
+
+        #img-lightbox:not(.hidden) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #img-lightbox.hidden { display: none !important; }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-900">
+
+    <nav class="sticky top-0 z-50 glass border-b border-slate-200/60 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200">
+                    <span class="text-white text-xl">📄</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-tight text-slate-800">Paper Explorer</h1>
+                    <p id="page-date" class="text-[10px] font-mono text-slate-400 uppercase tracking-tighter leading-none mt-1"></p>
+                </div>
+            </div>
+            <div id="stats" class="hidden sm:block px-4 py-1.5 bg-slate-100 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                Loading...
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-6 py-10 flex flex-col lg:flex-row gap-8 lg:gap-10 lg:items-start">
+        <aside id="toc-sidebar" class="hidden lg:block w-56 shrink-0 sticky top-24 z-30 max-h-[calc(100vh-7rem)] overflow-y-auto no-scrollbar pr-1">
+            <div class="rounded-2xl border border-slate-200/80 bg-white/90 shadow-sm p-4 backdrop-blur-sm">
+                <p class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 mb-3 px-1">目录</p>
+                <nav id="toc-nav-inner" class="space-y-0.5" aria-label="页面目录"></nav>
+            </div>
+        </aside>
+
+        <main class="flex-1 min-w-0 max-w-4xl xl:max-w-none">
+        
+        <section id="section-focus" class="mb-20 scroll-mt-24">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight flex items-center">
+                    <span class="w-2.5 h-10 bg-indigo-600 rounded-full mr-4 shadow-sm"></span>
+                    深度解析 <span class="ml-3 text-indigo-600/40 text-lg font-medium">3D & Vision Focus</span>
+                </h2>
+            </div>
+            
+            <div id="focus-list" class="grid gap-12">
+                <div class="animate-pulse flex flex-col gap-4">
+                    <div class="h-64 bg-slate-200 rounded-3xl w-full"></div>
+                    <div class="h-64 bg-slate-200 rounded-3xl w-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-all" class="scroll-mt-24">
+            <div class="flex items-center mb-8">
+                <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center">
+                    <span class="w-2 h-8 bg-slate-300 rounded-full mr-4"></span>
+                    今日全量简报
+                </h2>
+                <span class="ml-4 h-[1px] flex-grow bg-slate-200"></span>
+            </div>
+            
+            <div id="all-list" class="bg-white rounded-[2.5rem] shadow-sm border border-slate-200/60 overflow-hidden divide-y divide-slate-100">
+                <div class="p-10 text-center text-slate-400 italic">正在整理今日论文摘要...</div>
+            </div>
+        </section>
+
+        </main>
+    </div>
+
+    <footer class="max-w-[90rem] mx-auto px-6 py-12 border-t border-slate-200 mt-12 text-center">
+        <p class="text-slate-400 text-sm font-medium">Generated by PaperPipeline AI Assistant</p>
+        <p class="text-slate-300 text-[10px] mt-2 font-mono uppercase tracking-widest">© 2026 AUTO-RESEARCHER SYSTEM</p>
+    </footer>
+
+    <!-- 论文图示：点击看大图 -->
+    <div
+        id="img-lightbox"
+        class="hidden fixed inset-0 z-[100] p-0"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="img-lightbox-caption"
+    >
+        <div
+            class="absolute inset-0 bg-slate-950/90 backdrop-blur-md"
+            data-lightbox-backdrop
+            aria-hidden="true"
+        ></div>
+        <button
+            type="button"
+            id="img-lightbox-close"
+            class="fixed top-4 right-4 z-[110] flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border-[3px] border-red-500 bg-white text-4xl font-light leading-none text-red-600 shadow-2xl transition hover:scale-105 hover:bg-red-50 focus:outline-none focus:ring-4 focus:ring-red-300"
+            aria-label="关闭大图"
+        >
+            ×
+        </button>
+        <div
+            class="relative z-[105] flex h-[90vh] w-[90vw] max-h-[90vh] max-w-[90vw] flex-col items-center justify-center gap-3"
+        >
+            <div class="flex min-h-0 w-full flex-1 items-center justify-center">
+                <img
+                    id="img-lightbox-img"
+                    src=""
+                    alt=""
+                    class="max-h-full max-w-full rounded-xl object-contain shadow-2xl ring-1 ring-white/20"
+                />
+            </div>
+            <p
+                id="img-lightbox-caption"
+                class="max-h-[22vh] w-full max-w-full shrink-0 overflow-y-auto px-2 text-center text-sm leading-relaxed text-slate-200"
+            ></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script>
+        function mdToHtml(src) {
+            const raw = String(src == null ? '' : src);
+            if (typeof marked === 'undefined') {
+                const esc = raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                return '<p class="text-slate-500">' + esc + '</p>';
+            }
+            try {
+                return marked.parse(raw);
+            } catch (e) {
+                console.warn('marked.parse failed', e);
+                const esc = raw.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                return '<p class="text-slate-500">' + esc + '</p>';
+            }
+        }
+
+        function escapeHtml(s) {
+            return String(s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function aidToDomId(prefix, aid) {
+            if (typeof prefix !== 'string' || typeof aid !== 'string') {
+                throw new TypeError('aidToDomId expects string prefix and aid');
+            }
+            return prefix + '-' + aid.replace(/\./g, '-');
+        }
+
+        (function setupFigureLightbox() {
+            const root = document.getElementById('img-lightbox');
+            const fullImg = document.getElementById('img-lightbox-img');
+            const captionEl = document.getElementById('img-lightbox-caption');
+            const btnClose = document.getElementById('img-lightbox-close');
+            const backdrop = root && root.querySelector('[data-lightbox-backdrop]');
+            if (!root || !fullImg || !captionEl || !btnClose || !backdrop) return;
+
+            function closeLightbox() {
+                root.classList.add('hidden');
+                fullImg.removeAttribute('src');
+                fullImg.alt = '';
+                captionEl.textContent = '';
+                document.body.style.overflow = '';
+            }
+
+            function openLightbox(src, captionText) {
+                if (!src) return;
+                fullImg.src = src;
+                fullImg.alt = captionText || '论文图示';
+                if (captionText) {
+                    captionEl.textContent = captionText;
+                    captionEl.classList.remove('hidden');
+                } else {
+                    captionEl.textContent = '';
+                    captionEl.classList.add('hidden');
+                }
+                root.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            btnClose.addEventListener('click', (e) => {
+                e.stopPropagation();
+                closeLightbox();
+            });
+            backdrop.addEventListener('click', closeLightbox);
+            fullImg.addEventListener('click', (e) => e.stopPropagation());
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !root.classList.contains('hidden')) {
+                    closeLightbox();
+                }
+            });
+
+            const focusList = document.getElementById('focus-list');
+            if (focusList) {
+                focusList.addEventListener('click', (e) => {
+                    const img = e.target.closest('img.paper-figure-thumb');
+                    if (!img) return;
+                    const cap = img.getAttribute('data-caption') || '';
+                    openLightbox(img.currentSrc || img.src, cap);
+                });
+            }
+        })();
+
+        function setupTocScrollSpy(tocAnchorIds) {
+            const ids = tocAnchorIds.filter((id) => document.getElementById(id));
+            if (!ids.length) return;
+            const nav = document.getElementById('toc-nav-inner');
+            if (!nav) return;
+
+            function update() {
+                const offset = 130;
+                let current = ids[0];
+                for (let i = 0; i < ids.length; i++) {
+                    const el = document.getElementById(ids[i]);
+                    if (!el) continue;
+                    const top = el.getBoundingClientRect().top;
+                    if (top <= offset) {
+                        current = ids[i];
+                    }
+                }
+                nav.querySelectorAll('a.toc-link').forEach((a) => {
+                    const href = a.getAttribute('href');
+                    const match = href && href.charAt(0) === '#' ? href.slice(1) : '';
+                    a.classList.toggle('toc-active', match === current);
+                });
+            }
+
+            let ticking = false;
+            window.addEventListener(
+                'scroll',
+                () => {
+                    if (!ticking) {
+                        requestAnimationFrame(() => {
+                            update();
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                },
+                { passive: true },
+            );
+            update();
+        }
+
+        async function init() {
+            const focusContainer = document.getElementById('focus-list');
+            const allContainer = document.getElementById('all-list');
+
+            try {
+                // 1. 获取数据 (确保路径是相对路径，方便本地或服务器部署)
+                const response = await fetch('./config.json');
+                if (!response.ok) throw new Error('Config not found');
+                const data = await response.json();
+
+                if (typeof marked !== 'undefined') {
+                    marked.setOptions({ breaks: true, gfm: true });
+                }
+
+                // 2. 更新元数据
+                document.getElementById('page-date').innerText = `Insights for ${data.date}`;
+                document.getElementById('stats').innerText = `Total: ${Object.keys(data.base_info).length} Papers`;
+
+                // 3. 渲染重点论文卡片
+                focusContainer.innerHTML = ''; 
+                if (data.focus_ids.length === 0) {
+                    focusContainer.innerHTML = '<div class="p-12 bg-white rounded-3xl text-center text-slate-400 border border-dashed border-slate-300">今日暂无 3D 相关重点论文推送</div>';
+                }
+
+                const tocIds = ['section-focus'];
+
+                data.focus_ids.forEach((aid) => {
+                    const info = data.base_info[aid];
+                    const focusDomId = aidToDomId('focus', aid);
+                    tocIds.push(focusDomId);
+                    const deep = data.deep_analysis[aid] || "暂无解析...";
+                    const deepHtml = mdToHtml(deep);
+                    const rawComments = data.arxiv_details?.[aid]?.comments;
+                    const commentsBlock = (rawComments && String(rawComments).trim())
+                        ? ('<div class="text-sm text-slate-600 leading-relaxed mb-6 border-l-4 border-indigo-100 pl-4 py-2 bg-slate-50/80 rounded-r-xl [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-indigo-800">'
+                            + '<span class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest block mb-1">arXiv 页备注</span>'
+                            + rawComments
+                            + '</div>')
+                        : '';
+
+                    // 图片处理（仅展示中文图注 caption_zh；无翻译时退回 caption）
+                    const paperImages = data.images_meta[aid] || [];
+                    const imgHtml = paperImages.map((img) => {
+                        const cap = img.caption || 'Figure from paper';
+                        const capZh = img.caption_zh;
+                        const displayCap = capZh ? capZh : cap;
+                        const capBlocks =
+                            '<p class="text-[11px] font-medium text-slate-700 mt-3 whitespace-pre-wrap break-words leading-relaxed">' +
+                            escapeHtml(displayCap) +
+                            '</p>';
+                        return `
+                        <div class="group relative flex flex-col">
+                            <div class="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-100 cursor-zoom-in">
+                                <img src="${img.path}" 
+                                     class="paper-figure-thumb w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                     data-caption="${escapeHtml(displayCap)}"
+                                     onerror="this.src='https://placehold.co/600x400?text=Figure+Load+Failed'">
+                            </div>
+                            ${capBlocks}
+                        </div>`;
+                    }).join('');
+
+                    // 获取完整简报内容
+                    const summaryText = data.summaries[aid] || '';
+                    const summaryHtml = mdToHtml(summaryText);
+                    const summaryBlock = summaryText
+                        ? '<div class="md-summary md-content text-slate-600 mb-6 pl-4 border-l-2 border-indigo-100">' + summaryHtml + '</div>'
+                        : '';
+
+                    focusContainer.innerHTML += `
+                        <article id="${focusDomId}" class="paper-card bg-white p-8 md:p-10 rounded-[2.5rem] border border-slate-200/60 relative scroll-mt-28">
+                            <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                                <div class="flex items-center gap-3">
+                                    <span class="bg-indigo-600 text-white px-4 py-1.5 rounded-xl text-xs font-bold font-mono shadow-md shadow-indigo-100 italic">
+                                        arXiv:${aid}
+                                    </span>
+                                    <span class="flex items-center gap-1 text-slate-500 text-sm">
+                                        <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24"><path d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"/></svg>
+                                        <span class="font-semibold">${info.votes ?? 0}</span>
+                                    </span>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="https://arxiv.org/abs/${aid}" target="_blank" class="text-slate-400 hover:text-red-500 transition-colors text-sm font-semibold flex items-center">
+                                        ArXiv <span class="ml-1 text-[10px]">↗</span>
+                                    </a>
+                                    <a href="${info.hf_link}" target="_blank" class="text-slate-400 hover:text-indigo-600 transition-colors text-sm font-semibold flex items-center">
+                                        HF Paper <span class="ml-1 text-[10px]">↗</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3 class="text-2xl md:text-3xl font-extrabold mb-8 leading-[1.1] text-slate-900 tracking-tight">
+                                ${info.title}
+                            </h3>
+
+                            ${summaryBlock}
+
+                            ${commentsBlock}
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+                                ${imgHtml || '<div class="col-span-full text-center text-slate-300 text-xs py-4 italic">No key figures extracted from HTML</div>'}
+                            </div>
+
+                            <div>
+                                <div class="text-xs uppercase font-bold text-indigo-400 mb-3 tracking-widest flex items-center">
+                                    <span class="w-4 h-[2px] bg-indigo-200 mr-2"></span> AI Logic Analysis
+                                </div>
+                                <details class="md-fold rounded-3xl border border-slate-200/90 bg-slate-50/80 shadow-inner open:shadow-md text-slate-600" open>
+                                    <summary class="flex cursor-pointer items-center justify-between gap-3 px-4 py-3.5 text-sm font-bold text-indigo-900 bg-gradient-to-r from-indigo-50 to-slate-50 hover:from-indigo-100/80 transition-colors select-none rounded-t-3xl border-b border-slate-200/60">
+                                        <span class="flex items-center gap-2"><span class="md-fold-chevron text-indigo-500 text-xs">▼</span> Markdown 解析正文</span>
+                                        <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider shrink-0">收起 / 展开</span>
+                                    </summary>
+                                    <div class="px-6 py-6 md:px-8 md:py-8 rounded-b-3xl">
+                                        <div class="md-content">${deepHtml}</div>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>`;
+                });
+
+                tocIds.push('section-all');
+
+                // 4. 渲染全量列表
+                allContainer.innerHTML = ''; 
+                Object.entries(data.summaries).forEach(([aid, summary]) => {
+                    const info = data.base_info[aid];
+                    const allDomId = aidToDomId('all', aid);
+                    tocIds.push(allDomId);
+                    const summaryHtml = mdToHtml(summary);
+                    const rawCommentsAll = data.arxiv_details?.[aid]?.comments;
+                    const commentsRow = (rawCommentsAll && String(rawCommentsAll).trim())
+                        ? ('<div class="text-xs text-slate-500 leading-relaxed max-w-4xl mt-2 border-l-2 border-slate-200 pl-3 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-indigo-800">'
+                            + '<span class="font-semibold text-slate-400 mr-1">备注</span>'
+                            + rawCommentsAll
+                            + '</div>')
+                        : '';
+                    allContainer.innerHTML += `
+                        <div id="${allDomId}" class="p-6 md:p-8 hover:bg-slate-50 transition-all group flex flex-col md:flex-row gap-4 scroll-mt-28">
+                            <div class="md:w-32 flex-shrink-0">
+                                <span class="text-[10px] font-bold font-mono text-slate-300 group-hover:text-indigo-300 transition-colors italic uppercase">
+                                    ID: ${aid}
+                                </span>
+                                <span class="flex items-center gap-1 text-slate-400 text-[11px] mt-1">
+                                    <svg class="w-3 h-3 text-amber-500" fill="currentColor" viewBox="0 0 24 24"><path d="M5.19 2.67a.94.94 0 0 1 1.62 0l3.31 5.72a.94.94 0 0 1-.82 1.4H2.7a.94.94 0 0 1-.82-1.4l3.31-5.7v-.02Z"/></svg>
+                                    <span class="font-semibold">${info.votes ?? 0}</span>
+                                </span>
+                            </div>
+                            <div class="flex-grow min-w-0">
+                                <h4 class="font-bold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
+                                    ${info.title}
+                                </h4>
+                                <details class="md-fold rounded-xl border border-slate-100 bg-slate-50/60" open>
+                                    <summary class="flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100/80 rounded-t-xl border-b border-slate-100 select-none">
+                                        <span>简报 Markdown</span>
+                                        <span class="md-fold-chevron text-slate-400">▼</span>
+                                    </summary>
+                                    <div class="px-3 py-3">
+                                        <div class="md-summary md-content text-slate-600 max-w-4xl">${summaryHtml}</div>
+                                    </div>
+                                </details>`
+                        + commentsRow
+                        + `
+                            </div>
+                        </div>`;
+                });
+
+                const tocNav = document.getElementById('toc-nav-inner');
+                if (tocNav) {
+                    let tocHtml = '';
+                    tocHtml += '<p class="toc-section-title">深度解析</p>';
+                    tocHtml +=
+                        '<a href="#section-focus" class="toc-link">' + escapeHtml('▼ 深度解析区块') + '</a>';
+                    data.focus_ids.forEach((aid) => {
+                        const id = aidToDomId('focus', aid);
+                        const t = data.base_info[aid].title;
+                        const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                        tocHtml +=
+                            '<a href="#' +
+                            id +
+                            '" class="toc-link pl-2 line-clamp-2" title="' +
+                            escapeHtml(t) +
+                            '">' +
+                            escapeHtml(short) +
+                            '</a>';
+                    });
+                    tocHtml += '<p class="toc-section-title">今日全量</p>';
+                    tocHtml +=
+                        '<a href="#section-all" class="toc-link">' + escapeHtml('▼ 今日全量简报') + '</a>';
+                    Object.keys(data.summaries).forEach((aid) => {
+                        const id = aidToDomId('all', aid);
+                        const t = data.base_info[aid].title;
+                        const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                        tocHtml +=
+                            '<a href="#' +
+                            id +
+                            '" class="toc-link pl-2 line-clamp-2" title="' +
+                            escapeHtml(t) +
+                            '">' +
+                            escapeHtml(short) +
+                            '</a>';
+                    });
+                    tocNav.innerHTML = tocHtml;
+                    setupTocScrollSpy(tocIds);
+                }
+
+            } catch (err) {
+                console.error('Init Error:', err);
+                focusContainer.innerHTML = `
+                    <div class="p-16 bg-white rounded-[2.5rem] text-center border-2 border-dashed border-red-100">
+                        <div class="text-4xl mb-4">⚠️</div>
+                        <h3 class="text-xl font-bold text-red-500 mb-2">Data Load Failed</h3>
+                        <p class="text-slate-400 text-sm max-w-xs mx-auto">
+                            无法读取 config.json。请检查网络环境或确保在本地服务器 (http://) 中运行，而非直接双击打开 HTML。
+                        </p>
+                    </div>`;
+            }
+        }
+        
+        // 启动
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

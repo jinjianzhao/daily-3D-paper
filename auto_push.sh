@@ -8,17 +8,17 @@ set -x # 打印执行的命令
 BRANCH="main"
 
 # 检查是否是 Git 仓库
-if [ ! -d ".git" ]; then
-    echo "当前目录不是 Git 仓库！"
-    exit 1
-fi
+# if [ ! -d ".git" ]; then
+#     echo "当前目录不是 Git 仓库！"
+#     exit 1
+# fi
 
 # 检查是否有修改
-if ! git diff-index --quiet HEAD --; then
-    echo "$(date '+%Y-%m-%d %H:%M:%S') 检测到修改，正在提交并 push..."
-    git add .
-    git commit -m "Auto commit $(date '+%Y-%m-%d %H:%M:%S')"
-    git push origin "$BRANCH"
-else
-    echo "$(date '+%Y-%m-%d %H:%M:%S') 没有修改，跳过 push"
-fi
+# if ! git diff-index --quiet HEAD --; then
+echo "$(date '+%Y-%m-%d %H:%M:%S') 在提交并 push..."
+git add .
+git commit -m "Auto commit $(date '+%Y-%m-%d %H:%M:%S')"
+git push origin "$BRANCH"
+# else
+# echo "$(date '+%Y-%m-%d %H:%M:%S') 没有修改，跳过 push"
+# fi

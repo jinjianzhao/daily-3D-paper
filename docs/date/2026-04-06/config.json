@@ -1,0 +1,62 @@
+{
+  "date": "2026-04-06",
+  "focus_ids": [],
+  "base_info": {
+    "2604.03016": {
+      "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
+      "hf_link": "https://huggingface.co/papers/2604.03016",
+      "votes": 0
+    },
+    "2604.02947": {
+      "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
+      "hf_link": "https://huggingface.co/papers/2604.02947",
+      "votes": 0
+    },
+    "2604.03231": {
+      "title": "CoME-VL: Scaling Complementary Multi-Encoder Vision-Language Learning",
+      "hf_link": "https://huggingface.co/papers/2604.03231",
+      "votes": 0
+    },
+    "2604.03144": {
+      "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+      "hf_link": "https://huggingface.co/papers/2604.03144",
+      "votes": 0
+    },
+    "2604.02368": {
+      "title": "Xpertbench: Expert Level Tasks with Rubrics-Based Evaluation",
+      "hf_link": "https://huggingface.co/papers/2604.02368",
+      "votes": 0
+    }
+  },
+  "summaries": {
+    "2604.03016": "计算机科学;自然语言处理  \n现有评估方法难以验证多模态大语言模型的工具调用过程与效率。  \n该研究提出了一个过程验证的基准Agentic-MME，通过细粒度中间状态审核与效率量化来评估多模态智能体的协同能力。",
+    "2604.02947": "计算机安全;智能体安全  \n背景/任务：计算机使用智能体在跨交互中维持状态并将中间输出转化为具体行动，可能通过一系列看似合理的步骤引发有害行为，这带来了独特的安全挑战。  \n做了什么：论文提出了AgentHazard基准来评估计算机使用智能体的有害行为，包含2,653个实例，覆盖多种风险类别和攻击策略，并通过实验发现当前系统仍高度脆弱。",
+    "2604.03231": "计算机视觉;多模态学习  \n现有视觉语言模型主要依赖单一的对比训练视觉编码器，其在理解密集语义和鲁棒性上存在不足。  \n本文提出CoME-VL框架，通过融合对比训练与自监督视觉编码器的互补特征，并采用熵引导聚合和RoPE增强跨注意力实现多模态对齐，从而提升视觉语言任务性能。",
+    "2604.03144": "人工智能；自然语言处理  \n工业软件开发领域缺乏展示工程师如何推理硬件约束和时序语义的专家级思维轨迹。  \n该研究提出了InCoder-32B-Thinking模型，通过结合ECoT框架和工业代码世界模型生成并验证推理轨迹，在多个基准测试中取得了领先的开源性能。",
+    "2604.02368": "自然语言处理；大语言模型评测  \n现有评测基准难以评估大语言模型在复杂、开放式专业任务上的真实专家级认知能力。  \n研究团队构建了一个由专家设计的高保真多领域专业评测基准，并引入了一种可扩展的、与人类对齐的评估范式来量化模型的“专家差距”。"
+  },
+  "deep_analysis": {},
+  "images_meta": {},
+  "arxiv_details": {
+    "2604.03016": {
+      "abstract": "Multimodal Large Language Models (MLLMs) are evolving from passive observers into active agents, solving problems through Visual Expansion (invoking visual tools) and Knowledge Expansion (open-web search). However, existing evaluations fall short: they lack flexible tool integration, test visual and search tools separately, and evaluate primarily by final answers. Consequently, they cannot verify if tools were actually invoked, applied correctly, or used efficiently. To address this, we introduce Agentic-MME, a process-verified benchmark for Multimodal Agentic Capabilities. It contains 418 real-world tasks across 6 domains and 3 difficulty levels to evaluate capability synergy, featuring over 2,000 stepwise checkpoints that average 10+ person-hours of manual annotation per task. Each task includes a unified evaluation framework supporting sandboxed code and APIs, alongside a human reference trajectory annotated with stepwise checkpoints along dual-axis: S-axis and V-axis. To enable true process-level verification, we audit fine-grained intermediate states rather than just final answers, and quantify efficiency via an overthinking metric relative to human trajectories. Experimental results show the best model, Gemini3-pro, achieves 56.3% overall accuracy, which falls significantly to 23.0% on Level-3 tasks, underscoring the difficulty of real-world multimodal agentic problem solving.",
+      "comments": ""
+    },
+    "2604.02947": {
+      "abstract": "Computer-use agents extend language models from text generation to persistent action over tools, files, and execution environments. Unlike chat systems, they maintain state across interactions and translate intermediate outputs into concrete actions. This creates a distinct safety challenge in that harmful behavior may emerge through sequences of individually plausible steps, including intermediate actions that appear locally acceptable but collectively lead to unauthorized actions. We present \\textbf{AgentHazard}, a benchmark for evaluating harmful behavior in computer-use agents. AgentHazard contains \\textbf{2,653} instances spanning diverse risk categories and attack strategies. Each instance pairs a harmful objective with a sequence of operational steps that are locally legitimate but jointly induce unsafe behavior. The benchmark evaluates whether agents can recognize and interrupt harm arising from accumulated context, repeated tool use, intermediate actions, and dependencies across steps. We evaluate AgentHazard on Claude Code, OpenClaw, and IFlow using mostly open or openly deployable models from the Qwen3, Kimi, GLM, and DeepSeek families. Our experimental results indicate that current systems remain highly vulnerable. In particular, when powered by Qwen3-Coder, Claude Code exhibits an attack success rate of \\textbf{73.63\\%}, suggesting that model alignment alone does not reliably guarantee the safety of autonomous agents.",
+      "comments": ""
+    },
+    "2604.03231": {
+      "abstract": "Recent vision-language models (VLMs) typically rely on a single vision encoder trained with contrastive image-text objectives, such as CLIP-style pretraining. While contrastive encoders are effective for cross-modal alignment and retrieval, self-supervised visual encoders often capture richer dense semantics and exhibit stronger robustness on recognition and understanding tasks. In this work, we investigate how to scale the fusion of these complementary visual representations for vision-language modeling. We propose CoME-VL: Complementary Multi-Encoder Vision-Language, a modular fusion framework that integrates a contrastively trained vision encoder with a self-supervised DINO encoder. Our approach performs representation-level fusion by (i) entropy-guided multi-layer aggregation with orthogonality-constrained projections to reduce redundancy, and (ii) RoPE-enhanced cross-attention to align heterogeneous token grids and produce compact fused visual tokens. The fused tokens can be injected into a decoder-only LLM with minimal changes to standard VLM pipelines. Extensive experiments across diverse vision-language benchmarks demonstrate that CoME-VL consistently outperforms single-encoder baselines. In particular, we observe an average improvement of 4.9% on visual understanding tasks and 5.4% on grounding tasks. Our method achieves state-of-the-art performance on RefCOCO for detection while improving over the baseline by a large margin. Finally, we conduct ablation studies on layer merging, non-redundant feature mixing, and fusion capacity to evaluate how complementary contrastive and self-supervised signals affect VLM performance.",
+      "comments": "16 pages, 10 figures, 5 tables"
+    },
+    "2604.03144": {
+      "abstract": "Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across allthis http URLOptimization",
+      "comments": ""
+    },
+    "2604.02368": {
+      "abstract": "As Large Language Models (LLMs) exhibit plateauing performance on conventional benchmarks, a pivotal challenge persists: evaluating their proficiency in complex, open-ended tasks characterizing genuine expert-level cognition. Existing frameworks suffer from narrow domain coverage, reliance on generalist tasks, or self-evaluation biases. To bridge this gap, we present XpertBench, a high-fidelity benchmark engineered to assess LLMs across authentic professional domains. XpertBench consists of 1,346 meticulously curated tasks across 80 categories, spanning finance, healthcare, legal services, education, and dual-track research (STEM and Humanities). These tasks are derived from over 1,000 submissions by domain experts--including researchers from elite institutions and practitioners with extensive clinical or industrial experience--ensuring superior ecological validity. Each task uses detailed rubrics with mostly 15-40 weighted checkpoints to assess professional rigor. To facilitate scalable yet human-aligned assessment, we introduce ShotJudge, a novel evaluation paradigm that employs LLM judges calibrated with expert few-shot exemplars to mitigate self-rewarding biases. Our empirical evaluation of state-of-the-art LLMs reveals a pronounced performance ceiling: even leading models achieve a peak success rate of only ~66%, with a mean score around 55%. Models also exhibit domain-specific divergence, showing non-overlapping strengths in quantitative reasoning versus linguistic synthesis.. These findings underscore a significant \"expert-gap\" in current AI systems and establish XpertBench as a critical instrument for navigating the transition from general-purpose assistants to specialized professional collaborators.",
+      "comments": ""
+    }
+  }
+}
