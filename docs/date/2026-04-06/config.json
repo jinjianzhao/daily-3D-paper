@@ -10,7 +10,7 @@
     "2604.03144": {
       "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
       "hf_link": "https://huggingface.co/papers/2604.03144",
-      "votes": 72
+      "votes": 73
     },
     "2604.02317": {
       "title": "A Simple Baseline for Streaming Video Understanding",
@@ -40,7 +40,7 @@
     "2604.02947": {
       "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
       "hf_link": "https://huggingface.co/papers/2604.02947",
-      "votes": 14
+      "votes": 15
     },
     "2603.27183": {
       "title": "Communicating about Space: Language-Mediated Spatial Integration Across Partial Views",
