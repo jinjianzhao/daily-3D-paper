@@ -1,11 +1,10 @@
 """
-每日定时调度 run_pipeline.py，每天运行 6 次（间隔约 4 小时）。
+每日定时调度 run_pipeline.py，按固定整点列表运行。
 
 启动时：
-1. 取当前整点小时 h0（向下取整），
-2. 以 h0 为锚点算出当天 6 个固定执行时刻：h0, h0+4, h0+8, h0+12, h0+16, h0+20（模 24，去重排序），
-3. 每 5 分钟轮询一次，若当前小时命中未执行的时刻则立刻运行，
-4. 每天 0 点重置执行记录，重新开始新一天。
+1. 读取全局变量 DAILY_SLOTS（0~23 的整点小时列表，去重排序后生效），
+2. 每 5 分钟轮询一次，若当前小时命中未执行的时刻则立刻运行，
+3. 每天 0 点重置执行记录，重新开始新一天。
 
 环境变量 MY_API_KEY 会自动传递给子进程。
 """
@@ -19,13 +18,16 @@ CST = timezone(timedelta(hours=8))
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PIPELINE = os.path.join(SCRIPT_DIR, "run_pipeline.py")
 POLL_INTERVAL = 60 * 5  # 5 分钟
+DAILY_SLOTS: list[int] = [2, 4, 6, 8, 10, 12, 14, 19, 23]
 
 
 def build_daily_slots() -> list[int]:
-    """以当前整点为锚，生成当天 6 个执行时刻（0~23，去重排序）。"""
-    now_h = datetime.now(CST).hour
-    raw = [(now_h + 4 * i) % 24 for i in range(6)]
-    return sorted(set(raw))
+    """读取 DAILY_SLOTS 并规范化为 (0~23) 的去重排序列表。"""
+    assert isinstance(DAILY_SLOTS, list), "DAILY_SLOTS 必须是 list[int]"
+    assert all(isinstance(h, int) for h in DAILY_SLOTS), "DAILY_SLOTS 必须是 list[int]"
+    assert len(DAILY_SLOTS) > 0, "DAILY_SLOTS 不能为空"
+    assert all(0 <= h <= 23 for h in DAILY_SLOTS), "DAILY_SLOTS 每个小时必须在 0~23 之间"
+    return sorted(set(DAILY_SLOTS))
 
 
 def run_pipeline_once():
