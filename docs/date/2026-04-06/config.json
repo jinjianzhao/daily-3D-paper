@@ -5,12 +5,12 @@
     "2604.03128": {
       "title": "Self-Distilled RLVR",
       "hf_link": "https://huggingface.co/papers/2604.03128",
-      "votes": 118
+      "votes": 119
     },
     "2604.03144": {
       "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
       "hf_link": "https://huggingface.co/papers/2604.03144",
-      "votes": 67
+      "votes": 72
     },
     "2604.02317": {
       "title": "A Simple Baseline for Streaming Video Understanding",
@@ -20,12 +20,12 @@
     "2604.02721": {
       "title": "GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning",
       "hf_link": "https://huggingface.co/papers/2604.02721",
-      "votes": 53
+      "votes": 61
     },
     "2604.03016": {
       "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
       "hf_link": "https://huggingface.co/papers/2604.03016",
-      "votes": 25
+      "votes": 26
     },
     "2604.02870": {
       "title": "Token Warping Helps MLLMs Look from Nearby Viewpoints",

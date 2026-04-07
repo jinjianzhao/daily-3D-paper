@@ -7,7 +7,7 @@
     "2604.04707": {
       "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
       "hf_link": "https://huggingface.co/papers/2604.04707",
-      "votes": 145
+      "votes": 146
     },
     "2604.04771": {
       "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
@@ -17,12 +17,17 @@
     "2603.28301": {
       "title": "LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models",
       "hf_link": "https://huggingface.co/papers/2603.28301",
-      "votes": 63
+      "votes": 67
     },
     "2604.04921": {
       "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
       "hf_link": "https://huggingface.co/papers/2604.04921",
-      "votes": 60
+      "votes": 61
+    },
+    "2604.02176": {
+      "title": "Adam's Law: Textual Frequency Law on Large Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.02176",
+      "votes": 44
     },
     "2604.04184": {
       "title": "AURA: Always-On Understanding and Real-Time Assistance via Video Streams",
@@ -34,11 +39,6 @@
       "hf_link": "https://huggingface.co/papers/2604.04911",
       "votes": 25
     },
-    "2604.02176": {
-      "title": "Adam's Law: Textual Frequency Law on Large Language Models",
-      "hf_link": "https://huggingface.co/papers/2604.02176",
-      "votes": 25
-    },
     "2604.04901": {
       "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
       "hf_link": "https://huggingface.co/papers/2604.04901",
@@ -47,6 +47,11 @@
     "2604.04202": {
       "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
       "hf_link": "https://huggingface.co/papers/2604.04202",
+      "votes": 24
+    },
+    "2604.02288": {
+      "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
+      "hf_link": "https://huggingface.co/papers/2604.02288",
       "votes": 23
     },
     "2604.03679": {
@@ -54,25 +59,20 @@
       "hf_link": "https://huggingface.co/papers/2604.03679",
       "votes": 22
     },
-    "2604.02288": {
-      "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
-      "hf_link": "https://huggingface.co/papers/2604.02288",
-      "votes": 22
+    "2604.03253": {
+      "title": "Self-Execution Simulation Improves Coding Models",
+      "hf_link": "https://huggingface.co/papers/2604.03253",
+      "votes": 21
     },
     "2604.04804": {
       "title": "SkillX: Automatically Constructing Skill Knowledge Bases for Agents",
       "hf_link": "https://huggingface.co/papers/2604.04804",
       "votes": 19
     },
-    "2604.03253": {
-      "title": "Self-Execution Simulation Improves Coding Models",
-      "hf_link": "https://huggingface.co/papers/2604.03253",
-      "votes": 19
-    },
     "2604.04917": {
       "title": "Vero: An Open RL Recipe for General Visual Reasoning",
       "hf_link": "https://huggingface.co/papers/2604.04917",
-      "votes": 14
+      "votes": 15
     },
     "2604.04759": {
       "title": "Your Agent, Their Asset: A Real-World Safety Analysis of OpenClaw",
@@ -94,19 +94,19 @@
       "hf_link": "https://huggingface.co/papers/2604.04838",
       "votes": 7
     },
-    "2604.04503": {
-      "title": "Memory Intelligence Agent",
-      "hf_link": "https://huggingface.co/papers/2604.04503",
-      "votes": 6
-    },
     "2604.00830": {
       "title": "Learning to Learn-at-Test-Time: Language Agents with Learnable Adaptation Policies",
       "hf_link": "https://huggingface.co/papers/2604.00830",
-      "votes": 6
+      "votes": 7
     },
     "2604.01043": {
       "title": "ONE-SHOT: Compositional Human-Environment Video Synthesis via Spatial-Decoupled Motion Injection and Hybrid Context Integration",
       "hf_link": "https://huggingface.co/papers/2604.01043",
+      "votes": 7
+    },
+    "2604.04503": {
+      "title": "Memory Intelligence Agent",
+      "hf_link": "https://huggingface.co/papers/2604.04503",
       "votes": 6
     },
     "2604.04780": {
@@ -117,11 +117,21 @@
     "2604.04787": {
       "title": "AvatarPointillist: AutoRegressive 4D Gaussian Avatarization",
       "hf_link": "https://huggingface.co/papers/2604.04787",
-      "votes": 3
+      "votes": 5
+    },
+    "2604.04872": {
+      "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
+      "hf_link": "https://huggingface.co/papers/2604.04872",
+      "votes": 4
     },
     "2604.04522": {
       "title": "HDP: A Lightweight Cryptographic Protocol for Human Delegation Provenance in Agentic AI Systems",
       "hf_link": "https://huggingface.co/papers/2604.04522",
+      "votes": 3
+    },
+    "2604.04155": {
+      "title": "The Geometric Alignment Tax: Tokenization vs. Continuous Geometry in Scientific Foundation Models",
+      "hf_link": "https://huggingface.co/papers/2604.04155",
       "votes": 3
     },
     "2604.03687": {
@@ -129,19 +139,9 @@
       "hf_link": "https://huggingface.co/papers/2604.03687",
       "votes": 3
     },
-    "2604.04872": {
-      "title": "Synthetic Sandbox for Training Machine Learning Engineering Agents",
-      "hf_link": "https://huggingface.co/papers/2604.04872",
-      "votes": 2
-    },
     "2604.04562": {
       "title": "Paper Espresso: From Paper Overload to Research Insight",
       "hf_link": "https://huggingface.co/papers/2604.04562",
-      "votes": 2
-    },
-    "2604.04155": {
-      "title": "The Geometric Alignment Tax: Tokenization vs. Continuous Geometry in Scientific Foundation Models",
-      "hf_link": "https://huggingface.co/papers/2604.04155",
       "votes": 2
     },
     "2604.04767": {
@@ -163,6 +163,11 @@
       "title": "Emergent Compositional Communication for Latent World Properties",
       "hf_link": "https://huggingface.co/papers/2604.03266",
       "votes": 1
+    },
+    "2604.00375": {
+      "title": "Locally Confident, Globally Stuck: The Quality-Exploration Dilemma in Diffusion Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.00375",
+      "votes": 0
     }
   },
   "summaries": {
@@ -170,34 +175,35 @@
     "2604.04771": "计算机视觉;文档解析\n现有文档解析模型性能瓶颈主要源于训练数据缺陷而非架构本身，因此需要优化数据工程和训练策略。\n提出MineruPro方法，通过数据多样性采样、跨模型一致性验证和迭代修正提升数据质量，结合渐进式训练策略，在固定架构下显著提升性能。",
     "2603.28301": "机器人学;;自然语言处理  \n背景/任务是研究视觉-语言-动作模型在机器人操控任务中面对指令复述时的泛化能力不足问题。  \n他们引入了一个名为LIBERO-Para的基准测试来量化分析语言变化的影响，并提出了一种名为PRIDE的度量标准来评估指令复述的难度。",
     "2604.04921": "机器学习;自然语言处理  \nKV缓存压缩方法因RoPE导致查询旋转而性能受限；  \n提出TriAttention，利用Q/K向量的中心稳定性和距离偏好来估计键重要性，提高推理准确性和效率。",
+    "2604.02176": "自然语言处理；大语言模型\n文本数据频率对大语言模型的影响研究不足，作者探索该因素与LLMs性能的关系。\n提出了三个基于文本频率的单元（TFL, TFD, CTFT）构成框架，并在多个推理任务上验证了其有效性。",
     "2604.04184": "计算机视觉;多模态学习  \n现有视频大模型难以实时处理流视频并支持开放交互  \n提出AURA框架，实现端到端流视频理解与实时问答，优化了性能与部署",
     "2604.04911": "计算机视觉;图像生成  \n当前图像空间编辑模型难以实现精细的空间操控，需建立专门评估体系。  \n该研究提出了包含基准测试、合成数据集和基线模型的全套解决方案，显著提升了空间编辑的几何控制能力。",
-    "2604.02176": "自然语言处理；大语言模型\n文本数据频率对大语言模型的影响研究不足，作者探索该因素与LLMs性能的关系。\n提出了三个基于文本频率的单元（TFL, TFD, CTFT）构成框架，并在多个推理任务上验证了其有效性。",
     "2604.04901": "人机交互；多智能体系统  \n当前AI代理在本地文件系统协作中存在数据约束和个性化不足的问题，难以利用行为轨迹进行训练与评估。  \n作者提出了FileGram框架，包含数据引擎、评估基准和内存架构，以文件系统行为轨迹为基础提升代理的记忆与个性化能力。",
     "2604.04202": "人工智能工程;智能代理  \n他针对现有基准难以评估AI代理在动态、多源矛盾信息环境中持续性信念维护能力的问题。  \n他提出了ClawArena新基准，通过模拟真实复杂环境来评估代理，并实验验证了模型能力和框架设计对性能的影响。",
-    "2604.03679": "机器学习；自然语言处理  \n背景是大型语言模型在复杂推理中因长思考链而产生高认知负载，效率受限。  \n研究提出了LightThinker与LightThinker++方法，通过动态压缩与记忆管理来降低资源消耗并提升推理性能。",
     "2604.02288": "机器学习;强化学习  \n研究针对大语言模型的后训练强化学习范式，以解决现有方法在训练稳定性和效率上的不足。  \n提出了一种名为SRPO的统一策略优化框架，通过样本路由和熵感知动态加权，结合了不同方法的优势，实现了快速提升和长期稳定。",
-    "2604.04804": "机器学习;智能体  \n为提升大语言模型智能体从经验中学习的效率，解决现有自进化范式探索冗余和泛化能力差的问题，作者提出了SkillX框架。  \n该框架通过设计多层次技能、迭代精炼和探索性扩展，自动构建了一个可跨智能体与环境复用的即插即用技能知识库，提升了任务成功率和执行效率。",
+    "2604.03679": "机器学习；自然语言处理  \n背景是大型语言模型在复杂推理中因长思考链而产生高认知负载，效率受限。  \n研究提出了LightThinker与LightThinker++方法，通过动态压缩与记忆管理来降低资源消耗并提升推理性能。",
     "2604.03253": "自然语言处理;代码生成  \n论文关注大型语言模型在代码生成中难以准确预测程序执行结果的问题。  \n研究提出通过模拟程序执行的训练方法，结合监督微调和强化学习，提升模型在竞争编程任务中的表现。",
+    "2604.04804": "机器学习;智能体  \n为提升大语言模型智能体从经验中学习的效率，解决现有自进化范式探索冗余和泛化能力差的问题，作者提出了SkillX框架。  \n该框架通过设计多层次技能、迭代精炼和探索性扩展，自动构建了一个可跨智能体与环境复用的即插即用技能知识库，提升了任务成功率和执行效率。",
     "2604.04917": "计算机视觉;多模态学习  \n当前最强视觉语言模型的广泛视觉推理能力依赖未公开的强化学习流程与数据，开放性不足。  \n该研究通过构建大规模多任务强化学习数据集与任务路由奖励机制，开发出完全开放的Vero模型系列，在广泛视觉推理任务上达到先进性能。",
     "2604.04759": "人工智能安全；智能体安全评估  \n这篇论文针对具有广泛系统权限的个人AI代理OpenClaw，指出其现有安全评估方法存在不足，需要更真实的安全分析。  \n研究首次对OpenClaw进行了实景安全评估，提出了CIK分类框架来分析其持久状态，测试了多种攻击场景和防御措施，揭示了该智能体架构固有的安全漏洞。",
     "2604.03993": "强化学习;噪声标签<br>研究噪声标签对强化学习验证奖励训练的影响，提出在线标签细化方法。<br>该方法通过多数投票逐步修正噪声标签，提升模型在分布内外的鲁棒性。",
     "2604.02073": "机器学习;自然语言处理  \n背景/任务是改进通用多模态嵌入模型，以提升复杂查询意图的推理能力，同时避免显式思维链带来的高推理开销和信息瓶颈问题。  \n本文提出了PLUME框架，采用隐式推理替代显式思维链，通过连续潜状态的自回归展开和语义锚引导的过渡适配器实现高效多模态检索，并利用渐进式训练课程消除推理时的显式思维链。",
     "2604.04838": "计算机视觉;图像处理  \n背景/任务是解决Vision-Language Models在视觉问答中因高分辨率细节干扰导致的幻觉或推理错误。  \n其核心工作是提出了一种名为Degradation-Driven Prompting的新框架，通过策略性降低图像保真度和添加结构化视觉提示，使模型聚焦关键信息以提升推理准确性。",
-    "2604.04503": "智能体架构；记忆增强学习  \n现有深度研究智能体在记忆演化、存储检索成本方面存在不足，难以实现高效推理与自主进化。  \n论文提出一种具备管理器-规划器-执行器架构的记忆智能体框架，通过强化学习协同、测试时在线进化及双向记忆转换机制，在多个基准上验证了其优越性。",
     "2604.00830": "机器学习;元学习  \n背景/任务是让语言智能体通过测试时学习（TTL）在推理时与环境交互并自我改进，但现有方法的适应策略是人工设计的，未优化。  \n他们提出了Meta-TTL框架，用双层优化和进化搜索从任务环境中学习最优适应策略，并在多个基准上验证其优于人工基线且能泛化。",
     "2604.01043": "计算机视觉；视频生成  \n背景/任务：解决视频生成中精细、独立编辑主体与场景的难题，克服现有方法在控制精度与生成灵活性之间的权衡及3D预处理的可扩展性限制。  \n所做工作：提出ONE-SHOT框架，通过规范空间注入机制解耦人类动态与环境线索，并采用动态接地RoPE和混合上下文集成策略，实现高效、可控的长视频合成。",
+    "2604.04503": "智能体架构；记忆增强学习  \n现有深度研究智能体在记忆演化、存储检索成本方面存在不足，难以实现高效推理与自主进化。  \n论文提出一种具备管理器-规划器-执行器架构的记忆智能体框架，通过强化学习协同、测试时在线进化及双向记忆转换机制，在多个基准上验证了其优越性。",
     "2604.04780": "计算机视觉;多模态学习  \n当前统一多模态模型难以处理图像退化问题，因其生成能力未被有效用于推理过程。  \n该研究提出CLEAR框架，通过监督微调、潜在表示桥接和强化学习三步，将生成与推理结合以提升模型在退化图像上的鲁棒性。",
     "2604.04787": "计算机图形学；三维重建\n提出从单张肖像图像生成动态4D高斯化身的新任务。\n设计了一种自回归Transformer来生成点云并预测绑定信息，再通过高斯解码器转换为可渲染化身。",
-    "2604.04522": "信息安全;;数据管理  \n现有标准无法验证多智能体系统中终端行为是否经人类合法授权链产生。  \n提出了一种轻量级的令牌协议，通过加密记录和验证授权链确保人类授权的可追溯性。",
-    "2604.03687": "计算机视觉;模式识别  \n背景/任务：研究科学图像的长尾识别问题，探索在视觉特征和标注信号与自然图像差异较大的领域中，微调基础模型的有效性。  \n做了什么：提出了SciLT框架，通过自适应特征融合和双重监督学习利用多层级表示，提升了头尾类别的平衡性能，为科学长尾识别建立了基准。",
     "2604.04872": "机器学习;机器学习工程  \n背景/任务是验证机器学习工程代理的行为成本高昂，阻碍了在策略强化学习的应用。  \n该文提出了SandMLE框架，通过生成微规模合成环境来大幅降低验证成本，从而首次实现了该领域的大规模在策略强化学习训练。",
-    "2604.04562": "自然语言处理；信息检索  \n科学论文发表速度加快，研究者难以追踪最新进展。  \n该平台自动发现、总结并分析arXiv热门论文，生成结构化摘要并进行多粒度趋势分析。",
+    "2604.04522": "信息安全;;数据管理  \n现有标准无法验证多智能体系统中终端行为是否经人类合法授权链产生。  \n提出了一种轻量级的令牌协议，通过加密记录和验证授权链确保人类授权的可追溯性。",
     "2604.04155": "机器学习;表示学习  \n背景/任务是研究生物学和物理学基础模型在预测准确性与保持系统连续几何结构之间的内在矛盾。  \n研究通过实验揭示了离散化表征导致的几何失真问题，并提出“几何对齐税”概念以解释模型在连续几何保持上的系统性失败。",
+    "2604.03687": "计算机视觉;模式识别  \n背景/任务：研究科学图像的长尾识别问题，探索在视觉特征和标注信号与自然图像差异较大的领域中，微调基础模型的有效性。  \n做了什么：提出了SciLT框架，通过自适应特征融合和双重监督学习利用多层级表示，提升了头尾类别的平衡性能，为科学长尾识别建立了基准。",
+    "2604.04562": "自然语言处理；信息检索  \n科学论文发表速度加快，研究者难以追踪最新进展。  \n该平台自动发现、总结并分析arXiv热门论文，生成结构化摘要并进行多粒度趋势分析。",
     "2604.04767": "机器学习；强化学习  \nRLVR在提升LLM推理能力时，遇到难题因无法提供有效奖励信号而难以学习。  \n论文提出Cog-DRIFT框架，通过将难题重构为更简单的变体并构建自适应课程，使模型能从易到难学习，从而突破探索瓶颈并提升性能。",
     "2604.03695": "自然语言处理;文本生成  \n该论文的背景是评估大语言模型在诗歌创作上与人类诗人的差距。  \n研究者提出了POEMetric框架，系统评估了人类和30种大模型的诗作，发现模型在形式与主题上表现良好，但在创造力、独特性等高级能力上仍远不及人类。",
     "2604.02605": "自然语言处理;多模态学习  \n这篇论文聚焦于新兴的音频-视觉大语言模型，任务是研究其跨模态感知的内部工作机制。  \n它通过机制可解释性分析，揭示了模型内部存在以视觉为主导的模态偏差，并追踪了该偏差在训练中的成因。",
-    "2604.03266": "计算机科学;机器学习  \n该研究旨在验证多智能体通信能否从冻结的视频特征中提取离散的、组合式的不可见物理属性表征。  \n研究发现，通过迭代学习，多智能体能在无监督条件下形成解耦的通信协议，并验证了不同视觉基干模型对物理属性可通信性的决定性影响。"
+    "2604.03266": "计算机科学;机器学习  \n该研究旨在验证多智能体通信能否从冻结的视频特征中提取离散的、组合式的不可见物理属性表征。  \n研究发现，通过迭代学习，多智能体能在无监督条件下形成解耦的通信协议，并验证了不同视觉基干模型对物理属性可通信性的决定性影响。",
+    "2604.00375": "自然语言处理; 机器学习  \n背景/任务是探索扩散大语言模型在随机顺序解码时的质量与探索性之间的权衡问题。  \n他们通过提出一种独立Metropolis–Hastings采样器来近似最优分布，以在解码中平衡质量与探索。"
   },
   "deep_analysis": {
     "2604.04787": "好的，没问题！我们用一个简单的方式来梳理这篇论文。\n\n### (1) 这篇论文所在的任务是什么？\n\n*   **任务名称**：从单张肖像图生成 **“可驱动的4D高斯化身”**。\n    *   **输入**：**一张**人物的正面（或近正面）肖像照片。\n    *   **输出**：\n        1.  **一个3D模型**：一个可以从任何角度观看、形状逼真的虚拟人头。\n        2.  **动画能力**：这个3D模型可以像木偶一样被“驱动”，做出各种面部表情（如微笑、皱眉）。\n    *   **任务功能**：就像用一张照片快速创造一个能在虚拟世界里活动、表情生动的3D数字人，用于VR/AR、游戏、视频会议等。\n\n### (2) 这篇论文想解决什么问题？\n\n作者发现，之前用 **3D高斯泼溅（3DGS）** 技术做数字人的方法有个**核心缺陷**：它们**不擅长生成精细、个性化的几何细节**（比如特殊的发型、浓密的胡子）。\n\n**为什么？** 因为这些方法大多依赖一个**固定的3D点云模板**（比如一个标准人头模型）来摆放高斯点。这就好比用同一套乐高积木拼所有人，拼出来的细节都差不多，无法根据照片里的人灵活调整积木的数量和摆放位置。这**浪费了3DGS技术本身可以根据几何复杂度自适应调整点密度的核心优势**。\n\n所以，这篇论文的核心问题就是：**我们能不能设计一个模型，让它自己“学会”如何从零开始、像画家点彩一样，为每个人自适应地生成最适合的3D高斯点云？**\n\n### (3) 论文的核心思路是什么？\n\n他们的核心思路非常巧妙：**把生成3D点云的过程，变成一个“猜下一个点”的序列生成任务**，就像让AI玩“3D填字游戏”。\n\n**第一步：准备“标准答案”数据**\n他们先用现有工具，为一批带有表情动画的3D人头数据，拟合出高质量、带有动画绑定信息的3D高斯点云。这些点云就是他们想让模型学习的“标准答案”。\n\n**第二步：训练一个“点云预言家”**\n他们训练了一个 **“只包含解码器的Transformer模型”**（类似于GPT）。这个模型的输入是：\n1.  **你的照片特征**（告诉模型要生成谁）。\n2.  **已经生成好的前面几个3D点的坐标、颜色等信息**。\n\n模型的**任务**是：根据已有信息，**预测下一个3D点应该出现在哪里、是什么颜色、如何绑定到面部骨骼上**。就这样一个点一个点地生成，直到生成完整的头部点云。这个过程完全是**自回归**的，模型可以自由决定总共生成多少个点，以及在细节多的地方（如发丝）更密集地生成点。\n\n**第三步：将点云“转换”为可渲染的高斯模型**\n光有3D点还不够，还需要把它们变成3DGS能渲染的完整属性（如旋转、缩放、透明度）。他们训练了一个**高斯解码器**，专门做这个转换工作，并且这个解码器会和第一步的“预言家”模型协同训练，确保最终渲染效果逼真。\n\n**简单比喻**：\n*   **旧方法**：给你一个标准人形泡沫头雕，你只能往上插固定数量的图钉来模拟细节。\n*   **本文方法**：给你一张照片和一瓶“智能颜料”，AI会自己决定用多少滴颜料、滴在什么位置，一点一点“点染”出一个细节丰富的3D头像。\n\n### (4) 结果怎么样？\n\n从论文的描述和展示的图片来看，结果很不错：\n\n1.  **定性结果（肉眼观察）**：\n    *   生成的数字人**细节更丰富**，能更好地还原输入照片中的**独特发型、胡子、配饰**等。\n    *   渲染出的图像**质量高、真实感强**。\n    *   生成的点云确实体现了**自适应性**，在复杂区域点更密，在平坦区域点更疏。\n\n2.  **定量结果（用数字衡量）**：\n    *   在常用的图像质量评估指标（如PSNR, SSIM, LPIPS）上，他们的方法**优于其他主流对比方法**。\n    *   在身份相似度指标上也有**更好或相当的表现**，说明既像本人，又更清晰。\n\n3.  **消融实验**：\n    *   他们验证了提出的**自回归生成方式**和**两阶段协同训练**的策略都是有效的，去掉任何一部分性能都会下降。\n\n**总结一下**：\n这篇论文提出了一种新颖的思路——用“自回归序列生成”的方式来创造3D数字人的几何骨架。它**解放了3D高斯模型的灵活性**，让AI能根据每个人的特点，动态决定如何“下笔”，从而生成细节更丰富、更个性化的数字人。这为高质量、高效的单图数字人生成提供了一个有潜力的新方向。"
@@ -238,6 +244,10 @@
       "abstract": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE queries. However, queries rotate with position during RoPE, making representative queries very few, leading to poor top-key selection and unstable reasoning. To avoid this issue, we turn to the pre-RoPE space, where we observe that Q and K vectors are highly concentrated around fixed non-zero centers and remain stable across positions -- Q/K concentration. We show that this concentration causes queries to preferentially attend to keys at specific distances (e.g., nearest keys), with the centers determining which distances are preferred via a trigonometric series. Based on this, we propose TriAttention to estimate key importance by leveraging these centers. Via the trigonometric series, we use the distance preference characterized by these centers to score keys according to their positions, and also leverage Q/K norms as an additional signal for importance estimation. On AIME25 with 32K-token generation, TriAttention matches Full Attention reasoning accuracy while achieving 2.5x higher throughput or 10.7x KV memory reduction, whereas leading baselines achieve only about half the accuracy at the same efficiency. TriAttention enables OpenClaw deployment on a single consumer GPU, where long context would otherwise cause out-of-memory with Full Attention.",
       "comments": "Code is available at <a class=\"link-external link-https\" href=\"https://github.com/WeianMao/triattention\" rel=\"external noopener nofollow\">this https URL</a>"
     },
+    "2604.02176": {
+      "abstract": "While textual frequency has been validated as relevant to human cognition in reading speed, its relatedness to Large Language Models (LLMs) is seldom studied. We propose a novel research direction in terms of textual data frequency, which is an understudied topic, to the best of our knowledge. Our framework is composed of three units. First, this paper proposes Textual Frequency Law (TFL), which indicates that frequent textual data should be preferred for LLMs for both prompting and fine-tuning. Since many LLMs are closed-source in their training data, we propose using online resources to estimate the sentence-level frequency. We then utilize an input paraphraser to paraphrase the input into a more frequent textual expression. Next, we propose Textual Frequency Distillation (TFD) by querying LLMs to conduct story completion by further extending the sentences in the datasets, and the resulting corpora are used to adjust the initial estimation. Finally, we propose Curriculum Textual Frequency Training (CTFT) that fine-tunes LLMs in an increasing order of sentence-level frequency. Experiments are conducted on our curated dataset Textual Frequency Paired Dataset (TFPD) on math reasoning, machine translation, commonsense reasoning and agentic tool calling. Results show the effectiveness of our framework.",
+      "comments": ""
+    },
     "2604.04184": {
       "abstract": "Video Large Language Models (VideoLLMs) have achieved strong performance on many video understanding tasks, but most existing systems remain offline and are not well-suited for live video streams that require continuous observation and timely response. Recent streaming VideoLLMs have made progress, yet current approaches often rely on decoupled trigger-response pipelines or are limited to captioning-style narration, reducing their effectiveness for open-ended question answering and long-horizon interaction. We propose AURA (Always-On Understanding and Real-Time Assistance), an end-to-end streaming visual interaction framework that enables a unified VideoLLM to continuously process video streams and support both real-time question answering and proactive responses. AURA integrates context management, data construction, training objectives, and deployment optimization for stable long-horizon streaming interaction. It achieves state-of-the-art performance on streaming benchmarks and supports a real-time demo system with ASR and TTS running at 2 FPS on two 80G accelerators. We release the AURA model together with a real-time inference framework to facilitate future research.",
       "comments": ""
@@ -245,10 +255,6 @@
     "2604.04911": {
       "abstract": "Image spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public atthis https URL.",
       "comments": "Code: <a class=\"link-external link-https\" href=\"https://github.com/EasonXiao-888/SpatialEdit\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2604.02176": {
-      "abstract": "While textual frequency has been validated as relevant to human cognition in reading speed, its relatedness to Large Language Models (LLMs) is seldom studied. We propose a novel research direction in terms of textual data frequency, which is an understudied topic, to the best of our knowledge. Our framework is composed of three units. First, this paper proposes Textual Frequency Law (TFL), which indicates that frequent textual data should be preferred for LLMs for both prompting and fine-tuning. Since many LLMs are closed-source in their training data, we propose using online resources to estimate the sentence-level frequency. We then utilize an input paraphraser to paraphrase the input into a more frequent textual expression. Next, we propose Textual Frequency Distillation (TFD) by querying LLMs to conduct story completion by further extending the sentences in the datasets, and the resulting corpora are used to adjust the initial estimation. Finally, we propose Curriculum Textual Frequency Training (CTFT) that fine-tunes LLMs in an increasing order of sentence-level frequency. Experiments are conducted on our curated dataset Textual Frequency Paired Dataset (TFPD) on math reasoning, machine translation, commonsense reasoning and agentic tool calling. Results show the effectiveness of our framework.",
-      "comments": ""
     },
     "2604.04901": {
       "abstract": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as strict privacy barriers and the difficulty of jointly collecting multimodal real-world traces prevent scalable training and evaluation, and existing methods remain interaction-centric while overlooking dense behavioral traces in file-system operations; to address this gap, we propose FileGram, a comprehensive framework that grounds agent memory and personalization in file-system behavioral traces, comprising three core components: (1) FileGramEngine, a scalable persona-driven data engine that simulates realistic workflows and generates fine-grained multimodal action sequences at scale; (2) FileGramBench, a diagnostic benchmark grounded in file-system behavioral traces for evaluating memory systems on profile reconstruction, trace disentanglement, persona drift detection, and multimodal grounding; and (3) FileGramOS, a bottom-up memory architecture that builds user profiles directly from atomic actions and content deltas rather than dialogue summaries, encoding these traces into procedural, semantic, and episodic channels with query-time abstraction; extensive experiments show that FileGramBench remains challenging for state-of-the-art memory systems and that FileGramEngine and FileGramOS are effective, and by open-sourcing the framework, we hope to support future research on personalized memory-centric file-system agents.",
@@ -258,21 +264,21 @@
       "abstract": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves. In practice, evidence is scattered across heterogeneous sources that often contradict one another, new information can invalidate earlier conclusions, and user preferences surface through corrections rather than explicit instructions. Existing benchmarks largely assume static, single-authority settings and do not evaluate whether agents can keep up with this complexity. We introduce ClawArena, a benchmark for evaluating AI agents in evolving information environments. Each scenario maintains a complete hidden ground truth while exposing the agent only to noisy, partial, and sometimes contradictory traces across multi-channel sessions, workspace files, and staged updates. Evaluation is organized around three coupled challenges: multi-source conflict reasoning, dynamic belief revision, and implicit personalization, whose interactions yield a 14-category question taxonomy. Two question formats, multi-choice (set-selection) and shell-based executable checks, test both reasoning and workspace grounding. The current release contains 64 scenarios across 8 professional domains, totaling 1{,}879 evaluation rounds and 365 dynamic updates. Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect performance, that self-evolving skill frameworks can partially close model-capability gaps, and that belief revision difficulty is determined by update design strategy rather than the mere presence of updates. Code is available atthis https URL.",
       "comments": ""
     },
+    "2604.02288": {
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models. While Group Relative Policy Optimization (GRPO) is widely adopted, its coarse credit assignment uniformly penalizes failed rollouts, lacking the token-level focus needed to efficiently address specific deviations. Self-Distillation Policy Optimization (SDPO) addresses this by providing denser, more targeted logit-level supervision that facilitates rapid early improvement, yet it frequently collapses during prolonged training. We trace this late-stage instability to two intrinsic flaws: self-distillation on already-correct samples introduces optimization ambiguity, and the self-teacher's signal reliability progressively degrades. To resolve these issues, we propose Sample-Routed Policy Optimization (SRPO), a unified on-policy framework that routes correct samples to GRPO's reward-aligned reinforcement and failed samples to SDPO's targeted logit-level correction. SRPO further incorporates an entropy-aware dynamic weighting mechanism to suppress high-entropy, unreliable distillation targets while emphasizing confident ones. Evaluated across five benchmarks and two model scales, SRPO achieves both the rapid early improvement of SDPO and the long-horizon stability of GRPO. It consistently surpasses the peak performance of both baselines, raising the five-benchmark average on Qwen3-8B by 3.4% over GRPO and 6.3% over SDPO, while simultaneously yielding moderate response lengths and lowering per-step compute cost by up to 17.2%.",
+      "comments": ""
+    },
     "2604.03679": {
       "abstract": "Large language models (LLMs) excel at complex reasoning, yet their efficiency is limited by the surging cognitive overhead of long thought traces. In this paper, we propose LightThinker, a method that enables LLMs to dynamically compress intermediate thoughts into compact semantic representations. However, static compression often struggles with complex reasoning where the irreversible loss of intermediate details can lead to logical bottlenecks. To address this, we evolve the framework into LightThinker++, introducing Explicit Adaptive Memory Management. This paradigm shifts to behavioral-level management by incorporating explicit memory primitives, supported by a specialized trajectory synthesis pipeline to train purposeful memory scheduling. Extensive experiments demonstrate the framework's versatility across three dimensions. (1) LightThinker reduces peak token usage by 70% and inference time by 26% with minimal accuracy loss. (2) In standard reasoning, LightThinker++ slashes peak token usage by 69.9% while yielding a +2.42% accuracy gain under the same context budget for maximum performance. (3) Most notably, in long-horizon agentic tasks, it maintains a stable footprint beyond 80 rounds (a 60%-70% reduction), achieving an average performance gain of 14.8% across different complex scenarios. Overall, our work provides a scalable direction for sustaining deep LLM reasoning over extended horizons with minimal overhead.",
       "comments": "Work in progress. This is an extended version of LightThinker"
     },
-    "2604.02288": {
-      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models. While Group Relative Policy Optimization (GRPO) is widely adopted, its coarse credit assignment uniformly penalizes failed rollouts, lacking the token-level focus needed to efficiently address specific deviations. Self-Distillation Policy Optimization (SDPO) addresses this by providing denser, more targeted logit-level supervision that facilitates rapid early improvement, yet it frequently collapses during prolonged training. We trace this late-stage instability to two intrinsic flaws: self-distillation on already-correct samples introduces optimization ambiguity, and the self-teacher's signal reliability progressively degrades. To resolve these issues, we propose Sample-Routed Policy Optimization (SRPO), a unified on-policy framework that routes correct samples to GRPO's reward-aligned reinforcement and failed samples to SDPO's targeted logit-level correction. SRPO further incorporates an entropy-aware dynamic weighting mechanism to suppress high-entropy, unreliable distillation targets while emphasizing confident ones. Evaluated across five benchmarks and two model scales, SRPO achieves both the rapid early improvement of SDPO and the long-horizon stability of GRPO. It consistently surpasses the peak performance of both baselines, raising the five-benchmark average on Qwen3-8B by 3.4% over GRPO and 6.3% over SDPO, while simultaneously yielding moderate response lengths and lowering per-step compute cost by up to 17.2%.",
+    "2604.03253": {
+      "abstract": "A promising research direction in enabling LLMs to generate consistently correct code involves addressing their inability to properly estimate program execution, particularly for code they generate. In this work, we demonstrate that Code LLMs can be trained to simulate program execution in a step-by-step manner and that this capability can be leveraged to improve competitive programming performance. Our approach combines supervised fine-tuning on natural language execution traces, textual explanations grounded in true execution, with reinforcement learning using verifiable rewards. We introduce two complementary objectives: output prediction given code and inputs, and solving competitive programming tasks with either ground-truth or self-predicted execution feedback. These objectives enable models to perform self-verification over multiple candidate solutions, and iterative self-fixing by simulating test execution. Across multiple competitive programming benchmarks, our method yields consistent improvements over standard reasoning approaches. We further present ablations and analysis to elucidate the role of execution simulation and its limitations.",
       "comments": ""
     },
     "2604.04804": {
       "abstract": "Learning from experience is critical for building capable large language model (LLM) agents, yet prevailing self-evolving paradigms remain inefficient: agents learn in isolation, repeatedly rediscover similar behaviors from limited experience, resulting in redundant exploration and poor generalization. To address this problem, we propose SkillX, a fully automated framework for constructing a \\textbf{plug-and-play skill knowledge base} that can be reused across agents and environments. SkillX operates through a fully automated pipeline built on three synergistic innovations: \\textit{(i) Multi-Level Skills Design}, which distills raw trajectories into three-tiered hierarchy of strategic plans, functional skills, and atomic skills; \\textit{(ii) Iterative Skills Refinement}, which automatically revises skills based on execution feedback to continuously improve library quality; and \\textit{(iii) Exploratory Skills Expansion}, which proactively generates and validates novel skills to expand coverage beyond seed training data. Using a strong backbone agent (GLM-4.6), we automatically build a reusable skill library and evaluate its transferability on challenging long-horizon, user-interactive benchmarks, including AppWorld, BFCL-v3, and $\\tau^2$-Bench. Experiments show that SkillKB consistently improves task success and execution efficiency when plugged into weaker base agents, highlighting the importance of structured, hierarchical experience representations for generalizable agent learning. Our code will be publicly available soon atthis https URL.",
       "comments": "Work in progress"
-    },
-    "2604.03253": {
-      "abstract": "A promising research direction in enabling LLMs to generate consistently correct code involves addressing their inability to properly estimate program execution, particularly for code they generate. In this work, we demonstrate that Code LLMs can be trained to simulate program execution in a step-by-step manner and that this capability can be leveraged to improve competitive programming performance. Our approach combines supervised fine-tuning on natural language execution traces, textual explanations grounded in true execution, with reinforcement learning using verifiable rewards. We introduce two complementary objectives: output prediction given code and inputs, and solving competitive programming tasks with either ground-truth or self-predicted execution feedback. These objectives enable models to perform self-verification over multiple candidate solutions, and iterative self-fixing by simulating test execution. Across multiple competitive programming benchmarks, our method yields consistent improvements over standard reasoning approaches. We further present ablations and analysis to elucidate the role of execution simulation and its limitations.",
-      "comments": ""
     },
     "2604.04917": {
       "abstract": "What does it take to build a visual reasoner that works across charts, science, spatial understanding, and open-ended tasks? The strongest vision-language models (VLMs) show such broad visual reasoning is within reach, but the recipe behind them remains unclear, locked behind proprietary reinforcement learning (RL) pipelines with non-public data. We introduce Vero, a family of fully open VLMs that matches or exceeds existing open-weight models across diverse visual reasoning tasks. We scale RL data and rewards across six broad task categories, constructing Vero-600K, a 600K-sample dataset from 59 datasets, and designing task-routed rewards that handle heterogeneous answer formats. Vero achieves state-of-the-art performance, improving over four base models by 3.7-5.5 points on average across VeroEval, our suite of 30 challenging benchmarks. Starting from Qwen3-VL-8B-Instruct, Vero outperforms Qwen3-VL-8B-Thinking on 23 of 30 benchmarks without additional proprietary thinking data. When trained from the same base model, Vero-600K exceeds existing RL datasets across task categories. Systematic ablations reveal that different task categories elicit qualitatively distinct reasoning patterns that transfer poorly in isolation, suggesting that broad data coverage is the primary driver of strong RL scaling. All data, code, and models are released.",
@@ -294,10 +300,6 @@
       "abstract": "Recent advancements in Vision-Language Models (VLMs) have significantly pushed the boundaries of Visual Question Answering (VQA).However,high-resolution details can sometimes become noise that leads to hallucinations or reasoning errors. In this paper,we propose Degradation-Driven Prompting (DDP), a novel framework that improves VQA performance by strategically reducing image fidelity to force models to focus on essential structural information. We evaluate DDP across two distinct tasks. Physical attributes targets images prone to human misjudgment, where DDP employs a combination of 80p downsampling, structural visual aids (white background masks and orthometric lines), and In-Context Learning (ICL) to calibrate the model's focus. Perceptual phenomena addresses various machine-susceptible visual anomalies and illusions, including Visual Anomaly (VA), Color (CI), Motion(MI),Gestalt (GI), Geometric (GSI), and Visual Illusions (VI).For this task, DDP integrates a task-classification stage with specialized tools such as blur masks and contrast enhancement alongside downsampling. Our experimental results demonstrate that less is more: by intentionally degrading visual inputs and providing targeted structural prompts, DDP enables VLMs to bypass distracting textures and achieve superior reasoning accuracy on challenging visual benchmarks.",
       "comments": "11pages,5 figures,CVPRW"
     },
-    "2604.04503": {
-      "abstract": "Deep research agents (DRAs) integrate LLM reasoning with external tools. Memory systems enable DRAs to leverage historical experiences, which are essential for efficient reasoning and autonomous evolution. Existing methods rely on retrieving similar trajectories from memory to aid reasoning, while suffering from key limitations of ineffective memory evolution and increasing storage and retrieval costs. To address these problems, we propose a novel Memory Intelligence Agent (MIA) framework, consisting of a Manager-Planner-Executor architecture. Memory Manager is a non-parametric memory system that can store compressed historical search trajectories. Planner is a parametric memory agent that can produce search plans for questions. Executor is another agent that can search and analyze information guided by the search plan. To build the MIA framework, we first adopt an alternating reinforcement learning paradigm to enhance cooperation between the Planner and the Executor. Furthermore, we enable the Planner to continuously evolve during test-time learning, with updates performed on-the-fly alongside inference without interrupting the reasoning process. Additionally, we establish a bidirectional conversion loop between parametric and non-parametric memories to achieve efficient memory evolution. Finally, we incorporate a reflection and an unsupervised judgment mechanisms to boost reasoning and self-evolution in the open world. Extensive experiments across eleven benchmarks demonstrate the superiority of MIA.",
-      "comments": ""
-    },
     "2604.00830": {
       "abstract": "Test-Time Learning (TTL) enables language agents to iteratively refine their performance through repeated interactions with the environment at inference time. At the core of TTL is an adaptation policy that updates the actor policy based on experience from previous episodes, thereby improving future behavior. Existing methods rely on fixed, hand-crafted adaptation policies rather than optimizing them for downstream improvement. We argue that optimal adaptation policies should be learned from task environments, not hand-engineered based on human intuition. To achieve this, we introduce Meta-TTL, a framework that formulates the discovery of effective adaptation policies as a bi-level optimization problem. Within this framework, the inner loop executes the standard TTL process, measuring how effectively a candidate adaptation policy helps an agent correct errors across sequential episodes. Guided by the agent's performance, the outer loop employs evolutionary search over a diverse distribution of training tasks to iteratively refine the adaptation policy. We evaluate Meta-TTL on Jericho and WebArena-Lite across both in-distribution (ID) and out-of-distribution (OOD) settings, using multiple meta-agent backbones. Results on both benchmarks show that Meta-TTL consistently outperforms hand-crafted baselines, suggesting that the optimized adaptation policy encodes transferable strategies that generalize beyond the training task distribution.",
       "comments": ""
@@ -305,6 +307,10 @@
     "2604.01043": {
       "abstract": "Recent advances in Video Foundation Models (VFMs) have revolutionized human-centric video synthesis, yet fine-grained and independent editing of subjects and scenes remains a critical challenge. Recent attempts to incorporate richer environment control through rigid 3D geometric compositions often encounter a stark trade-off between precise control and generative flexibility. Furthermore, the heavy 3D pre-processing still limits practical scalability. In this paper, we propose ONE-SHOT, a parameter-efficient framework for compositional human-environment video generation. Our key insight is to factorize the generative process into disentangled signals. Specifically, we introduce a canonical-space injection mechanism that decouples human dynamics from environmental cues via cross-attention. We also propose Dynamic-Grounded-RoPE, a novel positional embedding strategy that establishes spatial correspondences between disparate spatial domains without any heuristic 3D alignments. To support long-horizon synthesis, we introduce a Hybrid Context Integration mechanism to maintain subject and scene consistency across minute-level generations. Experiments demonstrate that our method significantly outperforms state-of-the-art methods, offering superior structural control and creative diversity for video synthesis. Our project has been available on:this https URL.",
       "comments": "23 pages, 7 figures"
+    },
+    "2604.04503": {
+      "abstract": "Deep research agents (DRAs) integrate LLM reasoning with external tools. Memory systems enable DRAs to leverage historical experiences, which are essential for efficient reasoning and autonomous evolution. Existing methods rely on retrieving similar trajectories from memory to aid reasoning, while suffering from key limitations of ineffective memory evolution and increasing storage and retrieval costs. To address these problems, we propose a novel Memory Intelligence Agent (MIA) framework, consisting of a Manager-Planner-Executor architecture. Memory Manager is a non-parametric memory system that can store compressed historical search trajectories. Planner is a parametric memory agent that can produce search plans for questions. Executor is another agent that can search and analyze information guided by the search plan. To build the MIA framework, we first adopt an alternating reinforcement learning paradigm to enhance cooperation between the Planner and the Executor. Furthermore, we enable the Planner to continuously evolve during test-time learning, with updates performed on-the-fly alongside inference without interrupting the reasoning process. Additionally, we establish a bidirectional conversion loop between parametric and non-parametric memories to achieve efficient memory evolution. Finally, we incorporate a reflection and an unsupervised judgment mechanisms to boost reasoning and self-evolution in the open world. Extensive experiments across eleven benchmarks demonstrate the superiority of MIA.",
+      "comments": ""
     },
     "2604.04780": {
       "abstract": "Image degradation from blur, noise, compression, and poor illumination severely undermines multimodal understanding in real-world settings. Unified multimodal models that combine understanding and generation within a single architecture are a natural fit for this challenge, as their generative pathway can model the fine-grained visual structure that degradation destroys. Yet these models fail to leverage their own generative capacity on degraded inputs. We trace this disconnect to two compounding factors: existing training regimes never ask the model to invoke generation during reasoning, and the standard decode-reencode pathway does not support effective joint optimization. We present CLEAR, a framework that connects the two capabilities through three progressive steps: (1) supervised fine-tuning on a degradation-aware dataset to establish the generate-then-answer reasoning pattern; (2) a Latent Representation Bridge that replaces the decode-reencode detour with a direct, optimizable connection between generation and reasoning; (3) Interleaved GRPO, a reinforcement learning method that jointly optimizes text reasoning and visual generation under answer-correctness rewards. We construct MMD-Bench, covering three degradation severity levels across six standard multimodal benchmarks. Experiments show that CLEAR substantially improves robustness on degraded inputs while preserving clean-image performance. Our analysis further reveals that removing pixel-level reconstruction supervision leads to intermediate visual states with higher perceptual quality, suggesting that task-driven optimization and visual quality are naturally aligned.",
@@ -314,24 +320,24 @@
       "abstract": "We introduce AvatarPointillist, a novel framework for generating dynamic 4D Gaussian avatars from a single portrait image. At the core of our method is a decoder-only Transformer that autoregressively generates a point cloud for 3D Gaussian Splatting. This sequential approach allows for precise, adaptive construction, dynamically adjusting point density and the total number of points based on the subject's complexity. During point generation, the AR model also jointly predicts per-point binding information, enabling realistic animation. After generation, a dedicated Gaussian decoder converts the points into complete, renderable Gaussian attributes. We demonstrate that conditioning the decoder on the latent features from the AR generator enables effective interaction between stages and markedly improves fidelity. Extensive experiments validate that AvatarPointillist produces high-quality, photorealistic, and controllable avatars. We believe this autoregressive formulation represents a new paradigm for avatar generation, and we will release our code inspire future research.",
       "comments": "Accepted by the CVPR 2026 main conference. Project page: <a class=\"link-external link-https\" href=\"https://kumapowerliu.github.io/AvatarPointillist/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
+    "2604.04872": {
+      "abstract": "As large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.",
+      "comments": "28 pages, 9 tables, 8 figures"
+    },
     "2604.04522": {
       "abstract": "Agentic AI systems increasingly execute consequential actions on behalf of human principals, delegating tasks through multi-step chains of autonomous agents. No existing standard addresses a fundamental accountability gap: verifying that terminal actions in a delegation chain were genuinely authorized by a human principal, through what chain of delegation, and under what scope. This paper presents the Human Delegation Provenance (HDP) protocol, a lightweight token-based scheme that cryptographically captures and verifies human authorization context in multi-agent systems. An HDP token binds a human authorization event to a session, records each agent's delegation action as a signed hop in an append-only chain, and enables any participant to verify the full provenance record using only the issuer's Ed25519 public key and the current session identifier. Verification is fully offline, requiring no registry lookups or third-party trust anchors. We situate HDP within the existing landscape of delegation protocols, identify its distinct design point relative to OAuth 2.0 Token Exchange (RFC 8693), JSON Web Tokens (RFC 7519), UCAN, and the Intent Provenance Protocol (draft-haberkamp-ipp-00), and demonstrate that existing standards fail to address the multi-hop, append-only, human-provenance requirements of agentic systems. HDP has been published as an IETF Internet-Draft (draft-helixar-hdp-agentic-delegation-00) and a reference TypeScript SDK is publicly available.",
       "comments": "12 pages, 1 figure. Introduces the Human Delegation Provenance (HDP) protocol for cryptographically verifiable human authorization in multi-agent AI systems. Open-source at <a class=\"link-external link-https\" href=\"https://github.com/Helixar-AI/HDP\" rel=\"external noopener nofollow\">this https URL</a> (spec, schema, examples, TS SDK @helixar_ai /hdp on npm, Python integrations). Also IETF Internet-Draft draft-helixar-hdp-agentic-delegation-00 (March 2026). v0.1 open for review"
+    },
+    "2604.04155": {
+      "abstract": "Foundation models for biology and physics optimize predictive accuracy, but their internal representations systematically fail to preserve the continuous geometry of the systems they model. We identify the root cause: the Geometric Alignment Tax, an intrinsic cost of forcing continuous manifolds through discrete categorical bottlenecks. Controlled ablations on synthetic dynamical systems demonstrate that replacing cross-entropy with a continuous head on an identical encoder reduces geometric distortion by up to 8.5x, while learned codebooks exhibit a non-monotonic double bind where finer quantization worsens geometry despite improving reconstruction. Under continuous objectives, three architectures differ by 1.3x; under discrete tokenization, they diverge by 3,000x. Evaluating 14 biological foundation models with rate-distortion theory and MINE, we identify three failure regimes: Local-Global Decoupling, Representational Compression, and Geometric Vacuity. A controlled experiment confirms that Evo 2's reverse-complement robustness on real DNA reflects conserved sequence composition, not learned symmetry. No model achieves simultaneously low distortion, high mutual information, and global coherence.",
+      "comments": ""
     },
     "2604.03687": {
       "abstract": "Long-tailed recognition has benefited from foundation models and fine-tuning paradigms, yet existing studies and benchmarks are mainly confined to natural image domains, where pre-training and fine-tuning data share similar distributions. In contrast, scientific images exhibit distinct visual characteristics and supervision signals, raising questions about the effectiveness of fine-tuning foundation models in such settings. In this work, we investigate scientific long-tailed recognition under a purely visual and parameter-efficient fine-tuning (PEFT) paradigm. Experiments on three scientific benchmarks show that fine-tuning foundation models yields limited gains, and reveal that penultimate-layer features play an important role, particularly for tail classes. Motivated by these findings, we propose SciLT, a framework that exploits multi-level representations through adaptive feature fusion and dual-supervision learning. By jointly leveraging penultimate- and final-layer features, SciLT achieves balanced performance across head and tail classes. Extensive experiments demonstrate that SciLT consistently outperforms existing methods, establishing a strong and practical baseline for scientific long-tailed recognition and providing valuable guidance for adapting foundation models to scientific data with substantial domain shifts.",
       "comments": ""
     },
-    "2604.04872": {
-      "abstract": "As large language model agents advance beyond software engineering (SWE) tasks toward machine learning engineering (MLE), verifying agent behavior becomes orders of magnitude more expensive: while SWE tasks can be verified via fast-executing unit tests, MLE verification requires running full ML pipelines -- data preprocessing, model training, and metric evaluation -- on large datasets at each rollout step, rendering trajectory-wise on-policy reinforcement learning (RL) prohibitively slow. Existing approaches retreat to supervised fine-tuning (SFT) or offline proxy rewards, sacrificing the exploration and generalization benefits of on-policy RL. We observe that sandbox data size is the primary source of this bottleneck. Based on this insight, we introduce SandMLE, a multi-agent framework that generates diverse, verifiable synthetic MLE environments from a small number of seed tasks, preserving the structural and technical complexity of real-world problems while constraining datasets to micro-scale (each task is paired with only 50-200 training samples). Through extensive experiments, we show that SandMLE reduces execution time by over 13 times, enabling large-scale, on-policy trajectory-wise RL for the first time in the MLE domain. On MLE-bench-lite, SandMLE yields significant gains over SFT baselines across Qwen3-8B, 14B, and 30B-A3B, with relative medal rate improvements ranging from 20.3% to 66.9%. Furthermore, the trained policy generalizes across unseen agentic scaffolds, achieving up to 32.4% better HumanRank score on MLE-Dojo.",
-      "comments": "28 pages, 9 tables, 8 figures"
-    },
     "2604.04562": {
       "abstract": "The accelerating pace of scientific publishing makes it increasingly difficult for researchers to stay current. We present Paper Espresso, an open-source platform that automatically discovers, summarizes, and analyzes trending arXiv papers. The system uses large language models (LLMs) to generate structured summaries with topical labels and keywords, and provides multi-granularity trend analysis at daily, weekly, and monthly scales through LLM-driven topic consolidation. Over 35 months of continuous deployment, Paper Espresso has processed over 13,300 papers and publicly released all structured metadata, revealing rich dynamics in the AI research landscape: a mid-2025 surge in reinforcement learning for LLM reasoning, non-saturating topic emergence (6,673 unique topics), and a positive correlation between topic novelty and community engagement (2.0x median upvotes for the most novel papers). A live demo is available atthis https URL.",
-      "comments": ""
-    },
-    "2604.04155": {
-      "abstract": "Foundation models for biology and physics optimize predictive accuracy, but their internal representations systematically fail to preserve the continuous geometry of the systems they model. We identify the root cause: the Geometric Alignment Tax, an intrinsic cost of forcing continuous manifolds through discrete categorical bottlenecks. Controlled ablations on synthetic dynamical systems demonstrate that replacing cross-entropy with a continuous head on an identical encoder reduces geometric distortion by up to 8.5x, while learned codebooks exhibit a non-monotonic double bind where finer quantization worsens geometry despite improving reconstruction. Under continuous objectives, three architectures differ by 1.3x; under discrete tokenization, they diverge by 3,000x. Evaluating 14 biological foundation models with rate-distortion theory and MINE, we identify three failure regimes: Local-Global Decoupling, Representational Compression, and Geometric Vacuity. A controlled experiment confirms that Evo 2's reverse-complement robustness on real DNA reflects conserved sequence composition, not learned symmetry. No model achieves simultaneously low distortion, high mutual information, and global coherence.",
       "comments": ""
     },
     "2604.04767": {
@@ -349,6 +355,10 @@
     "2604.03266": {
       "abstract": "Can multi-agent communication pressure extract discrete, compositional representations of invisible physical properties from frozen video features? We show that agents communicating through a Gumbel-Softmax bottleneck with iterated learning develop positionally disentangled protocols for latent properties (elasticity, friction, mass ratio) without property labels or supervision on message structure. With 4 agents, 100% of 80 seeds converge to near-perfect compositionality (PosDis=0.999, holdout 98.3%). Controls confirm multi-agent structure -- not bandwidth or temporal coverage -- drives this effect. Causal intervention shows surgical property disruption (~15% drop on targeted property, <3% on others). A controlled backbone comparison reveals that the perceptual prior determines what is communicable: DINOv2 dominates on spatially-visible ramp physics (98.3% vs 95.1%), while V-JEPA 2 dominates on dynamics-only collision physics (87.4% vs 77.7%, d=2.74). Scale-matched (d=3.37) and frame-matched (d=6.53) controls attribute this gap entirely to video-native pretraining. The frozen protocol supports action-conditioned planning (91.5%) with counterfactual velocity reasoning (r=0.780). Validation on Physics 101 real camera footage confirms 85.6% mass-comparison accuracy on unseen objects, temporal dynamics contributing +11.2% beyond static appearance, agent-scaling compositionality replicating at 90% for 4 agents, and causal intervention extending to real video (d=1.87, p=0.022).",
       "comments": "24 pages, 4 figures, 12 tables. Code: <a class=\"link-external link-https\" href=\"https://github.com/TomekKaszynski/emergent-physics-comm\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.00375": {
+      "abstract": "Diffusion large language models (dLLMs) theoretically permit token decoding in arbitrary order, a flexibility that could enable richer exploration of reasoning paths than autoregressive (AR) LLMs. In practice, however, random-order decoding often hurts generation quality. To mitigate this, low-confidence remasking improves single-sample quality (e.g., Pass@$1$) by prioritizing confident tokens, but it also suppresses exploration and limits multi-sample gains (e.g., Pass@$k$), creating a fundamental quality--exploration dilemma. In this paper, we provide a unified explanation of this dilemma. We show that low-confidence remasking improves a myopic proxy for quality while provably constraining the entropy of the induced sequence distribution. To overcome this limitation, we characterize the optimal distribution that explicitly balances quality and exploration, and develop a simple Independent Metropolis--Hastings sampler that approximately targets this distribution during decoding. Experiments across a range of reasoning benchmarks including MATH500, AIME24/25, HumanEval, and MBPP show that our approach yields better exploration-quality tradeoff than both random and low-confidence remasking.",
+      "comments": ""
     }
   }
 }
