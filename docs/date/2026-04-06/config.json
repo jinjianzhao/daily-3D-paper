@@ -5,22 +5,22 @@
     "2604.03128": {
       "title": "Self-Distilled RLVR",
       "hf_link": "https://huggingface.co/papers/2604.03128",
-      "votes": 115
+      "votes": 118
+    },
+    "2604.03144": {
+      "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+      "hf_link": "https://huggingface.co/papers/2604.03144",
+      "votes": 67
     },
     "2604.02317": {
       "title": "A Simple Baseline for Streaming Video Understanding",
       "hf_link": "https://huggingface.co/papers/2604.02317",
       "votes": 63
     },
-    "2604.03144": {
-      "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
-      "hf_link": "https://huggingface.co/papers/2604.03144",
-      "votes": 52
-    },
     "2604.02721": {
       "title": "GrandCode: Achieving Grandmaster Level in Competitive Programming via Agentic Reinforcement Learning",
       "hf_link": "https://huggingface.co/papers/2604.02721",
-      "votes": 41
+      "votes": 53
     },
     "2604.03016": {
       "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
@@ -35,7 +35,7 @@
     "2604.01411": {
       "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
       "hf_link": "https://huggingface.co/papers/2604.01411",
-      "votes": 17
+      "votes": 18
     },
     "2604.02947": {
       "title": "AgentHazard: A Benchmark for Evaluating Harmful Behavior in Computer-Use Agents",
@@ -57,19 +57,19 @@
       "hf_link": "https://huggingface.co/papers/2604.01487",
       "votes": 6
     },
-    "2604.02486": {
-      "title": "VLMs Need Words: Vision Language Models Ignore Visual Detail In Favor of Semantic Anchors",
-      "hf_link": "https://huggingface.co/papers/2604.02486",
-      "votes": 3
-    },
     "2603.22078": {
       "title": "Do World Action Models Generalize Better than VLAs? A Robustness Study",
       "hf_link": "https://huggingface.co/papers/2603.22078",
-      "votes": 3
+      "votes": 4
     },
     "2604.02368": {
       "title": "Xpertbench: Expert Level Tasks with Rubrics-Based Evaluation",
       "hf_link": "https://huggingface.co/papers/2604.02368",
+      "votes": 4
+    },
+    "2604.02486": {
+      "title": "VLMs Need Words: Vision Language Models Ignore Visual Detail In Favor of Semantic Anchors",
+      "hf_link": "https://huggingface.co/papers/2604.02486",
       "votes": 3
     },
     "2604.03118": {
@@ -90,8 +90,8 @@
   },
   "summaries": {
     "2604.03128": "机器学习;强化学习  \n论文背景是探索在大型语言模型中结合有特权信息的教师模型进行自蒸馏的优化训练范式。  \n作者提出了RLSD方法，利用自蒸馏获取细粒度更新幅度，同时结合环境反馈确保可靠更新方向，以提升收敛上限和训练稳定性。",
-    "2604.02317": "计算机视觉;视频理解  \n背景/任务是批判当前依赖复杂记忆机制的流式视频理解方法，主张简化设计。  \n提出的SimpleStream基线仅使用最近N帧，在多个基准测试中达到或超越了现有复杂模型，并揭示了感知与记忆的权衡关系。",
     "2604.03144": "人工智能；自然语言处理  \n工业软件开发领域缺乏展示工程师如何推理硬件约束和时序语义的专家级思维轨迹。  \n该研究提出了InCoder-32B-Thinking模型，通过结合ECoT框架和工业代码世界模型生成并验证推理轨迹，在多个基准测试中取得了领先的开源性能。",
+    "2604.02317": "计算机视觉;视频理解  \n背景/任务是批判当前依赖复杂记忆机制的流式视频理解方法，主张简化设计。  \n提出的SimpleStream基线仅使用最近N帧，在多个基准测试中达到或超越了现有复杂模型，并揭示了感知与记忆的权衡关系。",
     "2604.02721": "机器学习;强化学习  \n背景/任务是开发能在竞技编程中超越人类的AI系统。  \n他们提出了GrandCode，这是一个通过多智能体强化学习协同优化多个模块，并在现场编程竞赛中首次全面击败所有人类选手的系统。",
     "2604.03016": "计算机科学;自然语言处理  \n现有评估方法难以验证多模态大语言模型的工具调用过程与效率。  \n该研究提出了一个过程验证的基准Agentic-MME，通过细粒度中间状态审核与效率量化来评估多模态智能体的协同能力。",
     "2604.02870": "计算机视觉；多模态学习\n背景/任务是解决多模态大语言模型因视角变化导致的视觉推理脆弱性问题。  \n研究提出并验证了通过对图像令牌而非像素进行逆向扭曲，可以更稳定地帮助模型理解邻近视角的场景。",
@@ -100,9 +100,9 @@
     "2603.27183": "计算机视觉；自然语言处理  \n背景/任务：研究多模态大语言模型是否能够像人类一样，通过对话交流部分、视角依赖的观察来构建共享的空间理解。  \n做了什么：作者引入了COSMIC基准测试，评估了MLLM在协作空间交流任务中的表现，发现其能力存在分层且远不及人类水平，并收集了人类对话作为对比。",
     "2604.01609": "机器学习;自然语言处理  \n背景/任务：大型语言模型部署受限于权重和键值缓存的存储与带宽需求，需高效压缩方法以降低开销。  \n做了什么：提出Swift-SVD框架，通过激活感知的闭式压缩实现理论最优、高效稳定的低秩近似，并结合动态秩分配提升压缩效果。",
     "2604.01487": "人工智能安全；隐私保护  \n背景/任务：面对个性化、持久化LLM代理框架构建的人类中心化代理社交网络带来的新型隐私挑战，需要系统评估其隐私风险。  \n研究内容：提出了首个基准AgentSocialBench，通过实验发现此类网络中的隐私保护比单代理场景更困难，揭示现有LLM代理缺乏有效的隐私保护机制。",
-    "2604.02486": "计算机视觉;多模态学习  \nVision Language Models在多模态任务中表现出色，但在需要细粒度视觉感知的任务上存在不足。  \n论文通过视觉对应任务分析，指出问题源于训练中对视觉信息到文本空间的狭隘映射，并证明引入任意命名或任务微调可提升性能。",
     "2603.22078": "机器人技术;计算机视觉与模式识别  \n背景/任务是评估和比较不同视觉-语言-动作模型与世界动作模型在复杂扰动下的鲁棒性和泛化能力。  \n作者在LIBERO-Plus和RoboTwin 2.0-Plus基准上测试了多种模型，发现世界动作模型凭借其显式的动态预测能力展现了更强的鲁棒性。",
     "2604.02368": "自然语言处理；大语言模型评测  \n现有评测基准难以评估大语言模型在复杂、开放式专业任务上的真实专家级认知能力。  \n研究团队构建了一个由专家设计的高保真多领域专业评测基准，并引入了一种可扩展的、与人类对齐的评估范式来量化模型的“专家差距”。",
+    "2604.02486": "计算机视觉;多模态学习  \nVision Language Models在多模态任务中表现出色，但在需要细粒度视觉感知的任务上存在不足。  \n论文通过视觉对应任务分析，指出问题源于训练中对视觉信息到文本空间的狭隘映射，并证明引入任意命名或任务微调可提升性能。",
     "2604.03118": "计算机视觉;生成模型  \n背景/任务：解决视频生成模型在极低推理预算（如2-4步）下实时部署时，现有蒸馏方法存在生成效果保守或易漂移的问题。  \n所做工作：提出了自洽分布匹配蒸馏（SC-DMD）方法，通过显式正则化去噪更新的端点一致性，并结合缓存分布感知训练，提升了低步数视频生成质量。",
     "2604.03231": "计算机视觉;多模态学习  \n现有视觉语言模型主要依赖单一的对比训练视觉编码器，其在理解密集语义和鲁棒性上存在不足。  \n本文提出CoME-VL框架，通过融合对比训练与自监督视觉编码器的互补特征，并采用熵引导聚合和RoPE增强跨注意力实现多模态对齐，从而提升视觉语言任务性能。",
     "2604.01765": "人工智能;自动驾驶<br>当前驾驶世界-动作模型缺乏几何基础，限制了其在物理世界中的适用性。<br>该研究提出了一个统一的模型，通过集成深度生成、未来视频预测和运动规划，以几何感知的世界表示来指导驾驶决策。"
@@ -114,13 +114,13 @@
       "abstract": "On-policy distillation (OPD) has become a popular training paradigm in the LLM community. This paradigm selects a larger model as the teacher to provide dense, fine-grained signals for each sampled trajectory, in contrast to reinforcement learning with verifiable rewards (RLVR), which only obtains sparse signals from verifiable outcomes in the environment. Recently, the community has explored on-policy self-distillation (OPSD), where the same model serves as both teacher and student, with the teacher receiving additional privileged information such as reference answers to enable self-evolution. This paper demonstrates that learning signals solely derived from the privileged teacher result in severe information leakage and unstable long-term training. Accordingly, we identify the optimal niche for self-distillation and propose \\textbf{RLSD} (\\textbf{RL}VR with \\textbf{S}elf-\\textbf{D}istillation). Specifically, we leverage self-distillation to obtain token-level policy differences for determining fine-grained update magnitudes, while continuing to use RLVR to derive reliable update directions from environmental feedback (e.g., response correctness). This enables RLSD to simultaneously harness the strengths of both RLVR and OPSD, achieving a higher convergence ceiling and superior training stability.",
       "comments": "Work in progress"
     },
-    "2604.02317": {
-      "abstract": "Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handle long video streams. We challenge this trend with a simple finding: a sliding-window baseline that feeds only the most recent N frames to an off-the-shelf VLM already matches or surpasses published streaming models. We formalize this baseline as SimpleStream and evaluate it against 13 major offline and online video LLM baselines on OVO-Bench and StreamingBench. Despite its simplicity, SimpleStream delivers consistently strong performance. With only 4 recent frames, it reaches 67.7% average accuracy on OVO-Bench and 80.59% on StreamingBench. Controlled ablations further show that the value of longer context is backbone-dependent rather than uniformly increasing with model scale, and reveal a consistent perception-memory trade-off: adding more historical context can improve recall, but often weakens real-time perception. This suggests that stronger memory, retrieval, or compression modules should not be taken as evidence of progress unless they clearly outperform SimpleStream under the same protocol. We therefore argue that future streaming benchmarks should separate recent-scene perception from long-range memory, so that performance improvements from added complexity can be evaluated more clearly.",
-      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://simple-stream.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
     "2604.03144": {
       "abstract": "Industrial software development across chip design, GPU optimization, and embedded systems lacks expert reasoning traces showing how engineers reason about hardware constraints and timing semantics. In this work, we propose InCoder-32B-Thinking, trained on the data from the Error-driven Chain-of-Thought (ECoT) synthesis framework with an industrial code world model (ICWM) to generate reasoning traces. Specifically, ECoT generates reasoning chains by synthesizing the thinking content from multi-turn dialogue with environmental error feedback, explicitly modeling the error-correction process. ICWM is trained on domain-specific execution traces from Verilog simulation, GPU profiling, etc., learns the causal dynamics of how code affects hardware behavior, and enables self-verification by predicting execution outcomes before actual compilation. All synthesized reasoning traces are validated through domain toolchains, creating training data matching the natural reasoning depth distribution of industrial tasks. Evaluation on 14 general (81.3% on LiveCodeBench v5) and 9 industrial benchmarks (84.0% in CAD-Coder and 38.0% on KernelBench) shows InCoder-32B-Thinking achieves top-tier open-source results across allthis http URLOptimization",
       "comments": ""
+    },
+    "2604.02317": {
+      "abstract": "Recent streaming video understanding methods increasingly rely on complex memory mechanisms to handle long video streams. We challenge this trend with a simple finding: a sliding-window baseline that feeds only the most recent N frames to an off-the-shelf VLM already matches or surpasses published streaming models. We formalize this baseline as SimpleStream and evaluate it against 13 major offline and online video LLM baselines on OVO-Bench and StreamingBench. Despite its simplicity, SimpleStream delivers consistently strong performance. With only 4 recent frames, it reaches 67.7% average accuracy on OVO-Bench and 80.59% on StreamingBench. Controlled ablations further show that the value of longer context is backbone-dependent rather than uniformly increasing with model scale, and reveal a consistent perception-memory trade-off: adding more historical context can improve recall, but often weakens real-time perception. This suggests that stronger memory, retrieval, or compression modules should not be taken as evidence of progress unless they clearly outperform SimpleStream under the same protocol. We therefore argue that future streaming benchmarks should separate recent-scene perception from long-range memory, so that performance improvements from added complexity can be evaluated more clearly.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://simple-stream.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2604.02721": {
       "abstract": "Competitive programming remains one of the last few human strongholds in coding against AI. The best AI system to date still underperforms the best humans competitive programming: the most recent best result, Google's Gemini~3 Deep Think, attained 8th place even not being evaluated under live competition conditions. In this work, we introduce GrandCode, a multi-agent RL system designed for competitive programming. The capability of GrandCode is attributed to two key factors: (1) It orchestrates a variety of agentic modules (hypothesis proposal, solver, test generator, summarization, etc) and jointly improves them through post-training and online test-time RL; (2) We introduce Agentic GRPO specifically designed for multi-stage agent rollouts with delayed rewards and the severe off-policy drift that is prevalent in agentic RL. GrandCode is the first AI system that consistently beats all human participants in live contests of competitive programming: in the most recent three Codeforces live competitions, i.e., Round~1087 (Mar 21, 2026), Round~1088 (Mar 28, 2026), and Round~1089 (Mar 29, 2026), GrandCode placed first in all of them, beating all human participants, including legendary grandmasters. GrandCode shows that AI systems have reached a point where they surpass the strongest human programmers on the most competitive coding tasks.",
@@ -154,16 +154,16 @@
       "abstract": "With the rise of personalized, persistent LLM agent frameworks such as OpenClaw, human-centered agentic social networks in which teams of collaborative AI agents serve individual users in a social network across multiple domains are becoming a reality. This setting creates novel privacy challenges: agents must coordinate across domain boundaries, mediate between humans, and interact with other users' agents, all while protecting sensitive personal information. While prior work has evaluated multi-agent coordination and privacy preservation, the dynamics and privacy risks of human-centered agentic social networks remain unexplored. To this end, we introduce AgentSocialBench, the first benchmark to systematically evaluate privacy risk in this setting, comprising scenarios across seven categories spanning dyadic and multi-party interactions, grounded in realistic user profiles with hierarchical sensitivity labels and directed social graphs. Our experiments reveal that privacy in agentic social networks is fundamentally harder than in single-agent settings: (1) cross-domain and cross-user coordination creates persistent leakage pressure even when agents are explicitly instructed to protect information, (2) privacy instructions that teach agents how to abstract sensitive information paradoxically cause them to discuss it more (we call it abstraction paradox). These findings underscore that current LLM agents lack robust mechanisms for privacy preservation in human-centered agentic social networks, and that new approaches beyond prompt engineering are needed to make agent-mediated social coordination safe for real-world deployment.",
       "comments": "43 pages, 9 figures"
     },
-    "2604.02486": {
-      "abstract": "Vision Language Models (VLMs) achieve impressive performance across a wide range of multimodal tasks. However, on some tasks that demand fine-grained visual perception, they often fail even when the required information is present in their internal representations. In this work, we demonstrate that this gap arises from their narrow training pipeline which focuses on moving visual information to the textual space. Consequently, VLMs can only reason about visual entities that can be mapped to known concepts in the language space, leaving vision-focused tasks such as visual correspondence and reasoning about novel visual entities poorly supported. As a result, VLMs are severely limited in several important multimodal capabilities because they rely on brittle, hallucinated textual descriptions of visual entities that they cannot map to textual representations. We verify this behavior through visual correspondence tasks, in which VLMs must detect matching entities between two images. Testing across semantic, shape, and face correspondence tasks, we find that VLMs perform much better when the relevant entities are nameable in language than when they are unnameable. Mechanistically, our Logit Lens analyses confirm that VLMs explicitly assign semantic labels to nameable entities and surface more unique corresponding tokens compared to unnameable entities. Furthermore, we show that teaching completely arbitrary names for unknown entities improves performance, yet task-specific finetuning yields even stronger generalization without relying on language priors. Our findings suggest that current VLM failures on visual tasks reflect learned shortcuts from their training, rather than a fundamental limitation of multimodal architectures.",
-      "comments": ""
-    },
     "2603.22078": {
       "abstract": "Robot action planning in the real world is challenging as it requires not only understanding the current state of the environment but also predicting how it will evolve in response to actions. Vision-language-action (VLA), which repurpose large-scale vision-language models for robot action generation using action experts, have achieved notable success across a variety of robotic tasks. Nevertheless, their performance remains constrained by the scope of their training data, exhibiting limited generalization to unseen scenarios and vulnerability to diverse contextual perturbations. More recently, world models have been revisited as an alternative to VLAs. These models, referred to as world action models (WAMs), are built upon world models that are trained on large corpora of video data to predict future states. With minor adaptations, their latent representation can be decoded into robot actions. It has been suggested that their explicit dynamic prediction capacity, combined with spatiotemporal priors acquired from web-scale video pretraining, enables WAMs to generalize more effectively than VLAs. In this paper, we conduct a comparative study of prominent state-of-the-art VLA policies and recently released WAMs. We evaluate their performance on the LIBERO-Plus and RoboTwin 2.0-Plus benchmarks under various visual and language perturbations. Our results show that WAMs achieve strong robustness, with LingBot-VA reaching 74.2% success rate on RoboTwin 2.0-Plus and Cosmos-Policy achieving 82.2% on LIBERO-Plus. While VLAs such as $\\pi_{0.5}$ can achieve comparable robustness on certain tasks, they typically require extensive training with diverse robotic datasets and varied learning objectives. Hybrid approaches that partially incorporate video-based dynamic learning exhibit intermediate robustness, highlighting the importance of how video priors are integrated.",
       "comments": ""
     },
     "2604.02368": {
       "abstract": "As Large Language Models (LLMs) exhibit plateauing performance on conventional benchmarks, a pivotal challenge persists: evaluating their proficiency in complex, open-ended tasks characterizing genuine expert-level cognition. Existing frameworks suffer from narrow domain coverage, reliance on generalist tasks, or self-evaluation biases. To bridge this gap, we present XpertBench, a high-fidelity benchmark engineered to assess LLMs across authentic professional domains. XpertBench consists of 1,346 meticulously curated tasks across 80 categories, spanning finance, healthcare, legal services, education, and dual-track research (STEM and Humanities). These tasks are derived from over 1,000 submissions by domain experts--including researchers from elite institutions and practitioners with extensive clinical or industrial experience--ensuring superior ecological validity. Each task uses detailed rubrics with mostly 15-40 weighted checkpoints to assess professional rigor. To facilitate scalable yet human-aligned assessment, we introduce ShotJudge, a novel evaluation paradigm that employs LLM judges calibrated with expert few-shot exemplars to mitigate self-rewarding biases. Our empirical evaluation of state-of-the-art LLMs reveals a pronounced performance ceiling: even leading models achieve a peak success rate of only ~66%, with a mean score around 55%. Models also exhibit domain-specific divergence, showing non-overlapping strengths in quantitative reasoning versus linguistic synthesis.. These findings underscore a significant \"expert-gap\" in current AI systems and establish XpertBench as a critical instrument for navigating the transition from general-purpose assistants to specialized professional collaborators.",
+      "comments": ""
+    },
+    "2604.02486": {
+      "abstract": "Vision Language Models (VLMs) achieve impressive performance across a wide range of multimodal tasks. However, on some tasks that demand fine-grained visual perception, they often fail even when the required information is present in their internal representations. In this work, we demonstrate that this gap arises from their narrow training pipeline which focuses on moving visual information to the textual space. Consequently, VLMs can only reason about visual entities that can be mapped to known concepts in the language space, leaving vision-focused tasks such as visual correspondence and reasoning about novel visual entities poorly supported. As a result, VLMs are severely limited in several important multimodal capabilities because they rely on brittle, hallucinated textual descriptions of visual entities that they cannot map to textual representations. We verify this behavior through visual correspondence tasks, in which VLMs must detect matching entities between two images. Testing across semantic, shape, and face correspondence tasks, we find that VLMs perform much better when the relevant entities are nameable in language than when they are unnameable. Mechanistically, our Logit Lens analyses confirm that VLMs explicitly assign semantic labels to nameable entities and surface more unique corresponding tokens compared to unnameable entities. Furthermore, we show that teaching completely arbitrary names for unknown entities improves performance, yet task-specific finetuning yields even stronger generalization without relying on language priors. Our findings suggest that current VLM failures on visual tasks reflect learned shortcuts from their training, rather than a fundamental limitation of multimodal architectures.",
       "comments": ""
     },
     "2604.03118": {
