@@ -1573,9 +1573,9 @@ FOCUS_SECTIONS = [
         "key": "world_model",
         "name": "世界模型",
         "keywords": [
-            "3D世界模型", 
+            "世界模型", "world model", 
         ],
-        "exclude": ["机器人/具身智能", "医学图像分析", "生物医学"],
+        "exclude": ["机器人控制", "机器人操作", "医学图像分析", "生物医学"],
     },
     {
         "key": "gen_model_foundation",
