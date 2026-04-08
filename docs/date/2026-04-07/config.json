@@ -7,7 +7,7 @@
     "2604.04707": {
       "title": "OpenWorldLib: A Unified Codebase and Definition of Advanced World Models",
       "hf_link": "https://huggingface.co/papers/2604.04707",
-      "votes": 148
+      "votes": 149
     },
     "2604.04771": {
       "title": "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale",
@@ -17,7 +17,7 @@
     "2603.28301": {
       "title": "LIBERO-Para: A Diagnostic Benchmark and Metrics for Paraphrase Robustness in VLA Models",
       "hf_link": "https://huggingface.co/papers/2603.28301",
-      "votes": 70
+      "votes": 71
     },
     "2604.04921": {
       "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
@@ -34,25 +34,25 @@
       "hf_link": "https://huggingface.co/papers/2604.04184",
       "votes": 37
     },
+    "2604.04911": {
+      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
+      "hf_link": "https://huggingface.co/papers/2604.04911",
+      "votes": 26
+    },
+    "2604.04202": {
+      "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
+      "hf_link": "https://huggingface.co/papers/2604.04202",
+      "votes": 26
+    },
     "2604.04901": {
       "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
       "hf_link": "https://huggingface.co/papers/2604.04901",
       "votes": 25
     },
-    "2604.04911": {
-      "title": "SpatialEdit: Benchmarking Fine-Grained Image Spatial Editing",
-      "hf_link": "https://huggingface.co/papers/2604.04911",
-      "votes": 25
-    },
-    "2604.04202": {
-      "title": "ClawArena: Benchmarking AI Agents in Evolving Information Environments",
-      "hf_link": "https://huggingface.co/papers/2604.04202",
-      "votes": 25
-    },
     "2604.03679": {
       "title": "LightThinker++: From Reasoning Compression to Memory Management",
       "hf_link": "https://huggingface.co/papers/2604.03679",
-      "votes": 23
+      "votes": 24
     },
     "2604.02288": {
       "title": "Unifying Group-Relative and Self-Distillation Policy Optimization via Sample Routing",
@@ -72,7 +72,7 @@
     "2604.04917": {
       "title": "Vero: An Open RL Recipe for General Visual Reasoning",
       "hf_link": "https://huggingface.co/papers/2604.04917",
-      "votes": 15
+      "votes": 17
     },
     "2604.04759": {
       "title": "Your Agent, Their Asset: A Real-World Safety Analysis of OpenClaw",
@@ -144,6 +144,11 @@
       "hf_link": "https://huggingface.co/papers/2604.04562",
       "votes": 2
     },
+    "2604.02045": {
+      "title": "BidirLM: From Text to Omnimodal Bidirectional Encoders by Adapting and Composing Causal LLMs",
+      "hf_link": "https://huggingface.co/papers/2604.02045",
+      "votes": 2
+    },
     "2604.04767": {
       "title": "Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems",
       "hf_link": "https://huggingface.co/papers/2604.04767",
@@ -187,9 +192,9 @@
     "2604.04921": "机器学习;自然语言处理  \nKV缓存压缩方法因RoPE导致查询旋转而性能受限；  \n提出TriAttention，利用Q/K向量的中心稳定性和距离偏好来估计键重要性，提高推理准确性和效率。",
     "2604.02176": "自然语言处理；大语言模型\n文本数据频率对大语言模型的影响研究不足，作者探索该因素与LLMs性能的关系。\n提出了三个基于文本频率的单元（TFL, TFD, CTFT）构成框架，并在多个推理任务上验证了其有效性。",
     "2604.04184": "计算机视觉;多模态学习  \n现有视频大模型难以实时处理流视频并支持开放交互  \n提出AURA框架，实现端到端流视频理解与实时问答，优化了性能与部署",
-    "2604.04901": "人机交互；多智能体系统  \n当前AI代理在本地文件系统协作中存在数据约束和个性化不足的问题，难以利用行为轨迹进行训练与评估。  \n作者提出了FileGram框架，包含数据引擎、评估基准和内存架构，以文件系统行为轨迹为基础提升代理的记忆与个性化能力。",
     "2604.04911": "计算机视觉;图像生成  \n当前图像空间编辑模型难以实现精细的空间操控，需建立专门评估体系。  \n该研究提出了包含基准测试、合成数据集和基线模型的全套解决方案，显著提升了空间编辑的几何控制能力。",
     "2604.04202": "人工智能工程;智能代理  \n他针对现有基准难以评估AI代理在动态、多源矛盾信息环境中持续性信念维护能力的问题。  \n他提出了ClawArena新基准，通过模拟真实复杂环境来评估代理，并实验验证了模型能力和框架设计对性能的影响。",
+    "2604.04901": "人机交互；多智能体系统  \n当前AI代理在本地文件系统协作中存在数据约束和个性化不足的问题，难以利用行为轨迹进行训练与评估。  \n作者提出了FileGram框架，包含数据引擎、评估基准和内存架构，以文件系统行为轨迹为基础提升代理的记忆与个性化能力。",
     "2604.03679": "机器学习；自然语言处理  \n背景是大型语言模型在复杂推理中因长思考链而产生高认知负载，效率受限。  \n研究提出了LightThinker与LightThinker++方法，通过动态压缩与记忆管理来降低资源消耗并提升推理性能。",
     "2604.02288": "机器学习;强化学习  \n研究针对大语言模型的后训练强化学习范式，以解决现有方法在训练稳定性和效率上的不足。  \n提出了一种名为SRPO的统一策略优化框架，通过样本路由和熵感知动态加权，结合了不同方法的优势，实现了快速提升和长期稳定。",
     "2604.03253": "自然语言处理;代码生成  \n论文关注大型语言模型在代码生成中难以准确预测程序执行结果的问题。  \n研究提出通过模拟程序执行的训练方法，结合监督微调和强化学习，提升模型在竞争编程任务中的表现。",
@@ -209,6 +214,7 @@
     "2604.04155": "机器学习;表示学习  \n背景/任务是研究生物学和物理学基础模型在预测准确性与保持系统连续几何结构之间的内在矛盾。  \n研究通过实验揭示了离散化表征导致的几何失真问题，并提出“几何对齐税”概念以解释模型在连续几何保持上的系统性失败。",
     "2604.03687": "计算机视觉;模式识别  \n背景/任务：研究科学图像的长尾识别问题，探索在视觉特征和标注信号与自然图像差异较大的领域中，微调基础模型的有效性。  \n做了什么：提出了SciLT框架，通过自适应特征融合和双重监督学习利用多层级表示，提升了头尾类别的平衡性能，为科学长尾识别建立了基准。",
     "2604.04562": "自然语言处理；信息检索  \n科学论文发表速度加快，研究者难以追踪最新进展。  \n该平台自动发现、总结并分析arXiv热门论文，生成结构化摘要并进行多粒度趋势分析。",
+    "2604.02045": "自然语言处理;机器学习\n背景/任务：将单向因果生成语言模型转化为双向编码器以替代BERT类架构，但现有方法存在训练目标不统一、大规模下灾难性遗忘等问题。\n方法：通过系统消融实验确定关键适配因素，引入先验掩码阶段和双策略缓解遗忘，并通过合并专家模型增强多模态能力，最终构建了性能更优的编码器家族BidirLM。",
     "2604.04767": "机器学习；强化学习  \nRLVR在提升LLM推理能力时，遇到难题因无法提供有效奖励信号而难以学习。  \n论文提出Cog-DRIFT框架，通过将难题重构为更简单的变体并构建自适应课程，使模型能从易到难学习，从而突破探索瓶颈并提升性能。",
     "2604.03695": "自然语言处理;文本生成  \n该论文的背景是评估大语言模型在诗歌创作上与人类诗人的差距。  \n研究者提出了POEMetric框架，系统评估了人类和30种大模型的诗作，发现模型在形式与主题上表现良好，但在创造力、独特性等高级能力上仍远不及人类。",
     "2604.02605": "自然语言处理;多模态学习  \n这篇论文聚焦于新兴的音频-视觉大语言模型，任务是研究其跨模态感知的内部工作机制。  \n它通过机制可解释性分析，揭示了模型内部存在以视觉为主导的模态偏差，并追踪了该偏差在训练中的成因。",
@@ -264,10 +270,6 @@
       "abstract": "Video Large Language Models (VideoLLMs) have achieved strong performance on many video understanding tasks, but most existing systems remain offline and are not well-suited for live video streams that require continuous observation and timely response. Recent streaming VideoLLMs have made progress, yet current approaches often rely on decoupled trigger-response pipelines or are limited to captioning-style narration, reducing their effectiveness for open-ended question answering and long-horizon interaction. We propose AURA (Always-On Understanding and Real-Time Assistance), an end-to-end streaming visual interaction framework that enables a unified VideoLLM to continuously process video streams and support both real-time question answering and proactive responses. AURA integrates context management, data construction, training objectives, and deployment optimization for stable long-horizon streaming interaction. It achieves state-of-the-art performance on streaming benchmarks and supports a real-time demo system with ASR and TTS running at 2 FPS on two 80G accelerators. We release the AURA model together with a real-time inference framework to facilitate future research.",
       "comments": ""
     },
-    "2604.04901": {
-      "abstract": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as strict privacy barriers and the difficulty of jointly collecting multimodal real-world traces prevent scalable training and evaluation, and existing methods remain interaction-centric while overlooking dense behavioral traces in file-system operations; to address this gap, we propose FileGram, a comprehensive framework that grounds agent memory and personalization in file-system behavioral traces, comprising three core components: (1) FileGramEngine, a scalable persona-driven data engine that simulates realistic workflows and generates fine-grained multimodal action sequences at scale; (2) FileGramBench, a diagnostic benchmark grounded in file-system behavioral traces for evaluating memory systems on profile reconstruction, trace disentanglement, persona drift detection, and multimodal grounding; and (3) FileGramOS, a bottom-up memory architecture that builds user profiles directly from atomic actions and content deltas rather than dialogue summaries, encoding these traces into procedural, semantic, and episodic channels with query-time abstraction; extensive experiments show that FileGramBench remains challenging for state-of-the-art memory systems and that FileGramEngine and FileGramOS are effective, and by open-sourcing the framework, we hope to support future research on personalized memory-centric file-system agents.",
-      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://filegram.choiszt.com\" rel=\"external noopener nofollow\">this https URL</a>, Code: <a class=\"link-external link-https\" href=\"https://github.com/synvo-ai/FileGram\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
     "2604.04911": {
       "abstract": "Image spatial editing performs geometry-driven transformations, allowing precise control over object layout and camera viewpoints. Current models are insufficient for fine-grained spatial manipulations, motivating a dedicated assessment suite. Our contributions are listed: (i) We introduce SpatialEdit-Bench, a complete benchmark that evaluates spatial editing by jointly measuring perceptual plausibility and geometric fidelity via viewpoint reconstruction and framing analysis. (ii) To address the data bottleneck for scalable training, we construct SpatialEdit-500k, a synthetic dataset generated with a controllable Blender pipeline that renders objects across diverse backgrounds and systematic camera trajectories, providing precise ground-truth transformations for both object- and camera-centric operations. (iii) Building on this data, we develop SpatialEdit-16B, a baseline model for fine-grained spatial editing. Our method achieves competitive performance on general editing while substantially outperforming prior methods on spatial manipulation tasks. All resources will be made public atthis https URL.",
       "comments": "Code: <a class=\"link-external link-https\" href=\"https://github.com/EasonXiao-888/SpatialEdit\" rel=\"external noopener nofollow\">this https URL</a>"
@@ -275,6 +277,10 @@
     "2604.04202": {
       "abstract": "AI agents deployed as persistent assistants must maintain correct beliefs as their information environment evolves. In practice, evidence is scattered across heterogeneous sources that often contradict one another, new information can invalidate earlier conclusions, and user preferences surface through corrections rather than explicit instructions. Existing benchmarks largely assume static, single-authority settings and do not evaluate whether agents can keep up with this complexity. We introduce ClawArena, a benchmark for evaluating AI agents in evolving information environments. Each scenario maintains a complete hidden ground truth while exposing the agent only to noisy, partial, and sometimes contradictory traces across multi-channel sessions, workspace files, and staged updates. Evaluation is organized around three coupled challenges: multi-source conflict reasoning, dynamic belief revision, and implicit personalization, whose interactions yield a 14-category question taxonomy. Two question formats, multi-choice (set-selection) and shell-based executable checks, test both reasoning and workspace grounding. The current release contains 64 scenarios across 8 professional domains, totaling 1{,}879 evaluation rounds and 365 dynamic updates. Experiments on five agent frameworks and five language models show that both model capability (15.4% range) and framework design (9.2%) substantially affect performance, that self-evolving skill frameworks can partially close model-capability gaps, and that belief revision difficulty is determined by update design strategy rather than the mere presence of updates. Code is available atthis https URL.",
       "comments": ""
+    },
+    "2604.04901": {
+      "abstract": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as strict privacy barriers and the difficulty of jointly collecting multimodal real-world traces prevent scalable training and evaluation, and existing methods remain interaction-centric while overlooking dense behavioral traces in file-system operations; to address this gap, we propose FileGram, a comprehensive framework that grounds agent memory and personalization in file-system behavioral traces, comprising three core components: (1) FileGramEngine, a scalable persona-driven data engine that simulates realistic workflows and generates fine-grained multimodal action sequences at scale; (2) FileGramBench, a diagnostic benchmark grounded in file-system behavioral traces for evaluating memory systems on profile reconstruction, trace disentanglement, persona drift detection, and multimodal grounding; and (3) FileGramOS, a bottom-up memory architecture that builds user profiles directly from atomic actions and content deltas rather than dialogue summaries, encoding these traces into procedural, semantic, and episodic channels with query-time abstraction; extensive experiments show that FileGramBench remains challenging for state-of-the-art memory systems and that FileGramEngine and FileGramOS are effective, and by open-sourcing the framework, we hope to support future research on personalized memory-centric file-system agents.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://filegram.choiszt.com\" rel=\"external noopener nofollow\">this https URL</a>, Code: <a class=\"link-external link-https\" href=\"https://github.com/synvo-ai/FileGram\" rel=\"external noopener nofollow\">this https URL</a>"
     },
     "2604.03679": {
       "abstract": "Large language models (LLMs) excel at complex reasoning, yet their efficiency is limited by the surging cognitive overhead of long thought traces. In this paper, we propose LightThinker, a method that enables LLMs to dynamically compress intermediate thoughts into compact semantic representations. However, static compression often struggles with complex reasoning where the irreversible loss of intermediate details can lead to logical bottlenecks. To address this, we evolve the framework into LightThinker++, introducing Explicit Adaptive Memory Management. This paradigm shifts to behavioral-level management by incorporating explicit memory primitives, supported by a specialized trajectory synthesis pipeline to train purposeful memory scheduling. Extensive experiments demonstrate the framework's versatility across three dimensions. (1) LightThinker reduces peak token usage by 70% and inference time by 26% with minimal accuracy loss. (2) In standard reasoning, LightThinker++ slashes peak token usage by 69.9% while yielding a +2.42% accuracy gain under the same context budget for maximum performance. (3) Most notably, in long-horizon agentic tasks, it maintains a stable footprint beyond 80 rounds (a 60%-70% reduction), achieving an average performance gain of 14.8% across different complex scenarios. Overall, our work provides a scalable direction for sustaining deep LLM reasoning over extended horizons with minimal overhead.",
@@ -351,6 +357,10 @@
     "2604.04562": {
       "abstract": "The accelerating pace of scientific publishing makes it increasingly difficult for researchers to stay current. We present Paper Espresso, an open-source platform that automatically discovers, summarizes, and analyzes trending arXiv papers. The system uses large language models (LLMs) to generate structured summaries with topical labels and keywords, and provides multi-granularity trend analysis at daily, weekly, and monthly scales through LLM-driven topic consolidation. Over 35 months of continuous deployment, Paper Espresso has processed over 13,300 papers and publicly released all structured metadata, revealing rich dynamics in the AI research landscape: a mid-2025 surge in reinforcement learning for LLM reasoning, non-saturating topic emergence (6,673 unique topics), and a positive correlation between topic novelty and community engagement (2.0x median upvotes for the most novel papers). A live demo is available atthis https URL.",
       "comments": ""
+    },
+    "2604.02045": {
+      "abstract": "Transforming causal generative language models into bidirectional encoders offers a powerful alternative to BERT-style architectures. However, current approaches remain limited: they lack consensus on optimal training objectives, suffer from catastrophic forgetting at scale, and fail to flexibly integrate the vast ecosystem of specialized generative models. In this work, through systematic ablations on the Gemma3 and Qwen3 families, we identify the key factors driving successful adaptation, highlighting the critical role of an often-omitted prior masking phase. To scale this process without original pre-training data, we introduce a dual strategy combining linear weight merging with a lightweight multi-domain data mixture that mitigates catastrophic forgetting. Finally, we augment our encoders by merging them with specialized causal models, seamlessly transferring modality- and domain-specific capabilities. This open-source recipe, designed for any causal decoder LLM, yields BidirLM, a family of five encoders that outperform alternatives on text, vision, and audio representation benchmarks.",
+      "comments": "30 pages, 16 figures, 10 tables"
     },
     "2604.04767": {
       "abstract": "Reinforcement learning from verifiable rewards (RLVR) has improved the reasoning abilities of LLMs, yet a fundamental limitation remains: models cannot learn from problems that are too difficult to solve under their current policy, as these yield no meaningful reward signal. We propose a simple yet effective solution based on task reformulation. We transform challenging open-ended problems into cognitively simpler variants -- such as multiple-choice and cloze formats -- that preserve the original answer while reducing the effective search space and providing denser learning signals. These reformulations span a spectrum from discriminative to generative tasks, which we exploit to bootstrap learning: models first learn from structured, easier formats, and this knowledge transfers back to improve performance on the original open-ended problems. Building on this insight, we introduce Cog-DRIFT, a framework that constructs reformulated variants and organizes them into an adaptive curriculum based on difficulty. Training progresses from easier to harder formats, enabling the model to learn from problems that previously yielded zero signal under standard RL post-training. Cog-DRIFT not only improves on the originally unsolvable hard problems (absolute +10.11% for Qwen and +8.64% for Llama) but also generalizes well to other held-out datasets. Across 2 models and 6 reasoning benchmarks, our method consistently outperforms standard GRPO and strong guided-exploration baselines. On average, Cog-DRIFT shows +4.72% (Qwen) and +3.23% (Llama) improvements over the second-best baseline. We further show that Cog-DRIFT improves pass@k at test time, and the curriculum improves sample efficiency. Overall, our results highlight task reformulation and curriculum learning as an effective paradigm for overcoming the exploration barrier in LLM post-training.",
