@@ -1570,14 +1570,6 @@ FOCUS_SECTIONS = [
         "exclude": ["机器人/具身智能",  "蛋白质结构预测", "生物医学"],
     },
     {
-        "key": "world_model",
-        "name": "世界模型",
-        "keywords": [
-            "世界模型", "world model", 
-        ],
-        "exclude": ["机器人控制", "机器人操作", "医学图像分析", "生物医学"],
-    },
-    {
         "key": "gen_model_foundation",
         "name": "图片/视频/多模态生成",
         "keywords": [
@@ -1590,15 +1582,23 @@ FOCUS_SECTIONS = [
             "纯文本生成", "纯大语言模型", "机器人/具身智能"
         ],
     },
-    {
-        "key": "robot_embodied_intelligence",
-        "name": "机器人/具身智能",
-        "keywords": [
-            "机器人", "机器人学习", "具身智能", "机器人操作", "机械臂", "抓取", "操控",
-            "运动规划", "控制", "导航", "强化学习机器人", "VLA", "机器人强化学习"
-        ],
-        "exclude": [],
-    },
+    # {
+    #     "key": "world_model",
+    #     "name": "世界模型",
+    #     "keywords": [
+    #         "世界模型", "world model", 
+    #     ],
+    #     "exclude": ["机器人控制", "机器人操作", "医学图像分析", "生物医学"],
+    # },
+    # {
+    #     "key": "robot_embodied_intelligence",
+    #     "name": "机器人/具身智能",
+    #     "keywords": [
+    #         "机器人", "机器人学习", "具身智能", "机器人操作", "机械臂", "抓取", "操控",
+    #         "运动规划", "控制", "导航", "强化学习机器人", "VLA", "机器人强化学习"
+    #     ],
+    #     "exclude": [],
+    # },
 ]
 
 PROMPT_STEP04_SUMMARY = """
