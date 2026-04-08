@@ -7,6 +7,7 @@ import requests
 from datetime import datetime, timedelta, timezone
 from dataclasses import dataclass
 from collections import OrderedDict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import urllib3.exceptions
@@ -1177,14 +1178,23 @@ class PaperPipeline:
         focus_sections = OrderedDict((s["name"], []) for s in FOCUS_SECTIONS)
         focus_id_set = set()
         aid_list = list(base_info.keys())
-        total_papers = len(aid_list)
-        for idx, aid in enumerate(tqdm(
-            aid_list,
-            desc="step03 | 单篇投票筛选重点",
-            unit="篇",
-        ), start=1):
-            pipeline_debug("step03", "板块归类进度", f"{idx}/{total_papers} 论文 aid={aid}")
-            section_cache_dir = f"{cache_root}/step03_sections"
+        # 去重：避免同一 aid 被并发提交两次导致重复请求/写缓存
+        aid_list_unique = list(dict.fromkeys(aid_list))
+        total_papers = len(aid_list_unique)
+
+        name_by_key = {s["key"]: s["name"] for s in FOCUS_SECTIONS}
+        section_cache_dir = f"{cache_root}/step03_sections"
+
+        def _classify_one(aid: str) -> tuple[str, str | None]:
+            assert isinstance(aid, str)
+            assert aid in base_info
+            assert aid in details_by_aid
+            assert "title" in base_info[aid]
+            assert "abstract" in details_by_aid[aid]
+            assert isinstance(base_info[aid]["title"], str)
+            assert isinstance(details_by_aid[aid]["abstract"], str)
+
+            pipeline_debug("step03", "板块归类提交", f"论文 aid={aid}")
             section_key = self.classify_paper_section(
                 base_info[aid]["title"],
                 details_by_aid[aid]["abstract"],
@@ -1195,17 +1205,44 @@ class PaperPipeline:
                 debug_step="step03",
                 debug_title="板块归类",
             )
-            if section_key is None:
-                continue
+            return aid, section_key
 
-            # 不重复：命中第一个板块就不会再去第二个；且全局 set 去重
-            if aid in focus_id_set:
-                continue
-            focus_id_set.add(aid)
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = {executor.submit(_classify_one, aid): aid for aid in aid_list_unique}
+            pbar = tqdm(
+                total=total_papers,
+                desc="step03 | 单篇投票筛选重点",
+                unit="篇",
+            )
+            try:
+                done = 0
+                for fut in as_completed(futures):
+                    aid = futures[fut]
+                    try:
+                        aid, section_key = fut.result()
+                    except Exception as e:
+                        pipeline_debug(
+                            "step03",
+                            "板块归类异常",
+                            f"论文 aid={aid} err={type(e).__name__}: {e}",
+                        )
+                        section_key = None
 
-            name_by_key = {s["key"]: s["name"] for s in FOCUS_SECTIONS}
-            assert section_key in name_by_key
-            focus_sections[name_by_key[section_key]].append(aid)
+                    done += 1
+                    pipeline_debug("step03", "板块归类进度", f"{done}/{total_papers} 论文 aid={aid}")
+                    pbar.update(1)
+
+                    if section_key is None:
+                        continue
+                    assert section_key in name_by_key
+
+                    # 不重复：命中第一个板块就不会再去第二个；且全局 set 去重
+                    if aid in focus_id_set:
+                        continue
+                    focus_id_set.add(aid)
+                    focus_sections[name_by_key[section_key]].append(aid)
+            finally:
+                pbar.close()
 
         pipeline_debug(
             "step03",
