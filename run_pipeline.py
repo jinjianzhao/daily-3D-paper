@@ -1207,7 +1207,7 @@ class PaperPipeline:
             )
             return aid, section_key
 
-        with ThreadPoolExecutor(max_workers=5) as executor:
+        with ThreadPoolExecutor(max_workers=6) as executor:
             futures = {executor.submit(_classify_one, aid): aid for aid in aid_list_unique}
             pbar = tqdm(
                 total=total_papers,
