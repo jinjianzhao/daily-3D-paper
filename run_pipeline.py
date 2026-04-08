@@ -674,35 +674,71 @@ class PaperPipeline:
         # 注意：out2 是“回答”，不能再当 prompt 发给 LLM；这里只做纯解析
         return self._parse_yes_no(out2, debug_step=debug_step, debug_title=debug_title)
 
-    def _build_section_prompt(
+    def _llm_yes_no_two_round_with_trace(
         self,
+        prompt_step1: str,
+        prompt_step2: str,
         *,
-        title: str,
-        abstract: str,
-        section_name: str,
-        section_keywords: list,
-        section_excludes: list,
-    ) -> str:
-        assert isinstance(title, str)
-        assert isinstance(abstract, str)
-        assert isinstance(section_name, str)
-        assert isinstance(section_keywords, list)
-        assert isinstance(section_excludes, list)
-        for kw in section_keywords:
-            assert isinstance(kw, str)
-        for ex in section_excludes:
-            assert isinstance(ex, str)
-        prompt = PROMPT_STEP03_SECTION_CLASSIFY.format(
-            title=title,
-            abstract=abstract,
-            section_name=section_name,
-            section_keywords="、".join(section_keywords),
-        )
-        if section_excludes:
-            prompt += "\n\n排除项（若论文主要内容更贴近这些方向，请回答“否”）：{excludes}".format(
-                excludes="、".join(section_excludes)
-            )
-        return prompt
+        debug_step: str,
+        debug_title: str,
+    ) -> tuple[bool, dict]:
+        """两轮 LLM：返回 bool 结果，同时返回两轮 prompt/output 便于落盘缓存。"""
+        assert isinstance(prompt_step1, str)
+        assert isinstance(prompt_step2, str)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+        assert "{step1_output}" in prompt_step2
+
+        out1 = self._post_chat_completion(prompt_step1)
+        p2 = prompt_step2.replace("{step1_output}", out1)
+        out2 = self._post_chat_completion(p2)
+        v = self._parse_yes_no(out2, debug_step=debug_step, debug_title=debug_title)
+
+        trace = {
+            "round1": {"prompt": prompt_step1, "output": out1},
+            "round2": {"prompt": p2, "output": out2},
+        }
+        assert isinstance(trace, dict)
+        assert "round1" in trace and "round2" in trace
+        assert isinstance(trace["round1"], dict) and isinstance(trace["round2"], dict)
+        assert "prompt" in trace["round1"] and "output" in trace["round1"]
+        assert "prompt" in trace["round2"] and "output" in trace["round2"]
+        assert isinstance(trace["round1"]["prompt"], str)
+        assert isinstance(trace["round1"]["output"], str)
+        assert isinstance(trace["round2"]["prompt"], str)
+        assert isinstance(trace["round2"]["output"], str)
+
+        return v, trace
+
+    # def _build_section_prompt(
+    #     self,
+    #     *,
+    #     title: str,
+    #     abstract: str,
+    #     section_name: str,
+    #     section_keywords: list,
+    #     section_excludes: list,
+    # ) -> str:
+    #     assert isinstance(title, str)
+    #     assert isinstance(abstract, str)
+    #     assert isinstance(section_name, str)
+    #     assert isinstance(section_keywords, list)
+    #     assert isinstance(section_excludes, list)
+    #     for kw in section_keywords:
+    #         assert isinstance(kw, str)
+    #     for ex in section_excludes:
+    #         assert isinstance(ex, str)
+    #     prompt = PROMPT_STEP03_SECTION_CLASSIFY.format(
+    #         title=title,
+    #         abstract=abstract,
+    #         section_name=section_name,
+    #         section_keywords="、".join(section_keywords),
+    #     )
+    #     if section_excludes:
+    #         prompt += "\n\n排除项（若论文主要内容更贴近这些方向，请回答“否”）：{excludes}".format(
+    #             excludes="、".join(section_excludes)
+    #         )
+    #     return prompt
 
     def _build_section_prompt_two_round(
         self,
@@ -728,9 +764,8 @@ class PaperPipeline:
             abstract=abstract,
             section_name=section_name,
             section_keywords="、".join(section_keywords),
+            section_excludes="、".join(section_excludes),
         )
-        if section_excludes:
-            p1 += "\n\n排除项：{excludes}".format(excludes="、".join(section_excludes))
         p2 = PROMPT_STEP03_SECTION_CLASSIFY_STEP2.format(
             section_name=section_name,
             step1_output="{step1_output}",
@@ -807,6 +842,7 @@ class PaperPipeline:
         for idx, s in enumerate(sections):
             excludes = s["exclude"] if "exclude" in s else []
             votes = []
+            llm_traces = []
             support = 0
             oppose = 0
             for k in range(self.cfg.focus_vote_times):
@@ -817,8 +853,14 @@ class PaperPipeline:
                     section_keywords=s["keywords"],
                     section_excludes=excludes,
                 )
-                v = self._llm_yes_no_two_round(p1, p2, debug_step=debug_step, debug_title=debug_title)
+                v, trace = self._llm_yes_no_two_round_with_trace(
+                    p1,
+                    p2,
+                    debug_step=debug_step,
+                    debug_title=debug_title,
+                )
                 votes.append(v)
+                llm_traces.append({"k": k, **trace})
                 if v:
                     support += 1
                 else:
@@ -849,6 +891,7 @@ class PaperPipeline:
                     "key": s["key"],
                     "name": s["name"],
                     "votes": votes,
+                    "llm_traces": llm_traces,
                     "support": support,
                     "n_votes": self.cfg.focus_vote_times,
                     "threshold": self.cfg.focus_vote_threshold,
@@ -1343,49 +1386,62 @@ class PaperPipeline:
 # - step08：translate_figure_captions 批量图注中译；缓存目录 step08_figure_caption_zh/{aid}.json
 # PipelineConfig.focus_selection_llm_runs 控制 step02 合并轮数；缓存单文件 step02_focus_llm.json（output）
 # ---------------------------------------------------------------------------
-PROMPT_STEP02_FOCUS_STEP2 = """
-{step1_output}
-上述为第一轮分析草稿，可能杂乱。
-请只根据上文，输出与3D相关的 所有 arXiv 编号，
-格式严格便于程序解析：仅编号本身，多个编号用空格分隔，
-格式如 2604.01234，不要其它说明文字。
-"""
+# PROMPT_STEP02_FOCUS_STEP2 = """
+# {step1_output}
+# 上述为第一轮分析草稿，可能杂乱。
+# 请只根据上文，输出与3D相关的 所有 arXiv 编号，
+# 格式严格便于程序解析：仅编号本身，多个编号用空格分隔，
+# 格式如 2604.01234，不要其它说明文字。
+# """
 
-# 新的单篇论文判断提示词
-PROMPT_STEP02_JUDGE_SINGLE = """
-论文标题：{title}
-论文摘要：{abstract}
+# # 新的单篇论文判断提示词
+# PROMPT_STEP02_JUDGE_SINGLE = """
+# 论文标题：{title}
+# 论文摘要：{abstract}
 
-请判断这篇论文是否与以下领域之一强相关：
-3D生成、3D重建、计算机图形学、Mesh几何处理、3D参数化表达、3D表达、3D理解、3D编辑、3D建模
+# 请判断这篇论文是否与以下领域之一强相关：
+# 3D生成、3D重建、计算机图形学、Mesh几何处理、3D参数化表达、3D表达、3D理解、3D编辑、3D建模
 
-请只回答"是"或"否"，不要任何解释。
-"""
+# 请只回答"是"或"否"，不要任何解释。
+# """
 
 # 板块归类：统一模板（避免在每个 section 里重复写同样的 prompt 文案）
-PROMPT_STEP03_SECTION_CLASSIFY = """论文标题：{title}
-论文摘要：{abstract}
+# PROMPT_STEP03_SECTION_CLASSIFY = """论文标题：{title}
+# 论文摘要：{abstract}
 
-当前判断板块：【{section_name}】
-该板块关键词/方向：{section_keywords}
+# 当前判断板块：【{section_name}】
+# 该板块关键词/方向：{section_keywords}
 
-请严格判断：这篇论文的“主要研究内容”是否属于该板块？
-只回答"是"或"否"，不要任何解释。"""
+# 请严格判断：这篇论文的“主要研究内容”是否属于该板块？
+# 只回答"是"或"否"，不要任何解释。"""
 
 # 板块归类两轮：第1轮自由分析；第2轮强制输出“是/否”
-PROMPT_STEP03_SECTION_CLASSIFY_STEP1 = """论文标题：{title}
-论文摘要：{abstract}
+PROMPT_STEP03_SECTION_CLASSIFY_STEP1 = """你是一个严格的论文板块归类助手。
 
-当前判断板块：【{section_name}】
-该板块关键词/方向：{section_keywords}
+请根据“主要研究内容”判断，该论文是否应归入目标板块。若论文主要内容更贴近排除项，则应判为“不属于”。
+
+【论文标题】
+{title}
+
+【论文摘要】
+{abstract}
+
+【目标板块】
+{section_name}
+
+【该板块关键词/方向（可供参考）】
+{section_keywords}
+
+【排除项（如果存在排除项，若更贴近则判“否”）】
+{section_excludes}
 
 如果存在排除项，请同时考虑：论文主要内容若更贴近排除项，则不应归入该板块。
-请你先自由分析这篇论文是否属于该板块，并说明关键依据（可用要点列出）。"""
+请你分析这篇论文是否属于该板块，并说明关键依据。最后给出一个明确结论，该论文是否归入该板块？"""
 
 PROMPT_STEP03_SECTION_CLASSIFY_STEP2 = """下面是你对“是否属于板块【{section_name}】”的第一轮分析草稿：
 {step1_output}
 
-现在请你只基于上面的草稿，给出最终结论：
+现在请你只基于上面的草稿，给出最终结论：该论文是否归入该板块？
 只回答"是"或"否"，不要任何解释、不要输出多余字符。"""
 
 # 动态板块：按顺序（优先级）依次判断，命中即归类，不重复
@@ -1395,7 +1451,7 @@ FOCUS_SECTIONS = [
         "name": "3D重建/生成",
         "keywords": [
             "3D生成", "3D重建", "计算机图形学","Mesh几何处理","3D参数化表达","3D表达","3D理解",
-            "网格","拓扑结构","神经渲染","多模态3D生成","3D动画","3D绑骨","3D风格化","3D编辑","3D纹理生成",
+            "3D网格", "3D网格拓扑结构", "3D神经渲染","多模态3D生成","3D动画","3D绑骨","3D风格化","3D编辑","3D纹理生成",
             "3D场景生成", "物理仿真",  "3DGS", "3D动态重建"
         ],
         "exclude": ["机器人/具身智能"],
