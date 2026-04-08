@@ -59,15 +59,15 @@
       "hf_link": "https://huggingface.co/papers/2604.05117",
       "votes": 23
     },
+    "2604.05091": {
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
+      "hf_link": "https://huggingface.co/papers/2604.05091",
+      "votes": 22
+    },
     "2604.04323": {
       "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
       "hf_link": "https://huggingface.co/papers/2604.04323",
       "votes": 22
-    },
-    "2604.05091": {
-      "title": "MegaTrain: Full Precision Training of 100B+ Parameter Large Language Models on a Single GPU",
-      "hf_link": "https://huggingface.co/papers/2604.05091",
-      "votes": 21
     },
     "2604.06170": {
       "title": "Paper Circle: An Open-source Multi-agent Research Discovery and Analysis Framework",
@@ -166,36 +166,36 @@
     }
   },
   "summaries": {
-    "2604.06132": "人工智能;智能代理  \n现有智能代理评估存在轨迹不透明、安全鲁棒性评估不足和模态覆盖窄的局限。  \n作者提出了Claw-Eval评估套件，通过多证据通道记录代理行为并进行细粒度评估，实验揭示了现有评估的不可靠性及多模态性能差异。",
-    "2604.05015": "计算机视觉；视频理解  \n现有视频理解评测基准表现饱和，导致榜单分数与模型实际能力脱节，需构建新基准以系统评估模型鲁棒性与可靠性。  \n该研究提出了Video-MME-v2这一新基准，采用渐进式三级分层评估框架和基于分组的非线性评估策略，通过严格人工标注流程构建高质量数据集，揭示了当前模型在视觉信息聚合、时序建模和高层推理方面的瓶颈。",
+    "2604.02648": "软件工程；软件测试与调试  \n背景/任务是：为评估大语言模型自主发现软件缺陷的能力，以游戏开发为代表领域。  \n所做工作是：构建了包含30个游戏和124个已验证缺陷的基准GBQA，并设计了一个基于多轮交互的智能体进行实验，结果表明当前模型在此任务上仍面临巨大挑战。",
+    "2604.05181": "计算生物学；蛋白质设计  \n背景/任务是利用人工智能设计新酶，以扩展自然界有限的酶催化反应范围。  \n研究者开发了DISCO模型，通过序列与结构的协同设计，成功创造出催化多种新反应的高活性酶。",
     "2604.03922": "机器学习;自然语言处理  \n背景/任务：解决在LLM生成的代码候选中，因测试本身可能不可靠而难以选择最佳代码的问题。  \n所做工作：提出了ACES方法，通过计算留一法AUC来评估测试的区分能力，并基于此对代码进行排序和选择，提升了代码生成的准确率。",
-    "2604.05404": "自然语言处理；大语言模型  \n针对工具集成推理场景中现有效率指标无法反映实际推理延迟的问题  \n提出并验证了硬件感知的PTE指标，发现其与真实延迟更匹配且高PTE成本与低推理正确性相关",
-    "2604.04949": "信息检索;交互学习  \n背景/任务是传统信息检索系统依赖人类交互数据，而随着大语言模型驱动的搜索代理兴起，检索模型面临与代理使用模式不匹配的问题。  \n他们提出了基于代理交互轨迹的新训练范式LRAT，通过挖掘轨迹中的行为信号优化检索模型，提升了代理搜索的效果和效率。",
+    "2604.05015": "计算机视觉；视频理解  \n现有视频理解评测基准表现饱和，导致榜单分数与模型实际能力脱节，需构建新基准以系统评估模型鲁棒性与可靠性。  \n该研究提出了Video-MME-v2这一新基准，采用渐进式三级分层评估框架和基于分组的非线性评估策略，通过严格人工标注流程构建高质量数据集，揭示了当前模型在视觉信息聚合、时序建模和高层推理方面的瓶颈。",
+    "2604.06132": "人工智能;智能代理  \n现有智能代理评估存在轨迹不透明、安全鲁棒性评估不足和模态覆盖窄的局限。  \n作者提出了Claw-Eval评估套件，通过多证据通道记录代理行为并进行细粒度评估，实验揭示了现有评估的不可靠性及多模态性能差异。",
     "2604.01591": "强化学习；自然语言处理  \n背景/任务：提升大型语言模型在数学推理问题上的求解与自我优化能力。  \n所做工作：提出ThinkTwice两阶段训练框架，通过联合优化求解和精炼过程，在多个基准上显著提升了模型性能，并分析了其隐含的“校正-巩固”训练动态。",
+    "2604.05404": "自然语言处理；大语言模型  \n针对工具集成推理场景中现有效率指标无法反映实际推理延迟的问题  \n提出并验证了硬件感知的PTE指标，发现其与真实延迟更匹配且高PTE成本与低推理正确性相关",
     "2604.04934": "计算机视觉；图像生成\n现有方法将虚拟试穿与姿态动画分步处理，导致图像失真和不一致。\n本研究提出统一框架Vanast，通过构建三元组数据和双模块架构，直接生成服装迁移的人体动画视频。",
-    "2604.05117": "计算机科学;计算机视觉与模式识别  \n当前视觉语言模型在视频理解上落后于文本推理，且现有基准和训练数据存在大量仅需文本即可回答的问题。  \n研究者提出了VidGround方法，通过筛选仅依赖视觉线索的问题进行后训练，显著提升了模型性能并揭示了数据质量是关键瓶颈。",
-    "2604.05091": "机器学习;深度学习  \n背景/任务是解决在单GPU上高效训练超大规模语言模型时面临的显存限制问题。  \n该系统通过将参数和优化器状态存储在主机内存，并采用流水线双缓冲执行引擎与无状态层模板来提升训练效率。",
     "2604.04323": "自然语言处理;大语言模型  \n背景/任务是评估在更现实的技能检索与使用场景下，LLM代理利用技能的性能表现。  \n研究发现技能带来的性能增益在现实场景中很脆弱，并提出并通过技能检索和技能精炼方法有效提升了性能。",
     "2604.06170": "信息检索;自然语言处理  \n研究人员面临科学文献激增导致发现与评估效率低下的问题。  \n他们提出了Paper Circle系统，通过多智能体架构实现文献发现与知识图谱分析，提升了检索与理解的自动化能力。",
-    "2604.04215": "自然语言处理;机器学习  \n背景/任务是解决扩散大语言模型开源生态碎片化、后训练流程不统一的问题，导致研究迭代慢、复现困难且难以公平比较。  \n他们开发了DARE框架，统一了多种后训练和评估方法，为扩散大语言模型提供了可复用的研究平台。",
-    "2604.05181": "计算生物学；蛋白质设计  \n背景/任务是利用人工智能设计新酶，以扩展自然界有限的酶催化反应范围。  \n研究者开发了DISCO模型，通过序列与结构的协同设计，成功创造出催化多种新反应的高活性酶。",
-    "2604.05172": "自然语言处理；智能体与多智能体系统  \nLLM智能体在真实生产力任务中的部署因风险而难以评估，现有基准无法模拟复杂多服务环境。  \n研究者创建了ClawsBench，一个包含五个高保真模拟服务的基准，通过实验分析不同模型与提示策略在任务成功率和安全行为上的表现。",
-    "2604.06156": "计算机视觉;多模态学习  \n背景/任务：针对多模态大语言模型在嵌入任务中生成推理能力未充分利用，以及直接引入思维链推理会导致结构错位和计算冗余的问题。  \n所做工作：提出了MMEmb-R1自适应推理框架，通过潜在变量建模和强化学习选择性地触发有益推理，在减少开销的同时提升了嵌入性能。",
-    "2604.02648": "软件工程；软件测试与调试  \n背景/任务是：为评估大语言模型自主发现软件缺陷的能力，以游戏开发为代表领域。  \n所做工作是：构建了包含30个游戏和124个已验证缺陷的基准GBQA，并设计了一个基于多轮交互的智能体进行实验，结果表明当前模型在此任务上仍面临巨大挑战。",
+    "2604.04949": "信息检索;交互学习  \n背景/任务是传统信息检索系统依赖人类交互数据，而随着大语言模型驱动的搜索代理兴起，检索模型面临与代理使用模式不匹配的问题。  \n他们提出了基于代理交互轨迹的新训练范式LRAT，通过挖掘轨迹中的行为信号优化检索模型，提升了代理搜索的效果和效率。",
     "2603.24652": "自然语言处理;模型压缩与优化  \n背景/任务：研究网络剪枝在语言模型中应用时的性能不一致问题，特别是生成任务与非生成任务的差异。  \n分析内容：从表示层次视角分解模型内部计算，发现剪枝扰动在概率空间被非线性变换放大，导致生成性能下降，而嵌入空间和逻辑空间的鲁棒性维持了非生成任务的有效性。",
-    "2604.06168": "机器人学;强化学习  \n背景/任务：研究如何利用世界动作模型（WAMs）进行机器人策略学习，以克服现有方法依赖独立动作模块或非像素接地表示的局限性。  \n所做工作：提出了一种称为“动作图像”的统一世界动作模型，将策略学习构建为多视角视频生成任务，通过将机器人动作转化为基于像素的、可解释的动作图像，使视频主干网络能直接作为零样本策略执行控制任务。",
-    "2604.06169": "机器学习;自然语言处理  \n背景/任务：传统静态训练-部署范式限制了大型语言模型在实时任务中动态适应新信息的能力，测试时训练（TTT）虽能更新参数但存在架构、效率和目标不匹配等障碍。  \n所做工作：提出“原位测试时训练”框架，将MLP模块的最终投影矩阵作为可调快速权重，并设计面向下一词预测的理论对齐目标与分块更新机制，实现了无需重训练的高效持续学习增强。",
-    "2604.05533": "强化学习；多模态学习  \n背景/任务：提升多模态大模型智能体在复杂游戏环境中通过复用经验解决新任务的效率。  \n所做工作：提出Echo记忆框架，将经验分解为可迁移的五维知识，并利用情境类比学习实现经验的检索与适配，在Minecraft中验证了其加速任务完成的效果。",
+    "2604.05117": "计算机科学;计算机视觉与模式识别  \n当前视觉语言模型在视频理解上落后于文本推理，且现有基准和训练数据存在大量仅需文本即可回答的问题。  \n研究者提出了VidGround方法，通过筛选仅依赖视觉线索的问题进行后训练，显著提升了模型性能并揭示了数据质量是关键瓶颈。",
     "2604.05081": "计算机科学;人工智能应用  \nMedGemma 1.5 4B在原有医学多模态模型基础上，扩展了处理高维医学影像、时序数据及复杂文档的能力。  \n它通过创新的架构与训练方法整合了新模态，在多项医学影像分析和文本理解任务上取得了显著的性能提升。",
+    "2604.04215": "自然语言处理;机器学习  \n背景/任务是解决扩散大语言模型开源生态碎片化、后训练流程不统一的问题，导致研究迭代慢、复现困难且难以公平比较。  \n他们开发了DARE框架，统一了多种后训练和评估方法，为扩散大语言模型提供了可复用的研究平台。",
+    "2604.05091": "机器学习;深度学习  \n背景/任务是解决在单GPU上高效训练超大规模语言模型时面临的显存限制问题。  \n该系统通过将参数和优化器状态存储在主机内存，并采用流水线双缓冲执行引擎与无状态层模板来提升训练效率。",
+    "2604.06169": "机器学习;自然语言处理  \n背景/任务：传统静态训练-部署范式限制了大型语言模型在实时任务中动态适应新信息的能力，测试时训练（TTT）虽能更新参数但存在架构、效率和目标不匹配等障碍。  \n所做工作：提出“原位测试时训练”框架，将MLP模块的最终投影矩阵作为可调快速权重，并设计面向下一词预测的理论对齐目标与分块更新机制，实现了无需重训练的高效持续学习增强。",
+    "2604.06156": "计算机视觉;多模态学习  \n背景/任务：针对多模态大语言模型在嵌入任务中生成推理能力未充分利用，以及直接引入思维链推理会导致结构错位和计算冗余的问题。  \n所做工作：提出了MMEmb-R1自适应推理框架，通过潜在变量建模和强化学习选择性地触发有益推理，在减少开销的同时提升了嵌入性能。",
+    "2604.05172": "自然语言处理；智能体与多智能体系统  \nLLM智能体在真实生产力任务中的部署因风险而难以评估，现有基准无法模拟复杂多服务环境。  \n研究者创建了ClawsBench，一个包含五个高保真模拟服务的基准，通过实验分析不同模型与提示策略在任务成功率和安全行为上的表现。",
+    "2604.05533": "强化学习；多模态学习  \n背景/任务：提升多模态大模型智能体在复杂游戏环境中通过复用经验解决新任务的效率。  \n所做工作：提出Echo记忆框架，将经验分解为可迁移的五维知识，并利用情境类比学习实现经验的检索与适配，在Minecraft中验证了其加速任务完成的效果。",
+    "2604.06168": "机器人学;强化学习  \n背景/任务：研究如何利用世界动作模型（WAMs）进行机器人策略学习，以克服现有方法依赖独立动作模块或非像素接地表示的局限性。  \n所做工作：提出了一种称为“动作图像”的统一世界动作模型，将策略学习构建为多视角视频生成任务，通过将机器人动作转化为基于像素的、可解释的动作图像，使视频主干网络能直接作为零样本策略执行控制任务。",
+    "2604.04074": "机器学习；自动化评审  \n背景/任务是应对机器学习领域同行评审中因提交量增加和评审时间有限带来的压力。  \n该研究提出了一个基于证据的评审系统FactReview，通过提取主张、定位文献和执行代码验证来生成有证据支持的评审意见。",
     "2604.05963": "自然语言处理;代码修复  \n背景/任务：大语言模型在程序修复中存在过度编辑问题，需在修复错误时最大化重用正确代码。  \n所做工作：提出PRepair框架，通过“自我破坏”生成多样化缺陷程序，并用编辑感知奖励训练模型以实现最小化正确修改。",
+    "2604.04356": "机器学习;模型压缩  \n背景：大型MoE语言模型参数量大，部署内存挑战高。  \n方法：提出REAM方法，通过合并专家权重减少内存占用，优于剪枝等传统方法。",
     "2604.04979": "自然语言处理;智能体与多智能体系统  \n任务背景是编码智能体在处理冗长工具输出时效率低下，需提取关键信息以提高决策效率。  \n研究者构建了任务导向的工具输出剪枝基准，并训练轻量级模型实现高效信息提取，显著优于大型零样本模型和启发式基线。",
     "2604.05939": "自然语言处理；人机交互  \n背景/任务是揭示大语言模型模拟人类行为时存在行为僵化和价值极化问题，并指出现有评估方法的自我参照偏差。  \n所做工作是提出了基于刺激-有机体-反应模型和基本价值观理论的CVA架构，通过解耦行动生成与认知推理，在真实交互数据上验证了其提升行为保真度和缓解极化的有效性。",
-    "2604.04074": "机器学习；自动化评审  \n背景/任务是应对机器学习领域同行评审中因提交量增加和评审时间有限带来的压力。  \n该研究提出了一个基于证据的评审系统FactReview，通过提取主张、定位文献和执行代码验证来生成有证据支持的评审意见。",
-    "2604.05467": "自然语言处理；信息检索  \n针对RAG评估多关注最终答案而忽视单个证据效用的问题，提出了一个基于干预的轻量级框架CUE-R。  \n该框架通过扰动单个证据项来衡量其效用，实验发现移除或替换证据会显著损害性能，揭示了答案级评估的不足。",
-    "2604.03619": "计算机视觉;医学成像;;机器学习  \n当前对fMRI长程时空动力学的建模面临高维数据带来的内存和计算瓶颈。  \n提出TABLeT模型，通过预训练的2D图像自编码器压缩fMRI数据为紧凑令牌，利用Transformer进行高效长序列建模，并在多个数据集上取得性能与效率提升。",
-    "2604.04356": "机器学习;模型压缩  \n背景：大型MoE语言模型参数量大，部署内存挑战高。  \n方法：提出REAM方法，通过合并专家权重减少内存占用，优于剪枝等传统方法。",
     "2604.06079": "计算机视觉; 程序合成  \n背景/任务：解决图形程序合成中从静态科学图表逆向生成可编辑TikZ代码的难题，主要挑战是现有数据质量不足和评估体系缺失。  \n具体工作：构建了高质量数据集SciTikZ-230K和评估基准SciTikZ-Bench，并提出了双重自洽强化学习优化方法，训练出的模型SciTikZer-8B性能超越了现有大型模型。",
-    "2604.01622": "自然语言处理;生成模型\n背景/任务是研究扩散语言模型（DLMs）中的专家选择路由机制，以解决现有基于令牌选择路由的负载不平衡和计算分配僵化问题。\n他们提出了专家选择路由及其变体，实现了确定性负载平衡和自适应计算分配，并通过实验验证了其在高吞吐量、快速收敛和下游任务性能上的优势。"
+    "2604.03619": "计算机视觉;医学成像;;机器学习  \n当前对fMRI长程时空动力学的建模面临高维数据带来的内存和计算瓶颈。  \n提出TABLeT模型，通过预训练的2D图像自编码器压缩fMRI数据为紧凑令牌，利用Transformer进行高效长序列建模，并在多个数据集上取得性能与效率提升。",
+    "2604.01622": "自然语言处理;生成模型\n背景/任务是研究扩散语言模型（DLMs）中的专家选择路由机制，以解决现有基于令牌选择路由的负载不平衡和计算分配僵化问题。\n他们提出了专家选择路由及其变体，实现了确定性负载平衡和自适应计算分配，并通过实验验证了其在高吞吐量、快速收敛和下游任务性能上的优势。",
+    "2604.05467": "自然语言处理；信息检索  \n针对RAG评估多关注最终答案而忽视单个证据效用的问题，提出了一个基于干预的轻量级框架CUE-R。  \n该框架通过扰动单个证据项来衡量其效用，实验发现移除或替换证据会显著损害性能，揭示了答案级评估的不足。"
   },
   "deep_analysis": {
     "2604.06168": "这篇论文是**机器人控制**领域的工作，目标是让机器人更智能地通过“看”和“想”来学习如何完成任务。\n\n---\n\n### （1）任务是什么？\n\n*   **任务功能**：训练一个能同时“理解世界”和“决定动作”的机器人模型。\n*   **任务输入**：\n    *   **当前状态**：从多个摄像头（多视角）看到的当前环境图像。\n    *   （可选）**文本指令**：比如“拿起红色的杯子”。\n*   **任务输出**：\n    *   **核心输出（动作）**：机器人的7自由度控制指令（比如关节如何转动）。\n    *   **附加能力**：还可以生成预测的未来视频、根据动作生成未来画面、或者给一段视频“打标签”推测出机器人的动作。\n\n简单说，这是一个**多功能机器人大脑模型**，核心是学会“看到当前画面，然后做出正确动作”。\n\n---\n\n### （2）想解决什么问题？\n\n论文指出了一个**关键矛盾**：现在很多基于视频预测的“世界模型”很强大（能逼真地预测未来画面），但它们**并不能直接做出好的控制决策**。\n\n*   **现有方法的局限**：\n    1.  **“两张皮”结构**：很多模型用一个网络（视频生成模型）来预测未来，再用另一个独立的“策略头”网络把预测的画面转换成动作。这两个部分学到的知识没有深度融合，导致从“看”到“动”的泛化能力差。\n    2.  **动作表示不直观**：有些方法把机器人的动作压缩成一些抽象的数字（低维向量），这些数字和机器人实际在图像中的运动没有直接、可视化的关联，模型很难理解和泛化。\n\n**核心问题**：如何让模型像人类一样，**把“动作”本身也当成一种“视觉概念”来学习和理解**，从而打通“观察”和“控制”？\n\n---\n\n### （3）核心思路是什么？\n\n论文提出了一个非常直观的想法：**把机器人的动作也变成“图像”**。\n\n*   **“动作图像”是什么？**\n    他们不是直接输出“关节角度+0.1”这样的数字，而是生成一种特殊的、简短的**多视角视频片段**。这个视频片段里，清晰地显示了**机器人手臂在未来一小段时间内会如何运动**（比如末端执行器从A点平滑移动到B点）。\n    *   **多视角**：为了解决单视角的遮挡和歧义问题（比如从正面看，向前伸手和向上伸手可能分不清），他们同时用多个摄像头的视角来生成动作视频，这样模型就能在3D空间里更准确地理解动作。\n\n*   **如何实现？**\n    1.  **统一建模**：他们用一个强大的**视频生成模型**（比如类似Sora的架构）作为主干网络。\n    2.  **联合训练**：这个模型同时学习两件事：\n        *   **预测未来的环境画面**（常规的世界模型功能）。\n        *   **生成“动作图像”**（即描述机器人未来动作的多视角小视频）。\n    3.  **零样本策略**：训练好后，要控制机器人时，模型的工作流程是：\n        *   输入当前的多视角画面（和文本指令）。\n        *   模型**直接生成下一时刻的“动作图像”**。\n        *   系统从这个生成的“动作图像”中，**解码出具体的7自由度控制指令**（这是一个可逆的、确定的过程）。\n        *   机器人执行该指令。\n\n**核心创新点**：通过将**动作“像素化”、“可视化”**，让模型在**同一种表示空间（图像/视频空间）** 里处理“观察”和“动作”。这样，模型在预测未来时学到的关于物体运动、物理规律的知识，能直接用于生成合理的动作，不再需要一个割裂的“策略模块”。\n\n---\n\n### （4）结果怎么样？\n\n论文在模拟环境（RLBench）和真实机器人上进行了测试：\n\n*   **零样本成功率**：他们的模型在没见过的任务和场景上，取得了**最好的零样本成功率**。这说明他们的方法泛化能力很强。\n*   **生成质量**：在“视频-动作联合生成”（即同时生成未来画面和对应的动作）任务上，效果也**优于之前的方法**。\n*   **多功能性**：同一个模型确实实现了论文开头说的多种能力（控制、视频预测、动作标注等），验证了“统一表示”的有效性。\n\n**结论**：将动作表示为可解释的“动作图像”，让视频生成模型本身就能充当策略，是**一条非常有效的机器人策略学习路径**，能更好地连接感知与控制，提升泛化能力。\n\n---\n**简单比喻**：\n之前的模型：一个“预言家”（预测未来画面） + 一个“翻译官”（把预言翻译成动作指令），两人配合不好。\n这篇论文的模型：培养了一个“导演”。这个导演不仅能在脑海里想象出接下来的电影画面（未来状态），还能直接画出详细的分镜头脚本（动作图像），告诉演员（机器人）每一步该怎么走。因为“想象画面”和“画分镜”用的是同一种语言（视觉语言），所以他的指令更准确、更通用。",
@@ -274,12 +274,12 @@
       "abstract": "It is critical for vision-language models (VLMs) to comprehensively understand visual, temporal, and textual cues. However, despite rapid progress in multimodal modeling, video understanding performance still lags behind text-based reasoning. In this work, we find that progress is even worse than previously assumed: commonly reported long video understanding benchmarks contain 40-60% of questions that can be answered using text cues alone. Furthermore, we find that these issues are also pervasive in widely used post-training datasets, potentially undercutting the ability of post-training to improve VLM video understanding performance. Guided by this observation, we introduce VidGround as a simple yet effective solution: using only the actual visually grounded questions without any linguistic biases for post-training. When used in tandem with RL-based post-training algorithms, this simple technique improves performance by up to 6.2 points relative to using the full dataset, while using only 69.1% of the original post-training data. Moreover, we show that data curation with a simple post-training algorithm outperforms several more complex post-training techniques, highlighting that data quality is a major bottleneck for improving video understanding in VLMs. These results underscore the importance of curating post-training data and evaluation benchmarks that truly require visual grounding to advance the development of more capable VLMs. Project page:this http URL.",
       "comments": ""
     },
-    "2604.04323": {
-      "abstract": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available atthis https URL.",
-      "comments": ""
-    },
     "2604.05091": {
       "abstract": "We present MegaTrain, a memory-centric system that efficiently trains 100B+ parameter large language models at full precision on a single GPU. Unlike traditional GPU-centric systems, MegaTrain stores parameters and optimizer states in host memory (CPU memory) and treats GPUs as transient compute engines. For each layer, we stream parameters in and compute gradients out, minimizing persistent device state. To battle the CPU-GPU bandwidth bottleneck, we adopt two key optimizations. 1) We introduce a pipelined double-buffered execution engine that overlaps parameter prefetching, computation, and gradient offloading across multiple CUDA streams, enabling continuous GPU execution. 2) We replace persistent autograd graphs with stateless layer templates, binding weights dynamically as they stream in, eliminating persistent graph metadata while providing flexibility in scheduling. On a single H200 GPU with 1.5TB host memory, MegaTrain reliably trains models up to 120B parameters. It also achieves 1.84$\\times$ the training throughput of DeepSpeed ZeRO-3 with CPU offloading when training 14B models. MegaTrain also enables 7B model training with 512k token context on a single GH200.",
+      "comments": ""
+    },
+    "2604.04323": {
+      "abstract": "Agent skills, which are reusable, domain-specific knowledge artifacts, have become a popular mechanism for extending LLM-based agents, yet formally benchmarking skill usage performance remains scarce. Existing skill benchmarking efforts focus on overly idealized conditions, where LLMs are directly provided with hand-crafted, narrowly-tailored task-specific skills for each task, whereas in many realistic settings, the LLM agent may have to search for and select relevant skills on its own, and even the closest matching skills may not be well-tailored for the task. In this paper, we conduct the first comprehensive study of skill utility under progressively challenging realistic settings, where agents must retrieve skills from a large collection of 34k real-world skills and may not have access to any hand-curated skills. Our findings reveal that the benefits of skills are fragile: performance gains degrade consistently as settings become more realistic, with pass rates approaching no-skill baselines in the most challenging scenarios. To narrow this gap, we study skill refinement strategies, including query-specific and query-agnostic approaches, and we show that query-specific refinement substantially recovers lost performance when the initial skills are of reasonable relevance and quality. We further demonstrate the generality of retrieval and refinement on Terminal-Bench 2.0, where they improve the pass rate of Claude Opus 4.6 from 57.7% to 65.5%. Our results, consistent across multiple models, highlight both the promise and the current limitations of skills for LLM-based agents. Our code is available atthis https URL.",
       "comments": ""
     },
     "2604.06170": {
