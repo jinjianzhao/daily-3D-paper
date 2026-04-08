@@ -13,13 +13,35 @@ import urllib3.exceptions
 
 
 
+_PIPELINE_LOG_PATH = None
+
+
+def _set_pipeline_log_path(path: str | None):
+    """设置流水线日志落盘路径（供 pipeline_debug 追加写入）。"""
+    global _PIPELINE_LOG_PATH
+    assert path is None or isinstance(path, str)
+    _PIPELINE_LOG_PATH = path
+
+
 def pipeline_debug(step: str, title: str, msg: str = ""):
     assert isinstance(step, str)
     assert isinstance(title, str)
     assert isinstance(msg, str)
     suffix = f" {msg}" if msg else ""
+    line = f"[{step}][{title}]{suffix}"
     # flush=True：与 tqdm 同屏输出时避免 stdout 缓冲导致「看不到」某步日志
-    print(f"[{step}][{title}]{suffix}", flush=True)
+    print(line, flush=True)
+
+    if _PIPELINE_LOG_PATH:
+        try:
+            parent = os.path.dirname(_PIPELINE_LOG_PATH)
+            if parent:
+                os.makedirs(parent, exist_ok=True)
+            with open(_PIPELINE_LOG_PATH, "a", encoding="utf-8") as f:
+                f.write(line + "\n")
+        except Exception as e:
+            # 日志落盘失败不应中断流水线
+            print(f"[warn][log] 写入失败 path={_PIPELINE_LOG_PATH!r} err={type(e).__name__}: {e}", flush=True)
 
 
 def _extract_vote_count(article_tag) -> int:
@@ -75,8 +97,10 @@ class PipelineConfig:
     deep_body_max_chars: int = 8000
     max_figures_per_paper: int = 3
     arxiv_id_regex: str = r"\d{4}\.\d+"
-    # step02：单篇论文投票判断次数（默认3次投票决定是否3D相关）
-    focus_vote_times: int = 3
+    # step03：板块归类投票次数（每个板块投 N 次）
+    focus_vote_times: int = 1
+    # step03：板块归类命中阈值（>= 该次数即认为命中该板块）
+    focus_vote_threshold: int = 1
     # step08：图注译中文单次请求上限（图注可能很长）
     figure_caption_translate_max_tokens: int = 8192
 
@@ -132,7 +156,12 @@ class PaperPipeline:
                 if not isinstance(body, dict) or "choices" not in body or not body["choices"]:
                     raise RuntimeError(f"LLM 响应缺少 choices 前200字符={str(body)[:200]!r}")
                 return body["choices"][0]["message"]["content"]
-            except (requests.exceptions.Timeout, requests.exceptions.ConnectionError, urllib3.exceptions.ReadTimeoutError) as e:
+            except (
+                requests.exceptions.Timeout, 
+                requests.exceptions.ConnectionError, 
+                urllib3.exceptions.ReadTimeoutError,
+                RuntimeError,
+            ) as e:
                 last_exception = e
 
         raise RuntimeError(
@@ -469,35 +498,102 @@ class PaperPipeline:
         )
         meta = []
         count = 0
-        for fig in figures:
+        for fig_idx, fig in enumerate(figures):
             if count >= self.cfg.max_figures_per_paper:
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"编号={aid} 达到max_figures_per_paper={self.cfg.max_figures_per_paper} 提前停止（已收集count={count} 当前figure索引={fig_idx}/{len(figures)}）",
+                )
                 break
             img_tag = fig.find('img')
-            if img_tag and img_tag.get('src'):
-                img_src = img_tag['src']
-                img_url = self.cfg.arxiv_html_image_base_url + img_src.lstrip('/')
-                if self.cfg.store_arxiv_figures_locally:
-                    ext = img_src.split('.')[-1]
-                    fname = f"{aid}_fig_{count}.{ext}"
-                    local_path = os.path.join(cache_path, fname)
-                    if not os.path.exists(local_path):
+            caption = fig.get_text(strip=True)
+            cap_short = caption[:120]
+            if not img_tag:
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"编号={aid} 跳过figure[{fig_idx}]：无<img> caption前120={cap_short!r}",
+                )
+                continue
+
+            img_src = img_tag.get('src')
+            if not img_src:
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"编号={aid} 跳过figure[{fig_idx}]：img无src attrs={dict(img_tag.attrs)} caption前120={cap_short!r}",
+                )
+                continue
+
+            if not isinstance(img_src, str):
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"编号={aid} 跳过figure[{fig_idx}]：src非字符串 type={type(img_src)} attrs={dict(img_tag.attrs)} caption前120={cap_short!r}",
+                )
+                continue
+
+            if img_src.startswith("data:"):
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"编号={aid} 特殊src(疑似data URI) figure[{fig_idx}] src前80={img_src[:80]!r} caption前120={cap_short!r}",
+                )
+
+            img_url = self.cfg.arxiv_html_image_base_url + img_src.lstrip('/')
+            pipeline_debug(
+                debug_step,
+                debug_title,
+                f"编号={aid} 收集figure[{fig_idx}] -> out_idx={count} src={img_src!r} url前120={img_url[:120]!r} caption前120={cap_short!r}",
+            )
+
+            if self.cfg.store_arxiv_figures_locally:
+                ext = img_src.split('.')[-1]
+                if not ext or "/" in ext or len(ext) > 10:
+                    pipeline_debug(
+                        debug_step,
+                        debug_title,
+                        f"编号={aid} 特殊扩展名 figure[{fig_idx}] ext={ext!r} src={img_src!r}",
+                    )
+                fname = f"{aid}_fig_{count}.{ext}"
+                local_path = os.path.join(cache_path, fname)
+                if not os.path.exists(local_path):
+                    try:
                         ir = requests.get(
-                            img_url, headers=self.headers, timeout=self.cfg.timeout_arxiv_image_sec
+                            img_url,
+                            headers=self.headers,
+                            timeout=self.cfg.timeout_arxiv_image_sec,
                         )
-                        if ir.status_code == 200:
-                            with open(local_path, 'wb') as f:
-                                f.write(ir.content)
-                        else:
-                            pipeline_debug(
-                                debug_step,
-                                debug_title,
-                                f"图片下载失败 编号={aid} HTTP状态={ir.status_code} 地址前100字符={img_url[:100]}",
-                            )
-                    out_path = f"images/{fname}"
+                    except requests.exceptions.RequestException as e:
+                        pipeline_debug(
+                            debug_step,
+                            debug_title,
+                            f"图片下载异常 编号={aid} figure[{fig_idx}] err_type={type(e).__name__} err={e} url前120={img_url[:120]!r}",
+                        )
+                        continue
+
+                    if ir.status_code == 200:
+                        with open(local_path, 'wb') as f:
+                            f.write(ir.content)
+                    else:
+                        pipeline_debug(
+                            debug_step,
+                            debug_title,
+                            f"图片下载失败 编号={aid} figure[{fig_idx}] HTTP状态={ir.status_code} 地址前120字符={img_url[:120]}",
+                        )
+                        continue
                 else:
-                    out_path = img_url
-                meta.append({"path": out_path, "caption": fig.get_text(strip=True)})
-                count += 1
+                    pipeline_debug(
+                        debug_step,
+                        debug_title,
+                        f"图片命中本地缓存 编号={aid} figure[{fig_idx}] 路径={local_path}",
+                    )
+                out_path = f"images/{fname}"
+            else:
+                out_path = img_url
+            meta.append({"path": out_path, "caption": caption})
+            count += 1
         pipeline_debug(debug_step, debug_title, f"编号={aid} 图示条目数={len(meta)}")
         return meta
 
@@ -511,88 +607,358 @@ class PaperPipeline:
         assert isinstance(arr, list)
         return arr
 
-    def judge_paper_relevance(self, title, abstract, arxiv_id, cache_dir, force_rerun=False, *, debug_step, debug_title):
-        """
-        单篇论文相关性判断：多次调用LLM投票决定是否3D相关。
-        
-        Args:
-            title: 论文标题
-            abstract: 论文摘要
-            arxiv_id: arXiv 论文编号
-            cache_dir: 缓存目录路径
-            force_rerun: 是否强制重跑
-            debug_step: 调试步骤标识
-            debug_title: 调试标题
-            
-        Returns:
-            bool: True表示3D相关，False表示不相关
+    def _parse_yes_no(self, response_text: str, *, debug_step: str, debug_title: str) -> bool:
+        """将模型输出解析为 bool（尽量稳健；解析失败回退为否）。"""
+        assert isinstance(response_text, str)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+        raw = response_text.strip()
+        # 允许模型输出：是 / 否 / 是的 / 否的 / 是。/ 否。等，但避免把“不是/否定句”误判为“是”
+        s = raw
+        s = re.sub(r"[\s\"“”'`]+", "", s)
+        s = s.strip("。.!！,，;；：:")
+        if s in ("是", "是的", "是哦", "yes", "true", "True"):
+            return True
+        if s in ("否", "不是", "否的", "no", "false", "False"):
+            return False
+        if s.startswith("是") and not s.startswith("不是"):
+            return True
+        if s.startswith("否") or s.startswith("不"):
+            return False
+        pipeline_debug(debug_step, debug_title, f"LLM输出无法解析为是/否，回退为否 raw={raw!r} norm={s!r}")
+        return False
+
+    def _llm_yes_no(self, prompt: str, *, debug_step: str, debug_title: str) -> bool:
+        """调用 LLM 并将输出解析为 bool（仅接受“是/否”，其它视为否）。"""
+        assert isinstance(prompt, str)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+        response = self._post_chat_completion(prompt)
+        return self._parse_yes_no(response, debug_step=debug_step, debug_title=debug_title)
+
+    def _llm_yes_no_two_round(
+        self,
+        prompt_step1: str,
+        prompt_step2: str,
+        *,
+        debug_step: str,
+        debug_title: str,
+    ) -> bool:
+        """两轮 LLM：先自由分析，再强制输出“是/否”并解析。"""
+        assert isinstance(prompt_step1, str)
+        assert isinstance(prompt_step2, str)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+        assert "{step1_output}" in prompt_step2
+
+        def _dbg_prompt(tag: str, text: str):
+            assert isinstance(tag, str)
+            assert isinstance(text, str)
+            limit = 1200
+            if len(text) <= limit:
+                pipeline_debug(debug_step, debug_title, f"{tag} prompt_len={len(text)} prompt={text!r}")
+            else:
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"{tag} prompt_len={len(text)} prompt_head={text[:limit]!r} ...(truncated,{len(text)-limit} chars)",
+                )
+
+        _dbg_prompt("板块判定两轮 第1轮输入", prompt_step1)
+        out1 = self._post_chat_completion(prompt_step1)
+        pipeline_debug(debug_step, debug_title, f"板块判定两轮 第1轮 输出字符数={len(out1)}")
+        p2 = prompt_step2.replace("{step1_output}", out1)
+        _dbg_prompt("板块判定两轮 第2轮输入", p2)
+        out2 = self._post_chat_completion(p2)
+        pipeline_debug(debug_step, debug_title, f"板块判定两轮 第2轮 raw={out2.strip()!r}")
+        # 注意：out2 是“回答”，不能再当 prompt 发给 LLM；这里只做纯解析
+        return self._parse_yes_no(out2, debug_step=debug_step, debug_title=debug_title)
+
+    def _build_section_prompt(
+        self,
+        *,
+        title: str,
+        abstract: str,
+        section_name: str,
+        section_keywords: list,
+        section_excludes: list,
+    ) -> str:
+        assert isinstance(title, str)
+        assert isinstance(abstract, str)
+        assert isinstance(section_name, str)
+        assert isinstance(section_keywords, list)
+        assert isinstance(section_excludes, list)
+        for kw in section_keywords:
+            assert isinstance(kw, str)
+        for ex in section_excludes:
+            assert isinstance(ex, str)
+        prompt = PROMPT_STEP03_SECTION_CLASSIFY.format(
+            title=title,
+            abstract=abstract,
+            section_name=section_name,
+            section_keywords="、".join(section_keywords),
+        )
+        if section_excludes:
+            prompt += "\n\n排除项（若论文主要内容更贴近这些方向，请回答“否”）：{excludes}".format(
+                excludes="、".join(section_excludes)
+            )
+        return prompt
+
+    def _build_section_prompt_two_round(
+        self,
+        *,
+        title: str,
+        abstract: str,
+        section_name: str,
+        section_keywords: list,
+        section_excludes: list,
+    ) -> tuple[str, str]:
+        assert isinstance(title, str)
+        assert isinstance(abstract, str)
+        assert isinstance(section_name, str)
+        assert isinstance(section_keywords, list)
+        assert isinstance(section_excludes, list)
+        for kw in section_keywords:
+            assert isinstance(kw, str)
+        for ex in section_excludes:
+            assert isinstance(ex, str)
+
+        p1 = PROMPT_STEP03_SECTION_CLASSIFY_STEP1.format(
+            title=title,
+            abstract=abstract,
+            section_name=section_name,
+            section_keywords="、".join(section_keywords),
+        )
+        if section_excludes:
+            p1 += "\n\n排除项：{excludes}".format(excludes="、".join(section_excludes))
+        p2 = PROMPT_STEP03_SECTION_CLASSIFY_STEP2.format(
+            section_name=section_name,
+            step1_output="{step1_output}",
+        )
+        return p1, p2
+
+    def classify_paper_section(
+        self,
+        title: str,
+        abstract: str,
+        arxiv_id: str,
+        cache_dir: str,
+        sections: list,
+        *,
+        force_rerun: bool = False,
+        debug_step: str,
+        debug_title: str,
+    ) -> str | None:
+        """按优先级依次判断所属板块，命中首个板块即返回其 key，否则返回 None。
+
+        sections: list[dict]，每个 dict 必含 key/name/keywords；可选 exclude(list[str])。
         """
         assert isinstance(title, str)
         assert isinstance(abstract, str)
         assert isinstance(arxiv_id, str)
         assert isinstance(cache_dir, str)
+        assert isinstance(sections, list)
         assert isinstance(force_rerun, bool)
         assert isinstance(debug_step, str)
         assert isinstance(debug_title, str)
-        
-        # 构建缓存文件路径
-        cache_file = os.path.join(cache_dir, f"{arxiv_id}_vote.json")
-        
+        assert isinstance(self.cfg.focus_vote_times, int) and self.cfg.focus_vote_times >= 1
+        assert isinstance(self.cfg.focus_vote_threshold, int) and self.cfg.focus_vote_threshold >= 1
+        assert self.cfg.focus_vote_threshold <= self.cfg.focus_vote_times
+        for s in sections:
+            assert isinstance(s, dict)
+            assert "key" in s and "name" in s and "keywords" in s
+            assert isinstance(s["key"], str)
+            assert isinstance(s["name"], str)
+            assert isinstance(s["keywords"], list)
+            for kw in s["keywords"]:
+                assert isinstance(kw, str)
+            if "exclude" in s:
+                assert isinstance(s["exclude"], list)
+                for ex in s["exclude"]:
+                    assert isinstance(ex, str)
+
+        os.makedirs(cache_dir, exist_ok=True)
+        cache_file = os.path.join(cache_dir, f"{arxiv_id}_section.json")
+        valid_keys = set()
+        for s in sections:
+            valid_keys.add(s["key"])
         if not force_rerun and os.path.exists(cache_file):
-            with open(cache_file, 'r', encoding='utf-8') as f:
+            with open(cache_file, "r", encoding="utf-8") as f:
                 cached = json.load(f)
             assert isinstance(cached, dict)
-            if "vote_result" in cached and "vote_details" in cached:
-                pipeline_debug(debug_step, debug_title, f"命中投票缓存 编号={arxiv_id} 结果={cached['vote_result']}")
-                return cached["vote_result"] == "true"
-        
-        # 执行多次投票
-        votes = []
-        for i in range(self.cfg.focus_vote_times):
-            prompt = PROMPT_STEP02_JUDGE_SINGLE.format(title=title, abstract=abstract)
-            response = self._post_chat_completion(prompt)
-            response_clean = response.strip().lower()
-            
-            # 解析响应
-            if "是" in response_clean:
-                vote = True
-            elif "否" in response_clean:
-                vote = False
-            else:
-                # 无法解析时默认为否
-                vote = False
-            
-            votes.append(vote)
+            assert "section_key" in cached
+            ck = cached["section_key"]
+            assert ck is None or isinstance(ck, str)
+            if ck is None or ck in valid_keys:
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"命中板块缓存 编号={arxiv_id} section_key={ck!r}",
+                )
+                return ck
             pipeline_debug(
-                debug_step, 
-                debug_title, 
-                f"投票 {i+1}/{self.cfg.focus_vote_times} 编号={arxiv_id} 响应={response_clean} 判定={vote}"
+                debug_step,
+                debug_title,
+                f"板块缓存失效 编号={arxiv_id} cached_key={ck!r} 不在当前keys中，将重新归类 keys={sorted(valid_keys)}",
             )
-        
-        # 投票统计：多数决定
-        true_count = sum(votes)
-        final_result = true_count > len(votes) / 2
-        
+
+        chosen = None
+        decisions = []
+        for idx, s in enumerate(sections):
+            excludes = s["exclude"] if "exclude" in s else []
+            votes = []
+            support = 0
+            oppose = 0
+            for k in range(self.cfg.focus_vote_times):
+                p1, p2 = self._build_section_prompt_two_round(
+                    title=title,
+                    abstract=abstract,
+                    section_name=s["name"],
+                    section_keywords=s["keywords"],
+                    section_excludes=excludes,
+                )
+                v = self._llm_yes_no_two_round(p1, p2, debug_step=debug_step, debug_title=debug_title)
+                votes.append(v)
+                if v:
+                    support += 1
+                else:
+                    oppose += 1
+                pipeline_debug(
+                    debug_step,
+                    debug_title,
+                    f"板块投票 {k+1}/{self.cfg.focus_vote_times} 编号={arxiv_id} section={s['key']} vote={v}",
+                )
+                # 剪枝：达到阈值即可提前结束；反对票达到阈值则也可提前结束（即便剩余全是赞成也无法达标）
+                if support >= self.cfg.focus_vote_threshold:
+                    pipeline_debug(
+                        debug_step,
+                        debug_title,
+                        f"板块投票剪枝(已达标) 编号={arxiv_id} section={s['key']} support={support} threshold={self.cfg.focus_vote_threshold} 已停止后续投票",
+                    )
+                    break
+                if oppose >= self.cfg.focus_vote_threshold:
+                    pipeline_debug(
+                        debug_step,
+                        debug_title,
+                        f"板块投票剪枝(已否决) 编号={arxiv_id} section={s['key']} oppose={oppose} threshold={self.cfg.focus_vote_threshold} 已停止后续投票",
+                    )
+                    break
+            ok = support >= self.cfg.focus_vote_threshold
+            decisions.append(
+                {
+                    "key": s["key"],
+                    "name": s["name"],
+                    "votes": votes,
+                    "support": support,
+                    "n_votes": self.cfg.focus_vote_times,
+                    "threshold": self.cfg.focus_vote_threshold,
+                    "yes": ok,
+                }
+            )
+            pipeline_debug(
+                debug_step,
+                debug_title,
+                f"板块判定 {idx+1}/{len(sections)} 编号={arxiv_id} section={s['key']} support={support}/{self.cfg.focus_vote_times} threshold={self.cfg.focus_vote_threshold} yes={ok}",
+            )
+            if ok:
+                chosen = s["key"]
+                break
+
+        payload = {
+            "arxiv_id": arxiv_id,
+            "section_key": chosen,
+            "decisions": decisions,
+            "sections": [
+                {
+                    "key": s["key"],
+                    "name": s["name"],
+                    "keywords": s["keywords"],
+                    "exclude": (s["exclude"] if "exclude" in s else []),
+                }
+                for s in sections
+            ],
+        }
+        with open(cache_file, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
         pipeline_debug(
             debug_step,
             debug_title,
-            f"投票完成 编号={arxiv_id} 支持={true_count}/{len(votes)} 最终结果={'3D相关' if final_result else '不相关'}"
+            f"板块判定完成 编号={arxiv_id} chosen={chosen!r} decisions={decisions}",
         )
+        return chosen
+
+    # def judge_paper_relevance(self, title, abstract, arxiv_id, cache_dir, force_rerun=False, *, debug_step, debug_title):
+    #     """
+    #     单篇论文相关性判断：多次调用LLM投票决定是否3D相关。
         
-        # 写入缓存
-        os.makedirs(cache_dir, exist_ok=True)
-        cache_data = {
-            "arxiv_id": arxiv_id,
-            "title": title,
-            "vote_result": "true" if final_result else "false",
-            "vote_details": votes,
-            "support_count": true_count,
-            "total_votes": len(votes)
-        }
-        with open(cache_file, 'w', encoding='utf-8') as f:
-            json.dump(cache_data, f, indent=2, ensure_ascii=False)
+    #     Args:
+    #         title: 论文标题
+    #         abstract: 论文摘要
+    #         arxiv_id: arXiv 论文编号
+    #         cache_dir: 缓存目录路径
+    #         force_rerun: 是否强制重跑
+    #         debug_step: 调试步骤标识
+    #         debug_title: 调试标题
+            
+    #     Returns:
+    #         bool: True表示3D相关，False表示不相关
+    #     """
+    #     assert isinstance(title, str)
+    #     assert isinstance(abstract, str)
+    #     assert isinstance(arxiv_id, str)
+    #     assert isinstance(cache_dir, str)
+    #     assert isinstance(force_rerun, bool)
+    #     assert isinstance(debug_step, str)
+    #     assert isinstance(debug_title, str)
         
-        return final_result
+    #     # 构建缓存文件路径
+    #     cache_file = os.path.join(cache_dir, f"{arxiv_id}_vote.json")
+        
+    #     if not force_rerun and os.path.exists(cache_file):
+    #         with open(cache_file, 'r', encoding='utf-8') as f:
+    #             cached = json.load(f)
+    #         assert isinstance(cached, dict)
+    #         if "vote_result" in cached and "vote_details" in cached:
+    #             pipeline_debug(debug_step, debug_title, f"命中投票缓存 编号={arxiv_id} 结果={cached['vote_result']}")
+    #             return cached["vote_result"] == "true"
+        
+    #     # 执行多次投票
+    #     votes = []
+    #     for i in range(self.cfg.focus_vote_times):
+    #         prompt = PROMPT_STEP02_JUDGE_SINGLE.format(title=title, abstract=abstract)
+    #         vote = self._llm_yes_no(prompt, debug_step=debug_step, debug_title=debug_title)
+            
+    #         votes.append(vote)
+    #         pipeline_debug(
+    #             debug_step, 
+    #             debug_title, 
+    #             f"投票 {i+1}/{self.cfg.focus_vote_times} 编号={arxiv_id} 判定={vote}"
+    #         )
+        
+    #     # 投票统计：多数决定
+    #     true_count = sum(votes)
+    #     final_result = true_count > len(votes) / 2
+        
+    #     pipeline_debug(
+    #         debug_step,
+    #         debug_title,
+    #         f"投票完成 编号={arxiv_id} 支持={true_count}/{len(votes)} 最终结果={'3D相关' if final_result else '不相关'}"
+    #     )
+        
+    #     # 写入缓存
+    #     os.makedirs(cache_dir, exist_ok=True)
+    #     cache_data = {
+    #         "arxiv_id": arxiv_id,
+    #         "title": title,
+    #         "vote_result": "true" if final_result else "false",
+    #         "vote_details": votes,
+    #         "support_count": true_count,
+    #         "total_votes": len(votes)
+    #     }
+    #     with open(cache_file, 'w', encoding='utf-8') as f:
+    #         json.dump(cache_data, f, indent=2, ensure_ascii=False)
+        
+    #     return final_result
 
     def translate_figure_captions(
         self,
@@ -712,7 +1078,7 @@ class PaperPipeline:
         pipeline_debug(debug_step, debug_title, f"图注翻译 已落盘缓存 文件={fp} 条数={n}")
         return out_meta
 
-    def run_pipeline(self, date_str, force_rerun=None):
+    def run_pipeline(self, date_str, force_rerun=None, skip_void_date=False):
         assert isinstance(date_str, str)
         assert force_rerun is None or isinstance(force_rerun, list)
         if force_rerun is None:
@@ -724,11 +1090,21 @@ class PaperPipeline:
             return step_name in force_rerun
 
         # 先解析 HF 实际可用日期（若 HF 跳转到前一日，跟随）
-        date_str = self._resolve_hf_date(date_str)
+        new_date_str = self._resolve_hf_date(date_str)
+        if new_date_str != date_str:
+            pipeline_debug("step01", "日期解析", f"HF 从 {date_str} 跳转到 {new_date_str}")
+            if skip_void_date:
+                pipeline_debug("step01", "日期解析", f"跳过日期解析 日期={date_str}")
+                return 
+        date_str = new_date_str
+
 
         pub_dir = self.cfg.output_pub_dir_fmt.format(date_str=date_str)
         pub_img_dir = f"{pub_dir}/{self.cfg.pub_images_subdir}"
         cache_root = self.cfg.output_cache_dir_fmt.format(date_str=date_str)
+        log_dir = f"{cache_root}/logs"
+        run_ts = datetime.now(timezone.utc).astimezone().strftime("%Y%m%d_%H%M%S")
+        _set_pipeline_log_path(f"{log_dir}/pipeline_{run_ts}.log")
         # 分步缓存目录与文件名（step 前缀），顺序与流水线一致
         step01_hf = f"{cache_root}/step01_hf_papers.json"
         step03_arxiv_abs = f"{cache_root}/step03_arxiv_abs"
@@ -754,27 +1130,45 @@ class PaperPipeline:
         ):
             details_by_aid[aid] = self.get_arxiv_details(aid, step03_arxiv_abs, force_rerun=_should("step02"))
 
-        # step03：单篇论文投票判断 3D 相关重点
-        focus_ids = []
-        for aid in tqdm(
-            base_info.keys(),
+        # step03：单篇论文板块归类（按优先级：先【3D生成相关】后【生成模型基础研究（非LLM）】）
+        focus_sections = OrderedDict((s["name"], []) for s in FOCUS_SECTIONS)
+        focus_id_set = set()
+        aid_list = list(base_info.keys())
+        total_papers = len(aid_list)
+        for idx, aid in enumerate(tqdm(
+            aid_list,
             desc="step03 | 单篇投票筛选重点",
             unit="篇",
-        ):
-            # 使用 judge_paper_relevance 函数进行投票判断
-            vote_cache_dir = f"{cache_root}/step03_votes"
-            is_related = self.judge_paper_relevance(
+        ), start=1):
+            pipeline_debug("step03", "板块归类进度", f"{idx}/{total_papers} 论文 aid={aid}")
+            section_cache_dir = f"{cache_root}/step03_sections"
+            section_key = self.classify_paper_section(
                 base_info[aid]["title"],
                 details_by_aid[aid]["abstract"],
-                aid,  # arxiv_id
-                vote_cache_dir,
+                aid,
+                section_cache_dir,
+                FOCUS_SECTIONS,
                 force_rerun=_should("step03"),
                 debug_step="step03",
-                debug_title="投票筛选重点",
+                debug_title="板块归类",
             )
-            if is_related:
-                focus_ids.append(aid)
-        pipeline_debug("step03", "投票筛选重点", f"重点篇数={len(focus_ids)} 编号列表={focus_ids}")
+            if section_key is None:
+                continue
+
+            # 不重复：命中第一个板块就不会再去第二个；且全局 set 去重
+            if aid in focus_id_set:
+                continue
+            focus_id_set.add(aid)
+
+            name_by_key = {s["key"]: s["name"] for s in FOCUS_SECTIONS}
+            assert section_key in name_by_key
+            focus_sections[name_by_key[section_key]].append(aid)
+
+        pipeline_debug(
+            "step03",
+            "板块归类",
+            f"板块数={len(focus_sections)} 重点总篇数={len(focus_id_set)} sections={ {k: len(v) for k,v in focus_sections.items()} }",
+        )
 
         # step04：逐篇生成短文摘要（LLM）
         summaries = {}
@@ -795,6 +1189,10 @@ class PaperPipeline:
 
         # step05～08：重点篇下载 HTML、深度解析、抽图、图注翻译
         deeps, imgs = {}, {}
+        focus_ids = []
+        for _sec_name, ids in focus_sections.items():
+            for aid in ids:
+                focus_ids.append(aid)
         for aid in tqdm(
             focus_ids,
             desc="step05-08 | HTML+深度+图示+图注翻译",
@@ -864,6 +1262,7 @@ class PaperPipeline:
         report_data = {
             "date": date_str,
             "focus_ids": focus_ids,
+            "focus_sections": focus_sections,
             "base_info": base_info,
             "summaries": summaries,
             "deep_analysis": deeps,
@@ -944,12 +1343,6 @@ class PaperPipeline:
 # - step08：translate_figure_captions 批量图注中译；缓存目录 step08_figure_caption_zh/{aid}.json
 # PipelineConfig.focus_selection_llm_runs 控制 step02 合并轮数；缓存单文件 step02_focus_llm.json（output）
 # ---------------------------------------------------------------------------
-PROMPT_STEP02_FOCUS_STEP1 = """
-{paper_list}
-上述是今日论文列表。请通读标题与编号，思考哪些与以下的领域强相关。请你思考后给出答案。
-3D生成、3D重建、计算机图形学、Mesh几何处理、3D参数化表达、3D表达、3D理解
-"""
-
 PROMPT_STEP02_FOCUS_STEP2 = """
 {step1_output}
 上述为第一轮分析草稿，可能杂乱。
@@ -963,11 +1356,80 @@ PROMPT_STEP02_JUDGE_SINGLE = """
 论文标题：{title}
 论文摘要：{abstract}
 
-请判断这篇论文是否与以下领域强相关：
-3D生成、3D重建、计算机图形学、Mesh几何处理、3D参数化表达、3D表达、3D理解
+请判断这篇论文是否与以下领域之一强相关：
+3D生成、3D重建、计算机图形学、Mesh几何处理、3D参数化表达、3D表达、3D理解、3D编辑、3D建模
 
 请只回答"是"或"否"，不要任何解释。
 """
+
+# 板块归类：统一模板（避免在每个 section 里重复写同样的 prompt 文案）
+PROMPT_STEP03_SECTION_CLASSIFY = """论文标题：{title}
+论文摘要：{abstract}
+
+当前判断板块：【{section_name}】
+该板块关键词/方向：{section_keywords}
+
+请严格判断：这篇论文的“主要研究内容”是否属于该板块？
+只回答"是"或"否"，不要任何解释。"""
+
+# 板块归类两轮：第1轮自由分析；第2轮强制输出“是/否”
+PROMPT_STEP03_SECTION_CLASSIFY_STEP1 = """论文标题：{title}
+论文摘要：{abstract}
+
+当前判断板块：【{section_name}】
+该板块关键词/方向：{section_keywords}
+
+如果存在排除项，请同时考虑：论文主要内容若更贴近排除项，则不应归入该板块。
+请你先自由分析这篇论文是否属于该板块，并说明关键依据（可用要点列出）。"""
+
+PROMPT_STEP03_SECTION_CLASSIFY_STEP2 = """下面是你对“是否属于板块【{section_name}】”的第一轮分析草稿：
+{step1_output}
+
+现在请你只基于上面的草稿，给出最终结论：
+只回答"是"或"否"，不要任何解释、不要输出多余字符。"""
+
+# 动态板块：按顺序（优先级）依次判断，命中即归类，不重复
+FOCUS_SECTIONS = [
+    {
+        "key": "3d_generation",
+        "name": "3D重建/生成",
+        "keywords": [
+            "3D生成", "3D重建", "计算机图形学","Mesh几何处理","3D参数化表达","3D表达","3D理解",
+            "网格","拓扑结构","神经渲染","多模态3D生成","3D动画","3D绑骨","3D风格化","3D编辑","3D纹理生成",
+            "3D场景生成", "物理仿真",  "3DGS", "3D动态重建"
+        ],
+        "exclude": ["机器人/具身智能"],
+    },
+    {
+        "key": "world_model",
+        "name": "世界模型/空间智能",
+        "keywords": [
+            "世界模型", "空间智能",
+        ],
+        "exclude": ["机器人/具身智能"],
+    },
+    {
+        "key": "gen_model_foundation",
+        "name": "图片/视频/多模态生成",
+        "keywords": [
+            "生成模型基础研究", "生成模型隐式表达", "潜在空间学习",
+            "VAE", "扩散模型基础", "流式模型基础", 
+            "图片生成", "视频生成", "多模态生成",
+            "图片编辑", "视频编辑", "多模态编辑",
+        ],
+        "exclude": [
+            "纯文本生成", "纯大语言模型", "机器人/具身智能"
+        ],
+    },
+    {
+        "key": "robot_embodied_intelligence",
+        "name": "机器人/具身智能",
+        "keywords": [
+            "机器人", "机器人学习", "具身智能", "机器人操作", "机械臂", "抓取", "操控",
+            "运动规划", "控制", "导航", "强化学习机器人", "VLA", "机器人强化学习"
+        ],
+    },
+]
 
 PROMPT_STEP04_SUMMARY = """
 {abstract}

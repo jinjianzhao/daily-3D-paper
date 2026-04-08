@@ -120,8 +120,17 @@
                     <p id="page-date" class="text-[10px] font-mono text-slate-400 uppercase tracking-tighter leading-none mt-1"></p>
                 </div>
             </div>
-            <div id="stats" class="hidden sm:block px-4 py-1.5 bg-slate-100 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-                Loading...
+            <div class="flex items-center gap-3">
+                <a
+                    href="https://jinjianzhao.github.io/daily-3D-paper/date/"
+                    class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-slate-500 bg-white/70 border border-slate-200/70 hover:bg-white hover:text-indigo-600 transition"
+                    title="返回日期列表"
+                >
+                    ← 日期列表
+                </a>
+                <div id="stats" class="hidden sm:block px-4 py-1.5 bg-slate-100 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                    Loading...
+                </div>
             </div>
         </div>
     </nav>
@@ -156,13 +165,13 @@
             <div class="flex items-center mb-8">
                 <h2 class="text-2xl font-bold text-slate-800 tracking-tight flex items-center">
                     <span class="w-2 h-8 bg-slate-300 rounded-full mr-4"></span>
-                    今日全量简报
+                    剩余全量简报
                 </h2>
                 <span class="ml-4 h-[1px] flex-grow bg-slate-200"></span>
             </div>
             
             <div id="all-list" class="bg-white rounded-[2.5rem] shadow-sm border border-slate-200/60 overflow-hidden divide-y divide-slate-100">
-                <div class="p-10 text-center text-slate-400 italic">正在整理今日论文摘要...</div>
+                <div class="p-10 text-center text-slate-400 italic">正在整理剩余论文摘要...</div>
             </div>
         </section>
 
@@ -361,13 +370,42 @@
 
                 // 3. 渲染重点论文卡片
                 focusContainer.innerHTML = ''; 
-                if (data.focus_ids.length === 0) {
+                if (!data.focus_sections || typeof data.focus_sections !== 'object') {
+                    throw new Error('focus_sections missing in config.json');
+                }
+                const focusGroups = Object.entries(data.focus_sections);
+
+                const focusTotal = focusGroups.reduce((acc, [, ids]) => acc + (Array.isArray(ids) ? ids.length : 0), 0);
+                if (focusTotal === 0) {
                     focusContainer.innerHTML = '<div class="p-12 bg-white rounded-3xl text-center text-slate-400 border border-dashed border-slate-300">今日暂无 3D 相关重点论文推送</div>';
                 }
 
                 const tocIds = ['section-focus'];
 
-                data.focus_ids.forEach((aid) => {
+                focusGroups.forEach(([secName, ids], secIdx) => {
+                    if (!Array.isArray(ids)) ids = [];
+                    const secDomId = 'focus-sec-' + secIdx;
+                    tocIds.push(secDomId);
+                    focusContainer.innerHTML += `
+                        <div id="${secDomId}" class="scroll-mt-28 pt-2">
+                            <div class="flex items-center gap-3 mb-6 mt-2">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-extrabold tracking-tight border border-indigo-100">
+                                    ${escapeHtml(secName)}
+                                </span>
+                                <span class="text-xs font-mono text-slate-400">(${ids.length})</span>
+                                <span class="h-[1px] flex-grow bg-slate-200"></span>
+                            </div>
+                        </div>`;
+
+                    if (ids.length === 0) {
+                        focusContainer.innerHTML += `
+                            <div class="mb-10 px-6 py-5 rounded-3xl border border-dashed border-slate-200 bg-white/70 text-slate-400 text-sm italic">
+                                该板块今日暂无论文
+                            </div>`;
+                        return;
+                    }
+
+                    ids.forEach((aid) => {
                     const info = data.base_info[aid];
                     const focusDomId = aidToDomId('focus', aid);
                     tocIds.push(focusDomId);
@@ -459,13 +497,25 @@
                                 </details>
                             </div>
                         </article>`;
+                    });
                 });
 
                 tocIds.push('section-all');
 
-                // 4. 渲染全量列表
+                // 4. 渲染剩余全量列表（排除深度解析区已包含的论文）
                 allContainer.innerHTML = ''; 
-                Object.entries(data.summaries).forEach(([aid, summary]) => {
+                const focusIdSet = new Set();
+                Object.values(data.focus_sections).forEach((ids) => {
+                    if (!Array.isArray(ids)) return;
+                    ids.forEach((aid) => focusIdSet.add(aid));
+                });
+
+                const remainingEntries = Object.entries(data.summaries).filter(([aid]) => !focusIdSet.has(aid));
+                if (remainingEntries.length === 0) {
+                    allContainer.innerHTML = '<div class="p-10 text-center text-slate-400 italic">剩余全量简报为空（所有论文都已在深度解析中展示）</div>';
+                }
+
+                remainingEntries.forEach(([aid, summary]) => {
                     const info = data.base_info[aid];
                     const allDomId = aidToDomId('all', aid);
                     tocIds.push(allDomId);
@@ -492,6 +542,24 @@
                                 <h4 class="font-bold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
                                     ${info.title}
                                 </h4>
+                                <div class="flex flex-wrap gap-x-4 gap-y-2 items-center mb-3">
+                                    <a
+                                        href="https://arxiv.org/abs/${aid}"
+                                        target="_blank"
+                                        class="text-[11px] font-semibold text-slate-400 hover:text-red-500 transition-colors inline-flex items-center"
+                                        title="打开 arXiv 摘要页"
+                                    >
+                                        arXiv <span class="ml-1 text-[10px]">↗</span>
+                                    </a>
+                                    <a
+                                        href="${info.hf_link}"
+                                        target="_blank"
+                                        class="text-[11px] font-semibold text-slate-400 hover:text-indigo-600 transition-colors inline-flex items-center"
+                                        title="打开 HuggingFace Paper 页面"
+                                    >
+                                        HF Paper <span class="ml-1 text-[10px]">↗</span>
+                                    </a>
+                                </div>
                                 <details class="md-fold rounded-xl border border-slate-100 bg-slate-50/60" open>
                                     <summary class="flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100/80 rounded-t-xl border-b border-slate-100 select-none">
                                         <span>简报 Markdown</span>
@@ -513,23 +581,36 @@
                     tocHtml += '<p class="toc-section-title">深度解析</p>';
                     tocHtml +=
                         '<a href="#section-focus" class="toc-link">' + escapeHtml('▼ 深度解析区块') + '</a>';
-                    data.focus_ids.forEach((aid) => {
-                        const id = aidToDomId('focus', aid);
-                        const t = data.base_info[aid].title;
-                        const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                    focusGroups.forEach(([secName, ids], secIdx) => {
+                        if (!Array.isArray(ids)) ids = [];
+                        const secDomId = 'focus-sec-' + secIdx;
                         tocHtml +=
                             '<a href="#' +
-                            id +
-                            '" class="toc-link pl-2 line-clamp-2" title="' +
-                            escapeHtml(t) +
+                            secDomId +
+                            '" class="toc-link font-semibold text-slate-600" title="' +
+                            escapeHtml(secName) +
                             '">' +
-                            escapeHtml(short) +
+                            escapeHtml(secName) +
                             '</a>';
+                        if (ids.length === 0) return;
+                        ids.forEach((aid) => {
+                            const id = aidToDomId('focus', aid);
+                            const t = data.base_info[aid].title;
+                            const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                            tocHtml +=
+                                '<a href="#' +
+                                id +
+                                '" class="toc-link pl-2 line-clamp-2" title="' +
+                                escapeHtml(t) +
+                                '">' +
+                                escapeHtml(short) +
+                                '</a>';
+                        });
                     });
-                    tocHtml += '<p class="toc-section-title">今日全量</p>';
+                    tocHtml += '<p class="toc-section-title">剩余全量</p>';
                     tocHtml +=
-                        '<a href="#section-all" class="toc-link">' + escapeHtml('▼ 今日全量简报') + '</a>';
-                    Object.keys(data.summaries).forEach((aid) => {
+                        '<a href="#section-all" class="toc-link">' + escapeHtml('▼ 剩余全量简报') + '</a>';
+                    remainingEntries.forEach(([aid]) => {
                         const id = aidToDomId('all', aid);
                         const t = data.base_info[aid].title;
                         const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
