@@ -1207,7 +1207,7 @@ class PaperPipeline:
             )
             return aid, section_key
 
-        with ThreadPoolExecutor(max_workers=6) as executor:
+        with ThreadPoolExecutor(max_workers=8) as executor:
             futures = {executor.submit(_classify_one, aid): aid for aid in aid_list_unique}
             pbar = tqdm(
                 total=total_papers,
@@ -1252,13 +1252,18 @@ class PaperPipeline:
 
         # step04：逐篇生成短文摘要（LLM）
         summaries = {}
-        for aid in tqdm(
-            base_info.keys(),
-            desc="step04 | 生成短文摘要",
-            unit="篇",
-        ):
+        aid_list04 = list(base_info.keys())
+        aid_list04_unique = list(dict.fromkeys(aid_list04))
+        total04 = len(aid_list04_unique)
+
+        def _run_step04_one(aid: str) -> tuple[str, str | None]:
+            assert isinstance(aid, str)
+            assert aid in details_by_aid
+            assert "abstract" in details_by_aid[aid]
+            assert isinstance(details_by_aid[aid]["abstract"], str)
+
             sum_fp = os.path.join(step04_summaries_llm, f"{aid}.json")
-            summaries[aid] = self.call_llm(
+            out = self.call_llm(
                 PROMPT_STEP04_SUMMARY.format(abstract=details_by_aid[aid]["abstract"]),
                 sum_fp,
                 cache_key=None,
@@ -1266,6 +1271,36 @@ class PaperPipeline:
                 debug_step="step04",
                 debug_title="生成短文摘要",
             )
+            return aid, out
+
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            futures = {executor.submit(_run_step04_one, aid): aid for aid in aid_list04_unique}
+            pbar = tqdm(
+                total=total04,
+                desc="step04 | 生成短文摘要",
+                unit="篇",
+            )
+            try:
+                done = 0
+                for fut in as_completed(futures):
+                    aid = futures[fut]
+                    try:
+                        aid, out = fut.result()
+                    except Exception as e:
+                        pipeline_debug(
+                            "step04",
+                            "生成短文摘要异常",
+                            f"论文 aid={aid} err={type(e).__name__}: {e}",
+                        )
+                        out = None
+
+                    done += 1
+                    pipeline_debug("step04", "生成短文摘要进度", f"{done}/{total04} 论文 aid={aid}")
+                    pbar.update(1)
+                    if out is not None:
+                        summaries[aid] = out
+            finally:
+                pbar.close()
 
         # step05～08：重点篇下载 HTML、深度解析、抽图、图注翻译
         deeps, imgs = {}, {}
@@ -1273,49 +1308,88 @@ class PaperPipeline:
         for _sec_name, ids in focus_sections.items():
             for aid in ids:
                 focus_ids.append(aid)
-        for aid in tqdm(
-            focus_ids,
-            desc="step05-08 | HTML+深度+图示+图注翻译",
-            unit="篇",
-        ):
+        focus_ids_unique = list(dict.fromkeys(focus_ids))
+        total_focus = len(focus_ids_unique)
+
+        def _run_05_08_one(aid: str) -> tuple[str, str | None, list | None]:
+            assert isinstance(aid, str)
+            pipeline_debug("step05", "step05-08提交", f"重点编号={aid}")
+
             h_p, t_p = self.download_arxiv_html(aid, step05_arxiv_html, force_rerun=_should("step05"))
-            if os.path.exists(h_p):
-                with open(h_p, 'r', encoding='utf-8') as f:
-                    full_html = f.read()
-                with open(t_p, 'r', encoding='utf-8') as f:
-                    clean_txt = f.read()
-                deep_fp = os.path.join(step06_deep_llm, f"{aid}.json")
-                deeps[aid] = self.call_llm(
-                    PROMPT_STEP06_DEEP.format(
-                        paper_body_excerpt=clean_txt[: self.cfg.deep_body_max_chars],
-                    ),
-                    deep_fp,
-                    cache_key=None,
-                    force_rerun=_should("step06"),
-                    debug_step="step06",
-                    debug_title="深度解析",
-                )
-                raw_meta = self.extract_images_from_html(
-                    full_html,
-                    aid,
-                    pub_img_dir,
-                    debug_step="step07",
-                    debug_title="抽取图示",
-                )
-                imgs[aid] = self.translate_figure_captions(
-                    raw_meta,
-                    aid,
-                    step08_figure_caption_zh,
-                    force_rerun=_should("step08"),
-                    debug_step="step08",
-                    debug_title="图注翻译",
-                )
-            else:
+            if not os.path.exists(h_p):
                 pipeline_debug(
                     "step05",
                     "arxiv实验HTML",
                     f"重点编号={aid} 无HTML缓存文件 路径={h_p} 已跳过深度与图示",
                 )
+                return aid, None, None
+
+            with open(h_p, "r", encoding="utf-8") as f:
+                full_html = f.read()
+            with open(t_p, "r", encoding="utf-8") as f:
+                clean_txt = f.read()
+
+            deep_fp = os.path.join(step06_deep_llm, f"{aid}.json")
+            deep_out = self.call_llm(
+                PROMPT_STEP06_DEEP.format(
+                    paper_body_excerpt=clean_txt[: self.cfg.deep_body_max_chars],
+                ),
+                deep_fp,
+                cache_key=None,
+                force_rerun=_should("step06"),
+                debug_step="step06",
+                debug_title="深度解析",
+            )
+
+            raw_meta = self.extract_images_from_html(
+                full_html,
+                aid,
+                pub_img_dir,
+                debug_step="step07",
+                debug_title="抽取图示",
+            )
+            img_meta = self.translate_figure_captions(
+                raw_meta,
+                aid,
+                step08_figure_caption_zh,
+                force_rerun=_should("step08"),
+                debug_step="step08",
+                debug_title="图注翻译",
+            )
+
+            return aid, deep_out, img_meta
+
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            futures = {executor.submit(_run_05_08_one, aid): aid for aid in focus_ids_unique}
+            pbar = tqdm(
+                total=total_focus,
+                desc="step05-08 | HTML+深度+图示+图注翻译",
+                unit="篇",
+            )
+            try:
+                done = 0
+                for fut in as_completed(futures):
+                    aid = futures[fut]
+                    try:
+                        aid, deep_out, img_meta = fut.result()
+                    except Exception as e:
+                        pipeline_debug(
+                            "step05-08",
+                            "重点篇异常",
+                            f"重点编号={aid} err={type(e).__name__}: {e}",
+                        )
+                        deep_out, img_meta = None, None
+
+                    done += 1
+                    pipeline_debug("step05-08", "进度", f"{done}/{total_focus} 重点编号={aid}")
+                    pbar.update(1)
+
+                    if deep_out is not None:
+                        deeps[aid] = deep_out
+                    if img_meta is not None:
+                        imgs[aid] = img_meta
+            finally:
+                pbar.close()
 
         # step09：落盘与发布（各步 LLM 结果已在 call_llm 内写入缓存文件）
         if os.path.isdir(step03_arxiv_abs):
@@ -1473,7 +1547,9 @@ PROMPT_STEP03_SECTION_CLASSIFY_STEP1 = """你是一个严格的论文板块归�
 {section_excludes}
 
 如果存在排除项，请同时考虑：论文主要内容若更贴近排除项，则不应归入该板块。
-请你分析这篇论文是否属于该板块，并说明关键依据。最后给出一个明确结论，该论文是否归入该板块？"""
+请你分析这篇论文是否属于该板块，并说明关键依据。
+分析的最后一句话请给出一个明确结论，该论文是否归入该板块？
+"""
 
 PROMPT_STEP03_SECTION_CLASSIFY_STEP2 = """下面是你对“是否属于板块【{section_name}】”的第一轮分析草稿：
 {step1_output}
@@ -1491,7 +1567,7 @@ FOCUS_SECTIONS = [
             "3D网格", "3D网格拓扑结构", "3D神经渲染","多模态3D生成","3D动画","3D绑骨","3D风格化","3D编辑","3D纹理生成",
             "3D场景生成", "物理仿真",  "3DGS", "3D动态重建"
         ],
-        "exclude": ["机器人/具身智能"],
+        "exclude": ["机器人/具身智能",  "蛋白质结构预测", "生物医学"],
     },
     {
         "key": "world_model",
@@ -1521,6 +1597,7 @@ FOCUS_SECTIONS = [
             "机器人", "机器人学习", "具身智能", "机器人操作", "机械臂", "抓取", "操控",
             "运动规划", "控制", "导航", "强化学习机器人", "VLA", "机器人强化学习"
         ],
+        "exclude": [],
     },
 ]
 
@@ -1559,7 +1636,8 @@ if __name__ == "__main__":
     pipeline = PaperPipeline(my_api_key, cfg)
     today = datetime.now(timezone.utc)
     yesterday = today - timedelta(days=1)
+    thedaybeforeyesterday = today - timedelta(days=2)
     pipeline.run_pipeline(today.strftime("%Y-%m-%d"), force_rerun=["step01"])
     pipeline.run_pipeline(yesterday.strftime("%Y-%m-%d"), force_rerun=["step01"])
- 
+    pipeline.run_pipeline(thedaybeforeyesterday.strftime("%Y-%m-%d"), force_rerun=["step01"])
     
