@@ -1,0 +1,32 @@
+{
+  "date": "2026-04-08",
+  "focus_ids": [],
+  "base_info": {
+    "2604.05404": {
+      "title": "Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.05404",
+      "votes": 4
+    },
+    "2604.04074": {
+      "title": "FactReview: Evidence-Grounded Reviews with Literature Positioning and Execution-Based Claim Verification",
+      "hf_link": "https://huggingface.co/papers/2604.04074",
+      "votes": 1
+    }
+  },
+  "summaries": {
+    "2604.05404": "自然语言处理;大语言模型  \n现有工具集成推理场景存在因工具调用导致的推理中断和缓存效率低下问题，影响了模型推理的实际延迟。  \n论文提出了硬件感知的效率度量指标PTE，统一量化推理与工具使用成本，并通过实验验证其与延迟的关联性及低效模式。",
+    "2604.04074": "自然语言处理;;机器学习  \n背景/任务：针对机器学习领域同行评审因提交量激增和评审时间有限而面临压力，现有基于大语言模型的评审系统仅阅读稿件、易受论文表述质量影响且难以验证外部证据。  \n研发了FactReview系统，通过提取论文主张、检索相关文献、运行代码验证核心经验性主张，生成证据报告并标注主张的支持程度，案例研究表明其能更客观地辅助评审。"
+  },
+  "deep_analysis": {},
+  "images_meta": {},
+  "arxiv_details": {
+    "2604.05404": {
+      "abstract": "In real-world Tool-Integrated Reasoning (TIR) scenarios, where LLMs interleave reasoning with external tool calls, a major source of inefficiency is that the toolcalls create pauses between LLM requests and cause KV-Cache eviction, forcing recomputation. Also, the long, unfiltered response returned by external tools inflates the KV-Cache, so each decode step spends more time loading the growing cache and thus becomes steadily slower as context length increases. However, existing efficiency metrics like token counts and toolcall counts fail to capture the real model inference latency. To address this, we introduce PTE (Prefill Token Equivalents), a hardware-aware TIR-efficiency metric that unifies internal reasoning and external tool-use costs while explicitly accounting for non-reusable KV-Cache and long-tool-response scenarios. Validation in a high-concurrency industrial setting indicates that PTE aligns significantly better with wall-clock latency than standard token counts, while maintaining consistent efficiency rankings across diverse hardware profiles. We conduct extensive experiments across five TIR benchmarks, quantify their PTE costs, and identify four inefficiency patterns that appear in TIR. We also discover that trajectories with higher PTE costs tend to have lower reasoning correctness, indicating that simply using more tools does not improve the quality of the answer.",
+      "comments": "Accepted at ACL 2026. Code: <a class=\"link-external link-https\" href=\"https://github.com/sqs-ustc/tool-reasoning-framework-PTE\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.04074": {
+      "abstract": "Peer review in machine learning is under growing pressure from rising submission volume and limited reviewer time. Most LLM-based reviewing systems read only the manuscript and generate comments from the paper's own narrative. This makes their outputs sensitive to presentation quality and leaves them weak when the evidence needed for review lies in related work or released code. We present FactReview, an evidence-grounded reviewing system that combines claim extraction, literature positioning, and execution-based claim verification. Given a submission, FactReview identifies major claims and reported results, retrieves nearby work to clarify the paper's technical position, and, when code is available, executes the released repository under bounded budgets to test central empirical claims. It then produces a concise review and an evidence report that assigns each major claim one of five labels: Supported, Supported by the paper, Partially supported, In conflict, or Inconclusive. In a case study on CompGCN, FactReview reproduces results that closely match those reported for link prediction and node classification, yet also shows that the paper's broader performance claim across tasks is not fully sustained: on MUTAG graph classification, the reproduced result is 88.4%, whereas the strongest baseline reported in the paper remains 92.6%. The claim is therefore only partially supported. More broadly, this case suggests that AI is most useful in peer review not as a final decision-maker, but as a tool for gathering evidence and helping reviewers produce more evidence-grounded assessments. The code is public atthis https URL.",
+      "comments": ""
+    }
+  }
+}
