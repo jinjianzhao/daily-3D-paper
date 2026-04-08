@@ -1571,11 +1571,11 @@ FOCUS_SECTIONS = [
     },
     {
         "key": "world_model",
-        "name": "世界模型/空间智能",
+        "name": "世界模型",
         "keywords": [
-            "世界模型", "空间智能",
+            "3D世界模型", 
         ],
-        "exclude": ["机器人/具身智能"],
+        "exclude": ["机器人/具身智能", "医学图像分析", "生物医学"],
     },
     {
         "key": "gen_model_foundation",
