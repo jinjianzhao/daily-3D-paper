@@ -1602,8 +1602,6 @@ FOCUS_SECTIONS = [
         ],
         "exclude": ["纯大语言模型"],
     },
-
-
     # {
     #     "key": "robot_embodied_intelligence",
     #     "name": "机器人/具身智能",
