@@ -1,0 +1,80 @@
+{
+  "date": "2026-04-09",
+  "focus_ids": [
+    "2604.07348"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [],
+    "图片/视频/多模态生成": [
+      "2604.07348"
+    ]
+  },
+  "base_info": {
+    "2604.07343": {
+      "title": "Personalized RewardBench: Evaluating Reward Models with Human Aligned Personalization",
+      "hf_link": "https://huggingface.co/papers/2604.07343",
+      "votes": 2
+    },
+    "2604.06425": {
+      "title": "Neural Computers",
+      "hf_link": "https://huggingface.co/papers/2604.06425",
+      "votes": 1
+    },
+    "2604.07023": {
+      "title": "MARS: Enabling Autoregressive Models Multi-Token Generation",
+      "hf_link": "https://huggingface.co/papers/2604.07023",
+      "votes": 0
+    },
+    "2604.07348": {
+      "title": "MoRight: Motion Control Done Right",
+      "hf_link": "https://huggingface.co/papers/2604.07348",
+      "votes": 0
+    }
+  },
+  "summaries": {
+    "2604.07343": "自然语言处理；机器学习  \n背景/任务是评估大语言模型奖励模型在捕捉用户个性化偏好方面的能力。  \n提出并验证了Personalized RewardBench，这是一个能更准确预测奖励模型下游性能的新基准。",
+    "2604.06425": "机器学习;神经网络  \n提出神经计算机作为统一计算、内存和I/O的新型机器学习范式，旨在使模型自身成为运行的计算机。  \n通过视频模型在CLI和GUI环境中学习I/O轨迹，初步实现了接口原语，并规划了完全神经计算机的发展路线。",
+    "2604.07348": "计算机视觉;生成模型  \n现有方法在生成运动可控视频时难以分离相机与物体运动并缺乏对物理因果关系的建模。  \nMoRight通过解耦运动建模和因果学习，实现了分离控制相机与物体运动并能进行因果推理的视频生成。",
+    "2604.07023": "自然语言处理；模型优化  \n背景/任务：针对自回归语言模型逐词生成效率低的问题，提出提升推理速度的轻量级方法。  \n所做工作：通过微调使模型一次预测多个词元，实现1.5-1.7倍吞吐提升，保持精度且无需额外参数或架构改动。"
+  },
+  "deep_analysis": {
+    "2604.07348": "这篇论文是**视频生成**领域的研究。\n\n没问题，我这就用简单的语言为你拆解这篇论文。\n\n### (1) 任务是什么？\n*   **任务名称**：**可控视频生成**\n*   **任务输入**：一张**静态图片** + 用户的**控制指令**（比如：想让图中的某个物体怎么动，想从什么角度看这个场景）。\n*   **任务输出**：一段**短视频**。\n*   **任务功能**：让用户像导演一样，通过简单的指令（描述物体运动轨迹和摄像机视角）就能“指挥”静态图片里的世界动起来，生成符合物理规律、看起来真实合理的视频。\n\n### (2) 想解决什么问题？\n作者指出了现有视频生成模型的两个主要“不智能”的地方：\n1.  **运动和视角混在一起**：想象一下，你想让一个杯子在桌子上滑动，同时你的视角（摄像机）也在绕着桌子转。现有模型很难分清哪些是杯子自己的运动，哪些是因为你视角转动带来的“看起来在动”的错觉，导致控制起来很混乱。\n2.  **不懂“因果关系”**：现有模型只是机械地让像素点沿着你画的轨迹移动。比如，你画了一条让“手”去推“杯子”的轨迹，模型只会让手和杯子按轨迹走，但**杯子被推后会不会晃、会不会倒下、里面的水会不会洒出来**？这些由“推”这个动作引发的“后果”，模型不会去思考和生成。它只是一个没有物理常识的“轨迹复读机”。\n\n### (3) 核心思路是什么？\n作者提出了一个叫 **MoRight** 的新框架，核心思路是“**分而治之**”和“**教模型理解因果**”。\n\n1.  **解决“运动-视角”混淆**：\n    *   **建立“标准视角”**：想象把整个场景固定在一个不动的视角下，比如正前方。用户在这个“标准视角”下，去指定物体该怎么动（比如杯子向左滑），这样就排除了摄像机干扰。\n    *   **“运动转移”**：当用户想换一个角度看场景（比如从侧面看）时，模型会用一种叫 **“时序跨视角注意力”** 的技术，把在“标准视角”下定义好的物体运动，**正确地投影到**新的视角画面里。这样，物体的运动（杯子向左滑）和摄像机的运动（从正面转到侧面）就**解耦**了，可以独立控制。\n\n2.  **解决“不懂因果”问题**：\n    *   **区分“主动”和“被动”运动**：在训练数据里，他们把物体的运动分为两类：**主动运动**（用户施加的动作，比如“推”）和 **被动运动**（引发的后果，比如“被推倒”）。\n    *   **训练模型建立联系**：他们训练模型去学习这两种运动之间的联系。这样模型就学会了：看到“推”这个动作（主动），它就知道该生成“倒下”这个后果（被动）。\n    *   **实现两种推理模式**：\n        *   **正向推理**：用户给一个“主动”动作（手推杯子），模型自动预测并生成所有合理的后果（杯子滑动、水洒出）。\n        *   **逆向推理**：用户给一个“被动”结果（想让杯子滑到某处），模型可以反推出一个合理的“主动”动作（可能是手推了一下，也可能是桌子被撞了）。这大大增强了交互的灵活性。\n\n### (4) 结果怎么样？\n作者在多个标准测试集上进行了实验，结论是：\n*   **生成质量**：生成的视频在视觉上更清晰、更真实。\n*   **运动可控性**：能更精确地响应用户对物体运动和摄像机视角的指令。\n*   **交互感知能力**：在需要理解物体间交互（如碰撞、推拉）的场景下，表现显著优于之前的模型，生成的视频因果更合理、更像真实世界。\n\n**简单总结**：这篇论文想让AI从“只会照着轨迹画动画的复读机”，变成一个“能理解物理因果、能分视角独立控制的视频导演”。它的核心方法是通过“标准视角解耦运动”和“主动/被动运动建模”来实现的，并且在实验中取得了很好的效果。"
+  },
+  "images_meta": {
+    "2604.07348": [
+      {
+        "path": "https://arxiv.org/html/2604.07348v1/x2.png",
+        "caption": "Figure 2:Model architecture.Our model adopts a dual-stream architecture with shared weights to disentangle object motion from camera motion. The canonical stream encodes motion trajectories using a track encoder and learns motion in a fixed canonical view. The target stream encodes camera pose signals through a camera encoder. The resulting motion and camera conditions are injected into every attention block of the network. Cross-view self-attention connects the two streams, transferring motion learned in the canonical view to the target view and enabling disentangled camera–object motion generation.",
+        "caption_zh": "图 2：模型架构。我们的模型采用权重共享的双流架构，以分离物体运动与相机运动。规范流通过轨迹编码器编码运动轨迹，并在固定的规范视角中学习运动。目标流通过相机编码器编码相机位姿信号。得到的运动条件与相机条件被注入网络的每个注意力块中。跨视角自注意力连接两个流，将规范视角中学到的运动转移至目标视角，从而实现解耦的相机-物体运动生成。"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.07348v1/src_figs/double_lift_cloth_1_seg_overlay.png",
+        "caption": "Figure 3:Active vs. passive motion. Theactiveobject (hand) initiates the action, while thepassiveobject (cloth) responds.",
+        "caption_zh": "图 3：主动运动与被动运动。主动物体（手）发起动作，而被动物体（布）产生响应。"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.07348v1/x3.png",
+        "caption": "Figure 4:Data curation pipeline.Foundation models[harley2025alltracker,huang2025vipe,ravi2024sam2]extract depth, camera poses, and tracks from raw videos. A VLM[Qwen3-VL]segments tracks into active/passive regions. We further optionally use a video-to-video model[fu2026plenoptic]to generate paired videos with the same object motion but different camera motions.",
+        "caption_zh": "图 4：数据整理流程。基础模型 [harley2025alltracker,huang2025vipe,ravi2024sam2] 从原始视频中提取深度、相机位姿与轨迹。视觉语言模型 [Qwen3-VL] 将轨迹分割为主动/被动区域。我们进一步可选地使用视频到视频模型 [fu2026plenoptic] 来生成具有相同物体运动但不同相机运动的配对视频。"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.07343": {
+      "abstract": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values. While benchmarks for general response quality are prevalent, evaluating how well reward models account for individual user preferences remains an open challenge. To bridge this gap, we introduce Personalized RewardBench, a novel benchmark designed to rigorously assess reward models' capacity to model personalized preferences. We construct chosen and rejected response pairs based on strict adherence to (or violation of) user-specific rubrics, ensuring that preference distinctions are uniquely tailored to the individual. In particular, human evaluations confirm that the primary discriminative factor between pairs is strictly personal preference, with both responses maintaining high general quality (e.g., correctness, relevance and helpfulness). Extensive testing reveals that existing state-of-the-art reward models struggle significantly with personalization, peaking at an accuracy of just 75.94%. Crucially, because an effective reward model benchmark should predict a reward model's performance on downstream tasks, we conduct experiments demonstrating that our benchmark exhibits a significantly higher correlation with downstream performance in both Best-of-N (BoN) sampling and Proximal Policy Optimization (PPO) compared to existing baselines. These findings establish Personalized RewardBench as a robust and accurate proxy for evaluating reward models' performance in downstream applications.",
+      "comments": ""
+    },
+    "2604.06425": {
+      "abstract": "We propose a new frontier: Neural Computers (NCs) -- an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. Unlike conventional computers, which execute explicit programs, agents, which act over external execution environments, and world models, which learn environment dynamics, NCs aim to make the model itself the running computer. Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explicit reprogramming, and durable capability reuse. As an initial step, we study whether early NC primitives can be learned solely from collected I/O traces, without instrumented program state. Concretely, we instantiate NCs as video models that roll out screen frames from instructions, pixels, and user actions (when available) in CLI and GUI settings. These implementations show that learned runtimes can acquire early interface primitives, especially I/O alignment and short-horizon control, while routine reuse, controlled updates, and symbolic stability remain open. We outline a roadmap toward CNCs around these challenges. If overcome, CNCs could establish a new computing paradigm beyond today's agents, world models, and conventional computers.",
+      "comments": "Github (data pipeline): <a class=\"link-external link-https\" href=\"https://github.com/metauto-ai/NeuralComputer;\" rel=\"external noopener nofollow\">this https URL</a> Blogpost: <a class=\"link-external link-https\" href=\"https://metauto.ai/neuralcomputer/index_eng.html\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.07023": {
+      "abstract": "Autoregressive (AR) language models generate text one token at a time, even when consecutive tokens are highly predictable given earlier context. We introduce MARS (Mask AutoRegreSsion), a lightweight fine-tuning method that teaches an instruction-tuned AR model to predict multiple tokens per forward pass. MARS adds no architectural modifications, no extra parameters, and produces a single model that can still be called exactly like the original AR model with no performance degradation. Unlike speculative decoding, which maintains a separate draft model alongside the target, or multi-head approaches such as Medusa, which attach additional prediction heads, MARS requires only continued training on existing instruction data. When generating one token per forward pass, MARS matches or exceeds the AR baseline on six standard benchmarks. When allowed to accept multiple tokens per step, it maintains baseline-level accuracy while achieving 1.5-1.7x throughput. We further develop a block-level KV caching strategy for batch inference, achieving up to 1.71x wall-clock speedup over AR with KV cache on Qwen2.5-7B. Finally, MARS supports real-time speed adjustment via confidence thresholding: under high request load, the serving system can increase throughput on the fly without swapping models or restarting, providing a practical latency-quality knob for deployment.",
+      "comments": "15 pages, 4 fugures"
+    },
+    "2604.07348": {
+      "abstract": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://research.nvidia.com/labs/sil/projects/moright\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}
