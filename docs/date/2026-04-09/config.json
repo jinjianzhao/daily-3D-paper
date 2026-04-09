@@ -2,41 +2,53 @@
   "date": "2026-04-09",
   "focus_ids": [
     "2604.07209",
-    "2604.07340",
-    "2604.07348",
-    "2604.06916",
     "2604.04746",
-    "2604.06182"
+    "2604.07340",
+    "2604.06916",
+    "2604.07348",
+    "2604.06182",
+    "2604.06912"
   ],
   "focus_sections": {
     "3D重建/生成": [
       "2604.07209"
     ],
     "图片/视频/多模态生成": [
+      "2604.04746",
       "2604.07340",
-      "2604.07348",
       "2604.06916",
-      "2604.04746"
+      "2604.07348"
     ],
     "世界模型/具身智能": [],
     "计算机视觉": [
-      "2604.06182"
+      "2604.06182",
+      "2604.06912"
     ]
   },
   "base_info": {
     "2604.06268": {
       "title": "RAGEN-2: Reasoning Collapse in Agentic RL",
       "hf_link": "https://huggingface.co/papers/2604.06268",
-      "votes": 13
+      "votes": 16
     },
     "2604.04746": {
       "title": "Think in Strokes, Not Pixels: Process-Driven Image Generation via Interleaved Reasoning",
       "hf_link": "https://huggingface.co/papers/2604.04746",
-      "votes": 11
+      "votes": 12
     },
     "2604.07023": {
       "title": "MARS: Enabling Autoregressive Models Multi-Token Generation",
       "hf_link": "https://huggingface.co/papers/2604.07023",
+      "votes": 8
+    },
+    "2604.07340": {
+      "title": "TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders",
+      "hf_link": "https://huggingface.co/papers/2604.07340",
+      "votes": 3
+    },
+    "2604.07209": {
+      "title": "INSPATIO-WORLD: A Real-Time 4D World Simulator via Spatiotemporal Autoregressive Modeling",
+      "hf_link": "https://huggingface.co/papers/2604.07209",
       "votes": 3
     },
     "2604.07343": {
@@ -44,20 +56,20 @@
       "hf_link": "https://huggingface.co/papers/2604.07343",
       "votes": 3
     },
-    "2604.07340": {
-      "title": "TC-AE: Unlocking Token Capacity for Deep Compression Autoencoders",
-      "hf_link": "https://huggingface.co/papers/2604.07340",
-      "votes": 2
-    },
-    "2604.07209": {
-      "title": "INSPATIO-WORLD: A Real-Time 4D World Simulator via Spatiotemporal Autoregressive Modeling",
-      "hf_link": "https://huggingface.co/papers/2604.07209",
+    "2604.06425": {
+      "title": "Neural Computers",
+      "hf_link": "https://huggingface.co/papers/2604.06425",
       "votes": 2
     },
     "2604.04443": {
       "title": "DeonticBench: A Benchmark for Reasoning over Rules",
       "hf_link": "https://huggingface.co/papers/2604.04443",
       "votes": 2
+    },
+    "2604.06916": {
+      "title": "FP4 Explore, BF16 Train: Diffusion Reinforcement Learning via Efficient Rollout Scaling",
+      "hf_link": "https://huggingface.co/papers/2604.06916",
+      "votes": 1
     },
     "2604.06427": {
       "title": "The Depth Ceiling: On the Limits of Large Language Models in Discovering Latent Planning",
@@ -69,65 +81,62 @@
       "hf_link": "https://huggingface.co/papers/2604.05684",
       "votes": 1
     },
-    "2604.06425": {
-      "title": "Neural Computers",
-      "hf_link": "https://huggingface.co/papers/2604.06425",
+    "2604.06182": {
+      "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
+      "hf_link": "https://huggingface.co/papers/2604.06182",
       "votes": 1
     },
-    "2604.06916": {
-      "title": "FP4 Explore, BF16 Train: Diffusion Reinforcement Learning via Efficient Rollout Scaling",
-      "hf_link": "https://huggingface.co/papers/2604.06916",
+    "2604.06912": {
+      "title": "Q-Zoom: Query-Aware Adaptive Perception for Efficient Multimodal Large Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.06912",
       "votes": 0
     },
     "2604.07348": {
       "title": "MoRight: Motion Control Done Right",
       "hf_link": "https://huggingface.co/papers/2604.07348",
       "votes": 0
-    },
-    "2604.06182": {
-      "title": "VenusBench-Mobile: A Challenging and User-Centric Benchmark for Mobile GUI Agents with Capability Diagnostics",
-      "hf_link": "https://huggingface.co/papers/2604.06182",
-      "votes": 0
     }
   },
   "summaries": {
+    "2604.07343": "自然语言处理；机器学习  \n背景/任务是评估大语言模型奖励模型在捕捉用户个性化偏好方面的能力。  \n提出并验证了Personalized RewardBench，这是一个能更准确预测奖励模型下游性能的新基准。",
+    "2604.04443": "自然语言处理；推理与知识表示  \n背景/任务：针对大语言模型在复杂、上下文相关的规则推理（特别是法律和政策领域的义务、许可和禁令推理）方面的不足，提出一个专注于长文本、高风险义务逻辑推理的基准。  \n该研究构建了DEONTICBENCH基准，涵盖多个真实领域，设计了多种推理方法（包括符号计算），并评估了前沿模型的表现，同时研究了通过监督微调和强化学习来提升符号程序生成的效果。",
     "2604.07340": "计算机视觉；生成模型  \n现有深度压缩自编码器在高压缩比下为保持重建质量常增加潜在通道数，但易导致潜在表示坍缩，损害生成性能。  \n本文提出TC-AE，通过分阶段压缩减少结构信息丢失以支持有效分词缩放，并联合自监督训练增强分词语义结构，从而提升深度压缩下的重建与生成效果。",
+    "2604.06268": "机器学习;强化学习  \n背景/任务：在多轮LLM智能体的强化学习训练中，解决传统熵指标无法检测的\"模板崩溃\"问题，以提升推理质量与任务性能。  \n所做工作：提出了基于互信息的诊断方法，并通过信号噪声比机制分析问题，设计了SNR感知过滤策略来增强输入依赖性和任务表现。",
+    "2604.06427": "机器学习；自然语言处理  \n研究大型语言模型在无中间步骤监督下进行隐式多步规划的能力极限  \n通过图路径寻找任务测试不同规模模型的隐式规划深度，发现其发现与执行策略能力存在差异",
     "2604.07023": "自然语言处理；模型优化  \n背景/任务：针对自回归语言模型逐词生成效率低的问题，提出提升推理速度的轻量级方法。  \n所做工作：通过微调使模型一次预测多个词元，实现1.5-1.7倍吞吐提升，保持精度且无需额外参数或架构改动。",
     "2604.07209": "计算机视觉；三维视觉与重建\n当前视频生成方法在空间一致性和交互性上存在不足，难以支持复杂环境的实时导航。\n该研究提出了一个结合隐式时空缓存和显式约束的实时框架，通过联合分布匹配蒸馏提升真实感，实现了单视频重建高保真动态交互场景。",
-    "2604.07343": "自然语言处理；机器学习  \n背景/任务是评估大语言模型奖励模型在捕捉用户个性化偏好方面的能力。  \n提出并验证了Personalized RewardBench，这是一个能更准确预测奖励模型下游性能的新基准。",
-    "2604.06268": "机器学习;强化学习  \n背景/任务：在多轮LLM智能体的强化学习训练中，解决传统熵指标无法检测的\"模板崩溃\"问题，以提升推理质量与任务性能。  \n所做工作：提出了基于互信息的诊断方法，并通过信号噪声比机制分析问题，设计了SNR感知过滤策略来增强输入依赖性和任务表现。",
-    "2604.04443": "自然语言处理；推理与知识表示  \n背景/任务：针对大语言模型在复杂、上下文相关的规则推理（特别是法律和政策领域的义务、许可和禁令推理）方面的不足，提出一个专注于长文本、高风险义务逻辑推理的基准。  \n该研究构建了DEONTICBENCH基准，涵盖多个真实领域，设计了多种推理方法（包括符号计算），并评估了前沿模型的表现，同时研究了通过监督微调和强化学习来提升符号程序生成的效果。",
-    "2604.06425": "机器学习;神经网络  \n提出神经计算机作为统一计算、内存和I/O的新型机器学习范式，旨在使模型自身成为运行的计算机。  \n通过视频模型在CLI和GUI环境中学习I/O轨迹，初步实现了接口原语，并规划了完全神经计算机的发展路线。",
+    "2604.04746": "计算机视觉;图像生成  \n背景/任务是人类绘画是逐步进行的，而现有统一多模态模型能否模拟这种分步生成过程。  \n他们提出了一种过程驱动的图像生成方法，通过交替进行文本推理和视觉生成的多步迭代来分解合成过程。",
     "2604.06916": "机器学习;强化学习  \n基于强化学习的后训练是提升文本到图像扩散模型与人类偏好对齐效果的重要方法，但大规模模型上的扩展会产生巨大计算负担。  \n该研究提出Sol-RL框架，通过FP4量化的高效探索与BF16精度的优化两阶段设计，在保持训练完整性的同时显著加速了训练过程。",
+    "2604.06425": "机器学习;神经网络  \n提出神经计算机作为统一计算、内存和I/O的新型机器学习范式，旨在使模型自身成为运行的计算机。  \n通过视频模型在CLI和GUI环境中学习I/O轨迹，初步实现了接口原语，并规划了完全神经计算机的发展路线。",
+    "2604.05684": "自然语言处理;信息检索  \n背景/任务：研究多语言文档检索中跨语言对齐能力的评估不足问题，特别是模型倾向于优先检索不相关的英文文档而非相关同语言文档的现象。  \n研究内容：提出新的评估场景和指标来量化跨语言对齐性能，并利用小规模数据集设计训练策略以提升跨语言检索效果和缓解英文倾向问题。",
     "2604.07348": "计算机视觉;生成模型  \n现有方法在生成运动可控视频时难以分离相机与物体运动并缺乏对物理因果关系的建模。  \nMoRight通过解耦运动建模和因果学习，实现了分离控制相机与物体运动并能进行因果推理的视频生成。",
     "2604.06182": "人机交互;智能代理  \n现有移动GUI代理评测基准存在局限，未能反映真实移动使用的多样性和不稳定性。  \n该研究构建了用户意图驱动的在线基准VenusBench-Mobile，通过细粒度评估揭示了当前代理在感知和记忆等方面的严重缺陷。",
-    "2604.05684": "自然语言处理;信息检索  \n背景/任务：研究多语言文档检索中跨语言对齐能力的评估不足问题，特别是模型倾向于优先检索不相关的英文文档而非相关同语言文档的现象。  \n研究内容：提出新的评估场景和指标来量化跨语言对齐性能，并利用小规模数据集设计训练策略以提升跨语言检索效果和缓解英文倾向问题。",
-    "2604.06427": "机器学习；自然语言处理  \n研究大型语言模型在无中间步骤监督下进行隐式多步规划的能力极限  \n通过图路径寻找任务测试不同规模模型的隐式规划深度，发现其发现与执行策略能力存在差异",
-    "2604.04746": "计算机视觉;图像生成  \n背景/任务是人类绘画是逐步进行的，而现有统一多模态模型能否模拟这种分步生成过程。  \n他们提出了一种过程驱动的图像生成方法，通过交替进行文本推理和视觉生成的多步迭代来分解合成过程。"
+    "2604.06912": "计算机视觉；多模态学习  \n背景/任务是提升多模态大语言模型在高分辨率视觉任务（如文档理解、密集场景感知）中的效率，避免因全局高分辨率处理导致的计算负担。  \n论文提出了Q-Zoom框架，通过查询感知的自适应机制（动态门控网络和自蒸馏区域建议网络）实现从粗到细的高效处理，在加速推理的同时保持或超越基线模型的准确性。"
   },
   "deep_analysis": {
-    "2604.06916": "好的，没问题！我们用一种简单、直观的方式来理解这篇论文。\n\n这是一篇关于 **如何更高效地“调教”文生图AI，让它画出更符合人类审美的图片** 的工作。\n\n---\n\n### (1) 任务是什么？\n\n*   **任务输入**：一段描述性的文字（文本提示词），例如“一只穿着宇航服的柴犬，在月球上”。\n*   **任务输出**：一张与输入文本匹配的、高质量的图片。\n*   **任务功能**：对已有的、强大的文生图模型（如SD3.5、FLUX等）进行**后期微调**，使其生成的图片在审美、构图、细节等方面更符合人类的偏好，而不是仅仅追求“能生成出来”。\n\n**简单比喻**：你有一个绘画水平很高的学生（基础模型），但TA的画风可能有点“怪”。你的任务就是通过一种高效的“训练方法”，让TA的画风变得更“美”、更“讨喜”。\n\n### (2) 想解决什么问题？\n\n作者发现，在目前最有效的微调方法（一种基于强化学习的方法，叫GRPO）中，有一个“秘诀”能大幅提升调教效果：\n\n> **秘诀**：在每次调整模型参数前，让模型用同一个提示词**生成一大堆（比如几百张）不同的候选图片**，然后从中**只挑出最好和最差的几张**来指导模型学习。这样可以获得非常清晰、强烈的“好”与“坏”的对比信号，学习效率更高。\n\n**但问题来了**：生成“一大堆”候选图片的成本极高！尤其是对FLUX、SANA这种参数多达上百亿的巨型模型来说，生成几百张高精度图片的计算开销和时间非常恐怖。这就成了阻碍我们使用这个“秘诀”的**核心瓶颈**。\n\n**核心矛盾**：想要效果好，就得生成很多图（**质量**）；但生成很多图，计算成本又受不了（**效率**）。\n\n### (3) 核心思路是什么？\n\n论文提出了一个非常聪明的“**两步走**”策略，巧妙地化解了上述矛盾。他们把它叫做 **Sol-RL**。\n\n**核心思想是：把“海选”和“决赛”分开，用不同的“设备”来完成。**\n\n1.  **第一步：FP4高速海选（探索阶段）**\n    *   **目标**：快速、低成本地生成一个巨大的候选图片池（比如1000张）。\n    *   **方法**：使用 **FP4超低精度量化** 来运行模型。你可以把它想象成让模型用“简笔画”或“草图模式”来快速出图。速度快、耗电少（计算量低），但画质粗糙，细节丢失。\n    *   **关键发现**：虽然“草图”质量不高，但**同一组草图里，相对“好”的和相对“差”的草图，其排名顺序和高精度“成品图”的排名顺序是高度一致的**。也就是说，用草图就能可靠地筛选出“潜力股”和“差生”。\n\n2.  **第二步：BF16高精度决赛与训练（优化阶段）**\n    *   **目标**：用最高质量的数据来安全、稳定地更新模型参数。\n    *   **方法**：只把第一步中筛选出来的**极少数**“潜力股”（最好的几张）和“差生”（最差的几张）的“种子”拿出来，用**BF16高精度**（可以理解为“专业绘画模式”）重新生成一遍，得到高清、细节完美的图片。\n    *   然后，**只用这一小撮高质量图片**来计算模型的损失，并更新模型参数。这样就完全避免了用低精度“草图”训练可能带来的模型性能下降问题。\n\n**打个比方**：\n*   传统方法：让1000个厨师（模型）每人做一道满汉全席（BF16高精度图），然后评委从中挑出最好的和最差的来总结厨艺要点。**成本爆炸**。\n*   **Sol-RL方法**：\n    1.  先让1000个厨师快速做**蛋炒饭（FP4草图）**，评委快速品尝，选出10个最有潜力和10个最差的厨师。\n    2.  然后只让这20个厨师，认真做一道**佛跳墙（BF16高精度图）**，评委细细品味这20道精品/差品，来精准指导所有厨师如何提升。**既保证了训练质量，又极大地节省了成本**。\n\n### (4) 结果怎么样？\n\n实验结果非常有力地支持了他们的设计：\n\n1.  **效果更好**：在多个大型文生图模型（SANA, FLUX.1, SD3.5-L）和多个评价指标（如ImageReward、HPS等）上，最终达到的**对齐效果（图片质量）优于或持平于传统的高成本方法**。这意味着他们没有因为追求效率而牺牲最终效果。\n2.  **速度快得多**：**训练速度提升了最高4.64倍**！也就是说，达到相同的奖励分数，别人需要训练10天，他们可能只需要2天。这让他们能够轻松实践“生成大量候选图”这个提升效果的秘诀。\n3.  **验证了核心机制**：实验证明了FP4草图在高精度图中的排名一致性很高，确保了海选的有效性；同时也证明了直接用草图训练会损害模型性能，从而凸显了他们“两步走、解耦合”设计的必要性。\n\n**总结一下**：这篇论文的核心贡献是**提出了一套“算法-硬件协同”的巧思**，通过将低精度量化的高速优势用于“探索筛选”，将高精度计算保留给核心的“参数优化”，成功打破了扩散模型强化学习训练中的计算瓶颈，让“大规模候选生成”这个提升性能的利器得以实用化。",
+    "2604.04746": "好的，我们来用简单的语言拆解一下这篇论文。你可以把它想象成一位正在学习画画的高年级学长，他总结了一套比我们“直接画”更聪明的方法。\n\n### (1) 这篇论文所在的任务是什么？\n\n*   **任务名称**：**文本到图像生成**。我们平时用的文生图AI（比如Midjourney、DALL-E）就是这个任务。\n*   **任务输入**：一句话，也就是**文本描述（Prompt）**。比如“一只熊悬浮在勺子上面”。\n*   **任务输出**：一张**符合文本描述的图片**。\n*   **任务功能**：根据文字描述，生成一张全新的、逼真的图片。\n\n### (2) 这篇论文想解决什么问题？\n\n这篇论文发现，现在的文生图AI有一个“坏习惯”：**喜欢“一步到位”**。\n\n*   **问题**：AI收到一句话（如“熊悬浮在勺子上”），它会在脑子里“脑补”一下，然后“啪”地一下直接生成一张图。这个过程像个黑盒子，我们不知道它怎么想的。这样很容易出错，比如它可能没理解“悬浮”，直接把熊画在勺子旁边了（见图1）。\n*   **核心痛点**：这种“一步到位”的方式，让AI没有机会在**生成过程中**检查自己的思路对不对，也无法**逐步修正**错误。它缺乏一个像人类画家那样的 **“思考过程”**。\n\n### (3) 论文的核心思路是什么？\n\n论文提出了一个非常形象的思路：**教AI像人类画家一样“思考”和“画画”**，而不是“一步到位”。\n\n他们把这个过程设计成了一个 **“四步循环”** 的流水线，让AI自己和自己对话、检查、修改：\n\n1.  **计划（Plan）**：AI先看最终的描述，然后用文字写下**这一步要画什么、怎么画**（比如“先画一个勺子在地上，留出上方空间”）。\n2.  **草图（Sketch）**：AI根据上面的计划，**生成一张当前步骤的草图**（画出一个勺子的图片）。\n3.  **检查（Inspect）**：AI看着自己刚画的草图，再用文字**分析哪里画得不对、哪里没画完**（比如“勺子画好了，但熊还没画，位置也空着”）。\n4.  **精修（Refine）**：AI根据检查结果，写出**修改计划**（比如“在勺子正上方画一只熊”），然后**生成修改后的新图**。\n\n**关键创新点**：\n*   **过程驱动**：重点不是最后的图，而是**生成图的过程**。这个过程（文字计划 -> 草图 -> 文字检查 -> 精修图）被明确地训练和记录下来。\n*   **多模态交织推理**：思考和画画是**交织在一起**的。文字推理指导画画，画出来的图又为下一步的文字推理提供依据。这就像边画边想，边想边改。\n*   **如何训练**：这是个难题，因为“中间步骤的图”应该长什么样是模糊的。论文的巧妙方法是：\n    *   用**场景图**来拆解描述，制造出一系列有逻辑的、渐进的绘画指令（比如先画背景，再加物体A，再加物体B）。\n    *   收集大量这种“计划-草图-检查-精修”的步骤数据，来训练一个**统一的模型**（文中用的是BAGEL），让它学会自己执行这整个四步循环，不需要外部模型帮忙。\n\n**简单总结核心思路**：**把“一步生成图片”的任务，变成了“多步生成图片生成过程”的任务。通过让AI显式地进行“文字思考-视觉呈现-自我检查”的循环，来提高最终图片的准确性和可控性。**\n\n### (4) 结果怎么样？\n\n从论文报告的数据来看，这个方法**效果不错**，而且**效率很高**：\n\n1.  **性能提升**：\n    *   在测试**物体组合关系**准确性的GenEval基准上，将基础模型的分数从79%提升到了**83%**。\n    *   在测试**常识和世界知识**的WISE基准上，从70%提升到了**76%**。\n    *   这说明“逐步思考”确实让AI更能理解复杂的空间关系和逻辑。\n\n2.  **效率优势**：\n    *   和另一个也研究“过程”的先进方法PARM相比，本文的方法在**效果更好的同时（0.83 vs 0.77），需要的训练数据和推理成本都降低了8倍**。\n    *   作者解释说，这是因为他们的方法监督的是**清晰的图像内容（草图）**，而不是像PARM那样监督模糊的**图像潜在噪声**，所以学起来更高效、更直接。\n\n**最终结论**：这篇论文证明，让文生图AI“**像人一样边想边画**”，通过一个可解释、可检查的“计划-草图-检查-精修”循环来生成图片，不仅能得到更准确的图片，还能让生成过程更高效、更可控。这为未来的文生图模型提供了一个很有前景的新方向。",
     "2604.07340": "好的，没问题。我们来像聊天一样，把这篇论文的核心内容拆解清楚。\n\n### 1. 这篇论文所在的任务是什么？\n\n**任务名称**： 构建一个高效的图像**“Tokenizer”（分词器/编码器）**，为图像生成模型（如Stable Diffusion）服务。\n\n*   **任务输入**： 一张高分辨率的原始图片（例如 512x512 像素）。\n*   **任务输出**： 一个**压缩过的、低维的“潜表示”**。你可以把它想象成这张图片的**“数字指纹”**或**“高度浓缩的摘要”**。这个摘要尺寸很小，比如 16x16 或 32x32 的网格，但每个“格子”（即潜表示的一个位置）里包含的信息量很大。\n*   **任务功能**： 这个“数字指纹”有两个关键作用：\n    1.  **压缩**： 大大降低数据量，让后续的生成模型（扩散模型）训练和推理更快、更省内存。\n    2.  **提供更好的表示空间**： 一个好的“数字指纹”应该保留图片的所有关键信息（结构、语义），并且其结构要规整，方便生成模型去学习和创造新的图片。如果“指纹”杂乱无章，生成模型就学不好。\n\n### 2. 这篇论文想解决什么问题？\n\n**核心问题**： 现有的基于 **ViT（视觉Transformer）** 的Tokenizer，在追求**深度压缩**（即把图片压得非常小）时，容易出现 **“潜表示崩溃”**。\n\n*   **什么是“深度压缩”？** 为了更高效，人们希望“数字指纹”的网格尺寸（空间分辨率）越来越小。为了弥补信息损失，就只能增加每个“格子”里信息的复杂度（通道数）。\n*   **“潜表示崩溃”是什么？** 简单说，就是虽然这个“数字指纹”能较好地**重建**出原图（保真度高），但它的**内部结构混乱、缺乏语义组织**。这导致生成模型在这个混乱的空间里很难进行有效的学习和创造，**生成的图片质量反而会下降**。\n*   **论文的切入点**： 之前的研究大多只关注如何设计更复杂的网络，或者如何优化最终的“数字指纹”本身。这篇论文另辟蹊径，它关注的是生成“数字指纹”的**中间过程**——即从图片像素到“数字指纹”之间，那个由 **“图像令牌”** 构成的**中间表示空间**。论文认为，优化这个中间空间是解决上述问题的关键。\n\n### 3. 论文的核心思路是什么？\n\n论文提出了两个相辅相成的主意，合起来就是 **TC-AE** 方法：\n\n**思路一：分阶段压缩，给“令牌”扩容（解决结构损失问题）**\n*   **发现问题**： 他们尝试在ViT里增加“图像令牌”的数量（比如把图片切得更碎），这能提升重建质量，但**对生成质量没用，甚至有害**。原因是，在总压缩比固定的前提下，增加中间令牌数量，意味着最后一步“令牌 -> 数字指纹”的压缩比会变得**极其暴力**，一下子丢失太多结构信息。\n*   **解决方案**： **“分阶段令牌压缩”**。不像原来那样一步到位暴力压缩，而是在ViT编码器内部**提前、渐进地**压缩一次令牌，降低其分辨率。然后再进行最后的压缩得到“数字指纹”。这样相当于把一次“大跳崖”变成了两次“下台阶”，保护了信息的结构，使得增加令牌数量能真正有益于生成任务。\n\n**思路二：用自监督学习，让“令牌”更有语义（解决结构混乱问题）**\n*   **核心思想**： 光有“多”的令牌还不够，还要让它们“好”。好的令牌应该按语义自然地组织起来（比如天空的令牌彼此相似，和汽车的令牌不同）。\n*   **解决方案**： 在训练Tokenizer时，**额外引入一个自监督学习任务**（比如让模型学习区分同一张图片的不同局部视图）。这个任务不依赖外部大数据模型，却能引导ViT编码器产出**语义结构更清晰的图像令牌**。这些结构更好的令牌，最终会产生结构更好、更利于生成的“数字指纹”。\n\n**简单总结**： TC-AE = **更宽松的中间表示空间（通过分阶段压缩实现）** + **更优质的中间表示内容（通过自监督学习实现）**。\n\n### 4. 结果怎么样？\n\n根据论文中的实验（图3，图8等）：\n1.  **协同效应显著**： 论文提出的两个思路（令牌扩容和令牌结构化）相互促进，结合起来效果最好。\n2.  **超越原有方法**： TC-AE在相同的压缩比例下，相比其他ViT-based的Tokenizer，能够取得**更好的图片重建质量**和**显著更好的图片生成质量**。\n3.  **开辟新方向**： 论文证明了**对Token空间的优化**（而不仅仅是增加模型参数或优化最终输出）是一个有效且与现有方法互补的新方向，为设计更强大的视觉Tokenizer提供了新思路。\n\n**打个比方**：\n*   **旧方法**： 像用一台高性能粉碎机，一下子把一本厚厚的书（图片）压成一个致密的小方块（潜表示）。虽然方块里包含了书的全部纸张，但顺序全乱了，另一个人（生成模型）很难根据它复原或创作一本新书。\n*   **TC-AE方法**： 先让一个聪明的助手（分阶段压缩+自监督的ViT）把书**按章节整理、摘要**成一份条理清晰的提纲（结构化的多令牌），然后再把这份提纲精简成一份更小的摘要（最终潜表示）。另一个人拿到这份有条理的摘要，就更容易理解和创作了。\n\n希望这个解释能帮助你清晰地理解这篇论文！",
+    "2604.06916": "好的，没问题！我们用一种简单、直观的方式来理解这篇论文。\n\n这是一篇关于 **如何更高效地“调教”文生图AI，让它画出更符合人类审美的图片** 的工作。\n\n---\n\n### (1) 任务是什么？\n\n*   **任务输入**：一段描述性的文字（文本提示词），例如“一只穿着宇航服的柴犬，在月球上”。\n*   **任务输出**：一张与输入文本匹配的、高质量的图片。\n*   **任务功能**：对已有的、强大的文生图模型（如SD3.5、FLUX等）进行**后期微调**，使其生成的图片在审美、构图、细节等方面更符合人类的偏好，而不是仅仅追求“能生成出来”。\n\n**简单比喻**：你有一个绘画水平很高的学生（基础模型），但TA的画风可能有点“怪”。你的任务就是通过一种高效的“训练方法”，让TA的画风变得更“美”、更“讨喜”。\n\n### (2) 想解决什么问题？\n\n作者发现，在目前最有效的微调方法（一种基于强化学习的方法，叫GRPO）中，有一个“秘诀”能大幅提升调教效果：\n\n> **秘诀**：在每次调整模型参数前，让模型用同一个提示词**生成一大堆（比如几百张）不同的候选图片**，然后从中**只挑出最好和最差的几张**来指导模型学习。这样可以获得非常清晰、强烈的“好”与“坏”的对比信号，学习效率更高。\n\n**但问题来了**：生成“一大堆”候选图片的成本极高！尤其是对FLUX、SANA这种参数多达上百亿的巨型模型来说，生成几百张高精度图片的计算开销和时间非常恐怖。这就成了阻碍我们使用这个“秘诀”的**核心瓶颈**。\n\n**核心矛盾**：想要效果好，就得生成很多图（**质量**）；但生成很多图，计算成本又受不了（**效率**）。\n\n### (3) 核心思路是什么？\n\n论文提出了一个非常聪明的“**两步走**”策略，巧妙地化解了上述矛盾。他们把它叫做 **Sol-RL**。\n\n**核心思想是：把“海选”和“决赛”分开，用不同的“设备”来完成。**\n\n1.  **第一步：FP4高速海选（探索阶段）**\n    *   **目标**：快速、低成本地生成一个巨大的候选图片池（比如1000张）。\n    *   **方法**：使用 **FP4超低精度量化** 来运行模型。你可以把它想象成让模型用“简笔画”或“草图模式”来快速出图。速度快、耗电少（计算量低），但画质粗糙，细节丢失。\n    *   **关键发现**：虽然“草图”质量不高，但**同一组草图里，相对“好”的和相对“差”的草图，其排名顺序和高精度“成品图”的排名顺序是高度一致的**。也就是说，用草图就能可靠地筛选出“潜力股”和“差生”。\n\n2.  **第二步：BF16高精度决赛与训练（优化阶段）**\n    *   **目标**：用最高质量的数据来安全、稳定地更新模型参数。\n    *   **方法**：只把第一步中筛选出来的**极少数**“潜力股”（最好的几张）和“差生”（最差的几张）的“种子”拿出来，用**BF16高精度**（可以理解为“专业绘画模式”）重新生成一遍，得到高清、细节完美的图片。\n    *   然后，**只用这一小撮高质量图片**来计算模型的损失，并更新模型参数。这样就完全避免了用低精度“草图”训练可能带来的模型性能下降问题。\n\n**打个比方**：\n*   传统方法：让1000个厨师（模型）每人做一道满汉全席（BF16高精度图），然后评委从中挑出最好的和最差的来总结厨艺要点。**成本爆炸**。\n*   **Sol-RL方法**：\n    1.  先让1000个厨师快速做**蛋炒饭（FP4草图）**，评委快速品尝，选出10个最有潜力和10个最差的厨师。\n    2.  然后只让这20个厨师，认真做一道**佛跳墙（BF16高精度图）**，评委细细品味这20道精品/差品，来精准指导所有厨师如何提升。**既保证了训练质量，又极大地节省了成本**。\n\n### (4) 结果怎么样？\n\n实验结果非常有力地支持了他们的设计：\n\n1.  **效果更好**：在多个大型文生图模型（SANA, FLUX.1, SD3.5-L）和多个评价指标（如ImageReward、HPS等）上，最终达到的**对齐效果（图片质量）优于或持平于传统的高成本方法**。这意味着他们没有因为追求效率而牺牲最终效果。\n2.  **速度快得多**：**训练速度提升了最高4.64倍**！也就是说，达到相同的奖励分数，别人需要训练10天，他们可能只需要2天。这让他们能够轻松实践“生成大量候选图”这个提升效果的秘诀。\n3.  **验证了核心机制**：实验证明了FP4草图在高精度图中的排名一致性很高，确保了海选的有效性；同时也证明了直接用草图训练会损害模型性能，从而凸显了他们“两步走、解耦合”设计的必要性。\n\n**总结一下**：这篇论文的核心贡献是**提出了一套“算法-硬件协同”的巧思**，通过将低精度量化的高速优势用于“探索筛选”，将高精度计算保留给核心的“参数优化”，成功打破了扩散模型强化学习训练中的计算瓶颈，让“大规模候选生成”这个提升性能的利器得以实用化。",
     "2604.07209": "好的，没问题！我们就像聊天一样，来梳理一下这篇论文的核心内容。你可以把它想象成，作者们想造一个能“玩”的、可以“走进去”的视频世界。\n\n### (1) 这篇论文所在的任务是什么？\n\n我们可以把这个任务叫做 **“实时交互式4D世界模拟”**。\n\n*   **任务输入**：**一段普通的单视角视频**（比如你手机拍的一段街景视频）。\n*   **任务输出**：**一个可以实时交互的、动态的虚拟世界**。\n    *   你不仅可以像看普通视频一样按时间播放，还能**自由地控制一个虚拟摄像机**在这个世界里“走来走去”，从任意角度观察场景。\n    *   这个世界里的物体（如行人、车辆）会按照它们原本的规律继续运动，整个场景是“活”的。\n*   **任务功能**：它能把一段**死的、固定视角**的视频，变成一个**活的、可探索**的4D（3D空间+1维时间）环境。这就像是给你的视频装上了《侠盗猎车手》或者《我的世界》那样的游戏引擎，让你能进去逛。\n\n### (2) 这篇论文想解决什么问题？\n\n现有的AI视频生成技术（比如用文字生成视频）存在三个主要“痛点”，这篇论文就是想解决它们：\n\n1.  **“空间健忘症”**：现在的模型生成一段视频后，如果接着往下生成，或者切换视角，经常会“忘记”之前场景的布局（比如房子突然不见了）、物体的状态（比如门从开到关），导致画面不连贯、不合理。\n2.  **“塑料感”**：很多模型用大量人工合成的3D数据训练，生成的结果虽然结构正确，但光影、材质看起来很假，像动画或游戏，和真实世界视频的质感有差距。\n3.  **“操控不灵”**：当用户想控制摄像机沿着一条特定路径运动时（比如“从A点平滑移动到B点”），模型往往执行得不精确，路径会漂移或抖动，说明它对空间几何的理解不够深。\n\n简单说，他们想造一个**更稳定、更逼真、更听话**的“视频世界模拟器”。\n\n### (3) 论文的核心思路是什么？\n\n作者提出了两大“法宝”：\n\n**法宝一：一个聪明的“时空记忆”架构（STAR框架）**\n想象一下你在玩一个巨大的开放世界游戏，游戏引擎需要记住整个地图和所有NPC的状态。这个STAR框架就做了类似的事情：\n*   **隐式时空缓存**：模型有一个“短期记忆窗口”，会记住最近看到的几帧画面和生成的信息，同时还有一个“长期记忆”，从最初的参考视频中提取关键的世界特征。这样，在长时间探索或大幅切换视角时，模型就不会“失忆”，能保持场景一致性。\n*   **显式空间约束**：当用户给出一个摄像机运动指令（比如“向左平移”），这个模块会把指令转换成精确的、符合物理规律（比如近大远小）的摄像机运动轨迹，并“告诉”模型必须严格遵循。这就解决了“操控不灵”的问题，让控制变得非常精准。\n\n**法宝二：一种“真假结合”的训练技巧（JDMD）**\n为了解决“塑料感”，作者设计了一种聪明的训练方法：\n*   **分两步学习**：\n    1.  **用“合成数据”学操控**：先让模型在大量人工合成的3D视频数据上学习，目标是**精准控制摄像机运动和保持画面连贯**。这一步让模型变得“听话”。\n    2.  **用“真实数据”学质感**：同时，也让模型在真实的文本-视频数据上学习，目标是**生成逼真的光影和纹理**。这一步让模型变得“好看”。\n*   **关键诀窍**：这两个学习任务**共享同一个模型的核心（权重）**。这样，从真实数据中学到的“好看”的视觉特征，会反过来影响和提升那个学操控的模型，让它既能精确控制，又能产出逼真的画面质感。相当于用真实世界的审美，治好了合成数据的“塑料病”。\n\n### (4) 结果怎么样？\n\n根据论文中的实验，他们的系统 **InSpatio-World** 表现非常出色：\n\n*   **在权威评测中领先**：在一个叫 **WorldScore-Dynamic** 的专门评测“世界模型”的榜单上，他们的方法在**所有能实时交互的模型中排名第一**。这意味着在空间一致性、交互精度等方面，它超过了同类技术。\n*   **生成长视频更稳定**：在需要从一张图生成很长一段视频的任务中，他们的方法能更好地保持场景和物体的稳定性，减少“失忆”和画面崩坏。\n*   **摄像机控制更精准**：在执行用户指定的复杂摄像机路径时，他们的结果路径更平滑、更符合指令，视觉效果也更连贯。\n\n**总结一下**：\n这篇论文的团队，就像给AI视频生成技术装上了“**空间记忆**”和“**物理方向盘**”，同时又用“**真实感滤镜**”美化了画面，最终造出了一个**可以从普通视频进入、并能实时自由探索的、高保真动态虚拟世界**。这为未来在机器人、自动驾驶、游戏、VR等需要理解复杂动态环境的领域，提供了一个强大的基础工具。",
     "2604.07348": "这篇论文是**视频生成**领域的研究。\n\n没问题，我这就用简单的语言为你拆解这篇论文。\n\n### (1) 任务是什么？\n*   **任务名称**：**可控视频生成**\n*   **任务输入**：一张**静态图片** + 用户的**控制指令**（比如：想让图中的某个物体怎么动，想从什么角度看这个场景）。\n*   **任务输出**：一段**短视频**。\n*   **任务功能**：让用户像导演一样，通过简单的指令（描述物体运动轨迹和摄像机视角）就能“指挥”静态图片里的世界动起来，生成符合物理规律、看起来真实合理的视频。\n\n### (2) 想解决什么问题？\n作者指出了现有视频生成模型的两个主要“不智能”的地方：\n1.  **运动和视角混在一起**：想象一下，你想让一个杯子在桌子上滑动，同时你的视角（摄像机）也在绕着桌子转。现有模型很难分清哪些是杯子自己的运动，哪些是因为你视角转动带来的“看起来在动”的错觉，导致控制起来很混乱。\n2.  **不懂“因果关系”**：现有模型只是机械地让像素点沿着你画的轨迹移动。比如，你画了一条让“手”去推“杯子”的轨迹，模型只会让手和杯子按轨迹走，但**杯子被推后会不会晃、会不会倒下、里面的水会不会洒出来**？这些由“推”这个动作引发的“后果”，模型不会去思考和生成。它只是一个没有物理常识的“轨迹复读机”。\n\n### (3) 核心思路是什么？\n作者提出了一个叫 **MoRight** 的新框架，核心思路是“**分而治之**”和“**教模型理解因果**”。\n\n1.  **解决“运动-视角”混淆**：\n    *   **建立“标准视角”**：想象把整个场景固定在一个不动的视角下，比如正前方。用户在这个“标准视角”下，去指定物体该怎么动（比如杯子向左滑），这样就排除了摄像机干扰。\n    *   **“运动转移”**：当用户想换一个角度看场景（比如从侧面看）时，模型会用一种叫 **“时序跨视角注意力”** 的技术，把在“标准视角”下定义好的物体运动，**正确地投影到**新的视角画面里。这样，物体的运动（杯子向左滑）和摄像机的运动（从正面转到侧面）就**解耦**了，可以独立控制。\n\n2.  **解决“不懂因果”问题**：\n    *   **区分“主动”和“被动”运动**：在训练数据里，他们把物体的运动分为两类：**主动运动**（用户施加的动作，比如“推”）和 **被动运动**（引发的后果，比如“被推倒”）。\n    *   **训练模型建立联系**：他们训练模型去学习这两种运动之间的联系。这样模型就学会了：看到“推”这个动作（主动），它就知道该生成“倒下”这个后果（被动）。\n    *   **实现两种推理模式**：\n        *   **正向推理**：用户给一个“主动”动作（手推杯子），模型自动预测并生成所有合理的后果（杯子滑动、水洒出）。\n        *   **逆向推理**：用户给一个“被动”结果（想让杯子滑到某处），模型可以反推出一个合理的“主动”动作（可能是手推了一下，也可能是桌子被撞了）。这大大增强了交互的灵活性。\n\n### (4) 结果怎么样？\n作者在多个标准测试集上进行了实验，结论是：\n*   **生成质量**：生成的视频在视觉上更清晰、更真实。\n*   **运动可控性**：能更精确地响应用户对物体运动和摄像机视角的指令。\n*   **交互感知能力**：在需要理解物体间交互（如碰撞、推拉）的场景下，表现显著优于之前的模型，生成的视频因果更合理、更像真实世界。\n\n**简单总结**：这篇论文想让AI从“只会照着轨迹画动画的复读机”，变成一个“能理解物理因果、能分视角独立控制的视频导演”。它的核心方法是通过“标准视角解耦运动”和“主动/被动运动建模”来实现的，并且在实验中取得了很好的效果。",
-    "2604.04746": "好的，我们来用简单的语言拆解一下这篇论文。你可以把它想象成一位正在学习画画的高年级学长，他总结了一套比我们“直接画”更聪明的方法。\n\n### (1) 这篇论文所在的任务是什么？\n\n*   **任务名称**：**文本到图像生成**。我们平时用的文生图AI（比如Midjourney、DALL-E）就是这个任务。\n*   **任务输入**：一句话，也就是**文本描述（Prompt）**。比如“一只熊悬浮在勺子上面”。\n*   **任务输出**：一张**符合文本描述的图片**。\n*   **任务功能**：根据文字描述，生成一张全新的、逼真的图片。\n\n### (2) 这篇论文想解决什么问题？\n\n这篇论文发现，现在的文生图AI有一个“坏习惯”：**喜欢“一步到位”**。\n\n*   **问题**：AI收到一句话（如“熊悬浮在勺子上”），它会在脑子里“脑补”一下，然后“啪”地一下直接生成一张图。这个过程像个黑盒子，我们不知道它怎么想的。这样很容易出错，比如它可能没理解“悬浮”，直接把熊画在勺子旁边了（见图1）。\n*   **核心痛点**：这种“一步到位”的方式，让AI没有机会在**生成过程中**检查自己的思路对不对，也无法**逐步修正**错误。它缺乏一个像人类画家那样的 **“思考过程”**。\n\n### (3) 论文的核心思路是什么？\n\n论文提出了一个非常形象的思路：**教AI像人类画家一样“思考”和“画画”**，而不是“一步到位”。\n\n他们把这个过程设计成了一个 **“四步循环”** 的流水线，让AI自己和自己对话、检查、修改：\n\n1.  **计划（Plan）**：AI先看最终的描述，然后用文字写下**这一步要画什么、怎么画**（比如“先画一个勺子在地上，留出上方空间”）。\n2.  **草图（Sketch）**：AI根据上面的计划，**生成一张当前步骤的草图**（画出一个勺子的图片）。\n3.  **检查（Inspect）**：AI看着自己刚画的草图，再用文字**分析哪里画得不对、哪里没画完**（比如“勺子画好了，但熊还没画，位置也空着”）。\n4.  **精修（Refine）**：AI根据检查结果，写出**修改计划**（比如“在勺子正上方画一只熊”），然后**生成修改后的新图**。\n\n**关键创新点**：\n*   **过程驱动**：重点不是最后的图，而是**生成图的过程**。这个过程（文字计划 -> 草图 -> 文字检查 -> 精修图）被明确地训练和记录下来。\n*   **多模态交织推理**：思考和画画是**交织在一起**的。文字推理指导画画，画出来的图又为下一步的文字推理提供依据。这就像边画边想，边想边改。\n*   **如何训练**：这是个难题，因为“中间步骤的图”应该长什么样是模糊的。论文的巧妙方法是：\n    *   用**场景图**来拆解描述，制造出一系列有逻辑的、渐进的绘画指令（比如先画背景，再加物体A，再加物体B）。\n    *   收集大量这种“计划-草图-检查-精修”的步骤数据，来训练一个**统一的模型**（文中用的是BAGEL），让它学会自己执行这整个四步循环，不需要外部模型帮忙。\n\n**简单总结核心思路**：**把“一步生成图片”的任务，变成了“多步生成图片生成过程”的任务。通过让AI显式地进行“文字思考-视觉呈现-自我检查”的循环，来提高最终图片的准确性和可控性。**\n\n### (4) 结果怎么样？\n\n从论文报告的数据来看，这个方法**效果不错**，而且**效率很高**：\n\n1.  **性能提升**：\n    *   在测试**物体组合关系**准确性的GenEval基准上，将基础模型的分数从79%提升到了**83%**。\n    *   在测试**常识和世界知识**的WISE基准上，从70%提升到了**76%**。\n    *   这说明“逐步思考”确实让AI更能理解复杂的空间关系和逻辑。\n\n2.  **效率优势**：\n    *   和另一个也研究“过程”的先进方法PARM相比，本文的方法在**效果更好的同时（0.83 vs 0.77），需要的训练数据和推理成本都降低了8倍**。\n    *   作者解释说，这是因为他们的方法监督的是**清晰的图像内容（草图）**，而不是像PARM那样监督模糊的**图像潜在噪声**，所以学起来更高效、更直接。\n\n**最终结论**：这篇论文证明，让文生图AI“**像人一样边想边画**”，通过一个可解释、可检查的“计划-草图-检查-精修”循环来生成图片，不仅能得到更准确的图片，还能让生成过程更高效、更可控。这为未来的文生图模型提供了一个很有前景的新方向。"
+    "2604.06912": "好的，没问题！我来用简单的语言帮你梳理一下这篇论文的核心内容。\n\n### (1) 这篇论文所在的任务是什么？\n\n这篇论文属于**多模态大语言模型**领域，具体任务是**提升MLLM在细粒度视觉任务上的效率**。\n\n*   **任务输入**：一张**高清图片** + 一个**用户问题**（例如：“照片左上角那本书的书名是什么？”或“这张表格第三行第二列的数字是多少？”）。\n*   **任务输出**：一个**文本答案**，这个答案需要模型对图片中非常细小、具体的地方有精确的理解。\n*   **任务功能**：让MLLM能够像人类一样，**根据问题有选择性地“放大”看图的重点区域**，而不是每次都“一视同仁”地用最高清的方式处理整张图。这样既能保证回答准确，又能节省计算资源，让模型跑得更快。\n\n### (2) 这篇论文想解决什么问题？\n\n简单说，就是解决当前MLLM在处理高清图片时的 **“笨重”和“浪费”** 问题。\n\n*   **“笨重”**：现在的MLLM为了看清细节（如小字、图表），需要把整张图片都处理成非常高分辨率的视觉片段（tokens）。这些tokens数量巨大，会严重拖慢模型推理速度（因为核心的注意力计算是平方级复杂度）。\n*   **“浪费”**：并不是所有问题都需要看清每个像素。比如问“图片里有什么动物？”，看个大概就够了。但现有的方法不管问题是什么，都默认用最高清方式处理整张图，浪费了大量计算资源在无关的背景上。\n\n### (3) 论文的核心思路是什么？\n\n论文提出了一个叫 **Q-Zoom** 的框架，核心思想是 **“按需取景”**。它像给MLLM装了一个“智能变焦镜头”，工作流程分为两步：\n\n1.  **第一步：判断是否需要“放大镜”？**\n    *   模型内部有一个轻量级的 **“动态门控网络”**。它的作用是根据用户的问题，快速判断一下：用低分辨率的全局特征（“鸟瞰图”）能不能回答这个问题？\n    *   如果判断为“能”，就直接用低分辨率特征生成答案，**跳过后续所有高分辨率处理**，速度飞快。\n    *   如果判断为“不能”（比如问题涉及细微文字或物体），就进入第二步。\n\n2.  **第二步：精准定位，局部放大**\n    *   激活另一个轻量级模块——**自蒸馏区域建议网络**。\n    *   这个模块不重新处理原始图片，而是**直接利用模型中间层已经计算好的特征**，智能地预测出与问题最相关的那个小区域（Region of Interest， RoI）。\n    *   然后，**只对这个关键小区域进行高分辨率、精细化的处理**，最后把局部细节和全局信息融合起来回答问题。\n\n**两个关键的技术创新点：**\n*   **如何训练“判断是否需要放大”的模块？** 论文设计了一种 **“一致性感知”** 的自动标注方法。简单说，就是让模型自己比较不同分辨率下的回答，如果低分辨率回答和高分辨率回答一致，就说明这个问题不需要放大，从而自动生成训练标签，**省去了昂贵的人工标注**。\n*   **如何训练“精准定位”的模块？** 论文使用了 **“自蒸馏”** 技术。利用一个已经训练好的、能力更强的模型（教师模型）来指导这个轻量级的定位模块（学生模型）学习，同样**不需要额外的人工标注框数据**。\n\n### (4) 结果怎么样？\n\n实验结果非常出色，达到了 **“又快又好”** 的目标。\n\n*   **速度快**：在文档理解和OCR任务上，推理速度提升了 **2.52倍**；在普通高清图片场景下，速度提升了惊人的 **4.39倍**。这意味着用同样的时间，可以处理更多的问题。\n*   **精度高**：\n    *   在追求和基线模型（不加速的原始模型）相同精度时，Q-Zoom能实现上述的巨大加速。\n    *   当把Q-Zoom配置为追求最高精度时，它甚至能**超越**基线模型的峰值性能（在文档任务上提升1.1%，在高清场景下提升8.1%）。\n*   **通用性强**：这个方法不仅在他们主要测试的Qwen2.5-VL模型上有效，也能轻松应用到其他主流MLLM（如LLaVA、Qwen3-VL）和新兴的“思维看图”模型上，显示出很好的普适性。\n\n**总结一下**：这篇论文就像是给MLLM设计了一个智能的“省电+高清”模式。它让模型学会“偷懒”——对于简单问题，快速瞥一眼就行；对于复杂问题，则能精准地拿起“放大镜”只盯着关键地方看。这种方法用很低的额外计算成本，大幅提升了模型处理高清图片的效率，是一个既聪明又实用的工程创新。"
   },
   "images_meta": {
-    "2604.06916": [
+    "2604.04746": [
       {
-        "path": "https://arxiv.org/html/2604.06916v1/x1.png",
-        "caption": "Figure 1:Sol-RL enables efficient and high-fidelity text-to-image alignment.(Left) High-quality images generated by FLUX.1 and SANA fine-tuned with our method, demonstrating superior generation capabilities across diverse styles. (Right) ImageReward training curves. They demonstrate that Sol-RL achieves substantial wall-clock speedups (up to4.64×\\mathbf{4.64\\times}) to reach an equivalent reward level, ultimately converging to a higher alignment ceiling.",
-        "caption_zh": "图1：Sol-RL 实现了高效且高保真的文本-图像对齐。（左）由 FLUX.1 及经我们方法微调的 SANA 生成的高质量图像，展示了在不同风格上的卓越生成能力。（右）ImageReward 训练曲线。结果表明，Sol-RL 在达到同等奖励水平时实现了显著的挂钟时间加速（最高达 4.64 倍），并最终收敛至更高的对齐上限。"
+        "path": "https://arxiv.org/html/2604.04746v3/x1.png",
+        "caption": "Figure 1:Single-pass generation vs process-driven interleaved reasoning. Instead of training model to generate a final image within a single pass, we teach a unified multimodal foundation model to construct the image stroke by stroke, decision by decision. This process ofPlan,Sketch,Inspect, andRefineenables transformation of ambiguous intermediates into compositionally faithful final images.",
+        "caption_zh": "图 1：单次生成与过程驱动的交错推理对比。我们并非训练模型在单次前向中直接生成最终图像，而是教导一个统一的多模态基础模型通过逐笔触、逐决策的方式构建图像。这种“规划、草图、检查、细化”的过程能够将模糊的中间状态转化为构图可靠的最终图像。"
       },
       {
-        "path": "https://arxiv.org/html/2604.06916v1/x2.png",
-        "caption": "Figure 2:Decoupled two-stage reinforcement learning pipeline of Sol-RL.We separate the high-throughput FP4 exploration from the selective BF16 high-contrastive rollout. This framework achieves up to2.4×2.4\\timesacceleration compared to naive scaling while avoiding quantization-induced corruption, introducing merely a 2% computational overhead.",
-        "caption_zh": "图2：Sol-RL 的解耦两阶段强化学习流程。我们将高通量的 FP4 探索与选择性的 BF16 高对比度展开分离。该框架相比简单扩展实现了最高 2.4 倍的加速，同时避免了量化引起的损坏，仅引入了 2% 的计算开销。"
+        "path": "https://arxiv.org/html/2604.04746v3/x2.png",
+        "caption": "Figure 2:We design unified multimodal reasoning models for process-driven generation, autoregressively generates an interleaved sequence oftext tokensandvision tokens.",
+        "caption_zh": "图 2：我们为过程驱动生成设计了统一的多模态推理模型，该模型以自回归方式生成交错排列的文本标记与视觉标记序列。"
       },
       {
-        "path": "https://arxiv.org/html/2604.06916v1/x3.png",
-        "caption": "(a)Iteration Time Breakdown(b)Training Performance Comparison(c)Proxy Ranking ReliabilityFigure 3:Pitfalls and Potential of NVFP4 rollouts.(a) Time breakdown of high-precision rollout scaling and direct quantized rollout. The x-axis labels follow the formatKK-in-NN(PP), denoting thatKKsamples are selected for training fromNNgenerated rollouts underPPprecision. (b) Directly integrating FP4 rollout in RL pipeline leads to severe instability and performance degradation compared to the BF16 baseline. (c) Conversely, the dense diagonal distribution of intra-group relative reward rankings validates NVFP4 quantized rollouts as a reliable proxy for reward sorting.",
-        "caption_zh": "(a) 迭代时间细分 (b) 训练性能对比 (c) 代理排序可靠性图3：NVFP4 展开的缺陷与潜力。(a) 高精度展开扩展与直接量化展开的时间细分。横轴标签格式为 KK-in-NN(PP)，表示从 PP 精度下生成的 NN 个展开中选取 KK 个样本用于训练。(b) 与 BF16 基线相比，在 RL 流程中直接集成 FP4 展开会导致严重的不稳定性和性能下降。(c) 相反，组内相对奖励排名的密集对角分布验证了 NVFP4 量化展开可作为奖励排序的可靠代理。"
+        "path": "https://arxiv.org/html/2604.04746v3/x3.png",
+        "caption": "Figure 3:Our multi-stage dataset generation pipeline constructs process interleaved trajectories with intermediate visual states and textual critiques. We ensure consistent intermediate visual state generation using scene-graph structures, and generate intermediate textual critiques via self-sampling.",
+        "caption_zh": "图 3：我们的多阶段数据集生成流水线构建了包含中间视觉状态和文本评述的过程交错轨迹。我们利用场景图结构确保中间视觉状态生成的一致性，并通过自采样的方式生成中间文本评述。"
       }
     ],
     "2604.07340": [
@@ -145,6 +154,23 @@
         "path": "https://arxiv.org/html/2604.07340v1/figure/scaling_pz_v2.png",
         "caption": "Figure 3:Naive scaling of token numbers for reconstruction and generation. We increase the number of image tokens by reducing the ViT patch size. While reconstruction quality consistently improves with more tokens (shown in the left two figures), generative performance does not exhibit corresponding gains (shown in the right two figures).",
         "caption_zh": "图3：为重建与生成任务简单扩增标记数量。我们通过减小ViT分块尺寸来增加图像标记数量。虽然更多标记能持续提升重建质量（如左侧两图所示），但生成性能并未表现出相应的增益（如右侧两图所示）。"
+      }
+    ],
+    "2604.06916": [
+      {
+        "path": "https://arxiv.org/html/2604.06916v1/x1.png",
+        "caption": "Figure 1:Sol-RL enables efficient and high-fidelity text-to-image alignment.(Left) High-quality images generated by FLUX.1 and SANA fine-tuned with our method, demonstrating superior generation capabilities across diverse styles. (Right) ImageReward training curves. They demonstrate that Sol-RL achieves substantial wall-clock speedups (up to4.64×\\mathbf{4.64\\times}) to reach an equivalent reward level, ultimately converging to a higher alignment ceiling.",
+        "caption_zh": "图1：Sol-RL 实现了高效且高保真的文本-图像对齐。（左）由 FLUX.1 及经我们方法微调的 SANA 生成的高质量图像，展示了在不同风格上的卓越生成能力。（右）ImageReward 训练曲线。结果表明，Sol-RL 在达到同等奖励水平时实现了显著的挂钟时间加速（最高达 4.64 倍），并最终收敛至更高的对齐上限。"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.06916v1/x2.png",
+        "caption": "Figure 2:Decoupled two-stage reinforcement learning pipeline of Sol-RL.We separate the high-throughput FP4 exploration from the selective BF16 high-contrastive rollout. This framework achieves up to2.4×2.4\\timesacceleration compared to naive scaling while avoiding quantization-induced corruption, introducing merely a 2% computational overhead.",
+        "caption_zh": "图2：Sol-RL 的解耦两阶段强化学习流程。我们将高通量的 FP4 探索与选择性的 BF16 高对比度展开分离。该框架相比简单扩展实现了最高 2.4 倍的加速，同时避免了量化引起的损坏，仅引入了 2% 的计算开销。"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.06916v1/x3.png",
+        "caption": "(a)Iteration Time Breakdown(b)Training Performance Comparison(c)Proxy Ranking ReliabilityFigure 3:Pitfalls and Potential of NVFP4 rollouts.(a) Time breakdown of high-precision rollout scaling and direct quantized rollout. The x-axis labels follow the formatKK-in-NN(PP), denoting thatKKsamples are selected for training fromNNgenerated rollouts underPPprecision. (b) Directly integrating FP4 rollout in RL pipeline leads to severe instability and performance degradation compared to the BF16 baseline. (c) Conversely, the dense diagonal distribution of intra-group relative reward rankings validates NVFP4 quantized rollouts as a reliable proxy for reward sorting.",
+        "caption_zh": "(a) 迭代时间细分 (b) 训练性能对比 (c) 代理排序可靠性图3：NVFP4 展开的缺陷与潜力。(a) 高精度展开扩展与直接量化展开的时间细分。横轴标签格式为 KK-in-NN(PP)，表示从 PP 精度下生成的 NN 个展开中选取 KK 个样本用于训练。(b) 与 BF16 基线相比，在 RL 流程中直接集成 FP4 展开会导致严重的不稳定性和性能下降。(c) 相反，组内相对奖励排名的密集对角分布验证了 NVFP4 量化展开可作为奖励排序的可靠代理。"
       }
     ],
     "2604.07209": [
@@ -181,21 +207,21 @@
         "caption_zh": "图 4：数据整理流程。基础模型 [harley2025alltracker,huang2025vipe,ravi2024sam2] 从原始视频中提取深度、相机位姿与轨迹。视觉语言模型 [Qwen3-VL] 将轨迹分割为主动/被动区域。我们进一步可选地使用视频到视频模型 [fu2026plenoptic] 来生成具有相同物体运动但不同相机运动的配对视频。"
       }
     ],
-    "2604.04746": [
+    "2604.06912": [
       {
-        "path": "https://arxiv.org/html/2604.04746v3/x1.png",
-        "caption": "Figure 1:Single-pass generation vs process-driven interleaved reasoning. Instead of training model to generate a final image within a single pass, we teach a unified multimodal foundation model to construct the image stroke by stroke, decision by decision. This process ofPlan,Sketch,Inspect, andRefineenables transformation of ambiguous intermediates into compositionally faithful final images.",
-        "caption_zh": "图 1：单次生成与过程驱动的交错推理对比。我们并非训练模型在单次前向中直接生成最终图像，而是教导一个统一的多模态基础模型通过逐笔触、逐决策的方式构建图像。这种“规划、草图、检查、细化”的过程能够将模糊的中间状态转化为构图可靠的最终图像。"
+        "path": "https://arxiv.org/html/2604.06912v1/x1.png",
+        "caption": "Figure 1:Comparison of adaptive high-resolution perception paradigms.Training-free methods rely on handcrafted contrastive rules, requiring multiple redundant prefilling passes. RL-based methods use the LLM to auto-regressively generate code or coordinates to find the RoI. OurQ-Zoomframework operates directly on the intermediate feature space during a single prefilling pass, yielding superior efficiency.",
+        "caption_zh": "图1：自适应高分辨率感知范式的比较。免训练方法依赖人工设计的对比规则，需要多次冗余的前向填充过程；基于强化学习的方法利用大语言模型自回归地生成代码或坐标以寻找感兴趣区域。本文提出的Q-Zoom框架在单次前向填充过程中直接操作中间特征空间，从而实现了更优的效率。"
       },
       {
-        "path": "https://arxiv.org/html/2604.04746v3/x2.png",
-        "caption": "Figure 2:We design unified multimodal reasoning models for process-driven generation, autoregressively generates an interleaved sequence oftext tokensandvision tokens.",
-        "caption_zh": "图 2：我们为过程驱动生成设计了统一的多模态推理模型，该模型以自回归方式生成交错排列的文本标记与视觉标记序列。"
+        "path": "https://arxiv.org/html/2604.06912v1/x2.png",
+        "caption": "(a)Consistency-aware Training & Gating Mechanism(b)Adaptive Two-Stage Inference PipelineFigure 2:Overview of the proposed Adaptive High-Resolution Perception Framework.(a)The framework derives robust supervisory signals through consistency-aware generation to train a lightweight gating module.(b)During inference, the gate dynamically evaluates the textual query. It routes simpler queries for direct, accelerated generation using coarse features, while triggering the SD-RPN for complex queries to extract targeted high-resolution regions.",
+        "caption_zh": "(a) 一致性感知训练与门控机制 (b) 自适应两阶段推理流程 图2：所提出的自适应高分辨率感知框架概览。(a) 该框架通过一致性感知生成获得鲁棒的监督信号，用于训练轻量级门控模块。(b) 在推理过程中，门控模块动态评估文本查询：对于简单查询，直接使用粗略特征进行加速生成；对于复杂查询，则触发SD-RPN以提取目标高分辨率区域。"
       },
       {
-        "path": "https://arxiv.org/html/2604.04746v3/x3.png",
-        "caption": "Figure 3:Our multi-stage dataset generation pipeline constructs process interleaved trajectories with intermediate visual states and textual critiques. We ensure consistent intermediate visual state generation using scene-graph structures, and generate intermediate textual critiques via self-sampling.",
-        "caption_zh": "图 3：我们的多阶段数据集生成流水线构建了包含中间视觉状态和文本评述的过程交错轨迹。我们利用场景图结构确保中间视觉状态生成的一致性，并通过自采样的方式生成中间文本评述。"
+        "path": "https://arxiv.org/html/2604.06912v1/x2.png",
+        "caption": "(a)Consistency-aware Training & Gating Mechanism",
+        "caption_zh": "(a) 一致性感知训练与门控机制"
       }
     ]
   },
@@ -212,10 +238,6 @@
       "abstract": "Autoregressive (AR) language models generate text one token at a time, even when consecutive tokens are highly predictable given earlier context. We introduce MARS (Mask AutoRegreSsion), a lightweight fine-tuning method that teaches an instruction-tuned AR model to predict multiple tokens per forward pass. MARS adds no architectural modifications, no extra parameters, and produces a single model that can still be called exactly like the original AR model with no performance degradation. Unlike speculative decoding, which maintains a separate draft model alongside the target, or multi-head approaches such as Medusa, which attach additional prediction heads, MARS requires only continued training on existing instruction data. When generating one token per forward pass, MARS matches or exceeds the AR baseline on six standard benchmarks. When allowed to accept multiple tokens per step, it maintains baseline-level accuracy while achieving 1.5-1.7x throughput. We further develop a block-level KV caching strategy for batch inference, achieving up to 1.71x wall-clock speedup over AR with KV cache on Qwen2.5-7B. Finally, MARS supports real-time speed adjustment via confidence thresholding: under high request load, the serving system can increase throughput on the fly without swapping models or restarting, providing a practical latency-quality knob for deployment.",
       "comments": "15 pages, 4 fugures"
     },
-    "2604.07343": {
-      "abstract": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values. While benchmarks for general response quality are prevalent, evaluating how well reward models account for individual user preferences remains an open challenge. To bridge this gap, we introduce Personalized RewardBench, a novel benchmark designed to rigorously assess reward models' capacity to model personalized preferences. We construct chosen and rejected response pairs based on strict adherence to (or violation of) user-specific rubrics, ensuring that preference distinctions are uniquely tailored to the individual. In particular, human evaluations confirm that the primary discriminative factor between pairs is strictly personal preference, with both responses maintaining high general quality (e.g., correctness, relevance and helpfulness). Extensive testing reveals that existing state-of-the-art reward models struggle significantly with personalization, peaking at an accuracy of just 75.94%. Crucially, because an effective reward model benchmark should predict a reward model's performance on downstream tasks, we conduct experiments demonstrating that our benchmark exhibits a significantly higher correlation with downstream performance in both Best-of-N (BoN) sampling and Proximal Policy Optimization (PPO) compared to existing baselines. These findings establish Personalized RewardBench as a robust and accurate proxy for evaluating reward models' performance in downstream applications.",
-      "comments": ""
-    },
     "2604.07340": {
       "abstract": "We propose TC-AE, a ViT-based architecture for deep compression autoencoders. Existing methods commonly increase the channel number of latent representations to maintain reconstruction quality under high compression ratios. However, this strategy often leads to latent representation collapse, which degrades generative performance. Instead of relying on increasingly complex architectures or multi-stage training schemes, TC-AE addresses this challenge from the perspective of the token space, the key bridge between pixels and image latents, through two complementary innovations: Firstly, we study token number scaling by adjusting the patch size in ViT under a fixed latent budget, and identify aggressive token-to-latent compression as the key factor that limits effective scaling. To address this issue, we decompose token-to-latent compression into two stages, reducing structural information loss and enabling effective token number scaling for generation. Secondly, to further mitigate latent representation collapse, we enhance the semantic structure of image tokens via joint self-supervised training, leading to more generative-friendly latents. With these designs, TC-AE achieves substantially improved reconstruction and generative performance under deep compression. We hope our research will advance ViT-based tokenizer for visual generation.",
       "comments": ""
@@ -224,8 +246,20 @@
       "abstract": "Building world models with spatial consistency and real-time interactivity remains a fundamental challenge in computer vision. Current video generation paradigms often struggle with a lack of spatial persistence and insufficient visual realism, making it difficult to support seamless navigation in complex environments. To address these challenges, we propose INSPATIO-WORLD, a novel real-time framework capable of recovering and generating high-fidelity, dynamic interactive scenes from a single reference video. At the core of our approach is a Spatiotemporal Autoregressive (STAR) architecture, which enables consistent and controllable scene evolution through two tightly coupled components: Implicit Spatiotemporal Cache aggregates reference and historical observations into a latent world representation, ensuring global consistency during long-horizon navigation; Explicit Spatial Constraint Module enforces geometric structure and translates user interactions into precise and physically plausible camera trajectories. Furthermore, we introduce Joint Distribution Matching Distillation (JDMD). By using real-world data distributions as a regularizing guide, JDMD effectively overcomes the fidelity degradation typically caused by over-reliance on synthetic data. Extensive experiments demonstrate that INSPATIO-WORLD significantly outperforms existing state-of-the-art (SOTA) models in spatial consistency and interaction precision, ranking first among real-time interactive methods on the WorldScore-Dynamic benchmark, and establishing a practical pipeline for navigating 4D environments reconstructed from monocular videos.",
       "comments": ""
     },
+    "2604.07343": {
+      "abstract": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values. While benchmarks for general response quality are prevalent, evaluating how well reward models account for individual user preferences remains an open challenge. To bridge this gap, we introduce Personalized RewardBench, a novel benchmark designed to rigorously assess reward models' capacity to model personalized preferences. We construct chosen and rejected response pairs based on strict adherence to (or violation of) user-specific rubrics, ensuring that preference distinctions are uniquely tailored to the individual. In particular, human evaluations confirm that the primary discriminative factor between pairs is strictly personal preference, with both responses maintaining high general quality (e.g., correctness, relevance and helpfulness). Extensive testing reveals that existing state-of-the-art reward models struggle significantly with personalization, peaking at an accuracy of just 75.94%. Crucially, because an effective reward model benchmark should predict a reward model's performance on downstream tasks, we conduct experiments demonstrating that our benchmark exhibits a significantly higher correlation with downstream performance in both Best-of-N (BoN) sampling and Proximal Policy Optimization (PPO) compared to existing baselines. These findings establish Personalized RewardBench as a robust and accurate proxy for evaluating reward models' performance in downstream applications.",
+      "comments": ""
+    },
+    "2604.06425": {
+      "abstract": "We propose a new frontier: Neural Computers (NCs) -- an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. Unlike conventional computers, which execute explicit programs, agents, which act over external execution environments, and world models, which learn environment dynamics, NCs aim to make the model itself the running computer. Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explicit reprogramming, and durable capability reuse. As an initial step, we study whether early NC primitives can be learned solely from collected I/O traces, without instrumented program state. Concretely, we instantiate NCs as video models that roll out screen frames from instructions, pixels, and user actions (when available) in CLI and GUI settings. These implementations show that learned runtimes can acquire early interface primitives, especially I/O alignment and short-horizon control, while routine reuse, controlled updates, and symbolic stability remain open. We outline a roadmap toward CNCs around these challenges. If overcome, CNCs could establish a new computing paradigm beyond today's agents, world models, and conventional computers.",
+      "comments": "Github (data pipeline): <a class=\"link-external link-https\" href=\"https://github.com/metauto-ai/NeuralComputer;\" rel=\"external noopener nofollow\">this https URL</a> Blogpost: <a class=\"link-external link-https\" href=\"https://metauto.ai/neuralcomputer/index_eng.html\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
     "2604.04443": {
       "abstract": "Reasoning with complex, context-specific rules remains challenging for large language models (LLMs). In legal and policy settings, this manifests as deontic reasoning: reasoning about obligations, permissions, and prohibitions under explicit rules. While many recent benchmarks emphasize short-context mathematical reasoning, fewer focus on long-context, high-stakes deontic reasoning. To address this gap, we introduce DEONTICBENCH, a benchmark of 6,232 tasks across U.S. federal taxes, airline baggage policies, U.S. immigration administration, and U.S. state housing law. These tasks can be approached in multiple ways, including direct reasoning in language or with the aid of symbolic computation. Besides free-form chain-of-thought reasoning, DEONTICBENCH enables an optional solver-based workflow in which models translate statutes and case facts into executable Prolog, leading to formal problem interpretations and an explicit program trace. We release reference Prolog programs for all instances. Across frontier LLMs and coding models, best hard-subset performance reaches only 44.4% on SARA Numeric and 46.6 macro-F1 on Housing. We further study training with supervised fine-tuning and reinforcement learning for symbolic program generation. Although training improves Prolog generation quality, current RL methods still fail to solve these tasks reliably. Overall, DEONTICBENCH provides a benchmark for studying context-grounded rule reasoning in real-world domains under both symbolic and non-symbolic settings.",
+      "comments": ""
+    },
+    "2604.06916": {
+      "abstract": "Reinforcement-Learning-based post-training has recently emerged as a promising paradigm for aligning text-to-image diffusion models with human preferences. In recent studies, increasing the rollout group size yields pronounced performance improvements, indicating substantial room for further alignment gains. However, scaling rollouts on large-scale foundational diffusion models (e.g., FLUX.1-12B) imposes a heavy computational burden. To alleviate this bottleneck, we explore the integration of FP4 quantization into Diffusion RL rollouts. Yet, we identify that naive quantized pipelines inherently introduce risks of performance degradation. To overcome this dilemma between efficiency and training integrity, we propose Sol-RL (Speed-of-light RL), a novel FP4-empowered Two-stage Reinforcement Learning framework. First, we utilize high-throughput NVFP4 rollouts to generate a massive candidate pool and extract a highly contrastive subset. Second, we regenerate these selected samples in BF16 precision and optimize the policy exclusively on them. By decoupling candidate exploration from policy optimization, Sol-RL integrates the algorithmic mechanisms of rollout scaling with the system-level throughput gains of NVFP4. This synergistic algorithm-hardware design effectively accelerates the rollout phase while reserving high-fidelity samples for optimization. We empirically demonstrate that our framework maintains the training integrity of BF16 precision pipeline while fully exploiting the throughput gains enabled by FP4 arithmetic. Extensive experiments across SANA, FLUX.1, and SD3.5-L substantiate that our approach delivers superior alignment performance across multiple metrics while accelerating training convergence by up to $4.64\\times$, unlocking the power of massive rollout scaling at a fraction of the cost.",
       "comments": ""
     },
     "2604.06427": {
@@ -236,21 +270,17 @@
       "abstract": "With the increasing accessibility and utilization of multilingual documents, Cross-Lingual Information Retrieval (CLIR) has emerged as an important research area. Conventionally, CLIR tasks have been conducted under settings where the language of documents differs from that of queries, and typically, the documents are composed in a single coherent language. In this paper, we highlight that in such a setting, the cross-lingual alignment capability may not be evaluated adequately. Specifically, we observe that, in a document pool where English documents coexist with another language, most multilingual retrievers tend to prioritize unrelated English documents over the related document written in the same language as the query. To rigorously analyze and quantify this phenomenon, we introduce various scenarios and metrics designed to evaluate the cross-lingual alignment performance of multilingual retrieval models. Furthermore, to improve cross-lingual performance under these challenging conditions, we propose a novel training strategy aimed at enhancing cross-lingual alignment. Using only a small dataset consisting of 2.8k samples, our method significantly improves the cross-lingual retrieval performance while simultaneously mitigating the English inclination problem. Extensive analyses demonstrate that the proposed method substantially enhances the cross-lingual alignment capabilities of most multilingual embedding models.",
       "comments": "ICLR 2026"
     },
-    "2604.06425": {
-      "abstract": "We propose a new frontier: Neural Computers (NCs) -- an emerging machine form that unifies computation, memory, and I/O in a learned runtime state. Unlike conventional computers, which execute explicit programs, agents, which act over external execution environments, and world models, which learn environment dynamics, NCs aim to make the model itself the running computer. Our long-term goal is the Completely Neural Computer (CNC): the mature, general-purpose realization of this emerging machine form, with stable execution, explicit reprogramming, and durable capability reuse. As an initial step, we study whether early NC primitives can be learned solely from collected I/O traces, without instrumented program state. Concretely, we instantiate NCs as video models that roll out screen frames from instructions, pixels, and user actions (when available) in CLI and GUI settings. These implementations show that learned runtimes can acquire early interface primitives, especially I/O alignment and short-horizon control, while routine reuse, controlled updates, and symbolic stability remain open. We outline a roadmap toward CNCs around these challenges. If overcome, CNCs could establish a new computing paradigm beyond today's agents, world models, and conventional computers.",
-      "comments": "Github (data pipeline): <a class=\"link-external link-https\" href=\"https://github.com/metauto-ai/NeuralComputer;\" rel=\"external noopener nofollow\">this https URL</a> Blogpost: <a class=\"link-external link-https\" href=\"https://metauto.ai/neuralcomputer/index_eng.html\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2604.06916": {
-      "abstract": "Reinforcement-Learning-based post-training has recently emerged as a promising paradigm for aligning text-to-image diffusion models with human preferences. In recent studies, increasing the rollout group size yields pronounced performance improvements, indicating substantial room for further alignment gains. However, scaling rollouts on large-scale foundational diffusion models (e.g., FLUX.1-12B) imposes a heavy computational burden. To alleviate this bottleneck, we explore the integration of FP4 quantization into Diffusion RL rollouts. Yet, we identify that naive quantized pipelines inherently introduce risks of performance degradation. To overcome this dilemma between efficiency and training integrity, we propose Sol-RL (Speed-of-light RL), a novel FP4-empowered Two-stage Reinforcement Learning framework. First, we utilize high-throughput NVFP4 rollouts to generate a massive candidate pool and extract a highly contrastive subset. Second, we regenerate these selected samples in BF16 precision and optimize the policy exclusively on them. By decoupling candidate exploration from policy optimization, Sol-RL integrates the algorithmic mechanisms of rollout scaling with the system-level throughput gains of NVFP4. This synergistic algorithm-hardware design effectively accelerates the rollout phase while reserving high-fidelity samples for optimization. We empirically demonstrate that our framework maintains the training integrity of BF16 precision pipeline while fully exploiting the throughput gains enabled by FP4 arithmetic. Extensive experiments across SANA, FLUX.1, and SD3.5-L substantiate that our approach delivers superior alignment performance across multiple metrics while accelerating training convergence by up to $4.64\\times$, unlocking the power of massive rollout scaling at a fraction of the cost.",
+    "2604.06182": {
+      "abstract": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage. To this end, we introduce VenusBench-Mobile, a challenging online benchmark for evaluating general-purpose mobile GUI agents under realistic, user-centric conditions. VenusBench-Mobile builds two core evaluation pillars: defining what to evaluate via user-intent-driven task design that reflects real mobile usage, and how to evaluate through a capability-oriented annotation scheme for fine-grained agent behavior analysis. Extensive evaluation of state-of-the-art mobile GUI agents reveals large performance gaps relative to prior benchmarks, indicating that VenusBench-Mobile poses substantially more challenging and realistic tasks and that current agents remain far from reliable real-world deployment. Diagnostic analysis further shows that failures are dominated by deficiencies in perception and memory, which are largely obscured by coarse-grained evaluations. Moreover, even the strongest agents exhibit near-zero success under environment variations, highlighting their brittleness in realistic settings. Based on these insights, we believe VenusBench-Mobile provides an important stepping stone toward robust real-world deployment of mobile GUI agents. Code and data are available atthis https URL.",
       "comments": ""
+    },
+    "2604.06912": {
+      "abstract": "MLLMs require high-resolution visual inputs for fine-grained tasks like document understanding and dense scene perception. However, current global resolution scaling paradigms indiscriminately flood the quadratic self-attention mechanism with visually redundant tokens, severely bottlenecking inference throughput while ignoring spatial sparsity and query intent. To overcome this, we propose Q-Zoom, a query-aware adaptive high-resolution perception framework that operates in an efficient coarse-to-fine manner. First, a lightweight Dynamic Gating Network safely bypasses high-resolution processing when coarse global features suffice. Second, for queries demanding fine-grained perception, a Self-Distilled Region Proposal Network (SD-RPN) precisely localizes the task-relevant Region-of-Interest (RoI) directly from intermediate feature spaces. To optimize these modules efficiently, the gating network uses a consistency-aware generation strategy to derive deterministic routing labels, while the SD-RPN employs a fully self-supervised distillation paradigm. A continuous spatio-temporal alignment scheme and targeted fine-tuning then seamlessly fuse the dense local RoI with the coarse global layout. Extensive experiments demonstrate that Q-Zoom establishes a dominant Pareto frontier. Using Qwen2.5-VL-7B as a primary testbed, Q-Zoom accelerates inference by 2.52 times on Document & OCR benchmarks and 4.39 times in High-Resolution scenarios while matching the baseline's peak accuracy. Furthermore, when configured for maximum perceptual fidelity, Q-Zoom surpasses the baseline's peak performance by 1.1% and 8.1% on these respective benchmarks. These robust improvements transfer seamlessly to Qwen3-VL, LLaVA, and emerging RL-based thinking-with-image models. Project page is available atthis https URL.",
+      "comments": "16 pages, 9 figures"
     },
     "2604.07348": {
       "abstract": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and object motion into a single tracking signal and treat motion as kinematic displacement without modeling causal relationships between object motion. We introduce MoRight, a unified framework that addresses both limitations through disentangled motion modeling. Object motion is specified in a canonical static-view and transferred to an arbitrary target camera viewpoint via temporal cross-view attention, enabling disentangled camera and object control. We further decompose motion into active (user-driven) and passive (consequence) components, training the model to learn motion causality from data. At inference, users can either supply active motion and MoRight predicts consequences (forward reasoning), or specify desired passive outcomes and MoRight recovers plausible driving actions (inverse reasoning), all while freely adjusting the camera viewpoint. Experiments on three benchmarks demonstrate state-of-the-art performance in generation quality, motion controllability, and interaction awareness.",
       "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://research.nvidia.com/labs/sil/projects/moright\" rel=\"external noopener nofollow\">this https URL</a>"
-    },
-    "2604.06182": {
-      "abstract": "Existing online benchmarks for mobile GUI agents remain largely app-centric and task-homogeneous, failing to reflect the diversity and instability of real-world mobile usage. To this end, we introduce VenusBench-Mobile, a challenging online benchmark for evaluating general-purpose mobile GUI agents under realistic, user-centric conditions. VenusBench-Mobile builds two core evaluation pillars: defining what to evaluate via user-intent-driven task design that reflects real mobile usage, and how to evaluate through a capability-oriented annotation scheme for fine-grained agent behavior analysis. Extensive evaluation of state-of-the-art mobile GUI agents reveals large performance gaps relative to prior benchmarks, indicating that VenusBench-Mobile poses substantially more challenging and realistic tasks and that current agents remain far from reliable real-world deployment. Diagnostic analysis further shows that failures are dominated by deficiencies in perception and memory, which are largely obscured by coarse-grained evaluations. Moreover, even the strongest agents exhibit near-zero success under environment variations, highlighting their brittleness in realistic settings. Based on these insights, we believe VenusBench-Mobile provides an important stepping stone toward robust real-world deployment of mobile GUI agents. Code and data are available atthis https URL.",
-      "comments": ""
     }
   }
 }
