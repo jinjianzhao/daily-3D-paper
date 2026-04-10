@@ -1581,7 +1581,7 @@ FOCUS_SECTIONS = [
     },
     {
         "key": "gen_model_foundation",
-        "name": "图片/视频/多模态生成",
+        "name": "图片/视频",
         "keywords": [
             "生成模型基础研究", "生成模型隐式表达", "潜在空间学习",
             "VAE", "扩散模型基础", "流式模型基础", 
