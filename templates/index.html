@@ -92,7 +92,7 @@
             transform: rotate(-180deg);
         }
 
-        .toc-link { display: block; font-size: 0.7rem; line-height: 1.35; color: rgb(100 116 139); padding: 0.35rem 0.5rem; border-radius: 0.375rem; border-left: 2px solid transparent; transition: color 0.15s, background 0.15s, border-color 0.15s; }
+        .toc-link { display: block; font-size: 0.7rem; line-height: 1.4; color: rgb(100 116 139); padding: 0.35rem 0.5rem; border-radius: 0.375rem; border-left: 2px solid transparent; transition: color 0.15s, background 0.15s, border-color 0.15s; overflow-wrap: anywhere; word-break: break-word; }
         .toc-link:hover { color: rgb(79 70 229); background: rgb(238 242 255 / 0.6); }
         .toc-link.toc-active { color: rgb(67 56 202); font-weight: 600; border-left-color: rgb(99 102 241); background: rgb(238 242 255); }
         .toc-section-title { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: rgb(148 163 184); margin: 1rem 0 0.4rem 0.25rem; }
@@ -136,7 +136,7 @@
     </nav>
 
     <div class="max-w-[90rem] mx-auto px-4 sm:px-6 py-10 flex flex-col lg:flex-row gap-8 lg:gap-10 lg:items-start">
-        <aside id="toc-sidebar" class="hidden lg:block w-56 shrink-0 sticky top-24 z-30 max-h-[calc(100vh-7rem)] overflow-y-auto no-scrollbar pr-1">
+        <aside id="toc-sidebar" class="hidden lg:block w-64 xl:w-72 shrink-0 sticky top-24 z-30 max-h-[calc(100vh-7rem)] overflow-y-auto no-scrollbar pr-1">
             <div class="rounded-2xl border border-slate-200/80 bg-white/90 shadow-sm p-4 backdrop-blur-sm">
                 <p class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400 mb-3 px-1">目录</p>
                 <nav id="toc-nav-inner" class="space-y-0.5" aria-label="页面目录"></nav>
@@ -248,7 +248,7 @@
         }
 
         /**
-         * step04 简报：新格式为 4 行（第1行十余字内一句话主题；第2行 一级;二级;三级 共三个词）。
+         * step04 简报：新格式为 4 行（第1行八字内一句话主题；第2行 一级;二级;三级 共三个词）。
          * 旧格式为 3 行（第1行即领域行）。返回标签与用于 Markdown 展示的正文（新格式会去掉第1行以免与标题重复）。
          * @returns {{ shortZh: string, bodyMd: string }}
          */
@@ -291,14 +291,13 @@
             );
         }
 
-        function tocDisplayLine(shortZh, fullTitle, maxLen) {
-            if (typeof fullTitle !== 'string' || typeof maxLen !== 'number') {
-                throw new TypeError('tocDisplayLine expects (string|empty, string, number)');
+        /** 目录条目可见文案：中文简述 + 间隔号 + 全文标题（不再按字符数截断，由 CSS line-clamp 控制行数）。 */
+        function tocEntryLabel(shortZh, fullTitle) {
+            if (typeof fullTitle !== 'string') {
+                throw new TypeError('tocEntryLabel expects fullTitle string');
             }
-            const t = fullTitle;
             const s = String(shortZh == null ? '' : shortZh).trim();
-            const combined = s ? s + ' · ' + t : t;
-            return combined.length > maxLen ? combined.slice(0, Math.max(0, maxLen - 1)) + '…' : combined;
+            return s ? s + ' · ' + fullTitle : fullTitle;
         }
 
         function aidToDomId(prefix, aid) {
@@ -665,15 +664,15 @@
                             const id = aidToDomId('focus', aid);
                             const t = data.base_info[aid].title;
                             const spToc = splitStep04Summary(data.summaries[aid] || '');
-                            const short = tocDisplayLine(spToc.shortZh, t, 48);
+                            const label = tocEntryLabel(spToc.shortZh, t);
                             const tip = spToc.shortZh ? spToc.shortZh + ' · ' + t : t;
                             tocHtml +=
                                 '<a href="#' +
                                 id +
-                                '" class="toc-link pl-2 line-clamp-2" title="' +
+                                '" class="toc-link pl-2 line-clamp-4 break-words" title="' +
                                 escapeHtml(tip) +
                                 '">' +
-                                escapeHtml(short) +
+                                escapeHtml(label) +
                                 '</a>';
                         });
                     });
@@ -684,15 +683,15 @@
                         const id = aidToDomId('all', aid);
                         const t = data.base_info[aid].title;
                         const spTocAll = splitStep04Summary(data.summaries[aid] || '');
-                        const short = tocDisplayLine(spTocAll.shortZh, t, 48);
+                        const labelAll = tocEntryLabel(spTocAll.shortZh, t);
                         const tipAll = spTocAll.shortZh ? spTocAll.shortZh + ' · ' + t : t;
                         tocHtml +=
                             '<a href="#' +
                             id +
-                            '" class="toc-link pl-2 line-clamp-2" title="' +
+                            '" class="toc-link pl-2 line-clamp-4 break-words" title="' +
                             escapeHtml(tipAll) +
                             '">' +
-                            escapeHtml(short) +
+                            escapeHtml(labelAll) +
                             '</a>';
                     });
                     tocNav.innerHTML = tocHtml;
