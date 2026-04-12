@@ -70,6 +70,45 @@ def _count_json_files(cache_dir: str) -> int:
     return sum(1 for name in os.listdir(cache_dir) if name.endswith(".json"))
 
 
+def _json_dict_sorted_by_key(d: dict) -> OrderedDict:
+    """按 key 排序后写入 JSON，避免无序 dict 造成无意义 diff。"""
+    assert isinstance(d, dict)
+    return OrderedDict((k, d[k]) for k in sorted(d.keys()))
+
+
+def _parse_step01_cache_raw(raw: dict) -> tuple[OrderedDict, dict[str, int]]:
+    """解析 step01 缓存：base_info 按 aid 字典序；hf_votes 为 aid->int。兼容旧版单层 aid->{title,hf_link,votes}。"""
+    assert isinstance(raw, dict)
+    if "base_info" in raw and "votes" in raw:
+        base_info_obj = raw["base_info"]
+        votes_obj = raw["votes"]
+        assert isinstance(base_info_obj, dict)
+        assert isinstance(votes_obj, dict)
+        base_info = OrderedDict()
+        for aid in sorted(base_info_obj.keys()):
+            meta = base_info_obj[aid]
+            assert isinstance(aid, str)
+            assert isinstance(meta, dict)
+            assert "title" in meta and "hf_link" in meta
+            base_info[aid] = {"title": meta["title"], "hf_link": meta["hf_link"]}
+        hf_votes: dict[str, int] = {}
+        for aid in sorted(votes_obj.keys()):
+            assert isinstance(aid, str)
+            hf_votes[aid] = int(votes_obj[aid])
+        return base_info, hf_votes
+
+    base_info = OrderedDict()
+    hf_votes: dict[str, int] = {}
+    for aid in sorted(raw.keys()):
+        v = raw[aid]
+        assert isinstance(v, dict)
+        assert "title" in v and "hf_link" in v
+        base_info[aid] = {"title": v["title"], "hf_link": v["hf_link"]}
+        if "votes" in v:
+            hf_votes[aid] = int(v["votes"])
+    return base_info, hf_votes
+
+
 @dataclass
 class PipelineConfig:
     """流水线可调参数：实例化后传入 PaperPipeline(..., cfg)。"""
@@ -104,6 +143,8 @@ class PipelineConfig:
     focus_vote_threshold: int = 1
     # step08：图注译中文单次请求上限（图注可能很长）
     figure_caption_translate_max_tokens: int = 8192
+    # step08：同一篇论文内多条图注逐条翻译时的并发线程数（LLM 为 I/O 密集，与 step03/04 一致用线程池）
+    figure_caption_translate_max_workers: int = 8
 
 
 # ================= 主流程 PaperPipeline =================
@@ -359,10 +400,15 @@ class PaperPipeline:
 
         if not force_rerun and os.path.exists(cache_path):
             with open(cache_path, 'r', encoding='utf-8') as f:
-                results = json.load(f)
-            assert isinstance(results, dict)
-            pipeline_debug("step01", "拉取论文列表", f"命中缓存 篇数={len(results)} 文件={cache_path}")
-            return results
+                raw = json.load(f)
+            assert isinstance(raw, dict)
+            base_info, hf_votes = _parse_step01_cache_raw(raw)
+            pipeline_debug(
+                "step01",
+                "拉取论文列表",
+                f"命中缓存 篇数={len(base_info)} 文件={cache_path}",
+            )
+            return base_info, hf_votes
 
         url = f"{self.cfg.hf_paper_link_prefix}/papers/date/{date_str}"
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec)
@@ -384,25 +430,39 @@ class PaperPipeline:
                         "hf_link": f"{self.cfg.hf_paper_link_prefix}{title_tag['href']}",
                         "votes": vote_count,
                     })
-        
-        # 按点赞数降序排序，转换为 OrderedDict
-        results_with_votes.sort(key=lambda x: x["votes"], reverse=True)
-        results = OrderedDict()
-        for item in results_with_votes:
-            aid = item["aid"]
-            results[aid] = {
-                "title": item["title"],
-                "hf_link": item["hf_link"],
-                "votes": item["votes"],
-            }
-        
-        pipeline_debug("step01", "拉取论文列表", f"HTTP状态={resp.status_code} 解析篇数={len(results)} 点赞最高={results_with_votes[0]['votes'] if results_with_votes else 0}")
+
+        by_aid = {item["aid"]: item for item in results_with_votes}
+        aids_sorted = sorted(by_aid.keys())
+        hf_votes = {aid: int(by_aid[aid]["votes"]) for aid in aids_sorted}
+
+        # base_info 按 aid 字典序，避免按点赞排序导致 Git diff 整块重排；点赞单独写入 hf_votes.json
+        base_info = OrderedDict(
+            (
+                aid,
+                {
+                    "title": by_aid[aid]["title"],
+                    "hf_link": by_aid[aid]["hf_link"],
+                },
+            )
+            for aid in aids_sorted
+        )
+
+        max_v = max((x["votes"] for x in results_with_votes), default=0)
+        pipeline_debug(
+            "step01",
+            "拉取论文列表",
+            f"HTTP状态={resp.status_code} 解析篇数={len(base_info)} 点赞最高={max_v}",
+        )
         parent = os.path.dirname(cache_path)
         if parent:
             os.makedirs(parent, exist_ok=True)
+        cache_payload = {
+            "base_info": dict(base_info),
+            "votes": {k: hf_votes[k] for k in sorted(hf_votes.keys())},
+        }
         with open(cache_path, 'w', encoding='utf-8') as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
-        return results
+            json.dump(cache_payload, f, indent=2, ensure_ascii=False)
+        return base_info, hf_votes
 
     def get_arxiv_details(self, arxiv_id, cache_path, force_rerun=False):
         assert isinstance(arxiv_id, str)
@@ -1004,6 +1064,54 @@ class PaperPipeline:
         
     #     return final_result
 
+    def _translate_single_figure_caption_zh(
+        self,
+        *,
+        fig_index: int,
+        fig_total: int,
+        english_caption: str,
+        arxiv_id: str,
+        debug_step: str,
+        debug_title: str,
+    ) -> str:
+        """单条英文图注 → 中文；模型只输出长度为 1 的 JSON 字符串数组。"""
+        assert isinstance(fig_index, int) and fig_index >= 0
+        assert isinstance(fig_total, int) and fig_total > 0
+        assert fig_index < fig_total
+        assert isinstance(english_caption, str)
+        assert isinstance(arxiv_id, str)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+
+        one_based = fig_index + 1
+        prompt = PROMPT_STEP08_CAPTION_ZH.format(
+            fig_index=one_based,
+            fig_total=fig_total,
+            english_caption=english_caption,
+        )
+        raw = self._post_chat_completion(
+            prompt,
+            max_tokens=self.cfg.figure_caption_translate_max_tokens,
+        )
+        pipeline_debug(
+            debug_step,
+            debug_title,
+            f"图注翻译 单条LLM返回 arxiv={arxiv_id} {one_based}/{fig_total} 字符数={len(raw)}",
+        )
+        try:
+            zh_list = self._parse_json_array_from_llm(raw)
+            assert isinstance(zh_list, list) and len(zh_list) == 1
+            cz = zh_list[0]
+            assert isinstance(cz, str)
+            return cz
+        except (json.JSONDecodeError, AssertionError, TypeError, ValueError) as e:
+            pipeline_debug(
+                debug_step,
+                debug_title,
+                f"图注翻译 单条JSON解析失败 arxiv={arxiv_id} {one_based}/{fig_total} err={e}",
+            )
+            return english_caption
+
     def translate_figure_captions(
         self,
         meta_list,
@@ -1014,7 +1122,7 @@ class PaperPipeline:
         debug_step: str,
         debug_title: str,
     ):
-        """在抽取图示之后：将英文图注批量译为中文，写入 caption_zh；结果缓存按篇落盘。"""
+        """在抽取图示之后：将英文图注逐条译为中文（每条单独请求，篇内并发），写入 caption_zh；结果缓存按篇落盘。"""
         assert isinstance(meta_list, list)
         assert isinstance(aid, str)
         assert isinstance(cache_dir, str)
@@ -1069,43 +1177,49 @@ class PaperPipeline:
             )
 
         n = len(meta_list)
+        workers = max(1, min(self.cfg.figure_caption_translate_max_workers, n))
         pipeline_debug(
             debug_step,
             debug_title,
-            f"图注翻译 请求LLM 编号={aid} 条数={n}",
-        )
-        numbered = "\n".join(f"[{i}] {m['caption']}" for i, m in enumerate(meta_list))
-        prompt = PROMPT_STEP08_CAPTION_ZH.format(n=n, numbered_captions=numbered)
-        raw = self._post_chat_completion(
-            prompt,
-            max_tokens=self.cfg.figure_caption_translate_max_tokens,
-        )
-        pipeline_debug(
-            debug_step,
-            debug_title,
-            f"图注翻译 LLM已返回 编号={aid} 原始字符数={len(raw)}",
+            f"图注翻译 请求LLM(逐条) 编号={aid} 条数={n} 并发={workers}",
         )
 
-        zh_list = None
-        try:
-            zh_list = self._parse_json_array_from_llm(raw)
-        except (json.JSONDecodeError, AssertionError, TypeError, ValueError) as e:
-            pipeline_debug(debug_step, debug_title, f"图注翻译 JSON 解析失败 编号={aid} err={e}")
-
-        if zh_list is None or len(zh_list) != n:
-            pipeline_debug(
-                debug_step,
-                debug_title,
-                f"图注翻译 条数不符或解析失败 编号={aid} 期望={n} 回退为原文",
+        def _one(idx: int) -> tuple[int, str]:
+            assert isinstance(idx, int) and 0 <= idx < n
+            m = meta_list[idx]
+            cz = self._translate_single_figure_caption_zh(
+                fig_index=idx,
+                fig_total=n,
+                english_caption=m["caption"],
+                arxiv_id=aid,
+                debug_step=debug_step,
+                debug_title=debug_title,
             )
-            zh_list = list(source_captions)
+            return idx, cz
+
+        zh_by_idx: dict[int, str] = {}
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {executor.submit(_one, i): i for i in range(n)}
+            for fut in as_completed(futures):
+                idx_key = futures[fut]
+                try:
+                    idx, cz = fut.result()
+                except Exception as e:
+                    pipeline_debug(
+                        debug_step,
+                        debug_title,
+                        f"图注翻译 单条异常 编号={aid} idx={idx_key} err={type(e).__name__}: {e}",
+                    )
+                    idx, cz = idx_key, meta_list[idx_key]["caption"]
+                assert isinstance(cz, str)
+                zh_by_idx[idx] = cz
+
+        zh_list = [zh_by_idx[i] for i in range(n)]
 
         figures_store = []
         out_meta = []
         for i, m in enumerate(meta_list):
             cz = zh_list[i]
-            if not isinstance(cz, str):
-                cz = str(cz)
             figures_store.append({"path": m["path"], "caption_zh": cz})
             out_meta.append({"path": m["path"], "caption": m["caption"], "caption_zh": cz})
 
@@ -1158,10 +1272,14 @@ class PaperPipeline:
         step08_figure_caption_zh = f"{cache_root}/step08_figure_caption_zh"
 
         # step01：拉取 HF 当日列表（无 tqdm，单次请求）
-        base_info = self.fetch_hf_papers(date_str, step01_hf, force_rerun=_should("step01"))
+        base_info, hf_votes = self.fetch_hf_papers(date_str, step01_hf, force_rerun=_should("step01"))
         if not base_info:
             pipeline_debug("step01", "拉取论文列表", "当日无论文，停止")
             return print("当日无论文。")
+
+        for aid in base_info:
+            if aid not in hf_votes:
+                hf_votes[aid] = 0
 
         os.makedirs(pub_dir, exist_ok=True)
 
@@ -1243,6 +1361,10 @@ class PaperPipeline:
                     focus_sections[name_by_key[section_key]].append(aid)
             finally:
                 pbar.close()
+
+        for _sec_name, ids in focus_sections.items():
+            assert isinstance(ids, list)
+            ids.sort()
 
         pipeline_debug(
             "step03",
@@ -1418,19 +1540,23 @@ class PaperPipeline:
             "focus_ids": focus_ids,
             "focus_sections": focus_sections,
             "base_info": base_info,
-            "summaries": summaries,
-            "deep_analysis": deeps,
-            "images_meta": imgs,
-            "arxiv_details": details_by_aid,
+            "summaries": _json_dict_sorted_by_key(summaries),
+            "deep_analysis": _json_dict_sorted_by_key(deeps),
+            "images_meta": _json_dict_sorted_by_key(imgs),
+            "arxiv_details": _json_dict_sorted_by_key(details_by_aid),
         }
-        
-        # 写入 config.json，供前端 index.html 读取
+
+        hf_votes_out = {k: hf_votes[k] for k in sorted(hf_votes.keys())}
+
+        # 写入 config.json，供前端 index.html 读取（不含易变点赞，见 hf_votes.json）
         with open(f"{pub_dir}/config.json", 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=2, ensure_ascii=False)
+        with open(f"{pub_dir}/hf_votes.json", 'w', encoding='utf-8') as f:
+            json.dump(hf_votes_out, f, indent=2, ensure_ascii=False)
         pipeline_debug(
             "step09",
             "导出站点",
-            f"已写入 config.json 深度解析篇数={len(deeps)} 图示元数据篇数={len(imgs)}",
+            f"已写入 config.json + hf_votes.json 深度解析篇数={len(deeps)} 图示元数据篇数={len(imgs)}",
         )
 
         # 复制前端页面模板
@@ -1494,7 +1620,7 @@ class PaperPipeline:
 # - 仅 step02「筛重点、输出规整编号列表」用 call_llm_multitimes_and_merge + 两步提示；
 #   第二轮须含 {step1_output}，便于先乱想再约束成「每行/空格分隔的编号」等机器友好格式。
 # - step04 / step06：单次 call_llm；占位符 {abstract} {paper_body_excerpt}
-# - step08：translate_figure_captions 批量图注中译；缓存目录 step08_figure_caption_zh/{aid}.json
+# - step08：translate_figure_captions 逐条图注中译（篇内并发）；缓存目录 step08_figure_caption_zh/{aid}.json
 # PipelineConfig.focus_selection_llm_runs 控制 step02 合并轮数；缓存单文件 step02_focus_llm.json（output）
 # ---------------------------------------------------------------------------
 # PROMPT_STEP02_FOCUS_STEP2 = """
@@ -1657,17 +1783,20 @@ PROMPT_STEP06_DEEP = """
 (2) 这篇论文想解决什么问题
 (3) 论文的核心思路是什么
 (4) 结果怎么样
+(5) 这篇论文的模型结构是什么，介绍一下整体流程，从输入开始，是怎么样一步一步变成输出的, 提炼或者猜测一下阶段输出的尺寸
+
+
 请你使用简体中文输出
 """
 
-PROMPT_STEP08_CAPTION_ZH = """下面是同一篇论文的 {n} 条英文图注（可能含「Figure 1」等编号与 LaTeX 转写噪声）。
-请按顺序逐条翻译为流畅的**简体中文**，保留学术语气；必要时可保留无法翻译的专有名词英文。
+PROMPT_STEP08_CAPTION_ZH = """下面是一条英文图注（可能含「Figure {fig_index}」等编号与 LaTeX 转写噪声）。本篇论文共有 {fig_total} 条图注，当前为第 {fig_index} 条。
+请将其翻译为流畅的**简体中文**，保留学术语气；必要时可保留无法翻译的专有名词英文。
 
-图注列表：
-{numbered_captions}
+英文图注：
+{english_caption}
 
-**只输出**一个 JSON 数组，长度必须为 {n}，第 i 个元素对应上文 [i]。每个元素为字符串。
-不要输出 Markdown 代码围栏、不要加任何解释。示例格式：["第一条译文","第二条译文"]"""
+**只输出**一个 JSON 数组，长度必须为 1，其唯一元素为该条图注的译文字符串。
+不要输出 Markdown 代码围栏、不要加任何解释。示例格式：["译文"]"""
 
 
 if __name__ == "__main__":
