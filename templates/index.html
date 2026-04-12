@@ -490,11 +490,21 @@
                         const cap = img.caption || 'Figure from paper';
                         const capZh = img.caption_zh;
                         const displayCap = capZh ? capZh : cap;
-                        const roleTag = img.role === 'task'
-                            ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-indigo-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">任务</span>'
-                            : (img.role === 'flowchart'
-                                ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-emerald-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">流程</span>'
-                                : '');
+                        const pm = img.role && /^pipeline_(\d+)$/.exec(img.role);
+                        const roleTag = pm
+                            ? (() => {
+                                const idx = parseInt(pm[1], 10);
+                                const palette = ['bg-indigo-600/90', 'bg-emerald-600/90', 'bg-amber-600/90', 'bg-rose-600/90', 'bg-violet-600/90', 'bg-cyan-600/90'];
+                                const bg = palette[(idx - 1) % palette.length];
+                                const circ = ['①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧', '⑨'];
+                                const label = idx >= 1 && idx <= 9 ? ('相关' + circ[idx - 1]) : ('相关' + idx);
+                                return '<span class="absolute left-3 top-3 z-10 rounded-lg ' + bg + ' px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">' + label + '</span>';
+                            })()
+                            : (img.role === 'task'
+                                ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-indigo-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">任务</span>'
+                                : (img.role === 'flowchart'
+                                    ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-emerald-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">流程</span>'
+                                    : ''));
                         const capBlocks =
                             '<p class="text-[11px] font-medium text-slate-700 mt-3 whitespace-pre-wrap break-words leading-relaxed">' +
                             escapeHtml(displayCap) +
