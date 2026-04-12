@@ -135,7 +135,11 @@ class PipelineConfig:
     # False：图示 path 使用 arXiv 绝对 URL，不写本地 images/（默认）；True：下载到发布目录 images/
     store_arxiv_figures_locally: bool = False
     deep_body_max_chars: int = 8000
-    max_figures_per_paper: int = 3
+    # step07：每篇最多抽取的 figure 数（候选池，供 step07b 选 2 张）
+    max_figures_per_paper: int = 8
+    # step07b：两轮选图（仅图注）token 上限
+    figure_select_round1_max_tokens: int = 4096
+    figure_select_round2_max_tokens: int = 512
     arxiv_id_regex: str = r"\d{4}\.\d+"
     # step03：板块归类投票次数（每个板块投 N 次）
     focus_vote_times: int = 1
@@ -668,6 +672,163 @@ class PaperPipeline:
         assert isinstance(arr, list)
         return arr
 
+    @staticmethod
+    def _figure_key_for_index(idx: int) -> str:
+        assert isinstance(idx, int) and idx >= 0
+        return f"x{idx}"
+
+    def _parse_llm_two_figure_keys_json(self, raw: str) -> tuple[str, str]:
+        """解析第二轮输出：JSON 数组，长度为 2，元素为图 id 字符串（如 x0、x3）。"""
+        assert isinstance(raw, str)
+        s = raw.strip()
+        fence = re.search(r"```(?:json)?\s*([\s\S]*?)```", s)
+        if fence:
+            s = fence.group(1).strip()
+        arr = json.loads(s)
+        assert isinstance(arr, list) and len(arr) == 2
+        k0, k1 = arr[0], arr[1]
+        assert isinstance(k0, str) and isinstance(k1, str)
+        assert re.fullmatch(r"x\d+", k0) and re.fullmatch(r"x\d+", k1)
+        return k0, k1
+
+    def select_key_figures_by_caption_two_round(
+        self,
+        raw_meta: list,
+        aid: str,
+        cache_dir: str,
+        force_rerun: bool,
+        *,
+        debug_step: str,
+        debug_title: str,
+    ) -> list[dict]:
+        """
+        仅依据英文图注：两轮 LLM 从候选中各选 1 张——最贴「论文任务」与「方法/流程图」。
+        输入为有序 id：x0..x{n-1}；第二轮仅输出两个 key。返回 2 条 dict，含 path、caption、role。
+        """
+        assert isinstance(raw_meta, list)
+        assert isinstance(aid, str)
+        assert isinstance(cache_dir, str)
+        assert isinstance(force_rerun, bool)
+        assert isinstance(debug_step, str)
+        assert isinstance(debug_title, str)
+        for m in raw_meta:
+            assert isinstance(m, dict)
+            assert "path" in m and "caption" in m
+            assert isinstance(m["path"], str) and isinstance(m["caption"], str)
+
+        n = len(raw_meta)
+        assert n >= 2
+
+        input_od = OrderedDict(
+            (self._figure_key_for_index(i), {"caption": raw_meta[i]["caption"]})
+            for i in range(n)
+        )
+        input_json = json.dumps(input_od, ensure_ascii=False)
+        valid_keys = [self._figure_key_for_index(i) for i in range(n)]
+        valid_set = set(valid_keys)
+
+        os.makedirs(cache_dir, exist_ok=True)
+        fp = os.path.join(cache_dir, f"{aid}.json")
+
+        if not force_rerun and os.path.exists(fp):
+            with open(fp, "r", encoding="utf-8") as f:
+                cached = json.load(f)
+            assert isinstance(cached, dict)
+            cached_in = cached["input_figures"] if "input_figures" in cached else None
+            same_in = (
+                isinstance(cached_in, dict)
+                and json.dumps(cached_in, ensure_ascii=False, sort_keys=True)
+                == json.dumps(json.loads(input_json), ensure_ascii=False, sort_keys=True)
+            )
+            if (
+                same_in
+                and "selected_keys" in cached
+                and isinstance(cached["selected_keys"], list)
+                and len(cached["selected_keys"]) == 2
+            ):
+                sk0, sk1 = cached["selected_keys"][0], cached["selected_keys"][1]
+                if (
+                    isinstance(sk0, str)
+                    and isinstance(sk1, str)
+                    and sk0 in valid_set
+                    and sk1 in valid_set
+                ):
+                    pipeline_debug(debug_step, debug_title, f"关键图选择 命中缓存 编号={aid} keys={cached['selected_keys']}")
+                    return self._build_two_selected_from_keys(raw_meta, sk0, sk1)
+
+        if force_rerun and os.path.exists(fp):
+            pipeline_debug(debug_step, debug_title, f"关键图选择 强制重跑 编号={aid}")
+
+        p1 = PROMPT_STEP07B_SELECT_STEP1.format(figures_json=input_json)
+        pipeline_debug(debug_step, debug_title, f"关键图选择 第1轮 prompt_len={len(p1)}")
+        out1 = self._post_chat_completion(p1, max_tokens=self.cfg.figure_select_round1_max_tokens)
+        pipeline_debug(debug_step, debug_title, f"关键图选择 第1轮 输出字符数={len(out1)}")
+
+        p2 = PROMPT_STEP07B_SELECT_STEP2.format(
+            step1_output=out1,
+            valid_keys_json=json.dumps(valid_keys, ensure_ascii=False),
+        )
+        pipeline_debug(debug_step, debug_title, f"关键图选择 第2轮 prompt_len={len(p2)}")
+        out2 = self._post_chat_completion(p2, max_tokens=self.cfg.figure_select_round2_max_tokens)
+        pipeline_debug(debug_step, debug_title, f"关键图选择 第2轮 raw_head={out2.strip()[:400]!r}")
+
+        try:
+            k_task, k_flow = self._parse_llm_two_figure_keys_json(out2)
+            assert k_task in valid_set and k_flow in valid_set
+        except (json.JSONDecodeError, AssertionError, TypeError, ValueError, KeyError) as e:
+            pipeline_debug(
+                debug_step,
+                debug_title,
+                f"关键图选择 JSON 解析失败 编号={aid} err={e} 回退 x0/x1",
+            )
+            k_task = self._figure_key_for_index(0)
+            k_flow = self._figure_key_for_index(1) if n > 1 else k_task
+
+        if k_task == k_flow and n > 1:
+            alt = None
+            for j in range(n):
+                cand = self._figure_key_for_index(j)
+                if cand != k_task:
+                    alt = cand
+                    break
+            assert alt is not None
+            k_flow = alt
+            pipeline_debug(
+                debug_step,
+                debug_title,
+                f"关键图选择 任务与流程 key 重复，已改为 distinct flow={k_flow}",
+            )
+
+        out_list = self._build_two_selected_from_keys(raw_meta, k_task, k_flow)
+        payload = {
+            "arxiv_id": aid,
+            "input_figures": json.loads(input_json),
+            "selected_keys": [k_task, k_flow],
+            "round1_output": out1,
+            "round2_output": out2,
+        }
+        with open(fp, "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        pipeline_debug(debug_step, debug_title, f"关键图选择 已落盘 编号={aid} 文件={fp}")
+        return out_list
+
+    def _build_two_selected_from_keys(self, raw_meta: list, k_task: str, k_flow: str) -> list[dict]:
+        assert isinstance(raw_meta, list)
+        assert isinstance(k_task, str) and isinstance(k_flow, str)
+        assert re.fullmatch(r"x\d+", k_task) and re.fullmatch(r"x\d+", k_flow)
+        i_task = int(k_task[1:])
+        i_flow = int(k_flow[1:])
+        assert 0 <= i_task < len(raw_meta) and 0 <= i_flow < len(raw_meta)
+        mt = raw_meta[i_task]
+        mf = raw_meta[i_flow]
+        assert isinstance(mt, dict) and isinstance(mf, dict)
+        return [
+            {"path": mt["path"], "caption": mt["caption"], "role": "task"},
+            {"path": mf["path"], "caption": mf["caption"], "role": "flowchart"},
+        ]
+
     def _parse_yes_no(self, response_text: str, *, debug_step: str, debug_title: str) -> bool:
         """将模型输出解析为 bool（尽量稳健；解析失败回退为否）。"""
         assert isinstance(response_text, str)
@@ -1122,7 +1283,7 @@ class PaperPipeline:
         debug_step: str,
         debug_title: str,
     ):
-        """在抽取图示之后：将英文图注逐条译为中文（每条单独请求，篇内并发），写入 caption_zh；结果缓存按篇落盘。"""
+        """在抽取/选图之后：将英文图注译为中文（按唯一 path+caption 去重后请求 LLM，再展开）；写入 caption_zh；结果缓存按篇落盘。"""
         assert isinstance(meta_list, list)
         assert isinstance(aid, str)
         assert isinstance(cache_dir, str)
@@ -1133,6 +1294,8 @@ class PaperPipeline:
             assert isinstance(m, dict)
             assert "path" in m and "caption" in m
             assert isinstance(m["path"], str) and isinstance(m["caption"], str)
+            if "role" in m:
+                assert m["role"] in ("task", "flowchart")
 
         if not meta_list:
             pipeline_debug(debug_step, debug_title, f"图注翻译 跳过 编号={aid} 无图示条目")
@@ -1142,11 +1305,14 @@ class PaperPipeline:
         fp = os.path.join(cache_dir, f"{aid}.json")
         paths = [m["path"] for m in meta_list]
         source_captions = [m["caption"] for m in meta_list]
+        figure_roles = [m["role"] if "role" in m else None for m in meta_list]
 
         if not force_rerun and os.path.exists(fp):
             with open(fp, "r", encoding="utf-8") as f:
                 cached = json.load(f)
             assert isinstance(cached, dict)
+            cr = cached["figure_roles"] if "figure_roles" in cached else None
+            roles_ok = cr == figure_roles or (cr is None and all(r is None for r in figure_roles))
             if (
                 "paths" in cached
                 and "source_captions" in cached
@@ -1154,16 +1320,20 @@ class PaperPipeline:
                 and cached["paths"] == paths
                 and cached["source_captions"] == source_captions
                 and len(cached["figures"]) == len(meta_list)
+                and roles_ok
             ):
                 pipeline_debug(debug_step, debug_title, f"图注翻译 命中缓存 编号={aid} 条数={len(meta_list)}")
-                return [
-                    {
+                out_cached = []
+                for i, m in enumerate(meta_list):
+                    item = {
                         "path": m["path"],
                         "caption": m["caption"],
                         "caption_zh": cached["figures"][i]["caption_zh"],
                     }
-                    for i, m in enumerate(meta_list)
-                ]
+                    if "role" in m:
+                        item["role"] = m["role"]
+                    out_cached.append(item)
+                return out_cached
             pipeline_debug(
                 debug_step,
                 debug_title,
@@ -1177,56 +1347,77 @@ class PaperPipeline:
             )
 
         n = len(meta_list)
-        workers = max(1, min(self.cfg.figure_caption_translate_max_workers, n))
+        uniq_pairs: list[tuple[str, str]] = []
+        pair_to_uniq_idx: dict[tuple[str, str], int] = {}
+        slot_to_uniq: list[int] = []
+        for m in meta_list:
+            key = (m["path"], m["caption"])
+            if key not in pair_to_uniq_idx:
+                pair_to_uniq_idx[key] = len(uniq_pairs)
+                uniq_pairs.append(key)
+            slot_to_uniq.append(pair_to_uniq_idx[key])
+        u_count = len(uniq_pairs)
+        workers = max(1, min(self.cfg.figure_caption_translate_max_workers, u_count))
         pipeline_debug(
             debug_step,
             debug_title,
-            f"图注翻译 请求LLM(逐条) 编号={aid} 条数={n} 并发={workers}",
+            f"图注翻译 请求LLM(唯一caption) 编号={aid} 槽位数={n} 唯一数={u_count} 并发={workers}",
         )
 
-        def _one(idx: int) -> tuple[int, str]:
-            assert isinstance(idx, int) and 0 <= idx < n
-            m = meta_list[idx]
+        def _one_uniq(u: int) -> tuple[int, str]:
+            assert isinstance(u, int) and 0 <= u < u_count
+            path_u, cap_u = uniq_pairs[u]
+            first_slot = None
+            for si in range(n):
+                if slot_to_uniq[si] == u:
+                    first_slot = si
+                    break
+            assert first_slot is not None
             cz = self._translate_single_figure_caption_zh(
-                fig_index=idx,
+                fig_index=first_slot,
                 fig_total=n,
-                english_caption=m["caption"],
+                english_caption=cap_u,
                 arxiv_id=aid,
                 debug_step=debug_step,
                 debug_title=debug_title,
             )
-            return idx, cz
+            return u, cz
 
-        zh_by_idx: dict[int, str] = {}
+        zh_by_uniq: dict[int, str] = {}
         with ThreadPoolExecutor(max_workers=workers) as executor:
-            futures = {executor.submit(_one, i): i for i in range(n)}
+            futures = {executor.submit(_one_uniq, u): u for u in range(u_count)}
             for fut in as_completed(futures):
-                idx_key = futures[fut]
+                u_key = futures[fut]
                 try:
-                    idx, cz = fut.result()
+                    u, cz = fut.result()
                 except Exception as e:
                     pipeline_debug(
                         debug_step,
                         debug_title,
-                        f"图注翻译 单条异常 编号={aid} idx={idx_key} err={type(e).__name__}: {e}",
+                        f"图注翻译 唯一槽异常 编号={aid} u={u_key} err={type(e).__name__}: {e}",
                     )
-                    idx, cz = idx_key, meta_list[idx_key]["caption"]
+                    path_u, cap_u = uniq_pairs[u_key]
+                    u, cz = u_key, cap_u
                 assert isinstance(cz, str)
-                zh_by_idx[idx] = cz
+                zh_by_uniq[u] = cz
 
-        zh_list = [zh_by_idx[i] for i in range(n)]
+        zh_list = [zh_by_uniq[slot_to_uniq[i]] for i in range(n)]
 
         figures_store = []
         out_meta = []
         for i, m in enumerate(meta_list):
             cz = zh_list[i]
             figures_store.append({"path": m["path"], "caption_zh": cz})
-            out_meta.append({"path": m["path"], "caption": m["caption"], "caption_zh": cz})
+            item = {"path": m["path"], "caption": m["caption"], "caption_zh": cz}
+            if "role" in m:
+                item["role"] = m["role"]
+            out_meta.append(item)
 
         payload = {
             "arxiv_id": aid,
             "paths": paths,
             "source_captions": source_captions,
+            "figure_roles": figure_roles,
             "figures": figures_store,
         }
         with open(fp, "w", encoding="utf-8") as f:
@@ -1269,6 +1460,7 @@ class PaperPipeline:
         step04_summaries_llm = f"{cache_root}/step04_summaries_llm"
         step05_arxiv_html = f"{cache_root}/step05_arxiv_html"
         step06_deep_llm = f"{cache_root}/step06_deep_llm"
+        step07b_key_figure_select = f"{cache_root}/step07b_key_figure_select"
         step08_figure_caption_zh = f"{cache_root}/step08_figure_caption_zh"
 
         # step01：拉取 HF 当日列表（无 tqdm，单次请求）
@@ -1473,14 +1665,39 @@ class PaperPipeline:
                 debug_step="step07",
                 debug_title="抽取图示",
             )
-            img_meta = self.translate_figure_captions(
-                raw_meta,
-                aid,
-                step08_figure_caption_zh,
-                force_rerun=_should("step08"),
-                debug_step="step08",
-                debug_title="图注翻译",
-            )
+            if not raw_meta:
+                img_meta = []
+            elif len(raw_meta) == 1:
+                m0 = raw_meta[0]
+                selected_meta = [
+                    {"path": m0["path"], "caption": m0["caption"], "role": "task"},
+                    {"path": m0["path"], "caption": m0["caption"], "role": "flowchart"},
+                ]
+                img_meta = self.translate_figure_captions(
+                    selected_meta,
+                    aid,
+                    step08_figure_caption_zh,
+                    force_rerun=_should("step08"),
+                    debug_step="step08",
+                    debug_title="图注翻译",
+                )
+            else:
+                selected_meta = self.select_key_figures_by_caption_two_round(
+                    raw_meta,
+                    aid,
+                    step07b_key_figure_select,
+                    force_rerun=_should("step07b"),
+                    debug_step="step07b",
+                    debug_title="关键图选择",
+                )
+                img_meta = self.translate_figure_captions(
+                    selected_meta,
+                    aid,
+                    step08_figure_caption_zh,
+                    force_rerun=_should("step08"),
+                    debug_step="step08",
+                    debug_title="图注翻译",
+                )
 
             return aid, deep_out, img_meta
 
@@ -1530,6 +1747,12 @@ class PaperPipeline:
                 "step09",
                 "发布前汇总",
                 f"step06 JSON文件数={_count_json_files(step06_deep_llm)} 目录={step06_deep_llm}",
+            )
+        if os.path.isdir(step07b_key_figure_select):
+            pipeline_debug(
+                "step09",
+                "发布前汇总",
+                f"step07b 关键图选择 JSON数={_count_json_files(step07b_key_figure_select)} 目录={step07b_key_figure_select}",
             )
         if os.path.isdir(step08_figure_caption_zh):
             pipeline_debug(
@@ -1623,7 +1846,8 @@ class PaperPipeline:
 # - 仅 step02「筛重点、输出规整编号列表」用 call_llm_multitimes_and_merge + 两步提示；
 #   第二轮须含 {step1_output}，便于先乱想再约束成「每行/空格分隔的编号」等机器友好格式。
 # - step04 / step06：单次 call_llm；占位符 {title} {abstract} {paper_body_excerpt}
-# - step08：translate_figure_captions 逐条图注中译（篇内并发）；缓存目录 step08_figure_caption_zh/{aid}.json
+# - step07b：select_key_figures_by_caption_two_round 两轮选关键图（仅图注）；缓存 step07b_key_figure_select/{aid}.json
+# - step08：translate_figure_captions 图注中译（唯一 caption 去重；篇内并发）；缓存 step08_figure_caption_zh/{aid}.json
 # PipelineConfig.focus_selection_llm_runs 控制 step02 合并轮数；缓存单文件 step02_focus_llm.json（output）
 # ---------------------------------------------------------------------------
 # PROMPT_STEP02_FOCUS_STEP2 = """
@@ -1818,6 +2042,32 @@ PROMPT_STEP08_CAPTION_ZH = """下面是一条英文图注（可能含「Figure {
 
 **只输出**一个 JSON 数组，长度必须为 1，其唯一元素为该条图注的译文字符串。
 不要输出 Markdown 代码围栏、不要加任何解释。示例格式：["译文"]"""
+
+PROMPT_STEP07B_SELECT_STEP1 = """你是论文读图助手。下面是一篇论文中按顺序抽取的多张图的 id 与**英文图注**（JSON 对象：键为 x0、x1、x2… 表示在文中的先后顺序，值为 {{ "caption": "…" }}）。你看不到图片本身，只能根据图注判断。
+
+【figures_json】
+{figures_json}
+
+请分两步思考（可分段写）：
+1）哪一张图最清楚地概括**论文要解决的任务/问题**（输入输出、应用场景）？对应哪个 id？
+2）哪一张图最像**方法总览、pipeline、系统结构或流程图**（步骤、箭头、模块连接）？对应哪个 id？
+若某类在图注中难以判断，说明依据并给出你仍认为最贴近的 id。
+
+最后一行请用一句话总结你准备推荐的两个 id（仍用 x# 表示）。"""
+
+PROMPT_STEP07B_SELECT_STEP2 = """下面是你在上一轮对「任务相关图」与「流程/结构图」的分析草稿：
+{step1_output}
+
+合法 id 必须来自且仅来自下列列表（不得编造）：
+{valid_keys_json}
+
+请**只输出**一个 JSON 数组，长度恰好为 2：
+- 第 1 个元素：最贴「论文任务/问题」的图 id；
+- 第 2 个元素：最贴「方法流程/结构/ pipeline 图」的图 id。
+
+若候选充足，两个元素应为**不同**的 id；若你判断只能选同一张，仍输出两个相同字符串。
+
+不要输出 Markdown 代码围栏、不要任何其它文字。示例：["x2","x7"]"""
 
 
 if __name__ == "__main__":

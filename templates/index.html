@@ -490,13 +490,19 @@
                         const cap = img.caption || 'Figure from paper';
                         const capZh = img.caption_zh;
                         const displayCap = capZh ? capZh : cap;
+                        const roleTag = img.role === 'task'
+                            ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-indigo-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">任务</span>'
+                            : (img.role === 'flowchart'
+                                ? '<span class="absolute left-3 top-3 z-10 rounded-lg bg-emerald-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">流程</span>'
+                                : '');
                         const capBlocks =
                             '<p class="text-[11px] font-medium text-slate-700 mt-3 whitespace-pre-wrap break-words leading-relaxed">' +
                             escapeHtml(displayCap) +
                             '</p>';
                         return `
                         <div class="group relative flex flex-col">
-                            <div class="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-100 cursor-zoom-in">
+                            <div class="relative aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-100 cursor-zoom-in">
+                                ${roleTag}
                                 <img src="${img.path}" 
                                      class="paper-figure-thumb w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                                      data-caption="${escapeHtml(displayCap)}"

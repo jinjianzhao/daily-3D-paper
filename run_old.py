@@ -9,6 +9,6 @@ if __name__ == "__main__":
         _day = today - timedelta(days=i)
         pipeline.run_pipeline(
             _day.strftime("%Y-%m-%d"), 
-            # force_rerun=["step01", "step02", "step03", "step04", "step05", "step06", "step07", "step08", "step09"],
+            # force_rerun=["step01", "step02", "step03", "step04", "step05", "step06", "step07", "step07b", "step08", "step09"],
             skip_void_date=True,
         )
