@@ -291,7 +291,7 @@
             );
         }
 
-        /** 目录条目可见文案：中文简述 + 间隔号 + 全文标题（不再按字符数截断，由 CSS line-clamp 控制行数）。 */
+        /** 目录条目可见文案：中文简述 + 间隔号 + 全文英文标题（完整字符串，不做截断）。 */
         function tocEntryLabel(shortZh, fullTitle) {
             if (typeof fullTitle !== 'string') {
                 throw new TypeError('tocEntryLabel expects fullTitle string');
@@ -669,7 +669,7 @@
                             tocHtml +=
                                 '<a href="#' +
                                 id +
-                                '" class="toc-link pl-2 line-clamp-4 break-words" title="' +
+                                '" class="toc-link pl-2 break-words" title="' +
                                 escapeHtml(tip) +
                                 '">' +
                                 escapeHtml(label) +
@@ -688,7 +688,7 @@
                         tocHtml +=
                             '<a href="#' +
                             id +
-                            '" class="toc-link pl-2 line-clamp-4 break-words" title="' +
+                            '" class="toc-link pl-2 break-words" title="' +
                             escapeHtml(tipAll) +
                             '">' +
                             escapeHtml(labelAll) +
