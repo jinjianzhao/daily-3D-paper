@@ -260,13 +260,13 @@
       {
         "path": "https://arxiv.org/html/2511.16428v2/x1.png",
         "caption": "Figure 1:Comparison of multi-view consistency between our method and CVCDepth[4]. The stars and circles denote 3D reconstructions of the same 3D object points from two different images. While prior work struggles to achieve consistency in the reconstruction across images, our method clearly mitigates this limitation.",
-        "caption_zh": "图1：我们的方法与CVCDepth[4]在多视角一致性上的比较。星形与圆形标记分别表示同一三维物体点在不同图像中的三维重建结果。现有方法难以实现跨图像重建的一致性，而我们的方法明显缓解了这一局限。",
+        "caption_zh": "图 1：本文方法与 CVCDepth [4] 在多视图一致性上的对比。星形与圆形标记表示同一三维物体点在两幅不同图像中的三维重建结果。已有方法难以实现跨图像重建的一致性，而本文方法明显缓解了这一局限性。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2511.16428v2/x3.png",
         "caption": "Figure 2:Overview of the proposed network. The depth network takes the target images𝐈t\\mathbf{I}{{}_{t}}as input. The lowest-scale features𝐅S,𝐈t\\mathbf{F}{{}_{S,\\mathbf{I}_{t}}}from all target images are projected onto a cylinder, where attention is applied based on cylindrical distances. The pose network takes the source𝐈t′,1\\mathbf{I}{{}_{t^{\\prime},1}}and target𝐈t,1\\mathbf{I}{{}_{t,1}}front images as input to predict the relative metric pose between two frames.",
-        "caption_zh": "图2：本文提出网络的整体架构。深度网络以目标图像𝐈t为输入，将所有目标图像的最低尺度特征𝐅S,𝐈t投影至柱面坐标系，并基于柱面距离施加注意力机制。位姿网络以源图像𝐈t′,1与目标前视图𝐈t,1为输入，预测两帧之间的相对度量位姿。",
+        "caption_zh": "Figure 2:Overview of the proposed network. The depth network takes the target images𝐈t\\mathbf{I}{{}_{t}}as input. The lowest-scale features𝐅S,𝐈t\\mathbf{F}{{}_{S,\\mathbf{I}_{t}}}from all target images are projected onto a cylinder, where attention is applied based on cylindrical distances. The pose network takes the source𝐈t′,1\\mathbf{I}{{}_{t^{\\prime},1}}and target𝐈t,1\\mathbf{I}{{}_{t,1}}front images as input to predict the relative metric pose between two frames.",
         "role": "flowchart"
       }
     ],
@@ -274,13 +274,13 @@
       {
         "path": "https://arxiv.org/html/2604.07427v1/x1.png",
         "caption": "Figure 1:Prior work on preference alignment focuses on steering generations towards samples with a global reward. In contrast, we are able to steer samples with prompt optimization[manas2024improving,ashutosh2025llmsheartraining]to generate different samples tailored to individual taste.",
-        "caption_zh": "图 1：已有的偏好对齐研究主要关注于引导生成结果朝向具有全局奖励的样本。相比之下，我们能够通过提示优化（manas2024improving, ashutosh2025llmsheartraining）引导样本，生成符合个体偏好的不同样本。",
+        "caption_zh": "图1：已有偏好对齐研究主要关注将生成结果导向具有全局奖励的样本，而本文通过提示优化方法[manas2024improving, ashutosh2025llmsheartraining]引导样本生成，能够针对个体偏好定制不同的输出。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.07427v1/x2.png",
         "caption": "Figure 3:Architecture of our personalized aesthetic quality predictor.Visual and semantic features are extracted by a frozen SigLIP2 encoder;\nuser demographic and image metadata embeddings are produced by a frozen embedding encoder. All features are projected to a shared dimension,\nassembled as a token sequence with a learnable[CLS]token,\nand fused by a shallow transformer encoder. The[CLS]output\nis passed to a linear head to predict the aesthetic score and trained with a mean squared loss.",
-        "caption_zh": "图3：个性化美学质量预测器的架构。视觉与语义特征通过冻结的SigLIP2编码器提取；用户人口统计信息和图像元数据嵌入通过冻结的嵌入编码器生成。所有特征被投影至共享维度，与可学习的[CLS]标记组合为令牌序列，并通过浅层Transformer编码器进行融合。[CLS]输出传入线性头部以预测美学分数，训练时采用均方损失。",
+        "caption_zh": "图 3：我们的个性化美学质量预测器架构。视觉与语义特征通过冻结的 SigLIP2 编码器提取；用户人口统计信息和图像元数据嵌入由冻结的嵌入编码器生成。所有特征被投影到共享维度，与一个可学习的 [CLS] 标记组合为令牌序列，并通过浅层 Transformer 编码器进行融合。[CLS] 输出被传递至线性头部以预测美学分数，并使用均方损失进行训练。",
         "role": "flowchart"
       }
     ],
@@ -288,27 +288,27 @@
       {
         "path": "https://arxiv.org/html/2604.07823v1/x1.png",
         "caption": "Figure 1:LPM 1.0generates identity-consistent conversational video with synchronized verbal and non-verbal behaviors—speaking, listening, micro-expressions, and natural motion—while maintaining visual fidelity across streaming and long-horizon video generation.",
-        "caption_zh": "图 1：LPM 1.0 能够生成身份一致、音视频同步的对话式视频，涵盖说话、倾听、微表情及自然动作等言语与非言语行为，并在流式生成与长时序视频生成中保持视觉保真度。",
+        "caption_zh": "图 1：LPM 1.0 生成身份一致的对话视频，其言语行为（说话、倾听）与非言语行为（微表情、自然动作）同步协调，同时在流式生成长时视频过程中保持了视觉保真度。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.07823v1/x1.png",
         "caption": "Figure 1:LPM 1.0generates identity-consistent conversational video with synchronized verbal and non-verbal behaviors—speaking, listening, micro-expressions, and natural motion—while maintaining visual fidelity across streaming and long-horizon video generation.",
-        "caption_zh": "图 1：LPM 1.0 能够生成身份一致、音视频同步的对话式视频，涵盖说话、倾听、微表情及自然动作等言语与非言语行为，并在流式生成与长时序视频生成中保持视觉保真度。",
+        "caption_zh": "图 1：LPM 1.0 生成身份一致的对话视频，其言语行为（说话、倾听）与非言语行为（微表情、自然动作）同步协调，同时在流式生成长时视频过程中保持了视觉保真度。",
         "role": "flowchart"
       }
     ],
     "2604.07966": [
       {
-        "path": "https://arxiv.org/html/2604.07966v1/x3.png",
-        "caption": "Figure 3:Pipeline of LiVER. Given a text promptTT, our Scene Agent parses object categories, spatial relations, and coarse geometry to construct an initial 3D scene. The Camera Agent infers a camera trajectory consistent with the described viewpoint and scene semantics, producing the camera conditionCC. The 3D scene is then rendered through a physically-based renderer to obtain the lighting-grounded scene proxy, including diffuse, glossy GGX, and rough GGX components, forming the scene conditionXcondX_{\\text{cond}}. These components encode physically meaningful cues such as material response, shading, and reflections. The Lighting conditionLL, represented by an environment map, provides global illumination cues. The DiT-based video diffusion model integrates all conditionsXcondX_{\\text{cond}},CC,LLand generates a photorealistic video that preserves the scene layout, camera trajectory, and physically accurate lighting behavior.",
-        "caption_zh": "图3：LiVER流程示意图。给定文本提示TT，本研究的场景智能体解析物体类别、空间关系与粗粒度几何结构以构建初始三维场景。相机智能体推断与描述视点及场景语义一致的相机轨迹，生成相机条件CC。随后通过基于物理的渲染器对三维场景进行渲染，获得包含漫反射、光泽GGX与粗糙GGX分组的照明基准场景代理，形成场景条件XcondX_{\\text{cond}}。这些分量编码了材质响应、着色与反射等具有物理意义的视觉线索。以环境贴图表征的照明条件LL提供全局光照信息。基于DiT的视频扩散模型整合所有条件XcondX_{\\text{cond}}、CC与LL，生成保持场景布局、相机轨迹及物理精确照明行为的逼真视频。",
+        "path": "https://arxiv.org/html/2604.07966v1/images/qual/5k4a/cameractrl_frames/00.jpg",
+        "caption": "CC[13]MC[45]VD[21]OursRefCC[13]MC[45]VD[21]OursRefVD[21]OursRefFigure 4:Qualitative comparison with state-of-the-art controllable video generation models. In each block, each row corresponds to one video, and frames are arranged from left to right in temporal order. The top row shows the results of each comparison method, followed by ours, with the ground truth (GT) shown in the final row.",
+        "caption_zh": "图 4：与先进的受控视频生成模型的定性对比。每个图块中，每一行对应一个视频，帧按时间顺序从左到右排列。顶行展示各对比方法的结果，随后是我们的结果，最后一行展示真实值（GT）。",
         "role": "task"
       },
       {
-        "path": "https://arxiv.org/html/2604.07966v1/",
-        "caption": "Figure 2:Our data annotation pipeline forLiVER-Real. We process each video to reconstruct its 3D geometry and estimate its HDR environment map. These are then used to render three pixel-aligned lighting representations (Diffuse, Glossy GGX, Rough GGX), which are concatenated to form the final conditioning input.",
-        "caption_zh": "图 2：LiVER-Real 的数据标注流程。我们对每个视频进行处理，重建其三维几何结构并估算其 HDR 环境贴图。随后利用这些信息渲染三种像素对齐的光照表示（漫反射、光泽 GGX、粗糙 GGX），将其拼接以形成最终的条件输入。",
+        "path": "https://arxiv.org/html/2604.07966v1/x3.png",
+        "caption": "Figure 3:Pipeline of LiVER. Given a text promptTT, our Scene Agent parses object categories, spatial relations, and coarse geometry to construct an initial 3D scene. The Camera Agent infers a camera trajectory consistent with the described viewpoint and scene semantics, producing the camera conditionCC. The 3D scene is then rendered through a physically-based renderer to obtain the lighting-grounded scene proxy, including diffuse, glossy GGX, and rough GGX components, forming the scene conditionXcondX_{\\text{cond}}. These components encode physically meaningful cues such as material response, shading, and reflections. The Lighting conditionLL, represented by an environment map, provides global illumination cues. The DiT-based video diffusion model integrates all conditionsXcondX_{\\text{cond}},CC,LLand generates a photorealistic video that preserves the scene layout, camera trajectory, and physically accurate lighting behavior.",
+        "caption_zh": "图 3：LiVER 流程示意图。给定文本提示 TT，我们的场景智能体解析物体类别、空间关系和粗略几何结构以构建初始 3D 场景。相机智能体推断与描述视点及场景语义一致的相机轨迹，生成相机条件 CC。随后通过基于物理的渲染器对 3D 场景进行渲染，获得光照接地的场景代理（包含漫反射、光滑 GGX 和粗糙 GGX 分量），形成场景条件 Xcond。这些分量编码了物理意义明确的线索，如材质响应、着色和反射。以环境贴图表示的照明条件 LL 提供全局光照线索。基于 DiT 的视频扩散模型整合所有条件 Xcond、CC、LL，生成保持场景布局、相机轨迹且符合物理真实光照行为的逼真视频。",
         "role": "flowchart"
       }
     ],
@@ -316,13 +316,13 @@
       {
         "path": "https://arxiv.org/html/2604.08168v1/x3.png",
         "caption": "Figure 3:Illustration of the three real-world tasks. For each task, we show the initial state (left), key intermediate stages (middle), and the final successful state (right).",
-        "caption_zh": "图3：三个现实世界任务的示意图。每个任务分别展示了初始状态（左）、关键中间阶段（中）以及最终成功状态（右）。",
+        "caption_zh": "图3：三个现实世界任务的示意图。针对每个任务，我们展示了初始状态（左）、关键中间阶段（中）以及最终成功状态（右）。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.08168v1/x2.png",
         "caption": "Figure 2:Overall architecture of ViVa. Left: Current robot proprioception and scalar value are mapped to latent frames via repeat padding and broadcast operations. Right: The injected latents form a unified sequence in which current observations (blank token, proprioception, and multi-view images) serve as clean conditioning frames, while future proprioception and value are noisy target frames. The diffusion Transformer denoises these targets conditioned on the clean prefix, jointly predicting the future embodied state and a scalar value defined as the normalized return.",
-        "caption_zh": "图 2：ViVa 的整体架构。左：当前机器人本体感知与标量值通过重复填充与广播操作映射至潜在帧。右：注入的潜在帧形成一个统一序列，其中当前观测（空占位符、本体感知及多视角图像）作为干净的“条件帧”，而未来本体感知与价值函数为带噪的“目标帧”。扩散 Transformer 基于干净的前缀帧对目标进行去噪，联合预测未来的具身状态以及一个定义为归一化回报的标量值。",
+        "caption_zh": "图 2：ViVa 的整体架构。左：当前机器人本体感知与标量值通过重复填充和广播操作映射到潜在帧。右：注入的潜在帧形成统一序列，其中当前观测（空白标记、本体感知和多视角图像）作为干净的 conditioning 帧，而未来的本体感知与值则是带噪声的目标帧。扩散 Transformer 基于干净的前缀帧对这些目标进行去噪，联合预测未来的具身状态和一个定义为归一化回报的标量值。",
         "role": "flowchart"
       }
     ],
@@ -330,27 +330,27 @@
       {
         "path": "https://arxiv.org/html/2604.08364v1/x2.png",
         "caption": "Figure 2:Illustrations of (a) artworks byVincent van Gogh; (b) style images in OmniStyle-150K generated by SOTA style transfer methods[5,10,56,2,17,61]from a reference style image; and (c) images generated by Qwen-Image using the same style description.",
-        "caption_zh": "图2：(a) 文森特·梵高的艺术作品；(b) OmniStyle-150K中由SOTA风格迁移方法[5,10,56,2,17,61]根据参考风格图像生成的风格图像；(c) 使用相同风格描述由Qwen-Image生成的图像。",
+        "caption_zh": "图2：(a) 文森特·梵高的艺术作品图示；(b) 通过SOTA风格迁移方法[5,10,56,2,17,61]从参考风格图像生成的OmniStyle-150K中的风格图像；以及(c) 使用相同风格描述由Qwen-Image生成的图像。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.08364v1/x3.png",
         "caption": "Figure 3:Overview of our data curation pipeline. We first collect style and content images from open-source datasets. Next, we apply carefully designed instructions to generate style and content prompts with Qwen3-VL, together with balance sampling. Finally, we use Qwen-Image to generate style images using content-style prompt combinations.Please note that we use simplified content and style prompts for illustrative purposes only.",
-        "caption_zh": "图3：数据筛选流程概览。首先从开源数据集中收集风格图像与内容图像；随后运用精心设计的指令，通过Qwen3-VL结合平衡采样生成风格提示与内容提示；最终利用Qwen-Image，根据内容与风格提示的组合生成风格图像。请注意，此处为示意清晰仅使用了简化的内容与风格提示。",
+        "caption_zh": "图3：数据整理流程总览。首先，我们从开源数据集中收集风格图像与内容图像；其次，通过精心设计的指令，利用 Qwen3-VL 结合平衡抽样生成风格提示与内容提示；最后，采用 Qwen-Image 根据内容-风格提示组合生成风格图像。请注意，此处为示意清晰仅使用简化的内容与风格提示。",
         "role": "flowchart"
       }
     ],
     "2604.08503": [
       {
-        "path": "https://arxiv.org/html/2604.08503v1/x2.png",
-        "caption": "Figure 2:PhantomOverview.Phantomconsists of two parallel latent flow-matching branches: the video branch and physics branch.\nThese branches jointly model future visual and physical dynamics,i.e., the video branch (white) predicts future visual trajectories, while the physics branch (teal) predicts the evolution of latent physical states.\nDual cross-attention layers tightly couple these branches, allowing physics cues to guide visual generation and visual evidence to refine physics reasoning.\nColor-filled components indicate trainable modules within the architecture. This design equipsPhantomwith an internal model of dynamics, enabling physically consistent video prediction",
-        "caption_zh": "图 2：Phantom 整体架构。Phantom 由两个并行的潜在流匹配分支构成：视频分支与物理分支。这两个分支共同建模未来的视觉与物理动态——视频分支（白色）预测未来视觉轨迹，物理分支（青绿色）预测潜在物理状态的演化。双交叉注意力层紧密耦合这两个分支，使物理线索能够引导视觉生成，同时视觉证据优化物理推理。彩色填充组件表示架构中的可训练模块。该设计为 Phantom 赋予了内在的动态模型，从而支持物理一致的视频预测。",
+        "path": "https://arxiv.org/html/2604.08503v1/x3.png",
+        "caption": "Figure 3:Qualitative comparison between Wan2.2-TI2V[36]and ourPhantomacross diverse text-to-video and text/image-to-video scenarios.Red boxes indicate the conditioning frames. For prompts involving diverse physical processes, such as deformation, pouring, buoyancy, and viscous flow,Phantomproduces motion that matches the requested behavior, while Wan2.2-TI2V often fails to follow the prompt or violates basic physical dynamics.\nAdditional qualitative results are provided in the Appendix.",
+        "caption_zh": "图3：Wan2.2-TI2V[36]与我们的Phantom在多样化文本到视频及文本/图像到视频场景下的定性对比。红色方框标示条件帧。对于涉及变形、倾倒、浮力、黏性流动等不同物理过程的提示，Phantom能生成符合要求行为的运动，而Wan2.2-TI2V常常无法遵循提示或违反基本物理动力学。更多定性结果见附录。",
         "role": "task"
       },
       {
-        "path": "https://arxiv.org/html/2604.08503v1/x3.png",
-        "caption": "Figure 3:Qualitative comparison between Wan2.2-TI2V[36]and ourPhantomacross diverse text-to-video and text/image-to-video scenarios.Red boxes indicate the conditioning frames. For prompts involving diverse physical processes, such as deformation, pouring, buoyancy, and viscous flow,Phantomproduces motion that matches the requested behavior, while Wan2.2-TI2V often fails to follow the prompt or violates basic physical dynamics.\nAdditional qualitative results are provided in the Appendix.",
-        "caption_zh": "图3：Wan2.2-TI2V[36]与我们的Phantom模型在多样化的文本到视频及文本/图像到视频场景中的定性对比。红色框标注了条件帧。对于涉及变形、倾倒、浮力、粘性流等不同物理过程的提示，Phantom能生成符合要求行为的运动，而Wan2.2-TI2V往往无法遵循提示或违背基本物理动力学。更多定性结果见附录。",
+        "path": "https://arxiv.org/html/2604.08503v1/x2.png",
+        "caption": "Figure 2:PhantomOverview.Phantomconsists of two parallel latent flow-matching branches: the video branch and physics branch.\nThese branches jointly model future visual and physical dynamics,i.e., the video branch (white) predicts future visual trajectories, while the physics branch (teal) predicts the evolution of latent physical states.\nDual cross-attention layers tightly couple these branches, allowing physics cues to guide visual generation and visual evidence to refine physics reasoning.\nColor-filled components indicate trainable modules within the architecture. This design equipsPhantomwith an internal model of dynamics, enabling physically consistent video prediction",
+        "caption_zh": "图2：Phantom架构概览。Phantom包含两个并行的潜流匹配分支：视频分支与物理分支。这两个分支共同建模未来的视觉与物理动态，即视频分支（白色部分）预测未来视觉轨迹，物理分支（青色部分）预测潜在物理状态的演化。双交叉注意力层将这两个分支紧密耦合，使物理线索能引导视觉生成，同时视觉证据可优化物理推理。彩色填充组件表示架构中的可训练模块。该设计为Phantom配备了内部动态模型，从而能够实现物理一致的视频预测。",
         "role": "flowchart"
       }
     ],
@@ -358,13 +358,13 @@
       {
         "path": "https://arxiv.org/html/2604.08526v1/x1.png",
         "caption": "Teaser.Figure 1.The FIT Dataset.We present FIT, a dataset and benchmark designed forfit-awarevirtual try-on, featuring diverse garment fits (e.g., tight, loose) and precise size annotations.Left:Sample dataset triplets showing the conditioning garment image (top), the conditioning person image (middle), and the target try-on image (bottom).Right:Visualization of the corresponding person and garment measurement annotations. Backgrounds are removed for clarity.",
-        "caption_zh": "图示. 图 1. FIT 数据集。我们提出了 FIT，这是一个专为感知合身度的虚拟试衣而设计的数据集和基准，包含多样化的服装合身度（例如，紧身、宽松）和精确的尺码标注。左：展示数据集三元组的示例，包括条件输入服装图像（上）、条件输入人物图像（中）和目标试穿图像（下）。右：对应的人物和服装尺寸标注的可视化。为清晰起见，背景已移除。",
+        "caption_zh": "预告图。图 1：FIT 数据集。我们提出了 FIT，一个专为感知合身度的虚拟试衣设计的数据集和基准，包含多样的服装合身度（例如紧身、宽松）和精确的尺码标注。左图：展示条件图像三元组的示例数据集，包括条件服装图像（上）、条件人物图像（中）和目标试穿图像（下）。右图：相应的人物与服装测量标注的可视化。为清晰起见已移除背景。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.08526v1/x2.png",
         "caption": "FIT data generation pipeline.Figure 2.FIT dataset generation.(a)Overall pipeline: For each sample, we first simulate garment draping in 3D via GarmentCode, rendering a synthetic try-on imageIsI_{s}(see (b)). Then, we generate a text promptpp(via VLM) describing the person and garment appearance, as well as a composite normal mapInI_{n}based onIsI_{s}. We useppandInI_{n}to condition our re-texturing modelftexturef_{\\text{texture}}to generate the photorealistic try-on imageItry-onI_{\\text{try-on}}. Finally, our modelfpairedf_{\\text{paired}}generates a paired person imageIpI_{p}(see (c)) and a VLM synthesizes the corresponding layflat garmentIgI_{g}.(b)GarmentCode simulation: Given a garment design template, we compute a sewing pattern with measurementsmgm_{g}for a specific body sizeAA. Then, we cross-drape the pattern onto a different target body of sizeBBwith person measurementsmpm_{p}, using box-mesh realignment to prevent simulation failures.(c)To generate a paired person image (same person and pose, different garment), we start with a paired rendered imageIs′I_{s}^{\\prime}containing adifferentgarment than inItry-onI_{\\text{try-on}}draped onto thesamebody. Next, we derive an identity mapIidI_{\\text{id}}by masking out the combined source and paired garment regions inItry-onI_{\\text{try-on}}. Conditioned onIidI_{\\text{id}}, the paired normal mapIn′I_{n}^{\\prime}, and a paired promptp′p^{\\prime},fpairedf_{\\text{paired}}generatesIpI_{p}.",
-        "caption_zh": "FIT数据生成流程。图 2. FIT数据集生成。(a)整体流程：对于每个样本，我们首先通过GarmentCode在三维中模拟服装悬垂，渲染合成试穿图像I_s（见(b)）。随后，我们生成描述人物与服装外观的文本提示p（通过VLM），以及基于I_s的合成法线贴图I_n。我们使用p和I_n作为条件，输入重纹理模型f_texture以生成逼真的试穿图像I_try-on。最后，我们的配对模型f_paired生成配对人物图像I_p（见(c)），并由VLM合成对应的平铺服装图像I_g。(b)GarmentCode模拟：给定服装设计模板，我们为特定体型A计算包含尺寸m_g的缝纫版型。随后，通过网格盒重对齐防止模拟失败，将该版型交叉悬垂到不同目标体型B上，并输入人物尺寸m_p。(c)为生成配对人物图像（同一人物与姿态，不同服装），我们从配对渲染图像I_s'开始，其包含与I_try-on中不同的服装但悬垂于同一身体上。接着，通过掩蔽I_try-on中源服装与配对服装的合并区域，推导身份映射I_id。以I_id、配对的法线贴图I_n'及配对提示p'为条件，f_paired生成I_p。",
+        "caption_zh": "FIT数据生成流程。图2.FIT数据集生成。(a)整体流程：针对每个样本，我们首先通过GarmentCode在三维空间中模拟服装悬垂效果，并渲染出合成试穿图像I_s（参见(b)）。随后，生成描述人物与服装外观的文本提示p（通过VLM），以及基于I_s生成的合成法线贴图I_n。我们以p和I_n作为条件输入至重纹理模型f_texture，以生成逼真的试穿图像I_try-on。最后，我们的配对模型f_paired生成配对人物图像I_p（参见(c)），并由VLM合成对应的平铺服装图像I_g。(b)GarmentCode模拟：给定服装设计模板，我们针对特定体型A计算包含尺寸m_g的缝制版型。随后，将该版型交叉悬垂至不同目标体型B（对应人物尺寸m_p），并通过网格框重对齐以避免模拟失败。(c)为生成配对人物图像（同一人物与姿态，不同服装），我们以包含与I_try-on中不同服装、但悬垂于同一人体的配对渲染图像I_s'为起点。接着，通过在I_try-on中掩蔽掉源服装与配对服装的合并区域，推导出身份映射图I_id。以I_id、配对法线贴图I_n'及配对文本提示p'为条件，f_paired生成I_p。",
         "role": "flowchart"
       }
     ],
@@ -372,13 +372,13 @@
       {
         "path": "https://arxiv.org/html/2604.08546v1/x1.png",
         "caption": "Figure 1:We presentNUMINA, a training-free framework that alleviates the misalignment between precise numerals and visual instances in text-to-video diffusion models. We significantly improve counting accuracy while maintaining natural layouts and temporal coherence.",
-        "caption_zh": "图1：我们提出了NUMINA，一种无需训练的框架，用以缓解文生视频扩散模型中精确数字与视觉实例之间的错位问题。该框架在保持自然布局与时间连贯性的同时，显著提升了计数准确性。",
+        "caption_zh": "图1：我们提出NUMINA——一种无需训练即可缓解文本到视频扩散模型中精确数字与视觉实例错配问题的框架。我们在保持自然布局与时间连贯性的同时，显著提升了计数准确性。",
         "role": "task"
       },
       {
         "path": "https://arxiv.org/html/2604.08546v1/x3.png",
         "caption": "Figure 3:The pipeline of our NUMINA follows a two-phase paradigm. Given a text prompt containing numerals, we first perform the numerical misalignment identification to extract explicitly countable layouts from attention maps. Based on the layout, we further conduct a refinement and a layout-guided generation for the numerically aligned video generation.",
-        "caption_zh": "图 3：我们的 NUMINA 方法采用两阶段范式。给定包含数字的文本提示，我们首先执行数值错位识别，以从注意力图中提取可明确计数的布局。基于该布局，我们进一步进行优化及布局引导生成，从而实现数值对齐的视频生成。",
+        "caption_zh": "图3：我们的NUMUNA框架遵循两阶段范式。给定包含数字的文本提示，我们首先执行数值对齐检测，从注意力图中提取可明确计数的布局。基于此布局，进一步进行优化和布局引导生成，以实现数值对齐的视频生成。",
         "role": "flowchart"
       }
     ]
