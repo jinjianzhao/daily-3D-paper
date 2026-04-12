@@ -248,7 +248,7 @@
         }
 
         /**
-         * step04 简报：新格式为 4 行（第1行八字内中文标签；第2行 领域;领域）。
+         * step04 简报：新格式为 4 行（第1行十余字内一句话主题；第2行 一级;二级;三级 共三个词）。
          * 旧格式为 3 行（第1行即领域行）。返回标签与用于 Markdown 展示的正文（新格式会去掉第1行以免与标题重复）。
          * @returns {{ shortZh: string, bodyMd: string }}
          */
@@ -507,7 +507,7 @@
                         </div>`;
                     }).join('');
 
-                    // 获取完整简报内容（新 step04：第1行为八字内标签，已在标题展示，正文从领域行起）
+                    // 获取完整简报内容（新 step04：第1行为一句话主题，已在标题展示，正文从领域行起）
                     const summaryText = data.summaries[aid] || '';
                     const summaryParts = splitStep04Summary(summaryText);
                     const summaryHtml = mdToHtml(summaryParts.bodyMd);
