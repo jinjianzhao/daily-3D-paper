@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>正在定位报告…</title>
+    <title>Daily 3D Paper — 今日 3D 论文，一页读完</title>
+    <meta name="description" content="从 Hugging Face Daily Papers 中筛选 3D 相关论文，中文简报与深度解析，按日归档。打开即用，无需安装。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .link-card {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 24px -5px rgb(0 0 0 / 0.06), 0 6px 8px -6px rgb(0 0 0 / 0.04);
+        }
+        code.path {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 0.8125rem;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgb(79 70 229 / 0.12) 0%, rgb(139 92 246 / 0.08) 45%, rgb(241 245 249) 100%);
+        }
+    </style>
 </head>
-<body>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50/30 to-slate-100">
+    <header class="glass sticky top-0 z-50 border-b border-slate-200/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 min-w-0">
+                <div class="w-9 h-9 shrink-0 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-md shadow-indigo-500/25">
+                    <span class="text-lg" aria-hidden="true">📄</span>
+                </div>
+                <div class="min-w-0">
+                    <h1 class="text-lg font-extrabold text-slate-900 tracking-tight truncate">Daily 3D Paper</h1>
+                    <p class="text-xs text-slate-500">HF 每日论文里的 3D 精选，中文可读</p>
+                </div>
+            </div>
+            <a
+                href="./date/"
+                class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 text-white text-sm font-semibold shadow-md shadow-indigo-500/25 hover:bg-indigo-700 transition-colors"
+            >
+                浏览全部日期
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-10">
+        <section class="hero-gradient rounded-3xl border border-indigo-200/40 shadow-sm shadow-indigo-500/5 px-6 sm:px-10 py-10 sm:py-12 text-center sm:text-left">
+            <p class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-indigo-600 mb-3">3D · Vision · Geometry</p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+                每天一页，<span class="text-indigo-600">跟上论文在发生什么</span>
+            </h2>
+            <p class="text-slate-600 text-[15px] sm:text-base leading-relaxed max-w-2xl mx-auto sm:mx-0">
+                我们从 <a href="https://huggingface.co/papers" class="text-indigo-600 hover:text-indigo-800 font-semibold underline underline-offset-2" target="_blank" rel="noopener noreferrer">Hugging Face Daily Papers</a> 的当日列表里，筛出和
+                <strong class="text-slate-800">3D 生成、重建、图形学、Mesh</strong> 最相关的条目，写成中文简报与深度解析，配上图示——你只需选日期，剩下的交给这一页。
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:items-center justify-center sm:justify-start">
+                <a
+                    href="./date/"
+                    class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white text-sm font-bold shadow-lg shadow-indigo-500/30 hover:bg-indigo-700 transition-colors"
+                >
+                    进入日期索引
+                </a>
+                <a
+                    id="today-cta"
+                    href="./date/"
+                    class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-slate-200 bg-white/80 text-slate-800 text-sm font-semibold hover:border-indigo-300 hover:bg-white transition-colors"
+                >
+                    试试今日页面
+                </a>
+            </div>
+        </section>
+
+        <section class="grid sm:grid-cols-3 gap-4">
+            <div class="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm">
+                <p class="text-xs font-extrabold uppercase tracking-widest text-indigo-500 mb-2">省时间</p>
+                <p class="text-sm text-slate-600 leading-relaxed">先读「深度解析」抓重点，再扫「全量简报」，不必在 arXiv 里大海捞针。</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm">
+                <p class="text-xs font-extrabold uppercase tracking-widest text-violet-500 mb-2">能读下去</p>
+                <p class="text-sm text-slate-600 leading-relaxed">中文叙述 + 目录导航 + 可点开放大的图，适合碎片时间跟进。</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-sm">
+                <p class="text-xs font-extrabold uppercase tracking-widest text-slate-500 mb-2">零安装</p>
+                <p class="text-sm text-slate-600 leading-relaxed">浏览器打开即用；本地跑流水线见仓库文档。</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-sm font-extrabold uppercase tracking-widest text-slate-400 mb-4">更多入口</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <a
+                    href="./date/"
+                    class="link-card block rounded-2xl border border-slate-200/70 bg-white px-6 py-5 hover:border-indigo-300"
+                >
+                    <p class="font-bold text-slate-900 mb-1">按日期浏览全部报告</p>
+                    <p class="text-xs text-slate-500">日历式列表，选一天即打开当日完整页面</p>
+                    <p class="mt-3 text-[11px] font-mono text-indigo-600/90 break-all">…/daily-3D-paper/date/</p>
+                </a>
+                <a
+                    href="https://github.com/jinjianzhao/daily-3D-paper"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-card block rounded-2xl border border-slate-200/70 bg-white px-6 py-5 hover:border-slate-400"
+                >
+                    <p class="font-bold text-slate-900 mb-1">GitHub 上的源码与说明</p>
+                    <p class="text-xs text-slate-500">提 Issue、Fork 自建或查看技术文档</p>
+                    <p class="mt-3 text-[11px] font-mono text-slate-600 break-all">github.com/jinjianzhao/daily-3D-paper</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="rounded-2xl border border-slate-200/80 bg-white/90 shadow-sm p-6 sm:p-8">
+            <h2 class="text-xl font-extrabold text-slate-900 tracking-tight mb-4">路径说明</h2>
+            <p class="text-slate-600 text-sm mb-4">仓库与 GitHub Pages 上，按日期的静态页位于 <code class="path text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded">docs/date/</code>。</p>
+            <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex flex-col sm:flex-row sm:gap-3 sm:items-baseline">
+                    <span class="shrink-0 font-semibold text-slate-800 w-48">日期索引页</span>
+                    <code class="path text-slate-600 bg-slate-100 px-2 py-1 rounded break-all">docs/date/index.html</code>
+                </li>
+                <li class="flex flex-col sm:flex-row sm:gap-3 sm:items-baseline">
+                    <span class="shrink-0 font-semibold text-slate-800 w-48">某一日的站点</span>
+                    <code class="path text-slate-600 bg-slate-100 px-2 py-1 rounded break-all">docs/date/&lt;YYYY-MM-DD&gt;/index.html</code>
+                </li>
+                <li class="flex flex-col sm:flex-row sm:gap-3 sm:items-baseline">
+                    <span class="shrink-0 font-semibold text-slate-800 w-48">本站（线上）</span>
+                    <code class="path text-slate-600 bg-slate-100 px-2 py-1 rounded break-all">https://jinjianzhao.github.io/daily-3D-paper/</code>
+                </li>
+                <li class="flex flex-col sm:flex-row sm:gap-3 sm:items-baseline">
+                    <span class="shrink-0 font-semibold text-slate-800 w-48">日期列表（线上）</span>
+                    <code class="path text-slate-600 bg-slate-100 px-2 py-1 rounded break-all">https://jinjianzhao.github.io/daily-3D-paper/date/</code>
+                </li>
+            </ul>
+        </section>
+
+        <section id="today-hint" class="rounded-2xl border border-dashed border-indigo-200 bg-indigo-50/50 px-6 py-4 text-sm text-slate-600">
+            <span class="font-semibold text-slate-800">今日页面（若已发布）：</span>
+            <a id="today-link" href="./date/" class="text-indigo-600 hover:text-indigo-800 font-mono text-xs break-all underline underline-offset-2"></a>
+        </section>
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-center text-xs text-slate-400">
+        <p>由流水线生成后推送至 GitHub Pages · 详见仓库 README；本地运行与开发见 <code class="font-mono text-slate-500">docs/SETUP.md</code>、<code class="font-mono text-slate-500">docs/PROJECT.md</code></p>
+    </footer>
+
     <script>
         function ymdLocal(d) {
             const y = d.getFullYear();
@@ -13,38 +160,13 @@
             const day = String(d.getDate()).padStart(2, '0');
             return y + '-' + m + '-' + day;
         }
-
-        async function headOk(url) {
-            try {
-                const r = await fetch(url, { method: 'HEAD' });
-                return r.ok;
-            } catch (e) {
-                return false;
-            }
-        }
-
-        async function smartRedirect() {
-            const todayStr = ymdLocal(new Date());
-            const y = new Date();
-            y.setDate(y.getDate() - 1);
-            const yesterdayStr = ymdLocal(y);
-
-            const candidates = [
-                { label: '今天', url: './date/' + todayStr + '/index.html' },
-                { label: '昨天', url: './date/' + yesterdayStr + '/index.html' },
-            ];
-
-            for (const c of candidates) {
-                if (await headOk(c.url)) {
-                    window.location.replace(c.url);
-                    return;
-                }
-            }
-            window.location.replace('./date/');
-        }
-
-        smartRedirect();
+        const todayStr = ymdLocal(new Date());
+        const rel = './date/' + todayStr + '/';
+        const a = document.getElementById('today-link');
+        a.href = rel;
+        a.textContent = rel;
+        const todayCta = document.getElementById('today-cta');
+        todayCta.href = rel;
     </script>
-    <p style="font-family: system-ui, sans-serif; color: #64748b; padding: 1rem;">正在跳转…</p>
 </body>
 </html>
