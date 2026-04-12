@@ -76,7 +76,7 @@
                     href="./date/"
                     class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-slate-200 bg-white/80 text-slate-800 text-sm font-semibold hover:border-indigo-300 hover:bg-white transition-colors"
                 >
-                    试试今日页面
+                    <span id="today-cta-text">试试今日页面</span>
                 </a>
             </div>
         </section>
@@ -144,8 +144,8 @@
         </section>
 
         <section id="today-hint" class="rounded-2xl border border-dashed border-indigo-200 bg-indigo-50/50 px-6 py-4 text-sm text-slate-600">
-            <span class="font-semibold text-slate-800">今日页面（若已发布）：</span>
-            <a id="today-link" href="./date/" class="text-indigo-600 hover:text-indigo-800 font-mono text-xs break-all underline underline-offset-2"></a>
+            <span id="today-hint-prefix" class="font-semibold text-slate-800">今日页面检测中…</span>
+            <a id="today-link" href="./date/" class="text-indigo-600 hover:text-indigo-800 font-mono text-xs break-all underline underline-offset-2 ml-1"></a>
         </section>
     </main>
 
@@ -154,19 +154,66 @@
     </footer>
 
     <script>
+        function assert(cond) {
+            if (!cond) {
+                throw new Error('assert failed');
+            }
+        }
+
         function ymdLocal(d) {
+            assert(d instanceof Date);
             const y = d.getFullYear();
             const m = String(d.getMonth() + 1).padStart(2, '0');
             const day = String(d.getDate()).padStart(2, '0');
             return y + '-' + m + '-' + day;
         }
-        const todayStr = ymdLocal(new Date());
-        const rel = './date/' + todayStr + '/';
-        const a = document.getElementById('today-link');
-        a.href = rel;
-        a.textContent = rel;
-        const todayCta = document.getElementById('today-cta');
-        todayCta.href = rel;
+
+        async function headOk(url) {
+            assert(typeof url === 'string' && url.length > 0);
+            try {
+                const r = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+                return r.ok;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        (async function initTodayLinks() {
+            const todayStr = ymdLocal(new Date());
+            const todayIndexUrl = './date/' + todayStr + '/index.html';
+            const todayDirUrl = './date/' + todayStr + '/';
+            const dateIndexUrl = './date/';
+
+            const todayCta = document.getElementById('today-cta');
+            const todayCtaText = document.getElementById('today-cta-text');
+            const todayLink = document.getElementById('today-link');
+            const todayHintPrefix = document.getElementById('today-hint-prefix');
+
+            assert(todayCta instanceof HTMLAnchorElement);
+            assert(todayCtaText instanceof HTMLElement);
+            assert(todayLink instanceof HTMLAnchorElement);
+            assert(todayHintPrefix instanceof HTMLElement);
+
+            const published = await headOk(todayIndexUrl);
+
+            if (published) {
+                todayCta.href = todayDirUrl;
+                todayCtaText.textContent = '试试今日页面';
+                todayHintPrefix.textContent = '今日页面已发布：';
+                todayLink.href = todayDirUrl;
+                todayLink.textContent = todayDirUrl;
+                todayLink.classList.add('font-mono');
+                todayLink.classList.remove('font-semibold');
+            } else {
+                todayCta.href = dateIndexUrl;
+                todayCtaText.textContent = '今日尚未发布 · 去日期索引';
+                todayHintPrefix.textContent = '今日报告尚未发布，请从';
+                todayLink.href = dateIndexUrl;
+                todayLink.textContent = '日期索引';
+                todayLink.classList.remove('font-mono');
+                todayLink.classList.add('font-semibold');
+            }
+        })();
     </script>
 </body>
 </html>
