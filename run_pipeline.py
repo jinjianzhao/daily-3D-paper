@@ -1386,7 +1386,10 @@ class PaperPipeline:
 
             sum_fp = os.path.join(step04_summaries_llm, f"{aid}.json")
             out = self.call_llm(
-                PROMPT_STEP04_SUMMARY.format(abstract=details_by_aid[aid]["abstract"]),
+                PROMPT_STEP04_SUMMARY.format(
+                    title=base_info[aid]["title"],
+                    abstract=details_by_aid[aid]["abstract"],
+                ),
                 sum_fp,
                 cache_key=None,
                 force_rerun=_should("step04"),
@@ -1619,7 +1622,7 @@ class PaperPipeline:
 # LLM 提示词
 # - 仅 step02「筛重点、输出规整编号列表」用 call_llm_multitimes_and_merge + 两步提示；
 #   第二轮须含 {step1_output}，便于先乱想再约束成「每行/空格分隔的编号」等机器友好格式。
-# - step04 / step06：单次 call_llm；占位符 {abstract} {paper_body_excerpt}
+# - step04 / step06：单次 call_llm；占位符 {title} {abstract} {paper_body_excerpt}
 # - step08：translate_figure_captions 逐条图注中译（篇内并发）；缓存目录 step08_figure_caption_zh/{aid}.json
 # PipelineConfig.focus_selection_llm_runs 控制 step02 合并轮数；缓存单文件 step02_focus_llm.json（output）
 # ---------------------------------------------------------------------------
@@ -1768,10 +1771,21 @@ FOCUS_SECTIONS = [
 ]
 
 PROMPT_STEP04_SUMMARY = """
+【论文英文标题】
+{title}
+
+【论文摘要】
 {abstract}
-请你先给出这篇论文是人工智能下属的哪个一级和哪个二级领域（不包含人工智能）, 2个词语, 分号隔开
-然后请用两句话概括上述论文摘要的核心内容：他的背景/任务是什么。他做了什么。
-输出3行，第一行是2个分号隔开的领域，第二行是背景/任务，第三行是做了什么。
+
+请先根据「标题」与「摘要」，用不超过8个汉字写一句极简标签，概括这篇论文在做什么（便于在目录里扫一眼理解主题；仅输出汉字，不要标点、不要空格或换行）。
+再给出这篇论文是人工智能下属的哪个一级和哪个二级领域（不包含「人工智能」本身），2个词语，英文半角分号隔开。
+然后用两句话概括上述论文摘要的核心内容：背景/任务是什么；做了什么。
+
+请严格输出4行纯文本，每行一条，不要编号、不要空行、不要其它说明：
+第1行：不超过8个汉字的中文极简标签
+第2行：一级领域;二级领域（英文半角分号）
+第3行：背景/任务
+第4行：做了什么
 """
 
 PROMPT_STEP06_DEEP = """

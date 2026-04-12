@@ -247,6 +247,60 @@
                 .replace(/"/g, '&quot;');
         }
 
+        /**
+         * step04 简报：新格式为 4 行（第1行八字内中文标签；第2行 领域;领域）。
+         * 旧格式为 3 行（第1行即领域行）。返回标签与用于 Markdown 展示的正文（新格式会去掉第1行以免与标题重复）。
+         * @returns {{ shortZh: string, bodyMd: string }}
+         */
+        function splitStep04Summary(summaryText) {
+            if (summaryText != null && typeof summaryText !== 'string') {
+                throw new TypeError('splitStep04Summary expects string or null/undefined');
+            }
+            const raw = String(summaryText == null ? '' : summaryText);
+            const lines = raw.split(/\r?\n/).map((s) => s.trim()).filter((l) => l.length > 0);
+            function lineLooksLikeDomainPair(line) {
+                return line.includes(';') || line.includes('；');
+            }
+            if (lines.length >= 2 && lineLooksLikeDomainPair(lines[1])) {
+                if (lines.length >= 4) {
+                    return { shortZh: lines[0], bodyMd: lines.slice(1).join('\n\n') };
+                }
+            }
+            if (lines.length >= 1 && lineLooksLikeDomainPair(lines[0]) && lines.length >= 3) {
+                return { shortZh: '', bodyMd: raw.trim() };
+            }
+            return { shortZh: '', bodyMd: raw.trim() };
+        }
+
+        function formatPaperHeadingHtml(shortZh, englishTitle) {
+            if (typeof englishTitle !== 'string') {
+                throw new TypeError('formatPaperHeadingHtml expects englishTitle string');
+            }
+            const t = englishTitle;
+            const s = String(shortZh == null ? '' : shortZh).trim();
+            if (!s) {
+                return escapeHtml(t);
+            }
+            return (
+                '<span class="text-indigo-700/90 font-extrabold tracking-tight">' +
+                escapeHtml(s) +
+                '</span><span class="text-slate-400 font-semibold mx-1.5 select-none" aria-hidden="true">·</span>' +
+                '<span class="text-slate-900">' +
+                escapeHtml(t) +
+                '</span>'
+            );
+        }
+
+        function tocDisplayLine(shortZh, fullTitle, maxLen) {
+            if (typeof fullTitle !== 'string' || typeof maxLen !== 'number') {
+                throw new TypeError('tocDisplayLine expects (string|empty, string, number)');
+            }
+            const t = fullTitle;
+            const s = String(shortZh == null ? '' : shortZh).trim();
+            const combined = s ? s + ' · ' + t : t;
+            return combined.length > maxLen ? combined.slice(0, Math.max(0, maxLen - 1)) + '…' : combined;
+        }
+
         function aidToDomId(prefix, aid) {
             if (typeof prefix !== 'string' || typeof aid !== 'string') {
                 throw new TypeError('aidToDomId expects string prefix and aid');
@@ -453,10 +507,11 @@
                         </div>`;
                     }).join('');
 
-                    // 获取完整简报内容
+                    // 获取完整简报内容（新 step04：第1行为八字内标签，已在标题展示，正文从领域行起）
                     const summaryText = data.summaries[aid] || '';
-                    const summaryHtml = mdToHtml(summaryText);
-                    const summaryBlock = summaryText
+                    const summaryParts = splitStep04Summary(summaryText);
+                    const summaryHtml = mdToHtml(summaryParts.bodyMd);
+                    const summaryBlock = summaryParts.bodyMd
                         ? '<div class="md-summary md-content text-slate-600 mb-6 pl-4 border-l-2 border-indigo-100">' + summaryHtml + '</div>'
                         : '';
 
@@ -483,7 +538,7 @@
                             </div>
 
                             <h3 class="text-2xl md:text-3xl font-extrabold mb-8 leading-[1.1] text-slate-900 tracking-tight">
-                                ${info.title}
+                                ${formatPaperHeadingHtml(summaryParts.shortZh, info.title)}
                             </h3>
 
                             ${summaryBlock}
@@ -531,7 +586,8 @@
                     const info = data.base_info[aid];
                     const allDomId = aidToDomId('all', aid);
                     tocIds.push(allDomId);
-                    const summaryHtml = mdToHtml(summary);
+                    const spAll = splitStep04Summary(summary);
+                    const summaryHtml = mdToHtml(spAll.bodyMd);
                     const rawCommentsAll = data.arxiv_details?.[aid]?.comments;
                     const commentsRow = (rawCommentsAll && String(rawCommentsAll).trim())
                         ? ('<div class="text-xs text-slate-500 leading-relaxed max-w-4xl mt-2 border-l-2 border-slate-200 pl-3 [&_a]:text-indigo-600 [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-indigo-800">'
@@ -552,7 +608,7 @@
                             </div>
                             <div class="flex-grow min-w-0">
                                 <h4 class="font-bold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
-                                    ${info.title}
+                                    ${formatPaperHeadingHtml(spAll.shortZh, info.title)}
                                 </h4>
                                 <div class="flex flex-wrap gap-x-4 gap-y-2 items-center mb-3">
                                     <a
@@ -608,12 +664,14 @@
                         ids.forEach((aid) => {
                             const id = aidToDomId('focus', aid);
                             const t = data.base_info[aid].title;
-                            const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                            const spToc = splitStep04Summary(data.summaries[aid] || '');
+                            const short = tocDisplayLine(spToc.shortZh, t, 48);
+                            const tip = spToc.shortZh ? spToc.shortZh + ' · ' + t : t;
                             tocHtml +=
                                 '<a href="#' +
                                 id +
                                 '" class="toc-link pl-2 line-clamp-2" title="' +
-                                escapeHtml(t) +
+                                escapeHtml(tip) +
                                 '">' +
                                 escapeHtml(short) +
                                 '</a>';
@@ -625,12 +683,14 @@
                     remainingEntries.forEach(([aid]) => {
                         const id = aidToDomId('all', aid);
                         const t = data.base_info[aid].title;
-                        const short = t.length > 48 ? t.slice(0, 46) + '…' : t;
+                        const spTocAll = splitStep04Summary(data.summaries[aid] || '');
+                        const short = tocDisplayLine(spTocAll.shortZh, t, 48);
+                        const tipAll = spTocAll.shortZh ? spTocAll.shortZh + ' · ' + t : t;
                         tocHtml +=
                             '<a href="#' +
                             id +
                             '" class="toc-link pl-2 line-clamp-2" title="' +
-                            escapeHtml(t) +
+                            escapeHtml(tipAll) +
                             '">' +
                             escapeHtml(short) +
                             '</a>';
