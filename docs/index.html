@@ -71,6 +71,13 @@
                 >
                     进入日期索引
                 </a>
+                <a
+                    id="today-cta"
+                    href="./date/"
+                    class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-slate-200 bg-white/80 text-slate-800 text-sm font-semibold hover:border-indigo-300 hover:bg-white transition-colors"
+                >
+                    试试今日页面
+                </a>
             </div>
         </section>
 
@@ -135,10 +142,31 @@
                 </li>
             </ul>
         </section>
+
+        <section id="today-hint" class="rounded-2xl border border-dashed border-indigo-200 bg-indigo-50/50 px-6 py-4 text-sm text-slate-600">
+            <span class="font-semibold text-slate-800">今日页面（若已发布）：</span>
+            <a id="today-link" href="./date/" class="text-indigo-600 hover:text-indigo-800 font-mono text-xs break-all underline underline-offset-2"></a>
+        </section>
     </main>
 
     <footer class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-center text-xs text-slate-400">
         <p>由流水线生成后推送至 GitHub Pages · 详见仓库 README；本地运行与开发见 <code class="font-mono text-slate-500">docs/SETUP.md</code>、<code class="font-mono text-slate-500">docs/PROJECT.md</code></p>
     </footer>
+
+    <script>
+        function ymdLocal(d) {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return y + '-' + m + '-' + day;
+        }
+        const todayStr = ymdLocal(new Date());
+        const rel = './date/' + todayStr + '/';
+        const a = document.getElementById('today-link');
+        a.href = rel;
+        a.textContent = rel;
+        const todayCta = document.getElementById('today-cta');
+        todayCta.href = rel;
+    </script>
 </body>
 </html>
