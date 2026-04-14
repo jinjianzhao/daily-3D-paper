@@ -39,6 +39,10 @@
       "title": "QuanBench+: A Unified Multi-Framework Benchmark for LLM-Based Quantum Code Generation",
       "hf_link": "https://huggingface.co/papers/2604.08570"
     },
+    "2604.08706": {
+      "title": "Efficient RL Training for LLMs with Experience Replay",
+      "hf_link": "https://huggingface.co/papers/2604.08706"
+    },
     "2604.08921": {
       "title": "TAIHRI: Task-Aware 3D Human Keypoints Localization for Close-Range Human-Robot Interaction",
       "hf_link": "https://huggingface.co/papers/2604.08921"
@@ -111,6 +115,10 @@
       "title": "Pseudo-Unification: Entropy Probing Reveals Divergent Information Patterns in Unified Multimodal Models",
       "hf_link": "https://huggingface.co/papers/2604.10949"
     },
+    "2604.11004": {
+      "title": "Panoptic Pairwise Distortion Graph",
+      "hf_link": "https://huggingface.co/papers/2604.11004"
+    },
     "2604.11035": {
       "title": "Introspective Diffusion Language Models",
       "hf_link": "https://huggingface.co/papers/2604.11035"
@@ -167,6 +175,10 @@
       "title": "Learning Long-term Motion Embeddings for Efficient Kinematics Generation",
       "hf_link": "https://huggingface.co/papers/2604.11737"
     },
+    "2604.11753": {
+      "title": "Agentic Aggregation for Parallel Scaling of Long-Horizon Agentic Tasks",
+      "hf_link": "https://huggingface.co/papers/2604.11753"
+    },
     "2604.11778": {
       "title": "General365: Benchmarking General Reasoning in Large Language Models Across Diverse and Challenging Tasks",
       "hf_link": "https://huggingface.co/papers/2604.11778"
@@ -185,6 +197,7 @@
     "2604.04385": "定位对齐语言模型策略路由机制\n自然语言处理;语言模型对齐;策略路由电路定位\n背景/任务：对齐训练后的语言模型会拒绝回答不安全问题，但其内部如何实现“拒绝”策略的机制尚不明确。\n本文通过定位和操控一个关键的注意力门控电路，揭示了模型通过早期检测和信号放大实现策略路由的机制，并证明该电路可被绕过或操控以改变模型行为。",
     "2604.08121": "用扩散视频生成器统一视频生成与理解\n计算机视觉;视频理解与生成;扩散模型的统一应用\n现有统一多模态模型存在视觉生成计算成本远高于理解的不平衡问题，尤其对于视频任务。\n提出Uni-ViGU框架，以视频生成器为基础进行扩展，通过统一流方法和MoE架构实现视频与文本的协同生成，并设计了知识召回与能力精炼的双向训练机制来复用生成知识以进行理解。",
     "2604.08570": "统一评估大模型量子编程\n量子计算;量子编程;量子代码生成\n现有量子代码生成评测局限于单一框架，难以区分量子推理与框架熟练度\n发布多框架基准QuanBench+，评估模型生成能力并提供反馈修复分析",
+    "2604.08706": "大模型训练中复用经验数据\n自然语言处理;大语言模型;强化学习训练优化\n在大型语言模型强化学习微调中，普遍认为需要持续生成新数据以保证性能。\n通过系统研究经验回放技术，证明合理设计回放缓冲区能在降低计算成本的同时维持或提升模型性能。",
     "2604.08921": "面向人机交互的3D关键点定位\n机器人技术;人机交互;近距离交互感知\n现有3D人体关键点定位方法关注全身重建，但机器人交互需关注任务相关部位的精确三维空间定位。\n提出首个为近距离交互设计的视觉语言模型TAIHRI，通过量化关键点和2D推理实现任务相关部位的精确定位，并适配下游任务。",
     "2604.09132": "艺术家网格生成新方法  \n计算机图形学;三维建模;艺术家网格生成与UV分割  \n现有基于自回归变换器的网格生成方法在面片排序上难以兼顾序列效率与艺术家所需的边缘流和结构规整性。  \n提出以三角形条带为灵感的排序策略，构建编码UV边界的面链序列，联合训练三角形与四边形网格数据以提升几何质量与结构连贯性。",
     "2604.09212": "大模型多轮对话角色一致性框架\n自然语言处理;对话系统;多轮角色一致性对话生成\n大型语言模型在多轮对话应用中的角色一致性是重要挑战，尤其用于生成训练数据时易出现角色漂移等问题。\n提出了SPASM框架，通过角色创建、对话生成和终止检测三模块，并引入自我中心上下文投影技术，有效提升了多轮对话中角色的长期稳定性。",
@@ -203,6 +216,7 @@
     "2604.10799": "优化波兰语模型Bielik分词器\n自然语言处理;语言建模;波兰语大模型优化\n当前通用大模型的分词器对波兰语支持不佳\n为Bielik模型改用波兰语优化分词器并训练",
     "2604.10905": "下一代音频语言模型提升理解推理能力\n多模态学习;音频语言模型;长音频理解与推理\n构建更强大的音频语言模型以提升对语音、环境声和音乐的理解与推理。\n通过增强模型能力、构建大规模数据、支持长音频输入及新推理范式，实现了在多项基准测试上的领先性能与良好泛化。",
     "2604.10949": "伪统一多模态模型信息模式探究\n多模态模型;模型诊断;信息熵探测\n统一多模态模型旨在融合语言推理与图像生成，但实际存在伪统一现象。\n提出信息论探测框架，揭示其内部编码与响应的信息模式双重分歧根源。",
+    "2604.11004": "图像区域失真对比图构建\n计算机视觉;图像质量评估;区域级失真图构建\n现有图像质量评估方法多关注整体分析，忽略了区域级的失真信息。\n本文提出失真图任务，构建区域级数据集与评测基准，并设计了高效架构来生成结构化失真图。",
     "2604.11035": "提升扩散语言模型自洽性\n自然语言处理;语言模型;扩散语言模型改进\n扩散语言模型生成质量落后于自回归模型，问题在于其缺乏自洽性。\n提出自省扩散语言模型，通过新解码算法和优化，在保持并行解码优势的同时匹配自回归模型质量，并提升服务吞吐量。",
     "2604.11152": "为社科人文定制AI语言模型\n自然语言处理;大语言模型;社科人文语言模型\n针对社科人文领域缺乏专用语言模型、应用生成式AI易违背学科原则的问题\n推出了SHARE系列基础模型及不生成文本的MIRROR界面，在专用评测上接近百倍数据通用模型表现",
     "2604.11201": "评估统一数字智能体\n智能体系统；具身智能；智能体综合能力评测\n当前智能体能力被孤立评测，需面向融合多模态能力的复杂任务进行评估。\n提出融合视觉、搜索与编码任务的新基准与实验框架，揭示现有系统不足。",
@@ -217,6 +231,7 @@
     "2604.11666": "训练双面智能体误导对手信念  \n自然语言处理;对话与交互系统;心智理论引导任务  \n背景/任务是让大语言模型在与潜在对手对话时，能理解并影响对方信念以确保安全。  \n研究通过强化学习训练双面智能体，结合心智理论与误导奖励，提升了模型在困难场景下的表现。",
     "2604.11716": "软件工程智能体优化推理上下文管理\n软件工程;智能体框架;动态推理上下文\n现有自主软件工程方法缺乏深度分析所需的显式系统二推理，且长上下文会导致信息过载或冗余。\n提出SWE-AGILE框架，通过动态推理上下文策略平衡深度与效率，在基准测试中为小模型取得新标准。",
     "2604.11737": "学习高效生成运动轨迹的嵌入\n计算机视觉;视频理解;长时运动生成\n现有视频模型理解动态场景但生成完整视频效率低。\n学习压缩运动嵌入并训练条件流匹配模型高效生成符合任务描述的长时运动。",
+    "2604.11753": "智能体长任务并行聚合增强\n自然语言处理；智能体；并行测试时增强\n背景/任务：研究长视野智能体任务的并行测试时增强，但传统聚合方法面临轨迹长、信息利用率低等挑战。\n做了什么：提出了AggAgent，一个将并行轨迹视为环境、使用轻量工具进行信息导航与合成的智能体，在多个基准上取得了更好效果且开销低。",
     "2604.11778": "大模型通用推理能力评测\n自然语言处理;大语言模型评测;通用推理基准\n当前大模型在特定领域推理表现好，但其通用推理能力尚未被充分探索。\n本文构建了一个限制背景知识、包含多个困难任务的评测基准，并测试了26个主流模型，发现其通用推理能力仍有很大提升空间。",
     "2604.11804": "生成人机交互视频  \n计算机视觉;视频生成;人机交互视频生成  \n研究如何根据文本、图像、音频和姿态等多模态条件生成高质量的人与物体交互视频。  \n提出了OmniShow框架，通过统一条件注入、注意力机制和分阶段训练策略，实现了多条件可控的高质量视频生成，并建立了专用评测基准。",
     "2604.11805": "用模拟器强化学习训练物理推理模型  \n人工智能;强化学习;物理推理任务  \n当前大语言模型在物理等领域缺乏大规模、高质量的问答数据以训练其深度推理能力。  \n通过物理模拟器生成随机场景并创建合成问答数据，利用强化学习训练大语言模型，使其物理推理能力显著提升，并在真实物理竞赛题上实现零样本迁移。"
@@ -368,6 +383,10 @@
       "abstract": "Large Language Models (LLMs) are increasingly used for code generation, yet quantum code generation is still evaluated mostly within single frameworks, making it difficult to separate quantum reasoning from framework familiarity. We introduce QuanBench+, a unified benchmark spanning Qiskit, PennyLane, and Cirq, with 42 aligned tasks covering quantum algorithms, gate decomposition, and state preparation.We evaluate models with executable functional tests, report Pass@1 and Pass@5, and use KL-divergence-based acceptance for probabilistic outputs. We additionally study Pass@1 after feedback-based repair, where a model may revise code after a runtime error or wrong answer. Across frameworks, the strongest one-shot scores reach 59.5% in Qiskit, 54.8% in Cirq, and 42.9% in PennyLane; with feedback-based repair, the best scores rise to 83.3%, 76.2%, and 66.7%, respectively. These results show clear progress, but also that reliable multi-framework quantum code generation remains unsolved and still depends strongly on framework-specific knowledge.",
       "comments": "24 pages total, 25 figures, 5 tables, including supplementary material. Accepted to the ICLR 2026 Workshop on I Can't Believe It's Not Better"
     },
+    "2604.08706": {
+      "abstract": "While Experience Replay - the practice of storing rollouts and reusing them multiple times during training - is a foundational technique in general RL, it remains largely unexplored in LLM post-training due to the prevailing belief that fresh, on-policy data is essential for high performance. In this work, we challenge this assumption. We present a systematic study of replay buffers for LLM post-training, formalizing the optimal design as a trade-off between staleness-induced variance, sample diversity and the high computational cost of generation. We show that strict on-policy sampling is suboptimal when generation is expensive. Empirically, we show that a well-designed replay buffer can drastically reduce inference compute without degrading - and in some cases even improving - final model performance, while preserving policy entropy.",
+      "comments": ""
+    },
     "2604.08921": {
       "abstract": "Accurate 3D human keypoints localization is a critical technology enabling robots to achieve natural and safe physical interaction with users. Conventional 3D human keypoints estimation methods primarily focus on the whole-body reconstruction quality relative to the root joint. However, in practical human-robot interaction (HRI) scenarios, robots are more concerned with the precise metric-scale spatial localization of task-relevant body parts under the egocentric camera 3D coordinate. We propose TAIHRI, the first Vision-Language Model (VLM) tailored for close-range HRI perception, capable of understanding users' motion commands and directing the robot's attention to the most task-relevant keypoints. By quantizing 3D keypoints into a finite interaction space, TAIHRI precisely localize the 3D spatial coordinates of critical body parts by 2D keypoint reasoning via next token prediction, and seamlessly adapt to downstream tasks such as natural language control or global space human mesh recovery. Experiments on egocentric interaction benchmarks demonstrate that TAIHRI achieves superior estimation accuracy for task-critical body parts. We believe TAIHRI opens new research avenues in the field of embodied human-robot interaction. Code is available at:this https URL.",
       "comments": ""
@@ -440,6 +459,10 @@
       "abstract": "Unified multimodal models (UMMs) were designed to combine the reasoning ability of large language models (LLMs) with the generation capability of vision models. In practice, however, this synergy remains elusive: UMMs fail to transfer LLM-like reasoning to image synthesis and exhibit divergent response behaviors. We term this phenomenon pseudo-unification. Diagnosing its internal causes is important, but existing probing methods either lack model-internal insight or ignore prompt-response dependencies. To address these limitations, we propose an information-theoretic probing framework that jointly analyzes how UMMs encode inputs and generate outputs. Applied to ten representative UMMs, our framework reveals that pseudo-unification stems from a dual divergence: (i) Modality-Asymmetric Encoding, where vision and language follow different entropy trajectories, and (ii) Pattern-Split Response, where text generation exhibits high-entropy creativity while image synthesis enforces low-entropy fidelity. Only models that unify both sides (e.g., via contextual prediction) achieve more genuine unification, enabling stronger reasoning-based text-to-image generation even with fewer parameters. Our work provides the first model-internal probing of unification, demonstrating that real multimodal synergy requires consistency in information flow, not just shared parameters.",
       "comments": ""
     },
+    "2604.11004": {
+      "abstract": "In this work, we introduce a new perspective on comparative image assessment by representing an image pair as a structured composition of its regions. In contrast, existing methods focus on whole image analysis, while implicitly relying on region-level understanding. We extend the intra-image notion of a scene graph to inter-image, and propose a novel task of Distortion Graph (DG). DG treats paired images as a structured topology grounded in regions, and represents dense degradation information such as distortion type, severity, comparison and quality score in a compact interpretable graph structure. To realize the task of learning a distortion graph, we contribute (i) a region-level dataset, PandaSet, (ii) a benchmark suite, PandaBench, with varying region-level difficulty, and (iii) an efficient architecture, Panda, to generate distortion graphs. We demonstrate that PandaBench poses a significant challenge for state-of-the-art multimodal large language models (MLLMs) as they fail to understand region-level degradations even when fed with explicit region cues. We show that training on PandaSet or prompting with DG elicits region-wise distortion understanding, opening a new direction for fine-grained, structured pairwise image assessment.",
+      "comments": "Accepted to ICLR 2026"
+    },
     "2604.11035": {
       "abstract": "Diffusion language models promise parallel generation, yet still lag behind autoregressive (AR) models in quality. We stem this gap to a failure of introspective consistency: AR models agree with their own generations, while DLMs often do not. We define the introspective acceptance rate, which measures whether a model accepts its previously generated tokens. This reveals why AR training has a structural advantage: causal masking and logit shifting implicitly enforce introspective consistency. Motivated by this observation, we introduce Introspective Diffusion Language Model (I-DLM), a paradigm that retains diffusion-style parallel decoding while inheriting the introspective consistency of AR training. I-DLM uses a novel introspective strided decoding (ISD) algorithm, which enables the model to verify previously generated tokens while advancing new ones in the same forward pass. From a systems standpoint, we build I-DLM inference engine on AR-inherited optimizations and further customize it with a stationary-batch scheduler. To the best of our knowledge, I-DLM is the first DLM to match the quality of its same-scale AR counterpart while outperforming prior DLMs in both model quality and practical serving efficiency across 15 benchmarks. It reaches 69.6 on AIME-24 and 45.7 on LiveCodeBench-v6, exceeding LLaDA-2.1-mini (16B) by more than 26 and 15 points, respectively. Beyond quality, I-DLM is designed for the growing demand of large-concurrency serving, delivering about 3x higher throughput than prior state-of-the-art DLMs.",
       "comments": ""
@@ -495,6 +518,10 @@
     "2604.11737": {
       "abstract": "Understanding and predicting motion is a fundamental component of visual intelligence. Although modern video models exhibit strong comprehension of scene dynamics, exploring multiple possible futures through full video synthesis remains prohibitively inefficient. We model scene dynamics orders of magnitude more efficiently by directly operating on a long-term motion embedding that is learned from large-scale trajectories obtained from tracker models. This enables efficient generation of long, realistic motions that fulfill goals specified via text prompts or spatial pokes. To achieve this, we first learn a highly compressed motion embedding with a temporal compression factor of 64x. In this space, we train a conditional flow-matching model to generate motion latents conditioned on task descriptions. The resulting motion distributions outperform those of both state-of-the-art video models and specialized task-specific approaches.",
       "comments": "for the project page and code, view <a class=\"link-external link-https\" href=\"https://compvis.github.io/long-term-motion\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.11753": {
+      "abstract": "We study parallel test-time scaling for long-horizon agentic tasks such as agentic search and deep research, where multiple rollouts are generated in parallel and aggregated into a final response. While such scaling has proven effective for chain-of-thought reasoning, agentic tasks pose unique challenges: trajectories are long, multi-turn, and tool-augmented, and outputs are often open-ended. Aggregating only final answers discards rich information from trajectories, while concatenating all trajectories exceeds the model's context window. To address this, we propose AggAgent, an aggregation agent that treats parallel trajectories as an environment. We equip it with lightweight tools to inspect candidate solutions and search across trajectories, enabling it to navigate and synthesize information on demand. Across six benchmarks and three model families (GLM-4.7, Qwen3.5, MiniMax-M2.5), AggAgent outperforms all existing aggregation methods-by up to 5.3% absolute on average and 10.3% on two deep research tasks-while adding minimal overhead, as the aggregation cost remains bounded by a single agentic rollout. Our findings establish agentic aggregation as an effective and cost-efficient approach to parallel test-time scaling.",
+      "comments": ""
     },
     "2604.11778": {
       "abstract": "Contemporary large language models (LLMs) have demonstrated remarkable reasoning capabilities, particularly in specialized domains like mathematics and physics. However, their ability to generalize these reasoning skills to more general and broader contexts--often termed general reasoning--remains under-explored. Unlike domain-specific reasoning, general reasoning relies less on expert knowledge but still presents formidable reasoning challenges, such as complex constraints, nested logical branches, and semantic interference. To address this gap, we introduce General365, a benchmark specifically designed to assess general reasoning in LLMs. By restricting background knowledge to a K-12 level, General365 explicitly decouples reasoning from specialized expertise. The benchmark comprises 365 seed problems and 1,095 variant problems across eight categories, ensuring both high difficulty and diversity. Evaluations across 26 leading LLMs reveal that even the top-performing model achieves only 62.8% accuracy, in stark contrast to the near-perfect performances of LLMs in math and physics benchmarks. These results suggest that the reasoning abilities of current LLMs are heavily domain-dependent, leaving significant room for improvement in broader applications. We envision General365 as a catalyst for advancing LLM reasoning beyond domain-specific tasks toward robust, general-purpose real-world scenarios. Code, Dataset, and Leaderboard:this https URL",
