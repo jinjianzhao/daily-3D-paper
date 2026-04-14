@@ -1,0 +1,281 @@
+{
+  "date": "2026-04-14",
+  "focus_ids": [
+    "2604.09132",
+    "2604.11804",
+    "2604.11521"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.09132"
+    ],
+    "视频生成模型": [
+      "2604.11804"
+    ],
+    "图片生成模型": [
+      "2604.11521"
+    ]
+  },
+  "base_info": {
+    "2604.08921": {
+      "title": "TAIHRI: Task-Aware 3D Human Keypoints Localization for Close-Range Human-Robot Interaction",
+      "hf_link": "https://huggingface.co/papers/2604.08921"
+    },
+    "2604.09132": {
+      "title": "Strips as Tokens: Artist Mesh Generation with Native UV Segmentation",
+      "hf_link": "https://huggingface.co/papers/2604.09132"
+    },
+    "2604.09212": {
+      "title": "SPASM: Stable Persona-driven Agent Simulation for Multi-turn Dialogue Generation",
+      "hf_link": "https://huggingface.co/papers/2604.09212"
+    },
+    "2604.09459": {
+      "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.09459"
+    },
+    "2604.10098": {
+      "title": "Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation",
+      "hf_link": "https://huggingface.co/papers/2604.10098"
+    },
+    "2604.10480": {
+      "title": "Tracing the Roots: A Multi-Agent Framework for Uncovering Data Lineage in Post-Training LLMs",
+      "hf_link": "https://huggingface.co/papers/2604.10480"
+    },
+    "2604.10718": {
+      "title": "SciPredict: Can LLMs Predict the Outcomes of Scientific Experiments in Natural Sciences?",
+      "hf_link": "https://huggingface.co/papers/2604.10718"
+    },
+    "2604.10784": {
+      "title": "TorchUMM: A Unified Multimodal Model Codebase for Evaluation, Analysis, and Post-training",
+      "hf_link": "https://huggingface.co/papers/2604.10784"
+    },
+    "2604.10905": {
+      "title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+      "hf_link": "https://huggingface.co/papers/2604.10905"
+    },
+    "2604.10949": {
+      "title": "Pseudo-Unification: Entropy Probing Reveals Divergent Information Patterns in Unified Multimodal Models",
+      "hf_link": "https://huggingface.co/papers/2604.10949"
+    },
+    "2604.11035": {
+      "title": "Introspective Diffusion Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.11035"
+    },
+    "2604.11201": {
+      "title": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
+      "hf_link": "https://huggingface.co/papers/2604.11201"
+    },
+    "2604.11446": {
+      "title": "Low-rank Optimization Trajectories Modeling for LLM RLVR Acceleration",
+      "hf_link": "https://huggingface.co/papers/2604.11446"
+    },
+    "2604.11491": {
+      "title": "ADD for Multi-Bit Image Watermarking",
+      "hf_link": "https://huggingface.co/papers/2604.11491"
+    },
+    "2604.11521": {
+      "title": "Continuous Adversarial Flow Models",
+      "hf_link": "https://huggingface.co/papers/2604.11521"
+    },
+    "2604.11547": {
+      "title": "Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis: A Semi-Supervised Reinforcement Learning Approach",
+      "hf_link": "https://huggingface.co/papers/2604.11547"
+    },
+    "2604.11641": {
+      "title": "CodeTracer: Towards Traceable Agent States",
+      "hf_link": "https://huggingface.co/papers/2604.11641"
+    },
+    "2604.11778": {
+      "title": "General365: Benchmarking General Reasoning in Large Language Models Across Diverse and Challenging Tasks",
+      "hf_link": "https://huggingface.co/papers/2604.11778"
+    },
+    "2604.11784": {
+      "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
+      "hf_link": "https://huggingface.co/papers/2604.11784"
+    },
+    "2604.11804": {
+      "title": "OmniShow: Unifying Multimodal Conditions for Human-Object Interaction Video Generation",
+      "hf_link": "https://huggingface.co/papers/2604.11804"
+    },
+    "2604.11805": {
+      "title": "Solving Physics Olympiad via Reinforcement Learning on Physics Simulators",
+      "hf_link": "https://huggingface.co/papers/2604.11805"
+    }
+  },
+  "summaries": {
+    "2604.08921": "面向人机交互的3D关键点定位\n机器人技术;人机交互;近距离交互感知\n现有3D人体关键点定位方法关注全身重建，但机器人交互需关注任务相关部位的精确三维空间定位。\n提出首个为近距离交互设计的视觉语言模型TAIHRI，通过量化关键点和2D推理实现任务相关部位的精确定位，并适配下游任务。",
+    "2604.09132": "艺术家网格生成新方法  \n计算机图形学;三维建模;艺术家网格生成与UV分割  \n现有基于自回归变换器的网格生成方法在面片排序上难以兼顾序列效率与艺术家所需的边缘流和结构规整性。  \n提出以三角形条带为灵感的排序策略，构建编码UV边界的面链序列，联合训练三角形与四边形网格数据以提升几何质量与结构连贯性。",
+    "2604.09212": "大模型多轮对话角色一致性框架\n自然语言处理;对话系统;多轮角色一致性对话生成\n大型语言模型在多轮对话应用中的角色一致性是重要挑战，尤其用于生成训练数据时易出现角色漂移等问题。\n提出了SPASM框架，通过角色创建、对话生成和终止检测三模块，并引入自我中心上下文投影技术，有效提升了多轮对话中角色的长期稳定性。",
+    "2604.09459": "大模型强化学习信用分配综述\n强化学习;大语言模型;信用分配\n背景是大模型强化学习依赖稀疏奖励，信用分配在推理与智能体场景中成为难题。\n本文系统梳理47种方法，提出分类框架并贡献三项资源，指出从推理到智能体的演变重塑了该领域。",
+    "2604.10098": "Transformer注意力机制异常研究综述\n机器学习;Transformer架构;注意力异常\nTransformer是AI领域基础架构，但注意力异常现象影响模型性能与可解释性。\n本文首次系统综述注意力异常研究，从利用、解释和缓解三方面梳理现状与趋势。",
+    "2604.10480": "追踪大模型数据血缘  \n自然语言处理;大语言模型数据工程;数据血缘分析  \n后训练数据集的关联演变复杂且缺乏系统性追踪  \n提出多智能体框架自动构建数据集演化图并用于指导数据构建",
+    "2604.10718": "大模型预测自然实验效果\n自然语言处理;科学语言模型;实验效果预测\n评估大模型预测自然实验结果的能力与可靠性。  \n构建SciPredict基准并测试模型表现，发现大模型预测准确率低且无法判断自身预测是否可靠。",
+    "2604.10784": "统一多模态模型代码库\n自然语言处理;多模态学习;统一多模态模型评估\n多样化统一多模态模型架构和训练范式给统一评估与分析带来了挑战。\n推出了一个支持多种模型、任务和数据集评估分析与后训练的统一代码库TorchUMM。",
+    "2604.10905": "下一代音频语言模型提升理解推理能力\n多模态学习;音频语言模型;长音频理解与推理\n构建更强大的音频语言模型以提升对语音、环境声和音乐的理解与推理。\n通过增强模型能力、构建大规模数据、支持长音频输入及新推理范式，实现了在多项基准测试上的领先性能与良好泛化。",
+    "2604.10949": "伪统一多模态模型信息模式探究\n多模态模型;模型诊断;信息熵探测\n统一多模态模型旨在融合语言推理与图像生成，但实际存在伪统一现象。\n提出信息论探测框架，揭示其内部编码与响应的信息模式双重分歧根源。",
+    "2604.11035": "提升扩散语言模型自洽性\n自然语言处理;语言模型;扩散语言模型改进\n扩散语言模型生成质量落后于自回归模型，问题在于其缺乏自洽性。\n提出自省扩散语言模型，通过新解码算法和优化，在保持并行解码优势的同时匹配自回归模型质量，并提升服务吞吐量。",
+    "2604.11201": "评估统一数字智能体\n智能体系统；具身智能；智能体综合能力评测\n当前智能体能力被孤立评测，需面向融合多模态能力的复杂任务进行评估。\n提出融合视觉、搜索与编码任务的新基准与实验框架，揭示现有系统不足。",
+    "2604.11446": "低秩优化轨迹建模加速强化学习训练\n自然语言处理;大语言模型训练;强化学习奖励验证\n大语言模型强化学习奖励验证训练计算开销大\n提出非线性外推法建模参数轨迹加速训练",
+    "2604.11491": "多比特图像水印嵌入与解码\n计算机视觉;图像处理;多比特图像水印\n生成模型快速发展带来图像真实性问题，多比特图像水印可嵌入信息以验证来源和身份。\n提出ADD方法，通过两阶段学习水印并线性解码，在48位水印上实现高精度、强鲁棒性与计算高效。",
+    "2604.11521": "连续对抗流模型用于图像生成\n生成模型;扩散模型;流模型对抗训练\n现有流匹配模型采用均方误差目标训练，其样本与目标分布对齐度不足。\n我们提出连续对抗流模型，引入判别器指导训练，显著改善了流匹配模型在图像生成等任务上的性能。",
+    "2604.11547": "医学大模型推理数据合成与强化学习\n自然语言处理;医疗语言模型;医学推理数据增强\n医学大模型发展受限于高质量推理数据的稀缺。\n提出通过知识增强合成数据并结合半监督强化学习，有效提升了模型在罕见病等任务上的推理能力。",
+    "2604.11641": "追踪代码智能体故障根源  \n软件工程;程序分析与调试;代码智能体状态追踪  \n代码智能体日益复杂，其内部状态转换和故障传播难以观察和调试。  \n提出了CodeTracer框架，通过解析运行信息重建状态历史并定位故障源头，构建了评估基准并验证了其有效性。",
+    "2604.11778": "大模型通用推理能力评测\n自然语言处理;大语言模型评测;通用推理基准\n当前大模型在特定领域推理表现好，但其通用推理能力尚未被充分探索。\n本文构建了一个限制背景知识、包含多个困难任务的评测基准，并测试了26个主流模型，发现其通用推理能力仍有很大提升空间。",
+    "2604.11784": "构建GUI智能体统一开发框架\n人机交互;智能体与界面交互;GUI智能体框架\n现有GUI智能体研究面临训练、评估、部署的全栈基础设施缺失问题\n提出了ClawGUI框架，整合了训练、评估与部署模块，并验证了其有效性",
+    "2604.11804": "生成人机交互视频  \n计算机视觉;视频生成;人机交互视频生成  \n研究如何根据文本、图像、音频和姿态等多模态条件生成高质量的人与物体交互视频。  \n提出了OmniShow框架，通过统一条件注入、注意力机制和分阶段训练策略，实现了多条件可控的高质量视频生成，并建立了专用评测基准。",
+    "2604.11805": "用模拟器强化学习训练物理推理模型  \n人工智能;强化学习;物理推理任务  \n当前大语言模型在物理等领域缺乏大规模、高质量的问答数据以训练其深度推理能力。  \n通过物理模拟器生成随机场景并创建合成问答数据，利用强化学习训练大语言模型，使其物理推理能力显著提升，并在真实物理竞赛题上实现零样本迁移。"
+  },
+  "deep_analysis": {
+    "2604.09132": "我来用简单的语言为你解释这篇论文的核心内容。\n\n## (1) 任务是什么？\n\n**任务类型**：3D艺术家网格生成（Artist Mesh Generation）\n\n- **输入**：训练时是大量的3D艺术家创建的网格模型（包括三角网格和四边形网格）\n- **输出**：生成高质量的3D网格模型，这些模型像艺术家手工制作的一样\n- **任务功能**：自动生成可以直接用于动画、游戏、电影等生产流程的3D模型，带有良好的拓扑结构、边缘流和UV分割\n\n## (2) 想解决什么问题？\n\n论文要解决**现有3D网格生成方法生成的网格质量不高，不符合艺术家标准**的问题：\n\n1. **序列太长**：之前的方法把网格顶点坐标直接排序成序列，序列太长了（比如一个模型可能有几万个顶点），训练和生成都很慢\n2. **拓扑结构差**：更近的方法用“补丁”方式组织顶点，虽然序列短了，但破坏了网格的连续边缘流，生成的网格看起来杂乱无章\n3. **缺乏语义布局**：生成的网格没有自然的UV分割（UV就是3D模型表面展开到2D平面的方式，用于贴图）\n\n简单说：现有的方法生成的3D模型虽然形状对了，但内部结构乱七八糟，艺术家没法直接用。\n\n## (3) 核心思路是什么？\n\n**核心创新点**：用“三角条带”（Triangle Strip）作为基本单元来组织网格数据\n\n**什么是三角条带？**\n- 想象一条连续的三角形链，每个新三角形只增加一个顶点，和前一个三角形共享两个顶点\n- 这是计算机图形学中高效存储网格的经典方法\n\n**为什么这招有效？**\n1. **序列变短**：用条带表示，序列长度大大减少（比顶点坐标序列短得多）\n2. **保留结构**：条带的连续性正好对应艺术家网格的连续边缘流\n3. **自带UV**：条带自然地形成了UV分割的边界\n\n**统一表示**：更厉害的是，这种表示法可以同时处理三角网格和四边形网格，用同一个模型就能生成两种类型的网格。\n\n## (4) 结果怎么样？\n\n论文在多个实验中展示了很好的效果：\n\n1. **网格质量更高**：生成的网格拓扑结构更整洁，边缘流更自然\n2. **序列更短**：比基于坐标的方法序列长度减少很多，训练和生成更快\n3. **自动UV分割**：生成的网格天然带有合理的UV分割，不用额外处理\n4. **统一生成**：同一个模型既能生成三角网格，也能生成四边形网格\n\n在用户研究中，艺术家们更喜欢SATO生成的网格，认为它们更接近手工制作的品质。\n\n## (5) 模型结构和流程\n\n**基模**：这篇论文使用的是**Transformer模型**（具体是类似GPT的自回归Transformer）\n\n**整体流程**（三步训练法）：\n\n### 第一步：数据预处理\n```\n原始3D艺术家网格\n    ↓\n网格简化（减少面数，便于处理）\n    ↓\n提取三角条带（把网格分解成连续的三角形链）\n    ↓\n将条带转换成token序列（每个token代表条带中的一个顶点或操作）\n```\n\n### 第二步：模型训练（三个阶段）\n```\n阶段1：三角网格预训练\n    - 用大量三角网格数据训练基础模型\n    - 学习基本的几何结构和条带模式\n    \n阶段2：UV分割后训练\n    - 加入UV分割信息\n    - 学习如何自然地形成UV边界\n    \n阶段3：四边形网格微调\n    - 用少量高质量的四边形网格数据微调\n    - 让模型学会生成四边形网格\n```\n\n### 第三步：生成过程\n```\n输入：起始token（表示开始生成）\n    ↓\nTransformer模型预测下一个token\n    ↓\n重复预测，直到生成完整序列\n    ↓\n将token序列解码回三角条带\n    ↓\n根据条带重建完整网格\n    ↓\n输出：高质量的三角或四边形网格（带UV分割）\n```\n\n**关键模块**：\n1. **条带提取器**：把网格转换成条带序列\n2. **条带转换器**：处理条带之间的连接\n3. **拓扑特定解码器**：根据不同的拓扑需求（三角或四边）解码网格\n4. **Transformer编码器-解码器**：核心的序列生成模型\n\n**简单比喻**：\n- 传统方法：像把一堆乐高积木倒出来，然后按颜色分类（只看局部，不管整体结构）\n- SATO方法：像按照乐高说明书一页一页地拼（保持结构的连续性）\n- 结果：SATO拼出来的模型结构更合理，更像设计师原本的设计\n\n这种方法的优势在于它**尊重了艺术家网格的内在组织原则**，而不是仅仅追求几何形状的准确。",
+    "2604.11521": "当然可以！我用通俗易懂的语言帮你梳理这篇《Continuous Adversarial Flow Models》的核心内容。\n\n---\n\n### 1. 这篇论文所在的任务是什么？\n**任务功能**：**生成高质量图像**，属于**生成式模型**领域。  \n- **输入**：对于无条件生成（如ImageNet），输入是随机噪声；对于条件生成（如文本到图像），输入是随机噪声+条件（如类别标签或文本描述）。  \n- **输出**：一张逼真的图像（如256×256像素的图片）。  \n\n---\n\n### 2. 这篇论文想解决什么问题？\n当前主流的**流匹配（Flow Matching）模型**存在一个关键问题：  \n- 它们在训练时使用**固定的欧几里得距离损失**（如均方误差），这种损失只计算像素级的差异，**无法感知图像的“语义结构”或“视觉流形”**。  \n- 这导致模型在生成新图像时，容易产生**不符合真实数据分布**的“奇怪样本”（例如纹理模糊、结构扭曲），除非额外使用“引导”技术来修正，但引导会改变原始数据分布。  \n\n**核心问题**：如何让流模型**更好地学习真实数据的底层结构**，生成更逼真、更符合分布的图像？\n\n---\n\n### 3. 论文的核心思路是什么？\n**将对抗训练（GAN的思想）引入连续时间流模型**：  \n- 传统流匹配：用一个固定的损失函数训练“速度场”。  \n- 本文方法：**用一个可学习的判别器（Discriminator）来替代固定损失**，形成“生成器-判别器”的对抗训练。  \n  - **生成器**：还是预测流的速度场（即如何从噪声变成图像）。  \n  - **判别器**：判断当前生成的数据是否像真实数据，并给出梯度反馈。  \n- 判别器能更好地捕捉**图像的感知细节**（如纹理、轮廓），相当于让模型学会在“数据流形”上行走，而不是在欧几里得空间里盲目匹配。\n\n**关键创新**：  \n- 这是**首次在连续时间流模型**中实现对抗训练（之前的工作是离散时间）。  \n- 方法可以**直接用于微调现有的流匹配模型**（称为“后训练”），无需从头训练，效率高。\n\n---\n\n### 4. 结果怎么样？\n在ImageNet 256×256图像生成任务上：  \n- **无引导生成**：  \n  - 对SiT模型（隐空间流模型），FID从8.26提升到**3.63**（越低越好）。  \n  - 对JiT模型（像素空间流模型），FID从7.17提升到**3.57**。  \n- **有引导生成**：  \n  - SiT的FID从2.06提升到1.53，JiT从1.86提升到1.80。  \n- 在文本到图像生成任务上，也在多个基准上取得更好效果。  \n\n**结论**：模型生成的图像更逼真、更符合数据分布，且训练稳定。\n\n---\n\n### 5. 模型结构与流程\n**基模**：本文方法基于**连续时间流模型**（如Flow Matching框架），可以适配不同的主干网络（如SiT、JiT等Transformer架构）。\n\n**整体流程**（以图像生成为例）：  \n1. **输入**：随机噪声向量 \\( z_0 \\)（可能加上条件标签或文本编码）。  \n2. **速度场网络**（生成器）：  \n   - 接收当前时间步 \\( t \\) 的噪声 \\( z_t \\) 和条件信息，预测一个“速度场” \\( v_\\theta(z_t, t) \\)。  \n   - 这个速度场告诉噪声应该如何“流动”才能变成图像。  \n3. **判别器网络**：  \n   - 接收真实图像 \\( x \\) 或生成中的中间样本 \\( z_t \\)，判断它们是否像真实数据。  \n   - 通过对抗损失（如Wasserstein距离）提供梯度，指导生成器改进。  \n4. **训练过程**：  \n   - 生成器和判别器**交替更新**：  \n     - 更新判别器：区分真实数据 vs 生成数据。  \n     - 更新生成器：让生成的数据“骗过”判别器，同时保持与流匹配目标的一致性。  \n5. **采样（生成图像）**：  \n   - 从噪声 \\( z_0 \\) 开始，沿着学到的速度场解常微分方程（ODE），逐步“流动”到最终图像 \\( x \\)。  \n   - 这个过程和原始流匹配相同，但速度场经过了对抗训练的优化。\n\n**简单比喻**：  \n- **传统流匹配**：像一个学生对着答案抄写，只追求字迹一样，但可能不理解内容。  \n- **本文方法**：老师（判别器）会检查学生写的内容是否合理，学生（生成器）不仅要字迹像，还要内容通顺，从而写出更符合逻辑的文章。\n\n---\n\n如果你对某些细节（如“流匹配原理”“对抗训练具体损失”等）感兴趣，我可以进一步解释！",
+    "2604.11804": "我来用简单的语言向你解释这篇论文的核心内容。假设你是一位刚入门的博士生，对Transformer等基础知识有了解，但对该领域前沿研究不太熟悉。\n\n### (1) 这篇论文所在的任务是什么？\n- **任务名称**：**人-物交互视频生成**（Human-Object Interaction Video Generation, HOIVG）\n- **任务输入**：\n  - **文本描述**：描述视频内容的提示词（例如：“一个女孩正在弹吉他”）\n  - **参考图像**：指定视频中人物或物体的外观（例如：一张特定女孩的照片）\n  - **音频**：驱动人物口型和动作的语音或音乐（例如：一段吉他弹唱的音频）\n  - **姿态序列**：控制人物动作的连续姿态（例如：一系列弹吉他的动作姿态）\n- **任务输出**：**一段高质量的视频**，视频中的人物/物体与输入条件完全匹配。\n- **任务功能**：自动化内容创作，适用于电商展示、短视频制作、互动娱乐等实际场景。\n\n### (2) 这篇论文想解决什么问题？\n现有方法无法**同时处理**上述四种条件（文本、图像、音频、姿态），导致生成的视频要么外观不对、要么动作不匹配、要么口型不同步。论文想解决的问题是：\n1. **统一多模态控制**：让一个模型能同时接受并协调四种不同的输入条件。\n2. **平衡控制与质量**：在增加控制能力的同时，不损失生成视频的视觉质量。\n3. **数据稀缺**：缺少同时包含四种条件的训练数据。\n4. **缺乏评测标准**：该任务目前没有统一的评测基准。\n\n### (3) 论文的核心思路是什么？\n论文提出了一个名为 **OmniShow** 的端到端框架，核心思路可以概括为三点：\n1. **统一通道条件注入**：将图像和姿态信息像“拼图”一样直接拼接到视频的潜在表示中，避免破坏模型原有的生成能力。\n2. **门控局部上下文注意力**：设计一种注意力机制，让音频信息能精准地同步到视频的对应时间点（比如口型对齐）。\n3. **分阶段联合训练**：由于没有现成的“四合一”数据集，作者先分别用“文本-图像-视频”和“音频-视频”等子任务的数据集训练模型的不同部分，然后再合并起来进行整体训练。\n\n### (4) 结果怎么样？\n- **性能领先**：在作者新建立的评测基准 **HOIVG-Bench** 上，OmniShow 在多种条件组合下（如图像+音频、图像+姿态等）都取得了最好的效果。\n- **质量与控制兼得**：生成的视频不仅视觉质量高，而且能精确地遵循所有输入条件（人物长得对、动作对得上、口型同步）。\n- **应用广泛**：展示了在虚拟人驱动、物体替换、视频混剪等场景下的应用潜力。\n\n### (5) 模型结构是什么？整体流程是怎样的？\n- **基模**：论文基于一个**扩散Transformer（DiT）架构**的视频生成模型进行改造。你可以把它想象成一个强大的、能生成视频的“大脑”。\n- **整体流程**（对照论文中的图2）：\n  1. **输入编码**：\n     - 文本：通过一个文本编码器（如CLIP）变成文本特征。\n     - 参考图像和姿态序列：通过一个VAE编码器，变成图像/姿态的“潜在表示”（可以理解为压缩后的特征图）。\n     - 音频：通过一个音频编码器（如Whisper）变成音频特征。\n  2. **条件统一与注入（核心步骤）**：\n     - 模型首先生成一个充满噪声的、初始的视频潜在表示。\n     - **对于姿态**：将姿态的潜在表示直接**拼接**到噪声视频表示的通道维度上。这样，模型在去噪生成视频时，就能“看到”姿态信息。\n     - **对于参考图像**：在时间维度上，为视频潜在表示添加几个额外的“伪帧”。将图像的潜在表示拼接到这些伪帧上，并通过一个重建损失来确保模型记住图像的外观细节。\n  3. **特征融合与去噪生成**：\n     - 将处理后的视频潜在表示、文本特征和音频特征一起输入到一系列 **OmniShow Transformer Block** 中。\n     - 每个Block里包含关键的 **Gated Local-Context Attention** 模块：它会计算视频特征和音频特征的注意力，并且用一个“门”机制来控制音频信息影响的强度和范围，确保音频只同步到相关的视频片段（比如口型部分）。\n     - 经过多个Block的迭代去噪，视频潜在表示中的噪声被逐渐去除，内容变得越来越清晰。\n  4. **输出解码**：\n     - 最终，去噪后的视频潜在表示被送入VAE解码器，还原成我们能看到的高清像素视频。\n\n**简单比喻**：就像一位导演（OmniShow）在拍电影。他拿到剧本（文本）、选好演员定妆照（参考图像）、拿到配音（音频）和动作指导手册（姿态）。他的创新方法是：1）把定妆照和动作手册直接贴到拍摄现场的监视器上（统一注入）；2）用一个智能对讲机（门控注意力）让配音演员的声音实时指导演员的口型；3）他先分别指导文戏组和武戏组（分阶段训练），最后再合在一起拍大片。最终，他生成了一部完全符合所有要求的高质量短片。"
+  },
+  "images_meta": {
+    "2604.09132": [
+      {
+        "path": "https://arxiv.org/html/2604.09132v1/figures/15ps.jpg",
+        "caption": "Figure 1.Strips as Tokens (SATO) enables unified, high-quality artist mesh generation with native UV segmentation.Our strip-based tokenizer supports both triangle (left) and quad (right) meshes without retraining and automatically segments UV charts (side) during autoregressive generation.",
+        "caption_zh": "图 1. 条带化表征（SATO）能够以原生 UV 分割实现统一、高质量的艺术家级网格生成。我们的基于条带的表征器支持三角形（左）与四边形（右）网格而无需重新训练，并在自回归生成过程中自动分割 UV 图表（侧视图）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09132v1/figures/Strip111.jpg",
+        "caption": "",
+        "caption_zh": "图2：对于 $n=5$ 的线性链，在 $\\beta=0.1$ 和 $\\beta=0.7$ 两种温度下，计算得到的非平衡态自旋-自旋关联函数 $C_{zz}(\\tau)$ 作为时延 $\\tau$ 的函数。图中展示了两种不同温度下，关联函数在弛豫过程中的对比。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09132v1/figures/Strip2.jpg",
+        "caption": "",
+        "caption_zh": "图3：不同方法在合成数据集上的二维解缠绕结果比较。左子图：真实解缠绕相位；其余子图分别为：(b) 路径跟踪法，(c) 质量引导法，(d) PRELUDE，(e) LFA，（f）所提方法（无监督），(g) 所提方法（半监督）。各子图右下角标注均方根误差（RMSE，弧度）。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.11521": [
+      {
+        "path": "https://arxiv.org/html/2604.11521v1/img/hero/im_fm0.jpg",
+        "caption": "Top:Flow MatchingBottom:Continuous Adversarial Flow Models (Ours)Figure 1:Generation without guidance. Our method yields better generalization.",
+        "caption_zh": "上：流匹配；下：连续对抗流模型（我们的方法）。图1：无引导生成。我们的方法具有更好的泛化能力。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.11521v1/img/dis/gen_null.png",
+        "caption": "GGDD(a)(b)(c)(d)Figure 2:Visualization of the training dynamic. Top: learnedG​(xt,t)G(x_{t},t)trajectories over the probability flow. Bottom: corresponding−D​(xt,t)-D(x_{t},t)values at allxtx_{t}.−D-Dis taken for more intuitive visualization as the generation process runs backward in time. (a) shows if only trainingDDwithv¯t\\bar{v}_{t}as positives withoutGGas negatives,DDdegenerates to uniform gradient. (b,c) show howDDreacts toGGduring training. (d) showsDDconverges to 0 everywhere asGGconverges to the ground-truth flow.",
+        "caption_zh": "图2：训练动态的可视化。上方：在概率流上学习到的G(x_t,t)轨迹。下方：所有x_t处对应的-D(x_t,t)值。取-D是为了更直观地可视化，因为生成过程在时间上是反向运行的。(a) 显示如果仅使用v̄_t作为正样本训练D而不使用G作为负样本，D会退化为均匀梯度。(b,c) 展示了训练过程中D如何对G作出反应。(d) 显示当G收敛到真实流时，D在各处均收敛到0。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.11521v1/img/t2i/dog_fm_2.jpg",
+        "caption": "(a)A photo of a dog.(b)A photo of a motocycle.(c)A photo of a couch.(d)A photo of a bus.Figure 3:Curated text-to-image samples on GenEval prompts.Without PE and CFG to show the most diverse range of samples.Left is FM. Right is CAFM. More visualizations are inFig.˜13of the appendix.",
+        "caption_zh": "(a) 狗的照片。(b) 摩托车的照片。(c) 沙发的照片。(d) 公交车的照片。图 3：在 GenEval 提示词上精选的文到图生成样本。未使用 PE 和 CFG，以展示最广泛的样本多样性。左侧为 FM，右侧为 CAFM。更多可视化结果见附录图˜13。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.11804": [
+      {
+        "path": "https://arxiv.org/html/2604.11804v1/x2.png",
+        "caption": "Figure 2:Pipeline ofOmniShow.Our framework consists of:(a) Unified Channel-wise Conditioning(section˜3.2) effectively injects reference images and pose cues via unified channel concatenation. It augments noisy video tokens with pseudo-frames, which are supervised by a reference reconstruction loss to preserve semantic details.(b) Gated Local-Context Attention(section˜3.3) ensures precise audio-visual synchronization. It packs raw audio features with sufficient contextual information and injects them via masked attention to align video frames with corresponding audio segments, followed by adaptive gating to stabilize early training.(c) Decoupled-Then-Joint Training(section˜3.4) makes the efficient utilization of heterogeneous datasets possible. We first train specialized R2V and A2V models on separate sub-task datasets, then fuse them via weight interpolation, followed by joint fine-tuning to unify multimodal capabilities.\nNote that we omit some components, such as normalization, within the MMDiT blocks for brevity.",
+        "caption_zh": "图 2：OmniShow 的流程框架。我们的框架包含：(a) 统一通道条件化（第 3.2 节）通过统一的通道拼接有效注入参考图像和姿态线索。它利用伪帧增强含噪视频标记，并通过参考重建损失监督以保留语义细节。(b) 门控局部上下文注意力（第 3.3 节）确保精确的视听同步。它将原始音频特征与充足的上下文信息打包，通过掩码注意力注入，使视频帧与对应音频片段对齐，随后采用自适应门控以稳定早期训练。(c) 解耦后联合训练（第 3.4 节）实现了异构数据集的高效利用。我们首先在分离的子任务数据集上训练专用的 R2V 和 A2V 模型，然后通过权重插值融合，并进行联合微调以统一多模态能力。为简洁起见，图中省略了 MMDiT 块中的部分组件（如归一化）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.11804v1/x1.png",
+        "caption": "Figure 1:Overview ofOmniShow.Our model unifies text, reference image, audio, and pose conditions to synthesize high-quality videos.(a) Unified Tasks:OmniShowexhibits exceptional flexibility across diverse conditioning settings, from R2V, RA2V, RP2V to the most challenging RAP2V, consistently delivering industry-grade visual quality and precise multimodal alignment.(b) Broader Applications:OmniShowunlocks creative potential such as audio-driven avatars, object swapping, and video remixing, demonstrating robust compositional control and extensible capabilities.Please visit our project page for more immersive and diverse video demonstrations.",
+        "caption_zh": "图 1：OmniShow 整体框架。我们的模型统一文本、参考图像、音频和姿态条件以合成高质量视频。（a）统一任务：OmniShow 在多样化的条件设置中展现出卓越的灵活性，从 R2V、RA2V、RP2V 到最具挑战性的 RAP2V，始终提供业界级的视觉质量与精准的多模态对齐。（b）更广泛的应用：OmniShow 释放了音频驱动虚拟形象、物体替换和视频混剪等创作潜力，展现了强大的组合控制与可扩展能力。更多沉浸式多样化的视频示例请访问我们的项目页面。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.11804v1/x3.png",
+        "caption": "Figure 3:Comparison of conditioning methods, including a qualitative example and quantitative results based on the HOIVG-Bench.\nThe proposed mechanism accurately preserves the visual appearance of the reference subject.Figure 4:Zero-shot RA2V generation via model merging.Despite not being explicitly trained for the RA2V task yet, the merged model successfully generates videos that respect both reference images and audio inputs, which demonstrates the effectiveness of our strategy.",
+        "caption_zh": "图 3：条件化方法对比，包括基于 HOIVG-Bench 的定性示例与定量结果。所提出的机制能准确保持参考主体的视觉外观。图 4：通过模型合并实现零样本 RA2V 生成。尽管尚未针对 RA2V 任务进行显式训练，合并后的模型仍成功生成了同时遵从参考图像与音频输入的视频，这证明了我们策略的有效性。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.08921": {
+      "abstract": "Accurate 3D human keypoints localization is a critical technology enabling robots to achieve natural and safe physical interaction with users. Conventional 3D human keypoints estimation methods primarily focus on the whole-body reconstruction quality relative to the root joint. However, in practical human-robot interaction (HRI) scenarios, robots are more concerned with the precise metric-scale spatial localization of task-relevant body parts under the egocentric camera 3D coordinate. We propose TAIHRI, the first Vision-Language Model (VLM) tailored for close-range HRI perception, capable of understanding users' motion commands and directing the robot's attention to the most task-relevant keypoints. By quantizing 3D keypoints into a finite interaction space, TAIHRI precisely localize the 3D spatial coordinates of critical body parts by 2D keypoint reasoning via next token prediction, and seamlessly adapt to downstream tasks such as natural language control or global space human mesh recovery. Experiments on egocentric interaction benchmarks demonstrate that TAIHRI achieves superior estimation accuracy for task-critical body parts. We believe TAIHRI opens new research avenues in the field of embodied human-robot interaction. Code is available at:this https URL.",
+      "comments": ""
+    },
+    "2604.09132": {
+      "abstract": "Recent advancements in autoregressive transformers have demonstrated remarkable potential for generating artist-quality meshes. However, the token ordering strategies employed by existing methods typically fail to meet professional artist standards, where coordinate-based sorting yields inefficiently long sequences, and patch-based heuristics disrupt the continuous edge flow and structural regularity essential for high-quality modeling. To address these limitations, we propose Strips as Tokens (SATO), a novel framework with a token ordering strategy inspired by triangle strips. By constructing the sequence as a connected chain of faces that explicitly encodes UV boundaries, our method naturally preserves the organized edge flow and semantic layout characteristic of artist-created meshes. A key advantage of this formulation is its unified representation, enabling the same token sequence to be decoded into either a triangle or quadrilateral mesh. This flexibility facilitates joint training on both data types: large-scale triangle data provides fundamental structural priors, while high-quality quad data enhances the geometric regularity of the outputs. Extensive experiments demonstrate that SATO consistently outperforms prior methods in terms of geometric quality, structural coherence, and UV segmentation.",
+      "comments": ""
+    },
+    "2604.09212": {
+      "abstract": "Large language models are increasingly deployed in multi-turn settings such as tutoring, support, and counseling, where reliability depends on preserving consistent roles, personas, and goals across long horizons. This requirement becomes critical when LLMs are used to generate synthetic dialogues for training and evaluation, since LLM--LLM conversations can accumulate identity-related failures such as persona drift, role confusion, and \"echoing\", where one agent gradually mirrors its partner. We introduce SPASM (Stable Persona-driven Agent Simulation for Multi-turn dialogue generation), a modular, stability-first framework that decomposes simulation into (i) persona creation via schema sampling, plausibility validation, and natural-language persona crafting, (ii) Client--Responder dialogue generation, and (iii) termination detection for coherent stopping. To improve long-horizon stability without changing model weights, we propose Egocentric Context Projection (ECP): dialogue history is stored in a perspective-agnostic representation and deterministically projected into each agent's egocentric view before generation. Across three LLM backbones (GPT-4o-mini, DeepSeek-V3.2, Qwen-Plus) and nine Client--Responder pairings, we construct a dataset of 4,500 personas and 45,000 conversations (500 personas X 10 conversations per pairing). Ablations show ECP substantially reduces persona drift and, under human validation, eliminates echoing; embedding analyses recover persona structure and reveal strong responder-driven interaction geometry. Our code is available atthis https URL.",
+      "comments": "Accepted to Findings of the Association for Computational Linguistics (ACL 2026). Our code and data are available at <a class=\"link-external link-https\" href=\"https://github.com/lhannnn/SPASM\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.09459": {
+      "abstract": "Reinforcement learning (RL) for large language models (LLMs) increasingly relies on sparse, outcome-level rewards -- yet determining which actions within a long trajectory caused the outcome remains difficult. This credit assignment (CA) problem manifests in two regimes: reasoning RL, where credit must be distributed across tokens and steps within a single chain-of-thought generation (500--30K+ tokens); and agentic RL, where multi-turn environment interaction introduces stochastic transitions, partial observability, and horizons of 100+ turns (100K--1M tokens), making episode-level credit increasingly uninformative.We survey 47 CA methods (41 core, 6 adjacent enablers) published between 2024 and early 2026, organizing them in a two-dimensional taxonomy by assignment granularity (token, segment, step, turn, multi-agent) and methodology (Monte Carlo, temporal difference, model-based, game-theoretic, information-theoretic). Beyond the survey itself, we contribute three reusable resources: (1) a structured, machine-readable paper inventory with taxonomy labels, baseline families, and evidence levels; (2) a reporting checklist for future CA papers, validated against the reviewed literature to identify systematic methodological gaps; and (3) a benchmark protocol specification with task families, metadata requirements, and controlled bifurcation tasks, accompanied by a method selection decision tree.Our synthesis suggests that the shift from reasoning to agentic RL complicates and reshapes the credit assignment landscape: reasoning CA is maturing around process reward models and critic-free group comparison, while agentic CA is driving genuinely new approaches -- hindsight counterfactual analysis, privileged asymmetric critics, and turn-level MDP reformulations -- that have no direct precedent in reasoning RL.",
+      "comments": ""
+    },
+    "2604.10098": {
+      "abstract": "As the foundational architecture of modern machine learning, Transformers have driven remarkable progress across diverse AI domains. Despite their transformative impact, a persistent challenge across various Transformers is Attention Sink (AS), in which a disproportionate amount of attention is focused on a small subset of specific yet uninformative tokens. AS complicates interpretability, significantly affecting the training and inference dynamics, and exacerbates issues such as hallucinations. In recent years, substantial research has been dedicated to understanding and harnessing AS. However, a comprehensive survey that systematically consolidates AS-related research and offers guidance for future advancements remains lacking. To address this gap, we present the first survey on AS, structured around three key dimensions that define the current research landscape: Fundamental Utilization, Mechanistic Interpretation, and Strategic Mitigation. Our work provides a pivotal contribution by clarifying key concepts and guiding researchers through the evolution and trends of the field. We envision this survey as a definitive resource, empowering researchers and practitioners to effectively manage AS within the current Transformer paradigm, while simultaneously inspiring innovative advancements for the next generation of Transformers. The paper list of this work is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.10480": {
+      "abstract": "Post-training data plays a pivotal role in shaping the capabilities of Large Language Models (LLMs), yet datasets are often treated as isolated artifacts, overlooking the systemic connections that underlie their evolution. To disentangle these complex relationships, we introduce the concept of \\textbf{data lineage} to the LLM ecosystem and propose an automated multi-agent framework to reconstruct the evolutionary graph of dataset development. Through large-scale lineage analysis, we characterize domain-specific structural patterns, such as vertical refinement in math-oriented datasets and horizontal aggregation in general-domain corpora. Moreover, we uncover pervasive systemic issues, including \\textit{structural redundancy} induced by implicit dataset intersections and the \\textit{propagation of benchmark contamination} along lineage paths. To demonstrate the practical value of lineage analysis for data construction, we leverage the reconstructed lineage graph to create a \\textit{lineage-aware diversity-oriented dataset}. By anchoring instruction sampling at upstream root sources, this approach mitigates downstream homogenization and hidden redundancy, yielding a more diverse post-training corpus. We further highlight lineage-centric analysis as an efficient and robust topological alternative to sample-level dataset comparison for large-scale data ecosystems. By grounding data construction in explicit lineage structures, our work advances post-training data curation toward a more systematic and controllable paradigm.",
+      "comments": "27 pages, 6 figures"
+    },
+    "2604.10718": {
+      "abstract": "Accelerating scientific discovery requires the identification of which experiments would yield the best outcomes before committing resources to costly physical validation. While existing benchmarks evaluate LLMs on scientific knowledge and reasoning, their ability to predict experimental outcomes - a task where AI could significantly exceed human capabilities - remains largely underexplored. We introduce SciPredict, a benchmark comprising 405 tasks derived from recent empirical studies in 33 specialized sub-fields of physics, biology, and chemistry. SciPredict addresses two critical questions: (a) can LLMs predict the outcome of scientific experiments with sufficient accuracy? and (b) can such predictions be reliably used in the scientific research process? Evaluations reveal fundamental limitations on both fronts. Model accuracies are 14-26% and human expert performance is $\\approx$20%. Although some frontier models exceed human performance model accuracy is still far below what would enable reliable experimental guidance. Even within the limited performance, models fail to distinguish reliable predictions from unreliable ones, achieving only $\\approx$20% accuracy regardless of their confidence or whether they judge outcomes as predictable without physical experimentation. Human experts, in contrast, demonstrate strong calibration: their accuracy increases from $\\approx$5% to $\\approx$80% as they deem outcomes more predictable without conducting the experiment. SciPredict establishes a rigorous framework demonstrating that superhuman performance in experimental science requires not just better predictions, but better awareness of prediction reliability. For reproducibility all our data and code are provided atthis https URL",
+      "comments": ""
+    },
+    "2604.10784": {
+      "abstract": "Recent advances in unified multimodal models (UMMs) have led to a proliferation of architectures capable of understanding, generating, and editing across visual and textual modalities. However, developing a unified framework for UMMs remains challenging due to the diversity of model architectures and the heterogeneity of training paradigms and implementation details. In this paper, we present TorchUMM, the first unified codebase for comprehensive evaluation, analysis, and post-training across diverse UMM backbones, tasks, and datasets. TorchUMM supports a broad spectrum of models covering a wide range of scales and design paradigms. Our benchmark encompasses three core task dimensions: multimodal understanding, generation, and editing, and integrates both established and novel datasets to evaluate perception, reasoning, compositionality, and instruction-following abilities. By providing a unified interface and standardized evaluation protocols, TorchUMM enables fair and reproducible comparisons across heterogeneous models and fosters deeper insights into their strengths and limitations, facilitating the development of more capable unified multimodal systems. Code is available at:this https URL.",
+      "comments": "Technical Report"
+    },
+    "2604.10905": {
+      "abstract": "We present Audio Flamingo Next (AF-Next), the next-generation and most capable large audio-language model in the Audio Flamingo series, designed to advance understanding and reasoning over speech, environmental sounds and music. Compared to Audio Flamingo 3, AF-Next introduces: (i) a stronger foundational audio-language model that significantly improves accuracy across diverse audio understanding tasks; (ii) scalable strategies for constructing large-scale audio understanding and reasoning data beyond existing academic benchmarks; (iii) support for long and complex audio inputs up to 30 minutes; and (iv) Temporal Audio Chain-of-Thought, a new reasoning paradigm that explicitly grounds intermediate reasoning steps to timestamps in long audio, enabling fine-grained temporal alignment and improved interpretability. To enable these capabilities, we first conduct a systematic analysis of Audio Flamingo 3 to identify key gaps in audio understanding and reasoning. We then curate and scale new large-scale datasets totaling over 1 million hours to address these limitations and expand the existing AudioSkills-XL, LongAudio-XL, AF-Think and AF-Chat datasets. AF-Next is trained using a curriculum-based strategy spanning pre-training, mid-training and post-training stages. Extensive experiments across 20 audio understanding and reasoning benchmarks, including challenging long-audio tasks, show that AF-Next outperforms similarly sized open models by large margins and remains highly competitive with and sometimes surpasses, much larger open-weight and closed models. Beyond benchmark performance, AF-Next exhibits strong real-world utility and transfers well to unseen tasks, highlighting its robustness and generalization ability. In addition to all data, code and methods, we open-source 3 variants of AF-Next, including AF-Next-Instruct, AF-Next-Think and AF-Next-Captioner.",
+      "comments": "Project website: <a class=\"link-external link-https\" href=\"https://afnext-umd-nvidia.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.10949": {
+      "abstract": "Unified multimodal models (UMMs) were designed to combine the reasoning ability of large language models (LLMs) with the generation capability of vision models. In practice, however, this synergy remains elusive: UMMs fail to transfer LLM-like reasoning to image synthesis and exhibit divergent response behaviors. We term this phenomenon pseudo-unification. Diagnosing its internal causes is important, but existing probing methods either lack model-internal insight or ignore prompt-response dependencies. To address these limitations, we propose an information-theoretic probing framework that jointly analyzes how UMMs encode inputs and generate outputs. Applied to ten representative UMMs, our framework reveals that pseudo-unification stems from a dual divergence: (i) Modality-Asymmetric Encoding, where vision and language follow different entropy trajectories, and (ii) Pattern-Split Response, where text generation exhibits high-entropy creativity while image synthesis enforces low-entropy fidelity. Only models that unify both sides (e.g., via contextual prediction) achieve more genuine unification, enabling stronger reasoning-based text-to-image generation even with fewer parameters. Our work provides the first model-internal probing of unification, demonstrating that real multimodal synergy requires consistency in information flow, not just shared parameters.",
+      "comments": ""
+    },
+    "2604.11035": {
+      "abstract": "Diffusion language models promise parallel generation, yet still lag behind autoregressive (AR) models in quality. We stem this gap to a failure of introspective consistency: AR models agree with their own generations, while DLMs often do not. We define the introspective acceptance rate, which measures whether a model accepts its previously generated tokens. This reveals why AR training has a structural advantage: causal masking and logit shifting implicitly enforce introspective consistency. Motivated by this observation, we introduce Introspective Diffusion Language Model (I-DLM), a paradigm that retains diffusion-style parallel decoding while inheriting the introspective consistency of AR training. I-DLM uses a novel introspective strided decoding (ISD) algorithm, which enables the model to verify previously generated tokens while advancing new ones in the same forward pass. From a systems standpoint, we build I-DLM inference engine on AR-inherited optimizations and further customize it with a stationary-batch scheduler. To the best of our knowledge, I-DLM is the first DLM to match the quality of its same-scale AR counterpart while outperforming prior DLMs in both model quality and practical serving efficiency across 15 benchmarks. It reaches 69.6 on AIME-24 and 45.7 on LiveCodeBench-v6, exceeding LLaDA-2.1-mini (16B) by more than 26 and 15 points, respectively. Beyond quality, I-DLM is designed for the growing demand of large-concurrency serving, delivering about 3x higher throughput than prior state-of-the-art DLMs.",
+      "comments": ""
+    },
+    "2604.11201": {
+      "abstract": "LLM agents now perform strongly in software engineering, deep research, GUI automation, and various other applications, while recent agent scaffolds and models are increasingly integrating these capabilities into unified systems. Yet, most evaluations still test these capabilities in isolation, which leaves a gap for more diverse use cases that require agents to combine different capabilities. We introduce CocoaBench, a benchmark for unified digital agents built from human-designed, long-horizon tasks that require flexible composition of vision, search, and coding. Tasks are specified only by an instruction and an automatic evaluation function over the final output, enabling reliable and scalable evaluation across diverse agent infrastructures. We also present CocoaAgent, a lightweight shared scaffold for controlled comparison across model backbones. Experiments show that current agents remain far from reliable on CocoaBench, with the best evaluated system achieving only 45.1% success rate. Our analysis further points to substantial room for improvement in reasoning and planning, tool use and execution, and visual grounding.",
+      "comments": ""
+    },
+    "2604.11446": {
+      "abstract": "Recently, scaling reinforcement learning with verifiable rewards (RLVR) for large language models (LLMs) has emerged as an effective training paradigm for significantly improving model capabilities, which requires guiding the model to perform extensive exploration and learning, leading to substantial computational overhead and becoming a key challenge. To reduce the number of training steps, Prior work performs linear extrapolation of model parameters. However, the dynamics of model parameter updates during RLVR training remain insufficiently understood. To further investigate the evolution of LLMs during RLVR training, we conduct empirical experiments and find that the rank-1 subspace of the model does not evolve linearly, and its dominance over the original parameters is further amplified during LoRA training. Based on the above insights, we propose the \\textbf{N}onlinear \\textbf{Ext}rapolation of low-rank trajectories (\\textbf{NExt}), a novel framework that models and extrapolates low-rank parameter trajectories in a nonlinear manner. Concretely, we first train the model using LoRA and extract the rank-1 subspace of parameter differences at multiple training steps, which is then used for the subsequent nonlinear extrapolation. Afterward, we utilized the extracted rank-1 subspace to train a predictor, which can model the trajectory of parameter updates during RLVR, and then perform the predict-extend process to extrapolate model parameters, achieving the acceleration of RLVR. To further study and understand NExt, we conduct comprehensive experiments that demonstrate the effectiveness and robustness of the method. Our method reduces computational overhead by approximately 37.5\\% while remaining compatible with a wide range of RLVR algorithms and tasks. We release our code inthis https URL.",
+      "comments": "Working in progress"
+    },
+    "2604.11491": {
+      "abstract": "As generative models enable rapid creation of high-fidelity images, societal concerns about misinformation and authenticity have intensified. A promising remedy is multi-bit image watermarking, which embeds a multi-bit message into an image so that a verifier can later detect whether the image is generated by someone and further identify the source by decoding the embedded message. Existing approaches often fall short in capacity, resilience to common image distortions, and theoretical justification. To address these limitations, we propose ADD (Add, Dot, Decode), a multi-bit image watermarking method with two stages: learning a watermark to be linearly combined with the multi-bit message and added to the image, and decoding through inner products between the watermarked image and the learned watermark. On the standard MS-COCO benchmark, we demonstrate that for the challenging task of 48-bit watermarking, ADD achieves 100\\% decoding accuracy, with performance dropping by at most 2\\% under a wide range of image distortions, substantially smaller than the 14\\% average drop of state-of-the-art methods. In addition, ADD achieves substantial computational gains, with 2-fold faster embedding and 7.4-fold faster decoding than the fastest existing method. We further provide a theoretical analysis explaining why the learned watermark and the corresponding decoding rule are effective.",
+      "comments": ""
+    },
+    "2604.11521": {
+      "abstract": "We propose continuous adversarial flow models, a type of continuous-time flow model trained with an adversarial objective. Unlike flow matching, which uses a fixed mean-squared-error criterion, our approach introduces a learned discriminator to guide training. This change in objective induces a different generalized distribution, which empirically produces samples that are better aligned with the target data distribution. Our method is primarily proposed for post-training existing flow-matching models, although it can also train models from scratch. On the ImageNet 256px generation task, our post-training substantially improves the guidance-free FID of latent-space SiT from 8.26 to 3.63 and of pixel-space JiT from 7.17 to 3.57. It also improves guided generation, reducing FID from 2.06 to 1.53 for SiT and from 1.86 to 1.80 for JiT. We further evaluate our approach on text-to-image generation, where it achieves improved results on both the GenEval and DPG benchmarks.",
+      "comments": ""
+    },
+    "2604.11547": {
+      "abstract": "While large language models hold promise for complex medical applications, their development is hindered by the scarcity of high-quality reasoning data. To address this issue, existing approaches typically distill chain-of-thought reasoning traces from large proprietary models via supervised fine-tuning, then conduct reinforcement learning (RL). These methods exhibit limited improvement on underrepresented domains like rare diseases while incurring substantial costs from generating complex reasoning chains. To efficiently enhance medical reasoning, we propose MedSSR, a Medical Knowledge-enhanced data Synthesis and Semi-supervised Reinforcement learning framework. Our framework first employs rare disease knowledge to synthesize distribution-controllable reasoning questions. We then utilize the policy model itself to generate high-quality pseudo-labels. This enables a two-stage, intrinsic-to-extrinsic training paradigm: self-supervised RL on the pseudo-labeled synthetic data, followed by supervised RL on the human-annotated real data. MedSSR scales model training efficiently without relying on costly trace distillation. Extensive experiments on Qwen and Llama demonstrate that our method outperforms existing methods across ten medical benchmarks, achieving up to +5.93% gain on rare-disease tasks. Our code is available atthis https URL.",
+      "comments": "Accepted to ACL 2026 as a Findings paper"
+    },
+    "2604.11641": {
+      "abstract": "Code agents are advancing rapidly, but debugging them is becoming increasingly difficult. As frameworks orchestrate parallel tool calls and multi-stage workflows over complex tasks, making the agent's state transitions and error propagation hard to observe. In these runs, an early misstep can trap the agent in unproductive loops or even cascade into fundamental errors, forming hidden error chains that make it hard to tell when the agent goes off track and why. Existing agent tracing analyses either focus on simple interaction or rely on small-scale manual inspection, which limits their scalability and usefulness for real coding workflows. We present CodeTracer, a tracing architecture that parses heterogeneous run artifacts through evolving extractors, reconstructs the full state transition history as a hierarchical trace tree with persistent memory, and performs failure onset localization to pinpoint the failure origin and its downstream chain. To enable systematic evaluation, we construct CodeTraceBench from a large collection of executed trajectories generated by four widely used code agent frameworks on diverse code tasks (e.g., bug fixing, refactoring, and terminal interaction), with supervision at both the stage and step levels for failure localization. Experiments show that CodeTracer substantially outperforms direct prompting and lightweight baselines, and that replaying its diagnostic signals consistently recovers originally failed runs under matched budgets. Our code and data are publicly available.",
+      "comments": ""
+    },
+    "2604.11778": {
+      "abstract": "Contemporary large language models (LLMs) have demonstrated remarkable reasoning capabilities, particularly in specialized domains like mathematics and physics. However, their ability to generalize these reasoning skills to more general and broader contexts--often termed general reasoning--remains under-explored. Unlike domain-specific reasoning, general reasoning relies less on expert knowledge but still presents formidable reasoning challenges, such as complex constraints, nested logical branches, and semantic interference. To address this gap, we introduce General365, a benchmark specifically designed to assess general reasoning in LLMs. By restricting background knowledge to a K-12 level, General365 explicitly decouples reasoning from specialized expertise. The benchmark comprises 365 seed problems and 1,095 variant problems across eight categories, ensuring both high difficulty and diversity. Evaluations across 26 leading LLMs reveal that even the top-performing model achieves only 62.8% accuracy, in stark contrast to the near-perfect performances of LLMs in math and physics benchmarks. These results suggest that the reasoning abilities of current LLMs are heavily domain-dependent, leaving significant room for improvement in broader applications. We envision General365 as a catalyst for advancing LLM reasoning beyond domain-specific tasks toward robust, general-purpose real-world scenarios. Code, Dataset, and Leaderboard:this https URL",
+      "comments": "17 pages, 9 figures"
+    },
+    "2604.11784": {
+      "abstract": "GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications that CLI-based agents cannot. Yet progress in this area is bottlenecked less by modeling capacity than by the absence of a coherent full-stack infrastructure: online RL training suffers from environment instability and closed pipelines, evaluation protocols drift silently across works, and trained agents rarely reach real users on real devices. We present \\textbf{ClawGUI}, an open-source framework addressing these three gaps within a single harness. \\textbf{ClawGUI-RL} provides the first open-source GUI agent RL infrastructure with validated support for both parallel virtual environments and real physical devices, integrating GiGPO with a Process Reward Model for dense step-level supervision. \\textbf{ClawGUI-Eval} enforces a fully standardized evaluation pipeline across 6 benchmarks and 11+ models, achieving 95.8\\% reproduction against official baselines. \\textbf{ClawGUI-Agent} brings trained agents to Android, HarmonyOS, and iOS through 12+ chat platforms with hybrid CLI-GUI control and persistent personalized memory. Trained end to end within this pipeline, \\textbf{ClawGUI-2B} achieves 17.1\\% Success Rate on MobileWorld GUI-Only, outperforming the same-scale MAI-UI-2B baseline by 6.0\\%.",
+      "comments": ""
+    },
+    "2604.11804": {
+      "abstract": "In this work, we study Human-Object Interaction Video Generation (HOIVG), which aims to synthesize high-quality human-object interaction videos conditioned on text, reference images, audio, and pose. This task holds significant practical value for automating content creation in real-world applications, such as e-commerce demonstrations, short video production, and interactive entertainment. However, existing approaches fail to accommodate all these requisite conditions. We present OmniShow, an end-to-end framework tailored for this practical yet challenging task, capable of harmonizing multimodal conditions and delivering industry-grade performance. To overcome the trade-off between controllability and quality, we introduce Unified Channel-wise Conditioning for efficient image and pose injection, and Gated Local-Context Attention to ensure precise audio-visual synchronization. To effectively address data scarcity, we develop a Decoupled-Then-Joint Training strategy that leverages a multi-stage training process with model merging to efficiently harness heterogeneous sub-task datasets. Furthermore, to fill the evaluation gap in this field, we establish HOIVG-Bench, a dedicated and comprehensive benchmark for HOIVG. Extensive experiments demonstrate that OmniShow achieves overall state-of-the-art performance across various multimodal conditioning settings, setting a solid standard for the emerging HOIVG task.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://correr-zhou.github.io/OmniShow/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.11805": {
+      "abstract": "We have witnessed remarkable advances in LLM reasoning capabilities with the advent of DeepSeek-R1. However, much of this progress has been fueled by the abundance of internet question-answer (QA) pairs, a major bottleneck going forward, since such data is limited in scale and concentrated mainly in domains like mathematics. In contrast, other sciences such as physics lack large-scale QA datasets to effectively train reasoning-capable models. In this work, we show that physics simulators can serve as a powerful alternative source of supervision for training LLMs for physical reasoning. We generate random scenes in physics engines, create synthetic question-answer pairs from simulated interactions, and train LLMs using reinforcement learning on this synthetic data. Our models exhibit zero-shot sim-to-real transfer to real-world physics benchmarks: for example, training solely on synthetic simulated data improves performance on IPhO (International Physics Olympiad) problems by 5-10 percentage points across model sizes. These results demonstrate that physics simulators can act as scalable data generators, enabling LLMs to acquire deep physical reasoning skills beyond the limitations of internet-scale QA data. Code available at:this https URL.",
+      "comments": "Project Webpage - <a class=\"link-external link-https\" href=\"https://sim2reason.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "date": "2026-04-13",
+  "focus_ids": [
+    "2604.07786",
+    "2604.08995",
+    "2604.09168",
+    "2604.09201",
+    "2604.09527",
+    "2604.06870",
+    "2604.08641"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [],
+    "视频生成模型": [
+      "2604.07786",
+      "2604.08995",
+      "2604.09168",
+      "2604.09201",
+      "2604.09527"
+    ],
+    "图片生成模型": [
+      "2604.06870",
+      "2604.08641"
+    ]
+  },
+  "base_info": {
+    "2603.27490": {
+      "title": "AgentSwing: Adaptive Parallel Context Management Routing for Long-Horizon Web Agents",
+      "hf_link": "https://huggingface.co/papers/2603.27490"
+    },
+    "2604.01848": {
+      "title": "Semantic Richness or Geometric Reasoning? The Fragility of VLM's Visual Invariance",
+      "hf_link": "https://huggingface.co/papers/2604.01848"
+    },
+    "2604.02372": {
+      "title": "Backdoor Attacks on Decentralised Post-Training",
+      "hf_link": "https://huggingface.co/papers/2604.02372"
+    },
+    "2604.03480": {
+      "title": "Large Language Models Align with the Human Brain during Creative Thinking",
+      "hf_link": "https://huggingface.co/papers/2604.03480"
+    },
+    "2604.04415": {
+      "title": "Structured Causal Video Reasoning via Multi-Objective Alignment",
+      "hf_link": "https://huggingface.co/papers/2604.04415"
+    },
+    "2604.06870": {
+      "title": "RefineAnything: Multimodal Region-Specific Refinement for Perfect Local Details",
+      "hf_link": "https://huggingface.co/papers/2604.06870"
+    },
+    "2604.07413": {
+      "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+      "hf_link": "https://huggingface.co/papers/2604.07413"
+    },
+    "2604.07786": {
+      "title": "Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video",
+      "hf_link": "https://huggingface.co/papers/2604.07786"
+    },
+    "2604.08118": {
+      "title": "Initialisation Determines the Basin: Efficient Codebook Optimisation for Extreme LLM Quantization",
+      "hf_link": "https://huggingface.co/papers/2604.08118"
+    },
+    "2604.08540": {
+      "title": "AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation",
+      "hf_link": "https://huggingface.co/papers/2604.08540"
+    },
+    "2604.08567": {
+      "title": "Multi-User Large Language Model Agents",
+      "hf_link": "https://huggingface.co/papers/2604.08567"
+    },
+    "2604.08626": {
+      "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+      "hf_link": "https://huggingface.co/papers/2604.08626"
+    },
+    "2604.08641": {
+      "title": "On Semiotic-Grounded Interpretive Evaluation of Generative Art",
+      "hf_link": "https://huggingface.co/papers/2604.08641"
+    },
+    "2604.08644": {
+      "title": "EXAONE 4.5 Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.08644"
+    },
+    "2604.08801": {
+      "title": "p1: Better Prompt Optimization with Fewer Prompts",
+      "hf_link": "https://huggingface.co/papers/2604.08801"
+    },
+    "2604.08995": {
+      "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
+      "hf_link": "https://huggingface.co/papers/2604.08995"
+    },
+    "2604.09130": {
+      "title": "EquiformerV3: Scaling Efficient, Expressive, and General SE(3)-Equivariant Graph Attention Transformers",
+      "hf_link": "https://huggingface.co/papers/2604.09130"
+    },
+    "2604.09168": {
+      "title": "ELT: Elastic Looped Transformers for Visual Generation",
+      "hf_link": "https://huggingface.co/papers/2604.09168"
+    },
+    "2604.09201": {
+      "title": "CT-1: Vision-Language-Camera Models Transfer Spatial Reasoning Knowledge to Camera-Controllable Video Generation",
+      "hf_link": "https://huggingface.co/papers/2604.09201"
+    },
+    "2604.09237": {
+      "title": "ScheMatiQ: From Research Question to Structured Data through Interactive Schema Discovery",
+      "hf_link": "https://huggingface.co/papers/2604.09237"
+    },
+    "2604.09450": {
+      "title": "ECHO: Efficient Chest X-ray Report Generation with One-step Block Diffusion",
+      "hf_link": "https://huggingface.co/papers/2604.09450"
+    },
+    "2604.09482": {
+      "title": "Process Reward Agents for Steering Knowledge-Intensive Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.09482"
+    },
+    "2604.09527": {
+      "title": "Envisioning the Future, One Step at a Time",
+      "hf_link": "https://huggingface.co/papers/2604.09527"
+    },
+    "2604.09531": {
+      "title": "VisionFoundry: Teaching VLMs Visual Perception with Synthetic Images",
+      "hf_link": "https://huggingface.co/papers/2604.09531"
+    },
+    "2604.09544": {
+      "title": "Large Language Models Generate Harmful Content Using a Distinct, Unified Mechanism",
+      "hf_link": "https://huggingface.co/papers/2604.09544"
+    }
+  },
+  "summaries": {
+    "2603.27490": "自适应并行管理网络智能体上下文  \n自然语言处理;智能体与对话系统;长视野网络信息搜索  \n现有网络智能体采用固定策略管理上下文，难以适应长任务中情境效用的动态变化。  \n提出自适应并行路由框架，通过前瞻选择动态优化上下文管理，提升搜索效率与最终性能。",
+    "2604.01848": "视觉语言模型的几何鲁棒性研究\n计算机视觉;多模态学习;几何不变性评估\n本文研究了当前先进视觉语言模型在基本几何变换下的脆弱性。\n通过系统评估发现，这些模型在语义稀疏时空间推理能力严重下降，揭示了其语义理解与几何推理间的系统性差距。",
+    "2604.02372": "管道并行训练后门攻击\n自然语言处理;模型安全;后门攻击\n大型语言模型去中心化后训练易受恶意参与者攻击，但现有研究对管道并行场景关注不足。\n本文首次在管道并行中设计后门攻击，控制中间阶段即可使模型失准，实验证明攻击有效且能抵抗安全对齐。",
+    "2604.03480": "大模型与大脑在创意任务中对齐\n自然语言处理;语言模型对齐;神经表征相似性分析\n背景/任务：以往研究多关注非创造性任务下大语言模型与大脑活动的对齐，本文则探索在创意发散思维任务中的脑模型对齐情况。\n做了什么：通过fMRI数据和表征相似性分析，发现模型规模、想法新颖性和后训练目标都会特异性影响大模型与创意相关脑网络的表征对齐。",
+    "2604.04415": "结构化视频因果推理\n视频理解；视频语言模型；视频因果推理\n现有视频大模型依赖非结构化推理，导致推理效率低且因果推断脆弱。\n提出先构建结构化事件事实，再训练多目标强化学习模型，以提升视频因果推理能力。",
+    "2604.06870": "区域图像精细化  \n计算机视觉;图像生成;局部细节修复  \n现有生成模型易丢失局部细节且可能误改背景，需在用户指定区域内精准修复细节并严格保持背景不变。  \n提出RefineAnything模型，采用聚焦裁剪与边界一致性损失实现高效局部修复，并构建数据集与评测基准验证其效果。",
+    "2604.07413": "制造业多模态模型评测与优化  \n多模态学习;工业视觉检测;制造业多模态评估  \n制造业引入多模态大模型从感知转向自主执行，但缺乏贴合真实场景的细粒度评估。  \n构建融合2D与3D数据的细粒度标注数据集，评估主流模型并发现领域知识不足是瓶颈，利用标注微调小模型显著提升性能。",
+    "2604.07786": "跨模态语音驱动表情编辑\n生成式人工智能；数字人技术；说话人脸视频情感编辑\n现有方法在说话人脸视频的情感编辑上存在表达受限和难以生成复杂情绪的问题。\n我们提出跨模态情感迁移方法，通过建模语音与视觉特征间的语义向量来生成与语音情感匹配的面部表情，显著提升了情感准确性。",
+    "2604.08118": "优化低比特大模型量化初始方法\n自然语言处理；模型压缩；大语言模型量化\n现有2比特加性量化方法因初始化不佳导致性能崩溃。\n提出输出感知EM初始化方法，在不同模型上稳定提升压缩后性能。",
+    "2604.08540": "文本音视频生成测评基准  \n多模态生成;音视频合成;音视频联合评估  \n文本到音视频生成缺乏统一且细致的评估标准。  \n我们提出了一个包含多粒度评估框架的任务驱动型基准，揭示了生成模型美观性与语义可靠性间的显著差距。",
+    "2604.08567": "多用户大模型智能体研究\n自然语言处理;大语言模型应用;多用户智能体决策\n大语言模型助手正被用于团队协同，但现有系统多针对单一用户设计，难以处理多用户间的冲突与隐私问题。\n本文首次系统研究多用户大模型智能体，建立多用户交互形式化框架并设计测试场景，发现现有模型在冲突处理、隐私保护等方面存在系统缺陷。",
+    "2604.08626": "开放世界单目3D检测新架构\n计算机视觉;三维场景理解;单目三维目标检测\n现有单目三维检测方法难以泛化至开放世界，且缺乏整合多模态提示和几何线索的能力。\n提出统一架构WildDet3D，支持文本点框提示并可融合深度线索，并构建大规模数据集WildDet3D-Data，在多个基准上取得最优性能。",
+    "2604.08641": "用符号学评估生成艺术含义\n生成式人工智能;艺术生成与评价;艺术符号学计算建模\n现有生成艺术评估只关注表面质量，无法评估更深层艺术含义。\n提出符号学评估框架，重建意义生成过程，更贴近人类艺术解读。",
+    "2604.08644": "LG发布开源多模态语言模型\n多模态学习;视觉语言模型;文档理解\nLG AI Research发布了其首个开源视觉语言模型EXAONE 4.5。\n该模型通过整合专用视觉编码器，在文档理解任务上表现突出，并扩展了上下文长度以支持企业级应用。",
+    "2604.08801": "优化提示词只需少数样本  \n自然语言处理;提示工程;提示优化  \n背景/任务是研究影响提示优化效果的关键因素，发现任务异质性会降低优化效率。  \n本文提出一种筛选用户提示的方法，用少数样本提升提示优化效果并增强泛化能力。",
+    "2604.08995": "实时交互视频生成世界模型\n计算机图形学;视频生成;交互式世界模型\n现有交互视频生成方法难以同时实现长时记忆一致性与高分辨率实时生成\n提出了Matrix-Game 3.0，通过数据、模型与推理的系统性改进，实现了720p实时长视频生成与分钟级记忆一致性",
+    "2604.09130": "提升三维原子建模的图注意力Transformer  \n机器学习;几何深度学习;SE(3)等变图神经网络  \n背景/任务：SE(3)等变图神经网络是三维原子建模的核心工具，但需在大规模应用中提升效率、表达力和物理一致性。  \n做了什么：提出了EquiformerV3，通过优化实现、改进架构和引入新激活函数，在效率和表达力上取得进步，并在多个基准上达到先进性能。",
+    "2604.09168": "弹性循环变换器用于视觉生成\n计算机视觉;生成模型;参数高效视觉生成\n传统视觉生成模型参数量大，效率不高。\n我们提出了一种参数高效的弹性循环变换器模型，通过权重共享循环结构和单步内自蒸馏训练方法，在显著减少参数的同时保持了高质量生成，并能实现计算与质量的动态权衡。",
+    "2604.09201": "视觉语言相机模型控制视频生成\n计算机视觉；视频生成；相机轨迹控制\n现有视频生成方法难以从文本提示进行精确相机控制或需依赖人工设定轨迹。\n提出CT-1模型，通过准确估计相机轨迹并将其融入视频扩散模型，实现高质量相机可控视频生成。",
+    "2604.09237": "从研究问题自动构建结构化数据库\n自然语言处理;信息抽取;文档结构化提取\n传统上，从大量文档中回答研究问题需要人工设计标注方案并逐一标注，过程缓慢且易错。\n本文提出ScheMatiQ系统，利用大语言模型将研究问题和文档语料转化为结构化数据库，并提供交互界面供专家引导和修正提取过程。",
+    "2604.09450": "用单步扩散高效生成胸片报告  \n医学影像与报告生成;胸部X光报告生成;扩散模型加速  \n当前基于自回归的模型生成报告慢，扩散模型仍需多次迭代。  \n我们提出ECHO模型，通过直接条件蒸馏和响应非对称扩散，实现单步高质量并行生成，速度快且临床准确。",
+    "2604.09482": "知识推理过程奖励代理\n自然语言处理;推理与决策;知识密集型推理过程评估\n在知识密集型推理中，中间步骤难以即时验证，容易导致错误传播。\n提出过程奖励代理方法，在线评估推理步骤以引导搜索解码，提升多种模型在医学推理上的表现，无需更新模型本身。",
+    "2604.09527": "预测未来场景轨迹动态\n计算机视觉;场景理解;未来运动预测\n现有方法依赖密集视频或潜空间预测，难以高效探索长时、多模态的未来运动。\n提出基于稀疏点轨迹的自回归扩散模型，支持从单图快速生成多样未来轨迹，准确性与效率均优于密集模拟器。",
+    "2604.09531": "用合成图像提升视觉语言模型感知能力\n视觉与语言模型；视觉问答；视觉感知能力提升\n视觉语言模型在空间理解和视角识别等感知任务上仍有不足，可能源于自然图像数据对此类低层视觉技能监督有限。\n我们提出了VisionFoundry，仅以任务关键词为输入，利用大模型生成合成问答及图像，构建了包含十个任务的合成数据集VisionFoundry-10K，显著提升了模型在多个视觉感知基准上的性能。",
+    "2604.09544": "大模型有害内容的生成机制探究\n自然语言处理;语言模型安全;对齐与有害内容生成\n背景/任务：大语言模型经过对齐训练以避免生成有害内容，但其安全防护依然脆弱，常被越狱或微调导致广泛失准，这引发了对其内部有害内容组织机制是否缺乏一致性的疑问。\n做了什么：通过针对性权重剪枝进行因果干预，发现有害内容生成依赖于一组紧凑、跨危害类型通用且区别于良性能力的权重集，对齐过程会压缩这些权重，解释了微调引发广泛失准的原因，并表明生成能力与内容识别/解释能力是解耦的。"
+  },
+  "deep_analysis": {
+    "2604.06870": "好的，我们先一步步来拆解这篇论文。你可以把它想象成一个给图片“打局部补丁”的高级工具。\n\n### (1) 任务是什么？\n*   **任务输入**：一张图片 + 用户指定的一个区域（可以是一个粗略的涂鸦框，或者一个精确的边界框）。对于“有参考”模式，还会有一张高清的“参考图”。\n*   **任务输出**：一张看起来和原图几乎一模一样，但**只有用户指定区域被精细修复或增强**的新图片。\n*   **任务功能**：专门修复图片中**局部、微小但重要的细节**，比如模糊的文字、变形的Logo、失真的脸，同时**保证图片其他部分（背景）一丁点都不变**。\n\n### (2) 想解决什么问题？\n现代AI生成图片虽然很强，但还是有个“老毛病”：**局部细节容易崩坏**。比如生成的广告牌上字是糊的，商品Logo是歪的。\n*   **问题1：传统编辑工具“指哪打哪”不准**。你告诉AI“把那个字修清楚”，它可能会把旁边的背景也改了。\n*   **问题2：细节修复效果差**。尤其是当要修的区域只占整张图很小一部分时（比如图里一个小商标），模型分配的计算和注意力不够，修不好。\n*   **问题3：背景容易“跑偏”**。修一个地方，结果整张图的色调、风格可能都跟着变了，这不是用户想要的。\n\n所以，这篇论文就是想要一个 **“外科手术式”的图片修补工具**：精准、有效、且不伤及无辜（背景）。\n\n### (3) 核心思路是什么？\n论文提出了一个非常直观又聪明的策略，叫做 **“聚焦-精修”** 。核心思想是：**既然问题出在“小区域得不到足够重视”上，那我就把它“放大”了单独处理。**\n\n1.  **一个反直觉的发现**：他们发现，即使不增加任何新信息，仅仅把要修的小区域**裁剪出来，然后放大**到和原图一样的尺寸，再用标准的图像编码器去处理，**这个区域的重建效果都会比直接处理整张原图要好**。这是因为放大后，这个区域在模型“眼”里占据了更多像素，能获得更细致的关注和计算资源。\n2.  **“聚焦-精修”流程**：\n    *   **聚焦**：根据用户框选，把目标区域裁剪出来，并放大。\n    *   **精修**：用一个强大的**多模态扩散模型**（基模是Qwen2-VL）对这个放大的区域进行修复。这个模型被特殊训练过，能理解“区域指令”（比如框）和“文本指令”（比如“修复这个文字”）。\n    *   **贴回**：把修好的区域，用**羽化混合**的方式贴回原图的对应位置。这样能保证边界自然，没有接缝。\n3.  **保证背景不变**：由于只处理了裁剪出来的区域，贴回去时原图背景像素完全保留，这就**天然保证了背景一致性**。他们还设计了一个**边界一致性损失函数**，在训练时让模型特别学习如何让修补区域的边界和原图融合得更自然。\n\n### (4) 结果怎么样？\n效果非常好，在论文自己构建的评测基准 **RefineEval** 上全面领先。\n*   **修复质量高**：在要修的区域上，它的还原误差更低，和真实细节的相似度更高。\n*   **背景保持完美**：在背景区域，它的改变几乎为零，显著优于其他对比方法。\n*   **支持两种模式**：既能根据一张高清参考图来修复，也能在没有参考图的情况下，让模型自己“想象”并生成合理的细节，都很有效。\n\n### (5) 模型结构与整体流程\n**基模**：他们使用了 **Qwen2-VL** 作为一个强大的多模态理解与生成基础模型。\n\n**整体流程（结合图2和图4）**：\n\n1.  **输入与准备**：\n    *   用户提供 **原图（I_src）**、**区域指示（M）**（一个框或涂鸦）。对于“有参考”任务，还有一张 **参考图（I_ref）**。\n    *   系统根据区域指示 **M**，从原图中 **裁剪出目标区域（Crop）**。\n\n2.  **聚焦处理**：\n    *   将这个裁剪出来的小图，**上采样（放大）** 到和原图一样的预设分辨率（比如1024x1024）。这一步是关键，它让后续模型能“看清”细节。\n\n3.  **区域精修（核心模型工作）**：\n    *   将 **放大后的区域图**、**区域指示M**、以及**文本指令**（例如“修复此区域”）一起输入给 **RefineAnything 模型**。\n    *   这个模型是在Qwen2-VL基础上**微调**得来的。微调时，他们给模型“喂”了两种数据：\n        *   **有参考数据**：告诉模型“把这个区域变得和参考图一样”。\n        *   **无参考数据**：告诉模型“把这个区域修复得更清晰、更合理”。\n    *   模型内部是一个**扩散模型**，它会在潜空间里逐步去噪，最终生成一个 **修复后的区域潜特征**。\n\n4.  **解码与贴回**：\n    *   将修复后的潜特征，用VAE解码器 **转换回像素图像**，得到修复好的区域图。\n    *   将这个修复好的区域图，**下采样回它原本在实际图片中的大小**。\n    *   使用一个**柔和过渡的蒙版**，将修好的区域**无缝粘贴**回原始图片的对应位置。这个蒙版边缘是羽化的，确保没有生硬的边界。\n    *   **输出**：得到最终结果——一张**背景完全不变，只有指定区域被精细修复**的完美图片。\n\n**简单总结**：这篇论文就像给图片编辑领域造了一个“显微镜”和“精细手术刀”。它先把问题区域放大到显微镜下仔细修复，然后再完美地缝合回去，从而实现了前所未有的局部细节控制能力和背景保留能力。",
+    "2604.08641": "这篇论文所在的任务是**生成式艺术（GenArt）的自动评估**。\n\n**(1) 任务是什么？**\n*   **任务输入**：一个文本提示（Prompt），以及由AI模型根据这个提示生成的一张或多张图像。\n*   **任务输出**：对生成的图像进行**艺术层面的评价**，特别是对图像所表达的**深层、象征性或抽象含义**的理解和打分。它不仅仅评价图像“像不像”或“漂不漂亮”。\n*   **任务功能**：提供一个更接近人类艺术评论家视角的自动化评估系统，用于判断AI生成的艺术作品是否成功传达了创作者（通过提示）的意图，以及其艺术表达的深度。\n\n**(2) 想解决什么问题？**\n现有AI艺术评价指标（如FID、CLIP分数）存在两个主要缺陷：\n1.  **只看表面，不看内涵**：它们过于关注图像的表面质量（如真实性、美观度）或与提示的文字匹配度，忽略了艺术作品中常见的**隐喻、象征、抽象**等深层含义。比如，它们可能无法评价一幅画是否成功表达了“战争的残酷”或“孤独感”。\n2.  **有“图像相似度偏见”（Iconicity Bias）**：现有指标天然倾向于奖励那些与提示描述在视觉上高度相似的图像，而惩罚那些通过象征、抽象等非直接方式来表达相同主题的高质量艺术作品。\n\n简单说，论文认为目前的评估器是“文盲”或“肤浅的观众”，它们看不懂艺术的“语言”，而这篇论文想造一个能“读懂”艺术语言的评估器。\n\n**(3) 核心思路是什么？**\n论文的核心思路是引入**符号学（Semiotics）** 的理论来重新定义和建模“人类-生成式艺术交互”（HGI）。\n\n*   **符号学理论**：它借鉴了皮尔士的符号学三元模型（Representamen-Object-Interpretant），认为一个符号（比如一幅画）通过三种方式传达意义：\n    *   **肖似性（Iconic）** ：通过**视觉相似**（如画的苹果像真苹果）。\n    *   **指示性（Indexical）** ：通过**因果或关联**（如烟指示火，眼泪指示悲伤）。\n    *   **象征性（Symbolic）** ：通过**社会文化约定**（如鸽子象征和平，红色象征危险或热情）。\n*   **论文的观点**：传统的评估指标只擅长处理**肖似性（Iconic）** 意义，而对**指示性（Indexical）** 和**象征性（Symbolic）** 意义是“结构性的盲视”。因此，需要一个新的评估框架来专门捕捉后两种更高级的艺术含义。\n\n**(4) 结果怎么样？**\n论文提出的新评估器 **SemJudge** 在实验中表现良好：\n1.  **与人类判断更一致**：在需要深度解读的艺术评测集上，SemJudge给出的分数与人类专家的评价**相关性更高**，优于CLIP、BLIP等传统评估指标。\n2.  **产生更深刻的解读**：用户研究表明，SemJudge不仅能打分，还能生成对艺术作品的**更深层、更有洞察力的文字解读**。\n3.  **证实了“图像相似度偏见”**：通过实验分析，论文验证了传统指标确实存在这种偏见，而SemJudge能更好地评估那些使用象征和抽象手法的艺术作品。\n\n**(5) 模型结构与流程**\nSemJudge本身**不是一个生成图像的模型**，而是一个**评估系统**。它的核心是一个叫做 **“层次化符号过程图”（Hierarchical Semiosis Graph, HSG）** 的结构，用于分析和重建从“创作者意图”到“观众理解”的整个意义传递链条。\n\n**基模（Base Model）是谁？**\nSemJudge利用现成的**大规模多模态模型（MLLM）** 作为其“感知”和“推理”组件，例如论文中可能使用了GPT-4V、LLaVA等模型。它将这些MLLM作为工具来调用。\n\n**整体流程（参照论文方法描述）：**\n1.  **输入**：用户提供的**文本提示（Prompt）** 和AI生成的**图像（Artifact）**。\n2.  **第一步：分解提示意图**：\n    *   系统分析提示文本，识别出其中可能包含的**主题、情感、风格指令、艺术手法**等。这相当于理解“创作者想表达什么”。\n3.  **第二步：分析图像符号**：\n    *   系统（通过MLLM）仔细观察生成的图像，识别其中的**视觉元素、构图、色彩、物体**等。这些被看作是潜在的“符号”。\n4.  **第三步：构建符号过程图（HSG）**：\n    *   这是核心步骤。系统将第一步分解出的“意图”作为根节点。\n    *   然后，它尝试将第二步识别出的图像符号与这些意图连接起来。连接的方式就是追问：“**这个图像符号（如一个破碎的娃娃）是如何帮助表达那个意图（如战争的创伤）的？**”\n    *   回答这个问题时，系统必须明确说明连接是**肖似性的**（看起来像）、**指示性的**（暗示了）、还是**象征性的**（代表了）。这个过程会形成一个多层次的推理图（HSG），清晰地展示意义是如何从图像细节推导到抽象主题的。\n5.  **第四步：评估与打分**：\n    *   系统根据构建的HSG的质量来打分。评估标准包括：\n        *   **覆盖度**：图像符号是否充分覆盖了提示中的关键意图？\n        *   **解释深度**：HSG中的推理链条是否合理、深入？是否挖掘出了象征和指示意义，而不仅仅是表面相似？\n        *   **一致性**：整个意义传递过程是否连贯、有说服力？\n6.  **输出**：\n    *   **一个评估分数**（衡量艺术作品传达深层含义的成功度）。\n    *   **一个结构化的解读**（即HSG本身），用文字和图表形式解释图像是如何一步步表达主题的。\n\n**简单比喻**：传统评估器像一个严格的“语文老师”，只检查作文（图像）里有没有出现题目（提示）要求的关键词。而SemJudge像一个“文学评论家”，它会分析这篇作文（图像）用了哪些修辞手法（象征、隐喻）、结构如何，最终是否深刻而巧妙地表达了题目（意图）背后的思想感情。",
+    "2604.08995": "好的，没问题！我来为你用简单的语言梳理一下这篇论文的核心内容。\n\n### (1) 这篇论文所在的任务是什么？\n*   **任务名称**：**交互式世界模型**。\n*   **任务输入**：一个“世界的当前状态”（比如一张图片或一段视频帧），加上一个“控制指令”（比如“向前走”、“向左看”）。\n*   **任务输出**：**预测并生成**出在给定指令后，世界下一个时刻（或未来几个时刻）会变成什么样子的**视频帧**。\n*   **任务功能**：这就像一个**游戏引擎或物理模拟器**，只不过它是用AI模型“脑补”出来的。你可以不断地给它看它自己生成的画面，并输入新的指令，它就能像玩游戏一样，实时、持续地生成一个动态变化的虚拟世界视频。\n\n### (2) 这篇论文想解决什么问题？\n现有的交互式世界模型面临几个主要挑战：\n1.  **“健忘症”问题**：模型在生成长视频时，会忘记很久之前（比如一分钟前）发生的事情（比如房间的布局、角色的位置），导致前后画面不一致（比如墙的颜色突然变了）。\n2.  **速度慢**：高质量的AI视频生成通常需要很多计算步骤，速度远达不到实时交互的要求（例如游戏需要30-60 FPS）。\n3.  **难以兼顾**：现有的技术方案很难**同时**解决长时记忆和实时生成这两个问题。\n\n### (3) 论文的核心思路是什么？\n论文提出了一个“三步走”的解决方案，就像一个工厂的生产线：\n1.  **造一个“会自我纠错”的基座模型**：\n    *   **怎么训练？** 在训练时，故意把模型自己之前生成的、有错误的画面（比如模糊、变形）喂给它，并告诉它正确的画面应该是怎样的。这样模型就学会了“看到自己的错误并改正”。\n    *   **怎么记长时？** 引入一个“**记忆模块**”。当模型要生成新画面时，它会从过去的所有画面中，根据当前“摄像机视角”快速检索出最相关的历史画面（比如一分钟前同一个角度的房间），然后把检索到的信息“注射”到当前生成过程中，帮助模型保持一致性。\n\n2.  **给模型“瘦身”和“加速”**：\n    *   用了一个叫 **DMD** 的技术，把原来需要迭代很多步（比如50步）才能生成一张好图的“大模型老师”，的知识“蒸馏”到一个只需要很少步（比如1-4步）就能出图的“小模型学生”里。\n    *   对这个“学生模型”再进行**量化**（降低数值精度）和**剪枝**（去掉不重要的网络连接），让它变得又小又快。\n\n3.  **打造高质量“数据工厂”**：\n    *   为了教模型学会复杂的交互和物理规律，需要海量的“（当前画面，控制指令，下一帧画面）”配对数据。\n    *   论文构建了一个混合数据引擎：\n        *   **游戏引擎合成**：用虚幻引擎自动生成大量可控、精准的数据。\n        *   **AAA游戏录制**：从《原神》、《荒野大镖客2》等大型游戏中自动录制玩家操作和游戏画面。\n        *   **真实世界视频**：用现有视频数据来增强模型的泛化能力。\n\n### (4) 结果怎么样？\n效果非常显著，基本解决了他们提出的问题：\n*   **实时性**：他们的5B（50亿）参数模型，可以在720p分辨率下达到 **40 FPS** 的生成速度，完全满足实时交互需求。\n*   **长时一致性**：模型能够保持**长达一分钟**的视频在语义和几何上的稳定性，解决了“健忘”问题。\n*   **质量与泛化**：当把模型规模扩大到28B参数时，生成视频的质量、动态效果和泛化到新场景的能力都得到了进一步提升。\n\n### (5) 这篇论文的模型结构与流程\n这篇论文的模型建立在之前的工作（如 **Matrix-Game 2.0**）基础上，是一个**扩散模型**。整体流程可以看作一个 **“生成-记忆-再生成”的循环**：\n\n1.  **输入**：流程开始于一个**起始帧**（一张图片）和用户的第一个**控制指令**（如“向前走”）。\n2.  **记忆检索**：模型内部的“记忆模块”会查看当前已有的所有历史帧（刚开始只有起始帧），根据当前要生成画面的**相机视角**，快速找到历史上最相关的画面片段。\n3.  **条件生成**：模型将 **【当前帧】、【控制指令】** 以及从记忆模块检索到的**【相关历史信息】** 三者一起，输入到**基座扩散模型**中。\n4.  **输出与纠错**：基座模型利用其“自我纠错”能力，预测并生成出**下一帧画面**。这个生成的画面会经过质量检查。\n5.  **循环与记忆更新**：生成的这一帧被**立即输出**给用户，同时**存入记忆库**，成为新的“当前帧”。然后，用户可以输入**下一个指令**（如“向左转”），系统回到第2步，开始新一轮的生成。\n6.  **加速推断**：以上第3-4步中的“基座扩散模型”，在实际部署时使用的是经过**DMD蒸馏、量化和剪枝**后的高效版本，从而实现了实时速度。\n\n**简单总结**：这篇论文的核心是造了一个**又快又有记性**的AI游戏引擎。它通过“记忆注射”解决长视频连贯性问题，通过“知识蒸馏+模型压缩”解决速度问题，再用一个强大的“数据工厂”来训练它，最终实现了一个能实时交互、情节连贯的虚拟世界模拟器。",
+    "2604.09168": "这篇论文的标题是 **《ELT：用于视觉生成的弹性循环Transformer》**，下面我将以通俗易懂的方式为你解释它的核心内容。\n\n---\n\n### (1) 论文所在的任务是什么？\n- **任务功能**：生成高质量的图片和短视频（视觉生成）。\n- **任务输入**：一些“提示”信息，例如类别标签（“猫”、“狗”等）或者描述文字。\n- **任务输出**：一张图片或一段短视频。\n\n### (2) 这篇论文想解决什么问题？\n现有的视觉生成模型（如扩散模型、MaskGIT等）通常需要**堆叠很多层**，每一层都有不同的参数，导致模型**参数量巨大**、计算开销大且部署困难。  \n虽然**循环（looped）架构**（即同一组参数重复使用多次）能大幅减少参数量，但普通循环Transformer有一个致命问题：**只有在运行特定次数的循环后，才能生成好的结果**。如果中途提前退出，生成的图像质量会非常差（如图1右所示）。  \n因此，这篇论文想解决的问题是：  \n> **如何让循环Transformer在任意循环次数（即任意计算预算）下，都能生成高质量的图像和视频，即实现“弹性推理”。**\n\n### (3) 论文的核心思路是什么？\n作者提出 **“弹性循环Transformer”（ELT）**，核心训练技巧是 **“层内自蒸馏”（ILSD）**。  \n它的想法很简单：\n- 在训练时，模型同时走两条路：\n  1. **教师路径（Teacher）**：跑满最大循环次数（例如 L=8），生成高质量结果。\n  2. **学生路径（Student）**：只跑中间循环次数（例如 L=4），但希望生成的结果和教师路径的对应输出尽可能相似。\n- 注意：**教师和学生共享同一套参数**，只是循环次数不同。训练时通过蒸馏损失，强制让中间循环的输出也逼近最终高质量结果。\n- 这样训练后，模型就学会了**渐进式优化**：即使在较少的循环次数下，也能生成较好的结果，从而实现“弹性推理”。\n\n### (4) 结果怎么样？\n- **参数量减少 4 倍**，但性能不降甚至更好。\n- **图像生成**：在 ImageNet 256×256 上，FID 达到 **2.0**（数字越小越好），与当前最优模型相当。\n- **视频生成**：在 UCF-101 上，FVD 达到 **72.8**（数字越小越好），也很有竞争力。\n- **弹性推理**：如图1左所示，模型在 L=2,4,6,8,10 等不同循环次数下，都能生成清晰、合理的图像，而普通循环模型（图1右）在 L≠8 时完全失败。\n\n### (5) 模型结构与流程\n**基模**：基于 **Transformer 模块**，采用类似扩散模型的生成方式（逐步去噪生成图像/视频）。\n\n**整体流程**（以图像生成为例）：\n1. **输入**：一个噪声图像 + 类别标签（如“猫”）。\n2. **循环块（Loop Block）**：  \n   - 模型只使用**一组共享参数的 Transformer 层**，但会**重复运行多次（L 次）**。\n   - 每次循环都对这个噪声图像进行“ refinement（细化）”，逐步去除噪声、增加细节。\n3. **ILSD 训练机制**：\n   - 在训练时，对于同一个输入，模型同时计算：\n     - **教师输出**：跑满 L_max 次循环（例如 8 次），得到高质量图像。\n     - **学生输出**：在中间某次循环（例如第 4 次）就提前“退出”，得到一个中间结果。\n   - 然后用蒸馏损失（如 KL 散度）让学生输出的分布尽量接近教师输出的分布。\n   - 这样，模型学会了让中间循环的输出也是“有意义”的。\n4. **输出**：经过 L 次循环后，得到清晰的生成图像。\n\n**关键点**：  \n- 训练完成后，在推理时，你可以**自由选择循环次数 L**：  \n  - 如果计算资源少/要求速度快，就选较小的 L（如 2 或 4）。  \n  - 如果追求最高质量，就选较大的 L（如 8 或 10）。  \n- 所有选择都使用**同一套模型参数**，无需重新训练。\n\n---\n\n**总结**：这篇论文通过 **“层内自蒸馏”** 训练技巧，让循环Transformer在**任意循环次数下都能生成高质量视觉内容**，实现了**参数高效、弹性推理**的视觉生成模型，在图像和视频生成任务上都取得了优异效果。",
+    "2604.09527": "这篇论文主要研究 **“从单张图片预测未来场景中物体的运动轨迹”**。下面我分点给你解释：\n\n---\n\n### 1. 任务是什么？\n- **任务输入**：一张静态图片。\n- **任务输出**：未来一段时间内，图片中多个关键点（例如物体的某个部位或关键位置）的运动轨迹。\n- **任务功能**：让模型能够“想象”出未来场景中物体可能如何运动，并生成多种合理的运动假设，而不是只预测一种固定的未来。\n\n---\n\n### 2. 论文想解决什么问题？\n现有的视频预测模型通常需要生成完整的未来视频帧（即“像素级”预测），这非常耗费计算资源，而且很多细节（如纹理、颜色）对理解运动并不重要。  \n论文认为，**真正重要的是物体如何运动（即轨迹）**，而不是它们长什么样。  \n因此，他们希望：\n- 直接预测稀疏的运动轨迹，而不是密集的视频。\n- 能够高效地生成**多种可能**的未来运动（因为真实世界充满不确定性）。\n- 让模型能够**逐步推理**未来的运动，而不是一步到位（就像打台球时，我们需要一步步推演碰撞过程）。\n\n---\n\n### 3. 核心思路是什么？\n**把未来运动预测建模为“逐步生成稀疏轨迹”的过程**，具体来说：\n- 使用一个**自回归扩散模型**（Autoregressive Diffusion Model），每次只预测一小段时间内的运动。\n- 模型只关注场景中少数关键点的轨迹，而不是整个图像。\n- 通过“一步一步”地预测，模型可以更好地处理复杂的交互和不确定性。\n- 训练时使用大量真实世界视频数据，学习物体运动的规律。\n\n---\n\n### 4. 结果怎么样？\n- **准确性**：在预测运动轨迹的任务上，他们的模型与那些需要生成完整视频的模型表现相当甚至更好。\n- **速度**：由于只预测轨迹而非像素，他们的模型生成速度**快了几个数量级**，可以在相同时间内生成上千种可能的未来运动。\n- **新基准测试**：他们还提出了一个叫 **OWM** 的评测基准，用于评估模型在开放世界中预测运动的多样性和物理合理性。\n\n---\n\n### 5. 模型结构与流程\n**基模**：基于 **Transformer** 的自回归扩散模型。\n\n**整体流程**：\n1. **输入**：一张图片。\n2. **提取关键点**：从图片中检测出一些关键点（例如通过预训练的特征提取器）。\n3. **编码**：将关键点的位置信息编码成向量，并加上时间与空间的位置编码。\n4. **逐步预测**：\n   - 模型以“自回归”方式运行：先预测未来第一小段时间的运动，然后基于这个结果再预测下一段时间，如此重复。\n   - 每一步使用扩散模型来生成当前步的运动位移（即轨迹的变化量），扩散模型可以很好地建模不确定性，从而生成多样化的结果。\n5. **输出**：得到每个关键点在未来一段时间内的完整运动轨迹（一系列坐标点）。\n6. **可选引导**：如果需要，可以在初始时给定一些运动约束（例如“某个点大概往左移动”），模型会在此基础上生成合理的轨迹。\n\n**简单比喻**：  \n就像给你一张台球桌的静态照片，你不需要画出每一帧的完整画面，而是用笔在纸上画出每个球大概的移动路径，并且可以画出多种可能的走位方案。\n\n---\n\n如果你对某个部分（比如扩散模型如何用于轨迹预测）想了解更多，我可以再展开讲讲。"
+  },
+  "images_meta": {
+    "2604.06870": [
+      {
+        "path": "https://arxiv.org/html/2604.06870v1/x2.png",
+        "caption": "Figure 2:Architecture of RefineAnything.Given an input image and an optional reference image, the user specifies an edit region via a scribble mask; the images, region cue, and text instruction are encoded by a frozen Qwen2.5-VL encoder into multimodal conditioning tokens. Conditioned on these tokens, a diffusion backbone built from MMDiT blocks (trainable, e.g., via LoRA[hu2022lora,xu2024ctrlora]) denoises a VAE latent from timestepttto produce the locally refined result.",
+        "caption_zh": "图2：RefineAnything架构示意图。给定输入图像和可选参考图像，用户通过涂鸦掩码指定编辑区域；图像、区域提示及文本指令由冻结的Qwen2.5-VL编码器编码为多模态条件标记。基于这些标记，由MMDiT模块（可通过LoRA[hu2022lora,xu2024ctrlora]等方式训练）构建的扩散主干网络对VAE潜在表示进行时间步tt的降噪，从而生成局部优化结果。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.06870v1/x4.png",
+        "caption": "Figure 4:Overview of Focus-and-Refine Method.",
+        "caption_zh": "图4：聚焦-精炼方法概述。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.06870v1/x5.png",
+        "caption": "Figure 5:Overview of Reference-Based Refine Data Construction Pipeline.",
+        "caption_zh": "图 5：基于参考的精细化数据构建流程概览。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.08641": [
+      {
+        "path": "https://arxiv.org/html/2604.08641v1/x1.png",
+        "caption": "Figure 1.HGI as cascaded semiosis.We model HGI as a chain of meaning-making steps: a creator encodes an intention into a prompt, which the model interprets to generate an artifact. A viewer then interprets this artifact to reconstruct the meaning, which may differ from the original intention.",
+        "caption_zh": "图1.HGI 作为级联符号活动。我们将 HGI 建模为一系列意义构建步骤：创建者将意图编码为提示词，模型则解读该提示以生成作品；随后，观看者通过对作品的解读来重构意义，这一意义可能与原始意图存在差异。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.08641v1/x3.png",
+        "caption": "Figure 3.SemiosisArt Construction.Top: we construct a prompt from canonical motifs, and generate images from various models. Bottom: We use two task formats: 2AFC for relative judgment and VQA for fine-grained interpretation.",
+        "caption_zh": "图 3：SemiosisArt 构建流程。上图：我们依据典型母题构建提示词，并从不同模型中生成图像。下图：我们采用两种任务形式：用于相对判断的二项迫选法（2AFC）与用于细粒度解读的视觉问答（VQA）。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.08641v1/x2.png",
+        "caption": "Figure 2.HSG of generated artifact.We show the image with bounding boxes (top-left), its global semiosis (top-right), and sub-semioses (bottom), constructed by an MLLM in zero-shot. The HSG provides a structured interpretation of the Annunciation motif in the abstract painting. Best viewed in color.",
+        "caption_zh": "图 2. 生成艺术品的层次符号图（HSG）。我们展示了带边界框的图像（左上）、其整体符号系统（右上）以及由 MLLM 零样本构建的子符号系统（底部）。该 HSG 为抽象画中的《天使报喜》主题提供了结构化解读。建议彩色查看。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.08995": [
+      {
+        "path": "https://arxiv.org/html/2604.08995v1/x2.png",
+        "caption": "Figure 2:Overview ofMatrix-Game 3.0. Our framework unifies Unreal Engine–based data generation, memory-augmented DiT training with an error buffer, and accelerated real-time deployment. It generates long-horizon training videos with paired action and camera-pose supervision, learns action-conditioned generation with memory-enhanced consistency, and supports real-time inference through few-step sampling, quantization, and pruning, achieving 720p@40FPS with a 5B model.",
+        "caption_zh": "图 2：Matrix-Game 3.0 概述。本框架集成了基于虚幻引擎的数据生成、带错误缓冲区的记忆增强 DiT 训练以及加速实时部署三大模块。它能生成带有配对动作与相机位姿监督的长时序训练视频，通过记忆增强一致性学习动作条件生成，并支持通过少步采样、量化与剪枝技术实现实时推理，使 5B 参数模型达到 720p@40FPS 的性能。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.08995v1/x3.png",
+        "caption": "Figure 3:Illustration of our interactive base model.We jointly perform error-aware modeling over the past and current latent frames, while explicitly injecting action conditions into the model. This design enables autoregressive, long-horizon interactive generation and maintains consistency with the subsequent distillation stage.",
+        "caption_zh": "图3：交互式基础模型示意图。我们在过去与当前潜在帧上联合进行误差感知建模，同时将动作条件显式注入模型中。该设计实现了自回归式的长程交互生成，并确保了与后续蒸馏阶段的一致性。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.08995v1/x5.png",
+        "caption": "Figure 5:Frame-level self-attention visualization for the memory-enhanced DiT.",
+        "caption_zh": "图5：增强记忆DiT的帧级自注意力可视化。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.09168": [
+      {
+        "path": "https://arxiv.org/html/2604.09168v1/figures/dit_images/shihtzu_ilsd_2.png",
+        "caption": "ELT TrainingXkX_{k}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}MLMXk+1X_{k+1}sharedLi​n​tL_{int}Lm​a​xL_{max}all blocksshareΘ\\Thetaλ⋅ℒi​n​tGT+\\lambda\\cdot\\mathcal{L}^{\\text{GT}}_{int}+(1−λ)⋅ℒi​n​tdist(1{-}\\lambda)\\cdot\\mathcal{L}^{\\text{dist}}_{int}ℒmaxGT\\mathcal{L}_{\\text{max}}^{\\text{GT}}Intra-LoopSelf DistillationsgELT InferenceXkX_{k}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}all blocksshareΘ\\ThetaMLMMLMMLMMLMMLMXk+1X_{k+1}sharedAny-TimeInferenceFigure 3:Overview of ELT framework. Training (left) utilizes shared parametersΘ\\Thetawith recurrent loops and Intra-Loop Self Distillation (ILSD) to improve intermediate representations. This enables Any-Time inference (right), allowing the model to exit early and predictXk+1X_{k+1}from any intermediate block via a shared MLM head. Note thatXkX_{k}represents the input forkt​hk^{th}sampling iteration and output images in ELT Any-Time Inference (right) assumek=Kk=K(last sampling step). ReferSection˜2for details of annotations.",
+        "caption_zh": "ELT TrainingXkX_{k}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}MLMXk+1X_{k+1}sharedLi​n​tL_{int}Lm​a​xL_{max}all blocksshareΘ\\Thetaλ⋅ℒi​n​tGT+\\lambda\\cdot\\mathcal{L}^{\\text{GT}}_{int}+(1−λ)⋅ℒi​n​tdist(1{-}\\lambda)\\cdot\\mathcal{L}^{\\text{dist}}_{int}ℒmaxGT\\mathcal{L}_{\\text{max}}^{\\text{GT}}Intra-LoopSelf DistillationsgELT InferenceXkX_{k}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}gΘg_{\\Theta}all blocksshareΘ\\ThetaMLMMLMMLMMLMMLMXk+1X_{k+1}sharedAny-TimeInferenceFigure 3:Overview of ELT framework. Training (left) utilizes shared parametersΘ\\Thetawith recurrent loops and Intra-Loop Self Distillation (ILSD) to improve intermediate representations. This enables Any-Time inference (right), allowing the model to exit early and predictXk+1X_{k+1}from any intermediate block via a shared MLM head. Note thatXkX_{k}represents the input forkt​hk^{th}sampling iteration and output images in ELT Any-Time Inference (right) assumek=Kk=K(last sampling step). ReferSection˜2for details of annotations.",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09168v1/figures/dit_images/shihtzu_wo_6.png",
+        "caption": "Vanilla Looped TransformersSolution SpaceXk0{X_{k}}^{0}Xkint{X_{k}}^{\\text{int}}Xkmax{X_{k}}^{\\text{max}}ILSDTrainingElastic Looped TransformersSolution SpaceXk0{X_{k}}^{0}Xkint{X_{k}}^{\\text{int}}Xkmax{X_{k}}^{\\text{max}}✗Xkint{X_{k}}^{\\text{int}}away from solution space.✗Fixed Depth Inference✓Xkint{X_{k}}^{\\text{int}}moves towards solution space.✓Any-Time Inference.Figure 2:Latent Trajectories of Standard vs. Elastic Looped Transformers.Xkint{X_{k}}^{\\text{int}}&Xkmax{X_{k}}^{\\text{max}}represent output of intermediate (LintL_{\\text{int}}) & final loops (LmaxL_{\\text{max}}) respectively forkt​hk^{th}generation sampling step. Unlike standard recurrent models (left) where only the final iterationXkmax{X_{k}}^{\\text{max}}reaches the solution space, our ILSD training (right) guides intermediate statesXkint{X_{k}}^{\\text{int}}also toward the target space. This transformation shifts the model from a fixed-depth architecture to an Any-Time inference framework, supporting flexible computational budgets through early exits within a sampling step.",
+        "caption_zh": "图2：标准循环Transformer与弹性循环Transformer的潜轨迹对比。其中Xkint和Xkmax分别表示第k次生成采样步骤中中间循环（Lint）和最终循环（Lmax）的输出。与传统循环模型（左）仅最终迭代Xkmax抵达解空间不同，我们的ILSD训练（右）引导中间状态Xkint同样向目标空间靠近。这一转变将模型从固定深度架构转化为任意时间推理框架，支持通过在采样步骤中提前退出来适应灵活的计算预算。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09168v1/figures/dit_images/siamese_ilsd_2.png",
+        "caption": "L=2L=2L=4L=4L=6L=6L=8L=8L=10L=10(a)ELT’sAny-Time inferencefromsingle training runL=2L=2L=4L=4L=6L=6L=8L=8L=10L=10(b) Vanilla looped transformersFigure 1:Class-conditional Image Generation on ImageNet𝟐𝟓𝟔×𝟐𝟓𝟔\\bm{256\\times 256}. Comparing our proposed Elastic Looped Transformers (left) against vanilla looped transformers (right), which simply repeat transformer layers during a forward pass of diffusion. As shown, standard looping only produces a coherent image when the inference loop count exactly matches its training setup (L=8L=8), with quality severely degrading at all other values. In contrast, our proposed approach maintains high-fidelity generation across several evaluated compute budgets.",
+        "caption_zh": "图 1：ImageNet 256×256 的类别条件图像生成。对比我们提出的弹性循环 Transformer（左）与原始循环 Transformer（右），后者仅在扩散前向过程中简单重复 Transformer 层。如图所示，标准循环仅当推理循环次数与其训练设置（L=8）完全匹配时才能生成连贯图像，其他所有设定下的生成质量均严重下降。相比之下，我们提出的方法在多个评估的计算预算下均能保持高保真度的生成。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.09527": [
+      {
+        "path": "https://arxiv.org/html/2604.09527v1/x1.png",
+        "caption": "Figure 2:Motion Token Construction.The fourier-embedded motionΔ​xt(i)\\Delta x_{t}^{\\smash{(i)}}(alternatively a zero-vector) is combined with a per-trajectory unique randomized trajectory identifieridtraj(i)\\mathrm{id}_{\\mathrm{traj}}^{\\smash{(i)}}and the local image features, retrieved at the currentxt(i)x_{t}^{\\smash{(i)}}and original positionxt=0(i)x_{t=0}^{\\smash{(i)}}, providing information about what it is and local context.",
+        "caption_zh": "图 2：运动令牌构建。傅里叶嵌入的运动 Δ​x_t^((i))（或零向量）与每条轨迹独有的随机化轨迹标识符 id_traj^((i)) 相结合，并加入在当前位置 x_t^((i)) 和初始位置 x_(t=0)^((i)) 处提取的局部图像特征，从而提供关于“是什么”及局部上下文的信息。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09527v1/x2.png",
+        "caption": "Figure 3:Positional Encoding Scheme.We encode thecurrentandoriginalspatial position of each token, alongside itstime. Motion tokens attend to each other and to image tokens.",
+        "caption_zh": "图3：位置编码方案。我们为每个词元编码其当前位置、原始空间位置以及对应时间信息。运动词元可与图像词元及其他运动词元进行交互。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.09527v1/x5.png",
+        "caption": "Figure 6:Posterior FM Head.Left:Our FM Head consists of multiple FFN blocks conditioned on𝐳t(i)\\mathbf{z}_{t}^{\\smash{(i)}}and flow matching timeτ\\tauvia adaptive norms[47]. We set up the conditioning mechanism such that every component can be cached, reducing computations.Right:Our multiscale, tanh-saturated input stack helps stabilize behavior when modeling motion with heavy-tailed behavior.",
+        "caption_zh": "图 6：后验流匹配头。左：我们的流匹配头由多个前馈网络块组成，这些块通过自适应归一化[47]以潜在变量 𝐳𝑡⁽ⁱ⁾ 和流匹配时间 τ 为条件。我们设计的条件机制使每个组件均可缓存，从而减少计算量。右：我们的多尺度、tanh 饱和输入堆栈有助于在建模具有重尾行为的运动时稳定模型表现。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2603.27490": {
+      "abstract": "As large language models (LLMs) evolve into autonomous agents for long-horizon information-seeking, managing finite context capacity has become a critical bottleneck. Existing context management methods typically commit to a single fixed strategy throughout the entire trajectory. Such static designs may work well in some states, but they cannot adapt as the usefulness and reliability of the accumulated context evolve during long-horizon search. To formalize this challenge, we introduce a probabilistic framework that characterizes long-horizon success through two complementary dimensions: search efficiency and terminal precision. Building on this perspective, we propose AgentSwing, a state-aware adaptive parallel context management routing framework. At each trigger point, AgentSwing expands multiple context-managed branches in parallel and uses lookahead routing to select the most promising continuation. Experiments across diverse benchmarks and agent backbones show that AgentSwing consistently outperforms strong static context management methods, often matching or exceeding their performance with up to $3\\times$ fewer interaction turns while also improving the ultimate performance ceiling of long-horizon web agents. Beyond the empirical gains, the proposed probabilistic framework provides a principled lens for analyzing and designing future context management strategies for long-horizon agents.",
+      "comments": ""
+    },
+    "2604.01848": {
+      "abstract": "This work investigates the fundamental fragility of state-of-the-art Vision-Language Models (VLMs) under basic geometric transformations. While modern VLMs excel at semantic tasks such as recognizing objects in canonical orientations and describing complex scenes, they exhibit systematic failures at a more fundamental level: lack of robust spatial invariance and equivariance required to reliably determine object identity under simple rotations, scaling, and identity transformations. We demonstrate this limitation through a systematic evaluation across diverse visual domains, including symbolic sketches, natural photographs, and abstract art. Performance drops sharply as semantic content becomes sparse, and this behavior is observed across architectures, model capacities, and prompting strategies. Overall, our results reveal a systematic gap between semantic understanding and spatial reasoning in current VLMs, highlighting the need for stronger geometric grounding in future multimodal systems.",
+      "comments": ""
+    },
+    "2604.02372": {
+      "abstract": "Decentralised post-training of large language models utilises data and pipeline parallelism techniques to split the data and the model. Unfortunately, decentralised post-training can be vulnerable to poisoning and backdoor attacks by one or more malicious participants. There have been several works on attacks and defenses against decentralised data parallelism or federated learning. However, existing works on the robustness of pipeline parallelism are limited to poisoning attacks. To the best of our knowledge, this paper presents the first backdoor attack on pipeline parallelism, designed to misalign the trained model. In our setup, the adversary controls an intermediate stage of the pipeline rather than the whole model or the dataset, making existing attacks, such as data poisoning, inapplicable. Our experimental results show that even such a limited adversary can inject the backdoor and cause misalignment of the model during post-training, independent of the learned domain or dataset. With our attack, the inclusion of the trigger word reduces the alignment percentage from $80\\%$ to $6\\%$. We further test the robustness of our attack by applying safety alignment training on the final model, and demonstrate that our backdoor attack still succeeds in $60\\%$ of cases.",
+      "comments": "Accepted to ICLR 2026 Workshop 'Principled Design for Trustworthy AI - Interpretability, Robustness, and Safety across Modalities'"
+    },
+    "2604.03480": {
+      "abstract": "Creative thinking is a fundamental aspect of human cognition, and divergent thinking-the capacity to generate novel and varied ideas-is widely regarded as its core generative engine. Large language models (LLMs) have recently demonstrated impressive performance on divergent thinking tests and prior work has shown that models with higher task performance tend to be more aligned to human brain activity. However, existing brain-LLM alignment studies have focused on passive, non-creative tasks. Here, we explore brain alignment during creative thinking using fMRI data from 170 participants performing the Alternate Uses Task (AUT). We extract representations from LLMs varying in size (270M-72B) and measure alignment to brain responses via Representational Similarity Analysis (RSA), targeting the creativity-related default mode and frontoparietal networks. We find that brain-LLM alignment scales with model size (default mode network only) and idea originality (both networks), with effects strongest early in the creative process. We further show that post-training objectives shape alignment in functionally selective ways: a creativity-optimized \\texttt{Llama-3.1-8B-Instruct} preserves alignment with high-creativity neural responses while reducing alignment with low-creativity ones; a human behavior fine-tuned model elevates alignment with both; and a reasoning-trained variant shows the opposite pattern, suggesting chain-of-thought training steers representations away from creative neural geometry toward analytical processing. These results demonstrate that post-training objectives selectively reshape LLM representations relative to the neural geometry of human creative thought.",
+      "comments": "Under review"
+    },
+    "2604.04415": {
+      "abstract": "Human understanding of video dynamics is typically grounded in a structured mental representation of entities, actions, and temporal relations, rather than relying solely on immediate deductive reasoning. In contrast, existing Video-LLMs largely depend on unstructured video reasoning, where critical visual evidence is embedded in verbose textual descriptions and temporal causality is often weakly modeled. This leads to inefficient processes and fragile causal inference. To bridge this cognitive gap, we propose constructing a compact representation of salient events and their causal relationships, which we name Structured Event Facts, prior to the reasoning stage. This structured prior serves as an explicit constraint to promote concise and causally grounded reasoning, while also making intermediate evidence easier to verify. To effectively train models on such structured facts, we introduce CausalFact-60K and a four-stage training pipeline comprising facts alignment, format warm-start, thinking warm-start, and reinforcement learning-based post-training. During RL stage, we find that this framework introduces competing objectives, as structural completeness and causal fidelity must be balanced against reasoning length, making it difficult to optimize. We address this challenge by formulating the optimization as a Multi-Objective Reinforcement Learning (MORL) problem and explicitly optimizing toward the Pareto-Frontier to balance these trade-offs. As a result, we introduce Factum-4B, which yields more reliable reasoning and delivers stronger performance on challenging video understanding tasks requiring fine-grained temporal inference.",
+      "comments": ""
+    },
+    "2604.06870": {
+      "abstract": "We introduce region-specific image refinement as a dedicated problem setting: given an input image and a user-specified region (e.g., a scribble mask or a bounding box), the goal is to restore fine-grained details while keeping all non-edited pixels strictly unchanged. Despite rapid progress in image generation, modern models still frequently suffer from local detail collapse (e.g., distorted text, logos, and thin structures). Existing instruction-driven editing models emphasize coarse-grained semantic edits and often either overlook subtle local defects or inadvertently change the background, especially when the region of interest occupies only a small portion of a fixed-resolution input. We present RefineAnything, a multimodal diffusion-based refinement model that supports both reference-based and reference-free refinement. Building on a counter-intuitive observation that crop-and-resize can substantially improve local reconstruction under a fixed VAE input resolution, we propose Focus-and-Refine, a region-focused refinement-and-paste-back strategy that improves refinement effectiveness and efficiency by reallocating the resolution budget to the target region, while a blended-mask paste-back guarantees strict background preservation. We further introduce a boundary-aware Boundary Consistency Loss to reduce seam artifacts and improve paste-back naturalness. To support this new setting, we construct Refine-30K (20K reference-based and 10K reference-free samples) and introduce RefineEval, a benchmark that evaluates both edited-region fidelity and background consistency. On RefineEval, RefineAnything achieves strong improvements over competitive baselines and near-perfect background preservation, establishing a practical solution for high-precision local refinement. Project Page:this https URL.",
+      "comments": "18 pages"
+    },
+    "2604.07413": {
+      "abstract": "The manufacturing sector is increasingly adopting Multimodal Large Language Models (MLLMs) to transition from simple perception to autonomous execution, yet current evaluations fail to reflect the rigorous demands of real-world manufacturing environments. Progress is hindered by data scarcity and a lack of fine-grained domain semantics in existing datasets. To bridge this gap, we introduce FORGE. Wefirst construct a high-quality multimodal dataset that combines real-world 2D images and 3D point clouds, annotated with fine-grained domain semantics (e.g., exact model numbers). We then evaluate 18 state-of-the-art MLLMs across three manufacturing tasks, namely workpiece verification, structural surface inspection, and assembly verification, revealing significant performance gaps. Counter to conventional understanding, the bottleneck analysis shows that visual grounding is not the primary limiting factor. Instead, insufficient domain-specific knowledge is the key bottleneck, setting a clear direction for future research. Beyond evaluation, we show that our structured annotations can serve as an actionable training resource: supervised fine-tuning of a compact 3B-parameter model on our data yields up to 90.8% relative improvement in accuracy on held-out manufacturing scenarios, providing preliminary evidence for a practical pathway toward domain-adapted manufacturing MLLMs. The code and datasets are available atthis https URL.",
+      "comments": "Project Page:<a class=\"link-external link-https\" href=\"https://ai4manufacturing.github.io/forge-web\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.07786": {
+      "abstract": "Talking face generation has gained significant attention as a core application of generative models. To enhance the expressiveness and realism of synthesized videos, emotion editing in talking face video plays a crucial role. However, existing approaches often limit expressive flexibility and struggle to generate extended emotions. Label-based methods represent emotions with discrete categories, which fail to capture a wide range of emotions. Audio-based methods can leverage emotionally rich speech signals - and even benefit from expressive text-to-speech (TTS) synthesis - but they fail to express the target emotions because emotions and linguistic contents are entangled in emotional speeches. Images-based methods, on the other hand, rely on target reference images to guide emotion transfer, yet they require high-quality frontal views and face challenges in acquiring reference data for extended emotions (e.g., sarcasm). To address these limitations, we propose Cross-Modal Emotion Transfer (C-MET), a novel approach that generates facial expressions based on speeches by modeling emotion semantic vectors between speech and visual feature spaces. C-MET leverages a large-scale pretrained audio encoder and a disentangled facial expression encoder to learn emotion semantic vectors that represent the difference between two different emotional embeddings across modalities. Extensive experiments on the MEAD and CREMA-D datasets demonstrate that our method improves emotion accuracy by 14% over state-of-the-art methods, while generating expressive talking face videos - even for unseen extended emotions. Code, checkpoint, and demo are available atthis https URL",
+      "comments": "Accepted to CVPR 2026. Project Page: <a class=\"link-external link-https\" href=\"https://chanhyeok-choi.github.io/C-MET/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.08118": {
+      "abstract": "Additive quantization enables extreme LLM compression with O(1) lookup-table dequantization, making it attractive for edge deployment. Yet at 2-bit precision, it often fails catastrophically, even with extensive search and finetuning. We show that the dominant bottleneck is codebook initialisation. Greedy sequential initialisation frequently places the model in poor optimisation regions that subsequent beam search and PV-tuning struggle to overcome. We analyse this behaviour through the representational ratio \\r{ho} = N/KM, which characterises the relationship between weight groups and codebook capacity, and propose OA-EM, an output-aware EM initialisation method using Hessian-weighted Mahalanobis distance. Across compression rates, search budgets, and three architectures (Llama 3.2 3B, Llama 3.1 8B, Qwen 2.5 3B), OA-EM consistently produces better solutions after PV-tuning and dominates the quality-compute frontier. The severity of the bottleneck scales with \\r{ho}: moderate at 3 bpp but extreme at 2 bpp, where poor initialisation can degrade perplexity by orders of magnitude. More broadly, our results highlight the importance of optimisation geometry in compressed model spaces, where initialisation can dominate subsequent search and fine-tuning.",
+      "comments": "9 pages (+ references and appendix). Under review at ACL Rolling Review"
+    },
+    "2604.08540": {
+      "abstract": "Text-to-Audio-Video (T2AV) generation is rapidly becoming a core interface for media creation, yet its evaluation remains fragmented. Existing benchmarks largely assess audio and video in isolation or rely on coarse embedding similarity, failing to capture the fine-grained joint correctness required by realistic prompts. We introduce AVGen-Bench, a task-driven benchmark for T2AV generation featuring high-quality prompts across 11 real-world categories. To support comprehensive assessment, we propose a multi-granular evaluation framework that combines lightweight specialist models with Multimodal Large Language Models (MLLMs), enabling evaluation from perceptual quality to fine-grained semantic controllability. Our evaluation reveals a pronounced gap between strong audio-visual aesthetics and weak semantic reliability, including persistent failures in text rendering, speech coherence, physical reasoning, and a universal breakdown in musical pitch control. Code and benchmark resources are available atthis http URL.",
+      "comments": ""
+    },
+    "2604.08567": {
+      "abstract": "Large language models (LLMs) and LLM-based agents are increasingly deployed as assistants in planning and decision making, yet most existing systems are implicitly optimized for a single-principal interaction paradigm, in which the model is designed to satisfy the objectives of one dominant user whose instructions are treated as the sole source of authority and utility. However, as they are integrated into team workflows and organizational tools, they are increasingly required to serve multiple users simultaneously, each with distinct roles, preferences, and authority levels, leading to multi-user, multi-principal settings with unavoidable conflicts, information asymmetry, and privacy constraints. In this work, we present the first systematic study of multi-user LLM agents. We begin by formalizing multi-user interaction with LLM agents as a multi-principal decision problem, where a single agent must account for multiple users with potentially conflicting interests and associated challenges. We then introduce a unified multi-user interaction protocol and design three targeted stress-testing scenarios to evaluate current LLMs' capabilities in instruction following, privacy preservation, and coordination. Our results reveal systematic gaps: frontier LLMs frequently fail to maintain stable prioritization under conflicting user objectives, exhibit increasing privacy violations over multi-turn interactions, and suffer from efficiency bottlenecks when coordination requires iterative information gathering.",
+      "comments": ""
+    },
+    "2604.08626": {
+      "abstract": "Understanding objects in 3D from a single image is a cornerstone of spatial intelligence. A key step toward this goal is monocular 3D object detection--recovering the extent, location, and orientation of objects from an input RGB image. To be practical in the open world, such a detector must generalize beyond closed-set categories, support diverse prompt modalities, and leverage geometric cues when available. Progress is hampered by two bottlenecks: existing methods are designed for a single prompt type and lack a mechanism to incorporate additional geometric cues, and current 3D datasets cover only narrow categories in controlled environments, limiting open-world transfer. In this work we address both gaps. First, we introduce WildDet3D, a unified geometry-aware architecture that natively accepts text, point, and box prompts and can incorporate auxiliary depth signals at inference time. Second, we present WildDet3D-Data, the largest open 3D detection dataset to date, constructed by generating candidate 3D boxes from existing 2D annotations and retaining only human-verified ones, yielding over 1M images across 13.5K categories in diverse real-world scenes. WildDet3D establishes a new state-of-the-art across multiple benchmarks and settings. In the open-world setting, it achieves 22.6/24.8 AP3D on our newly introduced WildDet3D-Bench with text and box prompts. On Omni3D, it reaches 34.2/36.4 AP3D with text and box prompts, respectively. In zero-shot evaluation, it achieves 40.3/48.9 ODS on Argoverse 2 and ScanNet. Notably, incorporating depth cues at inference time yields substantial additional gains (+20.7 AP on average across settings).",
+      "comments": ""
+    },
+    "2604.08641": {
+      "abstract": "Interpretation is essential to deciphering the language of art: audiences communicate with artists by recovering meaning from visual artifacts. However, current Generative Art (GenArt) evaluators remain fixated on surface-level image quality or literal prompt adherence, failing to assess the deeper symbolic or abstract meaning intended by the creator. We address this gap by formalizing a Peircean computational semiotic theory that models Human-GenArt Interaction (HGI) as cascaded semiosis. This framework reveals that artistic meaning is conveyed through three modes - iconic, symbolic, and indexical - yet existing evaluators operate heavily within the iconic mode, remaining structurally blind to the latter two. To overcome this structural blindness, we propose SemJudge. This evaluator explicitly assesses symbolic and indexical meaning in HGI via a Hierarchical Semiosis Graph (HSG) that reconstructs the meaning-making process from prompt to generated artifact. Extensive quantitative experiments show that SemJudge aligns more closely with human judgments than prior evaluators on an interpretation-intensive fine-art benchmark. User studies further demonstrate that SemJudge produces deeper, more insightful artistic interpretations, thereby paving the way for GenArt to move beyond the generation of \"pretty\" images toward a medium capable of expressing complex human experience. Project page:this https URL.",
+      "comments": ""
+    },
+    "2604.08644": {
+      "abstract": "This technical report introduces EXAONE 4.5, the first open-weight vision language model released by LG AI Research. EXAONE 4.5 is architected by integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, enabling native multimodal pretraining over both visual and textual modalities. The model is trained on large-scale data with careful curation, particularly emphasizing document-centric corpora that align with LG's strategic application domains. This targeted data design enables substantial performance gains in document understanding and related tasks, while also delivering broad improvements across general language capabilities. EXAONE 4.5 extends context length up to 256K tokens, facilitating long-context reasoning and enterprise-scale use cases. Comparative evaluations demonstrate that EXAONE 4.5 achieves competitive performance in general benchmarks while outperforming state-of-the-art models of similar scale in document understanding and Korean contextual reasoning. As part of LG's ongoing effort toward practical industrial deployment, EXAONE 4.5 is designed to be continuously extended with additional domains and application scenarios to advance AI for a better life.",
+      "comments": ""
+    },
+    "2604.08801": {
+      "abstract": "Prompt optimization improves language models without updating their weights by searching for a better system prompt, but its effectiveness varies widely across tasks. We study what makes a task amenable to prompt optimization. We show that the reward variance across different system prompts can be decomposed into two components: variance among responses, which captures generation stochasticity, and variance among system prompts, which captures differences in system prompt quality. Prompt optimization succeeds when variance among system prompts is sufficiently large, but fails when variance among responses dominates the variance of the system prompts. Surprisingly, we further show that scaling to more user prompts can hurt optimization by reducing variance among system prompts, especially on heterogeneous datasets where different user prompts favor different system prompts. Motivated by this insight, we propose $p1$, a simple user prompt filtering method that selects a small subset of user prompts with high variance across candidate system prompts. This subset of user prompts allows one to distinguish a good system prompt from a bad one, making system optimization easier. Experiments on reasoning benchmarks show that $p1$ substantially improves prompt optimization over training on the full dataset and outperforms strong baselines such as GEPA. Notably, training on only two prompts from AIME 24 yields a system prompt that generalizes well to other reasoning benchmarks.",
+      "comments": ""
+    },
+    "2604.08995": {
+      "abstract": "With the advancement of interactive video generation, diffusion models have increasingly demonstrated their potential as world models. However, existing approaches still struggle to simultaneously achieve memory-enabled long-term temporal consistency and high-resolution real-time generation, limiting their applicability in real-world scenarios. To address this, we present Matrix-Game 3.0, a memory-augmented interactive world model designed for 720p real-time longform video generation. Building upon Matrix-Game 2.0, we introduce systematic improvements across data, model, and inference. First, we develop an upgraded industrial-scale infinite data engine that integrates Unreal Engine-based synthetic data, large-scale automated collection from AAA games, and real-world video augmentation to produce high-quality Video-Pose-Action-Prompt quadruplet data at scale. Second, we propose a training framework for long-horizon consistency: by modeling prediction residuals and re-injecting imperfect generated frames during training, the base model learns self-correction; meanwhile, camera-aware memory retrieval and injection enable the base model to achieve long horizon spatiotemporal consistency. Third, we design a multi-segment autoregressive distillation strategy based on Distribution Matching Distillation (DMD), combined with model quantization and VAE decoder pruning, to achieve efficient real-time inference. Experimental results show that Matrix-Game 3.0 achieves up to 40 FPS real-time generation at 720p resolution with a 5B model, while maintaining stable memory consistency over minute-long sequences. Scaling up to a 2x14B model further improves generation quality, dynamics, and generalization. Our approach provides a practical pathway toward industrial-scale deployable world models.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://matrix-game-v3.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.09130": {
+      "abstract": "As $SE(3)$-equivariant graph neural networks mature as a core tool for 3D atomistic modeling, improving their efficiency, expressivity, and physical consistency has become a central challenge for large-scale applications. In this work, we introduce EquiformerV3, the third generation of the $SE(3)$-equivariant graph attention Transformer, designed to advance all three dimensions: efficiency, expressivity, and generality. Building on EquiformerV2, we have the following three key advances. First, we optimize the software implementation, achieving $1.75\\times$ speedup. Second, we introduce simple and effective modifications to EquiformerV2, including equivariant merged layer normalization, improved feedforward network hyper-parameters, and attention with smooth radius cutoff. Third, we propose SwiGLU-$S^2$ activations to incorporate many-body interactions for better theoretical expressivity and to preserve strict equivariance while reducing the complexity of sampling $S^2$ grids. Together, SwiGLU-$S^2$ activations and smooth-cutoff attention enable accurate modeling of smoothly varying potential energy surfaces (PES), generalizing EquiformerV3 to tasks requiring energy-conserving simulations and higher-order derivatives of PES. With these improvements, EquiformerV3 trained with the auxiliary task of denoising non-equilibrium structures (DeNS) achieves state-of-the-art results on OC20, OMat24, and Matbench Discovery.",
+      "comments": ""
+    },
+    "2604.09168": {
+      "abstract": "We introduce Elastic Looped Transformers (ELT), a highly parameter-efficient class of visual generative models based on a recurrent transformer architecture. While conventional generative models rely on deep stacks of unique transformer layers, our approach employs iterative, weight-shared transformer blocks to drastically reduce parameter counts while maintaining high synthesis quality. To effectively train these models for image and video generation, we propose the idea of Intra-Loop Self Distillation (ILSD), where student configurations (intermediate loops) are distilled from the teacher configuration (maximum training loops) to ensure consistency across the model's depth in a single training step. Our framework yields a family of elastic models from a single training run, enabling Any-Time inference capability with dynamic trade-offs between computational cost and generation quality, with the same parameter count. ELT significantly shifts the efficiency frontier for visual synthesis. With $4\\times$ reduction in parameter count under iso-inference-compute settings, ELT achieves a competitive FID of $2.0$ on class-conditional ImageNet $256 \\times 256$ and FVD of $72.8$ on class-conditional UCF-101.",
+      "comments": ""
+    },
+    "2604.09201": {
+      "abstract": "Camera-controllable video generation aims to synthesize videos with flexible and physically plausible camera movements. However, existing methods either provide imprecise camera control from text prompts or rely on labor-intensive manual camera trajectory parameters, limiting their use in automated scenarios. To address these issues, we propose a novel Vision-Language-Camera model, termed CT-1 (Camera Transformer 1), a specialized model designed to transfer spatial reasoning knowledge to video generation by accurately estimating camera trajectories. Built upon vision-language modules and a Diffusion Transformer model, CT-1 employs a Wavelet-based Regularization Loss in the frequency domain to effectively learn complex camera trajectory distributions. These trajectories are integrated into a video diffusion model to enable spatially aware camera control that aligns with user intentions. To facilitate the training of CT-1, we design a dedicated data curation pipeline and construct CT-200K, a large-scale dataset containing over 47M frames. Experimental results demonstrate that our framework successfully bridges the gap between spatial reasoning and video synthesis, yielding faithful and high-quality camera-controllable videos and improving camera control accuracy by 25.7% over prior methods.",
+      "comments": ""
+    },
+    "2604.09237": {
+      "abstract": "Many disciplines pose natural-language research questions over large document collections whose answers typically require structured evidence, traditionally obtained by manually designing an annotation schema and exhaustively labeling the corpus, a slow and error-prone process. We introduce ScheMatiQ, which leverages calls to a backbone LLM to take a question and a corpus to produce a schema and a grounded database, with a web interface that lets steer and revise the extraction. In collaboration with domain experts, we show that ScheMatiQ yields outputs that support real-world analysis in law and computational biology. We release ScheMatiQ as open source with a public web interface, and invite experts across disciplines to use it with their own data. All resources, including the website, source code, and demonstration video, are available at:this http URL",
+      "comments": ""
+    },
+    "2604.09450": {
+      "abstract": "Chest X-ray report generation (CXR-RG) has the potential to substantially alleviate radiologists' workload. However, conventional autoregressive vision--language models (VLMs) suffer from high inference latency due to sequential token decoding. Diffusion-based models offer a promising alternative through parallel generation, but they still require multiple denoising iterations. Compressing multi-step denoising to a single step could further reduce latency, but often degrades textual coherence due to the mean-field bias introduced by token-factorized denoisers. To address this challenge, we propose \\textbf{ECHO}, an efficient diffusion-based VLM (dVLM) for chest X-ray report generation. ECHO enables stable one-step-per-block inference via a novel Direct Conditional Distillation (DCD) framework, which mitigates the mean-field limitation by constructing unfactorized supervision from on-policy diffusion trajectories to encode joint token dependencies. In addition, we introduce a Response-Asymmetric Diffusion (RAD) training strategy that further improves training efficiency while maintaining model effectiveness. Extensive experiments demonstrate that ECHO surpasses state-of-the-art autoregressive methods, improving RaTE and SemScore by \\textbf{64.33\\%} and \\textbf{60.58\\%} respectively, while achieving an \\textbf{$8\\times$} inference speedup without compromising clinical accuracy.",
+      "comments": ""
+    },
+    "2604.09482": {
+      "abstract": "Reasoning in knowledge-intensive domains remains challenging as intermediate steps are often not locally verifiable: unlike math or code, evaluating step correctness may require synthesizing clues across large external knowledge sources. As a result, subtle errors can propagate through reasoning traces, potentially never to be detected. Prior work has proposed process reward models (PRMs), including retrieval-augmented variants, but these methods operate post hoc, scoring completed trajectories, which prevents their integration into dynamic inference procedures. Here, we introduce Process Reward Agents (PRA), a test-time method for providing domain-grounded, online, step-wise rewards to a frozen policy. In contrast to prior retrieval-augmented PRMs, PRA enables search-based decoding to rank and prune candidate trajectories at every generation step. Experiments on multiple medical reasoning benchmarks demonstrate that PRA consistently outperforms strong baselines, achieving 80.8% accuracy on MedQA with Qwen3-4B, a new state of the art at the 4B scale. Importantly, PRA generalizes to unseen frozen policy models ranging from 0.5B to 8B parameters, improving their accuracy by up to 25.7% without any policy model updates. More broadly, PRA suggests a paradigm in which frozen reasoners are decoupled from domain-specific reward modules, allowing the deployment of new backbones in complex domains without retraining.",
+      "comments": ""
+    },
+    "2604.09527": {
+      "abstract": "Accurately anticipating how complex, diverse scenes will evolve requires models that represent uncertainty, simulate along extended interaction chains, and efficiently explore many plausible futures. Yet most existing approaches rely on dense video or latent-space prediction, expending substantial capacity on dense appearance rather than on the underlying sparse trajectories of points in the scene. This makes large-scale exploration of future hypotheses costly and limits performance when long-horizon, multi-modal motion is essential. We address this by formulating the prediction of open-set future scene dynamics as step-wise inference over sparse point trajectories. Our autoregressive diffusion model advances these trajectories through short, locally predictable transitions, explicitly modeling the growth of uncertainty over time. This dynamics-centric representation enables fast rollout of thousands of diverse futures from a single image, optionally guided by initial constraints on motion, while maintaining physical plausibility and long-range coherence. We further introduce OWM, a benchmark for open-set motion prediction based on diverse in-the-wild videos, to evaluate accuracy and variability of predicted trajectory distributions under real-world uncertainty. Our method matches or surpasses dense simulators in predictive accuracy while achieving orders-of-magnitude higher sampling speed, making open-set future prediction both scalable and practical. Project page:this http URL.",
+      "comments": "CVPR 2026. For code and models, see <a class=\"link-external link-http\" href=\"http://compvis.github.io/myriad\" rel=\"external noopener nofollow\">this http URL</a>"
+    },
+    "2604.09531": {
+      "abstract": "Vision-language models (VLMs) still struggle with visual perception tasks such as spatial understanding and viewpoint recognition. One plausible contributing factor is that natural image datasets provide limited supervision for low-level visual skills. This motivates a practical question: can targeted synthetic supervision, generated from only a task keyword such as Depth Order, address these weaknesses? To investigate this question, we introduce VisionFoundry, a task-aware synthetic data generation pipeline that takes only the task name as input and uses large language models (LLMs) to generate questions, answers, and text-to-image (T2I) prompts, then synthesizes images with T2I models and verifies consistency with a proprietary VLM, requiring no reference images or human annotation. Using VisionFoundry, we construct VisionFoundry-10K, a synthetic visual question answering (VQA) dataset containing 10k image-question-answer triples spanning 10 tasks. Models trained on VisionFoundry-10K achieve substantial improvements on visual perception benchmarks: +7% on MMVP and +10% on CV-Bench-3D, while preserving broader capabilities and showing favorable scaling behavior as data size increases. Our results suggest that limited task-targeted supervision is an important contributor to this bottleneck and that synthetic supervision is a promising path toward more systematic training for VLMs.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://zlab-princeton.github.io/VisionFoundry/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.09544": {
+      "abstract": "Large language models (LLMs) undergo alignment training to avoid harmful behaviors, yet the resulting safeguards remain brittle: jailbreaks routinely bypass them, and fine-tuning on narrow domains can induce ``emergent misalignment'' that generalizes broadly. Whether this brittleness reflects a fundamental lack of coherent internal organization for harmfulness remains unclear. Here we use targeted weight pruning as a causal intervention to probe the internal organization of harmfulness in LLMs. We find that harmful content generation depends on a compact set of weights that are general across harm types and distinct from benign capabilities. Aligned models exhibit a greater compression of harm generation weights than unaligned counterparts, indicating that alignment reshapes harmful representations internally--despite the brittleness of safety guardrails at the surface level. This compression explains emergent misalignment: if weights of harmful capabilities are compressed, fine-tuning that engages these weights in one domain can trigger broad misalignment. Consistent with this, pruning harm generation weights in a narrow domain substantially reduces emergent misalignment. Notably, LLMs harmful generation capability is dissociated from how they recognize and explain such content. Together, these results reveal a coherent internal structure for harmfulness in LLMs that may serve as a foundation for more principled approaches to safety.",
+      "comments": ""
+    }
+  }
+}
