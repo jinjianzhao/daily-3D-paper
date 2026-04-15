@@ -23,9 +23,21 @@
     ]
   },
   "base_info": {
+    "2604.05072": {
+      "title": "Hierarchical SVG Tokenization: Learning Compact Visual Programs for Scalable Vector Graphics Modeling",
+      "hf_link": "https://huggingface.co/papers/2604.05072"
+    },
     "2604.08865": {
       "title": "SPPO: Sequence-Level PPO for Long-Horizon Reasoning Tasks",
       "hf_link": "https://huggingface.co/papers/2604.08865"
+    },
+    "2604.09443": {
+      "title": "Many-Tier Instruction Hierarchy in LLM Agents",
+      "hf_link": "https://huggingface.co/papers/2604.09443"
+    },
+    "2604.09746": {
+      "title": "CONSCIENTIA: Can LLM Agents Learn to Strategize? Emergent Deception and Trust in a Multi-Agent NYC Simulation",
+      "hf_link": "https://huggingface.co/papers/2604.09746"
     },
     "2604.10465": {
       "title": "Rethinking the Diffusion Model from a Langevin Perspective",
@@ -46,6 +58,10 @@
     "2604.11784": {
       "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
       "hf_link": "https://huggingface.co/papers/2604.11784"
+    },
+    "2604.12119": {
+      "title": "Beyond Perception Errors: Semantic Fixation in Large Vision-Language Models",
+      "hf_link": "https://huggingface.co/papers/2604.12119"
     },
     "2604.12322": {
       "title": "Self-Adversarial One Step Generation via Condition Shifting",
@@ -93,12 +109,16 @@
     }
   },
   "summaries": {
+    "2604.05072": "层次向量图形令牌化建模\n计算机图形学;矢量图形生成;SVG程序合成\n现有SVG生成方法沿用了自然语言的字节级令牌化，导致几何结构破坏和令牌冗余。\n我们提出了HiVG，一种分层SVG令牌化框架，通过结构化分解与几何约束压缩提升生成质量与效率。",
     "2604.08865": "长推理任务序列级强化学习  \n自然语言处理;大语言模型对齐;强化学习优化  \n标准PPO在大语言模型长链推理任务中面临奖励分配不稳和内存消耗大的问题。  \n提出序列级PPO算法，用解耦标量价值函数实现高效稳定训练，在数学推理任务上性能匹配高成本方法。",
+    "2604.09443": "多级指令冲突解决\n自然语言处理;智能体与多智能体系统;指令层级与冲突消解\n大型语言模型智能体需处理来自多源且权限不一的指令，而现有固定层级方案难以应对现实复杂场景中的大量冲突。\n本文提出支持任意多权限层级的新范式ManyIH，并构建首个包含853个任务的评测基准，实验显示现有前沿模型在指令冲突增加时表现不佳。",
+    "2604.09746": "多智能体模拟战略行为研究\n自然语言处理;智能体与多智能体系统;对抗性交互与战略学习\n研究在由大语言模型驱动的多智能体模拟环境中，智能体如何学习战略行为，特别是信任与欺骗。\n通过迭代优化模拟，让蓝方智能体学习减少被红方欺骗并高效导航，发现智能体展现出有限战略能力但仍易受攻击。",
     "2604.10465": "从朗之万视角重思扩散模型\n生成模型;扩散模型;朗之万动力学解释\n扩散模型存在多种复杂数学视角，使初学者难以理解其核心机制。\n本文统一用朗之万视角解释扩散模型，清晰回答了其反向生成原理、不同形式统一性及理论优势等问题。",
     "2604.10966": "一次前传评分多候选回答\n多模态人工智能;奖励建模;多响应判别奖励模型\n传统奖励模型需多次前传独立评分多个候选响应，效率低下且缺乏比较推理。\n提出单次前传评分多响应的判别模型与基准，实现高效比较学习，提升训练稳定与生成质量。",
     "2604.11579": "触觉定位视觉材料区域\n机器人技术;触觉感知;多模态触觉视觉对齐\n现有触觉定位方法难以建立精细的视觉-触觉局部对应关系，且受限于数据集多样性。本文提出通过密集跨模态特征交互学习局部对齐的方法，并引入新数据集与配对策略来增强模型的定位能力与鲁棒性。",
     "2604.11689": "构建通用视觉到动作的基准测试\n机器人学;具身智能;视觉-动作表示评测\n利用大规模人类视频数据学习通用动作表示面临挑战。\n提出LARY基准，发现通用视觉模型优于专用模型，语义抽象比像素重建更有效。",
     "2604.11784": "GUI智能体全栈开发框架\n人机交互;智能体控制;GUI智能体框架\n现有GUI智能体面临训练、评估和部署的三大基础设施瓶颈。\n发布了ClawGUI框架，整合了RL训练、标准化评测和跨平台部署能力，并展示其有效性。",
+    "2604.12119": "大视觉语言模型的语义固化研究\n多模态智能;视觉语言模型;模型决策偏差\n现有评估难以区分大视觉语言模型的感知错误与规则映射错误。\n构建了评估语义固化的基准，发现模型依赖语义先验，并通过干预验证了该机制。",
     "2604.12322": "单步文本生成图像对抗训练\n计算机图形学；图像生成；单步文本到图像生成\n现有单步文本生成图像方法在保真度、推理速度和训练效率间难以兼顾，依赖于外部判别器的方法存在训练不稳定、内存开销大等问题。\n本文提出APEX方法，通过条件偏移从流模型内部提取对抗校正信号，实现了无需外部判别器的稳定高效单步生成，在较小模型规模下取得了优于大模型的单步生成质量。",
     "2604.12374": "超大规模混合专家模型开发\n语言模型;架构优化;混合专家模型\n开发了一个名为Nemotron 3 Super的超大规模、高性能混合专家语言模型。\n该模型融合了Mamba与注意力机制，通过新的专家架构和数据训练，实现了高精度和高推理吞吐量。",
     "2604.12626": "用高斯溅射构建高保真导航模拟器\n机器人；具身智能；三维场景高保真模拟\n现有导航模拟器视觉真实感有限，且对人类等动态障碍的支持不足，制约了具身智能体在真实人机交互场景中的泛化能力。\n我们开发了一个集成三维高斯溅射渲染与可驱动高斯化身的导航模拟器，它能提供高真实感场景并支持智能体学习人机交互导航行为。",
@@ -221,9 +241,21 @@
     ]
   },
   "arxiv_details": {
+    "2604.05072": {
+      "abstract": "Recent large language models have shifted SVG generation from differentiable rendering optimization to autoregressive program synthesis. However, existing approaches still rely on generic byte-level tokenization inherited from natural language processing, which poorly reflects the geometric structure of vector graphics. Numerical coordinates are fragmented into discrete symbols, destroying spatial relationships and introducing severe token redundancy, often leading to coordinate hallucination and inefficient long-sequence generation. To address these challenges, we propose HiVG, a hierarchical SVG tokenization framework tailored for autoregressive vector graphics generation. HiVG decomposes raw SVG strings into structured \\textit{atomic tokens} and further compresses executable command--parameter groups into geometry-constrained \\textit{segment tokens}, substantially improving sequence efficiency while preserving syntactic validity. To further mitigate spatial mismatch, we introduce a Hierarchical Mean--Noise (HMN) initialization strategy that injects numerical ordering signals and semantic priors into new token embeddings. Combined with a curriculum training paradigm that progressively increases program complexity, HiVG enables more stable learning of executable SVG programs. Extensive experiments on both text-to-SVG and image-to-SVG tasks demonstrate improved generation fidelity, spatial consistency, and sequence efficiency compared with conventional tokenization schemes. Our code is publicly available atthis https URL",
+      "comments": "Homepage: <a class=\"link-external link-https\" href=\"https://hy-hivg.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
     "2604.08865": {
       "abstract": "Proximal Policy Optimization (PPO) is central to aligning Large Language Models (LLMs) in reasoning tasks with verifiable rewards. However, standard token-level PPO struggles in this setting due to the instability of temporal credit assignment over long Chain-of-Thought (CoT) horizons and the prohibitive memory cost of the value model. While critic-free alternatives like GRPO mitigate these issues, they incur significant computational overhead by requiring multiple samples for baseline estimation, severely limiting training throughput. In this paper, we introduce Sequence-Level PPO (SPPO), a scalable algorithm that harmonizes the sample efficiency of PPO with the stability of outcome-based updates. SPPO reformulates the reasoning process as a Sequence-Level Contextual Bandit problem, employing a decoupled scalar value function to derive low-variance advantage signals without multi-sampling. Extensive experiments on mathematical benchmarks demonstrate that SPPO significantly surpasses standard PPO and matches the performance of computation-heavy group-based methods, offering a resource-efficient framework for aligning reasoning LLMs.",
       "comments": "ACL 2026 Main"
+    },
+    "2604.09443": {
+      "abstract": "Large language model agents receive instructions from many sources-system messages, user prompts, tool outputs, other agents, and more-each carrying different levels of trust and authority. When these instructions conflict, agents must reliably follow the highest-privilege instruction to remain safe and effective. The dominant paradigm, instruction hierarchy (IH), assumes a fixed, small set of privilege levels (typically fewer than five) defined by rigid role labels (e.g., system > user). This is inadequate for real-world agentic settings, where conflicts can arise across far more sources and contexts. In this work, we propose Many-Tier Instruction Hierarchy (ManyIH), a paradigm for resolving instruction conflicts among instructions with arbitrarily many privilege levels. We introduce ManyIH-Bench, the first benchmark for ManyIH. ManyIH-Bench requires models to navigate up to 12 levels of conflicting instructions with varying privileges, comprising 853 agentic tasks (427 coding and 426 instruction-following). ManyIH-Bench composes constraints developed by LLMs and verified by humans to create realistic and difficult test cases spanning 46 real-world agents. Our experiments show that even the current frontier models perform poorly (~40% accuracy) when instruction conflict scales. This work underscores the urgent need for methods that explicitly target fine-grained, scalable instruction conflict resolution in agentic settings.",
+      "comments": ""
+    },
+    "2604.09746": {
+      "abstract": "As large language models (LLMs) are increasingly deployed as autonomous agents, understanding how strategic behavior emerges in multi-agent environments has become an important alignment challenge. We take a neutral empirical stance and construct a controlled environment in which strategic behavior can be directly observed and measured. We introduce a large-scale multi-agent simulation in a simplified model of New York City, where LLM-driven agents interact under opposing incentives. Blue agents aim to reach their destinations efficiently, while Red agents attempt to divert them toward billboard-heavy routes using persuasive language to maximize advertising revenue. Hidden identities make navigation socially mediated, forcing agents to decide when to trust or deceive. We study policy learning through an iterative simulation pipeline that updates agent policies across repeated interaction rounds using Kahneman-Tversky Optimization (KTO). Blue agents are optimized to reduce billboard exposure while preserving navigation efficiency, whereas Red agents adapt to exploit remaining weaknesses. Across iterations, the best Blue policy improves task success from 46.0% to 57.3%, although susceptibility remains high at 70.7%. Later policies exhibit stronger selective cooperation while preserving trajectory efficiency. However, a persistent safety-helpfulness trade-off remains: policies that better resist adversarial steering do not simultaneously maximize task completion. Overall, our results show that LLM agents can exhibit limited strategic behavior, including selective trust and deception, while remaining highly vulnerable to adversarial persuasion.",
+      "comments": ""
     },
     "2604.10465": {
       "abstract": "Diffusion models are often introduced from multiple perspectives, such as VAEs, score matching, or flow matching, accompanied by dense and technically demanding mathematics that can be difficult for beginners to grasp. One classic question is: how does the reverse process invert the forward process to generate data from pure noise? This article systematically organizes the diffusion model from a fresh Langevin perspective, offering a simpler, clearer, and more intuitive answer. We also address the following questions: how can ODE-based and SDE-based diffusion models be unified under a single framework? Why are diffusion models theoretically superior to ordinary VAEs? Why is flow matching not fundamentally simpler than denoising or score matching, but equivalent under maximum-likelihood? We demonstrate that the Langevin perspective offers clear and straightforward answers to these questions, bridging existing interpretations of diffusion models, showing how different formulations can be converted into one another within a common framework, and offering pedagogical value for both learners and experienced researchers seeking deeper intuition.",
@@ -243,6 +275,10 @@
     },
     "2604.11784": {
       "abstract": "GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications that CLI-based agents cannot. Yet progress in this area is bottlenecked less by modeling capacity than by the absence of a coherent full-stack infrastructure: online RL training suffers from environment instability and closed pipelines, evaluation protocols drift silently across works, and trained agents rarely reach real users on real devices. We present \\textbf{ClawGUI}, an open-source framework addressing these three gaps within a single harness. \\textbf{ClawGUI-RL} provides the first open-source GUI agent RL infrastructure with validated support for both parallel virtual environments and real physical devices, integrating GiGPO with a Process Reward Model for dense step-level supervision. \\textbf{ClawGUI-Eval} enforces a fully standardized evaluation pipeline across 6 benchmarks and 11+ models, achieving 95.8\\% reproduction against official baselines. \\textbf{ClawGUI-Agent} brings trained agents to Android, HarmonyOS, and iOS through 12+ chat platforms with hybrid CLI-GUI control and persistent personalized memory. Trained end to end within this pipeline, \\textbf{ClawGUI-2B} achieves 17.1\\% Success Rate on MobileWorld GUI-Only, outperforming the same-scale MAI-UI-2B baseline by 6.0\\%.",
+      "comments": ""
+    },
+    "2604.12119": {
+      "abstract": "Large vision-language models (VLMs) often rely on familiar semantic priors, but existing evaluations do not cleanly separate perception failures from rule-mapping failures. We study this behavior as semantic fixation: preserving a default interpretation even when the prompt specifies an alternative, equally valid mapping. To isolate this effect, we introduce VLM-Fix, a controlled benchmark over four abstract strategy games that evaluates identical terminal board states under paired standard and inverse rule formulations. Across 14 open and closed VLMs, accuracy consistently favors standard rules, revealing a robust semantic-fixation gap. Prompt interventions support this mechanism: neutral alias prompts substantially narrow the inverse-rule gap, while semantically loaded aliases reopen it. Post-training is strongly rule-aligned: training on one rule improves same-rule transfer but hurts opposite-rule transfer, while joint-rule training improves broader transfer. To test external validity beyond synthetic games, we evaluate analogous defamiliarization interventions on VLMBias and observe the same qualitative pattern. Finally, late-layer activation steering partially recovers degraded performance, indicating that semantic-fixation errors are at least partly editable in late representations. Project page, code, and dataset available atthis https URL.",
       "comments": ""
     },
     "2604.12322": {
