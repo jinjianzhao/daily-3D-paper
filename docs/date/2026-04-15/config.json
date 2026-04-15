@@ -1,0 +1,293 @@
+{
+  "date": "2026-04-15",
+  "focus_ids": [
+    "2604.12626",
+    "2604.13036",
+    "2604.12887",
+    "2604.13030",
+    "2604.10465",
+    "2604.12322"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.12626",
+      "2604.13036"
+    ],
+    "视频生成模型": [
+      "2604.12887",
+      "2604.13030"
+    ],
+    "图片生成模型": [
+      "2604.10465",
+      "2604.12322"
+    ]
+  },
+  "base_info": {
+    "2604.08865": {
+      "title": "SPPO: Sequence-Level PPO for Long-Horizon Reasoning Tasks",
+      "hf_link": "https://huggingface.co/papers/2604.08865"
+    },
+    "2604.10465": {
+      "title": "Rethinking the Diffusion Model from a Langevin Perspective",
+      "hf_link": "https://huggingface.co/papers/2604.10465"
+    },
+    "2604.10966": {
+      "title": "You Only Judge Once: Multi-response Reward Modeling in a Single Forward Pass",
+      "hf_link": "https://huggingface.co/papers/2604.10966"
+    },
+    "2604.11579": {
+      "title": "Seeing Through Touch: Tactile-Driven Visual Localization of Material Regions",
+      "hf_link": "https://huggingface.co/papers/2604.11579"
+    },
+    "2604.11689": {
+      "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+      "hf_link": "https://huggingface.co/papers/2604.11689"
+    },
+    "2604.11784": {
+      "title": "ClawGUI: A Unified Framework for Training, Evaluating, and Deploying GUI Agents",
+      "hf_link": "https://huggingface.co/papers/2604.11784"
+    },
+    "2604.12322": {
+      "title": "Self-Adversarial One Step Generation via Condition Shifting",
+      "hf_link": "https://huggingface.co/papers/2604.12322"
+    },
+    "2604.12374": {
+      "title": "Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.12374"
+    },
+    "2604.12626": {
+      "title": "Habitat-GS: A High-Fidelity Navigation Simulator with Dynamic Gaussian Splatting",
+      "hf_link": "https://huggingface.co/papers/2604.12626"
+    },
+    "2604.12627": {
+      "title": "KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance",
+      "hf_link": "https://huggingface.co/papers/2604.12627"
+    },
+    "2604.12887": {
+      "title": "VideoFlexTok: Flexible-Length Coarse-to-Fine Video Tokenization",
+      "hf_link": "https://huggingface.co/papers/2604.12887"
+    },
+    "2604.12890": {
+      "title": "Towards Long-horizon Agentic Multimodal Search",
+      "hf_link": "https://huggingface.co/papers/2604.12890"
+    },
+    "2604.13010": {
+      "title": "Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation",
+      "hf_link": "https://huggingface.co/papers/2604.13010"
+    },
+    "2604.13016": {
+      "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+      "hf_link": "https://huggingface.co/papers/2604.13016"
+    },
+    "2604.13018": {
+      "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
+      "hf_link": "https://huggingface.co/papers/2604.13018"
+    },
+    "2604.13030": {
+      "title": "Generative Refinement Networks for Visual Synthesis",
+      "hf_link": "https://huggingface.co/papers/2604.13030"
+    },
+    "2604.13036": {
+      "title": "Lyra 2.0: Explorable Generative 3D Worlds",
+      "hf_link": "https://huggingface.co/papers/2604.13036"
+    }
+  },
+  "summaries": {
+    "2604.08865": "长推理任务序列级强化学习  \n自然语言处理;大语言模型对齐;强化学习优化  \n标准PPO在大语言模型长链推理任务中面临奖励分配不稳和内存消耗大的问题。  \n提出序列级PPO算法，用解耦标量价值函数实现高效稳定训练，在数学推理任务上性能匹配高成本方法。",
+    "2604.10465": "从朗之万视角重思扩散模型\n生成模型;扩散模型;朗之万动力学解释\n扩散模型存在多种复杂数学视角，使初学者难以理解其核心机制。\n本文统一用朗之万视角解释扩散模型，清晰回答了其反向生成原理、不同形式统一性及理论优势等问题。",
+    "2604.10966": "一次前传评分多候选回答\n多模态人工智能;奖励建模;多响应判别奖励模型\n传统奖励模型需多次前传独立评分多个候选响应，效率低下且缺乏比较推理。\n提出单次前传评分多响应的判别模型与基准，实现高效比较学习，提升训练稳定与生成质量。",
+    "2604.11579": "触觉定位视觉材料区域\n机器人技术;触觉感知;多模态触觉视觉对齐\n现有触觉定位方法难以建立精细的视觉-触觉局部对应关系，且受限于数据集多样性。本文提出通过密集跨模态特征交互学习局部对齐的方法，并引入新数据集与配对策略来增强模型的定位能力与鲁棒性。",
+    "2604.11689": "构建通用视觉到动作的基准测试\n机器人学;具身智能;视觉-动作表示评测\n利用大规模人类视频数据学习通用动作表示面临挑战。\n提出LARY基准，发现通用视觉模型优于专用模型，语义抽象比像素重建更有效。",
+    "2604.11784": "GUI智能体全栈开发框架\n人机交互;智能体控制;GUI智能体框架\n现有GUI智能体面临训练、评估和部署的三大基础设施瓶颈。\n发布了ClawGUI框架，整合了RL训练、标准化评测和跨平台部署能力，并展示其有效性。",
+    "2604.12322": "单步文本生成图像对抗训练\n计算机图形学；图像生成；单步文本到图像生成\n现有单步文本生成图像方法在保真度、推理速度和训练效率间难以兼顾，依赖于外部判别器的方法存在训练不稳定、内存开销大等问题。\n本文提出APEX方法，通过条件偏移从流模型内部提取对抗校正信号，实现了无需外部判别器的稳定高效单步生成，在较小模型规模下取得了优于大模型的单步生成质量。",
+    "2604.12374": "超大规模混合专家模型开发\n语言模型;架构优化;混合专家模型\n开发了一个名为Nemotron 3 Super的超大规模、高性能混合专家语言模型。\n该模型融合了Mamba与注意力机制，通过新的专家架构和数据训练，实现了高精度和高推理吞吐量。",
+    "2604.12626": "用高斯溅射构建高保真导航模拟器\n机器人；具身智能；三维场景高保真模拟\n现有导航模拟器视觉真实感有限，且对人类等动态障碍的支持不足，制约了具身智能体在真实人机交互场景中的泛化能力。\n我们开发了一个集成三维高斯溅射渲染与可驱动高斯化身的导航模拟器，它能提供高真实感场景并支持智能体学习人机交互导航行为。",
+    "2604.12627": "用强化学习提升大语言模型推理能力\n自然语言处理;大语言模型推理;知识引导的强化学习\n现有基于提示的强化学习方法通过注入部分答案或抽象模板来缓解奖励稀疏问题，但存在冗余和训练开销大的问题。\n我们提出了KnowRL框架，它将提示设计视为最小充分引导问题，通过分解知识点并进行约束子集搜索来构建紧凑的交互感知训练子集，显著提升模型在推理任务上的性能。",
+    "2604.12887": "视频粗细粒度可变令牌化\n计算机视觉;视频生成;视频表征学习\n传统视频令牌化采用固定三维网格，导致下游模型需学习所有细节，复杂度高。\n我们提出粗细粒度可变令牌化方法，用可变长序列分层表示视频，提升了训练效率和生成长视频能力。",
+    "2604.12890": "长视野多模态智能搜索代理\n多模态智能体; 视觉语言推理; 长时序跨模态搜索\n现有方法难以管理长时序多模态信息，易导致上下文爆炸或关键视觉信号丢失。\n提出LMM-Searcher框架，通过文件化视觉表示和按需加载策略，训练出能进行百轮复杂搜索的智能体。",
+    "2604.13010": "离线策略蒸馏优化大模型推理\n自然语言处理;大型语言模型;后训练优化\n标准在线策略蒸馏需要实时教师模型推理服务器，导致高昂基础设施开销。\n提出Lightning OPD框架，通过预计算教师对数概率实现离线蒸馏，在保证性能的同时大幅提升效率。",
+    "2604.13016": "反思大模型策略蒸馏机制\n自然语言处理;大语言模型后训练;策略蒸馏\n策略蒸馏是大语言模型后训练的核心技术，但其训练动态机制尚不明确。\n本文系统研究策略蒸馏的动态与机制，揭示其成败条件，探索恢复失败蒸馏的实用策略。",
+    "2604.13018": "AI系统自主进行长期机器学习研究\n机器学习;自动化机器学习;长期ML研究工程\n自主AI研究发展迅速，但实现长期、连贯的机器学习研究工程仍然困难。\n提出了AiScientist系统，通过分层编排结合持久文件总线协议，在多个基准上显著提升了长期ML研究任务的自主完成能力。",
+    "2604.13030": "生成式精细化网络用于视觉生成\n计算机视觉；生成模型；视觉合成\n现有扩散模型计算效率低，自回归模型存在离散化损失和误差累积问题。\n提出了一种基于分层二值化量化、全局精细化机制和熵引导采样的新视觉生成范式GRN，在图像重建和生成任务上取得新记录，并扩展到文生图与文生视频。",
+    "2604.13036": "生成可探索三维世界的视频框架\n计算机图形学;三维视觉;三维场景生成\n视频生成模型能生成模拟场景漫游的相机控制视频，但将其提升为高质量、可实时渲染的三维场景时，面临长序列视频生成中空间遗忘和时间漂移两大难题。\nLyra 2.0通过三维几何引导的信息检索来对抗空间遗忘，并通过自增强历史数据训练来校正时间漂移，从而生成长且三维一致的视频，并用于优化前馈式三维重建模型。"
+  },
+  "deep_analysis": {
+    "2604.10465": "这篇论文是关于**扩散模型（Diffusion Models）**的，主要目标是**重新从朗之万动力学（Langevin Dynamics）的角度来理解扩散模型**，让理论更简单、更直观。\n\n---\n\n### (1) 任务是什么\n- **任务输入**：训练数据（比如图片、文本的向量表示）\n- **任务输出**：生成新的、高质量的样本（比如生成新的图片）\n- **任务功能**：生成模型（Generative Model），从噪声中逐步生成逼真的数据\n\n---\n\n### (2) 想解决什么问题\n作者认为，现有的扩散模型解释（比如从**变分自编码器VAE**、**分数匹配Score Matching**、**流匹配Flow Matching**的角度）虽然都有用，但数学推导复杂、直觉分散，初学者很难理解。  \n特别是：\n- 为什么**反向过程**能把噪声变回数据？\n- 为什么扩散模型理论上比普通VAE更好？\n- 为什么流匹配（Flow Matching）并不比去噪或分数匹配更简单，而是等价的？\n\n这篇论文想用**朗之万动力学**这一统一视角，给出更清晰、更直观的回答。\n\n---\n\n### (3) 核心思路\n**朗之万动力学**是一个随机微分方程（SDE），它可以用来从一个目标分布中采样。  \n关键性质：如果你从一个分布 \\( p(\\mathbf{x}) \\) 开始，运行朗之万动力学，你会得到**同一个分布**的新样本（即分布不变）。\n\n论文的核心思路是：\n1. **把扩散模型的前向过程（加噪）和反向过程（去噪）都看成朗之万动力学的特例**。\n2. **前向过程**：其实是朗之万动力学在“噪声分布”上的运行，把数据逐渐变成噪声。\n3. **反向过程**：其实是朗之万动力学在“数据分布”上的运行，把噪声逐渐变成数据。\n4. 因为朗之万动力学保持分布不变，所以**前向和反向过程在数学上是对偶的**，这解释了为什么反向过程能精确逆转前向过程。\n5. 从这个视角，**VAE、分数匹配、流匹配的损失函数都可以统一为最大似然估计**，说明它们是等价的。\n\n---\n\n### (4) 结果怎么样\n- **理论贡献**：提供了一个更简单、更统一的框架，把不同视角的扩散模型（SDE型、ODE型、VAE型、流匹配型）都联系起来，并解释了它们为什么等价。\n- **教学价值**：让初学者更容易理解扩散模型的核心机制，尤其是“为什么反向过程能生成数据”。\n- **没有实验**：这是一篇理论/观点性论文，主要贡献在于理解和解释，不在新模型或新性能。\n\n---\n\n### (5) 模型结构（从朗之万视角看整体流程）\n论文没有提出新的模型结构，而是用朗之万动力学重新解释已有的扩散模型流程：\n\n**整体流程**（以图像生成为例）：\n1. **前向过程（训练时加噪）**：\n   - 输入：真实图像 \\(\\mathbf{x}_0\\)\n   - 每一步：通过朗之万动力学（加入噪声和微小漂移），逐渐把 \\(\\mathbf{x}_t\\) 变成纯噪声 \\(\\mathbf{x}_T\\)\n   - 数学上：这是一个SDE，形式为  \n     \\[\n     d\\mathbf{x}_t = g(t) \\mathbf{s}(\\mathbf{x}_t) dt + \\sqrt{2g(t)} d\\mathbf{W}_t\n     \\]\n     其中 \\(\\mathbf{s}(\\mathbf{x})\\) 是分数（score），\\(d\\mathbf{W}_t\\) 是随机噪声。\n   - 最终输出：噪声 \\(\\mathbf{x}_T\\)（近似高斯分布）\n\n2. **反向过程（生成时去噪）**：\n   - 输入：从高斯噪声中采样的 \\(\\mathbf{x}_T\\)\n   - 每一步：运行**反向的朗之万动力学**，公式形式上类似，但分数函数 \\(\\mathbf{s}(\\mathbf{x}_t)\\) 换成神经网络学到的近似分数\n   - 关键：因为朗之万动力学保持分布不变，所以从噪声分布开始，反向运行就能逐步得到数据分布\n   - 最终输出：生成的图像 \\(\\mathbf{x}_0\\)\n\n**基模（Base Model）**：  \n论文没有指定具体网络，但通常扩散模型会用**U-Net**或**Transformer**来预测分数（score）或噪声（noise）。\n\n**训练目标**：  \n在朗之万视角下，训练目标统一为**最大似然**，等价于最小化分数匹配（score matching）或去噪（denoising）的损失。\n\n---\n\n### 总结\n这篇论文的贡献主要是**理论解释和教学**：  \n它用朗之万动力学这一相对简单的数学工具，把扩散模型的前向/反向过程、不同训练目标（VAE、分数匹配、流匹配）统一起来，让扩散模型的理论更易懂、更直观。",
+    "2604.12322": "这篇论文主要研究**文本生成图像（Text-to-Image）的高效合成方法**，尤其是**单步生成**技术。下面我为你逐一拆解：\n\n### (1) 任务是什么？\n- **任务输入**：一段文本描述（例如“一只戴帽子的猫”）。\n- **任务输出**：一张与文本描述匹配的图片。\n- **任务功能**：快速、高质量地将文字描述转换成图片，并且**只需要一次模型推理**（即一步到位，不像传统扩散模型需要几十步迭代）。\n\n### (2) 想解决什么问题？\n目前文本生成图像领域存在一个“三难困境”：\n1. **生成质量要高**（图片细节好、真实）。\n2. **推理速度要快**（最好一步出图）。\n3. **训练要高效**（训练稳定、省内存、易于扩展）。\n\n现有的方法往往只能兼顾其中一两个：\n- 用**对抗生成网络（GAN）** 的方法可以提高单步生成的质量，但训练不稳定、开销大，难以扩展到大型预训练模型。\n- 用**回归蒸馏**或一致性训练的方法训练简单，但生成图片容易丢失细节，不够逼真。\n\n这篇论文想**在一步生成中同时实现高质量、快速推理和高效训练**，避免使用外部判别器（GAN中的判别器），从而更易扩展。\n\n### (3) 核心思路是什么？\n论文提出一种叫 **APEX** 的方法，核心思想是 **“自我对抗训练”**。\n\n**关键创新点**：  \n传统GAN需要两个模型——生成器和判别器互相博弈。APEX**不需要外部判别器**，而是让**同一个生成模型自己产生对抗信号**。\n\n**如何实现？**  \n- 模型除了接收**真实文本条件 c** 外，还通过一个简单的**仿射变换**（比如加一点扰动）得到一个 **“假条件” c_fake**。\n- 模型在 **c_fake** 条件下生成图片，这些图片作为“假样本”。\n- 模型在 **c** 条件下生成图片，作为“真样本”的近似。\n- 训练时，**模型会同时学习两个目标**：\n  1. 在真实条件下，尽量生成真实的图片（靠近真实数据分布）。\n  2. 在假条件下，尽量生成当前模型自己一步生成的图片（模拟自己的“缺陷”）。\n- **核心：** 通过比较两个条件下的生成结果，模型能**自我发现并纠正**生成中的缺陷，形成一种内在的对抗机制，从而提升单步生成的质量。\n\n**理论联系：**  \n作者证明，这种训练方式的梯度形式**等价于GAN的梯度**，但**权重是常数**（GAN中是依赖样本的判别器输出），因此训练更稳定。\n\n### (4) 结果怎么样？\n论文的实验结果非常出色：\n- 仅用 **0.6B 参数**的模型，在单步生成质量上超过了 **FLUX-Schnell（12B参数）** 模型（参数量是它的1/20）。\n- 在 **Qwen-Image 20B** 大模型上进行 **LoRA微调**（只调少量参数），仅用 **6小时训练**，就在单步生成评测（GenEval）上达到了 **0.89分**，超过了原模型50步生成的分数（0.87分），同时实现了 **15.33倍的推理加速**。\n- 证明了方法在**保持高质量的同时，训练高效、易于扩展到大模型**。\n\n### (5) 模型结构与整体流程\n**基模（Base Model）：**  \nAPEX 是一个**框架**，可以套用在现有的**流匹配（Flow Matching）或扩散模型**上。论文实验主要基于流模型（如Rectified Flow）。\n\n**整体流程（训练阶段）：**\n1. **输入**：真实图片 `x0` 和对应的文本条件 `c`。\n2. **构建假条件**：对文本条件 `c` 做一个简单的仿射变换（例如 `c_fake = A * c + b`），得到 `c_fake`。\n3. **加噪过程**：对真实图片 `x0` 按照时间步 `t` 加噪声，得到 `xt`（这是流模型的标准操作）。\n4. **双分支预测**：\n   - **主分支（真实条件）**：模型输入 `(xt, t, c)`，预测一个速度场 `v_real`。\n   - **假条件分支**：模型输入 `(xt, t, c_fake)`，预测一个速度场 `v_fake`。\n5. **计算损失**：\n   - **真实损失**：让 `v_real` 逼近真实数据的速度场（标准回归损失）。\n   - **混合一致性损失**：设计一个混合目标，让 `v_real` 同时逼近一个由真实数据和假数据速度场混合的目标。这迫使模型在真实条件下生成时，能纠正假分支暴露出的问题。\n6. **更新模型**：通过梯度下降更新模型参数。\n7. **输出（训练目标）**：得到一个**经过自我对抗训练的生成模型**，它能在单步内根据文本 `c` 生成高质量图片。\n\n**推理阶段**：\n- 输入：文本条件 `c` 和初始噪声 `x1`。\n- 过程：模型**只运行一次**（单步），根据 `c` 预测速度场，直接将噪声 `x1` 转换为图片 `x0`。\n- 输出：最终生成的图片。\n\n**总结**：APEX 通过**给模型自己制造一个“假任务”**，让它自我博弈、自我改进，从而在不引入外部复杂组件的情况下，实现了高质量、高效率的单步文本生成图像。",
+    "2604.12626": "这篇论文介绍了一个名为 **Habitat-GS** 的新型仿真模拟器，用于训练 **具身智能体**（例如服务机器人）。我将以通俗易懂的方式为你解读它的核心内容。\n\n---\n\n### (1) 任务是什么？\n*   **任务输入**：一个预设的虚拟环境（如一个客厅、办公室的3D场景），一个或多个能在其中移动的**动态数字人（Avatar）**，以及一个需要完成特定导航任务的**智能体（Agent，即虚拟机器人）**。任务目标由具体的研究问题定义，例如“走到那个沙发旁边”。\n*   **任务输出**：\n    1.  **给智能体的视觉观察**：以假乱真的、第一人称视角的虚拟环境图像。\n    2.  **给智能体的交互反馈**：智能体在环境中移动、与物体或数字人互动后得到的奖励或惩罚信号。\n*   **任务功能**：为训练具身AI智能体（学习导航、避障、与人共处等技能）提供一个**高保真、可扩展、且包含动态人物**的虚拟训练场。你可以把它想象成一个给AI玩的、画面极其逼真、规则可控的“3A游戏”。\n\n### (2) 想解决什么问题？\n现有的主流仿真器（如Habitat-Sim）存在两个主要问题：\n1.  **视觉保真度低（Sim-to-Real Gap）**：它们大多用**网格模型+贴图**来渲染场景，画面像“游戏画面”，缺乏真实世界中的光影细节（如镜面反光、材质质感）。这导致在仿真里训练得很好的AI，到了真实世界（画面完全不同）就表现很差。\n2.  **动态人物建模能力弱**：要么没有逼真的人物，要么用粗糙的网格人物。这使得AI很难学习如何在有真人走动的现实环境中进行安全、符合社交礼仪的导航。\n\n### (3) 核心思路是什么？\n论文的核心思路是 **“用更好的视觉表示技术来升级仿真器”**。\n1.  **用3D高斯泼溅（3DGS）渲染场景**：3DGS是近年来从真实世界照片或视频中重建高质量3D场景的新技术。它渲染出的画面细节丰富、光影真实，能极大缩小仿真与现实的视觉差距。\n2.  **用“高斯数字人”代替“网格数字人”**：\n    *   将3DGS技术应用到动态人物模型上，创造出画面逼真的虚拟人。\n    *   关键创新：这个数字人**不仅好看，还能“挡路”**。系统会为它实时计算一个物理碰撞区域，让AI智能体必须学会避开它，从而学习“人类感知”导航。\n\n简单说，就是**把仿真器的画面引擎从“游戏级”升级到“电影级”，并把里面的NPC（非玩家角色）也做得更真实、更有交互性**。\n\n### (4) 结果怎么样？\n论文通过实验证明了Habitat-GS的有效性：\n1.  **训练出的智能体更鲁棒**：在3DGS渲染的逼真场景中训练的AI智能体，**泛化能力更强**。即使换到没见过的场景或真实数据上测试，表现也更好。实验发现，“在网格场景和3DGS场景中混合训练”是最佳策略。\n2.  **能学会人类感知导航**：在包含高斯数字人的环境中训练的智能体，能有效学会避开移动中的人物，实现了更安全、更符合社会习惯的导航行为。\n3.  **系统性能优秀**：Habitat-GS保持了高效的运行速度，可以支持复杂场景和多个数字人同时运行，满足大规模训练的需求。\n\n### (5) 模型结构与整体流程\n这篇论文的重点是**构建一个系统（仿真平台）**，而不是提出一个新的神经网络模型。它的“模型结构”就是整个仿真系统的架构。\n\n**整体工作流程如下：**\n\n1.  **准备资产（输入）**：\n    *   **场景**：从各种来源（如扫描的真实房间、人工建模的场景）获得3D数据，并将其转换成 **3D高斯泼溅表示**。\n    *   **数字人**：使用一个现有的**高斯数字人生成模型（基模是GAMMA）**，为数字人生成逼真的外观和自然的运动轨迹。\n\n2.  **Habitat-GS仿真环境运行**：\n    *   **渲染引擎**：系统内置一个**3DGS渲染器**。当智能体在虚拟世界中移动时，渲染器会实时计算并生成其第一人称视角的**高清逼真图像**，作为智能体的“眼睛看到的东西”。\n    *   **动态数字人模块**：\n        *   驱动GAMMA生成的角色在场景中按预设路径行走。\n        *   同时，为每个移动的数字人实时计算一个**动态的导航障碍区域**，并注入到场景的导航地图中。\n    *   **物理与交互**：系统处理智能体的移动、与障碍物（包括静态物体和动态数字人）的碰撞检测等。\n\n3.  **智能体训练循环（输出）**：\n    *   智能体（一个独立的AI算法，如强化学习模型）接收到**逼真的视觉观察（来自3DGS渲染器）**。\n    *   智能体做出动作决策（如“向前走”）。\n    *   环境执行该动作，并返回**新的观察**和**奖励信号**（例如，撞到数字人会得到负奖励）。\n    *   智能体根据这些反馈不断学习，最终输出一个**能在高保真、人潮涌动的虚拟环境中熟练导航的策略**。\n\n**总结一下流程**：`准备3DGS场景和数字人` -> `仿真器用3DGS引擎渲染逼真画面` -> `动态数字人模块让人物移动并成为障碍` -> `智能体观察画面、做出动作、获得反馈、持续学习` -> `输出一个强大的导航策略`。\n\n希望这个解释能帮助你快速理解这篇论文的核心贡献！它本质上是为具身AI研究打造了一个更强大的“训练基地”。",
+    "2604.12887": "好的，我们先来整理一下这篇论文《VideoFlexTok》的核心内容。我会用比较直白的语言来解释，避免太技术化的术语。\n\n---\n\n### (1) 这篇论文所在的任务是什么\n\n- **任务输入**：原始的视频像素（一堆连续的图像帧）。\n- **任务输出**：视频的**压缩表示**（也叫“token”或“潜变量”）。\n- **任务功能**：**视频表示学习**或**视频压缩**。这个任务本身不是最终目标，而是为下游任务（比如**文本生成视频、视频预测**）做准备。你可以把它想象成“把视频翻译成一种更简洁、更适合AI模型理解的语言”。\n\n---\n\n### (2) 这篇论文想解决什么问题\n\n目前主流的视频压缩方法（比如VQ-VAE）会把视频编码成一个**固定大小的3D网格token序列**：\n- **问题1：无论视频内容简单还是复杂，都用同样多的token来表示。** 比如一个静止的画面和一个动作复杂的画面，占用的“计算资源”一样多，这不高效。\n- **问题2：所有token都主要关注局部细节**（比如某个小区域的纹理、颜色），而高层信息（比如“视频里有个女人在跑步”、“镜头在向前推进”）需要下游模型自己从这些细节里去费力地总结出来。\n- **结果**：导致训练下游的生成模型（如文生视频）时，模型的学习负担很重，计算成本极高，尤其是生成长视频时。\n\n**简单来说，这篇论文想造一个更智能、更高效的“视频压缩器”，让它能根据视频内容自动调整“描述”的详细程度。**\n\n---\n\n### (3) 论文的核心思路是什么\n\n核心思路叫做 **“灵活长度、由粗到细”的视频表示**。\n\n- **灵活长度**：不再固定token数量。简单的视频用少量token就能表示，复杂的视频才用更多token。\n- **由粗到细**：token的排列顺序是有意义的。**最前面的几个token，自动学会了捕捉视频最核心、最抽象的信息**（比如场景语义、主体动作、摄像机运动）。**后面的token，则负责补充越来越多的细节**（比如纹理、光影、精细动作）。\n\n**打个比方**：\n- **旧方法（3D网格）**：像用固定数量的、同样大小的乐高积木拼一个模型，不管拼什么，积木数量都一样。\n- **VideoFlexTok（新方法）**：像画画。先画几笔勾勒出**轮廓和主体**（粗），然后根据需要，再添加越来越多的笔触来描绘**细节**（细）。画简单的物体（比如一个球）可能几笔就够了，画复杂的（比如人脸）就需要更多笔触。\n\n---\n\n### (4) 结果怎么样\n\n论文通过实验证明了新方法的优势：\n1. **效率更高**：在下游的“类别生成视频”和“文本生成视频”任务中，使用VideoFlexTok作为压缩器来训练生成模型，可以用**小得多的模型**达到和传统方法大模型**相近的质量**。例如，一个11亿参数的模型效果可以媲美52亿参数的传统模型（5倍小）。\n2. **能处理更长视频**：作者训练了一个文生视频模型，直接生成**10秒长（81帧）** 的视频。由于VideoFlexTok的高效性，整个视频只需要**672个token**来表示。而如果用传统3D网格方法，表示同样时长的视频需要**5376个token**（8倍多）。这意味着计算和内存开销大大降低。\n\n---\n\n### (5) 这篇论文的模型结构是什么\n\n论文没有依赖某个特定的“基模”，而是提出了一个名为 **VideoFlexTok** 的自编码器架构。核心流程如下：\n\n1. **输入**：一个原始视频（例如，16帧，分辨率256x256）。\n2. **编码器**：\n   - 使用一个3D CNN（如SparseConvNet或Transformer）来提取视频特征。\n   - 关键创新：编码器输出的不是一个固定网格，而是一个**按重要性排序的token序列**。这个排序不是人工指定的，而是在训练中**自动涌现**的。作者通过一种特殊的训练技巧（REPA，一种基于梯度的排序方法）让模型学会把最重要的信息“挤”到序列的前面。\n3. **中间表示**：得到一个长度可变的、由粗到细的token序列。你可以根据需要**截断**这个序列，只用前面N个token来代表视频。\n4. **解码器**：\n   - 这是另一个关键创新。解码器不是一个普通的CNN，而是一个**生成式整流流模型**。\n   - **它的厉害之处在于：即使你只给了它前面几个（粗糙的）token，它也能“脑补”出缺失的细节，生成一个看起来合理、完整的视频**。传统解码器如果只拿到部分信息，重建效果会非常差。\n   - 流程：解码器接收被截断的token序列，通过一个“去噪扩散”式的生成过程，从噪声开始，逐步“画”出一个完整的视频。\n5. **输出**：重建后的视频。\n\n**整体训练目标**：\n- 让整个模型（编码器+解码器）能够从**任意长度**的token序列中，高质量地重建原始视频。\n- 通过这个目标，编码器被迫学会把最关键的信息放在最前面，因为后面的token可能被丢掉。\n\n**总结一下流程**：\n**原始视频 → 编码器 → 得到“由粗到细”的token序列 → （可选：截断，只取前N个token） → 生成式流解码器 → 重建视频**\n\n这个流程使得VideoFlexTok既能实现高压缩率（用很少的token），又能保留视频的核心语义和动态信息，从而极大地便利了下游的生成任务。",
+    "2604.13030": "这篇论文主要是关于**图像和视频生成**的。让我用简单的语言解释它的核心内容：\n\n---\n\n### (1) 任务是什么？\n\n- **任务输入**：类别标签（例如“猫”）、文本描述（例如“一只坐在窗边的猫”）或文本描述+视频时长。\n- **任务输出**：根据输入生成的图像或视频。\n- **任务功能**：生成高质量、逼真的图像或视频，并且能够根据内容的复杂程度自适应调整生成步骤（比如简单的图像生成快，复杂的图像生成慢）。\n\n---\n\n### (2) 想解决什么问题？\n\n现有的生成模型主要有两大问题：\n\n1. **扩散模型**：虽然效果好，但计算效率低，不论生成简单还是复杂的内容，都用固定步数，浪费计算资源。\n2. **自回归模型**：虽然能根据复杂度调整步数，但有两个缺点：\n   - 离散化表示（tokenization）会损失信息，导致重建质量差。\n   - 生成过程中一旦出错，后面无法修正，错误会累积。\n\n这篇论文想同时解决这两个问题：**既保留自回归模型的自适应能力，又提升生成质量和容错性**。\n\n---\n\n### (3) 核心思路是什么？\n\n论文提出了一个叫 **“生成式精炼网络（Generative Refinement Networks, GRN）”** 的新框架，核心思路有三点：\n\n1. **分层二值量化（HBQ）**：  \n   用更精细的离散化方法来表示图像/视频，让离散表示也能达到连续表示的重建质量，解决信息损失问题。\n\n2. **全局精炼机制**：  \n   生成过程不是一次成型，而是像画家作画一样，**反复迭代、逐步修正**。每次迭代都会回顾之前生成的内容并修正错误，避免错误累积。\n\n3. **复杂度感知采样**：  \n   根据生成内容的复杂程度，**动态调整生成步数**。简单内容少迭代几次，复杂内容多迭代几次，提高效率。\n\n---\n\n### (4) 结果怎么样？\n\n- **图像重建**：在 ImageNet 256×256 上，rFID（重建质量指标）达到 **0.56**，刷新记录。\n- **类别生成**：在 ImageNet 上，gFID（生成质量指标）达到 **1.81**，也是新纪录。\n- **扩展到文本生成**：在文本生成图像和视频任务上，表现优于同规模的其他方法，能生成 **1024×1024** 的高清图和 **480p** 的动态视频。\n\n---\n\n### (5) 模型结构与流程\n\n**基模**：基于 **Transformer** 的自回归模型，但没有用传统的自回归方式（从左到右依次生成），而是引入了**迭代精炼**机制。\n\n**整体流程**（可以想象成画家画一幅画的过程）：\n\n1. **输入与编码**：  \n   输入类别标签或文本描述，通过一个文本编码器（如 CLIP）转换成特征向量。\n\n2. **初始生成**：  \n   模型先快速生成一个粗糙的草图（低分辨率或模糊的图像/视频帧）。\n\n3. **迭代精炼**：  \n   - 模型根据当前草图，预测哪些部分还不够好（通过计算“不确定性”或“熵”）。\n   - 只对这些不确定的区域进行**细化修正**，而不是全部重画。\n   - 每次修正都会考虑整体画面，避免局部修正破坏整体协调性。\n\n4. **终止条件**：  \n   当所有区域的不确定性都低于阈值，或者达到最大迭代次数时，停止生成。\n\n5. **解码输出**：  \n   用训练好的 **分层二值量化解码器** 将离散 token 转换回最终的图像或视频。\n\n**关键比喻**：  \n传统的自回归模型像是“写作文”，写错一个字后面全错；  \nGRN 像是“画油画”，先打底稿，再一遍遍上色、修改，直到满意为止。\n\n---\n\n**总结**：  \n这篇论文提出了一个既能自适应调整计算量、又能逐步修正错误的生成模型，在图像和视频生成任务上取得了很好的效果，并且代码和模型都已开源。"
+  },
+  "images_meta": {
+    "2604.10465": [
+      {
+        "path": "https://arxiv.org/html/2604.10465v1/x3.png",
+        "caption": "Figure 2:Overview of forward processes across VP, VE-Karras, and rectified-flow parameterizations (exported from the original interactive visualizationhttps://iclr-blogposts.github.io/2026/blog/2026/rethinking-diffusion-langevin/).",
+        "caption_zh": "图2：VP、VE-Karras 与修正流参数化前向过程的总体概览（摘自原交互式可视化页面 https://iclr-blogposts.github.io/2026/blog/2026/rethinking-diffusion-langevin/）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.10465v1/x5.png",
+        "caption": "Figure 4:The forward and reverse diffusion processes compose to reproduce Langevin dynamics.",
+        "caption_zh": "图 4：前向与反向扩散过程共同构成了再现朗之万动力学的整体框架。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.10465v1/figures/08.png",
+        "caption": "Figure 6:Part of a forward–reverse diffusion cycle: the last two steps of the forward process (green arrows, increasingtt) followed by the first two steps of the reverse process (blue arrows, increasingt′t^{\\prime}while decreasingtt).",
+        "caption_zh": "图6：前向-反向扩散循环的一部分：前向过程的最后两步（绿色箭头，t递增）与反向过程的前两步（蓝色箭头，t′递增而t递减）。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.12322": [
+      {
+        "path": "https://arxiv.org/html/2604.12322v1/x1.png",
+        "caption": "Figure 1:An overview of generated images.",
+        "caption_zh": "图1：生成图像概览。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12322v1/x2.png",
+        "caption": "Figure 2:Qualitative Analysis betweenAPEXand existing methods under different NFEs.",
+        "caption_zh": "图2：不同NFEs下APEX与现有方法的定性分析对比。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12322v1/x3.png",
+        "caption": "Figure 3:Qualitative Comparison of 512x512 in APEX 20B LoRA for NFE=1.",
+        "caption_zh": "图 3：APEX 20B LoRA 在 NFE=1 时 512×512 图像的定性对比结果。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.12626": [
+      {
+        "path": "https://arxiv.org/html/2604.12626v1/x2.png",
+        "caption": "Figure 2:System overview of Habitat-GS.From left to right:Asset Preparation, where 3DGS scene assets and gaussian avatar assets are prepared respectively.Habitat-GS Simulation Environment, where the render engine performs 3DGS rasterization for scene gaussians and LBS deformation followed by rasterization for avatar gaussians, producing RGB-D observations. The NavMesh blocking module retrieves pre-computed proxy capsules at runtime and injects them into the NavMesh for obstacle blocking.Embodied Agent Loop, where the agent policy consumes sensor observations, executes actions, and receives rewards shaped by both navigation success and avatar collision.",
+        "caption_zh": "图 2：Habitat-GS 系统概览。从左至右：资产准备阶段，分别准备 3DGS 场景资产与高斯虚拟化身资产；Habitat-GS 模拟环境，渲染引擎对场景高斯进行 3DGS 光栅化，并对虚拟化身高斯执行 LBS 变形及光栅化，生成 RGB-D 观测数据；导航网格阻挡模块在运行时获取预计算的代理胶囊体并将其注入导航网格以实现障碍物阻挡；具身智能体循环，智能体策略接收传感器观测，执行动作，并根据导航成功率与虚拟化身碰撞情况获得奖励。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12626v1/x10.png",
+        "caption": "Figure 6:System architecture of Habitat-GS. The system adopts a “visual–navigation decoupling” design principle, separating the visual rendering modules handled by the CUDA-based 3DGS rasterizer and LBS deformation, from the navigation module managed by the traditional NavMesh and injected proxy capsules. This allows for photorealistic agent observations without modifying the core Habitat-Sim navigation logic.",
+        "caption_zh": "图6：Habitat-GS 的系统架构。该系统采用“视觉-导航解耦”的设计原则，将基于CUDA的3DGS光栅化器与LBS变形模块处理的视觉渲染部分，与传统NavMesh及注入的代理胶囊体管理的导航模块相分离。这样可在不修改Habitat-Sim核心导航逻辑的前提下，实现具有照片级真实感的智能体观测。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12626v1/x3.png",
+        "caption": "Figure 3:Visual comparison of scene rendering.Mesh-based rendering (left) vs. our 3DGS rendering (right). Our simulator is based on 3DGS, which preserves high-frequency details and supports diverse sources of rendering assets.",
+        "caption_zh": "图 3：场景渲染的视觉对比。基于网格的渲染（左）与本工作基于 3DGS 的渲染（右）对比。我们的模拟器基于 3DGS，能够保持高频细节并支持多样化的渲染资产来源。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.12887": [
+      {
+        "path": "https://arxiv.org/html/2604.12887v1/x3.png",
+        "caption": "Figure 3:VideoFlexTokoverview.The encodertakes the spatiotemporal VAE video latents, interleaves them with learnable register tokens across the time dimension, and passes them through the Transformer with a time-causal attention pattern.\nThis results in a2D representation with the temporal and coarse-to-fine dimensions.Nested dropoutrandomly drops a random number of last register tokens along the 2nd dimension, inducing the coarse-to-fine structure.The decoderis a flow-based generative model that temporally interleaves masked register tokens with noisy VAE latents and passes them through a time-causal Transformer.The lossesare: 1) the rectified flow reconstructive loss that predicts clean patches from their noised version and tokens, and 2) the representation alignment loss(Yuet al.,2025)between the decoder and DINOv2(Oquabet al.,2023)features, which distills semantic information intoVideoFlexToktokens.",
+        "caption_zh": "图 3：VideoFlexTok 概述。编码器接收时空 VAE 视频潜变量，将其与可学习的寄存器令牌在时间维度上交错排列，并通过具有时间因果注意力模式的 Transformer 进行处理，从而生成一个包含时间和由粗到细维度的二维表示。嵌套丢弃会随机丢弃沿第二维的若干末尾寄存器令牌，以诱导出由粗到细的结构。解码器是一个基于流的生成模型，它在时间上将掩码寄存器令牌与含噪声的 VAE 潜变量交错，并通过时间因果 Transformer 进行处理。损失函数包括：1）修正流重建损失，用于根据含噪声的补丁及其对应令牌预测干净的补丁；2）解码器与 DINOv2（Oquab 等人，2023）特征之间的表示对齐损失（Yue 等人，2025），该损失将语义信息提炼到 VideoFlexTok 令牌中。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12887v1/x6.png",
+        "caption": "Figure 6:Compute-efficient AR training withVideoFlexTok.We show how the fidelity (top) and alignment (bottom) metrics change across three complementary scaling axes.Scaling the model size (left).We show how the fidelity (top, gFVD) and alignment (bottom, Classification Score) metrics change as we scale the size of the class-to-video autoregressive model. UsingVideoFlexTokmaintains good fidelity across a wider range of model sizes while solving the conditioning task well, achieving a much higher alignment score with smaller models.This implies that we can train much smaller models to solve the class-to-video downstream task.Scaling the number of training tokens (middle).We show how the fidelity (top, gFVD) and alignment (bottom, Classification Score) metrics evolve during training of the class-to-video downstream model. We use the 1.3B AR model size for this experiment. UsingVideoFlexTokenables having good reconstructions throughout the whole training, andachieves similar or better alignment using 5–10 times fewer training tokens than the 3D Grid tokenizer.Text-to-video FLOPs efficiency (right).We show how the fidelity (top, gFVD) and alignment (bottom, ViCLIP Score) metrics change as we scale both the model size and the number of training tokens in the compute-optimal way. We vary the model size from 400M to 5.2B with the estimated ratio ofD/N=20D/N=20(Hoffmannet al.,2022).\nIn addition to models trained on full-lengthVideoFlexToktoken sequences, we train a model on shorter 32-token sequences per latent frame while keeping the number of steps the same, resulting in much lower computational cost (purple line).Overall, we find that autoregressive generative modeling overVideoFlexToktokens can achieve similar performance using an order of magnitude less compute.",
+        "caption_zh": "图6：使用VideoFlexTok实现计算高效的AR训练。我们展示了在三个互补的扩展维度上保真度（上图）和对齐度（下图）指标的变化情况。扩展模型规模（左图）：展示了类别到视频的自回归模型规模扩展时，保真度（上图，gFVD）与对齐度（下图，分类分数）指标的变化。使用VideoFlexTok能在更广泛的模型规模范围内保持良好保真度，同时出色完成条件任务，并以更小的模型获得更高的对齐分数。这表明我们可以训练更小的模型来解决类别到视频的下游任务。扩展训练token数量（中图）：展示了类别到视频下游模型训练过程中，保真度（上图，gFVD）与对齐度（下图，分类分数）指标的演变。本实验使用13亿参数的AR模型。VideoFlexTok使得整个训练过程中都能获得良好的重建效果，并且仅需3D Grid分词器1/5–1/10的训练token量即可达到相当或更优的对齐度。文本到视频的FLOPs效率（右图）：展示了以计算最优方式同时扩展模型规模和训练token数量时，保真度（上图，gFVD）与对齐度（下图，ViCLIP分数）指标的变化。模型规模从4亿到52亿参数按D/N=20的估计比例调整（Hoffmann等人，2022）。除使用完整长度VideoFlexToktoken序列训练的模型外，我们还训练了每个潜在帧仅使用32个token的缩短序列模型（保持训练步数不变），显著降低了计算成本（紫色曲线）。总体而言，基于VideoFlexToktoken的自回归生成建模能以降低一个数量级的计算量实现相当的性能。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.12887v1/x7.png",
+        "caption": "Figure 7:Flexible-length generation.We measure fidelity (top, gFVD), and alignment (bottom, classification score and ViCLIP similarity, seeSection4.1) forVideoFlexTokand 3D grid tokenizers on class-to-video (left) and text-to-video (right) tasks.\nUsing much fewer tokens,VideoFlexTokmaintains fidelity comparable to or better than the 3D tokenizer, while achieving higher alignment, i.e., better solving the corresponding conditional generation task.",
+        "caption_zh": "图7：可变长度生成。我们在类别到视频（左）与文本到视频（右）任务中，测量 VideoFlexTok 与三维网格分词器的保真度（上，gFVD）和对齐度（下，分类分数与 ViCLIP 相似度，见第4.1节）。使用更少的 token 时，VideoFlexTok 保持了与三维分词器相当或更优的保真度，同时实现了更高的对齐度，即更好地解决了相应的条件生成任务。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.13030": [
+      {
+        "path": "https://arxiv.org/html/2604.13030v1/x4.png",
+        "caption": "Figure 4:Generative Refinement Framework.Starting from a random token map, GRN randomly selects more predictions at each step and refines all input tokens. For example, compared to the second step, the third step filled six new tokens (pink), kept two tokens (blue), erased two tokens (yellow), and left six tokens blank (gray).",
+        "caption_zh": "图 4：生成式精化框架。该框架从随机初始化的标记映射出发，在每一步中随机选择更多预测结果并对所有输入标记进行精化。例如，与第二步相比，第三步填充了六个新标记（粉色）、保留了两个标记（蓝色）、擦除了两个标记（黄色），并留出了六个空白标记（灰色）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.13030v1/x2.png",
+        "caption": "Figure 2:Hierarchical Binary Quantization.Each element from the VAE encoded features undergoes several rounds of hierarchical binary quantization. The quantization error decays exponentially with the number of rounds, theoretically enabling lossless quantization to be achieved rapidly.",
+        "caption_zh": "图2：分层二值量化。VAE编码特征的每个元素经过多轮分层二值量化处理。量化误差随轮次增加呈指数衰减，理论上可快速实现无损量化。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.13030v1/x3.png",
+        "caption": "Figure 3:An example of Hierarchical Binary Quantization (M=4).Forq1q_{1},q2q_{2}, andq3q_{3}, we truncate the complete sequence and take the truncated parts for reconstruction.",
+        "caption_zh": "图3：分层二值量化示例（M=4）。对于q1、q2和q3，我们截断完整序列并利用截取部分进行重建。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.08865": {
+      "abstract": "Proximal Policy Optimization (PPO) is central to aligning Large Language Models (LLMs) in reasoning tasks with verifiable rewards. However, standard token-level PPO struggles in this setting due to the instability of temporal credit assignment over long Chain-of-Thought (CoT) horizons and the prohibitive memory cost of the value model. While critic-free alternatives like GRPO mitigate these issues, they incur significant computational overhead by requiring multiple samples for baseline estimation, severely limiting training throughput. In this paper, we introduce Sequence-Level PPO (SPPO), a scalable algorithm that harmonizes the sample efficiency of PPO with the stability of outcome-based updates. SPPO reformulates the reasoning process as a Sequence-Level Contextual Bandit problem, employing a decoupled scalar value function to derive low-variance advantage signals without multi-sampling. Extensive experiments on mathematical benchmarks demonstrate that SPPO significantly surpasses standard PPO and matches the performance of computation-heavy group-based methods, offering a resource-efficient framework for aligning reasoning LLMs.",
+      "comments": "ACL 2026 Main"
+    },
+    "2604.10465": {
+      "abstract": "Diffusion models are often introduced from multiple perspectives, such as VAEs, score matching, or flow matching, accompanied by dense and technically demanding mathematics that can be difficult for beginners to grasp. One classic question is: how does the reverse process invert the forward process to generate data from pure noise? This article systematically organizes the diffusion model from a fresh Langevin perspective, offering a simpler, clearer, and more intuitive answer. We also address the following questions: how can ODE-based and SDE-based diffusion models be unified under a single framework? Why are diffusion models theoretically superior to ordinary VAEs? Why is flow matching not fundamentally simpler than denoising or score matching, but equivalent under maximum-likelihood? We demonstrate that the Langevin perspective offers clear and straightforward answers to these questions, bridging existing interpretations of diffusion models, showing how different formulations can be converted into one another within a common framework, and offering pedagogical value for both learners and experienced researchers seeking deeper intuition.",
+      "comments": "20 pages, 7 figures"
+    },
+    "2604.10966": {
+      "abstract": "We present a discriminative multimodal reward model that scores all candidate responses in a single forward pass. Conventional discriminative reward models evaluate each response independently, requiring multiple forward passes, one for each potential response. Our approach concatenates multiple responses with separator tokens and applies cross-entropy over their scalar scores, enabling direct comparative reasoning and efficient $N$-way preference learning. The multi-response design also yields up to $N\\times$ wall-clock speedup and FLOPs reduction over conventional single-response scoring. To enable $N$-way reward evaluation beyond existing pairwise benchmarks, we construct two new benchmarks: (1) MR$^2$Bench-Image contains human-annotated rankings over responses from 8 diverse models; (2) MR$^2$Bench-Video is a large-scale video-based reward benchmark derived from 94K crowdsourced pairwise human judgments over video question-answering spanning 19 models, denoised via preference graph ensemble. Both benchmarks provide 4-response evaluation variants sampled from the full rankings. Built on a 4B vision-language backbone with LoRA fine-tuning and a lightweight MLP value head, our model achieves state-of-the-art results on six multimodal reward benchmarks, including MR$^2$Bench-Image, MR$^2$Bench-Video, and four other existing benchmarks. Our model outperforms existing larger generative and discriminative reward models. We further demonstrate that our reward model, when used in reinforcement learning with GRPO, produces improved policy models that maintain performance across standard multimodal benchmarks while substantially improving open-ended generation quality, outperforming a single-response discriminative reward model (RM) baseline by a large margin in both training stability and open-ended generation quality.",
+      "comments": "9 pages, 4 figures"
+    },
+    "2604.11579": {
+      "abstract": "We address the problem of tactile localization, where the goal is to identify image regions that share the same material properties as a tactile input. Existing visuo-tactile methods rely on global alignment and thus fail to capture the fine-grained local correspondences required for this task. The challenge is amplified by existing datasets, which predominantly contain close-up, low-diversity images. We propose a model that learns local visuo-tactile alignment via dense cross-modal feature interactions, producing tactile saliency maps for touch-conditioned material segmentation. To overcome dataset constraints, we introduce: (i) in-the-wild multi-material scene images that expand visual diversity, and (ii) a material-diversity pairing strategy that aligns each tactile sample with visually varied yet tactilely consistent images, improving contextual localization and robustness to weak signals. We also construct two new tactile-grounded material segmentation datasets for quantitative evaluation. Experiments on both new and existing benchmarks show that our approach substantially outperforms prior visuo-tactile methods in tactile localization.",
+      "comments": "CVPR 2026. Project page: <a class=\"link-external link-https\" href=\"https://mm.kaist.ac.kr/projects/SeeingThroughTouch/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.11689": {
+      "abstract": "While the shortage of explicit action data limits Vision-Language-Action (VLA) models, human action videos offer a scalable yet unlabeled data source. A critical challenge in utilizing large-scale human video datasets lies in transforming visual signals into ontology-independent representations, known as latent actions. However, the capacity of latent action representation to derive robust control from visual observations has yet to be rigorously evaluated. We introduce the Latent Action Representation Yielding (LARY) Benchmark, a unified framework for evaluating latent action representations on both high-level semantic actions (what to do) and low-level robotic control (how to do). The comprehensively curated dataset encompasses over one million videos (1,000 hours) spanning 151 action categories, alongside 620K image pairs and 595K motion trajectories across diverse embodiments and environments. Our experiments reveal two crucial insights: (i) General visual foundation models, trained without any action supervision, consistently outperform specialized embodied latent action models. (ii) Latent-based visual space is fundamentally better aligned to physical action space than pixel-based space. These results suggest that general visual representations inherently encode action-relevant knowledge for physical control, and that semantic-level abstraction serves as a fundamentally more effective pathway from vision to action than pixel-level reconstruction.",
+      "comments": "Project: <a class=\"link-external link-https\" href=\"https://meituan-longcat.github.io/LARYBench\" rel=\"external noopener nofollow\">this https URL</a> Code: <a class=\"link-external link-https\" href=\"https://github.com/meituan-longcat/LARYBench\" rel=\"external noopener nofollow\">this https URL</a> Dataset: <a class=\"link-external link-https\" href=\"https://huggingface.co/datasets/meituan-longcat/LARYBench\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.11784": {
+      "abstract": "GUI agents drive applications through their visual interfaces instead of programmatic APIs, interacting with arbitrary software via taps, swipes, and keystrokes, reaching a long tail of applications that CLI-based agents cannot. Yet progress in this area is bottlenecked less by modeling capacity than by the absence of a coherent full-stack infrastructure: online RL training suffers from environment instability and closed pipelines, evaluation protocols drift silently across works, and trained agents rarely reach real users on real devices. We present \\textbf{ClawGUI}, an open-source framework addressing these three gaps within a single harness. \\textbf{ClawGUI-RL} provides the first open-source GUI agent RL infrastructure with validated support for both parallel virtual environments and real physical devices, integrating GiGPO with a Process Reward Model for dense step-level supervision. \\textbf{ClawGUI-Eval} enforces a fully standardized evaluation pipeline across 6 benchmarks and 11+ models, achieving 95.8\\% reproduction against official baselines. \\textbf{ClawGUI-Agent} brings trained agents to Android, HarmonyOS, and iOS through 12+ chat platforms with hybrid CLI-GUI control and persistent personalized memory. Trained end to end within this pipeline, \\textbf{ClawGUI-2B} achieves 17.1\\% Success Rate on MobileWorld GUI-Only, outperforming the same-scale MAI-UI-2B baseline by 6.0\\%.",
+      "comments": ""
+    },
+    "2604.12322": {
+      "abstract": "The push for efficient text to image synthesis has moved the field toward one step sampling, yet existing methods still face a three way tradeoff among fidelity, inference speed, and training efficiency. Approaches that rely on external discriminators can sharpen one step performance, but they often introduce training instability, high GPU memory overhead, and slow convergence, which complicates scaling and parameter efficient tuning. In contrast, regression based distillation and consistency objectives are easier to optimize, but they typically lose fine details when constrained to a single step. We present APEX, built on a key theoretical insight: adversarial correction signals can be extracted endogenously from a flow model through condition shifting. Using a transformation creates a shifted condition branch whose velocity field serves as an independent estimator of the model's current generation distribution, yielding a gradient that is provably GAN aligned, replacing the sample dependent discriminator terms that cause gradient vanishing. This discriminator free design is architecture preserving, making APEX a plug and play framework compatible with both full parameter and LoRA based tuning. Empirically, our 0.6B model surpasses FLUX-Schnell 12B (20$\\times$ more parameters) in one step quality. With LoRA tuning on Qwen-Image 20B, APEX reaches a GenEval score of 0.89 at NFE=1 in 6 hours, surpassing the original 50-step teacher (0.87) and providing a 15.33$\\times$ inference speedup. Code is availablethis https URL.",
+      "comments": ""
+    },
+    "2604.12374": {
+      "abstract": "We describe the pre-training, post-training, and quantization of Nemotron 3 Super, a 120 billion (active 12 billion) parameter hybrid Mamba-Attention Mixture-of-Experts model. Nemotron 3 Super is the first model in the Nemotron 3 family to 1) be pre-trained in NVFP4, 2) leverage LatentMoE, a new Mixture-of-Experts architecture that optimizes for both accuracy per FLOP and accuracy per parameter, and 3) include MTP layers for inference acceleration through native speculative decoding. We pre-trained Nemotron 3 Super on 25 trillion tokens followed by post-training using supervised fine tuning (SFT) and reinforcement learning (RL). The final model supports up to 1M context length and achieves comparable accuracy on common benchmarks, while also achieving up to 2.2x and 7.5x higher inference throughput compared to GPT-OSS-120B and Qwen3.5-122B, respectively. Nemotron 3 Super datasets, along with the base, post-trained, and quantized checkpoints, are open-sourced on HuggingFace.",
+      "comments": ""
+    },
+    "2604.12626": {
+      "abstract": "Training embodied AI agents depends critically on the visual fidelity of simulation environments and the ability to model dynamic humans. Current simulators rely on mesh-based rasterization with limited visual realism, and their support for dynamic human avatars, where available, is constrained to mesh representations, hindering agent generalization to human-populated real-world scenarios. We present Habitat-GS, a navigation-centric embodied AI simulator extended from Habitat-Sim that integrates 3D Gaussian Splatting scene rendering and drivable gaussian avatars while maintaining full compatibility with the Habitat ecosystem. Our system implements a 3DGS renderer for real-time photorealistic rendering and supports scalable 3DGS asset import from diverse sources. For dynamic human modeling, we introduce a gaussian avatar module that enables each avatar to simultaneously serve as a photorealistic visual entity and an effective navigation obstacle, allowing agents to learn human-aware behaviors in realistic settings. Experiments on point-goal navigation demonstrate that agents trained on 3DGS scenes achieve stronger cross-domain generalization, with mixed-domain training being the most effective strategy. Evaluations on avatar-aware navigation further confirm that gaussian avatars enable effective human-aware navigation. Finally, performance benchmarks validate the system's scalability across varying scene complexity and avatar counts.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://zju3dv.github.io/habitat-gs/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.12627": {
+      "abstract": "RLVR improves reasoning in large language models, but its effectiveness is often limited by severe reward sparsity on hard problems. Recent hint-based RL methods mitigate sparsity by injecting partial solutions or abstract templates, yet they typically scale guidance by adding more tokens, which introduce redundancy, inconsistency, and extra training overhead. We propose \\textbf{KnowRL} (Knowledge-Guided Reinforcement Learning), an RL training framework that treats hint design as a minimal-sufficient guidance problem. During RL training, KnowRL decomposes guidance into atomic knowledge points (KPs) and uses Constrained Subset Search (CSS) to construct compact, interaction-aware subsets for training. We further identify a pruning interaction paradox -- removing one KP may help while removing multiple such KPs can hurt -- and explicitly optimize for robust subset curation under this dependency structure. We train KnowRL-Nemotron-1.5B from OpenMath-Nemotron-1.5B. Across eight reasoning benchmarks at the 1.5B scale, KnowRL-Nemotron-1.5B consistently outperforms strong RL and hinting baselines. Without KP hints at inference, KnowRL-Nemotron-1.5B reaches 70.08 average accuracy, already surpassing Nemotron-1.5B by +9.63 points; with selected KPs, performance improves to 74.16, establishing a new state of the art at this scale. The model, curated training data, and code are publicly available atthis https URL.",
+      "comments": ""
+    },
+    "2604.12887": {
+      "abstract": "Visual tokenizers map high-dimensional raw pixels into a compressed representation for downstream modeling. Beyond compression, tokenizers dictate what information is preserved and how it is organized. A de facto standard approach to video tokenization is to represent a video as a spatiotemporal 3D grid of tokens, each capturing the corresponding local information in the original signal. This requires the downstream model that consumes the tokens, e.g., a text-to-video model, to learn to predict all low-level details \"pixel-by-pixel\" irrespective of the video's inherent complexity, leading to high learning complexity.We present VideoFlexTok, which represents videos with a variable-length sequence of tokens structured in a coarse-to-fine manner -- where the first tokens (emergently) capture abstract information, such as semantics and motion, and later tokens add fine-grained details. The generative flow decoder enables realistic video reconstructions from any token count. This representation structure allows adapting the token count according to downstream needs and encoding videos longer than the baselines with the same budget.We evaluate VideoFlexTok on class- and text-to-video generative tasks and show that it leads to more efficient training compared to 3D grid tokens, e.g., achieving comparable generation quality (gFVD and ViCLIP Score) with a 5x smaller model (1.1B vs 5.2B). Finally, we demonstrate how VideoFlexTok can enable long video generation without prohibitive computational cost by training a text-to-video model on 10-second 81-frame videos with only 672 tokens, 8x fewer than a comparable 3D grid tokenizer.",
+      "comments": "project page at <a class=\"link-external link-https\" href=\"https://videoflextok.epfl.ch/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.12890": {
+      "abstract": "Multimodal deep search agents have shown great potential in solving complex tasks by iteratively collecting textual and visual evidence. However, managing the heterogeneous information and high token costs associated with multimodal inputs over long horizons remains a critical challenge, as existing methods often suffer from context explosion or the loss of crucial visual signals. To address this, we propose a novel Long-horizon MultiModal deep search framework, named LMM-Searcher, centered on a file-based visual representation mechanism. By offloading visual assets to an external file system and mapping them to lightweight textual identifiers (UIDs), our approach mitigates context overhead while preserving multimodal information for future access. We equip the agent with a tailored fetch-image tool, enabling a progressive, on-demand visual loading strategy for active perception. Furthermore, we introduce a data synthesis pipeline designed to generate queries requiring complex cross-modal multi-hop reasoning. Using this pipeline, we distill 12K high-quality trajectories to fine-tune Qwen3-VL-Thinking-30A3B into a specialized multimodal deep search agent. Extensive experiments across four benchmarks demonstrate that our method successfully scales to 100-turn search horizons, achieving state-of-the-art performance among open-source models on challenging long-horizon benchmarks like MM-BrowseComp and MMSearch-Plus, while also exhibiting strong generalizability across different base models. Our code will be released inthis https URL.",
+      "comments": ""
+    },
+    "2604.13010": {
+      "abstract": "On-policy distillation (OPD) has emerged as an efficient post-training paradigm for large language models. However, standard OPD requires a live teacher inference server throughout training, resulting in substantial infrastructure overhead. In this work, we investigate whether on-policy distillation can be performed offline. A natural approach is to precompute teacher log-probabilities once over SFT rollouts and reuse them during training. In practice, however, this offline variant fails to reliably match the performance of standard OPD. To understand this discrepancy, we identify a previously overlooked condition that is critical for any OPD pipeline, which we term teacher consistency. This condition requires that the same teacher model be used for both supervised fine-tuning and OPD. We show that violating teacher consistency introduces an irreducible gradient bias, causing both offline and online OPD to converge to a suboptimal fixed point regardless of training duration. Building on this insight, we propose Lightning OPD, an offline on-policy distillation framework that enforces teacher consistency by precomputing teacher log-probabilities over SFT rollouts. This design eliminates the need for a live teacher server entirely. We further show that, under teacher consistency, Lightning OPD shares the same optimum as standard OPD, with bounded gradient discrepancy and an implicit regularization effect that helps prevent policy drift. Extensive experiments on mathematical reasoning and code generation demonstrate that Lightning OPD achieves state-of-the-art performance with significantly improved efficiency. Starting from an SFT-initialized Qwen3-8B-Base model, Lightning OPD reaches 69.9% on AIME 2024 in just 30 GPU hours, achieving a 4.0x speedup over standard OPD and substantially lowering the barrier to entry for academic research on LLM post-training.",
+      "comments": ""
+    },
+    "2604.13016": {
+      "abstract": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigation of OPD dynamics and mechanisms. We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even with consistent thinking patterns and higher scores, the teacher must offer genuinely new capabilities beyond what the student has seen during training. We validate these findings through weak-to-strong reverse distillation, showing that same-family 1.5B and 7B teachers are distributionally indistinguishable from the student's perspective. Probing into the token-level mechanism, we show that successful OPD is characterized by progressive alignment on high-probability tokens at student-visited states, a small shared token set that concentrates most of the probability mass (97%-99%). We further propose two practical strategies to recover failing OPD: off-policy cold start and teacher-aligned prompt selection. Finally, we show that OPD's apparent free lunch of dense token-level reward comes at a cost, raising the question of whether OPD can scale to long-horizon distillation.",
+      "comments": "30 pages, 23 figures. Code: <a class=\"link-external link-https\" href=\"https://github.com/thunlp/OPD\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.13018": {
+      "abstract": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over hours or days. We introduce AiScientist, a system for autonomous long-horizon engineering for ML research built on a simple principle: strong long-horizon performance requires both structured orchestration and durable state continuity. To this end, AiScientist combines hierarchical orchestration with a permission-scoped File-as-Bus workspace: a top-level Orchestrator maintains stage-level control through concise summaries and a workspace map, while specialized agents repeatedly re-ground on durable artifacts such as analyses, plans, code, and experimental evidence rather than relying primarily on conversational handoffs, yielding thin control over thick state. Across two complementary benchmarks, AiScientist improves PaperBench score by 10.54 points on average over the best matched baseline and achieves 81.82 Any Medal% on MLE-Bench Lite. Ablation studies further show that File-as-Bus protocol is a key driver of performance, reducing PaperBench by 6.41 points and MLE-Bench Lite by 31.82 points when removed. These results suggest that long-horizon ML research engineering is a systems problem of coordinating specialized work over durable project state, rather than a purely local reasoning problem.",
+      "comments": "Repo: <a class=\"link-external link-https\" href=\"https://github.com/AweAI-Team/AiScientist\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.13030": {
+      "abstract": "While diffusion models dominate the field of visual generation, they are computationally inefficient, applying a uniform computational effort regardless of different complexity. In contrast, autoregressive (AR) models are inherently complexity-aware, as evidenced by their variable likelihoods, but are often hindered by lossy discrete tokenization and error accumulation. In this work, we introduce Generative Refinement Networks (GRN), a next-generation visual synthesis paradigm to address these issues. At its core, GRN addresses the discrete tokenization bottleneck through a theoretically near-lossless Hierarchical Binary Quantization (HBQ), achieving a reconstruction quality comparable to continuous counterparts. Built upon HBQ's latent space, GRN fundamentally upgrades AR generation with a global refinement mechanism that progressively perfects and corrects artworks -- like a human artist painting. Besides, GRN integrates an entropy-guided sampling strategy, enabling complexity-aware, adaptive-step generation without compromising visual quality. On the ImageNet benchmark, GRN establishes new records in image reconstruction (0.56 rFID) and class-conditional image generation (1.81 gFID). We also scale GRN to more challenging text-to-image and text-to-video generation, delivering superior performance on an equivalent scale. We release all models and code to foster further research on GRN.",
+      "comments": "code: <a class=\"link-external link-https\" href=\"https://github.com/MGenAI/GRN\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.13036": {
+      "abstract": "Recent advances in video generation enable a new paradigm for 3D scene creation: generating camera-controlled videos that simulate scene walkthroughs, then lifting them to 3D via feed-forward reconstruction techniques. This generative reconstruction approach combines the visual fidelity and creative capacity of video models with 3D outputs ready for real-time rendering and simulation. Scaling to large, complex environments requires 3D-consistent video generation over long camera trajectories with large viewpoint changes and location revisits, a setting where current video models degrade quickly. Existing methods for long-horizon generation are fundamentally limited by two forms of degradation: spatial forgetting and temporal drifting. As exploration proceeds, previously observed regions fall outside the model's temporal context, forcing the model to hallucinate structures when revisited. Meanwhile, autoregressive generation accumulates small synthesis errors over time, gradually distorting scene appearance and geometry. We present Lyra 2.0, a framework for generating persistent, explorable 3D worlds at scale. To address spatial forgetting, we maintain per-frame 3D geometry and use it solely for information routing -- retrieving relevant past frames and establishing dense correspondences with the target viewpoints -- while relying on the generative prior for appearance synthesis. To address temporal drifting, we train with self-augmented histories that expose the model to its own degraded outputs, teaching it to correct drift rather than propagate it. Together, these enable substantially longer and 3D-consistent video trajectories, which we leverage to fine-tune feed-forward reconstruction models that reliably recover high-quality 3D scenes.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://research.nvidia.com/labs/sil/projects/lyra2/\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}
