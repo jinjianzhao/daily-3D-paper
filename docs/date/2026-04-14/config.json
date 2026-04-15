@@ -107,6 +107,10 @@
       "title": "SCOPE: Signal-Calibrated On-Policy Distillation Enhancement with Dual-Path Adaptive Weighting",
       "hf_link": "https://huggingface.co/papers/2604.10688"
     },
+    "2604.10708": {
+      "title": "Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing",
+      "hf_link": "https://huggingface.co/papers/2604.10708"
+    },
     "2604.10718": {
       "title": "SciPredict: Can LLMs Predict the Outcomes of Scientific Experiments in Natural Sciences?",
       "hf_link": "https://huggingface.co/papers/2604.10718"
@@ -167,6 +171,10 @@
       "title": "Continuous Adversarial Flow Models",
       "hf_link": "https://huggingface.co/papers/2604.11521"
     },
+    "2604.11544": {
+      "title": "Time is Not a Label: Continuous Phase Rotation for Temporal Knowledge Graphs and Agentic Memory",
+      "hf_link": "https://huggingface.co/papers/2604.11544"
+    },
     "2604.11547": {
       "title": "Eliciting Medical Reasoning with Knowledge-enhanced Data Synthesis: A Semi-Supervised Reinforcement Learning Approach",
       "hf_link": "https://huggingface.co/papers/2604.11547"
@@ -226,6 +234,7 @@
     "2604.10539": "长序列大模型KV缓存管理\n自然语言处理;大语言模型优化;KV缓存内存压缩\nKV缓存在加速大语言模型推理时会导致内存瓶颈，现有卸载方法存在精度和性能问题。\n提出IceCache方法，通过语义令牌聚类与分页管理，在低缓存预算下维持高精度与低延迟。",
     "2604.10628": "构建巴洛克乐谱数据集训练符号音乐理解模型\n自然语言处理;符号音乐理解;乐谱编码模型\n符号音乐研究长期依赖MIDI数据集，而基于文本的LilyPond乐谱格式未被探索用于音乐理解。\n我们构建了一个专家转录的巴洛克LilyPond数据集BMdataset，并基于此训练了LilyBERT模型，证明小规模高质量数据集比大规模嘈杂语料更有效，并通过结合广泛预训练和领域微调获得了最佳效果。",
     "2604.10688": "优化大模型策略蒸馏训练\n强化学习;语言模型对齐;策略蒸馏增强\n现有策略蒸馏方法对所有训练样本采用均匀的监督信号，忽略了样本信号质量的差异。\n提出双路径自适应框架，按答案对错分流样本，分别用权重校准的KL蒸馏和MLE进行差异化训练。",
+    "2604.10708": "统一音频理解生成编辑\n音频信号处理；音频生成与编辑；跨域统一框架\n当前多模态模型在音频理解、生成与编辑上进展迅速，但三者通常由专门模型处理，缺乏统一框架。\n本文提出首个端到端框架Audio-Omni，融合理解与生成模型，构建大规模编辑数据集，在多个音频任务上达到先进性能。",
     "2604.10718": "大模型预测自然实验效果\n自然语言处理;科学语言模型;实验效果预测\n评估大模型预测自然实验结果的能力与可靠性。  \n构建SciPredict基准并测试模型表现，发现大模型预测准确率低且无法判断自身预测是否可靠。",
     "2604.10784": "统一多模态模型代码库\n自然语言处理;多模态学习;统一多模态模型评估\n多样化统一多模态模型架构和训练范式给统一评估与分析带来了挑战。\n推出了一个支持多种模型、任务和数据集评估分析与后训练的统一代码库TorchUMM。",
     "2604.10799": "优化波兰语模型Bielik分词器\n自然语言处理;语言建模;波兰语大模型优化\n当前通用大模型的分词器对波兰语支持不佳\n为Bielik模型改用波兰语优化分词器并训练",
@@ -241,6 +250,7 @@
     "2604.11446": "低秩优化轨迹建模加速强化学习训练\n自然语言处理;大语言模型训练;强化学习奖励验证\n大语言模型强化学习奖励验证训练计算开销大\n提出非线性外推法建模参数轨迹加速训练",
     "2604.11491": "多比特图像水印嵌入与解码\n计算机视觉;图像处理;多比特图像水印\n生成模型快速发展带来图像真实性问题，多比特图像水印可嵌入信息以验证来源和身份。\n提出ADD方法，通过两阶段学习水印并线性解码，在48位水印上实现高精度、强鲁棒性与计算高效。",
     "2604.11521": "连续对抗流模型用于图像生成\n生成模型;扩散模型;流模型对抗训练\n现有流匹配模型采用均方误差目标训练，其样本与目标分布对齐度不足。\n我们提出连续对抗流模型，引入判别器指导训练，显著改善了流匹配模型在图像生成等任务上的性能。",
+    "2604.11544": "连续相位旋转处理时序知识图谱\n知识图谱与表示学习;时序知识推理;结构化记忆系统\n现有记忆系统常将时间作为离散标签，难以区分持久与演变的事实\n提出RoMem模块，通过语义速度门实现连续相位旋转，让过时事实在向量空间中失相，在多个任务中实现最佳性能",
     "2604.11547": "医学大模型推理数据合成与强化学习\n自然语言处理;医疗语言模型;医学推理数据增强\n医学大模型发展受限于高质量推理数据的稀缺。\n提出通过知识增强合成数据并结合半监督强化学习，有效提升了模型在罕见病等任务上的推理能力。",
     "2604.11641": "追踪代码智能体故障根源  \n软件工程;程序分析与调试;代码智能体状态追踪  \n代码智能体日益复杂，其内部状态转换和故障传播难以观察和调试。  \n提出了CodeTracer框架，通过解析运行信息重建状态历史并定位故障源头，构建了评估基准并验证了其有效性。",
     "2604.11666": "训练双面智能体误导对手信念  \n自然语言处理;对话与交互系统;心智理论引导任务  \n背景/任务是让大语言模型在与潜在对手对话时，能理解并影响对方信念以确保安全。  \n研究通过强化学习训练双面智能体，结合心智理论与误导奖励，提升了模型在困难场景下的表现。",
@@ -466,6 +476,10 @@
       "abstract": "On-policy reinforcement learning has become the dominant paradigm for reasoning alignment in large language models, yet its sparse, outcome-level rewards make token-level credit assignment notoriously difficult. On-Policy Distillation (OPD) alleviates this by introducing dense, token-level KL supervision from a teacher model, but typically applies this supervision uniformly across all rollouts, ignoring fundamental differences in signal quality. We propose Signal-Calibrated On-Policy Distillation Enhancement (SCOPE), a dual-path adaptive training framework that routes on-policy rollouts by correctness into two complementary supervision paths. For incorrect trajectories, SCOPE performs teacher-perplexity-weighted KL distillation to prioritize instances where the teacher demonstrates genuine corrective capability, while down-weighting unreliable guidance. For correct trajectories, it applies student-perplexity-weighted MLE to concentrate reinforcement on low-confidence samples at the capability boundary rather than over-reinforcing already mastered ones. Both paths employ a group-level normalization to adaptively calibrate weight distributions, accounting for the intrinsic difficulty variance across prompts. Extensive experiments on six reasoning benchmarks show that SCOPE achieves an average relative improvement of 11.42% in Avg@32 and 7.30% in Pass@32 over competitive baselines, demonstrating its consistent effectiveness.",
       "comments": ""
     },
+    "2604.10708": {
+      "abstract": "Recent progress in multimodal models has spurred rapid advances in audio understanding, generation, and editing. However, these capabilities are typically addressed by specialized models, leaving the development of a truly unified framework that can seamlessly integrate all three tasks underexplored. While some pioneering works have explored unifying audio understanding and generation, they often remain confined to specific domains. To address this, we introduce Audio-Omni, the first end-to-end framework to unify generation and editing across general sound, music, and speech domains, with integrated multi-modal understanding capabilities. Our architecture synergizes a frozen Multimodal Large Language Model for high-level reasoning with a trainable Diffusion Transformer for high-fidelity synthesis. To overcome the critical data scarcity in audio editing, we construct AudioEdit, a new large-scale dataset comprising over one million meticulously curated editing pairs. Extensive experiments demonstrate that Audio-Omni achieves state-of-the-art performance across a suite of benchmarks, outperforming prior unified approaches while achieving performance on par with or superior to specialized expert models. Beyond its core capabilities, Audio-Omni exhibits remarkable inherited capabilities, including knowledge-augmented reasoning generation, in-context generation, and zero-shot cross-lingual control for audio generation, highlighting a promising direction toward universal generative audio intelligence. The code, model, and dataset will be publicly released onthis https URL.",
+      "comments": ""
+    },
     "2604.10718": {
       "abstract": "Accelerating scientific discovery requires the identification of which experiments would yield the best outcomes before committing resources to costly physical validation. While existing benchmarks evaluate LLMs on scientific knowledge and reasoning, their ability to predict experimental outcomes - a task where AI could significantly exceed human capabilities - remains largely underexplored. We introduce SciPredict, a benchmark comprising 405 tasks derived from recent empirical studies in 33 specialized sub-fields of physics, biology, and chemistry. SciPredict addresses two critical questions: (a) can LLMs predict the outcome of scientific experiments with sufficient accuracy? and (b) can such predictions be reliably used in the scientific research process? Evaluations reveal fundamental limitations on both fronts. Model accuracies are 14-26% and human expert performance is $\\approx$20%. Although some frontier models exceed human performance model accuracy is still far below what would enable reliable experimental guidance. Even within the limited performance, models fail to distinguish reliable predictions from unreliable ones, achieving only $\\approx$20% accuracy regardless of their confidence or whether they judge outcomes as predictable without physical experimentation. Human experts, in contrast, demonstrate strong calibration: their accuracy increases from $\\approx$5% to $\\approx$80% as they deem outcomes more predictable without conducting the experiment. SciPredict establishes a rigorous framework demonstrating that superhuman performance in experimental science requires not just better predictions, but better awareness of prediction reliability. For reproducibility all our data and code are provided atthis https URL",
       "comments": ""
@@ -524,6 +538,10 @@
     },
     "2604.11521": {
       "abstract": "We propose continuous adversarial flow models, a type of continuous-time flow model trained with an adversarial objective. Unlike flow matching, which uses a fixed mean-squared-error criterion, our approach introduces a learned discriminator to guide training. This change in objective induces a different generalized distribution, which empirically produces samples that are better aligned with the target data distribution. Our method is primarily proposed for post-training existing flow-matching models, although it can also train models from scratch. On the ImageNet 256px generation task, our post-training substantially improves the guidance-free FID of latent-space SiT from 8.26 to 3.63 and of pixel-space JiT from 7.17 to 3.57. It also improves guided generation, reducing FID from 2.06 to 1.53 for SiT and from 1.86 to 1.80 for JiT. We further evaluate our approach on text-to-image generation, where it achieves improved results on both the GenEval and DPG benchmarks.",
+      "comments": ""
+    },
+    "2604.11544": {
+      "abstract": "Structured memory representations such as knowledge graphs are central to autonomous agents and other long-lived systems. However, most existing approaches model time as discrete metadata, either sorting by recency (burying old-yet-permanent knowledge), simply overwriting outdated facts, or requiring an expensive LLM call at every ingestion step, leaving them unable to distinguish persistent facts from evolving ones. To address this, we introduce RoMem, a drop-in temporal knowledge graph module for structured memory systems, applicable to agentic memory and beyond. A pretrained Semantic Speed Gate maps each relation's text embedding to a volatility score, learning from data that evolving relations (e.g., \"president of\") should rotate fast while persistent ones (e.g., \"born in\") should remain stable. Combined with continuous phase rotation, this enables geometric shadowing: obsolete facts are rotated out of phase in complex vector space, so temporally correct facts naturally outrank contradictions without deletion. On temporal knowledge graph completion, RoMem achieves state-of-the-art results on ICEWS05-15 (72.6 MRR). Applied to agentic memory, it delivers 2-3x MRR and answer accuracy on temporal reasoning (MultiTQ), dominates hybrid benchmark (LoCoMo), preserves static memory with zero degradation (DMR-MSC), and generalises zero-shot to unseen financial domains (FinTMMBench).",
       "comments": ""
     },
     "2604.11547": {
