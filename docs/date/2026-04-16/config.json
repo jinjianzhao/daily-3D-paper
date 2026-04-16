@@ -1,12 +1,14 @@
 {
   "date": "2026-04-16",
   "focus_ids": [
+    "2604.07882",
     "2604.14048",
     "2604.14148",
     "2604.11626"
   ],
   "focus_sections": {
     "3D重建/生成": [
+      "2604.07882",
       "2604.14048"
     ],
     "视频生成模型": [
@@ -17,9 +19,21 @@
     ]
   },
   "base_info": {
+    "2507.04227": {
+      "title": "Mobile GUI Agents under Real-world Threats: Are We There Yet?",
+      "hf_link": "https://huggingface.co/papers/2507.04227"
+    },
+    "2604.06159": {
+      "title": "Target Policy Optimization",
+      "hf_link": "https://huggingface.co/papers/2604.06159"
+    },
     "2604.07429": {
       "title": "GameWorld: Towards Standardized and Verifiable Evaluation of Multimodal Game Agents",
       "hf_link": "https://huggingface.co/papers/2604.07429"
+    },
+    "2604.07882": {
+      "title": "ReconPhys: Reconstruct Appearance and Physical Attributes from Single Video",
+      "hf_link": "https://huggingface.co/papers/2604.07882"
     },
     "2604.09409": {
       "title": "Do AI Coding Agents Log Like Humans? An Empirical Study",
@@ -32,6 +46,10 @@
     "2604.11045": {
       "title": "Sema Code: Decoupling AI Coding Agents into Programmable, Embeddable Infrastructure",
       "hf_link": "https://huggingface.co/papers/2604.11045"
+    },
+    "2604.11548": {
+      "title": "SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering",
+      "hf_link": "https://huggingface.co/papers/2604.11548"
     },
     "2604.11626": {
       "title": "RationalRewards: Reasoning Rewards Scale Visual Generation Both Training and Test Time",
@@ -91,10 +109,14 @@
     }
   },
   "summaries": {
+    "2507.04227": "移动GUI代理现实威胁测试\n人机交互;移动界面自动化;多模态GUI代理安全评测\n近年来，基于大模型的移动GUI代理发展迅速，但其在标准基准上的高准确率可能掩盖了其在充满不可信第三方内容的真实应用场景中的脆弱性。\n研究构建了一个可扩展的应用内容注入框架和测试套件，评估了开源与商业GUI代理，发现第三方内容会显著误导代理性能。",
+    "2604.06159": "分离目标优化策略\n强化学习;策略优化;语言模型强化学习\n强化学习中策略梯度方法同时决定哪些样本应增加概率及如何更新参数，易受学习率等超参数影响导致优化不稳定。\n提出目标策略优化方法，先构造目标分布再拟合策略，在稀疏奖励任务中显著超越传统方法。",
     "2604.07429": "构建用于游戏智能体标准化测评平台\n多模态;智能体与交互;游戏智能体评估\n为评估多模态大模型在真实交互中的通用智能，需要一个标准化且可验证的测试环境。\n推出了GameWorld基准，包含多个游戏和任务，通过两种智能体接口进行了系统评估，揭示了当前模型与人类能力的差距和未来挑战。",
+    "2604.07882": "单视频重建外观与物理属性\n计算机图形学；三维重建；非刚性物体物理重建\n现有方法难以从单一视频高效、普适地重建具有物理合理性的非刚性物体。\n提出ReconPhys前馈框架，通过自监督双分支网络联合学习外观重建与物理属性估计。",
     "2604.09409": "AI编程代理日志行为实证研究\n软件工程;软件维护;软件日志\n现有研究关注人类日志实践，但对AI编程代理如何处理这一非功能性需求及其自然语言指令的治理效果尚不清楚。\n通过分析4550个代理生成的PR，比较了AI代理与人类在日志模式上的差异，并评估了显式日志指令的有效性。",
     "2604.10866": "用语言世界模型评估AI代理在各行业真实任务的表现  \n人工智能代理评估;多智能体评测基准;专业任务环境模拟  \n现有基准难以评估AI代理在众多专业领域的真实任务表现，因为缺乏对应的公开环境。  \n作者提出了OccuBench基准，它覆盖10大行业100个真实专业任务场景，通过语言世界模型模拟环境并自动生成评测实例，从任务完成度和环境鲁棒性两个维度评估了15个前沿模型，发现了一些关键结论。",
     "2604.11045": "解耦AI编程代理为可编程内核\n软件工程;AI辅助编程;AI编程代理框架\n现有AI编程代理功能被特定交付形式锁定，难以跨工程环境复用。\n提出Sema Code框架，将核心引擎与客户端解耦，设计八项机制使其成为可嵌入、可编程的基础设施，并展示了其架构灵活性。",
+    "2604.11548": "构建个人AI代理的基础设施框架\n人工智能系统;多智能体系统;个人AI代理工程\n随着OpenClaw推动个人AI代理的广泛应用，AI工程范式向基础设施设计（马具工程）转变，人机交互向持续协作关系演进。\n提出了开源框架SemaClaw，其核心贡献包括基于DAG的混合编排、行为安全系统、三层上下文管理和自动化个人知识库构建技能。",
     "2604.11626": "奖励模型生成优化新方法\n计算机视觉;视觉生成;可解释奖励模型\n现有视觉生成奖励模型仅输出单一偏好分数，丢弃了人类判断背后的推理过程。\n提出RationalRewards，通过训练奖励模型生成结构化批判来优化生成器，在训练时提供细粒度强化学习奖励，在测试时通过批判-精炼循环改进输出。",
     "2604.13151": "衡量语言模型探索与利用错误\n自然语言处理;智能体决策;探索与利用评估\n语言模型智能体在执行开放式任务时需平衡探索与利用，但目前缺乏无需访问内部策略的评估方法。\n为此设计了可控环境与量化指标，评估前沿模型发现其存在困难，并表明推理模型与简单工程能显著提升性能。",
     "2604.13201": "无限科学测试场基准\n自然语言处理;大语言模型评测;科学推理评估\n现有基准难以无偏评估大语言模型的科学数据分析能力。\n提出一个程序生成的、可验证的科学问答基准来评估模型的证据推理和工具使用能力。",
@@ -111,7 +133,8 @@
     "2604.14148": "Seedance二点零升级多模态音视频生成模型\n计算机图形学;视频生成;多模态音视频联合生成\n现有视频生成模型在处理复杂多模态参考输入和提升综合生成质量方面面临挑战。\n提出Seedance 2.0模型，它采用统一高效架构，支持文图音视频四种输入，在生成质量、时长、分辨率及多模态编辑能力上取得全面进步，并推出了加速版本。"
   },
   "deep_analysis": {
-    "2604.11626": "### (1) 这篇论文所在的任务是什么：任务输入、任务输出、任务功能  \n**任务**：视觉生成模型的**奖励建模**与**优化**。  \n- **输入**：  \n  - 一段文本描述（例如：“一只戴着帽子的猫在弹吉他”）或一张输入图像+编辑指令。  \n  - 模型生成的图像。  \n- **输出**：  \n  - **结构化评价**：对图像的多维度批评（例如：文本匹配度、物理合理性、视觉质量等）。  \n  - **最终分数**：基于上述批评给出的总体偏好分数（例如：0.8分）。  \n- **任务功能**：  \n  - **训练时**：作为强化学习（RL）的奖励信号，指导生成模型优化参数。  \n  - **测试时**：通过“生成-批评-优化”循环，直接修改输入提示词来提升输出质量，无需更新模型参数。\n\n---\n\n### (2) 这篇论文想解决什么问题？  \n传统视觉生成的奖励模型通常只输出一个“黑箱”分数（例如：0.7分），**缺乏解释性**，导致两个问题：  \n1. **训练时**：生成模型可能通过“奖励破解”盲目优化分数，但实际生成质量下降（例如：图像变得模糊或失真）。  \n2. **测试时**：用户无法根据分数知道如何改进提示词，只能盲目尝试。  \n**核心问题**：如何让奖励模型不仅打分，还能给出**结构化、可解释的批评**，从而更有效地指导生成模型优化？\n\n---\n\n### (3) 论文的核心思路是什么？  \n**核心思路**：将奖励模型从“只输出分数”变为“先输出结构化批评，再基于批评给出分数”。  \n具体实现分为三步：  \n1. **训练阶段**：提出 **PARROT 框架**，利用现有**成对偏好数据**（例如：用户选择图像A优于图像B）自动生成高质量的批评文本，无需人工标注。  \n   - 方法：用一个大语言模型（教师模型）基于偏好标签生成候选批评，再通过一致性过滤筛除不可靠的批评，最后训练一个小型学生模型（RationalRewards）学会生成批评。  \n2. **优化阶段**：利用结构化批评在**两个空间**优化生成：  \n   - **参数空间**：作为RL的奖励信号，提供多维度、可解释的梯度。  \n   - **提示词空间**：在测试时通过“生成-批评-优化”循环，根据批评直接修改输入提示词，提升输出质量。\n\n---\n\n### (4) 结果怎么样？  \n论文提出的 **RationalRewards（8B参数）** 在多个基准测试中表现优异：  \n1. **偏好预测准确率**：达到开源奖励模型的**最优水平**，与Gemini-2.5-Pro相当，但训练数据量少10-20倍。  \n2. **训练时RL效果**：在文本到图像、图像编辑任务上，超越传统标量奖励模型，生成质量更高且更稳定（减少奖励破解）。  \n3. **测试时提示词优化**：仅通过“生成-批评-优化”循环（不更新模型参数），在部分任务上**达到甚至超过RL微调的效果**，表明结构化批评能有效挖掘现有模型的潜力。\n\n---\n\n### (5) 模型结构与整体流程  \n**基模**：基于一个**视觉语言模型（VLM）** 架构（具体未明确说明，类似Qwen-Image或LLaVA）。  \n**整体流程**（以文本到图像生成为例）：  \n\n1. **输入**：  \n   - 文本提示词 \\( P \\)（例如：“一只猫在弹吉他”）。  \n   - 生成的图像 \\( I \\)。  \n\n2. **批评生成（RationalRewards模型）**：  \n   - 模型接收 \\( P \\) 和 \\( I \\)，首先生成**结构化批评** \\( R \\)：  \n     ```\n     批评示例：\n     - 文本匹配度：猫在弹吉他，但吉他缺失琴弦。\n     - 物理合理性：猫的爪子位置不合理。\n     - 视觉质量：图像背景模糊。\n     ```\n   - 基于批评 \\( R \\)，模型输出一个**总体偏好分数** \\( S \\)。  \n\n3. **优化阶段（分两种模式）**：  \n   - **训练时（参数空间）**：  \n     - 将分数 \\( S \\) 作为RL奖励，通过PPO等算法更新生成模型的参数（例如LoRA权重）。  \n     - 批评 \\( R \\) 提供可解释的优化方向（例如：改进吉他细节）。  \n   - **测试时（提示词空间）**：  \n     - 执行“生成-批评-优化”循环：  \n       1. 初始生成图像 \\( I_0 \\)。  \n       2. RationalRewards批评 \\( I_0 \\) 并生成修订后的提示词 \\( P' \\)（例如：“一只猫在弹一把有琴弦的吉他，背景清晰”）。  \n       3. 用 \\( P' \\) 重新生成图像 \\( I_1 \\)。  \n       4. 循环直至满意。  \n\n4. **输出**：  \n   - 最终优化后的图像 \\( I_{\\text{final}} \\)。  \n   - 可选的批评文本和分数（用于解释改进原因）。  \n\n**流程图对应关系**：  \n- 图2展示了“参数空间优化”和“提示词空间优化”的双路径。  \n- 图4说明了PARROT训练框架：从偏好数据→教师模型生成批评→一致性过滤→训练学生模型（RationalRewards）。  \n\n---\n\n### 简单总结  \n这篇论文的核心是：**让奖励模型学会“先批评再打分”**，从而用更少的数据训练出更好的奖励模型，并利用结构化批评同时优化生成模型的参数和输入提示词，在训练和测试阶段都能提升视觉生成的质量与可控性。"
+    "2604.11626": "### (1) 这篇论文所在的任务是什么：任务输入、任务输出、任务功能  \n**任务**：视觉生成模型的**奖励建模**与**优化**。  \n- **输入**：  \n  - 一段文本描述（例如：“一只戴着帽子的猫在弹吉他”）或一张输入图像+编辑指令。  \n  - 模型生成的图像。  \n- **输出**：  \n  - **结构化评价**：对图像的多维度批评（例如：文本匹配度、物理合理性、视觉质量等）。  \n  - **最终分数**：基于上述批评给出的总体偏好分数（例如：0.8分）。  \n- **任务功能**：  \n  - **训练时**：作为强化学习（RL）的奖励信号，指导生成模型优化参数。  \n  - **测试时**：通过“生成-批评-优化”循环，直接修改输入提示词来提升输出质量，无需更新模型参数。\n\n---\n\n### (2) 这篇论文想解决什么问题？  \n传统视觉生成的奖励模型通常只输出一个“黑箱”分数（例如：0.7分），**缺乏解释性**，导致两个问题：  \n1. **训练时**：生成模型可能通过“奖励破解”盲目优化分数，但实际生成质量下降（例如：图像变得模糊或失真）。  \n2. **测试时**：用户无法根据分数知道如何改进提示词，只能盲目尝试。  \n**核心问题**：如何让奖励模型不仅打分，还能给出**结构化、可解释的批评**，从而更有效地指导生成模型优化？\n\n---\n\n### (3) 论文的核心思路是什么？  \n**核心思路**：将奖励模型从“只输出分数”变为“先输出结构化批评，再基于批评给出分数”。  \n具体实现分为三步：  \n1. **训练阶段**：提出 **PARROT 框架**，利用现有**成对偏好数据**（例如：用户选择图像A优于图像B）自动生成高质量的批评文本，无需人工标注。  \n   - 方法：用一个大语言模型（教师模型）基于偏好标签生成候选批评，再通过一致性过滤筛除不可靠的批评，最后训练一个小型学生模型（RationalRewards）学会生成批评。  \n2. **优化阶段**：利用结构化批评在**两个空间**优化生成：  \n   - **参数空间**：作为RL的奖励信号，提供多维度、可解释的梯度。  \n   - **提示词空间**：在测试时通过“生成-批评-优化”循环，根据批评直接修改输入提示词，提升输出质量。\n\n---\n\n### (4) 结果怎么样？  \n论文提出的 **RationalRewards（8B参数）** 在多个基准测试中表现优异：  \n1. **偏好预测准确率**：达到开源奖励模型的**最优水平**，与Gemini-2.5-Pro相当，但训练数据量少10-20倍。  \n2. **训练时RL效果**：在文本到图像、图像编辑任务上，超越传统标量奖励模型，生成质量更高且更稳定（减少奖励破解）。  \n3. **测试时提示词优化**：仅通过“生成-批评-优化”循环（不更新模型参数），在部分任务上**达到甚至超过RL微调的效果**，表明结构化批评能有效挖掘现有模型的潜力。\n\n---\n\n### (5) 模型结构与整体流程  \n**基模**：基于一个**视觉语言模型（VLM）** 架构（具体未明确说明，类似Qwen-Image或LLaVA）。  \n**整体流程**（以文本到图像生成为例）：  \n\n1. **输入**：  \n   - 文本提示词 \\( P \\)（例如：“一只猫在弹吉他”）。  \n   - 生成的图像 \\( I \\)。  \n\n2. **批评生成（RationalRewards模型）**：  \n   - 模型接收 \\( P \\) 和 \\( I \\)，首先生成**结构化批评** \\( R \\)：  \n     ```\n     批评示例：\n     - 文本匹配度：猫在弹吉他，但吉他缺失琴弦。\n     - 物理合理性：猫的爪子位置不合理。\n     - 视觉质量：图像背景模糊。\n     ```\n   - 基于批评 \\( R \\)，模型输出一个**总体偏好分数** \\( S \\)。  \n\n3. **优化阶段（分两种模式）**：  \n   - **训练时（参数空间）**：  \n     - 将分数 \\( S \\) 作为RL奖励，通过PPO等算法更新生成模型的参数（例如LoRA权重）。  \n     - 批评 \\( R \\) 提供可解释的优化方向（例如：改进吉他细节）。  \n   - **测试时（提示词空间）**：  \n     - 执行“生成-批评-优化”循环：  \n       1. 初始生成图像 \\( I_0 \\)。  \n       2. RationalRewards批评 \\( I_0 \\) 并生成修订后的提示词 \\( P' \\)（例如：“一只猫在弹一把有琴弦的吉他，背景清晰”）。  \n       3. 用 \\( P' \\) 重新生成图像 \\( I_1 \\)。  \n       4. 循环直至满意。  \n\n4. **输出**：  \n   - 最终优化后的图像 \\( I_{\\text{final}} \\)。  \n   - 可选的批评文本和分数（用于解释改进原因）。  \n\n**流程图对应关系**：  \n- 图2展示了“参数空间优化”和“提示词空间优化”的双路径。  \n- 图4说明了PARROT训练框架：从偏好数据→教师模型生成批评→一致性过滤→训练学生模型（RationalRewards）。  \n\n---\n\n### 简单总结  \n这篇论文的核心是：**让奖励模型学会“先批评再打分”**，从而用更少的数据训练出更好的奖励模型，并利用结构化批评同时优化生成模型的参数和输入提示词，在训练和测试阶段都能提升视觉生成的质量与可控性。",
+    "2604.14048": "当然可以。作为博士生，我来用简单的语言为你解释这篇论文的核心内容。\n\n**(1) 论文所在的任务是什么？**\n*   **任务名称：** 多视图3D场景重建。\n*   **任务输入：** 一个场景下拍摄的**多张（比如8张）不同视角的图像**。\n*   **任务输出：**\n    1.  每张图像的**深度图**（即每个像素距离相机的远近）。\n    2.  每张图像对应的**相机位姿**（即拍摄时相机的位置和朝向）。\n    3.  将所有深度图和位姿结合，得到整个场景的**三维点云模型**。\n*   **任务功能：** 从一组2D照片中，自动化地恢复出场景的三维结构，是计算机视觉、机器人、VR/AR等领域的基础技术。\n\n**(2) 这篇论文想解决什么问题？**\n现有的“前馈式”3D重建模型（例如论文中提到的Depth Anything 3、VGGT）存在一个**“训练后就冻结”**的问题。\n*   **问题：** 这些模型在大型数据集上训练好后，参数就固定了。当遇到新的、未见过的测试场景时（比如光线复杂、有镜面反射、有遮挡），模型无法自我调整，容易产生**看起来合理但几何上错误**的重建结果。\n*   **难点：** 直接重新训练模型需要大量带三维真值（Ground Truth）的数据，成本极高，不现实。\n\n**(3) 论文的核心思路是什么？**\n核心思路非常直观：**“看得越多，重建得越好”**。\n1.  **关键直觉：** 对于一个场景，如果给模型看**全部（比如8张）**图像，它的重建结果会比只看**一部分（比如4张）**图像的结果更准确、更一致。\n2.  **自监督信号：** 于是，**完整的视图预测结果**就可以作为**老师**，来指导**部分视图的预测结果**（即**学生**）。这是一种**免费的、无需人工标注的监督信号**。\n3.  **具体做法（Test-Time Adaptation，测试时适应）：** 在测试阶段，给定一个场景的多张图像：\n    *   **老师路径：** 用原始冻结的模型处理**所有图像**，提取特征。\n    *   **学生路径：** 在模型上插入轻量级的**LoRA（低秩适应）可调参数**，用这个“可微调”的模型处理**部分图像**（随机遮掉一些），提取特征。\n    *   **损失函数：** 设计两种损失来优化LoRA参数：\n        *   **帧内一致性损失：** 强迫学生和老师在**同一张图像上**的特征尽可能相似。\n        *   **跨帧关系损失：** 强迫学生模型在处理部分视图时，**学到的不同图像间的关系**与老师模型用所有视图学到的关系保持一致。\n    *   **目标：** 通过这个自监督过程，让模型在几分钟内快速**适应**当前这个测试场景，从而提升重建质量。\n\n**(4) 结果怎么样？**\n效果很好，证明了思路的有效性。\n*   **定量结果：** 在ETH3D、7-Scenes、ScanNet++、HiRoom四个标准数据集上，对Depth Anything 3和VGGT等先进模型进行增强后，**相机位姿估计**和**三维点云重建**的精度都有显著提升（平均提升约3-4个百分点）。\n*   **定性结果：** 从论文给出的可视化图可以看出，使用`Free Geometry`方法后，重建的物体轮廓更清晰，细节更完整，错误（如漂浮的点、缺失的部分）更少。\n*   **效率：** 对每个新场景的适应过程很快，在单张GPU上**不到2分钟**。\n\n**(5) 模型结构与整体流程**\n*   **基模：** 论文本身不提出全新的重建网络，而是作为一个**即插即用的增强框架**，适用于现有的前馈式多视图3D重建模型。文中主要实验的基模是 **Depth Anything 3** 和 **VGGT**。\n*   **整体流程（参照论文方法描述）：**\n    1.  **输入：** 一个测试场景的N张图像（例如N=8）。\n    2.  **构建自监督任务：** 随机选择一部分图像（例如4张）作为**可见视图**，其余作为**掩码（遮挡）视图**。\n    3.  **教师前向传播：** 将**全部N张图像**输入**冻结的、参数固定的原始模型（教师）**，通过其编码器，得到N张图像对应的**教师特征**。\n    4.  **学生前向传播：** 将**可见的K张图像**输入**同一个模型，但编码器中插入了可训练的LoRA模块（学生）**，通过这个“可调”的编码器，得到K张图像对应的**学生特征**。\n    5.  **计算损失 & 优化：**\n        *   **帧内一致性损失：** 对于这K张共有的图像，直接计算其学生特征与教师特征之间的差异（如L2距离）。\n        *   **跨帧关系损失：** 计算学生特征之间（K个视图）的某种关系矩阵（如相似度矩阵），与教师特征中对应视图子集的关系矩阵保持一致。\n        *   将两个损失加起来，**只更新LoRA模块的少量参数**，原始模型的主干参数始终保持冻结。\n    6.  **迭代：** 重复步骤2-5（可以多次随机掩码），在少量迭代后（几分钟内）完成对该场景的适应。\n    7.  **输出：** 使用**优化后的学生模型（带适应后LoRA的模型）**，再次处理该场景的所有N张图像，最终输出**更准确的深度图、相机位姿和三维重建点云**。\n\n**简单总结：** 这篇论文的核心是让3D重建模型在测试时“自己教自己”。它利用“多看几张图就能重建得更好”这个直觉，在测试场景上快速进行自监督微调，从而用很少的代价显著提升了重建精度，是一种巧妙又实用的测试时适应方法。"
   },
   "images_meta": {
     "2604.11626": [
@@ -133,12 +156,44 @@
         "caption_zh": "图 8：RationalRewards（a）为数据整理提供可解释的质量控制；（b）作为由透明原理驱动的多维奖励模型；（c）作为偏好校准的测试时提示调优器，以计算资源换取更优的生成质量；（d）支持区域缺陷定位与密集视觉奖励生成。",
         "role": "pipeline_3"
       }
+    ],
+    "2604.14048": [
+      {
+        "path": "https://arxiv.org/html/2604.14048v1/figures/arch.png",
+        "caption": "Figure 3:Architecture of Free Geometry.The test sequence is processed in two configurations.Top: the full observation (all views, e.g. 8 views) passes through the Image Patch Embedding (e.g. DINOv2[dinov2]), the Multi-view Transformer, a randomized camera token, and encodes the views into feature representations. All encoders are frozen (gray).Bottom: the partial observation (half of views masked, e.g. 4 views) passes through the same frozen backbone (gray) with LoRA applied to multi-view transformer and the camera token is trainable (orange). All feature tokens of decoder input are extracted from both branches.",
+        "caption_zh": "图 3：自由几何架构。测试序列通过两种配置进行处理。上图：完整观测（所有视角，例如 8 个视角）经过图像块嵌入（例如 DINOv2[dinov2]）、多视角 Transformer、随机化相机令牌，并将各视角编码为特征表示。所有编码器均被冻结（灰色部分）。下图：部分观测（半数视角被掩码，例如 4 个视角）经过相同的冻结主干网络（灰色部分），其中多视角 Transformer 应用了 LoRA，且相机令牌可训练（橙色部分）。解码器输入的所有特征令牌均从两个分支中提取。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.14048v1/figures/loss.png",
+        "caption": "Figure 4:Self-Supervised Geometric Losses of Free Geometry:Left illustrates the intra-frame consistency loss for aligning teacher and student features at corresponding image token locations. Right illustrates the cross-frame relational loss for preserving geometric relations between unmasked tokens and masked-frame anchors. The two losses jointly recalibrate the student representation to stronger full-observation features.",
+        "caption_zh": "图 4：自由几何的自监督几何损失：左图展示了帧内一致性损失，用于在对齐教师和学生特征在图像 token 的对应位置。右图展示了跨帧关系损失，用于维护未遮挡 token 与遮挡帧锚点之间的几何关系。这两种损失共同对学生的表征进行重新校准，以获取更强的全观测特征。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.14048v1/figures/teaser.png",
+        "caption": "Figure 1:Free Geometryenables feed-forward 3D reconstruction models to self-evolve at test time without any 3D ground truth and generalize on models and datasets.",
+        "caption_zh": "图1：自由几何使前馈式三维重建模型能够在测试时无需任何三维真实标注数据即可自我进化，并在不同模型与数据集上实现泛化。",
+        "role": "pipeline_3"
+      }
     ]
   },
   "arxiv_details": {
+    "2507.04227": {
+      "abstract": "Recent years have witnessed a rapid development of mobile GUI agents powered by large language models (LLMs), which can autonomously execute diverse device-control tasks based on natural language instructions. The increasing accuracy of these agents on standard benchmarks has raised expectations for large-scale real-world deployment, and there are already several commercial agents released and used by early adopters. However, are we really ready for GUI agents integrated into our daily devices as system building blocks? We argue that an important pre-deployment validation is missing to examine whether the agents can maintain their performance under real-world threats. Specifically, unlike existing common benchmarks that are based on simple static app contents (they have to do so to ensure environment consistency between different tests), real-world apps are filled with contents from untrustworthy third parties, such as advertisement emails, user-generated posts and medias, etc. ... To this end, we introduce a scalable app content instrumentation framework to enable flexible and targeted content modifications within existing applications. Leveraging this framework, we create a test suite comprising both a dynamic task execution environment and a static dataset of challenging GUI states. The dynamic environment encompasses 122 reproducible tasks, and the static dataset consists of over 3,000 scenarios constructed from commercial apps. We perform experiments on both open-source and commercial GUI agents. Our findings reveal that all examined agents can be significantly degraded due to third-party contents, with an average misleading rate of 42.0% and 36.1% in dynamic and static environments respectively. The framework and benchmark has been released atthis https URL.",
+      "comments": ""
+    },
+    "2604.06159": {
+      "abstract": "In RL, given a prompt, we sample a group of completions from a model and score them. Two questions follow: which completions should gain probability mass, and how should the parameters move to realize that change? Standard policy-gradient methods answer both at once, so the update can overshoot or undershoot depending on the learning rate, clipping, and other optimizer choices. We introduce \\emph{Target Policy Optimization} (TPO), which separates the two questions. Given scored completions, TPO constructs a target distribution $q_i \\propto p_i^{\\,\\mathrm{old}} \\exp(u_i)$ and fits the policy to it by cross-entropy. The loss gradient on sampled-completion logits is $p^\\theta - q$, which vanishes once the policy matches the target. On tabular bandits, transformer sequence tasks, and billion-parameter LLM RLVR, TPO matches PG, PPO, GRPO, and DG on easy tasks and substantially outperforms them under sparse reward. Code is available atthis https URL.",
+      "comments": ""
+    },
     "2604.07429": {
       "abstract": "Towards an embodied generalist for real-world interaction, Multimodal Large Language Model (MLLM) agents still suffer from challenging latency, sparse feedback, and irreversible mistakes. Video games offer an ideal testbed with rich visual observations and closed-loop interaction, demanding fine-grained perception, long-horizon planning, and precise control. However, systematically evaluating these capabilities is currently hindered by heterogeneous action interfaces and heuristic verification. To this end, we introduce GameWorld, a benchmark designed for standardized and verifiable evaluation of MLLMs as generalist game agents in browser environments. Two game agent interfaces are studied: (i) computer-use agents that directly emit keyboard and mouse controls, and (ii) generalist multimodal agents that act in a semantic action space via deterministic Semantic Action Parsing. GameWorld contains 34 diverse games and 170 tasks, each paired with state-verifiable metrics for outcome-based evaluation. The results across 18 model-interface pairs suggest that even the best performing agent is far from achieving human capabilities on video games. Extensive experiments of repeated full-benchmark reruns demonstrate the robustness of the benchmark, while further studies on real-time interaction, context-memory sensitivity, and action validity expose more challenges ahead for game agents. Together, by offering a standardized, verifiable, and reproducible evaluation framework, GameWorld lays a robust foundation for advancing research on multimodal game agents and beyond. The project page is atthis https URL.",
       "comments": "23 pages, 8 figures"
+    },
+    "2604.07882": {
+      "abstract": "Reconstructing non-rigid objects with physical plausibility remains a significant challenge. Existing approaches leverage differentiable rendering for per-scene optimization, recovering geometry and dynamics but requiring expensive tuning or manual annotation, which limits practicality and generalizability. To address this, we propose ReconPhys, the first feedforward framework that jointly learns physical attribute estimation and 3D Gaussian Splatting reconstruction from a single monocular video. Our method employs a dual-branch architecture trained via a self-supervised strategy, eliminating the need for ground-truth physics labels. Given a video sequence, ReconPhys simultaneously infers geometry, appearance, and physical attributes. Experiments on a large-scale synthetic dataset demonstrate superior performance: our method achieves 21.64 PSNR in future prediction compared to 13.27 by state-of-the-art optimization baselines, while reducing Chamfer Distance from 0.349 to 0.004. Crucially, ReconPhys enables fast inference (<1 second) versus hours required by existing methods, facilitating rapid generation of simulation-ready assets for robotics and graphics.",
+      "comments": ""
     },
     "2604.09409": {
       "abstract": "Software logging is essential for maintaining and debugging complex systems, yet it remains unclear how AI coding agents handle this non-functional requirement. While prior work characterizes human logging practices, the behaviors of AI coding agents and the efficacy of natural language instructions in governing them are unexplored. To address this gap, we conduct an empirical study of 4,550 agentic pull requests across 81 open-source repositories. We compare agent logging patterns against human baselines and analyze the impact of explicit logging instructions. We find that agents change logging less often than humans in 58.4% of repositories, though they exhibit higher log density when they do. Furthermore, explicit logging instructions are rare (4.7%) and ineffective, as agents fail to comply with constructive requests 67% of the time. Finally, we observe that humans perform 72.5% of post-generation log repairs, acting as \"silent janitors\" who fix logging and observability issues without explicit review feedback. These findings indicate a dual failure in natural language instruction (i.e., scarcity of logging instructions and low agent compliance), suggesting that deterministic guardrails might be necessary to ensure consistent logging practices.",
@@ -150,6 +205,10 @@
     },
     "2604.11045": {
       "abstract": "AI coding agents have become central to developer workflows, yet every existing solution locks its reasoning capabilities within a specific delivery form, such as a CLI, IDE plugin, or web application. This limitation creates systemic barriers when enterprises attempt to reuse these capabilities across heterogeneous engineering environments. To address this challenge, we present Sema Code, an open AI coding framework built on the principle of being embeddable, pluggable, and framework-first. Sema Code completely decouples the core agent engine from all client layers, publishing it as a standalone npm library that any runtime can drive programmatically. Built around this architecture, we designed eight key mechanisms: multi-tenant engine isolation, FIFO input queuing with safe session reconstruction, adaptive context compression, multi-agent collaborative scheduling, intelligent Todo-based process management, four-layer asynchronous permission control, three-tier ecosystem integration spanning MCP, Skills, and Plugins, and a background task framework with separated execution and observation privileges. These mechanisms collectively address the engineering challenges of transforming a complex agent engine into a shared, programmable core. Demonstrating its architectural versatility, the same Sema Core engine simultaneously powers a VSCode extension and a multi-channel messaging gateway, which we name SemaClaw, to unify agent interactions across platforms such as Telegram and Feishu. These represent two fundamentally different product forms sharing an identical reasoning kernel, differing only at the client layer.",
+      "comments": ""
+    },
+    "2604.11548": {
+      "abstract": "The rise of OpenClaw in early 2026 marks the moment when millions of users began deploying personal AI agents into their daily lives, delegating tasks ranging from travel planning to multi-step research. This scale of adoption signals that two parallel arcs of development have reached an inflection point. First is a paradigm shift in AI engineering, evolving from prompt and context engineering to harness engineering-designing the complete infrastructure necessary to transform unconstrained agents into controllable, auditable, and production-reliable systems. As model capabilities converge, this harness layer is becoming the primary site of architectural differentiation. Second is the evolution of human-agent interaction from discrete tasks toward a persistent, contextually aware collaborative relationship, which demands open, trustworthy and extensible harness infrastructure. We present SemaClaw, an open-source multi-agent application framework that addresses these shifts by taking a step towards general-purpose personal AI agents through harness engineering. Our primary contributions include a DAG-based two-phase hybrid agent team orchestration method, a PermissionBridge behavioral safety system, a three-tier context management architecture, and an agentic wiki skill for automated personal knowledge base construction.",
       "comments": ""
     },
     "2604.11626": {
