@@ -45,6 +45,10 @@
       "title": "ReconPhys: Reconstruct Appearance and Physical Attributes from Single Video",
       "hf_link": "https://huggingface.co/papers/2604.07882"
     },
+    "2604.08510": {
+      "title": "What do Language Models Learn and When? The Implicit Curriculum Hypothesis",
+      "hf_link": "https://huggingface.co/papers/2604.08510"
+    },
     "2604.09409": {
       "title": "Do AI Coding Agents Log Like Humans? An Empirical Study",
       "hf_link": "https://huggingface.co/papers/2604.09409"
@@ -148,6 +152,7 @@
     "2604.06159": "分离目标优化策略\n强化学习;策略优化;语言模型强化学习\n强化学习中策略梯度方法同时决定哪些样本应增加概率及如何更新参数，易受学习率等超参数影响导致优化不稳定。\n提出目标策略优化方法，先构造目标分布再拟合策略，在稀疏奖励任务中显著超越传统方法。",
     "2604.07429": "构建用于游戏智能体标准化测评平台\n多模态;智能体与交互;游戏智能体评估\n为评估多模态大模型在真实交互中的通用智能，需要一个标准化且可验证的测试环境。\n推出了GameWorld基准，包含多个游戏和任务，通过两种智能体接口进行了系统评估，揭示了当前模型与人类能力的差距和未来挑战。",
     "2604.07882": "单视频重建外观与物理属性\n计算机图形学；三维重建；非刚性物体物理重建\n现有方法难以从单一视频高效、普适地重建具有物理合理性的非刚性物体。\n提出ReconPhys前馈框架，通过自监督双分支网络联合学习外观重建与物理属性估计。",
+    "2604.08510": "大型语言模型能力涌现规律研究\n自然语言处理;语言模型训练;预训练涌现顺序\n大型语言模型能力如何按顺序涌现尚不清楚。\n通过设计合成任务跟踪能力涌现顺序，发现其遵循可预测的组成性课程。",
     "2604.09409": "AI编程代理日志行为实证研究\n软件工程;软件维护;软件日志\n现有研究关注人类日志实践，但对AI编程代理如何处理这一非功能性需求及其自然语言指令的治理效果尚不清楚。\n通过分析4550个代理生成的PR，比较了AI代理与人类在日志模式上的差异，并评估了显式日志指令的有效性。",
     "2604.10866": "用语言世界模型评估AI代理在各行业真实任务的表现  \n人工智能代理评估;多智能体评测基准;专业任务环境模拟  \n现有基准难以评估AI代理在众多专业领域的真实任务表现，因为缺乏对应的公开环境。  \n作者提出了OccuBench基准，它覆盖10大行业100个真实专业任务场景，通过语言世界模型模拟环境并自动生成评测实例，从任务完成度和环境鲁棒性两个维度评估了15个前沿模型，发现了一些关键结论。",
     "2604.11045": "解耦AI编程代理为可编程内核\n软件工程;AI辅助编程;AI编程代理框架\n现有AI编程代理功能被特定交付形式锁定，难以跨工程环境复用。\n提出Sema Code框架，将核心引擎与客户端解耦，设计八项机制使其成为可嵌入、可编程的基础设施，并展示了其架构灵活性。",
@@ -322,6 +327,10 @@
     },
     "2604.07882": {
       "abstract": "Reconstructing non-rigid objects with physical plausibility remains a significant challenge. Existing approaches leverage differentiable rendering for per-scene optimization, recovering geometry and dynamics but requiring expensive tuning or manual annotation, which limits practicality and generalizability. To address this, we propose ReconPhys, the first feedforward framework that jointly learns physical attribute estimation and 3D Gaussian Splatting reconstruction from a single monocular video. Our method employs a dual-branch architecture trained via a self-supervised strategy, eliminating the need for ground-truth physics labels. Given a video sequence, ReconPhys simultaneously infers geometry, appearance, and physical attributes. Experiments on a large-scale synthetic dataset demonstrate superior performance: our method achieves 21.64 PSNR in future prediction compared to 13.27 by state-of-the-art optimization baselines, while reducing Chamfer Distance from 0.349 to 0.004. Crucially, ReconPhys enables fast inference (<1 second) versus hours required by existing methods, facilitating rapid generation of simulation-ready assets for robotics and graphics.",
+      "comments": ""
+    },
+    "2604.08510": {
+      "abstract": "Large language models (LLMs) can perform remarkably complex tasks, yet the fine-grained details of how these capabilities emerge during pretraining remain poorly understood. Scaling laws on validation loss tell us how much a model improves with additional compute, but not what skills it acquires in which order. To remedy this, we propose the Implicit Curriculum Hypothesis: pretraining follows a compositional and predictable curriculum across models and data mixtures. We test this by designing a suite of simple, composable tasks spanning retrieval, morphological transformations, coreference, logical reasoning, and mathematics. Using these tasks, we track emergence points across four model families spanning sizes from 410M-13B parameters. We find that emergence orderings of when models reach fixed accuracy thresholds are strikingly consistent ($\\rho = .81$ across 45 model pairs), and that composite tasks most often emerge after their component tasks. Furthermore, we find that this structure is encoded in model representations: tasks with similar function vector representations also tend to follow similar trajectories in training. By using the space of representations derived from our task set, we can effectively predict the training trajectories of simple held-out compositional tasks throughout the course of pretraining ($R^2 = .68$-$.84$ across models) without previously evaluating them. Together, these results suggest that pretraining is more structured than loss curves reveal: skills emerge in a compositional order that is consistent across models and readable from their internals.",
       "comments": ""
     },
     "2604.09409": {
