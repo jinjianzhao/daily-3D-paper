@@ -29,7 +29,47 @@
 
 ## 开发者 / 自建流水线
 
-要在本机跑抓取与生成、或二次开发，请看 **[docs/SETUP.md](docs/SETUP.md)** 与 **[docs/PROJECT.md](docs/PROJECT.md)**。
+### date 流水线（每日自动）
+
+每天自动从 Hugging Face 抓取论文，生成静态站点，发布到 GitHub Pages。详见 **[docs/SETUP.md](docs/SETUP.md)** 与 **[docs/PROJECT.md](docs/PROJECT.md)**。
+
+```bash
+# 本地跑一天
+python run_pipeline.py 2026-04-19
+
+# 指定重跑某步
+python -c "from run_pipeline import PaperPipeline, PipelineConfig; import os; PaperPipeline(os.getenv('MY_API_KEY'), PipelineConfig()).run_pipeline('2026-04-19', force_rerun=['step01'])"
+```
+
+### area 流水线（本地 git pull 后手动跑）
+
+在 `areas/config/` 下维护感兴趣领域的论文列表（YAML），本地 `git pull` 后跑 area 流水线，自动同步到 Notion 并写入本地文件。
+
+```bash
+# 解析并同步所有 area
+python area_processor.py
+
+# 只处理某个 area
+python area_processor.py --area 3d-gen-rec
+
+# 打印，不写入
+python area_processor.py --dry-run
+
+# 跳过 Notion，只写本地文件
+python area_processor.py --no-notion
+```
+
+### 独立论文解析（可复制到其他项目）
+
+`paper_analyzer.py` 提供 `summarize` / `deep_analyze` 接口，支持 arXiv 和通用网页。
+
+```python
+from paper_analyzer import PaperAnalyzer
+
+analyzer = PaperAnalyzer(api_key="your-key")
+result = analyzer.deep_analyze("https://arxiv.org/abs/2404.12345")
+# result: {arxiv_id, url, title, abstract, summary, deep_analysis, figures}
+```
 
 ---
 

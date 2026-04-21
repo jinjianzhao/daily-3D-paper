@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import urllib3.exceptions
+from urllib.parse import urljoin
 
 
 
@@ -557,6 +558,14 @@ class PaperPipeline:
         if self.cfg.store_arxiv_figures_locally:
             os.makedirs(cache_path, exist_ok=True)
         soup = BeautifulSoup(html_content, 'html.parser')
+
+        # 从 <base> 标签获取实际页面路径，用于解析相对路径的图片 URL
+        base_tag = soup.find('base')
+        if base_tag and base_tag.get('href'):
+            html_base_url = urljoin("https://arxiv.org", base_tag['href'])
+        else:
+            html_base_url = f"{self.cfg.arxiv_html_image_base_url}{aid}/"
+
         figures = soup.find_all('figure', class_='ltx_figure')
         pipeline_debug(
             debug_step,
@@ -608,7 +617,16 @@ class PaperPipeline:
                     f"编号={aid} 特殊src(疑似data URI) figure[{fig_idx}] src前80={img_src[:80]!r} caption前120={cap_short!r}",
                 )
 
-            img_url = self.cfg.arxiv_html_image_base_url + img_src.lstrip('/')
+            if img_src.startswith("http"):
+                img_url = img_src
+            elif img_src.startswith("/"):
+                img_url = "https://arxiv.org" + img_src
+            elif img_src.startswith(aid):
+                # img_src 已含版本号路径，如 "2604.11707v1/x1.png"
+                img_url = f"{self.cfg.arxiv_html_image_base_url}{img_src}"
+            else:
+                # 纯文件名，如 "x1.png"，用 base 标签解析
+                img_url = urljoin(html_base_url, img_src)
             pipeline_debug(
                 debug_step,
                 debug_title,
@@ -1472,384 +1490,9 @@ class PaperPipeline:
         return out_meta
 
     def run_pipeline(self, date_str, force_rerun=None, skip_void_date=False):
-        assert isinstance(date_str, str)
-        assert force_rerun is None or isinstance(force_rerun, list)
-        if force_rerun is None:
-            force_rerun = []
-        for step in force_rerun:
-            assert isinstance(step, str)
-
-        def _should(step_name: str) -> bool:
-            return step_name in force_rerun
-
-        # 先解析 HF 实际可用日期（若 HF 跳转到前一日，跟随）
-        new_date_str = self._resolve_hf_date(date_str)
-        if new_date_str != date_str:
-            pipeline_debug("step01", "日期解析", f"HF 从 {date_str} 跳转到 {new_date_str}")
-            if skip_void_date:
-                pipeline_debug("step01", "日期解析", f"跳过日期解析 日期={date_str}")
-                return 
-        date_str = new_date_str
-
-
-        pub_dir = self.cfg.output_pub_dir_fmt.format(date_str=date_str)
-        pub_img_dir = f"{pub_dir}/{self.cfg.pub_images_subdir}"
-        cache_root = self.cfg.output_cache_dir_fmt.format(date_str=date_str)
-        log_dir = f"{cache_root}/logs"
-        run_ts = datetime.now(timezone.utc).astimezone().strftime("%Y%m%d_%H%M%S")
-        _set_pipeline_log_path(f"{log_dir}/pipeline_{run_ts}.log")
-        # 分步缓存目录与文件名（step 前缀），顺序与流水线一致
-        step01_hf = f"{cache_root}/step01_hf_papers.json"
-        step03_arxiv_abs = f"{cache_root}/step03_arxiv_abs"
-        step04_summaries_llm = f"{cache_root}/step04_summaries_llm"
-        step05_arxiv_html = f"{cache_root}/step05_arxiv_html"
-        step06_deep_llm = f"{cache_root}/step06_deep_llm"
-        step07b_key_figure_select = f"{cache_root}/step07b_key_figure_select"
-        step08_figure_caption_zh = f"{cache_root}/step08_figure_caption_zh"
-
-        # step01：拉取 HF 当日列表（无 tqdm，单次请求）
-        base_info, hf_votes = self.fetch_hf_papers(date_str, step01_hf, force_rerun=_should("step01"))
-        if not base_info:
-            pipeline_debug("step01", "拉取论文列表", "当日无论文，停止")
-            return print("当日无论文。")
-
-        for aid in base_info:
-            if aid not in hf_votes:
-                hf_votes[aid] = 0
-
-        os.makedirs(pub_dir, exist_ok=True)
-
-        # step02：抓取 arXiv 摘要页（需要在投票筛选之前）
-        details_by_aid = {}
-        for aid in tqdm(
-            base_info.keys(),
-            desc="step02 | arxiv摘要页",
-            unit="篇",
-        ):
-            details_by_aid[aid] = self.get_arxiv_details(aid, step03_arxiv_abs, force_rerun=_should("step02"))
-
-        # step03：单篇论文板块归类（按优先级：先【3D生成相关】后【生成模型基础研究（非LLM）】）
-        focus_sections = OrderedDict((s["name"], []) for s in FOCUS_SECTIONS)
-        focus_id_set = set()
-        aid_list = list(base_info.keys())
-        # 去重：避免同一 aid 被并发提交两次导致重复请求/写缓存
-        aid_list_unique = list(dict.fromkeys(aid_list))
-        total_papers = len(aid_list_unique)
-
-        name_by_key = {s["key"]: s["name"] for s in FOCUS_SECTIONS}
-        section_cache_dir = f"{cache_root}/step03_sections"
-
-        def _classify_one(aid: str) -> tuple[str, str | None]:
-            assert isinstance(aid, str)
-            assert aid in base_info
-            assert aid in details_by_aid
-            assert "title" in base_info[aid]
-            assert "abstract" in details_by_aid[aid]
-            assert isinstance(base_info[aid]["title"], str)
-            assert isinstance(details_by_aid[aid]["abstract"], str)
-
-            pipeline_debug("step03", "板块归类提交", f"论文 aid={aid}")
-            section_key = self.classify_paper_section(
-                base_info[aid]["title"],
-                details_by_aid[aid]["abstract"],
-                aid,
-                section_cache_dir,
-                FOCUS_SECTIONS,
-                force_rerun=_should("step03"),
-                debug_step="step03",
-                debug_title="板块归类",
-            )
-            return aid, section_key
-
-        with ThreadPoolExecutor(max_workers=8) as executor:
-            futures = {executor.submit(_classify_one, aid): aid for aid in aid_list_unique}
-            pbar = tqdm(
-                total=total_papers,
-                desc="step03 | 单篇投票筛选重点",
-                unit="篇",
-            )
-            try:
-                done = 0
-                for fut in as_completed(futures):
-                    aid = futures[fut]
-                    try:
-                        aid, section_key = fut.result()
-                    except Exception as e:
-                        pipeline_debug(
-                            "step03",
-                            "板块归类异常",
-                            f"论文 aid={aid} err={type(e).__name__}: {e}",
-                        )
-                        section_key = None
-
-                    done += 1
-                    pipeline_debug("step03", "板块归类进度", f"{done}/{total_papers} 论文 aid={aid}")
-                    pbar.update(1)
-
-                    if section_key is None:
-                        continue
-                    assert section_key in name_by_key
-
-                    # 不重复：命中第一个板块就不会再去第二个；且全局 set 去重
-                    if aid in focus_id_set:
-                        continue
-                    focus_id_set.add(aid)
-                    focus_sections[name_by_key[section_key]].append(aid)
-            finally:
-                pbar.close()
-
-        for _sec_name, ids in focus_sections.items():
-            assert isinstance(ids, list)
-            ids.sort()
-
-        pipeline_debug(
-            "step03",
-            "板块归类",
-            f"板块数={len(focus_sections)} 重点总篇数={len(focus_id_set)} sections={ {k: len(v) for k,v in focus_sections.items()} }",
-        )
-
-        # step04：逐篇生成短文摘要（LLM）
-        summaries = {}
-        aid_list04 = list(base_info.keys())
-        aid_list04_unique = list(dict.fromkeys(aid_list04))
-        total04 = len(aid_list04_unique)
-
-        def _run_step04_one(aid: str) -> tuple[str, str | None]:
-            assert isinstance(aid, str)
-            assert aid in details_by_aid
-            assert "abstract" in details_by_aid[aid]
-            assert isinstance(details_by_aid[aid]["abstract"], str)
-
-            sum_fp = os.path.join(step04_summaries_llm, f"{aid}.json")
-            out = self.call_llm(
-                PROMPT_STEP04_SUMMARY.format(
-                    title=base_info[aid]["title"],
-                    abstract=details_by_aid[aid]["abstract"],
-                ),
-                sum_fp,
-                cache_key=None,
-                force_rerun=_should("step04"),
-                debug_step="step04",
-                debug_title="生成短文摘要",
-            )
-            return aid, out
-
-        with ThreadPoolExecutor(max_workers=8) as executor:
-            futures = {executor.submit(_run_step04_one, aid): aid for aid in aid_list04_unique}
-            pbar = tqdm(
-                total=total04,
-                desc="step04 | 生成短文摘要",
-                unit="篇",
-            )
-            try:
-                done = 0
-                for fut in as_completed(futures):
-                    aid = futures[fut]
-                    try:
-                        aid, out = fut.result()
-                    except Exception as e:
-                        pipeline_debug(
-                            "step04",
-                            "生成短文摘要异常",
-                            f"论文 aid={aid} err={type(e).__name__}: {e}",
-                        )
-                        out = None
-
-                    done += 1
-                    pipeline_debug("step04", "生成短文摘要进度", f"{done}/{total04} 论文 aid={aid}")
-                    pbar.update(1)
-                    if out is not None:
-                        summaries[aid] = out
-            finally:
-                pbar.close()
-
-        # step05～08：重点篇下载 HTML、深度解析、抽图、图注翻译
-        deeps, imgs = {}, {}
-        focus_ids = []
-        for _sec_name, ids in focus_sections.items():
-            for aid in ids:
-                focus_ids.append(aid)
-        focus_ids_unique = list(dict.fromkeys(focus_ids))
-        total_focus = len(focus_ids_unique)
-
-        def _run_05_08_one(aid: str) -> tuple[str, str | None, list | None]:
-            assert isinstance(aid, str)
-            pipeline_debug("step05", "step05-08提交", f"重点编号={aid}")
-
-            h_p, t_p = self.download_arxiv_html(aid, step05_arxiv_html, force_rerun=_should("step05"))
-            if not os.path.exists(h_p):
-                pipeline_debug(
-                    "step05",
-                    "arxiv实验HTML",
-                    f"重点编号={aid} 无HTML缓存文件 路径={h_p} 已跳过深度与图示",
-                )
-                return aid, None, None
-
-            with open(h_p, "r", encoding="utf-8") as f:
-                full_html = f.read()
-            with open(t_p, "r", encoding="utf-8") as f:
-                clean_txt = f.read()
-
-            deep_fp = os.path.join(step06_deep_llm, f"{aid}.json")
-            deep_out = self.call_llm(
-                PROMPT_STEP06_DEEP.format(
-                    paper_body_excerpt=clean_txt[: self.cfg.deep_body_max_chars],
-                ),
-                deep_fp,
-                cache_key=None,
-                force_rerun=_should("step06"),
-                debug_step="step06",
-                debug_title="深度解析",
-            )
-
-            raw_meta = self.extract_images_from_html(
-                full_html,
-                aid,
-                pub_img_dir,
-                debug_step="step07",
-                debug_title="抽取图示",
-            )
-            if not raw_meta:
-                img_meta = []
-            elif len(raw_meta) == 1:
-                m0 = raw_meta[0]
-                k_sel = self.cfg.key_figure_count
-                assert isinstance(k_sel, int) and k_sel >= 1
-                selected_meta = [
-                    {
-                        "path": m0["path"],
-                        "caption": m0["caption"],
-                        "role": self._pipeline_role_for_slot(i),
-                    }
-                    for i in range(1, k_sel + 1)
-                ]
-                img_meta = self.translate_figure_captions(
-                    selected_meta,
-                    aid,
-                    step08_figure_caption_zh,
-                    force_rerun=_should("step08"),
-                    debug_step="step08",
-                    debug_title="图注翻译",
-                )
-            else:
-                selected_meta = self.select_key_figures_by_caption_two_round(
-                    raw_meta,
-                    aid,
-                    step07b_key_figure_select,
-                    force_rerun=_should("step07b"),
-                    debug_step="step07b",
-                    debug_title="关键图选择",
-                )
-                img_meta = self.translate_figure_captions(
-                    selected_meta,
-                    aid,
-                    step08_figure_caption_zh,
-                    force_rerun=_should("step08"),
-                    debug_step="step08",
-                    debug_title="图注翻译",
-                )
-
-            return aid, deep_out, img_meta
-
-        with ThreadPoolExecutor(max_workers=4) as executor:
-            futures = {executor.submit(_run_05_08_one, aid): aid for aid in focus_ids_unique}
-            pbar = tqdm(
-                total=total_focus,
-                desc="step05-08 | HTML+深度+图示+图注翻译",
-                unit="篇",
-            )
-            try:
-                done = 0
-                for fut in as_completed(futures):
-                    aid = futures[fut]
-                    try:
-                        aid, deep_out, img_meta = fut.result()
-                    except Exception as e:
-                        pipeline_debug(
-                            "step05-08",
-                            "重点篇异常",
-                            f"重点编号={aid} err={type(e).__name__}: {e}",
-                        )
-                        deep_out, img_meta = None, None
-
-                    done += 1
-                    pipeline_debug("step05-08", "进度", f"{done}/{total_focus} 重点编号={aid}")
-                    pbar.update(1)
-
-                    if deep_out is not None:
-                        deeps[aid] = deep_out
-                    if img_meta is not None:
-                        imgs[aid] = img_meta
-            finally:
-                pbar.close()
-
-        # step09：落盘与发布（各步 LLM 结果已在 call_llm 内写入缓存文件）
-        if os.path.isdir(step03_arxiv_abs):
-            pipeline_debug("step09", "发布前汇总", f"step03 arxiv摘要缓存目录存在 {step03_arxiv_abs}")
-        if os.path.isdir(step04_summaries_llm):
-            pipeline_debug(
-                "step09",
-                "发布前汇总",
-                f"step04 JSON文件数={_count_json_files(step04_summaries_llm)} 目录={step04_summaries_llm}",
-            )
-        if os.path.isdir(step06_deep_llm):
-            pipeline_debug(
-                "step09",
-                "发布前汇总",
-                f"step06 JSON文件数={_count_json_files(step06_deep_llm)} 目录={step06_deep_llm}",
-            )
-        if os.path.isdir(step07b_key_figure_select):
-            pipeline_debug(
-                "step09",
-                "发布前汇总",
-                f"step07b 关键图选择 JSON数={_count_json_files(step07b_key_figure_select)} 目录={step07b_key_figure_select}",
-            )
-        if os.path.isdir(step08_figure_caption_zh):
-            pipeline_debug(
-                "step09",
-                "发布前汇总",
-                f"step08 图注翻译缓存 JSON数={_count_json_files(step08_figure_caption_zh)} 目录={step08_figure_caption_zh}",
-            )
-
-        report_data = {
-            "date": date_str,
-            "focus_ids": focus_ids,
-            "focus_sections": focus_sections,
-            "base_info": base_info,
-            "summaries": _json_dict_sorted_by_key(summaries),
-            "deep_analysis": _json_dict_sorted_by_key(deeps),
-            "images_meta": _json_dict_sorted_by_key(imgs),
-            "arxiv_details": _json_dict_sorted_by_key(details_by_aid),
-        }
-
-        hf_votes_out = {k: hf_votes[k] for k in sorted(hf_votes.keys())}
-
-        # 写入 config.json，供前端 index.html 读取（不含易变点赞，见 hf_votes.json）
-        with open(f"{pub_dir}/config.json", 'w', encoding='utf-8') as f:
-            json.dump(report_data, f, indent=2, ensure_ascii=False)
-        with open(f"{pub_dir}/hf_votes.json", 'w', encoding='utf-8') as f:
-            json.dump(hf_votes_out, f, indent=2, ensure_ascii=False)
-        pipeline_debug(
-            "step09",
-            "导出站点",
-            f"已写入 config.json + hf_votes.json 深度解析篇数={len(deeps)} 图示元数据篇数={len(imgs)}",
-        )
-
-        # 复制前端页面模板
-        if os.path.exists(self.cfg.frontend_template_path):
-            shutil.copy(self.cfg.frontend_template_path, f"{pub_dir}/index.html")
-            pipeline_debug("step09", "导出站点", f"已复制 {self.cfg.frontend_template_path}")
-        else:
-            pipeline_debug(
-                "step09",
-                "导出站点",
-                f"未找到 {self.cfg.frontend_template_path}，已跳过复制",
-            )
-
-        # 更新日期索引：output/papers/date/config.json
-        self._update_date_index_config()
-
-        print(f"\n✅ 完成！数据目录: {pub_dir}")
+        from daily_processor import DailyPaperProcessor
+        proc = DailyPaperProcessor(self, date_str, force_rerun)
+        proc.run(skip_void_date=skip_void_date)
 
     def _update_date_index_config(self):
         """扫描 docs/date/ 下所有日期目录，生成索引 config.json。"""

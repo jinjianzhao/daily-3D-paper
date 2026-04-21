@@ -1,0 +1,367 @@
+{
+  "date": "2026-04-20",
+  "focus_ids": [
+    "2604.16299",
+    "2604.16503",
+    "2604.15453",
+    "2604.16044"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.16299"
+    ],
+    "视频生成模型": [
+      "2604.16503"
+    ],
+    "图片生成模型": [
+      "2604.15453",
+      "2604.16044"
+    ]
+  },
+  "base_info": {
+    "2502.07408": {
+      "title": "Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips",
+      "hf_link": "https://huggingface.co/papers/2502.07408"
+    },
+    "2511.15915": {
+      "title": "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
+      "hf_link": "https://huggingface.co/papers/2511.15915"
+    },
+    "2604.04936": {
+      "title": "Web Retrieval-Aware Chunking (W-RAC) for Efficient and Cost-Effective Retrieval-Augmented Generation Systems",
+      "hf_link": "https://huggingface.co/papers/2604.04936"
+    },
+    "2604.05716": {
+      "title": "Can Large Language Models Reinvent Foundational Algorithms?",
+      "hf_link": "https://huggingface.co/papers/2604.05716"
+    },
+    "2604.09860": {
+      "title": "RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies",
+      "hf_link": "https://huggingface.co/papers/2604.09860"
+    },
+    "2604.10261": {
+      "title": "The Amazing Agent Race: Strong Tool Users, Weak Navigators",
+      "hf_link": "https://huggingface.co/papers/2604.10261"
+    },
+    "2604.10571": {
+      "title": "Universal statistical signatures of evolution in artificial intelligence architectures",
+      "hf_link": "https://huggingface.co/papers/2604.10571"
+    },
+    "2604.12012": {
+      "title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment",
+      "hf_link": "https://huggingface.co/papers/2604.12012"
+    },
+    "2604.13074": {
+      "title": "PersonaVLM: Long-Term Personalized Multimodal LLMs",
+      "hf_link": "https://huggingface.co/papers/2604.13074"
+    },
+    "2604.13902": {
+      "title": "DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off",
+      "hf_link": "https://huggingface.co/papers/2604.13902"
+    },
+    "2604.14518": {
+      "title": "Mind DeepResearch Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.14518"
+    },
+    "2604.14568": {
+      "title": "Learning Adaptive Reasoning Paths for Efficient Visual Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.14568"
+    },
+    "2604.14663": {
+      "title": "EdgeDetect: Importance-Aware Gradient Compression with Homomorphic Aggregation for Federated Intrusion Detection",
+      "hf_link": "https://huggingface.co/papers/2604.14663"
+    },
+    "2604.14816": {
+      "title": "NTIRE 2026 Challenge on Video Saliency Prediction: Methods and Results",
+      "hf_link": "https://huggingface.co/papers/2604.14816"
+    },
+    "2604.15151": {
+      "title": "QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies",
+      "hf_link": "https://huggingface.co/papers/2604.15151"
+    },
+    "2604.15411": {
+      "title": "PRL-Bench: A Comprehensive Benchmark Evaluating LLMs' Capabilities in Frontier Physics Research",
+      "hf_link": "https://huggingface.co/papers/2604.15411"
+    },
+    "2604.15453": {
+      "title": "(1D) Ordered Tokens Enable Efficient Test-Time Search",
+      "hf_link": "https://huggingface.co/papers/2604.15453"
+    },
+    "2604.15715": {
+      "title": "GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows",
+      "hf_link": "https://huggingface.co/papers/2604.15715"
+    },
+    "2604.15804": {
+      "title": "Qwen3.5-Omni Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.15804"
+    },
+    "2604.15923": {
+      "title": "Hierarchical Codec Diffusion for Video-to-Speech Generation",
+      "hf_link": "https://huggingface.co/papers/2604.15923"
+    },
+    "2604.15950": {
+      "title": "TwinTrack: Post-hoc Multi-Rater Calibration for Medical Image Segmentation",
+      "hf_link": "https://huggingface.co/papers/2604.15950"
+    },
+    "2604.16027": {
+      "title": "Where does output diversity collapse in post-training?",
+      "hf_link": "https://huggingface.co/papers/2604.16027"
+    },
+    "2604.16029": {
+      "title": "Cut Your Losses! Learning to Prune Paths Early for Efficient Parallel Reasoning",
+      "hf_link": "https://huggingface.co/papers/2604.16029"
+    },
+    "2604.16044": {
+      "title": "Elucidating the SNR-t Bias of Diffusion Probabilistic Models",
+      "hf_link": "https://huggingface.co/papers/2604.16044"
+    },
+    "2604.16254": {
+      "title": "ArtifactNet: Detecting AI-Generated Music via Forensic Residual Physics",
+      "hf_link": "https://huggingface.co/papers/2604.16254"
+    },
+    "2604.16272": {
+      "title": "VEFX-Bench: A Holistic Benchmark for Generic Video Editing and Visual Effects",
+      "hf_link": "https://huggingface.co/papers/2604.16272"
+    },
+    "2604.16299": {
+      "title": "Repurposing 3D Generative Model for Autoregressive Layout Generation",
+      "hf_link": "https://huggingface.co/papers/2604.16299"
+    },
+    "2604.16503": {
+      "title": "Motif-Video 2B: Technical Report",
+      "hf_link": "https://huggingface.co/papers/2604.16503"
+    }
+  },
+  "summaries": {
+    "2502.07408": "神经网络参数位翻转攻击\n机器学习;深度神经网络安全;参数脆弱性分析\n研究深度神经网络仅翻转少数参数比特位即可导致性能崩溃的脆弱性。\n提出无需数据和优化的方法定位关键参数，并在多个任务上验证了极少量比特翻转即可造成毁灭性打击，同时探索了针对性防御。",
+    "2511.15915": "大模型代理系统优化AI加速器内核\n机器学习;系统优化;AI加速器内核优化\n现有AI加速器内核优化依赖专家硬件知识，成本高且难扩展。\n我们提出了AccelOpt系统，它通过自学习优化内核，在真实基准上显著提升性能且成本更低。",
+    "2604.04936": "网页检索感知分块方法\n自然语言处理;检索增强生成;文档分块策略\n传统文档分块方法在处理大规模网络内容时，存在成本高、冗余多、扩展性差和可调试性差等问题。\n本文提出了一种专为网页文档设计的低成本分块框架，通过将文本提取与语义分块规划解耦，大幅降低了语言模型的使用成本，同时保持了可比的检索性能。",
+    "2604.05716": "大模型能否重创基础算法\n自然语言处理;大语言模型能力;算法创造能力\n探究大语言模型是否具备重新发明计算机科学基础算法的创新能力。\n研究通过遗忘学习移除模型已知算法，并测试其在受控环境中重新发明算法的能力，发现模型能在提示下部分成功，但复杂算法仍有局限。",
+    "2604.09860": "机器人仿真基准测试  \n机器人;机器人仿真;任务通用策略评估  \n现有机器人仿真基准训练与评估域重叠度高，难以测试真正泛化能力。  \n提出RoboLab仿真基准框架，生成多样化任务并系统分析策略性能与鲁棒性。",
+    "2604.10261": "构建复杂任务考验大模型能力\n自然语言处理;智能体与机器人;工具使用与导航评测\n现有评测过于简单，无法评估智能体在复杂任务中的真实导航和工具使用能力。\n我们创建了一个包含复杂导航和工具链的新基准，发现智能体导航能力是主要瓶颈，而非工具调用。",
+    "2604.10571": "人工智能架构演化统计规律研究\n机器学习;演化学习;架构演化统计\n探究人工智能架构演化是否遵循与生物演化相同的统计规律。\n通过对大量架构修改实验的统计分析，发现其适应度效应分布与生物演化相似，表明演化统计规律具有基质独立性。",
+    "2604.12012": "改进视觉语言模型对齐  \n计算机视觉;多模态学习;视觉语言预训练  \n视觉语言模型在密集图像块与文本嵌入的对齐上存在不足。  \n提出多种增强对齐的方法，包括块级蒸馏、改进的掩码目标和训练策略，构建了性能优异的TIPSv2模型。",
+    "2604.13074": "长时个性化多模态大模型\n多模态模型；个性化AI；长期用户建模\n现有模型难以在长期互动中了解用户偏好并生成个性化回应。\n提出新框架，具备记忆、推理和响应对齐能力，并在新基准上验证了其有效性。",
+    "2604.13902": "解纠缠困惑度策优化探索利用权衡\n强化学习;大语言模型推理优化;强化学习可验证奖励\n强化学习可验证奖励（RLVR）提升了大型语言模型的推理能力，但有效权衡探索与利用仍是关键挑战。\n论文提出困惑度空间解纠缠策略划分样本空间，并设计双向奖励分配机制，实现细粒度探索利用权衡以稳定优化策略。",
+    "2604.14518": "多智能体深度研究框架\n自然语言处理;语言智能体;多智能体研究系统\n现有大模型在深度网络研究任务上成本高、效果有限。\n提出了多智能体协同框架与四阶段训练方法，仅用约300亿参数模型即达到领先性能。",
+    "2604.14568": "自适应视觉推理减少过思考\n多模态人工智能;视觉推理;推理路径冗余\n视觉推理模型常因“过思考”产生冗长推理链，导致效率低下。\n提出自适应视觉推理框架AVR，通过动态选择响应格式和优化训练，在保持准确性的同时大幅减少计算开销。",
+    "2604.14663": "联邦学习梯度压缩与隐私保护\n网络安全;入侵检测系统;边缘联邦学习\n在带宽受限的6G-IoT环境中，传统联邦学习存在通信开销大和隐私泄露风险。\n提出了EdgeDetect方法，通过梯度智能二值化压缩通信量并集成同态加密保护隐私，在保持高检测精度的同时显著提升了通信效率与安全性。",
+    "2604.14816": "视频显著性预测竞赛总结\n计算机视觉;视觉显著性;视频显著性预测\nNTIRE 2026组织视频显著性预测竞赛，旨在开发自动预测视频显著性图的方法。\n主办方创建了新数据集并征集方案，最终有7个团队通过评审，相关数据已公开。",
+    "2604.15151": "评估大模型生成量化交易策略能力\n自然语言处理;代码生成;量化交易策略生成\n大模型在通用编程任务上表现良好，但其生成可执行量化交易策略的能力尚未被充分探索。\n本文提出了一个包含多阶段评估流程的基准，用于测试大模型根据英文描述生成量化交易策略的性能，并分析了当前模型的主要失败模式。",
+    "2604.15411": "评估大模型物理研究能力基准  \n自然语言处理;大模型评测;物理研究能力评测  \n现有科学基准难以评估真实科研的探索性与流程复杂性  \n构建PRL-Bench基准以系统评估大模型执行端到端物理研究的能力",
+    "2604.15453": "有序分词提升测试时搜索效率\n生成模型;图像生成;测试时搜索\n自回归生成模型通常使用固定顺序的局部信息分词（如图像像素块或文本词片），但分词结构如何影响通过测试时搜索引导生成的能力尚不明确。\n研究发现一维从粗到细有序分词比二维网格分词更利于搜索引导，使自回归模型在测试时扩展性更好，甚至无需训练即可实现文本到图像生成。",
+    "2604.15715": "通用工具智能体综合评估\n自然语言处理;智能体与工具调用;工具智能体综合基准\n现有工具智能体基准与真实复杂工作流任务存在差距，需构建更贴近实际的评估体系。\n提出了GTA-2分层基准，涵盖原子工具使用和开放工作流任务，并引入了基于检查点的递归评估机制，发现前沿模型在复杂工作流任务上能力严重不足。",
+    "2604.15804": "千亿参数多模态大模型  \n多模态学习;音视频理解与生成;流式语音合成对齐  \n提出最新多模态模型Qwen3.5-Omni以增强跨模态理解与交互能力。  \n该模型通过混合专家架构和动态对齐方法，在长上下文处理、多语言音视频理解与生成等方面实现了先进性能。",
+    "2604.15923": "用层级码本扩散从视频生成语音\n音频处理;语音合成;视频到语音生成\n现有视频到语音方法忽视了语音从粗粒度语义到细韵律的层级特性，阻碍视觉与语音特征的对齐。\n本文提出层级码本扩散模型，利用离散语音令牌的层级结构，分别用低层块处理嘴唇动作和身份生成说话人内容，高层块用面部表情调制韵律，并结合双尺度归一化提升对齐效果。",
+    "2604.15950": "医学图像分割的多标注者校准\n计算机视觉;医学图像分割;多标注者不确定性校准\n胰腺癌CT分割存在专家标注不一致的不确定性问题。\n提出后处理校准方法，将模型概率校准为专家标注比例，提升不确定性量化效果。",
+    "2604.16027": "大模型训练后输出趋同分析\n自然语言处理;语言模型训练后调整;输出多样性\n大模型经过训练后调整，其输出多样性会下降，这影响了推理方法并可能使创造性任务输出同质化。\n研究通过三个平行训练线剖析多样性下降原因，发现数据构成是关键，且在训练中决定，无法仅靠推理解决。",
+    "2604.16029": "大模型推理路径早期剪枝  \n自然语言处理;大语言模型推理;并行推理路径剪枝  \n并行推理提升大模型性能但会因错误路径导致成本过高，需早期剪枝。  \n提出路径剪枝分类法及可学习内部剪枝方法STOP，验证其在多种模型上的高效性并给出部署指南。",
+    "2604.16044": "揭示扩散模型的时间步信噪比偏差\n生成模型;扩散模型;信噪比偏差校正\n扩散概率模型在生成任务中表现出色，但存在推理阶段信噪比与时间步不匹配的偏差问题。\n通过理论分析与实验验证，提出对样本各频率分量进行差分校正的有效方法，在多个模型和数据集上显著提升了生成质量。",
+    "2604.16254": "通过音频物理痕迹检测AI生成音乐\n音频分析;音频取证;AI音乐检测\n现有方法难以准确检测AI生成音乐，且对音频编码格式敏感。\n提出轻量级框架ArtifactNet，通过提取和分析神经音频编解码器残留物理痕迹，在公开基准上实现高精度、低误报的检测，并显著提升跨编码器鲁棒性。",
+    "2604.16272": "视频编辑评估基准构建\n计算机视觉;视频生成与编辑;视频编辑质量评估\n当前AI辅助视频编辑领域缺乏大规模标注数据和专业评估工具\n提出VEFX-Dataset数据集、VEFX-Reward评估模型和VEFX-Bench基准，用于系统评测",
+    "2604.16299": "三维场景布局生成\n计算机图形学；三维场景生成；三维物体布局\n现有方法多从文本描述推断三维物体布局\n提出新框架直接建模物体几何关系，通过自回归与扩散模型提升生成效果与效率",
+    "2604.16503": "高效轻量视频生成模型研究\n计算机视觉;视频生成;文本到视频生成\n训练高质量视频生成模型通常需要大量数据、参数和算力。\n提出Motif-Video 2B模型，通过分离功能的三段式架构和高效训练方法，以更少资源实现高性能。"
+  },
+  "deep_analysis": {
+    "2604.15453": "这篇论文主要研究**自回归图像生成模型中的分词结构如何影响推理时的搜索效率**。我来用简单的语言为你解释：\n\n### (1) 任务是什么？\n- **任务输入**：一段文本描述（例如“一盆植物和一个甜甜圈”）。\n- **任务输出**：一张符合文本描述的图像。\n- **任务功能**：通过**测试时搜索**（Test-Time Search）生成更好的图像。简单说，就是在生成过程中，模型会同时探索多个候选图像，用一个“验证器”评估它们的好坏，然后选择最好的继续生成。\n\n### (2) 想解决什么问题？\n传统的图像分词方法（如2D网格）将图像分成局部小块，按空间顺序（如从左到右、从上到下）生成。这种结构在**测试时搜索**中效率较低，因为生成的中间结果（例如只生成了图像的左上角）缺乏整体语义信息，验证器很难判断它是否符合文本描述。\n\n论文想探究：**是否有一种更好的分词结构，能让测试时搜索更高效？**\n\n### (3) 核心思路是什么？\n论文的核心假设是：**1D有序分词结构（例如FlexTok）比传统的2D网格结构更适合测试时搜索**。原因如下：\n- **粗到细的结构**：1D有序分词将图像编码成一个序列，顺序是从整体语义（例如“植物”）到局部细节（例如“叶子的纹理”）。这样，生成的中间结果（即使只生成了前几个token）也能呈现出有意义的全局内容。\n- **易于验证**：由于中间结果有语义信息，验证器可以更早、更准确地评估候选图像是否符合文本描述，从而有效引导搜索方向。\n\n### (4) 结果怎么样？\n实验表明：\n- **更好的扩展性**：使用1D有序分词时，随着搜索计算量增加（例如生成更多候选），图像质量提升更明显（见图1b）。\n- **零样本生成**：仅通过搜索（不训练自回归模型）也能生成不错的图像，验证了1D结构的优势。\n- **搜索算法配合**：1D结构更适合使用**束搜索**（Beam Search）等算法，而2D结构更适合简单的“最佳N采样”（Best-of-N）。\n\n### (5) 模型结构和流程\n论文没有提出全新的模型，而是**基于现有自回归模型和分词器进行实验**。整体流程如下：\n\n1. **输入文本提示**（例如“一盆植物和一个甜甜圈”）。\n2. **分词与编码**：\n   - 使用**1D有序分词器**（如FlexTok）将图像压缩成token序列（顺序：粗→细）。\n   - 文本通过CLIP等编码器转换为向量。\n3. **自回归生成（作为先验）**：\n   - 训练一个自回归模型，根据文本向量预测图像token序列。\n   - 生成时，模型按顺序输出token（每一步预测下一个token）。\n4. **测试时搜索**：\n   - 在生成过程中，同时探索多个候选序列（例如用束搜索保留多个路径）。\n   - 每生成一些token后，用**验证器**（如CLIPScore、PickScore）评估候选图像与文本的匹配程度。\n   - 根据验证器分数，保留高分候选，淘汰低分候选。\n5. **解码输出**：\n   - 将最终选出的token序列通过分词器解码为图像。\n\n**关键点**：整个流程的核心是比较不同分词结构（1D有序 vs 2D网格）在相同搜索算法下的表现，验证1D结构更优。\n\n希望这个解释对你有帮助！如果有不清楚的地方，欢迎继续提问。😊",
+    "2604.16044": "好的，没问题。我用通俗易懂的方式给你梳理一下这篇论文的核心内容。\n\n### (1) 这篇论文所在的任务是什么？\n*   **任务名称**：扩散概率模型的图像生成。\n*   **任务输入**：一堆随机噪声（比如标准高斯噪声）。\n*   **任务输出**：一张高质量的、逼真的图片（比如人脸、风景等）。\n*   **任务功能**：模型就像一个“去噪画师”。它从一片纯噪声开始，通过一个“反向过程”，一步步猜测并去除噪声，最终还原出一张清晰的图片。\n\n### (2) 这篇论文想解决什么问题？\n这篇论文发现了一个扩散模型在**生成图片（推理阶段）**时的隐藏问题，叫做 **“SNR-t 偏差”**。\n\n**通俗解释：**\n*   **训练时**：模型学到的规则是：“在**第t步**时，图片里的信号和噪点比例（SNR）**必须是某个固定值**”。这就像老师教学生：“当我说‘第5分钟’，你手里的面团软硬度必须是‘5级’”。\n*   **推理时**：当模型实际去生成图片时，由于预测误差和计算方法的累积，到了“第t步”，图片实际的SNR（软硬度）**达不到**训练时规定的那个值，通常会**更差**（噪点更多，SNR更低）。\n*   **问题**：这就好比考试时，老师说“第5分钟”，但学生手里的面团只有“3级”的软硬度。模型用“3级”的面团状态，去套用“5分钟”时该有的操作规则，自然就会做出错误的判断，导致生成的图片质量下降。\n\n这篇论文就是想解决这个 **“步骤（t）和图片状态（SNR）对不上号”** 的根本性问题。\n\n### (3) 论文的核心思路是什么？\n核心思路是：**在每一步生成时，做一个“动态微调”，把跑偏的图片状态（SNR）拉回到它当前步骤该有的正确状态。**\n\n**具体怎么做的？**\n1.  **发现问题**：作者证明，在推理的每一步，模型预测出的中间图片（`x_hat_t`）的SNR，确实比训练时对应步骤的图片（`x_t`）的SNR要低。\n2.  **找到“修正信号”**：他们发现，在每一步中，模型预测的“干净图片”和当前“带噪图片”之间的**差值**，包含了如何向正确状态调整的梯度信息。\n3.  **进行“微分修正”**：利用这个差值信号，对当前步的预测结果进行一个微小的调整（即“微分修正”），让它更接近理想中该步骤应有的图片状态。\n4.  **分频域处理**：作者进一步发现，扩散模型在生成时，是先勾勒轮廓（低频），再补充细节（高频）。因此，他们将图片通过**小波变换**分解成不同频率的分量，然后**在不同频率分量上分别应用上述修正**。这样修正更有针对性，效果更好。\n\n**简单比喻**：就像你开车时GPS发现你偏离了预定路线，它不会让你回到起点重开，而是立刻给你计算一个新的、微小的方向调整（“前方100米请右转”），让你瞬间回到正确路线上。这篇论文的方法就是扩散模型的“实时路线修正系统”。\n\n### (4) 结果怎么样？\n效果非常好，且“性价比”极高。\n*   **显著提升质量**：在多个经典扩散模型（如DDPM, DDIM, EDM等）和多个数据集上，使用该方法后，生成图片的质量指标（如FID）得到了显著提升。\n*   **无需重新训练**：这个方法是一个推理阶段的“插件”，可以直接用在已经训练好的模型上，**不需要任何额外的训练或微调**，几乎没有增加计算成本。\n*   **通用性强**：适用于各种不同类型的扩散模型框架。\n\n### (5) 论文的模型结构是什么？\n这篇论文**没有提出一个新的、完整的模型结构**，而是提出了一个可以**嵌入到现有任何扩散模型推理流程中的通用算法**。\n\n**基模（Base Model）**：可以是任何扩散模型，比如文中测试的IDDPM、ADM、DDIM、EDM等等。\n\n**整体流程（以一张图片的生成为例）：**\n1.  **输入**：从纯高斯噪声 `x_T` 开始。\n2.  **循环迭代（对于每一步 t 从 T 到 1）**：\n    *   **a. 模型预测**：将当前步的带噪图片 `x_t` 和步骤 `t` 输入到**预训练好的基模（如U-Net）**中，得到预测的噪声 `ε_θ` 和预测的干净图片 `x_0_hat`。\n    *   **b. 计算差值信号**：计算 `x_0_hat` 和 `x_t` 之间的差值。这个差值包含了修正信息。\n    *   **c. 小波分解**：将当前的 `x_t` 和上一步的差值信号，分别通过小波变换，分解成低频和高频子带。\n    *   **d. 分频域修正**：在**小波域**（即各个频率子带上），利用差值信号对 `x_t` 进行微调（微分修正），得到修正后的频域表示。\n    *   **e. 小波重构**：将修正后的各个频率子带，通过逆小波变换，重新组合回像素空间的图片 `x_t_corrected`。此时 `x_t_corrected` 的SNR更接近该步骤的理想值。\n    *   **f. 常规去噪**：使用基模自带的**采样器**（如DDIM采样公式），根据 `x_t_corrected` 计算出下一步的图片 `x_{t-1}`。\n3.  **输出**：当循环进行到最后一步 `t=0` 时，得到最终生成的高质量干净图片 `x_0`。\n\n**核心贡献**：在整个标准流程中，加入了 **b, c, d, e** 这个“微分修正”模块，像一个“校准器”一样，在每一步去噪前先把图片状态校准好，从而让后续的去噪步骤更加准确。",
+    "2604.16299": "这篇论文主要讲的是如何用3D生成模型来做**3D场景布局生成**。下面我用通俗易懂的方式为你梳理一下：\n\n---\n\n### 1. **任务是什么**\n- **任务输入**：一个3D场景（可能有一些已有的物体）和一条指令（例如“在桌子上放一个杯子”）。\n- **任务输出**：更新后的3D场景布局，即物体被合理地摆放在场景中的位置和姿态。\n- **任务功能**：根据指令自动、合理地摆放3D物体，生成**物理上合理、语义上一致**的3D场景。\n\n---\n\n### 2. **想解决什么问题**\n以前的方法主要有两个问题：\n- **纯文本方法**（如LayoutGPT）：把布局当成语言描述（比如JSON格式），用大语言模型生成。但这样**缺乏物理世界的几何理解**，容易产生物体碰撞、悬空等不合理布局。\n- **图像监督方法**（如LayoutVLM）：用2D图像来指导布局生成，但**计算成本高，且缺乏真正的3D空间结构理解**。\n\n这篇论文想解决的问题是：**如何利用3D生成模型本身对几何关系的理解，直接在3D空间中生成合理的布局，避免上述问题。**\n\n---\n\n### 3. **核心思路**\n- **核心思想**：把3D布局生成看作一个**自回归（autoregressive）** 的过程，就像搭积木一样，一个接一个地放置物体。\n- **关键创新**：\n  1. **直接利用3D生成模型**：把预训练好的3D生成模型（比如扩散模型）改造成一个“布局生成器”，让它学会在已有场景中放置新物体。\n  2. **双重引导自蒸馏（Dual-Guidance Self-Rollout）**：为了解决自回归过程中误差累积的问题，作者让模型在训练时自己“推演”多步生成结果，并用**场景整体合理性**和**每一步物体对齐**两种监督信号来纠正错误。\n\n---\n\n### 4. **结果怎么样**\n在LayoutVLM这个公开评测集上：\n- **物理合理性**比之前最好的方法提高了19%。\n- **计算速度**提升了约65%。\n- 还能做**布局补全**（给一个不完整的场景，补全缺失的物体）和**布局编辑**（移动或替换已有物体），这些是之前方法很难做到的。\n\n---\n\n### 5. **模型结构与流程**\n- **基模（Base Model）**：一个预训练的**3D扩散模型**（例如Structured3D或类似模型），它已经学会了3D场景的几何分布。\n- **整体流程**：\n  1. **输入**：当前场景的3D表示 + 要放置的物体 + 指令（如“放在桌子上”）。\n  2. **编码**：用3D编码器把场景和物体分别编码成特征。\n  3. **条件扩散**：把场景特征、物体特征和指令一起输入到**改编后的扩散模型**中，让它预测物体应该放在哪里（位置和旋转）。\n  4. **自回归循环**：\n     - 放置第一个物体 → 更新场景 → 输入第二个物体 → 再更新……直到所有物体放完。\n  5. **双重引导训练**：\n     - 训练时，让模型自己生成多步布局（自推演）。\n     - 用两个监督信号：\n       - **场景级引导**：判断整个布局是否合理。\n       - **步级对齐引导**：判断每一步放置的物体是否与场景对齐。\n     - 通过蒸馏（知识蒸馏）让模型学会更稳定的多步生成。\n\n---\n\n### 总结\n这篇论文的亮点是：**把3D生成模型“改造”成一个布局生成器，直接在3D空间里自回归地放物体，并通过双重引导训练减少错误累积，效果又快又好。**\n\n如果你有3D生成模型的基础，可以把它理解为：把“生成整个场景”的模型，微调成“在场景中放物体”的模型，并用自蒸馏技巧提升多步生成的稳定性。",
+    "2604.16503": "这篇论文主要讲的是如何用更少的计算资源和数据，训练一个高质量的文本生成视频模型。下面我用简单的语言为你拆解一下核心内容。\n\n**(1) 任务是什么？**\n*   **任务功能：** 文本生成视频。\n*   **任务输入：** 一段文字描述（比如“一只猫在玩毛线球”）。\n*   **任务输出：** 一个与文字描述匹配的短视频片段。\n\n**(2) 想解决什么问题？**\n论文认为，当前最好的视频生成模型（比如Wan2.1）都非常庞大（参数多），需要海量的数据和巨大的算力（几十万甚至上百万GPU小时）去训练。这导致只有少数有雄厚资源的机构才能做，门槛太高了。\n所以，论文的核心问题是：**能不能用少得多的数据和算力（比如不到10万个GPU小时），训练出一个质量能媲美甚至超过那些巨无霸模型的视频生成模型？**\n\n**(3) 核心思路是什么？**\n作者认为，高质量视频生成需要同时做好三件事：\n1.  **文本对齐：** 生成的视频内容要符合文字描述。\n2.  **时间一致性：** 视频中的物体在各个帧之间要连贯、不闪烁。\n3.  **细节恢复：** 画面要有丰富的细节和质感。\n\n在传统模型中，这三件事都由同一个模型“主干”来处理，它们会互相“抢资源”，导致模型能力分散，效果打折扣。比如，为了学复杂的运动，可能会牺牲画质细节。\n\n**Motif-Video 2B的核心思路是：用“分工协作”来代替“一肩挑”。** 它不像传统模型那样只是一个长长的、功能统一的模型堆叠，而是把模型结构设计成三个有着明确分工的“部门”：\n*   **融合部：** 专门负责把文本信息和视频信息初步结合起来。\n*   **联合学习部：** 专门学习视频的全局时空特征，保证一致性。\n*   **细节解码部：** 专门负责把学到的“蓝图”渲染成高画质、有细节的画面。\n\n通过这种“术业有专攻”的设计，即使模型总参数不大（只有2B），每个部分也能在自己擅长的领域做到极致，从而在整体上达到很好的效果。\n\n**(4) 结果怎么样？**\n结果非常出色：\n*   **在权威评测VBench上**，得分达到了 **83.76%**，**超越了拥有140亿参数的巨无霸模型Wan2.1**。\n*   它只用了 **7分之1** 的参数（2B vs 14B），以及**少得多的训练数据和计算时间**，就做到了这一点。\n*   这证明了**精巧的架构设计和高效的训练方法，在一定程度上可以替代“暴力堆数据、堆算力”**。\n\n**(5) 模型结构是什么？整体流程是怎样的？**\n论文没有给出传统意义上的“流程图”，但我们可以根据描述来梳理它的工作流程。它基于一种叫“扩散模型”的框架，并采用了类似**Transformer**的结构来编码信息。\n\n**模型结构（三个核心部分）：**\n1.  **双流块（融合部）：** 这是模型的早期部分。它有两个独立的处理流，一个处理文本信息，一个处理视频信息（被编码成一个个“令牌”）。在这里，文本和视频信息开始进行初步的融合。\n2.  **单流块（联合学习部）：** 这是模型的中间部分。经过初步融合的信息在这里被合并成一条“主路”。这个部分的核心任务是学习视频的**全局时空表示**，也就是理解整个视频的剧情、动作和物体在整个时间线上的变化，保证视频的连贯性。论文中一个关键创新 **“共享交叉注意力”** 就在这里发挥作用，它帮助模型在长视频序列中也能牢牢记住文本的指令。\n3.  **DDT块（细节解码部）：** 这是模型的后期部分。它借鉴了**FLUX**模型的思想，将“语义编码”和“细节解码”**解耦**。简单说，就是它把“画什么”（语义）和“怎么画得好看”（细节）分开了。这部分专门负责把前面学到的“视频蓝图”精细地绘制出来，生成具有丰富纹理和清晰细节的每一帧画面。\n\n**整体工作流程（从输入到输出）：**\n1.  **输入：** 你输入一段文本提示（如“宇航员在月球上漫步”）。\n2.  **编码：** 文本被一个文本编码器（如CLIP）转换成计算机能理解的向量（文本令牌）。同时，一个随机的“噪声视频”被准备好作为起点。\n3.  **去噪与生成（在模型中迭代进行）：**\n    *   噪声视频先被一个**视频编码器**（如一个预训练好的图像/视频理解模型）转换成视频令牌。\n    *   文本令牌和视频令牌一起进入模型的**“融合部”**，开始结合。\n    *   结合后的信息进入**“联合学习部”**，在这里，模型深入理解“宇航员应该怎么在月球上走”这个时空概念。\n    *   最后，信息传到**“细节解码部”**。这里，模型不再纠结于“画什么”，而是专注于“怎么把宇航服的反光、月球的尘土飞扬画得逼真”。\n    *   经过模型内部多轮（几十步）这样的“理解蓝图 -> 绘制细节”的迭代去噪，最初的噪声视频一步步被“净化”和“塑造”成最终符合你描述的高清、连贯的视频。\n4.  **输出：** 一个与“宇航员在月球上漫步”文字描述匹配的短视频。\n\n**简单总结：** 这篇论文就像在说，我们造车不一定要一味追求大排量发动机（巨量参数和数据），而是可以通过优化底盘（架构）、变速箱（训练方法）和车身设计（分工模块），用一台小排量发动机（2B参数）造出一辆性能卓越的跑车。"
+  },
+  "images_meta": {
+    "2604.15453": [
+      {
+        "path": "https://arxiv.org/html/2604.15453v1/x2.png",
+        "caption": "Figure 2:Ordered tokens induce a searchable latent structure.(a) FlexTok encodes images into a sequence of 1D ordered tokens trained to support variable-length decoding, imposing a coarse-to-fine hierarchy. (b) Illustration of search over the token vocabulary without an autoregressive model: candidate tokens are sampled using atoken prior(here, uniform over the codebook, i.e., no AR model is assumed) and evaluated using averifier(e.g., CLIP); asearch algorithm(here, beam search) then expands the most promising partial sequences. As more ordered tokens are included, intermediate reconstructions progressively refine global semantics and visual details. See Fig.5for a full description of the token prior, verifier, and search algorithm components used in our framework.",
+        "caption_zh": "图2：有序标记诱导出可搜索的潜在结构。(a) FlexTok将图像编码为一维有序标记序列，通过训练支持可变长度解码，从而施加了从粗到细的层次结构。(b) 在没有自回归模型的情况下对标记词汇进行搜索的示意图：候选标记通过标记先验（此处为码本上的均匀分布，即假设不使用AR模型）进行采样，并使用验证器（如CLIP）进行评估；随后，搜索算法（此处为束搜索）扩展最有希望的部分序列。随着更多有序标记的加入，中间重建结果逐步优化全局语义与视觉细节。本框架所使用的标记先验、验证器及搜索算法组件的完整说明见图5。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.15453v1/x4.png",
+        "caption": "Figure 5:Overview of the Search-over-Tokens (SoTo) evaluation framework.The framework studies test-time scaling behavior of image tokenizers when combined with autoregressive generation and search.\n(A)Search algorithms: different strategies for exploring the token space during generation, including Best-of-NNsampling, Beam Search, and Lookahead Search.\n(B)Verifiers: scoring functions that guide search by evaluating partial or complete decoded images, covering image–text alignment, image–image alignment, and image quality objectives.\n(C)Autoregressive prior: next-token probability models that constrain the search space, ranging from text-conditional AR models to unconditional AR models and uniform (prior-free) baselines.",
+        "caption_zh": "图 5：搜索-令牌（SoTo）评估框架概览。该框架研究图像分词器与自回归生成及搜索结合时的测试时缩放行为。\n（A）搜索算法：生成过程中探索令牌空间的不同策略，包括 Best-of-N 采样、束搜索和前向搜索。\n（B）验证器：通过评估部分或完整解码图像来指导搜索的评分函数，涵盖图像-文本对齐、图像-图像对齐和图像质量目标。\n（C）自回归先验：约束搜索空间的下一令牌概率模型，范围包括文本条件自回归模型、无条件自回归模型及均匀（无先验）基线。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.15453v1/x5.png",
+        "caption": "Figure 6:Test-time scaling across token structures.We compare inference-time search algorithms on two tokenizers: 1D ordered tokens (FlexTok) and a controlled 2D grid tokenizer. While best-of-NNand lookahead search exhibit similar scaling for both tokenizations, beam search yields substantially larger gains for 1D ordered tokens.The rightmost panel compares each tokenizer under its best-performing search algorithm, showing that 1D ordered tokens benefit more from search.Results are evaluated on the COCO Karpathy validation set(Linet al.,2014). NFE denotes the number of function evaluations; the leftmost point corresponds to no search. The dashed line indicates the no-search baseline for FlexTok and is extended for reference.",
+        "caption_zh": "图6：跨标记结构的测试时缩放。我们在两种标记器上比较推理时搜索算法：一维有序标记（FlexTok）与受控二维网格标记器。虽然最优N搜索和前向搜索在两种标记化方式下表现出相似的缩放性，但束搜索对一维有序标记带来显著更大的增益。最右侧面板比较了各标记器在其最佳搜索算法下的表现，表明一维有序标记从搜索中获益更多。结果在COCO Karpathy验证集上评估（Lin等人，2014）。NFE表示函数评估次数；最左侧点对应无搜索。虚线表示FlexTok的无搜索基线，并延伸作为参考。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.16044": [
+      {
+        "path": "https://arxiv.org/html/2604.16044v1/x4.png",
+        "caption": "Figure 2:The overall framework of Differential Correction in Wavelet domain (DCW). At each denoising step, DPMs always generate the reconstructed sample𝒙𝜽0{\\bm{x}}_{\\bm{\\theta}}^{0}for predicting𝒙0{\\bm{x}}_{0}based on𝒙t{\\bm{x}}_{t}. After each denoising is completed, DCW maps𝒙𝜽0{\\bm{x}}_{\\bm{\\theta}}^{0}and𝒙t−1{\\bm{x}}_{t-1}to the wavelet domain via DWT to obtain𝒙𝜽f{\\bm{x}}_{\\bm{\\theta}}^{f}and𝒙t−1f{\\bm{x}}_{t-1}^{f}, wheref∈{l​l,l​h,h​l,h​h}f\\in\\{ll,lh,hl,hh\\}. Then, DCW corrects the different frequency components of𝒙t−1{\\bm{x}}_{t-1}using Eq.18. Finally, DCW maps the corrected𝒙t−1f{{\\bm{x}}}_{t-1}^{f}back to the pixel space via iDWT.",
+        "caption_zh": "图2：小波域差分校正（DCW）的整体框架。在每个去噪步骤中，扩散概率模型（DPM）总是基于𝒙ₜ生成重建样本𝒙₍𝜽₎⁰以预测𝒙₀。每次去噪完成后，DCW通过离散小波变换（DWT）将𝒙₍𝜽₎⁰和𝒙₍ₜ₋₁₎映射到小波域，得到𝒙₍𝜽₎ᶠ和𝒙₍ₜ₋₁₎ᶠ，其中𝑓∈{𝑙𝑙,𝑙ℎ,ℎ𝑙,ℎℎ}。随后，DCW使用公式18对𝒙₍ₜ₋₁₎的不同频率分量进行校正。最后，通过逆离散小波变换（iDWT）将校正后的𝒙₍ₜ₋₁₎ᶠ映射回像素空间。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16044v1/x1.png",
+        "caption": "(a)Schematic of SNR-t bias in DPMs.(b)SNR-t bias causes inaccurate predictions.(c)The reverse process exhibits lower SNR.Figure 1:(a) During training, the SNR of perturbed sample𝒙t{\\bm{x}}_{t}is strictly tied to timesteptt. However, during inference, due to network prediction errors and discretization errors in numerical solvers, the SNR of predicted sample𝒙^t{\\bm{\\hat{x}}}_{t}no longer matches the preset timesteptt.\n(b) shows the network output‖ϵ𝜽​(𝒙t,s)‖2||{\\bm{\\epsilon}}_{\\bm{\\theta}}({\\bm{x}}_{t},s)||_{2}when a trained networkϵ𝜽​(⋅,s){\\bm{\\epsilon}}_{\\bm{\\theta}}(\\cdot,s)with fixed timestepssreceives samples𝒙t{\\bm{x}}_{t}with mismatched SNR (samples are generated via forward process using Eq.2with differenttt).\n(c) shows the network output‖ϵ𝜽​(⋅,t)‖2||{\\bm{\\epsilon}}_{\\bm{\\theta}}(\\cdot,t)||_{2}using forward samples and reverse predicted samples, respectively.‖ϵ𝜽​(𝒙^t,t)‖2||{\\bm{\\epsilon}}_{\\bm{\\theta}}({\\bm{\\hat{x}}}_{t},t)||_{2}is always larger than‖ϵ𝜽​(𝒙t,t)‖2||{\\bm{\\epsilon}}_{\\bm{\\theta}}({\\bm{x}}_{t},t)||_{2}, which indicates that predicted samples exhibit lower SNR compared to forward samples at the same timestep. See the experiment details of (b) and (c) in Sec.4.",
+        "caption_zh": "(a) DPM中SNR-t偏差的示意图。(b) SNR-t偏差导致预测不准确。(c) 反向过程表现出较低的SNR。图1：(a) 训练期间，加扰样本𝒙ₜ的信噪比(SNR)与时间步t严格绑定。然而，在推理过程中，由于网络预测误差和数值求解器的离散化误差，预测样本𝒙̂ₜ的信噪比不再与预设时间步t匹配。\n(b) 展示了一个已训练网络ϵ𝜽(·,s)（其时间步s固定）接收到信噪比不匹配的样本𝒙ₜ（这些样本是通过前向过程使用Eq.2并采用不同的t生成的）时，其网络输出‖ϵ𝜽(𝒙ₜ,s)‖₂的情况。\n(c) 分别展示了使用前向样本和反向预测样本得到的网络输出‖ϵ𝜽(·,t)‖₂。‖ϵ𝜽(𝒙̂ₜ,t)‖₂始终大于‖ϵ𝜽(𝒙ₜ,t)‖₂，这表明在相同时间步下，预测样本相比于前向样本表现出更低的信噪比。关于(b)和(c)的实验细节，请参见第4节。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16044v1/x1.png",
+        "caption": "(a)Schematic of SNR-t bias in DPMs.",
+        "caption_zh": "(a) 去噪概率模型（DPMs）中 SNR-t 偏差的示意图。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.16299": [
+      {
+        "path": "https://arxiv.org/html/2604.16299v1/x3.png",
+        "caption": "Figure 3:Overview of theLaviGenframework for autoregressive 3D layout generation.(a) LaviGen formulates layout generation as an autoregressive process. Specifically, conditioned on LLM-encoded instructions, it takes the current scene stateSiS_{i}and objectOiO_{i}to generate the updated stateSi+1S_{i+1}. (b) The high-fidelity scene is obtained by computing the spatial difference betweenSi+1S_{i+1}andSiS_{i}to locate the newly generated region, and fitting the objectOiO_{i}to derive its spatial parameters.",
+        "caption_zh": "图 3：自回归三维布局生成框架 LaviGen 的概览。（a）LaviGen 将布局生成建模为自回归过程。具体而言，在以大语言模型编码的指令为条件时，它依据当前场景状态 $S_{i}$ 与物体 $O_{i}$ 生成更新后的状态 $S_{i+1}$。（b）通过计算 $S_{i+1}$ 与 $S_{i}$ 之间的空间差异以定位新生成的区域，并拟合物体 $O_{i}$ 以推导其空间参数，从而获得高保真场景。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16299v1/x4.png",
+        "caption": "Figure 4:The overview of theadapted 3D diffusion model.\nThe encoded scene state and object are concatenated with the noisy latent and, together with the identity-aware embedding, fed into the multimodal diffusion transformer for noise prediction. The denoised output is then decoded to produce the updated scene state.",
+        "caption_zh": "图4：经改编的三维扩散模型概览。编码后的场景状态和对象与含噪隐变量拼接，并与身份感知嵌入一并输入多模态扩散变换器以进行噪声预测。随后，去噪输出被解码以生成更新后的场景状态。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16299v1/x2.png",
+        "caption": "Figure 2:Our layout generation pipelineversusexisting methods that treat layouts as language or rely on vision-based optimization.",
+        "caption_zh": "图 2：本文的布局生成流程与将布局视为语言或依赖基于视觉的优化方法的现有方案对比。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.16503": [
+      {
+        "path": "https://arxiv.org/html/2604.16503v1/x1.png",
+        "caption": "Figure 2:Overview of Motif-Video 2B.Text is encoded by T5Gemma2, while video frames are compressed by the Wan2.1 VAE into spatiotemporal latents and patchified into tokens. The transformer backbone follows a three-stage design that separates early modality fusion, joint text-video representation learning, and final detail reconstruction: 12 dual-stream layers preserve modality-specific processing during early fusion, 16 single-stream layers build a joint text-video representation, and 8 DDT decoder layers serve as a dedicated decoder for high-frequency detail reconstruction. Shared Cross-Attention is attached to the single-stream stage to reinforce text conditioning under long-context token imbalance by using learned query/output projections while reusing the enclosing block’s self-attention key and value projections. The denoised latent is then unpatchified and decoded by the VAE to produce the final video.",
+        "caption_zh": "图 2：Motif-Video 2B 模型概览。文本由 T5Gemma2 编码，视频帧则由 Wan2.1 VAE 压缩为时空潜在表示并分块为 token。Transformer 主干网络采用三阶段设计，分离了早期模态融合、文本-视频联合表征学习以及最终细节重建：12 个双流层在早期融合阶段保留特定模态处理，16 个单流层构建文本-视频联合表征，8 个 DDT 解码器层作为专用解码器以重建高频细节。共享交叉注意力模块附加于单流阶段，通过使用学习到的查询/输出投影，同时复用其所在自注意力块的键与值投影，以在长上下文 token 不均衡的情况下强化文本条件控制。去噪后的潜在表示经反分块操作后由 VAE 解码，生成最终视频。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16503v1/x6.png",
+        "caption": "Figure 8:Subject composition of the cross-attention fine-tuning corpus.The corpus was assembled iteratively by curating additional clips from underperforming categories. Left: image distribution. Right: video distribution.",
+        "caption_zh": "图 8：交叉注意力微调数据集的样本构成。该数据集通过从表现欠佳的类别中增补片段迭代构建而成。左：图像分布。右：视频分布。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.16503v1/x2.png",
+        "caption": "Figure 3:Attention structure in dual-stream vs. single-stream vs. DDT decoder layers.Compared with dual and single-stream layers, DDT decoder layers show stronger inter-frame attention structure, where each frame attends more to temporally adjacent frames. The blue box denotes the encoder hidden state: text tokens in the dual-stream and single-stream cases, and the video output tokens from the encoder layers in the decoder case.",
+        "caption_zh": "图 3：双流、单流与 DDT 解码器层中的注意力结构对比。与双流和单流层相比，DDT 解码器层展现出更强的帧间注意力结构，其中每一帧更多地关注时间上相邻的帧。蓝色框表示编码器隐藏状态：在双流和单流情形下为文本标记，在解码器情形下为来自编码器层的视频输出标记。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2502.07408": {
+      "abstract": "Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of parameter bits. We introduce Deep Neural Lesion (DNL), a data-free and optimizationfree method that locates critical parameters, and an enhanced single-pass variant, 1P-DNL, that refines this selection with one forward and backward pass on random inputs. We show that this vulnerability spans multiple domains, including image classification, object detection, instance segmentation, and reasoning large language models. In image classification, flipping just two sign bits in ResNet-50 on ImageNet reduces accuracy by 99.8%. In object detection and instance segmentation, one or two sign flips in the backbone collapse COCO detection and mask AP for Mask R-CNN and YOLOv8-seg models. In language modeling, two sign flips into different experts reduce Qwen3-30B-A3B-Thinking from 78% to 0% accuracy. We also show that selectively protecting a small fraction of vulnerable sign bits provides a practical defense against such attacks.",
+      "comments": "10 pages, 5 figures. Accepted as a Featured Paper at Transactions on Machine Learning Research (TMLR)"
+    },
+    "2511.15915": {
+      "abstract": "We present AccelOpt, a self-improving large language model (LLM) agentic system that autonomously optimizes kernels for emerging AI acclerators, eliminating the need for expert-provided hardware-specific optimization knowledge. AccelOpt explores the kernel optimization space through iterative generation, informed by an optimization memory that curates experiences and insights from previously encountered slow-fast kernel pairs. We build NKIBench, a new benchmark suite of AWS Trainium accelerator kernels with varying complexity extracted from real-world LLM workloads to evaluate the effectiveness of AccelOpt. Our evaluation confirms that AccelOpt's capability improves over time, boosting the average percentage of peak throughput from $49\\%$ to $61\\%$ on Trainium 1 and from $45\\%$ to $59\\%$ on Trainium 2 for NKIBench kernels. Moreover, AccelOpt is highly cost-effective: using open-source models, it matches the kernel improvements of Claude Sonnet 4 while being $26\\times$ cheaper. The code is open-sourced atthis https URL.",
+      "comments": ""
+    },
+    "2604.04936": {
+      "abstract": "Retrieval-Augmented Generation (RAG) systems critically depend on effective document chunking strategies to balance retrieval quality, latency, and operational cost. Traditional chunking approaches, such as fixed-size, rule-based, or fully agentic chunking, often suffer from high token consumption, redundant text generation, limited scalability, and poor debuggability, especially for large-scale web content ingestion. In this paper, we propose Web Retrieval-Aware Chunking (W-RAC), a novel, cost-efficient chunking framework designed specifically for web-based documents. W-RAC decouples text extraction from semantic chunk planning by representing parsed web content as structured, ID-addressable units and leveraging large language models (LLMs) only for retrieval-aware grouping decisions rather than text generation. This significantly reduces token usage, eliminates hallucination risks, and improves systemthis http URLanalysis and architectural comparison demonstrate that W-RAC achieves comparable or better retrieval performance than traditional chunking approaches while reducing chunking-related LLM costs by an order of magnitude.",
+      "comments": "13 pages, 9 tables, 0 figures"
+    },
+    "2604.05716": {
+      "abstract": "LLMs have shown strong potential to advance scientific discovery. Whether they possess the capacity for foundational innovation, however, remains an open question. In this work, we focus on a prerequisite for foundational innovation: can LLMs reinvent foundational algorithms in computer science? Our \\textit{Unlearn-and-Reinvent} pipeline applies LLM unlearning to remove a specific foundational algorithm, such as Dijkstra's or Euclid's algorithm, from an LLM's pretrained knowledge, and then tests whether the model can reinvent it in a controlled environment. To enable effective unlearning, we adopt a GRPO-based, on-policy unlearning method. Across 10 target algorithms, 3 strong open-weight models, and 3 hint levels, our experiments demonstrate that (1) the strongest model Qwen3-4B-Thinking-2507 successfully reinvents 50% of the algorithms with no hint, 70% at hint level 1, and 90% at hint level 2; (2) a few high-level hints can enhance the reinvention success rate, but even step-by-step hints fail for those complicated algorithms; and (3) test-time reinforcement learning enables successful reinvention for the Strassen algorithm at hint level 2. Through analyses of output trajectories and ablation studies, we find that generative verifier in the reinvention phase plays a critical role in sustaining models' reasoning strength, helping to avoid the ``thought collapse'' phenomenon. These findings offer insights into both the potential and current limits of LLMs' innovative thinking.",
+      "comments": ""
+    },
+    "2604.09860": {
+      "abstract": "The pursuit of general-purpose robotics has yielded impressive foundation models, yet simulation-based benchmarking remains a bottleneck due to rapid performance saturation and a lack of true generalization testing. Existing benchmarks often exhibit significant domain overlap between training and evaluation, trivializing success rates and obscuring insights into robustness. We introduce RoboLab, a simulation benchmarking framework designed to address these challenges. Concretely, our framework is designed to answer two questions: (1) to what extent can we understand the performance of a real-world policy by analyzing its behavior in simulation, and (2) which external factors most strongly affect that behavior under controlled perturbations. First, RoboLab enables human-authored and LLM-enabled generation of scenes and tasks in a robot- and policy-agnostic manner within a physically realistic and photorealistic simulation. With this, we propose the RoboLab-120 benchmark, consisting of 120 tasks categorized into three competency axes: visual, procedural, relational competency, across three difficulty levels. Second, we introduce a systematic analysis of real-world policies that quantify both their performance and the sensitivity of their behavior to controlled perturbations, indicating that high-fidelity simulation can serve as a proxy for analyzing performance and its dependence on external factors. Evaluation with RoboLab exposes significant performance gap in current state-of-the-art models. By providing granular metrics and a scalable toolset, RoboLab offers a scalable framework for evaluating the true generalization capabilities of task-generalist robotic policies.",
+      "comments": ""
+    },
+    "2604.10261": {
+      "abstract": "Existing tool-use benchmarks for LLM agents are overwhelmingly linear: our analysis of six benchmarks shows 55 to 100% of instances are simple chains of 2 to 5 steps. We introduce The Amazing Agent Race (AAR), a benchmark featuring directed acyclic graph (DAG) puzzles (or \"legs\") with fork-merge tool chains. We release 1,400 instances across two variants: sequential (800 legs) and compositional (600 DAG legs). Agents must navigate Wikipedia, execute multi-step tool chains, and aggregate results into a verifiable answer. Legs are procedurally generated from Wikipedia seeds across four difficulty levels with live-API validation. Three complementary metrics (finish-line accuracy, pit-stop visit rate, and roadblock completion rate) separately diagnose navigation, tool-use, and arithmetic failures. Evaluating three agent frameworks on 1,400 legs, the best achieves only 37.2% accuracy. Navigation errors dominate (27 to 52% of trials) while tool-use errors remain below 17%, and agent architecture matters as much as model scale (Claude Code matches Codex CLI at 37% with 6x fewer tokens). The compositional structure of AAR reveals that agents fail not at calling tools but at navigating to the right pages, a blind spot invisible to linear benchmarks. The project page can be accessed at:this https URL",
+      "comments": ""
+    },
+    "2604.10571": {
+      "abstract": "We test whether artificial intelligence architectural evolution obeys the same statistical laws as biological evolution. Compiling 935 ablation experiments from 161 publications, we show that the distribution of fitness effects (DFE) of architectural modifications follows a heavy-tailed Student's t-distribution with proportions (68% deleterious, 19% neutral, 13% beneficial for major ablations, n=568) that place AI between compact viral genomes and simple eukaryotes. The DFE shape matches D. melanogaster (normalized KS=0.07) and S. cerevisiae (KS=0.09); the elevated beneficial fraction (13% vs. 1-6% in biology) quantifies the advantage of directed over blind search while preserving the distributional form. Architectural origination follows logistic dynamics (R^2=0.994) with punctuated equilibria and adaptive radiation into domain niches. Fourteen architectural traits were independently invented 3-5 times, paralleling biological convergences. These results demonstrate that the statistical structure of evolution is substrate-independent, determined by fitness landscape topology rather than the mechanism of selection.",
+      "comments": "15 pages, 4 figures, 4 supplementary tables. Code and data: <a class=\"link-external link-https\" href=\"https://github.com/mool32/ai-evolution-universal-signatures\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.12012": {
+      "abstract": "Recent progress in vision-language pretraining has enabled significant improvements to many downstream computer vision applications, such as classification, retrieval, segmentation and depth prediction. However, a fundamental capability that these models still struggle with is aligning dense patch representations with text embeddings of corresponding concepts. In this work, we investigate this critical issue and propose novel techniques to enhance this capability in foundational vision-language models. First, we reveal that a patch-level distillation procedure significantly boosts dense patch-text alignment -- surprisingly, the patch-text alignment of the distilled student model strongly surpasses that of the teacher model. This observation inspires us to consider modifications to pretraining recipes, leading us to propose iBOT++, an upgrade to the commonly-used iBOT masked image objective, where unmasked tokens also contribute directly to the loss. This dramatically enhances patch-text alignment of pretrained models. Additionally, to improve vision-language pretraining efficiency and effectiveness, we modify the exponential moving average setup in the learning recipe, and introduce a caption sampling strategy to benefit from synthetic captions at different granularities. Combining these components, we develop TIPSv2, a new family of image-text encoder models suitable for a wide range of downstream applications. Through comprehensive experiments on 9 tasks and 20 datasets, we demonstrate strong performance, generally on par with or better than recent vision encoder models. Code and models are released via our project page atthis https URL.",
+      "comments": "CVPR2026 camera-ready + appendix"
+    },
+    "2604.13074": {
+      "abstract": "Multimodal Large Language Models (MLLMs) serve as daily assistants for millions. However, their ability to generate responses aligned with individual preferences remains limited. Prior approaches enable only static, single-turn personalization through input augmentation or output alignment, and thus fail to capture users' evolving preferences and personality over time (see Fig.1). In this paper, we introduce PersonaVLM, an innovative personalized multimodal agent framework designed for long-term personalization. It transforms a general-purpose MLLM into a personalized assistant by integrating three key capabilities: (a) Remembering: It proactively extracts and summarizes chronological multimodal memories from interactions, consolidating them into a personalized database. (b) Reasoning: It conducts multi-turn reasoning by retrieving and integrating relevant memories from the database. (c) Response Alignment: It infers the user's evolving personality throughout long-term interactions to ensure outputs remain aligned with their unique characteristics. For evaluation, we establish Persona-MME, a comprehensive benchmark comprising over 2,000 curated interaction cases, designed to assess long-term MLLM personalization across seven key aspects and 14 fine-grained tasks. Extensive experiments validate our method's effectiveness, improving the baseline by 22.4% (Persona-MME) and 9.8% (PERSONAMEM) under a 128k context, while outperforming GPT-4o by 5.2% and 2.0%, respectively. Project page:this https URL.",
+      "comments": "Accepted by CVPR 2026. Project page: <a class=\"link-external link-https\" href=\"https://PersonaVLM.github.io\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.13902": {
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has catalyzed significant advances in the reasoning capabilities of Large Language Models (LLMs). However, effectively managing the exploration and exploitation trade-off remains a critical challenge. In this paper, we fully analyze the exploration and exploitation dilemma of extremely hard and easy samples during the training and propose a new fine-grained trade-off mechanism. Concretely, we introduce a perplexity space disentangling strategy that divides the sample space into distinct exploration (high perplexity) and exploitation (low perplexity) subspaces, thereby mining fine-grained samples requiring exploration-exploitation trade-off. Subsequently, we propose a bidirectional reward allocation mechanism with a minimum impact on verification rewards to implement perplexity-guided exploration and exploitation, enabling more stable policy optimization. Finally, we have evaluated our method on two mainstream tasks: mathematical reasoning and function calling, and experimental results demonstrate the superiority of the proposed method, confirming its effectiveness in enhancing LLM performance by fine-grained exploration-exploitation trade-off.",
+      "comments": "LLM Reinforce Learning"
+    },
+    "2604.14518": {
+      "abstract": "We present Mind DeepResearch (MindDR), an efficient multi-agent deep research framework that achieves leading performance with only ~30B-parameter models through a meticulously designed data synthesis and multi-stage training pipeline. The core innovation of MindDR lies in a collaborative three-agent architecture (Planning Agent, DeepSearch Agent, and Report Agent) and a four-stage agent-specialized training pipeline comprising SFT cold-start, Search-RL, Report-RL and preference alignment. With this regime, MindDR demonstrates competitive performance even with ~30B-scale models. Specifically, MindDR achieves 45.7% on BrowseComp-ZH, 42.8% on BrowseComp, 46.5% on WideSearch, 75.0% on xbench-DS, and 52.5 on DeepResearch Bench, outperforming comparable-scale open-source agent systems and rivaling larger-scale models. MindDR has been deployed as an online product in Li Auto. Furthermore, we introduce MindDR Bench, a curated benchmark of 500 real-world Chinese queries from our internal product user interactions, evaluated through a comprehensive multi-dimensional rubric system rather than relying on a single RACE metric. On MindDR Bench, MindDR achieves a state-of-the-art score of 51.8.",
+      "comments": ""
+    },
+    "2604.14568": {
+      "abstract": "Visual reasoning models (VRMs) have recently shown strong cross-modal reasoning capabilities by integrating visual perception with language reasoning. However, they often suffer from overthinking, producing unnecessarily long reasoning chains for any tasks. We attribute this issue to \\textbf{Reasoning Path Redundancy} in visual reasoning: many visual questions do not require the full reasoning process. To address this, we propose \\textbf{AVR}, an adaptive visual reasoning framework that decomposes visual reasoning into three cognitive functions: visual perception, logical reasoning, and answer application. It further enables models to dynamically choose among three response formats: Full Format, Perception-Only Format, and Direct Answer. AVR is trained with FS-GRPO, an adaptation of Group Relative Policy Optimization that encourages the model to select the most efficient reasoning format while preserving correctness. Experiments on multiple vision-language benchmarks show that AVR reduces token usage by 50--90\\% while maintaining overall accuracy, especially in perception-intensive tasks. These results demonstrate that adaptive visual reasoning can effectively mitigate overthinking in VRMs. Code and data are available at:this https URL.",
+      "comments": ""
+    },
+    "2604.14663": {
+      "abstract": "Federated learning (FL) enables collaborative intrusion detection without raw data exchange, but conventional FL incurs high communication overhead from full-precision gradient transmission and remains vulnerable to gradient inference attacks. This paper presents EdgeDetect, a communication-efficient and privacy-aware federated IDS for bandwidth-constrained 6G-IoT environments. EdgeDetect introduces gradient smartification, a median-based statistical binarization that compresses local updates to $\\{+1,-1\\}$ representations, reducing uplink payload by $32\\times$ while preserving convergence. We further integrate Paillier homomorphic encryption over binarized gradients, protecting against honest-but-curious servers without exposing individual updates. Experiments on CIC-IDS2017 (2.8M flows, 7 attack classes) demonstrate $98.0\\%$ multi-class accuracy and $97.9\\%$ macro F1-score, matching centralized baselines, while reducing per-round communication from $450$~MB to $14$~MB ($96.9\\%$ reduction). Raspberry Pi-4 deployment confirms edge feasibility: $4.2$~MB memory, $0.8$~ms latency, and $12$~mJ per inference with $<0.5\\%$ accuracy loss. Under $5\\%$ poisoning attacks and severe imbalance, EdgeDetect maintains $87\\%$ accuracy and $0.95$ minority class F1 ($p<0.001$), establishing a practical accuracy, communication, and privacy tradeoff for next-generation edge intrusion detection.",
+      "comments": ""
+    },
+    "2604.14816": {
+      "abstract": "This paper presents an overview of the NTIRE 2026 Challenge on Video Saliency Prediction. The goal of the challenge participants was to develop automatic saliency map prediction methods for the provided video sequences. The novel dataset of 2,000 diverse videos with an open license was prepared for this challenge. The fixations and corresponding saliency maps were collected using crowdsourced mouse tracking and contain viewing data from over 5,000 assessors. Evaluation was performed on a subset of 800 test videos using generally accepted quality metrics. The challenge attracted over 20 teams making submissions, and 7 teams passed the final phase with code review. All data used in this challenge is made publicly available -this https URL.",
+      "comments": "CVPRW 2026"
+    },
+    "2604.15151": {
+      "abstract": "Large language models have demonstrated strong performance on general-purpose programming tasks, yet their ability to generate executable algorithmic trading strategies remains underexplored. Unlike standard code benchmarks, trading-strategy generation requires simultaneous mastery of domain-specific financial logic, knowledge of a specialized API, and the ability to produce code that is not only syntactically correct but also leads to actual trades on historical data. In this work, we present QuantCode-Bench, a benchmark for the systematic evaluation of modern LLMs in generating strategies for the Backtrader framework from textual descriptions in English. The benchmark contains 400 tasks of varying difficulty collected from Reddit, TradingView, StackExchange, GitHub, and synthetic sources. Evaluation is conducted through a multi-stage pipeline that checks syntactic correctness, successful backtest execution, the presence of trades, and semantic alignment with the task description using an LLM judge. We compare state-of-the-art models in two settings: single-turn, where the strategy must be generated correctly on the first attempt, and agentic multi-turn, where the model receives iterative feedback and may repair its errors. We analyze the failure modes across different stages of the pipeline and show that the main limitations of current models are not related to syntax, but rather to the correct operationalization of trading logic, proper API usage, and adherence to task semantics. These findings suggest that trading strategy generation constitutes a distinct class of domain-specific code generation tasks in which success requires not only technical correctness, but also alignment between natural-language descriptions, financial logic, and the observable behavior of the strategy on data.",
+      "comments": "12 pages, 8 tables"
+    },
+    "2604.15411": {
+      "abstract": "The paradigm of agentic science requires AI systems to conduct robust reasoning and engage in long-horizon, autonomous exploration. However, current scientific benchmarks remain confined to domain knowledge comprehension and complex reasoning, failing to evaluate the exploratory nature and procedural complexity of real-world research. In this work, we present research-oriented evaluations in theoretical and computational physics, a natural testbed with comprehensive domain knowledge, complex reasoning, and verifiable end-to-end workflows without reliance on experiments. Here we introduce PRL-Bench (Physics Research by LLMs), a benchmark designed to systematically map the capability boundaries of LLMs in executing end-to-end physics research. Constructed from 100 curated papers from the latest issues of Physical Review Letters since August 2025 and validated by domain experts, PRL-Bench covers five major theory- and computation-intensive subfields of modern physics: astrophysics, condensed matter physics, high-energy physics, quantum information, and statistical physics. Each task in the benchmark is designed to replicate the core properties of authentic scientific research, including exploration-oriented formulation, long-horizon workflows, and objective verifiability, thereby reconstructing the essential reasoning processes and research workflows of real physics research. Evaluation across frontier models shows that performance remains limited, with the best overall score below 50, revealing a pronounced gap between current LLM capabilities and the demands of real scientific research. PRL-Bench serves a reliable testbed for accessing next generation AI scientists advancing AI systems toward autonomous scientific discovery.",
+      "comments": "15 pages, 5 figures"
+    },
+    "2604.15453": {
+      "abstract": "Tokenization is a key component of autoregressive (AR) generative models, converting raw data into more manageable units for modeling. Commonly, tokens describe local information, such as regions of pixels in images or word pieces in text, and AR generation predicts these tokens in a fixed order. A worthwhile question is whether token structures affect the ability to steer the generation through test-time search, where multiple candidate generations are explored and evaluated by a verifier. Using image generation as our testbed, we hypothesize that recent 1D ordered tokenizers with coarse-to-fine structure can be more amenable to search than classical 2D grid structures. This is rooted in the fact that the intermediate states in coarse-to-fine sequences carry semantic meaning that verifiers can reliably evaluate, enabling effective steering during generation.Through controlled experiments, we find that AR models trained on coarse-to-fine ordered tokens exhibit improved test-time scaling behavior compared to grid-based counterparts. Moreover, we demonstrate that, thanks to the ordered structure, pure test-time search over token sequences (i.e., without training an AR model) can perform training-free text-to-image generation when guided by an image-text verifier. Beyond this, we systematically study how classical search algorithms (best-of-N, beam search, lookahead search) interact with different token structures, as well as the role of different verifiers and AR priors. Our results highlight the impact of token structure on inference-time scalability and provide practical guidance for test-time scaling in AR models.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://soto.epfl.ch/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.15715": {
+      "abstract": "The development of general-purpose agents requires a shift from executing simple instructions to completing complex, real-world productivity workflows. However, current tool-use benchmarks remain misaligned with real-world requirements, relying on AI-generated queries, dummy tools, and limited system-level coordination. To address this, we propose GTA-2, a hierarchical benchmark for General Tool Agents (GTA) spanning atomic tool use and open-ended workflows. Built on real-world authenticity, it leverages real user queries, deployed tools, and multimodal contexts. (i) GTA-Atomic, inherited from our prior GTA benchmark, evaluates short-horizon, closed-ended tool-use precision. (ii) GTA-Workflow introduces long-horizon, open-ended tasks for realistic end-to-end completion. To evaluate open-ended deliverables, we propose a recursive checkpoint-based evaluation mechanism that decomposes objectives into verifiable sub-goals, enabling unified evaluation of both model capabilities and agent execution frameworks (i.e., execution harnesses). Experiments reveal a pronounced capability cliff: while frontier models already struggle on atomic tasks (below 50%), they largely fail on workflows, with top models achieving only 14.39% success. Further analysis shows that checkpoint-guided feedback improves performance, while advanced frameworks such as Manus and OpenClaw substantially enhance workflow completion, highlighting the importance of execution harness design beyond the underlying model capacity. These findings provide guidance for developing reliable personal and professional assistants. Dataset and code will be available atthis https URL.",
+      "comments": ""
+    },
+    "2604.15804": {
+      "abstract": "In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model demonstrates robust omni-modality capabilities. Qwen3.5-Omni-plus achieves SOTA results across 215 audio and audio-visual understanding, reasoning, and interaction subtasks and benchmarks, surpassing Gemini-3.1 Pro in key audio tasks and matching it in comprehensive audio-visual understanding. Architecturally, Qwen3.5-Omni employs a Hybrid Attention Mixture-of-Experts (MoE) framework for both Thinker and Talker, enabling efficient long-sequence inference. The model facilitates sophisticated interaction, supporting over 10 hours of audio understanding and 400 seconds of 720P video (at 1 FPS). To address the inherent instability and unnaturalness in streaming speech synthesis, often caused by encoding efficiency discrepancies between text and speech tokenizers, we introduce ARIA. ARIA dynamically aligns text and speech units, significantly enhancing the stability and prosody of conversational speech with minimal latency impact. Furthermore, Qwen3.5-Omni expands linguistic boundaries, supporting multilingual understanding and speech generation across 10 languages with human-like emotional nuance. Finally, Qwen3.5-Omni exhibits superior audio-visual grounding capabilities, generating script-level structured captions with precise temporal synchronization and automated scene segmentation. Remarkably, we observed the emergence of a new capability in omnimodal models: directly performing coding based on audio-visual instructions, which we call Audio-Visual Vibe Coding.",
+      "comments": ""
+    },
+    "2604.15923": {
+      "abstract": "Video-to-Speech (VTS) generation aims to synthesize speech from a silent video without auditory signals. However, existing VTS methods disregard the hierarchical nature of speech, which spans coarse speaker-aware semantics to fine-grained prosodic details. This oversight hinders direct alignment between visual and speech features at specific hierarchical levels during property matching. In this paper, leveraging the hierarchical structure of Residual Vector Quantization (RVQ)-based codec, we propose HiCoDiT, a novel Hierarchical Codec Diffusion Transformer that exploits the inherent hierarchy of discrete speech tokens to achieve strong audio-visual alignment. Specifically, since lower-level tokens encode coarse speaker-aware semantics and higher-level tokens capture fine-grained prosody, HiCoDiT employs low-level and high-level blocks to generate tokens at different levels. The low-level blocks condition on lip-synchronized motion and facial identity to capture speaker-aware content, while the high-level blocks use facial expression to modulate prosodic dynamics. Finally, to enable more effective coarse-to-fine conditioning, we propose a dual-scale adaptive instance layer normalization that jointly captures global vocal style through channel-wise normalization and local prosody dynamics through temporal-wise normalization. Extensive experiments demonstrate that HiCoDiT outperforms baselines in fidelity and expressiveness, highlighting the potential of discrete modelling for VTS. The code and speech demo are both available atthis https URL.",
+      "comments": "CVPR 2026"
+    },
+    "2604.15950": {
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) segmentation on contrast-enhanced CT is inherently ambiguous: inter-rater disagreement among experts reflects genuine uncertainty rather than annotation noise. Standard deep learning approaches assume a single ground truth, producing probabilistic outputs that can be poorly calibrated and difficult to interpret under such ambiguity. We present TwinTrack, a framework that addresses this gap through post-hoc calibration of ensemble segmentation probabilities to the empirical mean human response (MHR) -the fraction of expert annotators labeling a voxel as tumor. Calibrated probabilities are thus directly interpretable as the expected proportion of annotators assigning the tumor label, explicitly modeling inter-rater disagreement. The proposed post-hoc calibration procedure is simple and requires only a small multi-rater calibration set. It consistently improves calibration metrics over standard approaches when evaluated on the MICCAI 2025 CURVAS-PDACVI multi-rater benchmark.",
+      "comments": ""
+    },
+    "2604.16027": {
+      "abstract": "Post-trained language models produce less varied outputs than their base counterparts. This output diversity collapse undermines inference-time scaling methods that rely on varied samples, and risks homogenizing model outputs on creative and value-laden tasks. Prior work attributes collapse to specific post-training methods, without separating the role of training data composition from the method, or the generation format from the model weights. We trace output diversity through three parallel post-training lineages of Olmo 3, Think (chain-of-thought distillation), Instruct (broad multi-source data), and RL-Zero, across 15 tasks and four text diversity metrics. We find that the location of collapse co-varies with data composition: the Think lineage loses most semantic diversity at supervised fine-tuning, and the effect of DPO is larger in Instruct than in Think. Suppressing chain-of-thought reasoning at inference in Think models drops accuracy on hard tasks, yet leaves answer-level diversity unchanged, showing that the collapse is embedded in the model weights by training data, not imposed by the generation format. Decomposing diversity loss on six verifiable tasks into a quality-control component (removal of incorrect outputs) and a residual component (genuine narrowing among correct outputs) reveals that the split is task-dependent, and Think models retain more correct-answer diversity than Instruct despite collapsing more in aggregate. Our results indicate that diversity collapse is determined during training by data composition and cannot be addressed at inference time alone.",
+      "comments": ""
+    },
+    "2604.16029": {
+      "abstract": "Parallel reasoning enhances Large Reasoning Models (LRMs) but incurs prohibitive costs due to futile paths caused by early errors. To mitigate this, path pruning at the prefix level is essential, yet existing research remains fragmented without a standardized framework. In this work, we propose the first systematic taxonomy of path pruning, categorizing methods by their signal source (internal vs. external) and learnability (learnable vs. non-learnable). This classification reveals the unexplored potential of learnable internal methods, motivating our proposal of STOP (Super TOken for Pruning). Extensive evaluations across LRMs ranging from 1.5B to 20B parameters demonstrate that STOP achieves superior effectiveness and efficiency compared to existing baselines. Furthermore, we rigorously validate the scalability of STOP under varying compute budgets - for instance, boosting GPT-OSS-20B accuracy on AIME25 from 84% to nearly 90% under fixed compute budgets. Finally, we distill our findings into formalized empirical guidelines to facilitate optimal real-world deployment. Code, data and models are available atthis https URL",
+      "comments": "9 pages, 7 figures"
+    },
+    "2604.16044": {
+      "abstract": "Diffusion Probabilistic Models have demonstrated remarkable performance across a wide range of generative tasks. However, we have observed that these models often suffer from a Signal-to-Noise Ratio-timestep (SNR-t) bias. This bias refers to the misalignment between the SNR of the denoising sample and its corresponding timestep during the inference phase. Specifically, during training, the SNR of a sample is strictly coupled with its timestep. However, this correspondence is disrupted during inference, leading to error accumulation and impairing the generation quality. We provide comprehensive empirical evidence and theoretical analysis to substantiate this phenomenon and propose a simple yet effective differential correction method to mitigate the SNR-t bias. Recognizing that diffusion models typically reconstruct low-frequency components before focusing on high-frequency details during the reverse denoising process, we decompose samples into various frequency components and apply differential correction to each component individually. Extensive experiments show that our approach significantly improves the generation quality of various diffusion models (IDDPM, ADM, DDIM, A-DPM, EA-DPM, EDM, PFGM++, and FLUX) on datasets of various resolutions with negligible computational overhead. The code is atthis https URL.",
+      "comments": "Accepted to CVPR 2026, 19pages, with appendix"
+    },
+    "2604.16254": {
+      "abstract": "We present ArtifactNet, a lightweight framework that detects AI-generated music by reframing the problem as forensic physics -- extracting and analyzing the physical artifacts that neural audio codecs inevitably imprint on generated audio. A bounded-mask UNet (ArtifactUNet, 3.6M parameters) extracts codec residuals from magnitude spectrograms, which are then decomposed via HPSS into 7-channel forensic features for classification by a compact CNN (0.4M parameters; 4.0M total). We introduce ArtifactBench, a multi-generator evaluation benchmark comprising 6,183 tracks (4,383 AI from 22 generators and 1,800 real from 6 diverse sources). Each track is tagged with bench_origin for fair zero-shot evaluation. On the unseen test partition (n=2,263), ArtifactNet achieves F1 = 0.9829 with FPR = 1.49%, compared to CLAM (F1 = 0.7576, FPR = 69.26%) and SpecTTTra (F1 = 0.7713, FPR = 19.43%) evaluated under identical conditions with published checkpoints. Codec-aware training (4-way WAV/MP3/AAC/Opus augmentation) further reduces cross-codec probability drift by 83% (Delta = 0.95 -> 0.16), resolving the primary codec-invariance failure mode. These results establish forensic physics -- direct extraction of codec-level artifacts -- as a more generalizable and parameter-efficient paradigm for AI music detection than representation learning, using 49x fewer parameters than CLAM and 4.8x fewer than SpecTTTra.",
+      "comments": "v2: Added SONICS 3-way (n=23,288), OOD taxonomy, benchmark coverage table, baseline reproduction appendix; toned-down claims; reframed discussion as asymmetric defender advantage. 8 pages, 6 figs, 12 tables"
+    },
+    "2604.16272": {
+      "abstract": "As AI-assisted video creation becomes increasingly practical, instruction-guided video editing has become essential for refining generated or captured footage to meet professional requirements. Yet the field still lacks both a large-scale human-annotated dataset with complete editing examples and a standardized evaluator for comparing editing systems. Existing resources are limited by small scale, missing edited outputs, or the absence of human quality labels, while current evaluation often relies on expensive manual inspection or generic vision-language model judges that are not specialized for editing quality. We introduce VEFX-Dataset, a human-annotated dataset containing 5,049 video editing examples across 9 major editing categories and 32 subcategories, each labeled along three decoupled dimensions: Instruction Following, Rendering Quality, and Edit Exclusivity. Building on VEFX-Dataset, we propose VEFX-Reward, a reward model designed specifically for video editing quality assessment. VEFX-Reward jointly processes the source video, the editing instruction, and the edited video, and predicts per-dimension quality scores via ordinal regression. We further release VEFX-Bench, a benchmark of 300 curated video-prompt pairs for standardized comparison of editing systems. Experiments show that VEFX-Reward aligns more strongly with human judgments than generic VLM judges and prior reward models on both standard IQA/VQA metrics and group-wise preference evaluation. Using VEFX-Reward as an evaluator, we benchmark representative commercial and open-source video editing systems, revealing a persistent gap between visual plausibility, instruction following, and edit locality in current models. Our project page isthis https URL.",
+      "comments": ""
+    },
+    "2604.16299": {
+      "abstract": "We introduce LaviGen, a framework that repurposes 3D generative models for 3D layout generation. Unlike previous methods that infer object layouts from textual descriptions, LaviGen operates directly in the native 3D space, formulating layout generation as an autoregressive process that explicitly models geometric relations and physical constraints among objects, producing coherent and physically plausible 3D scenes. To further enhance this process, we propose an adapted 3D diffusion model that integrates scene, object, and instruction information and employs a dual-guidance self-rollout distillation mechanism to improve efficiency and spatial accuracy. Extensive experiments on the LayoutVLM benchmark show LaviGen achieves superior 3D layout generation performance, with 19% higher physical plausibility than the state of the art and 65% faster computation. Our code is publicly available atthis https URL.",
+      "comments": "<a class=\"link-external link-https\" href=\"https://fenghora.github.io/LaviGen-Page/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.16503": {
+      "abstract": "Training strong video generation models usually requires massive datasets, large parameter counts, and substantial compute. In this work, we ask whether strong text-to-video quality is possible at a much smaller budget: fewer than 10M clips and less than 100,000 H200 GPU hours. Our core claim is that part of the answer lies in how model capacity is organized, not only in how much of it is used. In video generation, prompt alignment, temporal consistency, and fine-detail recovery can interfere with one another when they are handled through the same pathway. Motif-Video 2B addresses this by separating these roles architecturally, rather than relying on scale alone. The model combines two key ideas. First, Shared Cross-Attention strengthens text control when video token sequences become long. Second, a three-part backbone separates early fusion, joint representation learning, and detail refinement. To make this design effective under a limited compute budget, we pair it with an efficient training recipe based on dynamic token routing and early-phase feature alignment to a frozen pretrained video encoder. Our analysis shows that later blocks develop clearer cross-frame attention structure than standard single-stream baselines. On VBench, Motif-Video~2B reaches 83.76\\%, surpassing Wan2.1 14B while using 7$\\times$ fewer parameters and substantially less training data. These results suggest that careful architectural specialization, combined with an efficiency-oriented training recipe, can narrow or exceed the quality gap typically associated with much larger video models.",
+      "comments": ""
+    }
+  }
+}

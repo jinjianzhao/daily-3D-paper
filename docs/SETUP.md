@@ -7,8 +7,15 @@
 ## 依赖安装
 
 ```bash
-pip install requests beautifulsoup4 tqdm
+pip install requests beautifulsoup4 tqdm pyyaml notion-client PyMuPDF
 ```
+
+| 包 | 用途 |
+|---|---|
+| `requests` / `beautifulsoup4` / `tqdm` | 网络抓取与进度条 |
+| `pyyaml` | area 配置读写 |
+| `notion-client` | area 论文同步到 Notion（可选） |
+| `PyMuPDF` | 本地 PDF 文本提取（area 流水线） |
 
 ---
 
@@ -16,6 +23,8 @@ pip install requests beautifulsoup4 tqdm
 
 ```bash
 export MY_API_KEY="your-siliconflow-api-key"
+export NOTION_TOKEN="your-notion-integration-token"       # area 流水线需要
+export NOTION_ROOT_PAGE_ID="your-notion-root-page-id"     # 可选，有默认值
 ```
 
 默认使用 SiliconFlow 的 DeepSeek 兼容接口。更换模型或 API 地址可在 `run_pipeline.py` 的 `PipelineConfig` 中修改 `llm_model` 与 `llm_api_url`。

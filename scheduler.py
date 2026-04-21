@@ -18,7 +18,7 @@ CST = timezone(timedelta(hours=8))
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PIPELINE = os.path.join(SCRIPT_DIR, "run_pipeline.py")
 POLL_INTERVAL = 60 * 5  # 5 分钟
-DAILY_SLOTS: list[int] = [2, 4, 6, 8, 10, 12, 14, 19, 23]
+DAILY_SLOTS: list[int] = [2, 10, 19]
 
 
 def build_daily_slots() -> list[int]:
@@ -29,38 +29,28 @@ def build_daily_slots() -> list[int]:
     assert all(0 <= h <= 23 for h in DAILY_SLOTS), "DAILY_SLOTS 每个小时必须在 0~23 之间"
     return sorted(set(DAILY_SLOTS))
 
-
-def run_pipeline_once():
-    # 执行 auto_push.sh
-    auto_pull = os.path.join(SCRIPT_DIR, "auto_pull.sh")
-    cmd_pull = f'cd "{SCRIPT_DIR}" && bash "{auto_pull}"'
-    print(f"[scheduler] 执行: {cmd_pull}", flush=True)
-    ret_pull = os.system(cmd_pull)
-    if ret_pull != 0:
-        print(f"[scheduler] auto_pull.sh 返回非零 exit code: {ret_pull}", flush=True)
-    else:
-        print(f"[scheduler] auto_pull.sh 执行完毕", flush=True)
-
-
-    """通过 os.system 调用 run_pipeline.py，继承当前进程环境变量。"""
-    cmd = f'"{sys.executable}" "{PIPELINE}"'
-    print(f"[scheduler] 执行: {cmd}", flush=True)
+def run_cmd(cmd: str) -> int:
+    """通过 os.system 调用命令，继承当前进程环境变量。"""
     ret = os.system(cmd)
     if ret != 0:
-        print(f"[scheduler] pipeline 返回非零 exit code: {ret}", flush=True)
+        print(f"[scheduler:{cmd}] 返回非零 exit code: {ret}", flush=True)
     else:
-        print(f"[scheduler] pipeline 执行完毕", flush=True)
+        print(f"[scheduler:{cmd}] 执行完毕", flush=True)
+    return ret
 
-    # 执行 auto_push.sh
+def run_pipeline_once():
+    """依次执行 pull → date pipeline → area pipeline → push。"""
+    auto_pull = os.path.join(SCRIPT_DIR, "auto_pull.sh")
+    run_cmd(f'cd "{SCRIPT_DIR}" && bash "{auto_pull}"')
+
+    auto_pipeline = os.path.join(SCRIPT_DIR, "run_pipeline.py")
+    run_cmd(f'cd "{SCRIPT_DIR}" && "{sys.executable}" "{auto_pipeline}"')
+
+    auto_notion_area = os.path.join(SCRIPT_DIR, "area_processor.py")
+    run_cmd(f'cd "{SCRIPT_DIR}" && "{sys.executable}" "{auto_notion_area}"')
+
     auto_push = os.path.join(SCRIPT_DIR, "auto_push.sh")
-    cmd_push = f'cd "{SCRIPT_DIR}" && bash "{auto_push}"'
-    print(f"[scheduler] 执行: {cmd_push}", flush=True)
-    ret_push = os.system(cmd_push)
-    if ret_push != 0:
-        print(f"[scheduler] auto_push.sh 返回非零 exit code: {ret_push}", flush=True)
-    else:
-        print(f"[scheduler] auto_push.sh 执行完毕", flush=True)
-
+    run_cmd(f'cd "{SCRIPT_DIR}" && bash "{auto_push}"')
 
 def main():
     # 启动时立刻跑一次，及早发现错误
