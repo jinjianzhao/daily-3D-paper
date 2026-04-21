@@ -151,7 +151,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13074  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13074  
 **HF Paper**: https://huggingface.co/papers/2604.13074  
-**HF Votes**: 41
+**HF Votes**: 42
 
 ## 简要摘要
 
@@ -313,7 +313,7 @@ NTIRE 2026组织视频显著性预测竞赛，旨在开发自动预测视频显�
 **arXiv**: https://arxiv.org/abs/2604.15804  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15804  
 **HF Paper**: https://huggingface.co/papers/2604.15804  
-**HF Votes**: 37
+**HF Votes**: 40
 
 ## 简要摘要
 

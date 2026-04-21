@@ -1,5 +1,56 @@
 # 2026-04-21 全量简报
 
+# MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models
+
+**【多轮全双工语音大模型评测基准】**
+
+**arXiv**: https://arxiv.org/abs/2511.10262  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2511.10262  
+**HF Paper**: https://huggingface.co/papers/2511.10262  
+**HF Votes**: 1
+
+## 简要摘要
+
+*自然语言处理;对话系统;全双工语音对话评测*
+
+现有评测基准多关注单轮对话，难以评估全双工语音大模型在多轮对话中的真实表现。
+我们提出了MTR-DuplexBench，它能将连续对话分段评估，并综合考察对话质量、指令遵循等多方面能力。
+
+---
+
+# Protecting Language Models Against Unauthorized Distillation through Trace Rewriting
+
+**【保护大模型免遭未授权蒸馏】**
+
+**arXiv**: https://arxiv.org/abs/2602.15143  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2602.15143  
+**HF Paper**: https://huggingface.co/papers/2602.15143  
+
+## 简要摘要
+
+*自然语言处理;大型语言模型;知识蒸馏安全*
+
+知识蒸馏被广泛用于将大模型能力转移到更小的学生模型，但未授权使用会损害开发者利益。本文通过动态改写大模型的推理输出，在保持答案正确性的同时，实现了抗蒸馏和可验证水印嵌入，有效阻止未授权蒸馏并维持教师模型性能。
+
+---
+
+# Significance and Stability Analysis of Gene-Environment Interaction using RGxEStat
+
+**【基因与环境互作分析工具  】**
+
+**arXiv**: https://arxiv.org/abs/2604.03337  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.03337  
+**HF Paper**: https://huggingface.co/papers/2604.03337  
+
+## 简要摘要
+
+*生物信息学;基因与环境互作分析;GxE显著性及稳定性建模  *
+
+背景/任务：基因与环境互作影响表型预测，需分析其显著性及稳定性以指导育种。  
+开发了RGxEStat工具，整合模型构建与可视化，简化育种数据分析流程。
+
+---
+
 # MedConclusion: A Benchmark for Biomedical Conclusion Generation from Structured Abstracts
 
 **【生物医学结论生成基准数据集构建】**
@@ -25,7 +76,7 @@
 **arXiv**: https://arxiv.org/abs/2604.08537  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.08537  
 **HF Paper**: https://huggingface.co/papers/2604.08537  
-**HF Votes**: 3
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -61,7 +112,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13313  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13313  
 **HF Paper**: https://huggingface.co/papers/2604.13313  
-**HF Votes**: 3
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -79,7 +130,7 @@
 **arXiv**: https://arxiv.org/abs/2604.14258  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.14258  
 **HF Paper**: https://huggingface.co/papers/2604.14258  
-**HF Votes**: 16
+**HF Votes**: 18
 
 ## 简要摘要
 
@@ -87,6 +138,24 @@
 
 大语言模型通常通过监督微调和强化学习进行后训练，但如何有效统一高效知识注入与强泛化能力仍具挑战。
 本文提出分组微调框架，通过组优势学习和动态系数校正解决稀疏奖励与梯度不稳定问题，提升训练效果。
+
+---
+
+# VoxMind: An End-to-End Agentic Spoken Dialogue System
+
+**【为语音对话系统添加智能工具调用能力】**
+
+**arXiv**: https://arxiv.org/abs/2604.15710  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15710  
+**HF Paper**: https://huggingface.co/papers/2604.15710  
+**HF Votes**: 5
+
+## 简要摘要
+
+*语音技术;对话系统;工具增强语音对话*
+
+现有语音对话模型难以应对复杂需求，需通过工具调用扩展能力边界
+我们提出VoxMind框架，通过新数据集与异步工具管理机制，显著提升任务完成率并保持对话质量
 
 ---
 
@@ -105,6 +174,41 @@
 
 理解和预测与漏洞相关的活动是网络威胁情报的一大挑战。
 本文评估了数种时间序列预测模型，发现基于计数的模型能更稳定地预测稀疏、易爆发的漏洞发现数据。
+
+---
+
+# Forge-UGC: FX optimization and register-graph engine for universal graph compiler
+
+**【通用图编译器优化引擎】**
+
+**arXiv**: https://arxiv.org/abs/2604.16498  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16498  
+**HF Paper**: https://huggingface.co/papers/2604.16498  
+**HF Votes**: 1
+
+## 简要摘要
+
+*编译优化;神经网络编译;Transformer编译优化*
+
+现有框架存在编译流程不透明、优化可见性差和缓冲区管理弱的问题，影响编译与推理性能。
+提出了一个四阶段编译框架，通过优化与调度显著提升了编译速度，降低了推理延迟和能耗。
+
+---
+
+# On the Robustness of LLM-Based Dense Retrievers: A Systematic Analysis of Generalizability and Stability
+
+**【LLM稠密检索器稳健性分析】**
+
+**arXiv**: https://arxiv.org/abs/2604.16576  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16576  
+**HF Paper**: https://huggingface.co/papers/2604.16576  
+
+## 简要摘要
+
+*自然语言处理;信息检索;稠密检索稳健性*
+
+基于大语言模型的稠密检索器虽性能优越，但其鲁棒性未被充分研究。
+本文首次系统评估了其泛化能力与稳定性，发现其在通用性和抗干扰方面存在优缺点，为未来设计提供参考。
 
 ---
 
@@ -151,7 +255,7 @@
 **arXiv**: https://arxiv.org/abs/2604.16826  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16826  
 **HF Paper**: https://huggingface.co/papers/2604.16826  
-**HF Votes**: 13
+**HF Votes**: 14
 
 ## 简要摘要
 
@@ -169,7 +273,7 @@
 **arXiv**: https://arxiv.org/abs/2604.16893  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16893  
 **HF Paper**: https://huggingface.co/papers/2604.16893  
-**HF Votes**: 30
+**HF Votes**: 32
 
 ## 简要摘要
 
@@ -216,6 +320,41 @@
 
 ---
 
+# GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)
+
+**【大模型智能体上下文优化方法】**
+
+**arXiv**: https://arxiv.org/abs/2604.17091  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17091  
+**HF Paper**: https://huggingface.co/papers/2604.17091  
+**HF Votes**: 5
+
+## 简要摘要
+
+*自然语言处理;智能体与强化学习;长程任务上下文管理*
+
+长程任务中大模型智能体的上下文有限，有效决策信息易被工具描述和原始反馈等冗余内容挤出。
+提出了GenericAgent系统，通过最大化上下文信息密度原则，集成精简工具、分层记忆、自我进化和压缩层，以更少交互实现更好性能并持续进化。
+
+---
+
+# The Continuity Layer: Why Intelligence Needs an Architecture for What It Carries Forward
+
+**【为AI设计长期记忆层】**
+
+**arXiv**: https://arxiv.org/abs/2604.17273  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17273  
+**HF Paper**: https://huggingface.co/papers/2604.17273  
+
+## 简要摘要
+
+*智能系统架构;AI记忆模块;连续性基础设施*
+
+当前AI缺乏跨会话的长期记忆能力，导致智能体每次交互都需重新理解。
+提出连续性层概念，定义其七项特性并设计存储原语，论证其架构意义与实施路径。
+
+---
+
 # SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents
 
 **【智能体终身技能发现与演进评测】**
@@ -223,7 +362,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17308  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17308  
 **HF Paper**: https://huggingface.co/papers/2604.17308  
-**HF Votes**: 14
+**HF Votes**: 15
 
 ## 简要摘要
 
@@ -304,6 +443,24 @@
 
 ---
 
+# Agents Explore but Agents Ignore: LLMs Lack Environmental Curiosity
+
+**【大语言模型智能体忽略意外信息】**
+
+**arXiv**: https://arxiv.org/abs/2604.17609  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17609  
+**HF Paper**: https://huggingface.co/papers/2604.17609  
+**HF Votes**: 3
+
+## 简要摘要
+
+*自然语言处理;智能体与强化学习;智能体环境交互能力探究*
+
+当前基于大语言模型的智能体被认为应能利用环境观察进行推理，但这一假设的真实性尚不明确。
+研究发现，这些智能体普遍缺乏“环境好奇心”，即便发现意外解决方案也常忽略，并探究了影响此能力的关键因素。
+
+---
+
 # Stratagem: Learning Transferable Reasoning via Trajectory-Modulated Game Self-Play
 
 **【用游戏自学习可迁移推理】**
@@ -311,7 +468,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17696  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17696  
 **HF Paper**: https://huggingface.co/papers/2604.17696  
-**HF Votes**: 3
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -381,7 +538,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18131  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18131  
 **HF Paper**: https://huggingface.co/papers/2604.18131  
-**HF Votes**: 3
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -399,7 +556,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18203  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18203  
 **HF Paper**: https://huggingface.co/papers/2604.18203  
-**HF Votes**: 2
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -417,7 +574,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18224  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18224  
 **HF Paper**: https://huggingface.co/papers/2604.18224  
-**HF Votes**: 16
+**HF Votes**: 17
 
 ## 简要摘要
 
@@ -435,7 +592,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18292  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18292  
 **HF Paper**: https://huggingface.co/papers/2604.18292  
-**HF Votes**: 51
+**HF Votes**: 57
 
 ## 简要摘要
 
@@ -453,7 +610,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18394  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18394  
 **HF Paper**: https://huggingface.co/papers/2604.18394  
-**HF Votes**: 39
+**HF Votes**: 45
 
 ## 简要摘要
 
@@ -471,7 +628,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18486  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18486  
 **HF Paper**: https://huggingface.co/papers/2604.18486  
-**HF Votes**: 62
+**HF Votes**: 65
 
 ## 简要摘要
 
@@ -489,7 +646,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18543  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18543  
 **HF Paper**: https://huggingface.co/papers/2604.18543  
-**HF Votes**: 10
+**HF Votes**: 15
 
 ## 简要摘要
 
@@ -507,7 +664,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18574  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18574  
 **HF Paper**: https://huggingface.co/papers/2604.18574  
-**HF Votes**: 12
+**HF Votes**: 14
 
 ## 简要摘要
 
@@ -525,7 +682,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18584  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18584  
 **HF Paper**: https://huggingface.co/papers/2604.18584  
-**HF Votes**: 3
+**HF Votes**: 6
 
 ## 简要摘要
 

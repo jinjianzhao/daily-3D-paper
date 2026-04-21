@@ -14,6 +14,18 @@
     ]
   },
   "base_info": {
+    "2511.10262": {
+      "title": "MTR-DuplexBench: Towards a Comprehensive Evaluation of Multi-Round Conversations for Full-Duplex Speech Language Models",
+      "hf_link": "https://huggingface.co/papers/2511.10262"
+    },
+    "2602.15143": {
+      "title": "Protecting Language Models Against Unauthorized Distillation through Trace Rewriting",
+      "hf_link": "https://huggingface.co/papers/2602.15143"
+    },
+    "2604.03337": {
+      "title": "Significance and Stability Analysis of Gene-Environment Interaction using RGxEStat",
+      "hf_link": "https://huggingface.co/papers/2604.03337"
+    },
     "2604.06505": {
       "title": "MedConclusion: A Benchmark for Biomedical Conclusion Generation from Structured Abstracts",
       "hf_link": "https://huggingface.co/papers/2604.06505"
@@ -34,9 +46,21 @@
       "title": "GFT: From Imitation to Reward Fine-Tuning with Unbiased Group Advantages and Dynamic Coefficient Rectification",
       "hf_link": "https://huggingface.co/papers/2604.14258"
     },
+    "2604.15710": {
+      "title": "VoxMind: An End-to-End Agentic Spoken Dialogue System",
+      "hf_link": "https://huggingface.co/papers/2604.15710"
+    },
     "2604.16038": {
       "title": "Modeling Sparse and Bursty Vulnerability Sightings: Forecasting Under Data Constraints",
       "hf_link": "https://huggingface.co/papers/2604.16038"
+    },
+    "2604.16498": {
+      "title": "Forge-UGC: FX optimization and register-graph engine for universal graph compiler",
+      "hf_link": "https://huggingface.co/papers/2604.16498"
+    },
+    "2604.16576": {
+      "title": "On the Robustness of LLM-Based Dense Retrievers: A Systematic Analysis of Generalizability and Stability",
+      "hf_link": "https://huggingface.co/papers/2604.16576"
     },
     "2604.16593": {
       "title": "Revisiting a Pain in the Neck: A Semantic Reasoning Benchmark for Language Models",
@@ -62,6 +86,14 @@
       "title": "MNAFT: modality neuron-aware fine-tuning of multimodal large language models for image translation",
       "hf_link": "https://huggingface.co/papers/2604.16943"
     },
+    "2604.17091": {
+      "title": "GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)",
+      "hf_link": "https://huggingface.co/papers/2604.17091"
+    },
+    "2604.17273": {
+      "title": "The Continuity Layer: Why Intelligence Needs an Architecture for What It Carries Forward",
+      "hf_link": "https://huggingface.co/papers/2604.17273"
+    },
     "2604.17308": {
       "title": "SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
       "hf_link": "https://huggingface.co/papers/2604.17308"
@@ -81,6 +113,10 @@
     "2604.17454": {
       "title": "HSG: Hyperbolic Scene Graph",
       "hf_link": "https://huggingface.co/papers/2604.17454"
+    },
+    "2604.17609": {
+      "title": "Agents Explore but Agents Ignore: LLMs Lack Environmental Curiosity",
+      "hf_link": "https://huggingface.co/papers/2604.17609"
     },
     "2604.17696": {
       "title": "Stratagem: Learning Transferable Reasoning via Trajectory-Modulated Game Self-Play",
@@ -144,23 +180,32 @@
     }
   },
   "summaries": {
+    "2511.10262": "多轮全双工语音大模型评测基准\n自然语言处理;对话系统;全双工语音对话评测\n现有评测基准多关注单轮对话，难以评估全双工语音大模型在多轮对话中的真实表现。\n我们提出了MTR-DuplexBench，它能将连续对话分段评估，并综合考察对话质量、指令遵循等多方面能力。",
+    "2602.15143": "保护大模型免遭未授权蒸馏\n自然语言处理;大型语言模型;知识蒸馏安全\n知识蒸馏被广泛用于将大模型能力转移到更小的学生模型，但未授权使用会损害开发者利益。本文通过动态改写大模型的推理输出，在保持答案正确性的同时，实现了抗蒸馏和可验证水印嵌入，有效阻止未授权蒸馏并维持教师模型性能。",
+    "2604.03337": "基因与环境互作分析工具  \n生物信息学;基因与环境互作分析;GxE显著性及稳定性建模  \n背景/任务：基因与环境互作影响表型预测，需分析其显著性及稳定性以指导育种。  \n开发了RGxEStat工具，整合模型构建与可视化，简化育种数据分析流程。",
     "2604.06505": "生物医学结论生成基准数据集构建\n自然语言处理;文本生成;生物医学结论生成\n评估大语言模型根据生物医学结构化摘要证据生成结论的能力。\n构建MedConclusion数据集并评估模型表现，发现结论生成与摘要生成行为不同。",
     "2604.08537": "免调校跨被试脑视觉解码\n计算机视觉;视觉神经解码;脑功能磁共振解码\n从大脑信号视觉解码的泛化是计算机视觉与神经科学交叉领域的核心挑战，需要克服个体神经表征的巨大差异。\n我们提出一种元学习上下文方法，无需训练新模型，仅依靠少量示例即可快速推断新个体的神经编码模式，实现跨被试与跨扫描仪的稳健解码。",
     "2604.11102": "长电影视频生成详细剧本\n多模态大模型;视频理解;视频到剧本生成\n当前多模态大模型擅长短视频理解，但将长电影视频转为详尽的时序剧本仍是挑战。\n为此构建首个标注数据集和分层评估框架，并提出了高效模型OmniScript，其性能可比肩顶尖模型。",
     "2604.13313": "提升图文组合理解能力\n多模态学习;图文组合理解;对比学习负样本挖掘\n视觉语言模型在组合推理方面存在不足，难以有效区分细微语义差异。\n提出基于词汇具体性的负样本挖掘方法及均衡损失函数，显著提升了模型性能。",
     "2604.14258": "语言模型训练优化方案\n自然语言处理;大语言模型训练;强化学习微调\n大语言模型通常通过监督微调和强化学习进行后训练，但如何有效统一高效知识注入与强泛化能力仍具挑战。\n本文提出分组微调框架，通过组优势学习和动态系数校正解决稀疏奖励与梯度不稳定问题，提升训练效果。",
+    "2604.15710": "为语音对话系统添加智能工具调用能力\n语音技术;对话系统;工具增强语音对话\n现有语音对话模型难以应对复杂需求，需通过工具调用扩展能力边界\n我们提出VoxMind框架，通过新数据集与异步工具管理机制，显著提升任务完成率并保持对话质量",
     "2604.16038": "预测漏洞发现活动模式\n网络安全；威胁情报；漏洞活动预测\n理解和预测与漏洞相关的活动是网络威胁情报的一大挑战。\n本文评估了数种时间序列预测模型，发现基于计数的模型能更稳定地预测稀疏、易爆发的漏洞发现数据。",
+    "2604.16498": "通用图编译器优化引擎\n编译优化;神经网络编译;Transformer编译优化\n现有框架存在编译流程不透明、优化可见性差和缓冲区管理弱的问题，影响编译与推理性能。\n提出了一个四阶段编译框架，通过优化与调度显著提升了编译速度，降低了推理延迟和能耗。",
+    "2604.16576": "LLM稠密检索器稳健性分析\n自然语言处理;信息检索;稠密检索稳健性\n基于大语言模型的稠密检索器虽性能优越，但其鲁棒性未被充分研究。\n本文首次系统评估了其泛化能力与稳定性，发现其在通用性和抗干扰方面存在优缺点，为未来设计提供参考。",
     "2604.16593": "评估语言模型的语义短语处理能力\n自然语言处理;语义理解;语义短语评测\n现有评测对语言模型的语义短语处理能力关注不足。\n提出了包含多类短语的统一评测集，评估了多种模型并揭示了其在语义推理上的差异。",
     "2604.16642": "单细胞扰动几何相干性揭示调控结构  \n计算生物学;单细胞组学;扰动响应几何分析  \n单细胞CRISPR筛选能测量扰动后细胞的转录组变化幅度，但无法判断细胞是朝一致方向移动还是随机分散。  \n本文提出了量化扰动方向一致性的几何稳定性指标Shesha，发现其与效应幅度高度相关，并揭示了调控因子类型与细胞应激状态的关联。",
     "2604.16826": "校准LoRA合并的共享方向\n大语言模型微调；参数高效微调；LoRA权重合并\n背景/任务：合并多个单独训练的LoRA适配器是一种替代联合多任务训练的方法，但常导致性能下降。\n做了什么：本文发现合并干扰主要源于输出矩阵B的共享方向过载，提出数据无关方法Pico校准B矩阵以缓解干扰，提升合并性能。",
     "2604.16893": "强化学习视频理解训练框架\n计算机视觉；视频理解；多模态强化学习\n现有强化学习框架对视频任务支持不足，视频理解训练面临效率低、任务多样、评估难等挑战。\n提出了EasyVideoR1框架，通过优化视频处理流程、构建任务感知奖励系统、结合离在线数据训练等方式，高效训练大规模视觉语言模型进行视频理解。",
     "2604.16902": "探究全模态大模型模态偏好\n多模态人工智能;大型多模态模型;模态偏好分析\n传统多模态大模型存在文本主导，全模态大模型转向统一表征后，其模态偏好现象尚未被系统研究。\n本文量化了全模态大模型的视觉偏好，发现其在中深层涌现，并利用此机制诊断跨模态幻觉。",
     "2604.16943": "微调多模态大模型用于图文翻译\n多模态机器学习;视觉语言预训练;图像翻译\n多模态大语言模型在图像翻译任务中难以精准理解图像内的细粒度文本，现有全参数微调方法易导致知识遗忘和泛化性下降。\n我们提出模态神经元感知微调法，通过分析指令激活识别语言无关与语言相关神经元，选择性地微调关键神经元以提升翻译效果。",
+    "2604.17091": "大模型智能体上下文优化方法\n自然语言处理;智能体与强化学习;长程任务上下文管理\n长程任务中大模型智能体的上下文有限，有效决策信息易被工具描述和原始反馈等冗余内容挤出。\n提出了GenericAgent系统，通过最大化上下文信息密度原则，集成精简工具、分层记忆、自我进化和压缩层，以更少交互实现更好性能并持续进化。",
+    "2604.17273": "为AI设计长期记忆层\n智能系统架构;AI记忆模块;连续性基础设施\n当前AI缺乏跨会话的长期记忆能力，导致智能体每次交互都需重新理解。\n提出连续性层概念，定义其七项特性并设计存储原语，论证其架构意义与实施路径。",
     "2604.17308": "智能体终身技能发现与演进评测\n自主智能体;技能学习;终身技能评测\n当前评测主要测试智能体能否使用给定的技能，未能评估其在持续任务中自主发现、修复和演进技能的能力。\n我们提出了SkillFlow基准，通过终身学习协议评估智能体从零开始、通过经验构建并演进技能库的能力，揭示了现有模型在该任务上的显著能力差距与问题。",
     "2604.17338": "大模型能否精确调试代码\n编程模型;代码生成与修复;精确调试评测\n现有大模型在代码调试时倾向于整体重写而非精准定位修复\n提出新评测框架PDB，发现前沿模型调试精度不足且迭代策略难提升",
     "2604.17388": "极简降噪网络检测时序异常\n时间序列分析;异常检测;降噪修复\n现有时序异常检测方法常依赖复杂网络结构，但未必必要。\n我们提出极简降噪网络JuRe，仅用单层卷积块修复受损时序，证明简单架构配合正确目标即可实现高效检测，并在多个基准取得领先。",
     "2604.17406": "构建自进化科学智能体框架\n智能体系统;科学智能体;自进化框架\n现有智能体框架静态且难以学习，无法满足科学发现所需的持续迭代需求。\n提出EvoMaster框架，支持智能体通过自我批评和知识积累持续进化，在多个科学领域评测中取得领先性能。",
     "2604.17454": "用双曲空间学习场景图\n计算机视觉;场景理解;场景图表示学习\n现有方法在欧氏空间学习场景图表征，难以显式建模场景与物体间的层次蕴含关系。\n提出双曲场景图，在能自然编码层次结构的双曲空间学习嵌入，提升了图表征的结构质量。",
+    "2604.17609": "大语言模型智能体忽略意外信息\n自然语言处理;智能体与强化学习;智能体环境交互能力探究\n当前基于大语言模型的智能体被认为应能利用环境观察进行推理，但这一假设的真实性尚不明确。\n研究发现，这些智能体普遍缺乏“环境好奇心”，即便发现意外解决方案也常忽略，并探究了影响此能力的关键因素。",
     "2604.17696": "用游戏自学习可迁移推理\n自然语言处理;推理能力;可迁移推理学习\n现有游戏自学习方法依赖对局结果，难以区分可迁移推理与游戏特定启发式。\n本文提出STRATAGEM，通过引入推理可迁移系数和推理演化奖励，在游戏自学习中强化抽象推理与适应性推理能力，提升了数学推理和代码生成等任务的性能。",
     "2604.17698": "几何稳定性预测可控性与漂移\n自然语言处理;表征学习;模型监控与可控性\n背景/任务是可靠部署语言模型需预测其行为可控性并检测其内部结构退化。研究发现表征的几何稳定性可统一解决这两个问题，监督方法能准确预测线性可控性，无监督方法则擅长检测表征漂移。",
     "2604.17886": "跨会话个性化工具调用偏好建模\n自然语言处理;智能对话系统;个性化工具调用\n用户请求常省略细节，导致工具调用输入不完整，需个性化补全。\n构建多会话对话数据集MPT，提出记忆增强方法PRefine，通过生成-验证-提炼循环提取用户偏好，以少量历史信息提升工具调用准确率。",
@@ -224,6 +269,18 @@
     ]
   },
   "arxiv_details": {
+    "2511.10262": {
+      "abstract": "Full-Duplex Speech Language Models (FD-SLMs) enable real-time, overlapping conversational interactions, offering a more dynamic user experience compared to traditional half-duplex models. However, existing benchmarks primarily focus on evaluating single-round interactions, neglecting the complexities of multi-round communication. Evaluating FD-SLMs in multi-round settings poses significant challenges, including blurred turn boundaries in communication and context inconsistency during model inference. Also, existing benchmarks often focus solely on evaluating conversational features, neglecting other critical aspects. To address these gaps, we introduce MTR-DuplexBench, a novel benchmark designed for a comprehensive multi-round evaluation of FD-SLMs. MTR-DuplexBench not only segments continuous full-duplex dialogues into discrete turns for turn-by-turn assessment but also incorporates various evaluation aspects, including conversational features, dialogue quality, instruction following, and safety. Experimental results reveal that current FD-SLMs face difficulties in maintaining consistent performance across multiple rounds and evaluation dimensions, highlighting the necessity and effectiveness of our benchmark. Code and data are available at:this https URL",
+      "comments": "Accepted to Findings of ACL 2026"
+    },
+    "2602.15143": {
+      "abstract": "Knowledge distillation is a widely adopted technique for transferring capabilities from LLMs to smaller, more efficient student models. However, unauthorized use of knowledge distillation takes unfair advantage of the considerable effort and cost put into developing frontier models. We investigate methods for modifying teacher-generated reasoning traces to achieve two objectives that deter unauthorized distillation: (1) \\emph{anti-distillation}, or degrading the training usefulness of query responses, and (2) \\emph{API watermarking}, which embeds verifiable signatures in student models. We introduce several approaches for dynamically rewriting a teacher's reasoning outputs while preserving answer correctness and semantic coherence. Two of these leverage the rewriting capabilities of LLMs, while others use gradient-based techniques. Our experiments show that a simple instruction-based rewriting approach achieves a strong anti-distillation effect while maintaining or even improving teacher performance. Furthermore, we show that our rewriting approach also enables embedding watermarks that can be reliably detected with essentially no false alarms. Our code is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.03337": {
+      "abstract": "Genotype-by-Environment (GxE) interactions influence the performance of genotypes across diverse environments, reducing the predictability of phenotypes in target environments. In-depth analysis of GxE interactions facilitates the identification of how genetic advantages or defects are expressed or suppressed under specific environmental conditions, thereby enabling genetic selection and enhancing breeding practices. This paper introduces two key models for GxE interaction research. Specifically, it includes significance analysis based on the mixed effect model to determine whether genes or GxE interactions significantly affect phenotypic traits; stability analysis, which further investigates the interactive relationships between genes and environments, as well as the relative superiority or inferiority of genotypes across environments. Additionally, this paper presents RGxEStat, a lightweight interactive tool, which is developed by the authors and integrates the construction, solution, and visualization of the aforementioned models. Designed to eliminate the need for breeders and agronomists to learn complex SAS or R programming, RGxEStat provides a user-friendly interface for streamlined breeding data analysis, significantly accelerating research cycles. Codes and datasets are available atthis https URL.",
+      "comments": ""
+    },
     "2604.06505": {
       "abstract": "Large language models (LLMs) are widely explored for reasoning-intensive research tasks, yet resources for testing whether they can infer scientific conclusions from structured biomedical evidence remain limited. We introduce $\\textbf{MedConclusion}$, a large-scale dataset of $\\textbf{5.7M}$ PubMed structured abstracts for biomedical conclusion generation. Each instance pairs the non-conclusion sections of an abstract with the original author-written conclusion, providing naturally occurring supervision for evidence-to-conclusion reasoning. MedConclusion also includes journal-level metadata such as biomedical category and SJR, enabling subgroup analysis across biomedical domains. As an initial study, we evaluate diverse LLMs under conclusion and summary prompting settings and score outputs with both reference-based metrics and LLM-as-a-judge. We find that conclusion writing is behaviorally distinct from summary writing, strong models remain closely clustered under current automatic metrics, and judge identity can substantially shift absolute scores. MedConclusion provides a reusable data resource for studying scientific evidence-to-conclusion reasoning. Our code and data are available at:this https URL.",
       "comments": ""
@@ -244,8 +301,20 @@
       "abstract": "Large language models are typically post-trained using supervised fine-tuning (SFT) and reinforcement learning (RL), yet effectively unifying efficient knowledge injection with robust generalization remains challenging. In this work, we provide a training-dynamics analysis showing that SFT can be interpreted as a special case of policy gradient optimization with an extremely sparse implicit reward and unstable inverse-probability weighting, which together lead to single-path dependency, entropy collapse, and gradient explosion. Motivated by this diagnosis, we propose Group Fine-Tuning (GFT), a unified post-training framework that addresses these intrinsic limitations through two mechanisms: Group Advantage Learning, which constructs diverse response groups and derives normalized contrastive supervision to alleviate reward sparsity, and Dynamic Coefficient Rectification, which adaptively bounds inverse-probability weights to stabilize optimization while preserving efficient knowledge injection. Experiments demonstrate that GFT consistently surpasses SFT-based methods and yields policies that integrate more smoothly with subsequent RL training.",
       "comments": ""
     },
+    "2604.15710": {
+      "abstract": "Recent end-to-end spoken dialogue models enable natural interaction. However, as user demands become increasingly complex, models that rely solely on conversational abilities often struggle to cope. Incorporating agentic capabilities is therefore essential: by enabling tool use, these models can extend their knowledge boundaries and better solve real-world tasks. Yet, existing research has largely concentrated on core perception and generation, with comparatively limited exploration of such tool-augmented extensions. To bridge this gap, we present VoxMind, an integrated framework designed to equip end-to-end spoken dialogue models with comprehensive agentic abilities. Leveraging our curated 470-hour AgentChat dataset, we incorporate a \"Think-before-Speak\" mechanism, enabling the model to internalize structured reasoning as a critical prerequisite for planning and response generation. Furthermore, to mitigate latency bottlenecks caused by large-scale tool integration, we propose a Multi-Agent Dynamic Tool Management architecture. By asynchronously delegating retrieval tasks to an auxiliary agent aligned with the main model's reasoning trajectory, this system effectively decouples inference latency from toolset size. Experimental results confirm that VoxMind achieves significant improvements in agent performance: compared with strong baselines, the task completion rate increases from 34.88% to 74.57%, outperforming Gemini-2.5-Pro on spoken agent tasks while preserving general conversational quality. The source code and associated data are publicly available atthis https URL.",
+      "comments": "Accepted to ACL 2026 Main <a class=\"link-external link-http\" href=\"http://Conference.Code\" rel=\"external noopener nofollow\">this http URL</a> and data available at <a class=\"link-external link-https\" href=\"https://github.com/MM-Speech/VoxMind\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
     "2604.16038": {
       "abstract": "Understanding and anticipating vulnerability-related activity is a major challenge in cyber threat intelligence. This work investigates whether vulnerability sightings, such as proof-of-concept releases, detection templates, or online discussions, can be forecast over time. Building on our earlier work on VLAI, a transformer-based model that predicts vulnerability severity from textual descriptions, we examine whether severity scores can improve time-series forecasting as exogenous variables. We evaluate several approaches for short-term forecasting of sightings per vulnerability. First, we test SARIMAX models with and without log(x+1) transformations and VLAI-derived severity inputs. Although these adjustments provide limited improvements, SARIMAX remains poorly suited to sparse, short, and bursty vulnerability data. In practice, forecasts often produce overly wide confidence intervals and sometimes unrealistic negative values. To better capture the discrete and event-driven nature of sightings, we then explore count-based methods such as Poisson regression. Early results show that these models produce more stable and interpretable forecasts, especially when sightings are aggregated weekly. We also discuss simpler operational alternatives, including exponential decay functions for short forecasting horizons, to estimate future activity without requiring long historical series. Overall, this study highlights both the potential and the limitations of forecasting rare and bursty cyber events, and provides practical guidance for integrating predictive analytics into vulnerability intelligence workflows.",
+      "comments": ""
+    },
+    "2604.16498": {
+      "abstract": "We present Forge-UGC (FX Optimization and Register-Graph Engine for Universal Graph Compilation), a four-phase compiler for transformer deployment on heterogeneous accelerator hardware, validated on Intel AI Boost NPU. Existing frameworks such as OpenVINO and ONNX Runtime often use opaque compilation pipelines, limited pass-level visibility, and weak buffer management, which can lead to higher compilation cost and runtime overhead. Forge-UGC addresses this with a hardware-agnostic design that separates graph capture, optimization, intermediate representation lowering, and backend scheduling. Phase 1 captures graphs withthis http URLat the ATen operator level, supporting modern transformer components such as rotary position embeddings, grouped-query attention, and SwiGLU without manual decomposition. Phase 2 applies six optimization passes: dead code elimination, common subexpression elimination, constant folding, attention fusion, operator fusion, and layout optimization, reducing graph node count by 14.2 to 21.9%. Phase 3 lowers the optimized graph into a typed intermediate representation with explicit virtual register assignments. Phase 4 performs liveness analysis, linear-scan buffer allocation, reducing peak buffer count by 30 to 48%, and device-affinity scheduling, reducing NPU-CPU transitions by 42 to 65%. Across six model families ranging from 125M to 8B parameters, evaluated on WikiText-103 and GLUE, Forge-UGC delivers 6.9 to 9.2x faster compilation than OpenVINO and ONNX Runtime, 18.2 to 35.7% lower inference latency, and 30.2 to 40.9% lower energy per inference. Fidelity is preserved, with max absolute logit differences below 2.1e-5 and KL divergence below 8.4e-9. We also introduce Fusion Gain Ratio, Compilation Efficiency Index, and per-pass execution profiling for systematic evaluation of NPU compilation pipelines.",
+      "comments": ""
+    },
+    "2604.16576": {
+      "abstract": "Decoder-only large language models (LLMs) are increasingly replacing BERT-style architectures as the backbone for dense retrieval, achieving substantial performance gains and broad adoption. However, the robustness of these LLM-based retrievers remains underexplored. In this paper, we present the first systematic study of the robustness of state-of-the-art open-source LLM-based dense retrievers from two complementary perspectives: generalizability and stability. For generalizability, we evaluate retrieval effectiveness across four benchmarks spanning 30 datasets, using linear mixed-effects models to estimate marginal mean performance and disentangle intrinsic model capability from dataset heterogeneity. Our analysis reveals that while instruction-tuned models generally excel, those optimized for complex reasoning often suffer a ``specialization tax,'' exhibiting limited generalizability in broader contexts. For stability, we assess model resilience against both unintentional query variations~(e.g., paraphrasing, typos) and malicious adversarial attacks~(e.g., corpus poisoning). We find that LLM-based retrievers show improved robustness against typos and corpus poisoning compared to encoder-only baselines, yet remain vulnerable to semantic perturbations like synonymizing. Further analysis shows that embedding geometry (e.g., angular uniformity) provides predictive signals for lexical stability and suggests that scaling model size generally improves robustness. These findings inform future robustness-aware retriever design and principled benchmarking. Our code is publicly available atthis https URL.",
       "comments": ""
     },
     "2604.16593": {
@@ -272,6 +341,14 @@
       "abstract": "Multimodal large language models (MLLMs) have shown impressive capabilities, yet they often struggle to effectively capture the fine-grained textual information within images crucial for accurate image translation. This often leads to a modality gap between visual text inputs and textual inputs/outputs for image translation. Existing methods, primarily relying on instruction fine-tuning, risk parameter redundancy of pre-trained knowledge, hindering generalization performance. To address this, we introduce modality neuron-aware fine-tuning (MNAFT), a novel approach that takes advantage of the specialized roles of individual neurons within MLLMs for enhanced image translation. MNAFT identifies language-agnostic and language-specific neurons in both vision and language modules through an instruction-driven activation analysis, evaluating their importance in various translation tasks. We then perform selective fine-tuning, updating only the parameters of language-specific and language-agnostic neurons within the selected layers relevant to the target task, while preserving the knowledge encoded in other neurons and layers. Our extensive experiments on multiple benchmarks demonstrate that MNAFT significantly outperforms state-of-the-art image translation methods, including cascaded models, standard full fine-tuning, and parameter-efficient tuning techniques. Furthermore, we provide comprehensive analysis, including visualizations of neuron activations and clustering patterns, to offer insights into the roles of different neuron groups in mediating cross-modal understanding and facilitating accurate language-specific translation.",
       "comments": "Accepted by SCIS (SCIENCE CHINA Information Science)"
     },
+    "2604.17091": {
+      "abstract": "Long-horizon large language model (LLM) agents are fundamentally limited by context. As interactions become longer, tool descriptions, retrieved memories, and raw environmental feedback accumulate and push out the information needed for decision-making. At the same time, useful experience gained from tasks is often lost across episodes. We argue that long-horizon performance is determined not by context length, but by how much decision-relevant information is maintained within a finite context budget. We present GenericAgent (GA), a general-purpose, self-evolving LLM agent system built around a single principle: context information density maximization. GA implements this through four closely connected components: a minimal atomic tool set that keeps the interface simple, a hierarchical on-demand memory that only shows a small high-level view by default, a self-evolution mechanism that turns verified past trajectories into reusable SOPs and executable code, and a context truncation and compression layer that maintains information density during long executions. Across task completion, tool use efficiency, memory effectiveness, self-evolution, and web browsing, GA consistently outperforms leading agent systems while using significantly fewer tokens and interactions, and it continues to evolve over time. Project:this https URL",
+      "comments": ""
+    },
+    "2604.17273": {
+      "abstract": "The most important architectural problem in AI is not the size of the model but the absence of a layer that carries forward what the model has come to understand. Sessions end. Context windows fill. Memory APIs return flat facts that the model has to reinterpret from scratch on every read. The result is intelligence that is powerful per session and amnesiac across time. This position paper argues that the layer which fixes this, the continuity layer, is the most consequential piece of infrastructure the field has not yet built, and that the engineering work to build it has begun in public. The formal evaluation framework for the property described here is the ATANT benchmark (arXiv:2604.06710), published separately with evaluation results on a 250-story corpus; a companion paper (arXiv:2604.10981) positions this framework against existing memory, long-context, and agentic-memory benchmarks. The paper defines continuity as a system property with seven required characteristics, distinct from memory and from retrieval; describes a storage primitive (Decomposed Trace Convergence Memory) whose write-time decomposition and read-time reconstruction produce that property; maps the engineering architecture to the theological pattern of kenosis and the symbolic pattern of Alpha and Omega, and argues this mapping is structural rather than metaphorical; proposes a four-layer development arc from external SDK to hardware node to long-horizon human infrastructure; examines why the physics limits now constraining the model layer make the continuity layer newly consequential; and argues that the governance architecture (privacy implemented as physics rather than policy, founder-controlled class shares on non-negotiable architectural commitments) is inseparable from the product itself.",
+      "comments": "15 pages. Position paper. Companion to ATANT v1.0 (<a class=\"link-https\" data-arxiv-id=\"2604.06710\" href=\"https://arxiv.org/abs/2604.06710\">arXiv:2604.06710</a>) and ATANT v1.1 (<a class=\"link-https\" data-arxiv-id=\"2604.10981\" href=\"https://arxiv.org/abs/2604.10981\">arXiv:2604.10981</a>)"
+    },
     "2604.17308": {
       "abstract": "As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills. Yet current benchmarks mostly test whether models can use provided skills, leaving open whether they can discover skills from experience, repair them after failure, and maintain a coherent library over time. We introduce SkillFlow, a benchmark of 166 tasks across 20 families in which task construction within each family follows a Domain-Agnostic Execution Flow (DAEF) that defines an agent workflow framework, allowing these tasks to share a consistent workflow. Agents are evaluated under an Agentic Lifelong Learning protocol in which they begin without skills, solve tasks sequentially within each family, externalize lessons through trajectory- and rubric-driven skill patches, and carry the updated library forward. Experiments reveal a substantial capability gap. For Claude Opus 4.6, lifelong skill evolution improves task success from 62.65% to 71.08% (+8.43 points). However, high skill usage does not necessarily imply high utility: Kimi K2.5 gains only +0.60 points despite 66.87% skill usage, while Qwen-Coder-Next reaches only a 44.58% task completion rate and still regresses relative to the vanilla setting. SkillFlow contributes a structured testbed for this direction and an in-depth empirical analysis of skill discovery, patching, transfer, and their failure modes under lifelong evaluation.",
       "comments": ""
@@ -290,6 +367,10 @@
     },
     "2604.17454": {
       "abstract": "Scene graph representations enable structured visual understanding by modeling objects and their relationships, and have been widely used for multiview and 3D scene reasoning. Existing methods such as MSG learn scene graph embeddings in Euclidean space using contrastive learning and attention based association. However, Euclidean geometry does not explicitly capture hierarchical entailment relationships between places and objects, limiting the structural consistency of learned representations. To address this, we propose Hyperbolic Scene Graph (HSG), which learns scene graph embeddings in hyperbolic space where hierarchical relationships are naturally encoded through geometric distance. Our results show that HSG improves hierarchical structure quality while maintaining strong retrieval performance. The largest gains are observed in graph level metrics: HSG achieves a PP IoU of 33.17 and the highest Graph IoU of 33.51, outperforming the best AoMSG variant (25.37) by 8.14, highlighting the effectiveness of hyperbolic representation learning for scene graph modeling. Code:this https URL.",
+      "comments": ""
+    },
+    "2604.17609": {
+      "abstract": "LLM-based agents are assumed to integrate environmental observations into their reasoning: discovering highly relevant but unexpected information should naturally lead to a model exploiting its own discoveries. We show that this assumption is false for current LLM-based agents, which struggle to reflect or react to unexpected information. Across three benchmarks (Terminal-Bench, SWE-Bench, AppWorld), we inject complete task solutions into the agent environments to deliberately expose a task's solution to a model. While agents discover these solutions on Terminal-Bench in 79-81% of runs, they interact, or exploit, them in only 37-50% of cases. This gap is starkest in AppWorld: agents see documentation stating that a command \"returns the complete solution to this task\" in over 90% of attempts but exploit this in fewer than 7% of trials. We show that agents lack what we call environmental curiosity: the capability to recognize and investigate unexpected but relevant observations in response to environmental stimuli. We identify three main factors influencing environmental curiosity: available tools in the agent scaffold, test-time compute, and training data distribution. Our findings identify configurations that maximize curiosity also achieve the best performance on the unmodified benchmarks. Yet even jointly optimized agents still ignore discovered solutions in the majority of trials: current agents use the environment to fetch expected information, but not to revise their strategy or maximally exploit useful stimuli.",
       "comments": ""
     },
     "2604.17696": {

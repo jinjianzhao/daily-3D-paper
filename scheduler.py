@@ -1,66 +1,90 @@
 """
-每日定时调度 run_pipeline.py，按固定整点列表运行。
+每日定时调度，date pipeline 和 area pipeline 分别按各自策略运行。
 
-启动时：
-1. 读取全局变量 DAILY_SLOTS（0~23 的整点小时列表，去重排序后生效），
-2. 每 5 分钟轮询一次，若当前小时命中未执行的时刻则立刻运行，
-3. 每天 0 点重置执行记录，重新开始新一天。
+DAILY_SLOTS       → pull → date pipeline → push（整点触发）
+AREA_INTERVAL_SEC → area pipeline（固定间隔轮询）
 
-环境变量 MY_API_KEY 会自动传递给子进程。
+共享一把互斥锁，保证同一时刻只有一个 pipeline 在跑。
+area watcher 拿不到锁就跳过本轮，date pipeline 拿不到锁就等待。
 """
 
 import os
 import sys
 import time
+import threading
 from datetime import datetime, timedelta, timezone
 
 CST = timezone(timedelta(hours=8))
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PIPELINE = os.path.join(SCRIPT_DIR, "run_pipeline.py")
-POLL_INTERVAL = 60 * 5  # 5 分钟
+
 DAILY_SLOTS: list[int] = [2, 10, 19]
+AREA_INTERVAL_SEC: int = 120
+
+# 全局互斥锁：date 和 area 不同时跑
+_mutex = threading.Lock()
 
 
-def build_daily_slots() -> list[int]:
-    """读取 DAILY_SLOTS 并规范化为 (0~23) 的去重排序列表。"""
-    assert isinstance(DAILY_SLOTS, list), "DAILY_SLOTS 必须是 list[int]"
-    assert all(isinstance(h, int) for h in DAILY_SLOTS), "DAILY_SLOTS 必须是 list[int]"
-    assert len(DAILY_SLOTS) > 0, "DAILY_SLOTS 不能为空"
-    assert all(0 <= h <= 23 for h in DAILY_SLOTS), "DAILY_SLOTS 每个小时必须在 0~23 之间"
-    return sorted(set(DAILY_SLOTS))
+def _validate_slots(slots: list[int], name: str) -> list[int]:
+    assert isinstance(slots, list) and all(isinstance(h, int) and 0 <= h <= 23 for h in slots), \
+        f"{name} 必须是 0~23 的整数列表"
+    return sorted(set(slots))
 
-def run_cmd(cmd: str) -> int:
-    """通过 os.system 调用命令，继承当前进程环境变量。"""
+
+def _run(cmd: str):
+    print(f"[scheduler] $ {cmd}", flush=True)
     ret = os.system(cmd)
     if ret != 0:
-        print(f"[scheduler:{cmd}] 返回非零 exit code: {ret}", flush=True)
-    else:
-        print(f"[scheduler:{cmd}] 执行完毕", flush=True)
-    return ret
+        print(f"[scheduler] exit code {ret}", flush=True)
 
-def run_pipeline_once():
-    """依次执行 pull → date pipeline → area pipeline → push。"""
-    auto_pull = os.path.join(SCRIPT_DIR, "auto_pull.sh")
-    run_cmd(f'cd "{SCRIPT_DIR}" && bash "{auto_pull}"')
 
-    auto_pipeline = os.path.join(SCRIPT_DIR, "run_pipeline.py")
-    run_cmd(f'cd "{SCRIPT_DIR}" && "{sys.executable}" "{auto_pipeline}"')
+def _cd(script: str) -> str:
+    return f'cd "{SCRIPT_DIR}" && {script}'
 
-    auto_notion_area = os.path.join(SCRIPT_DIR, "area_processor.py")
-    run_cmd(f'cd "{SCRIPT_DIR}" && "{sys.executable}" "{auto_notion_area}"')
 
-    auto_push = os.path.join(SCRIPT_DIR, "auto_push.sh")
-    run_cmd(f'cd "{SCRIPT_DIR}" && bash "{auto_push}"')
+def do_date_pipeline():
+    """pull → date pipeline → push。阻塞等锁。"""
+    with _mutex:
+        print(f"[date] === 开始 ===", flush=True)
+        _run(_cd('bash auto_pull.sh'))
+        _run(_cd(f'"{sys.executable}" run_pipeline.py'))
+        _run(_cd('bash auto_push.sh'))
+        print(f"[date] === 结束 ===", flush=True)
+
+
+def do_area_pipeline():
+    """area pipeline。非阻塞尝试拿锁，拿不到就跳过。"""
+    acquired = _mutex.acquire(blocking=False)
+    if not acquired:
+        print(f"[area] 其他 pipeline 正在运行，跳过", flush=True)
+        return
+    try:
+        print(f"[area] === 开始 ===", flush=True)
+        _run(_cd(f'"{sys.executable}" area_processor.py'))
+        print(f"[area] === 结束 ===", flush=True)
+    finally:
+        _mutex.release()
+
+
+def _area_loop():
+    """后台线程：每隔 AREA_INTERVAL_SEC 执行一次 area pipeline。"""
+    while True:
+        do_area_pipeline()
+        time.sleep(AREA_INTERVAL_SEC)
+
 
 def main():
-    # 启动时立刻跑一次，及早发现错误
-    print(f"[scheduler] 启动，先执行一次 pipeline ...", flush=True)
-    run_pipeline_once()
+    daily_slots = _validate_slots(DAILY_SLOTS, "DAILY_SLOTS")
+    print(f"[scheduler] date 时段: {daily_slots}  area 间隔: {AREA_INTERVAL_SEC}s", flush=True)
 
-    slots = build_daily_slots()
-    print(f"[scheduler] 今日执行时段（整点）: {slots}", flush=True)
+    # 启动时各跑一次
+    do_date_pipeline()
+    do_area_pipeline()
 
-    executed: set[int] = set()
+    # 启动 area 后台线程
+    threading.Thread(target=_area_loop, daemon=True).start()
+
+    # 主线程负责 date pipeline
+    daily_executed: set[int] = set()
     last_date = datetime.now(CST).strftime("%Y-%m-%d")
 
     while True:
@@ -68,21 +92,17 @@ def main():
         today = now.strftime("%Y-%m-%d")
         hour = now.hour
 
-        # 跨天重置
         if today != last_date:
-            slots = build_daily_slots()
-            executed = set()
+            daily_executed = set()
             last_date = today
-            print(f"[scheduler] 新的一天 {today}，重置，执行时段: {slots}", flush=True)
+            print(f"[scheduler] 新的一天 {today}", flush=True)
 
-        if hour in slots and hour not in executed:
-            print(f"[scheduler] 当前 {now.strftime('%H:%M')} 命中时段 {hour}:00，开始执行", flush=True)
-            run_pipeline_once()
-            executed.add(hour)
-            remaining = [s for s in slots if s not in executed]
-            print(f"[scheduler] 今日剩余时段: {remaining}", flush=True)
+        if hour in daily_slots and hour not in daily_executed:
+            print(f"[scheduler] {now.strftime('%H:%M')} 命中 date 时段", flush=True)
+            do_date_pipeline()
+            daily_executed.add(hour)
 
-        time.sleep(POLL_INTERVAL)
+        time.sleep(60)
 
 
 if __name__ == "__main__":
