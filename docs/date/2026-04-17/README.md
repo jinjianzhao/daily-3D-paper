@@ -40,9 +40,9 @@
 | [**TRACER**](/2026-04-17/briefs.md?id=tracer) | 基于LLM日志训练廉价代理模型进行路由 | 自然语言处理;大模型推理;低成本模型路由 | TRACER: Trace-Based Adaptive Cost-Efficient Routing for LLM Classification | 6 |
 | [**Don't Retrieve, Navigate**](/2026-04-17/briefs.md?id=don't-retrieve,-navigate) | 导航式企业知识问答代理 | 自然语言处理;信息检索与问答;企业知识库导航 | Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG | 5 |
 | [**Switch-KD**](/2026-04-17/briefs.md?id=switch-kd) | 视觉知识蒸馏提升多模态模型 | 多模态学习;知识蒸馏;视觉语言模型压缩 | Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models | 8 |
-| [**DR^{3}-Eval**](/2026-04-17/briefs.md?id=dr^{3}-eval) | 评估复杂研究智能体   | 自然语言处理;智能体评估;多模态研究报告生成   | DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation | 31 |
+| [**DR^{3}-Eval**](/2026-04-17/briefs.md?id=dr^{3}-eval) | 评估复杂研究智能体   | 自然语言处理;智能体评估;多模态研究报告生成   | DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation | 32 |
 | [**LongAct**](/2026-04-17/briefs.md?id=longact) | 激活模式驱动的长上下文强化学习 | 强化学习;大语言模型强化学习;长上下文推理能力提升 | LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning | 7 |
-| [**UniDoc-RL**](/2026-04-17/briefs.md?id=unidoc-rl) | 视觉检索生成统一强化学习框架 | 多模态学习;视觉文档理解;检索增强生成 | UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards | 10 |
+| [**UniDoc-RL**](/2026-04-17/briefs.md?id=unidoc-rl) | 视觉检索生成统一强化学习框架 | 多模态学习;视觉文档理解;检索增强生成 | UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards | 11 |
 | [**RadAgent**](/2026-04-17/briefs.md?id=radagent) | 胸部CT智能分步解读工具 | 医疗影像分析；影像报告生成；AI辅助CT图文解读 | RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography | 5 |
 | [**RAD-2**](/2026-04-17/briefs.md?id=rad-2) | 提升自动驾驶规划质量 | 机器人;自主驾驶;闭环运动规划 | RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework | 27 |
 | [**MM-WebAgent**](/2026-04-17/briefs.md?id=mm-webagent) | 多模态网页生成框架 | 人工智能内容生成;网页自动生成;多模态网页生成 | MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation | 6 |

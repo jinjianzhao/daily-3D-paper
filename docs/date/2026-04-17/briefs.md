@@ -313,7 +313,7 @@
 **arXiv**: https://arxiv.org/abs/2604.14683  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.14683  
 **HF Paper**: https://huggingface.co/papers/2604.14683  
-**HF Votes**: 31
+**HF Votes**: 32
 
 ## 简要摘要
 
@@ -349,7 +349,7 @@
 **arXiv**: https://arxiv.org/abs/2604.14967  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.14967  
 **HF Paper**: https://huggingface.co/papers/2604.14967  
-**HF Votes**: 10
+**HF Votes**: 11
 
 ## 简要摘要
 

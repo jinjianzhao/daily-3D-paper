@@ -74,6 +74,10 @@
       "title": "Crowded in B-Space: Calibrating Shared Directions for LoRA Merging",
       "hf_link": "https://huggingface.co/papers/2604.16826"
     },
+    "2604.16830": {
+      "title": "The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation",
+      "hf_link": "https://huggingface.co/papers/2604.16830"
+    },
     "2604.16893": {
       "title": "EasyVideoR1: Easier RL for Video Understanding",
       "hf_link": "https://huggingface.co/papers/2604.16893"
@@ -125,6 +129,10 @@
     "2604.17698": {
       "title": "The Geometric Canary: Predicting Steerability and Detecting Drift via Representational Stability",
       "hf_link": "https://huggingface.co/papers/2604.17698"
+    },
+    "2604.17849": {
+      "title": "On the Reliability of Computer Use Agents",
+      "hf_link": "https://huggingface.co/papers/2604.17849"
     },
     "2604.17886": {
       "title": "Latent Preference Modeling for Cross-Session Personalized Tool Calling",
@@ -195,6 +203,7 @@
     "2604.16593": "评估语言模型的语义短语处理能力\n自然语言处理;语义理解;语义短语评测\n现有评测对语言模型的语义短语处理能力关注不足。\n提出了包含多类短语的统一评测集，评估了多种模型并揭示了其在语义推理上的差异。",
     "2604.16642": "单细胞扰动几何相干性揭示调控结构  \n计算生物学;单细胞组学;扰动响应几何分析  \n单细胞CRISPR筛选能测量扰动后细胞的转录组变化幅度，但无法判断细胞是朝一致方向移动还是随机分散。  \n本文提出了量化扰动方向一致性的几何稳定性指标Shesha，发现其与效应幅度高度相关，并揭示了调控因子类型与细胞应激状态的关联。",
     "2604.16826": "校准LoRA合并的共享方向\n大语言模型微调；参数高效微调；LoRA权重合并\n背景/任务：合并多个单独训练的LoRA适配器是一种替代联合多任务训练的方法，但常导致性能下降。\n做了什么：本文发现合并干扰主要源于输出矩阵B的共享方向过载，提出数据无关方法Pico校准B矩阵以缓解干扰，提升合并性能。",
+    "2604.16830": "校准在线蒸馏中的过度自信\n自然语言处理;语言模型后训练;在线蒸馏校准\n在线蒸馏提升模型能力却导致严重过度自信。\n提出校准感知在线蒸馏框架，在保持能力的同时实现最优校准。",
     "2604.16893": "强化学习视频理解训练框架\n计算机视觉；视频理解；多模态强化学习\n现有强化学习框架对视频任务支持不足，视频理解训练面临效率低、任务多样、评估难等挑战。\n提出了EasyVideoR1框架，通过优化视频处理流程、构建任务感知奖励系统、结合离在线数据训练等方式，高效训练大规模视觉语言模型进行视频理解。",
     "2604.16902": "探究全模态大模型模态偏好\n多模态人工智能;大型多模态模型;模态偏好分析\n传统多模态大模型存在文本主导，全模态大模型转向统一表征后，其模态偏好现象尚未被系统研究。\n本文量化了全模态大模型的视觉偏好，发现其在中深层涌现，并利用此机制诊断跨模态幻觉。",
     "2604.16943": "微调多模态大模型用于图文翻译\n多模态机器学习;视觉语言预训练;图像翻译\n多模态大语言模型在图像翻译任务中难以精准理解图像内的细粒度文本，现有全参数微调方法易导致知识遗忘和泛化性下降。\n我们提出模态神经元感知微调法，通过分析指令激活识别语言无关与语言相关神经元，选择性地微调关键神经元以提升翻译效果。",
@@ -208,6 +217,7 @@
     "2604.17609": "大语言模型智能体忽略意外信息\n自然语言处理;智能体与强化学习;智能体环境交互能力探究\n当前基于大语言模型的智能体被认为应能利用环境观察进行推理，但这一假设的真实性尚不明确。\n研究发现，这些智能体普遍缺乏“环境好奇心”，即便发现意外解决方案也常忽略，并探究了影响此能力的关键因素。",
     "2604.17696": "用游戏自学习可迁移推理\n自然语言处理;推理能力;可迁移推理学习\n现有游戏自学习方法依赖对局结果，难以区分可迁移推理与游戏特定启发式。\n本文提出STRATAGEM，通过引入推理可迁移系数和推理演化奖励，在游戏自学习中强化抽象推理与适应性推理能力，提升了数学推理和代码生成等任务的性能。",
     "2604.17698": "几何稳定性预测可控性与漂移\n自然语言处理;表征学习;模型监控与可控性\n背景/任务是可靠部署语言模型需预测其行为可控性并检测其内部结构退化。研究发现表征的几何稳定性可统一解决这两个问题，监督方法能准确预测线性可控性，无监督方法则擅长检测表征漂移。",
+    "2604.17849": "探究计算机智能体可靠性影响因素\n智能体;智能体可靠性;计算机使用智能体\n计算机使用智能体在网页导航等任务上能力快速提升，但单次成功不代表能稳定复现，其可靠性受多种因素影响。\n我们通过重复执行实验，分析了执行随机性、任务模糊性及行为变异性对智能体可靠性的影响，并提出了改进评估与设计的建议。",
     "2604.17886": "跨会话个性化工具调用偏好建模\n自然语言处理;智能对话系统;个性化工具调用\n用户请求常省略细节，导致工具调用输入不完整，需个性化补全。\n构建多会话对话数据集MPT，提出记忆增强方法PRefine，通过生成-验证-提炼循环提取用户偏好，以少量历史信息提升工具调用准确率。",
     "2604.17972": "单轮多策略情感支持对话建模\n自然语言处理;对话系统;情感支持对话\n情感支持对话旨在通过生成共情和支持性交流来帮助处于困境的个体，现有研究通常假设每次回应只对应一种支持策略。\n本文重新审视该任务，将其视为多策略话语生成问题，并提出两种生成方法，通过强化学习引导的认知推理来提升策略选择和回复质量。",
     "2604.18131": "训练智能体自主进化适应未知环境\n自然语言处理;智能体;自主知识探索\n当前智能体依赖人工设定的奖励和规则进行演化，无法脱离外部监督自主适应新环境。\n本文提出一种基于效果的奖励机制，在训练阶段教会智能体自主探索和总结世界知识，使其在无外部奖励的情况下能自发利用内部参数适应未知任务。",
@@ -329,6 +339,10 @@
       "abstract": "Merging separately trained LoRA adapters is a practical alternative to joint multi-task training, but it often hurts performance. Existing methods usually treat the LoRA update $\\Delta W = BA$ as a single object and do not distinguish the two LoRA matrices. We show that the main source of LoRA merge interference comes from the output-side matrix $B$. Across tasks, $B$ repeatedly uses a small set of shared directions, while $A$ remains much more task-specific. As a result, the merged adapter overemphasizes these shared directions, and task-specific information is lost. We propose Pico (Pre-merge interference calibration in output-space), a data-free method that calibrates $B$ before merge by downscaling over-shared directions and then rescaling the merged update. Pico plugs directly into existing merging methods such as Task Arithmetic, TIES, and TSV-M. Across eight different benchmarks from math, coding, finance, and medical domains, Pico improves average accuracy by 3.4-8.3 points over the corresponding base method and achieves the best overall average performance. Pico also enables merged adapters to outperform the LoRA trained with all task data. These results show that LoRA merging works better when the two LoRA matrices are treated separately.",
       "comments": ""
     },
+    "2604.16830": {
+      "abstract": "On-policy distillation (OPD) is an increasingly important paradigm for post-training language models. However, we identify a pervasive Scaling Law of Miscalibration: while OPD effectively improves task accuracy, it systematically traps models in severe overconfidence. We trace this failure to an information mismatch: teacher supervision is formed under privileged context available during training, whereas the deployed model must report confidence using only deployment-time information. We formalize this perspective theoretically, showing that teacher-conditioned success is generally not a valid target for deployment-time confidence and that helpful privileged context induces entropy collapse and a systematic optimism bias. To address this, we propose a calibration-aware OPD framework, CaOPD, that estimates empirical confidence from model rollouts, replaces self-reported confidence with this student-grounded target, and distills the revised response through the same self-distillation pipeline. Experiments across various models and domains show that CaOPD achieves Pareto-optimal calibration while maintaining competitive capability, generalizing robustly under out-of-distribution and continual learning. Our findings highlight that capability distillation does not imply calibrated confidence, and that confidence should be treated as an essential objective in post-training. Code:this https URL",
+      "comments": "40 pages, Code: <a class=\"link-external link-https\" href=\"https://github.com/SalesforceAIResearch/CaOPD\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
     "2604.16893": {
       "abstract": "Reinforcement learning from verifiable rewards (RLVR) has demonstrated remarkable effectiveness in improving the reasoning capabilities of large language models. As models evolve into natively multimodal architectures, extending RLVR to video understanding becomes increasingly important yet remains largely unexplored, due to the diversity of video task types, the computational overhead of repeatedly decoding and preprocessing high-dimensional visual inputs, and the difficulty of reproducible evaluation across numerous sensitive hyperparameters. Existing open-source RL training frameworks provide solid infrastructure for text and image scenarios but lack systematic optimizations tailored for video modality. In this work, we present \\textbf{EasyVideoR1}, a complete and efficient reinforcement learning framework specifically designed for training large vision-language models on video understanding tasks. EasyVideoR1 makes the following contributions: (1) a full video RL training pipeline with offline preprocessing and tensor caching that eliminates redundant video decoding and yields a 1.47 $\\times$ throughput improvement; (2) a comprehensive, task-aware reward system covering 11 distinct video and image problem types with unified routing and modular extension; (3) a mixed offline-online data training paradigm that combines curated high-quality trajectories with on-policy exploration, benefiting the learning of more challenging tasks; (4) joint image-video training with independently configurable pixel budgets, allowing the two modalities to mutually reinforce each other; and (5) an asynchronous multi-benchmark evaluation framework covering 22 mainstream video understanding benchmarks, with reproduced accuracy closely aligned with officially reported scores.",
       "comments": ""
@@ -380,6 +394,10 @@
     "2604.17698": {
       "abstract": "Reliable deployment of language models requires two capabilities that appear distinct but share a common geometric foundation: predicting whether a model will accept targeted behavioral control, and detecting when its internal structure degrades. We show that geometric stability, the consistency of a representation's pairwise distance structure, addresses both. Supervised Shesha variants that measure task-aligned geometric stability predict linear steerability with near-perfect accuracy ($\\rho = 0.89$-$0.97$) across 35-69 embedding models and three NLP tasks, capturing unique variance beyond class separability (partial $\\rho = 0.62$-$0.76$). A critical dissociation emerges: unsupervised stability fails entirely for steering on real-world tasks ($\\rho \\approx 0.10$), revealing that task alignment is essential for controllability prediction. However, unsupervised stability excels at drift detection, measuring nearly $2\\times$ greater geometric change than CKA during post-training alignment (up to $5.23\\times$ in Llama) while providing earlier warning in 73\\% of models and maintaining a $6\\times$ lower false alarm rate than Procrustes. Together, supervised and unsupervised stability form complementary diagnostics for the LLM deployment lifecycle: one for pre-deployment controllability assessment, the other for post-deployment monitoring.",
       "comments": ""
+    },
+    "2604.17849": {
+      "abstract": "Computer-use agents have rapidly improved on real-world tasks such as web navigation, desktop automation, and software interaction, in some cases surpassing human performance. Yet even when the task and model are unchanged, an agent that succeeds once may fail on a repeated execution of the same task. This raises a fundamental question: if an agent can succeed at a task once, what prevents it from doing so reliably? In this work, we study the sources of unreliability in computer-use agents through three factors: stochasticity during execution, ambiguity in task specification, and variability in agent behavior. We analyze these factors on OSWorld using repeated executions of the same task together with paired statistical tests that capture task-level changes across settings. Our analysis shows that reliability depends on both how tasks are specified and how agent behavior varies across executions. These findings suggest the need to evaluate agents under repeated execution, to allow agents to resolve task ambiguity through interaction, and to favor strategies that remain stable across runs.",
+      "comments": "33 pages, 3 figures, 4 tables"
     },
     "2604.17886": {
       "abstract": "Users often omit essential details in their requests to LLM-based agents, resulting in under-specified inputs for tool use. This poses a fundamental challenge for tool-augmented agents, as API execution typically requires complete arguments, highlighting the need for personalized tool calling. To study this problem, we introduce MPT, a benchmark comprising 265 multi-session dialogues that cover three challenges: Preference Recall, Preference Induction, and Preference Transfer. We also propose PRefine, a test-time memory-augmented method that represents user preferences as evolving hypotheses. Through a generate--verify--refine loop, it extracts reusable constraints from history and improves tool-calling accuracy while using only 1.24% of the tokens required by full-history prompting. These results indicate that robust personalization in agentic systems depends on memory that captures the reasons behind user choices, not just the choices themselves.",

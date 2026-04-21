@@ -94,7 +94,7 @@
 **arXiv**: https://arxiv.org/abs/2604.11102  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.11102  
 **HF Paper**: https://huggingface.co/papers/2604.11102  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -112,7 +112,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13313  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13313  
 **HF Paper**: https://huggingface.co/papers/2604.13313  
-**HF Votes**: 6
+**HF Votes**: 7
 
 ## 简要摘要
 
@@ -148,7 +148,7 @@
 **arXiv**: https://arxiv.org/abs/2604.15710  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15710  
 **HF Paper**: https://huggingface.co/papers/2604.15710  
-**HF Votes**: 5
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -266,6 +266,24 @@
 
 ---
 
+# The Illusion of Certainty: Decoupling Capability and Calibration in On-Policy Distillation
+
+**【校准在线蒸馏中的过度自信】**
+
+**arXiv**: https://arxiv.org/abs/2604.16830  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16830  
+**HF Paper**: https://huggingface.co/papers/2604.16830  
+**HF Votes**: 5
+
+## 简要摘要
+
+*自然语言处理;语言模型后训练;在线蒸馏校准*
+
+在线蒸馏提升模型能力却导致严重过度自信。
+提出校准感知在线蒸馏框架，在保持能力的同时实现最优校准。
+
+---
+
 # EasyVideoR1: Easier RL for Video Understanding
 
 **【强化学习视频理解训练框架】**
@@ -327,7 +345,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17091  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17091  
 **HF Paper**: https://huggingface.co/papers/2604.17091  
-**HF Votes**: 5
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -450,7 +468,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17609  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17609  
 **HF Paper**: https://huggingface.co/papers/2604.17609  
-**HF Votes**: 3
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -493,6 +511,24 @@
 *自然语言处理;表征学习;模型监控与可控性*
 
 背景/任务是可靠部署语言模型需预测其行为可控性并检测其内部结构退化。研究发现表征的几何稳定性可统一解决这两个问题，监督方法能准确预测线性可控性，无监督方法则擅长检测表征漂移。
+
+---
+
+# On the Reliability of Computer Use Agents
+
+**【探究计算机智能体可靠性影响因素】**
+
+**arXiv**: https://arxiv.org/abs/2604.17849  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17849  
+**HF Paper**: https://huggingface.co/papers/2604.17849  
+**HF Votes**: 5
+
+## 简要摘要
+
+*智能体;智能体可靠性;计算机使用智能体*
+
+计算机使用智能体在网页导航等任务上能力快速提升，但单次成功不代表能稳定复现，其可靠性受多种因素影响。
+我们通过重复执行实验，分析了执行随机性、任务模糊性及行为变异性对智能体可靠性的影响，并提出了改进评估与设计的建议。
 
 ---
 
@@ -592,7 +628,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18292  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18292  
 **HF Paper**: https://huggingface.co/papers/2604.18292  
-**HF Votes**: 57
+**HF Votes**: 59
 
 ## 简要摘要
 
@@ -610,7 +646,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18394  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18394  
 **HF Paper**: https://huggingface.co/papers/2604.18394  
-**HF Votes**: 45
+**HF Votes**: 49
 
 ## 简要摘要
 
@@ -646,7 +682,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18543  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18543  
 **HF Paper**: https://huggingface.co/papers/2604.18543  
-**HF Votes**: 15
+**HF Votes**: 17
 
 ## 简要摘要
 
@@ -664,7 +700,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18574  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18574  
 **HF Paper**: https://huggingface.co/papers/2604.18574  
-**HF Votes**: 14
+**HF Votes**: 18
 
 ## 简要摘要
 
@@ -682,7 +718,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18584  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18584  
 **HF Paper**: https://huggingface.co/papers/2604.18584  
-**HF Votes**: 6
+**HF Votes**: 7
 
 ## 简要摘要
 
