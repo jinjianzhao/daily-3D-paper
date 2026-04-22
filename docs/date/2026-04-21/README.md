@@ -57,9 +57,9 @@
 | [**WebCompass**](/2026-04-21/briefs.md?id=webcompass) | 评估大模型网页编程能力 | 代码辅助智能;编程基准评测;多模态网页编程 | WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models | 20 |
 | [**MARCO**](/2026-04-21/briefs.md?id=marco) | 提升语义对应泛化能力   | 计算机视觉;图像匹配;语义对应   | MARCO: Navigating the Unseen Space of Semantic Correspondence | 1 |
 | [**Agent-World**](/2026-04-21/briefs.md?id=agent-world) | 构建可扩展智能体训练环境 | 智能体系统;环境仿真;智能体训练环境合成 | Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence | 71 |
-| [**OpenGame**](/2026-04-21/briefs.md?id=opengame) | 开发游戏编写智能体框架 | 智能体编程;代码生成;游戏开发框架 | OpenGame: Open Agentic Coding for Games | 57 |
+| [**OpenGame**](/2026-04-21/briefs.md?id=opengame) | 开发游戏编写智能体框架 | 智能体编程;代码生成;游戏开发框架 | OpenGame: Open Agentic Coding for Games | 59 |
 | [**River-LLM**](/2026-04-21/briefs.md?id=river-llm) | 大模型推理加速优化 | 自然语言处理;大语言模型;推理加速 | River-LLM: Large Language Model Seamless Exit Based on KV Share | 2 |
-| [**OneVL**](/2026-04-21/briefs.md?id=onevl) | 一步视觉语言潜推理规划 | 自动驾驶；轨迹预测；视觉语言世界模型 | OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation | 73 |
+| [**OneVL**](/2026-04-21/briefs.md?id=onevl) | 一步视觉语言潜推理规划 | 自动驾驶；轨迹预测；视觉语言世界模型 | OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation | 74 |
 | [**ClawEnvKit**](/2026-04-21/briefs.md?id=clawenvkit) | 自动生成抓取任务训练环境 | 智能代理与强化学习;环境生成;抓取式代理评估 | ClawEnvKit: Automatic Environment Generation for Claw-Like Agents | 21 |
 | [**When Can...**](/2026-04-21/briefs.md?id=when-can) | 弱监督下大模型何时学会推理 | 自然语言处理;大语言模型推理;弱监督强化学习 | When Can LLMs Learn to Reason with Weak Supervision? | 19 |
 | [**MathNet**](/2026-04-21/briefs.md?id=mathnet) | 构建全球数学推理与检索多模态基准   | 自然语言处理;数学推理;奥赛数学问题检索   | MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval | 7 |

@@ -97,7 +97,7 @@
 **arXiv**: https://arxiv.org/abs/2604.10261  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.10261  
 **HF Paper**: https://huggingface.co/papers/2604.10261  
-**HF Votes**: 3
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -133,7 +133,7 @@
 **arXiv**: https://arxiv.org/abs/2604.12012  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.12012  
 **HF Paper**: https://huggingface.co/papers/2604.12012  
-**HF Votes**: 5
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -187,7 +187,7 @@
 **arXiv**: https://arxiv.org/abs/2604.14518  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.14518  
 **HF Paper**: https://huggingface.co/papers/2604.14518  
-**HF Votes**: 19
+**HF Votes**: 20
 
 ## 简要摘要
 
@@ -313,7 +313,7 @@ NTIRE 2026举办挑战赛，目标是开发自动预测视频显著图的方法�
 **arXiv**: https://arxiv.org/abs/2604.15804  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15804  
 **HF Paper**: https://huggingface.co/papers/2604.15804  
-**HF Votes**: 44
+**HF Votes**: 46
 
 ## 简要摘要
 
@@ -421,7 +421,7 @@ NTIRE 2026举办挑战赛，目标是开发自动预测视频显著图的方法�
 **arXiv**: https://arxiv.org/abs/2604.16272  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16272  
 **HF Paper**: https://huggingface.co/papers/2604.16272  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 

@@ -43,7 +43,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13346  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13346  
 **HF Paper**: https://huggingface.co/papers/2604.13346  
-**HF Votes**: 45
+**HF Votes**: 49
 
 ## 简要摘要
 
@@ -130,7 +130,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17078  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17078  
 **HF Paper**: https://huggingface.co/papers/2604.17078  
-**HF Votes**: 8
+**HF Votes**: 9
 
 ## 简要摘要
 
@@ -165,7 +165,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17632  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17632  
 **HF Paper**: https://huggingface.co/papers/2604.17632  
-**HF Votes**: 7
+**HF Votes**: 8
 
 ## 简要摘要
 
@@ -237,7 +237,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18240  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18240  
 **HF Paper**: https://huggingface.co/papers/2604.18240  
-**HF Votes**: 9
+**HF Votes**: 11
 
 ## 简要摘要
 
@@ -272,7 +272,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18845  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18845  
 **HF Paper**: https://huggingface.co/papers/2604.18845  
-**HF Votes**: 7
+**HF Votes**: 8
 
 ## 简要摘要
 
@@ -308,7 +308,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19254  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19254  
 **HF Paper**: https://huggingface.co/papers/2604.19254  
-**HF Votes**: 13
+**HF Votes**: 18
 
 ## 简要摘要
 
@@ -326,7 +326,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19295  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19295  
 **HF Paper**: https://huggingface.co/papers/2604.19295  
-**HF Votes**: 22
+**HF Votes**: 24
 
 ## 简要摘要
 
@@ -334,6 +334,24 @@
 
 现有大语言模型的测试时训练方法在推理任务上效果提升有限且易陷入停滞。
 提出TEMPO框架，交替优化模型与校准奖励，实现性能持续提升。
+
+---
+
+# RDP LoRA: Geometry-Driven Identification for Parameter-Efficient Adaptation in Large Language Models
+
+**【大模型微调层选择新方法】**
+
+**arXiv**: https://arxiv.org/abs/2604.19321  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19321  
+**HF Paper**: https://huggingface.co/papers/2604.19321  
+**HF Votes**: 4
+
+## 简要摘要
+
+*自然语言处理;大语言模型;参数高效微调层选择*
+
+背景/任务是：大语言模型微调时，不清楚该对哪些层进行参数高效适应，通常靠启发式选择。
+我们通过几何轨迹分析定位关键层，并仅在这些层应用LoRA，在数学推理任务上取得了比全层微调更好的效果。
 
 ---
 
@@ -362,7 +380,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19440  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19440  
 **HF Paper**: https://huggingface.co/papers/2604.19440  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -391,6 +409,24 @@
 
 ---
 
+# Micro Language Models Enable Instant Responses
+
+**【微型模型首词云端续写】**
+
+**arXiv**: https://arxiv.org/abs/2604.19642  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19642  
+**HF Paper**: https://huggingface.co/papers/2604.19642  
+**HF Votes**: 1
+
+## 简要摘要
+
+*自然语言处理;边缘智能;设备云端协同生成*
+
+智能手表等边缘设备因资源限制无法本地运行大模型，云端推理延迟又影响交互体验
+提出微型语言模型在本地生成响应开头，云端模型无缝续写，通过三种纠错方法实现协同以掩盖延迟
+
+---
+
 # Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language
 
 **【自然语言生成可视化工作流】**
@@ -398,7 +434,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19667  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19667  
 **HF Paper**: https://huggingface.co/papers/2604.19667  
-**HF Votes**: 12
+**HF Votes**: 13
 
 ## 简要摘要
 

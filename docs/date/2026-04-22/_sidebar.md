@@ -2,6 +2,7 @@
 
   - **3D重建/生成**
     - [UniMesh | 统一三维网格的理解与生成](/2026-04-22/papers/2604.17472.md)
+    - [CityRAG | 基于地理位置生成连续城市视频](/2026-04-22/papers/2604.19741.md)
     - [AnyRecon | 任意稀疏视图三维重建](/2026-04-22/papers/2604.19747.md)
   - **视频生成模型**
     - [Speculative Decoding... | 让视频生成像大模型推理一样快](/2026-04-22/papers/2604.17397.md)
@@ -11,7 +12,7 @@
     - [HP-Edit | 基于人类反馈的图像编辑优化](/2026-04-22/papers/2604.19406.md)
     - [SmartPhotoCrafter | 自动优化摄影图像质量](/2026-04-22/papers/2604.19587.md)
     - [Tstars-Tryon 1.0 | 稳健真实的虚拟试衣系统](/2026-04-22/papers/2604.19748.md)
-  - [**全量简报 (24 篇)**](/2026-04-22/briefs.md)
+  - [**全量简报 (26 篇)**](/2026-04-22/briefs.md)
     - [Accurate and... | 深度学习提升密度泛函精度](/2026-04-22/briefs.md?id=accurate-and)
     - [Predicting integers... | 整数标签的离散概率建模](/2026-04-22/briefs.md?id=predicting-integers)
     - [AgentSPEX | 语言模型智能体工作流编排语言](/2026-04-22/briefs.md?id=agentspex)
@@ -31,8 +32,10 @@
     - [ClawNet | 跨用户智能体协作系统  ](/2026-04-22/briefs.md?id=clawnet)
     - [ShadowPEFT | 用共享模块实现参数高效微调](/2026-04-22/briefs.md?id=shadowpeft)
     - [TEMPO | 测试时训练提升大模型推理能力](/2026-04-22/briefs.md?id=tempo)
+    - [RDP LoRA | 大模型微调层选择新方法](/2026-04-22/briefs.md?id=rdp-lora)
     - [Evaluation-driven Scaling... | 评估驱动循环提升科学发现](/2026-04-22/briefs.md?id=evaluation-driven-scaling)
     - [What Makes... | 大语言模型进化搜索轨迹分析  ](/2026-04-22/briefs.md?id=what-makes)
     - [LoopCTR | 循环缩放提升点击率预测精度](/2026-04-22/briefs.md?id=loopctr)
+    - [Micro Language... | 微型模型首词云端续写](/2026-04-22/briefs.md?id=micro-language)
     - [Chat2Workflow | 自然语言生成可视化工作流](/2026-04-22/briefs.md?id=chat2workflow)
     - [PlayCoder | 大模型生成可运行GUI应用代码](/2026-04-22/briefs.md?id=playcoder)
