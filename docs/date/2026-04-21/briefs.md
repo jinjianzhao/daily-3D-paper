@@ -76,7 +76,7 @@
 **arXiv**: https://arxiv.org/abs/2604.08537  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.08537  
 **HF Paper**: https://huggingface.co/papers/2604.08537  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -94,7 +94,7 @@
 **arXiv**: https://arxiv.org/abs/2604.11102  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.11102  
 **HF Paper**: https://huggingface.co/papers/2604.11102  
-**HF Votes**: 5
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -112,7 +112,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13313  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13313  
 **HF Paper**: https://huggingface.co/papers/2604.13313  
-**HF Votes**: 7
+**HF Votes**: 11
 
 ## 简要摘要
 
@@ -130,7 +130,7 @@
 **arXiv**: https://arxiv.org/abs/2604.14258  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.14258  
 **HF Paper**: https://huggingface.co/papers/2604.14258  
-**HF Votes**: 18
+**HF Votes**: 21
 
 ## 简要摘要
 
@@ -138,6 +138,23 @@
 
 大语言模型通常通过监督微调和强化学习进行后训练，但如何有效统一高效知识注入与强泛化能力仍具挑战。
 本文提出分组微调框架，通过组优势学习和动态系数校正解决稀疏奖励与梯度不稳定问题，提升训练效果。
+
+---
+
+# Symbolic Guardrails for Domain-Specific Agents: Stronger Safety and Security Guarantees Without Sacrificing Utility
+
+**【用符号护栏保障领域智能体安全】**
+
+**arXiv**: https://arxiv.org/abs/2604.15579  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15579  
+**HF Paper**: https://huggingface.co/papers/2604.15579  
+
+## 简要摘要
+
+*人工智能安全；智能体安全；安全策略实施与验证*
+
+在商业等高风险场景，AI智能体通过工具与环境交互可能造成隐私泄露、财务损失等无法接受的危害。
+通过系统评估现有基准策略，证明了符号护栏能保证多数安全需求且不影响智能体效用，为领域AI智能体提供了实用的安全保障路径。
 
 ---
 
@@ -156,6 +173,23 @@
 
 现有语音对话模型难以应对复杂需求，需通过工具调用扩展能力边界
 我们提出VoxMind框架，通过新数据集与异步工具管理机制，显著提升任务完成率并保持对话质量
+
+---
+
+# KWBench: Measuring Unprompted Problem Recognition in Knowledge Work
+
+**【大模型自动识别问题能力评估】**
+
+**arXiv**: https://arxiv.org/abs/2604.15760  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15760  
+**HF Paper**: https://huggingface.co/papers/2604.15760  
+
+## 简要摘要
+
+*自然语言处理;大语言模型评估;知识工作问题识别*
+
+现有大模型评测多关注给定问题后的解决能力，缺乏评估其从未明示的原始数据中自主识别问题类型的能力。
+研究者构建了包含223个专业场景任务的KWBench基准，测试16个模型，发现最佳模型仅能识别约28%的问题，且模型间识别结果差异大，证明了自主问题识别是当前模型的薄弱环节。
 
 ---
 
@@ -273,7 +307,7 @@
 **arXiv**: https://arxiv.org/abs/2604.16830  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16830  
 **HF Paper**: https://huggingface.co/papers/2604.16830  
-**HF Votes**: 5
+**HF Votes**: 10
 
 ## 简要摘要
 
@@ -380,7 +414,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17308  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17308  
 **HF Paper**: https://huggingface.co/papers/2604.17308  
-**HF Votes**: 15
+**HF Votes**: 16
 
 ## 简要摘要
 
@@ -388,6 +422,24 @@
 
 当前评测主要测试智能体能否使用给定的技能，未能评估其在持续任务中自主发现、修复和演进技能的能力。
 我们提出了SkillFlow基准，通过终身学习协议评估智能体从零开始、通过经验构建并演进技能库的能力，揭示了现有模型在该任务上的显著能力差距与问题。
+
+---
+
+# When Background Matters: Breaking Medical Vision Language Models by Transferable Attack
+
+**【医疗视觉语言模型攻击研究】**
+
+**arXiv**: https://arxiv.org/abs/2604.17318  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17318  
+**HF Paper**: https://huggingface.co/papers/2604.17318  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;多模态学习;医疗视觉语言模型鲁棒性*
+
+背景/任务是医疗视觉语言模型在临床诊断中应用增加，但其对抗攻击鲁棒性未被充分探索，存在风险。
+我们提出了一种名为MedFocusLeak的可迁移黑盒攻击方法，通过在非诊断背景区域注入扰动并分散模型注意力，使其在扰动不可感知的情况下做出错误但临床合理的诊断。
 
 ---
 
@@ -461,6 +513,23 @@
 
 ---
 
+# Terminal Wrench: A Dataset of 331 Reward-Hackable Environments and 3,632 Exploit Trajectories
+
+**【发布终端智能体奖励破解数据集】**
+
+**arXiv**: https://arxiv.org/abs/2604.17596  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17596  
+**HF Paper**: https://huggingface.co/papers/2604.17596  
+
+## 简要摘要
+
+*强化学习安全；智能体安全评估；奖励函数破解*
+
+现有终端智能体基准中存在可被利用的奖励漏洞。
+我们筛选并公开了331个可被破解的环境、数千条攻击轨迹，并分析了思维链对检测的影响。
+
+---
+
 # Agents Explore but Agents Ignore: LLMs Lack Environmental Curiosity
 
 **【大语言模型智能体忽略意外信息】**
@@ -521,7 +590,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17849  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17849  
 **HF Paper**: https://huggingface.co/papers/2604.17849  
-**HF Votes**: 5
+**HF Votes**: 9
 
 ## 简要摘要
 
@@ -539,6 +608,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17886  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17886  
 **HF Paper**: https://huggingface.co/papers/2604.17886  
+**HF Votes**: 1
 
 ## 简要摘要
 
@@ -610,7 +680,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18224  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18224  
 **HF Paper**: https://huggingface.co/papers/2604.18224  
-**HF Votes**: 17
+**HF Votes**: 20
 
 ## 简要摘要
 
@@ -621,6 +691,24 @@
 
 ---
 
+# MARCO: Navigating the Unseen Space of Semantic Correspondence
+
+**【增强语义对应泛化性模型】**
+
+**arXiv**: https://arxiv.org/abs/2604.18267  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18267  
+**HF Paper**: https://huggingface.co/papers/2604.18267  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;图像匹配;语义对应*
+
+现有语义对应模型参数量大、泛化性差，难以处理训练时未见过的关键点。
+提出新训练框架，结合由粗到细定位与自蒸馏，使模型能由稀疏关键点产生密集对应，性能更强、更小更快。
+
+---
+
 # Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence
 
 **【构建智能体训练环境与任务】**
@@ -628,7 +716,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18292  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18292  
 **HF Paper**: https://huggingface.co/papers/2604.18292  
-**HF Votes**: 59
+**HF Votes**: 70
 
 ## 简要摘要
 
@@ -646,7 +734,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18394  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18394  
 **HF Paper**: https://huggingface.co/papers/2604.18394  
-**HF Votes**: 49
+**HF Votes**: 55
 
 ## 简要摘要
 
@@ -657,6 +745,24 @@
 
 ---
 
+# River-LLM: Large Language Model Seamless Exit Based on KV Share
+
+**【加速大模型推理的无缝提前退出】**
+
+**arXiv**: https://arxiv.org/abs/2604.18396  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18396  
+**HF Paper**: https://huggingface.co/papers/2604.18396  
+**HF Votes**: 2
+
+## 简要摘要
+
+*自然语言处理;大语言模型推理优化;KV缓存共享提前退出*
+
+大语言模型推理延迟高，提前退出方法因缺少KV缓存导致效率瓶颈。
+提出River-LLM框架，通过共享KV缓存实现无缝提前退出，无需训练即可加速推理并保持生成质量。
+
+---
+
 # OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation
 
 **【一步隐式多模态推理规划】**
@@ -664,7 +770,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18486  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18486  
 **HF Paper**: https://huggingface.co/papers/2604.18486  
-**HF Votes**: 65
+**HF Votes**: 71
 
 ## 简要摘要
 
@@ -682,7 +788,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18543  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18543  
 **HF Paper**: https://huggingface.co/papers/2604.18543  
-**HF Votes**: 17
+**HF Votes**: 20
 
 ## 简要摘要
 
@@ -700,7 +806,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18574  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18574  
 **HF Paper**: https://huggingface.co/papers/2604.18574  
-**HF Votes**: 18
+**HF Votes**: 19
 
 ## 简要摘要
 

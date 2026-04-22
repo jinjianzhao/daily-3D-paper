@@ -58,7 +58,12 @@ class DocsifyRenderer:
             )
 
         self._render_readme(pub_dir, date_str, date_dir_name, base_info, summaries, focus_sections, focus_ids, hf_votes)
-        self._render_sidebar(pub_dir, date_str, date_dir_name, base_info, summaries, focus_sections, focus_ids)
+        sidebar_content = self._render_sidebar(pub_dir, date_str, date_dir_name, base_info, summaries, focus_sections, focus_ids)
+
+        # papers/ 下也放一份相同的 sidebar，否则 docsify 在论文页面找不到
+        papers_sidebar = os.path.join(papers_dir, "_sidebar.md")
+        with open(papers_sidebar, "w", encoding="utf-8") as f:
+            f.write(sidebar_content)
 
     def _render_paper(
         self, papers_dir, aid, base_info, summaries, deep_analysis, images_meta, hf_votes
@@ -173,8 +178,10 @@ class DocsifyRenderer:
                 lines.append(f"    - [{label}](/{date_dir_name}/briefs.md?id={anchor})")
 
         fp = os.path.join(pub_dir, "_sidebar.md")
+        content = "\n".join(lines)
         with open(fp, "w", encoding="utf-8") as f:
-            f.write("\n".join(lines))
+            f.write(content)
+        return content
 
     def _render_briefs(self, pub_dir, date_str, date_dir_name, non_focus_ids, base_info, summaries, hf_votes):
         from renderers.docsify.paper import render_paper_md
