@@ -43,7 +43,7 @@
 **arXiv**: https://arxiv.org/abs/2604.13346  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.13346  
 **HF Paper**: https://huggingface.co/papers/2604.13346  
-**HF Votes**: 49
+**HF Votes**: 51
 
 ## 简要摘要
 
@@ -51,6 +51,24 @@
 
 现有语言模型智能体系统多采用隐式控制的反应式提示，而编排框架则常将工作流逻辑与代码紧密耦合，导致行为难控且不易维护。
 本文提出AgentSPEX语言，用于规范定义具有显式控制流和模块化结构的智能体工作流，并提供可视化编辑器和执行环境，提升了工作流的可解释性和易用性。
+
+---
+
+# Stargazer: A Scalable Model-Fitting Benchmark Environment for AI Agents under Astrophysical Constraints
+
+**【AI天体物理模型拟合基准环境】**
+
+**arXiv**: https://arxiv.org/abs/2604.15664  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15664  
+**HF Paper**: https://huggingface.co/papers/2604.15664  
+**HF Votes**: 2
+
+## 简要摘要
+
+*AI基准评估;科学AI;天体物理模型拟合*
+
+设计动态基准环境以评估AI代理在天体物理模型拟合任务中的能力。
+开发了包含120个任务的Stargazer环境，测试发现AI代理在物理约束遵循上存在不足，并证明了其方法的可推广性。
 
 ---
 
@@ -130,7 +148,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17078  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17078  
 **HF Paper**: https://huggingface.co/papers/2604.17078  
-**HF Votes**: 9
+**HF Votes**: 10
 
 ## 简要摘要
 
@@ -165,7 +183,7 @@
 **arXiv**: https://arxiv.org/abs/2604.17632  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.17632  
 **HF Paper**: https://huggingface.co/papers/2604.17632  
-**HF Votes**: 8
+**HF Votes**: 9
 
 ## 简要摘要
 
@@ -237,7 +255,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18240  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18240  
 **HF Paper**: https://huggingface.co/papers/2604.18240  
-**HF Votes**: 11
+**HF Votes**: 12
 
 ## 简要摘要
 
@@ -272,7 +290,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18845  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18845  
 **HF Paper**: https://huggingface.co/papers/2604.18845  
-**HF Votes**: 8
+**HF Votes**: 9
 
 ## 简要摘要
 
@@ -326,7 +344,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19295  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19295  
 **HF Paper**: https://huggingface.co/papers/2604.19295  
-**HF Votes**: 24
+**HF Votes**: 25
 
 ## 简要摘要
 
@@ -452,7 +470,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19742  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19742  
 **HF Paper**: https://huggingface.co/papers/2604.19742  
-**HF Votes**: 19
+**HF Votes**: 20
 
 ## 简要摘要
 
@@ -460,5 +478,23 @@
 
 大语言模型在GUI应用（尤其是游戏）代码生成方面的能力尚未被充分研究，现有评测方法无法有效评估其交互逻辑的正确性。
 为此提出了包含多语言应用的评测基准PlayEval、模拟交互的评估指标Play@k与自动测试工具PlayTester，并构建了能迭代生成与修复代码的多智能体框架PlayCoder，显著提升了模型生成GUI应用的功能正确性。
+
+---
+
+# SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks
+
+**【评测技能持续学习新方法】**
+
+**arXiv**: https://arxiv.org/abs/2604.20087  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.20087  
+**HF Paper**: https://huggingface.co/papers/2604.20087  
+**HF Votes**: 2
+
+## 简要摘要
+
+*大语言模型智能体;技能学习与生成;持续技能学习基准构建*
+
+大语言模型智能体需通过技能来执行复杂任务，但如何自动有效地学习技能尚不明确。
+构建了首个持续技能学习基准SkillLearnBench，并评估了多种方法在真实任务上的表现，发现现有方法虽有提升但仍有局限。
 
 ---

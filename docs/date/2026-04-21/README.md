@@ -23,7 +23,7 @@
 | [**Meta-learning In-Context...**](/2026-04-21/briefs.md?id=meta-learning-in-context) | 免调优跨被试脑视觉解码 | 计算机视觉;神经解码;功能磁共振图像解码 | Meta-learning In-Context Enables Training-Free Cross Subject Brain Decoding | 5 |
 | [**OmniScript**](/2026-04-21/briefs.md?id=omniscript) | 长电影视频生成脚本 | 多模态大语言模型;视频理解与生成;长视频到脚本生成 | OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video | 6 |
 | [**Concrete Jungle**](/2026-04-21/briefs.md?id=concrete-jungle) | 设计更好对比学习的图文模型训练方法 | 自然语言处理;多模态学习;图文组合推理 | Concrete Jungle: Towards Concreteness Paved Contrastive Negative Mining for Compositional Understanding | 11 |
-| [**GFT**](/2026-04-21/briefs.md?id=gft) | 改进语言模型微调方法 | 自然语言处理;语言模型对齐;微调训练动态分析 | GFT: From Imitation to Reward Fine-Tuning with Unbiased Group Advantages and Dynamic Coefficient Rectification | 21 |
+| [**GFT**](/2026-04-21/briefs.md?id=gft) | 改进语言模型微调方法 | 自然语言处理;语言模型对齐;微调训练动态分析 | GFT: From Imitation to Reward Fine-Tuning with Unbiased Group Advantages and Dynamic Coefficient Rectification | 22 |
 | [**Symbolic Guardrails...**](/2026-04-21/briefs.md?id=symbolic-guardrails) | 用符号护栏保障AI代理安全 | 人工智能代理;代理安全;符号护栏设计 | Symbolic Guardrails for Domain-Specific Agents: Stronger Safety and Security Guarantees Without Sacrificing Utility | 1 |
 | [**VoxMind**](/2026-04-21/briefs.md?id=voxmind) | 端到端语音对话系统增强工具调用能力 | 语音交互与对话系统;语音对话代理;工具增强型语音代理 | VoxMind: An End-to-End Agentic Spoken Dialogue System | 6 |
 | [**KWBench**](/2026-04-21/briefs.md?id=kwbench) | 大模型自主识别专业问题能力评测   | 自然语言处理;大语言模型评测;无提示问题识别   | KWBench: Measuring Unprompted Problem Recognition in Knowledge Work |  |
@@ -56,10 +56,10 @@
 | [**Multiplication in Multimodal LLMs**](/2026-04-21/briefs.md?id=multiplication-in-multimodal-llms) | 多模态大模型算术能力评估 | 机器学习;多模态学习;大语言模型算术 | Multiplication in Multimodal LLMs: Computation with Text, Image, and Audio Inputs | 3 |
 | [**WebCompass**](/2026-04-21/briefs.md?id=webcompass) | 评估大模型网页编程能力 | 代码辅助智能;编程基准评测;多模态网页编程 | WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models | 20 |
 | [**MARCO**](/2026-04-21/briefs.md?id=marco) | 提升语义对应泛化能力   | 计算机视觉;图像匹配;语义对应   | MARCO: Navigating the Unseen Space of Semantic Correspondence | 1 |
-| [**Agent-World**](/2026-04-21/briefs.md?id=agent-world) | 构建可扩展智能体训练环境 | 智能体系统;环境仿真;智能体训练环境合成 | Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence | 71 |
-| [**OpenGame**](/2026-04-21/briefs.md?id=opengame) | 开发游戏编写智能体框架 | 智能体编程;代码生成;游戏开发框架 | OpenGame: Open Agentic Coding for Games | 59 |
+| [**Agent-World**](/2026-04-21/briefs.md?id=agent-world) | 构建可扩展智能体训练环境 | 智能体系统;环境仿真;智能体训练环境合成 | Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence | 72 |
+| [**OpenGame**](/2026-04-21/briefs.md?id=opengame) | 开发游戏编写智能体框架 | 智能体编程;代码生成;游戏开发框架 | OpenGame: Open Agentic Coding for Games | 60 |
 | [**River-LLM**](/2026-04-21/briefs.md?id=river-llm) | 大模型推理加速优化 | 自然语言处理;大语言模型;推理加速 | River-LLM: Large Language Model Seamless Exit Based on KV Share | 2 |
-| [**OneVL**](/2026-04-21/briefs.md?id=onevl) | 一步视觉语言潜推理规划 | 自动驾驶；轨迹预测；视觉语言世界模型 | OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation | 74 |
+| [**OneVL**](/2026-04-21/briefs.md?id=onevl) | 一步视觉语言潜推理规划 | 自动驾驶；轨迹预测；视觉语言世界模型 | OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation | 75 |
 | [**ClawEnvKit**](/2026-04-21/briefs.md?id=clawenvkit) | 自动生成抓取任务训练环境 | 智能代理与强化学习;环境生成;抓取式代理评估 | ClawEnvKit: Automatic Environment Generation for Claw-Like Agents | 21 |
 | [**When Can...**](/2026-04-21/briefs.md?id=when-can) | 弱监督下大模型何时学会推理 | 自然语言处理;大语言模型推理;弱监督强化学习 | When Can LLMs Learn to Reason with Weak Supervision? | 19 |
-| [**MathNet**](/2026-04-21/briefs.md?id=mathnet) | 构建全球数学推理与检索多模态基准   | 自然语言处理;数学推理;奥赛数学问题检索   | MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval | 7 |
+| [**MathNet**](/2026-04-21/briefs.md?id=mathnet) | 构建全球数学推理与检索多模态基准   | 自然语言处理;数学推理;奥赛数学问题检索   | MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval | 8 |

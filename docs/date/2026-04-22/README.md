@@ -1,6 +1,6 @@
 # 2026-04-22 3D 论文日报
 
-共 **35** 篇，重点 **9** 篇
+共 **37** 篇，重点 **9** 篇
 
 ## 重点论文
 
@@ -28,27 +28,29 @@
 |------|------|------|----------|------:|
 | [**Accurate and...**](/2026-04-22/briefs.md?id=accurate-and) | 深度学习提升密度泛函精度 | 计算化学;密度泛函理论;交换关联泛函 | Accurate and scalable exchange-correlation with deep learning | 2 |
 | [**Predicting integers...**](/2026-04-22/briefs.md?id=predicting-integers) | 整数标签的离散概率建模 | 机器学习;统计建模;离散分布预测 | Predicting integers from continuous parameters | 1 |
-| [**AgentSPEX**](/2026-04-22/briefs.md?id=agentspex) | 语言模型智能体工作流编排语言 | 自然语言处理;智能体系统;工作流编排语言 | AgentSPEX: An Agent SPecification and EXecution Language | 49 |
+| [**AgentSPEX**](/2026-04-22/briefs.md?id=agentspex) | 语言模型智能体工作流编排语言 | 自然语言处理;智能体系统;工作流编排语言 | AgentSPEX: An Agent SPecification and EXecution Language | 51 |
+| [**Stargazer**](/2026-04-22/briefs.md?id=stargazer) | AI天体物理模型拟合基准环境 | AI基准评估;科学AI;天体物理模型拟合 | Stargazer: A Scalable Model-Fitting Benchmark Environment for AI Agents under Astrophysical Constraints | 2 |
 | [**Target-Oriented Pretraining...**](/2026-04-22/briefs.md?id=target-oriented-pretraining) | 面向目标的预训练数据选择   | 自然语言处理;语言模型预训练;目标导向数据选择   | Target-Oriented Pretraining Data Selection via Neuron-Activated Graph | 6 |
 | [**Mind's Eye**](/2026-04-22/briefs.md?id=mind's-eye) | 评估多模态大模型视觉认知能力 | 多模态模型与认知推理;视觉语言理解与推理;视觉认知与空间推理基准测试 | Mind's Eye: A Benchmark of Visual Abstraction, Transformation and Composition for Multimodal LLMs |  |
 | [**Chain-of-Thought Degrades...**](/2026-04-22/briefs.md?id=chain-of-thought-degrades) | 链式思维削弱多模态模型空间推理 | 多模态人工智能；视觉推理；空间推理评估 | Chain-of-Thought Degrades Visual Spatial Reasoning Capabilities of Multimodal LLMs |  |
 | [**The Cognitive Penalty**](/2026-04-22/briefs.md?id=the-cognitive-penalty) | 小模型推理对去中心化共识的影响 | 自然语言处理;语言模型推理;去中心化自治组织治理评估 | The Cognitive Penalty: Ablating System 1 and System 2 Reasoning in Edge-Native SLMs for Decentralized Consensus |  |
-| [**Understanding and...**](/2026-04-22/briefs.md?id=understanding-and) | 提升任务算术性能的正则化方法 | 机器学习;模型编辑;任务算术 | Understanding and Enforcing Weight Disentanglement in Task Arithmetic | 9 |
+| [**Understanding and...**](/2026-04-22/briefs.md?id=understanding-and) | 提升任务算术性能的正则化方法 | 机器学习;模型编辑;任务算术 | Understanding and Enforcing Weight Disentanglement in Task Arithmetic | 10 |
 | [**MoVE**](/2026-04-22/briefs.md?id=move) | 语音翻译添加表情副语言 | 语音技术;语音到语音翻译;副语言翻译与合成 | MoVE: Translating Laughter and Tears via Mixture of Vocalization Experts in Speech-to-Speech Translation |  |
-| [**Code-Switching Information Retrieval**](/2026-04-22/briefs.md?id=code-switching-information-retrieval) | 代码混合信息检索的瓶颈研究   | 自然语言处理;信息检索;多语言混合检索   | Code-Switching Information Retrieval: Benchmarks, Analysis, and the Limits of Current Retrievers | 8 |
+| [**Code-Switching Information Retrieval**](/2026-04-22/briefs.md?id=code-switching-information-retrieval) | 代码混合信息检索的瓶颈研究   | 自然语言处理;信息检索;多语言混合检索   | Code-Switching Information Retrieval: Benchmarks, Analysis, and the Limits of Current Retrievers | 9 |
 | [**Contrastive Attribution in the Wild**](/2026-04-22/briefs.md?id=contrastive-attribution-in-the-wild) | 分析大模型失败原因的方法评估   | 自然语言处理;模型可解释性;对比归因分析   | Contrastive Attribution in the Wild: An Interpretability Analysis of LLM Failures on Realistic Benchmarks | 2 |
 | [**Mitigating Multimodal...**](/2026-04-22/briefs.md?id=mitigating-multimodal) | 缓解大视觉语言模型幻觉的相位自奖励解码 | 多模态学习;视觉语言模型;视觉幻觉缓解 | Mitigating Multimodal Hallucination via Phase-wise Self-reward | 1 |
 | [**MM-JudgeBias**](/2026-04-22/briefs.md?id=mm-judgebias) | 评估MLLM评委的偏见基准 | 多模态大模型;多模态评估;评委偏见诊断 | MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge | 3 |
-| [**AJ-Bench**](/2026-04-22/briefs.md?id=aj-bench) | 环境感知的智能体裁判基准测试 | 强化学习；智能体评估；环境感知验证 | AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation | 11 |
+| [**AJ-Bench**](/2026-04-22/briefs.md?id=aj-bench) | 环境感知的智能体裁判基准测试 | 强化学习；智能体评估；环境感知验证 | AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation | 12 |
 | [**SPRITE**](/2026-04-22/briefs.md?id=sprite) | 游戏界面截图转引擎资产 | 计算机图形学；用户界面生成；游戏界面重构 | SPRITE: From Static Mockups to Engine-Ready Game UI |  |
-| [**Dual-View Training...**](/2026-04-22/briefs.md?id=dual-view-training) | 用双视角训练提升检索系统指令跟随能力 | 自然语言处理;信息检索;指令跟随检索 | Dual-View Training for Instruction-Following Information Retrieval | 8 |
+| [**Dual-View Training...**](/2026-04-22/briefs.md?id=dual-view-training) | 用双视角训练提升检索系统指令跟随能力 | 自然语言处理;信息检索;指令跟随检索 | Dual-View Training for Instruction-Following Information Retrieval | 9 |
 | [**ClawNet**](/2026-04-22/briefs.md?id=clawnet) | 跨用户智能体协作系统   | 智能体系统;多智能体协作;身份治理协作框架   | ClawNet: Human-Symbiotic Agent Network for Cross-User Autonomous Cooperation | 1 |
 | [**ShadowPEFT**](/2026-04-22/briefs.md?id=shadowpeft) | 用共享模块实现参数高效微调 | 自然语言处理;高效微语言模型微调;参数高效微调 | ShadowPEFT: Shadow Network for Parameter-Efficient Fine-Tuning | 18 |
-| [**TEMPO**](/2026-04-22/briefs.md?id=tempo) | 测试时训练提升大模型推理能力 | 自然语言处理;大语言模型;测试时训练 | TEMPO: Scaling Test-time Training for Large Reasoning Models | 24 |
+| [**TEMPO**](/2026-04-22/briefs.md?id=tempo) | 测试时训练提升大模型推理能力 | 自然语言处理;大语言模型;测试时训练 | TEMPO: Scaling Test-time Training for Large Reasoning Models | 25 |
 | [**RDP LoRA**](/2026-04-22/briefs.md?id=rdp-lora) | 大模型微调层选择新方法 | 自然语言处理;大语言模型;参数高效微调层选择 | RDP LoRA: Geometry-Driven Identification for Parameter-Efficient Adaptation in Large Language Models | 4 |
 | [**Evaluation-driven Scaling...**](/2026-04-22/briefs.md?id=evaluation-driven-scaling) | 评估驱动循环提升科学发现 | 自然语言处理;大语言模型应用;评估驱动科学发现框架 | Evaluation-driven Scaling for Scientific Discovery | 1 |
 | [**What Makes...**](/2026-04-22/briefs.md?id=what-makes) | 大语言模型进化搜索轨迹分析   | 自然语言处理;大语言模型应用;进化搜索轨迹分析   | What Makes an LLM a Good Optimizer? A Trajectory Analysis of LLM-Guided Evolutionary Search | 2 |
 | [**LoopCTR**](/2026-04-22/briefs.md?id=loopctr) | 循环缩放提升点击率预测精度 | 机器学习;推荐系统;点击率预测 | LoopCTR: Unlocking the Loop Scaling Power for Click-Through Rate Prediction | 3 |
 | [**Micro Language...**](/2026-04-22/briefs.md?id=micro-language) | 微型模型首词云端续写 | 自然语言处理;边缘智能;设备云端协同生成 | Micro Language Models Enable Instant Responses | 1 |
 | [**Chat2Workflow**](/2026-04-22/briefs.md?id=chat2workflow) | 自然语言生成可视化工作流 | 自然语言处理;视觉工作流生成;可执行工作流基准 | Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language | 13 |
-| [**PlayCoder**](/2026-04-22/briefs.md?id=playcoder) | 大模型生成可运行GUI应用代码 | 代码生成;GUI编程;交互式应用逻辑评估 | PlayCoder: Making LLM-Generated GUI Code Playable | 19 |
+| [**PlayCoder**](/2026-04-22/briefs.md?id=playcoder) | 大模型生成可运行GUI应用代码 | 代码生成;GUI编程;交互式应用逻辑评估 | PlayCoder: Making LLM-Generated GUI Code Playable | 20 |
+| [**SkillLearnBench**](/2026-04-22/briefs.md?id=skilllearnbench) | 评测技能持续学习新方法 | 大语言模型智能体;技能学习与生成;持续技能学习基准构建 | SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks | 2 |
