@@ -419,6 +419,7 @@ class PaperPipeline:
             return base_info, hf_votes
 
         url = f"{self.cfg.hf_paper_link_prefix}/papers/date/{date_str}"
+        pipeline_debug("step01", "拉取论文列表", f"请求URL={url}")
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec)
         soup = BeautifulSoup(resp.text, "html.parser")
         results_with_votes = []
