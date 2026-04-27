@@ -1,0 +1,340 @@
+{
+  "date": "2026-04-24",
+  "focus_ids": [
+    "2604.21915",
+    "2604.21686",
+    "2604.21931",
+    "2604.10268",
+    "2604.17492",
+    "2604.21689",
+    "2604.21904"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.21915"
+    ],
+    "视频生成模型": [
+      "2604.21686",
+      "2604.21931"
+    ],
+    "图片生成模型": [
+      "2604.10268",
+      "2604.17492",
+      "2604.21689",
+      "2604.21904"
+    ]
+  },
+  "base_info": {
+    "2506.17001": {
+      "title": "PersonalAI: A Systematic Comparison of Knowledge Graph Storage and Retrieval Approaches for Personalized LLM agents",
+      "hf_link": "https://hf-mirror.com/papers/2506.17001"
+    },
+    "2604.08645": {
+      "title": "3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding",
+      "hf_link": "https://hf-mirror.com/papers/2604.08645"
+    },
+    "2604.10268": {
+      "title": "EditCrafter: Tuning-free High-Resolution Image Editing via Pretrained Diffusion Model",
+      "hf_link": "https://hf-mirror.com/papers/2604.10268"
+    },
+    "2604.16926": {
+      "title": "Test-Time Adaptation for EEG Foundation Models: A Systematic Study under Real-World Distribution Shifts",
+      "hf_link": "https://hf-mirror.com/papers/2604.16926"
+    },
+    "2604.17295": {
+      "title": "LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics",
+      "hf_link": "https://hf-mirror.com/papers/2604.17295"
+    },
+    "2604.17492": {
+      "title": "Coevolving Representations in Joint Image-Feature Diffusion",
+      "hf_link": "https://hf-mirror.com/papers/2604.17492"
+    },
+    "2604.19734": {
+      "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+      "hf_link": "https://hf-mirror.com/papers/2604.19734"
+    },
+    "2604.20156": {
+      "title": "Temporally Extended Mixture-of-Experts Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.20156"
+    },
+    "2604.20244": {
+      "title": "Hybrid Policy Distillation for LLMs",
+      "hf_link": "https://hf-mirror.com/papers/2604.20244"
+    },
+    "2604.20398": {
+      "title": "WebGen-R1: Incentivizing Large Language Models to Generate Functional and Aesthetic Websites with Reinforcement Learning",
+      "hf_link": "https://hf-mirror.com/papers/2604.20398"
+    },
+    "2604.20987": {
+      "title": "Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks",
+      "hf_link": "https://hf-mirror.com/papers/2604.20987"
+    },
+    "2604.21193": {
+      "title": "Trust but Verify: Introducing DAVinCI -- A Framework for Dual Attribution and Verification in Claim Inference for Language Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.21193"
+    },
+    "2604.21300": {
+      "title": "Explainable Disentangled Representation Learning for Generalizable Authorship Attribution in the Era of Generative AI",
+      "hf_link": "https://hf-mirror.com/papers/2604.21300"
+    },
+    "2604.21375": {
+      "title": "VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation",
+      "hf_link": "https://hf-mirror.com/papers/2604.21375"
+    },
+    "2604.21668": {
+      "title": "Encoder-Free Human Motion Understanding via Structured Motion Descriptions",
+      "hf_link": "https://hf-mirror.com/papers/2604.21668"
+    },
+    "2604.21686": {
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.21686"
+    },
+    "2604.21689": {
+      "title": "StyleID: A Perception-Aware Dataset and Metric for Stylization-Agnostic Facial Identity Recognition",
+      "hf_link": "https://hf-mirror.com/papers/2604.21689"
+    },
+    "2604.21889": {
+      "title": "TingIS: Real-time Risk Event Discovery from Noisy Customer Incidents at Enterprise Scale",
+      "hf_link": "https://hf-mirror.com/papers/2604.21889"
+    },
+    "2604.21904": {
+      "title": "UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection",
+      "hf_link": "https://hf-mirror.com/papers/2604.21904"
+    },
+    "2604.21915": {
+      "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+      "hf_link": "https://hf-mirror.com/papers/2604.21915"
+    },
+    "2604.21921": {
+      "title": "Context Unrolling in Omni Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.21921"
+    },
+    "2604.21931": {
+      "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+      "hf_link": "https://hf-mirror.com/papers/2604.21931"
+    }
+  },
+  "summaries": {
+    "2506.17001": "个性化知识图谱记忆框架对比  \n自然语言处理;检索增强生成;个性化智能体记忆  \n个性化大模型面临有效利用用户历史交互的挑战  \n提出基于知识图谱的外部记忆框架，设计混合图结构与检索机制并进行评测",
+    "2604.08645": "3D大模型的幻觉抑制方法  \n具身智能;三维场景理解;三维大语言模型幻觉消减  \n大模型作为三维具身智能体的核心，其幻觉问题会导致决策不安全和不可靠。  \n提出3D-VCD方法，通过对比扰动前后的三维场景图来抑制幻觉，无需训练即可提升三维推理的可靠性。",
+    "2604.10268": "免调优高分辨率图像编辑\n计算机视觉;生成模型;高分辨率图像编辑\n现有扩散模型图像编辑方法难以处理任意长宽比或更高分辨率的图像。\n提出EditCrafter，通过分块反转和噪声阻尼流形约束引导，实现无需调优的高质量编辑。",
+    "2604.16926": "脑电基础模型测试时适应研究\n机器学习;脑电信号处理;测试时适应基准评测\n脑电基础模型面临临床部署时的分布偏移，测试时适应是无需源数据的可行方案。\n系统评估多种测试时适应方法在真实分布偏移下的效果，发现无优化方法更稳定可靠。",
+    "2604.17295": "构建分层时序推理模型\n时间序列分析;时序推理;时序感知增强\n时间序列理解对大型语言模型是一个挑战，现有研究和评测存在局限。\n提出了分层时序推理数据集和融合视觉与数值的增强模型，通过课程学习提升了推理性能。",
+    "2604.17492": "联合扩散中语义空间协同优化\n生成模型;扩散模型;语义表征优化\n现有联合图像-特征扩散模型使用固定的预训练特征空间，限制了生成性能。\n我们提出了协同演化表征扩散框架，通过联合优化轻量投影层使语义空间适应生成任务，提升了收敛速度与生成质量。",
+    "2604.19734": "人形机器人跨身体策略学习框架\n机器人；具身智能；人形机器人策略学习\n人形机器人训练缺乏数据，但大量人类视频数据因身体结构差异难以直接利用。\n提出UniT框架，通过视觉锚定构建统一物理语言，实现人类到人形机器人的高效策略学习与动态建模，提升数据利用率和泛化能力。",
+    "2604.20156": "延长专家混合模型切换间隔\n机器学习;大规模语言模型;专家混合模型优化\n专家混合模型通过频繁切换专家提升能力，但高切换率导致内存优化困难。\n引入强化学习选项框架，在模型层中学习控制切换时机和专家加载，显著降低切换率同时保持性能。",
+    "2604.20244": "用混合策略蒸馏优化大语言模型\n自然语言处理;大语言模型压缩;知识蒸馏\n知识蒸馏是压缩大语言模型的重要方法，但其效果受多种设计因素影响。\n论文提出了混合策略蒸馏方法，整合不同蒸馏优势并改进数据策略，在多项任务中提升了模型的效率和性能。",
+    "2604.20398": "强化学习训练小模型生成多页网站\n自然语言处理;代码生成;多页网站生成\n大模型难以直接生成功能与视觉俱佳的多页网站，现有方法存在成本高或能力有限的问题。\n提出WebGen-R1框架，通过结构化生成和混合奖励，将小模型训练成能生成可部署、美观的多页网站。",
+    "2604.20987": "大模型协同进化提升长程任务能力\n自然语言处理；智能体与强化学习；游戏智能体技能学习\n长程交互环境需要智能体进行多步推理和技能链式调用，但大语言模型缺乏跨情景的结构化技能发现与复用机制。\n我们提出了COSPLAY框架，通过决策智能体与技能库智能体的协同进化，从无标注轨迹中提取可复用技能并优化决策，在多个游戏环境中显著提升了任务完成效果。",
+    "2604.21193": "提升语言模型事实可靠性验证框架  \n自然语言处理;语言模型可信度;事实核查与归因  \n大语言模型存在事实错误风险，需在高风险领域提升输出可信度。  \n提出DAVinCI框架，通过双重归因与验证显著提升事实核查准确率。",
+    "2604.21300": "可解释作者风格解耦学习\n自然语言处理;表征学习;作者身份归属\n现有方法存在内容与风格纠缠问题，泛化性差。\n提出可解释作者风格变分自编码器，通过设计解耦风格与内容，提升泛化性和可解释性。",
+    "2604.21375": "自动GUI代理框架防停防循环  \n智能体与人机交互;具身智能与GUI自动化;GUI代理的鲁棒性框架  \n自主GUI代理常因过早停止或陷入循环而失败  \n提出模块化框架VLAA-GUI，集成验证、防循环与搜索组件提升性能",
+    "2604.21668": "用结构化文本描述理解人体运动\n计算机视觉；运动分析与理解；人体运动理解\n现有基于大模型的人体运动理解方法依赖专门的编码器进行模态对齐，未能充分利用大模型已有的世界知识和推理能力。\n提出结构化运动描述方法，将关节位置序列转化为结构化的文字描述，使大模型无需专用编码器即可直接处理和理解运动，在多项任务上取得领先效果。",
+    "2604.21686": "构建交互式视频生成统一评测基准\n生成式人工智能;视频生成;交互式视频世界模型评测\n当前交互式视频生成模型各自为政，缺乏公平比较的标准测试条件。\n推出了首个提供统一场景、轨迹和控制接口的基准套件WorldMark，并配套在线对战平台。",
+    "2604.21689": "风格化人脸身份识别数据集\n计算机视觉;人脸识别与生成;风格化人脸身份评估\n当前人脸风格化技术难以保持身份一致性，现有身份编码器在风格化图像上表现脆弱。\n构建了包含人类感知数据的数据集和评估框架，并微调模型以提升跨风格身份识别的鲁棒性。",
+    "2604.21889": "企业级客户事件实时风险发现\n自然语言处理;事件挖掘;客户事件降噪\n背景/任务:大型云服务需实时发现监控遗漏的技术风险，但客户事件数据噪声大、语义复杂，难以提取有效信息。\n做了什么:提出TingIS系统，通过事件链接引擎结合索引和大模型进行事件合并，结合路由和降噪管道，实现高吞吐下的低延迟和高发现率。",
+    "2604.21904": "统一生成对抗图像检测框架\n计算机视觉;图像生成与检测;生成图像检测与对抗\n尽管图像生成与生成图像检测各自发展迅速，但两者架构差异显著且协同潜力未充分发挥。\n提出UniGenDet统一框架，通过跨任务协同机制在两类任务上均取得先进性能。",
+    "2604.21915": "视频重拍四维点云法\n计算机视觉；三维场景重建；动态视频重拍\n现有方法在真实动态视频的深度估计和视角控制上存在不足。\n我们构建了四维点云表示并利用多视角数据训练，实现了鲁棒的动态场景重拍。",
+    "2604.21921": "多模态模型上下文展开\n多模态学习;跨模态理解;统一多模态模型\n背景是现有模型难以联合处理文本图像视频三维等多种模态并充分利用其互补信息。\n提出统一多模态模型Omni通过原生多模态训练实现上下文展开提升跨模态推理与生成性能。",
+    "2604.21931": "学习视频时间感知与控制\n计算机视觉;视频分析;时间速度感知与控制\n研究如何让计算机理解和控制视频中时间流动的速度。\n他们开发了自监督模型来检测视频速度变化，并用其构建了最大的慢动作数据集，进而实现了可控速度的视频生成和时间超分辨率。"
+  },
+  "deep_analysis": {
+    "2604.17492": "这篇论文是关于**图像生成**领域的研究，具体来说是基于**扩散模型（Diffusion Models）** 的改进工作。下面我会用简单的语言为你梳理这篇论文的核心内容。\n\n---\n\n### 1. 论文所在的任务是什么？\n- **任务输入**：一个随机噪声（或带有条件信息的噪声）。\n- **任务输出**：一张高质量的生成图像。\n- **任务功能**：通过学习数据的分布，实现从噪声到真实图像的转换，用于图像生成、编辑等任务。\n\n---\n\n### 2. 这篇论文想解决什么问题？\n现有的扩散模型通常使用**固定的语义表示空间**（例如通过PCA或预训练编码器提取的特征）来辅助生成过程。这些表示空间是独立构建的，不与生成任务一起优化，可能导致生成效果不够理想。  \n**核心问题**：固定的语义表示空间可能无法充分适应生成任务的需求，限制了模型的表达能力。\n\n---\n\n### 3. 论文的核心思路是什么？\n论文提出 **“协同演化表示扩散”（CoReDi）** 框架，核心思想是：  \n**让语义表示空间与扩散模型一起训练、一起优化**。  \n具体来说：  \n- 不再使用固定的语义表示，而是通过一个**可学习的线性投影层**将预训练编码器的特征映射到一个新的表示空间。\n- 这个投影层会随着扩散模型的训练而不断调整，使语义表示空间**逐渐适应生成任务的需求**。\n- 为了避免训练中出现的退化问题（如特征坍缩），论文引入了**停止梯度（Stop-Gradient）、批量归一化（Batch Normalization）和多种正则化方法**来稳定训练。\n\n---\n\n### 4. 结果怎么样？\n论文在**VAE潜在空间扩散**和**像素空间扩散**两种设定下进行了实验，结果显示：  \n- **CoReDi能够更快收敛，生成质量更高**（在FID等指标上优于固定表示空间的基线模型）。\n- 学习到的表示空间具有**更强的语义结构**，能够更好地辅助图像生成。\n- 正则化方法有效防止了特征坍缩，确保了表示空间的多样性和信息量。\n\n---\n\n### 5. 模型结构是什么？\n**基模**：扩散模型（如DDPM/DDIM） + 预训练视觉编码器（如CLIP或DINO）。\n\n**整体流程**：  \n1. **输入**：随机噪声 \\( z \\)（在潜在空间或像素空间）。  \n2. **特征提取**：使用**预训练编码器**（冻结参数）从输入图像中提取高层语义特征。  \n3. **可学习投影**：通过一个**轻量级线性投影层**将提取的特征映射到新的表示空间。这个投影层是**可训练的**。  \n4. **联合扩散**：将投影后的语义表示与图像潜在表示（或像素表示）**拼接在一起**，作为扩散模型的输入。  \n5. **训练**：  \n   - 扩散模型学习去噪过程，同时投影层也通过梯度更新优化。  \n   - 使用**停止梯度**防止目标表示被“偷懒”优化。  \n   - 通过**批量归一化**稳定特征尺度。  \n   - 加入**正则化项**（如特征方差正则化、正交约束等）防止特征坍缩。  \n6. **输出**：通过多步去噪，最终生成高质量的图像。\n\n---\n\n### 总结\n这篇论文的核心贡献是提出了一个**让语义表示空间与扩散模型协同演化**的训练框架，通过可学习的投影层和多种稳定化技术，使表示空间更好地适应生成任务，从而提升图像生成的质量和效率。\n\n如果你对某个部分（如正则化方法或实验细节）想了解更多，我可以进一步解释！",
+    "2604.21686": "好的，没问题！我这就用通俗易懂的语言，为你梳理一下这篇论文的核心内容。\n\n---\n\n### 1. 任务是什么？\n这篇论文讨论的是 **“交互式视频世界模型”** 这个任务。\n\n*   **任务输入**：一张图片（比如一个游戏场景的截图）+ 一系列用户的操作指令（比如“前进”、“左转”、“跳跃”）。\n*   **任务输出**：根据输入图片和操作指令，生成一段连续的、符合逻辑的视频。\n*   **任务功能**：目标是创造一个 **“可交互的虚拟世界”** 。你可以把它想象成一个“视频生成器版”的模拟游戏。你给一张初始画面和操作命令，模型就能预测并“播放”出接下来会发生什么，让你感觉就像在控制一个角色或摄像机在这个世界里探索。\n\n### 2. 想解决什么问题？\n论文要解决的核心问题是：**如何公平、科学地比较不同的交互式视频世界模型？**\n\n*   **现状**：现在市面上有很多厉害的模型（比如 Genie, YUME, HY-World 等），但每个模型都用自己的“考场”（私有测试数据和轨迹）和“评分标准”来证明自己最厉害。\n*   **问题**：这就像让不同国家的学生参加各自的考试，然后用各自的分数来排名，这显然不公平。我们无法知道一个模型是真的更聪明，还是仅仅因为它考了自己擅长的题。\n*   **目标**：论文想建立一个 **公共、统一、标准的“奥林匹克赛场”** ，让所有模型都在同一个起跑线上比赛，这样才能看出谁真正强大。\n\n### 3. 核心思路是什么？\n论文的核心思路是：**“统一输入，标准化评估”**。\n\n他们构建了一个名为 **WorldMark** 的基准测试套件，包含三个关键部分：\n\n1.  **标准化的“考题库”**：精心设计了500个测试案例，覆盖不同视角（第一人称/第三人称）、不同风格（写实/卡通）和不同难度，确保测试全面。\n2.  **统一的“操作翻译器”**：这是最关键的一步！不同的模型“听”得懂的操作指令格式不一样（有的要文字描述，有的要坐标，有的要手柄信号）。WorldMark 定义了一套通用的“WASD”键盘操作指令，然后为每个模型配备一个“翻译器”，把通用指令精准翻译成该模型能理解的格式。这样，所有模型接收到的就是 **语义完全相同的指令**。\n3.  **模块化的“评分系统”**：提供一套评估工具，从**视觉质量、指令跟随准确性、世界一致性**（比如物体不会凭空消失或变形）等多个维度给生成的视频打分。而且这个系统是模块化的，未来有更好的评估方法可以很方便地替换进去。\n\n### 4. 结果怎么样？\n论文通过 WorldMark 对6个主流模型进行了公平测试，得到了几个重要发现：\n\n*   **揭示了真实差距**：在统一的测试条件下，不同模型的表现差异巨大。有些模型在自家测试上看起来不错，但在标准测试中暴露了问题（如画面闪烁、不跟指令、物体变形等）。这证明了统一基准的必要性。\n*   **量化了模型能力**：他们给出了各个模型在不同维度（如视觉质量、控制对齐）上的具体分数和排名，为研究者提供了清晰的性能对比。\n*   **推出了在线竞技场**：他们不仅做了离线测试，还建立了一个叫 **“World Model Arena”** 的在线平台。任何人都可以上传指令，让不同的模型“同台竞技”，生成视频并排对比，并有一个实时排行榜。\n\n### 5. 模型结构/整体流程\n这篇论文 **并没有提出一个新的生成模型**，它提出的是一个**评估框架和基准测试工具**。所以，它本身没有像Transformer那样的“模型结构”。\n\n它的**整体流程**更像一个**标准化的测试流水线**：\n\n1.  **输入准备**：\n    *   从 WorldMark 的“考题库”中选取一个**测试案例**，其中包括一张**参考图片**和一个预定义的**标准动作序列**（比如 [W, A, S, D, 左转...]）。\n2.  **指令翻译**：\n    *   将标准的动作序列，通过论文设计的 **“统一动作映射层”** ，翻译成目标模型（如 YUME、Genie）能够理解的**原生控制格式**（可能是文字提示、姿态参数等）。\n3.  **模型推理**：\n    *   将**参考图片**和**翻译后的动作指令**，一起输入到待评估的**交互式视频世界模型**中。\n4.  **视频生成**：\n    *   目标模型运行，输出一段**生成的视频**。\n5.  **多维度评估**：\n    *   使用 WorldMark 提供的评估工具包，对生成的视频进行自动评分：\n        *   **视觉质量**：画面是否清晰、美观。\n        *   **控制对齐**：生成视频中摄像机或角色的运动，是否严格遵循了输入的动作指令。\n        *   **世界一致性**：视频中物体的外观、位置、光照等是否在时间上保持连贯、合理，没有出现违反物理规律或逻辑的突变。\n6.  **结果汇总与比较**：\n    *   收集所有模型在所有测试案例上的分数，进行汇总、排名和分析，得出公平的对比结论。\n\n**简单总结**：这篇论文就像为“交互式视频生成”这个新兴领域建立了一套“高考”体系，统一了考卷、翻译了题目、制定了评分标准，让所有“考生”（不同模型）能够公平竞赛，从而推动整个领域更健康、更透明地发展。",
+    "2604.21689": "这篇论文《StyleID》是关于“人脸风格化”和“身份识别”交叉领域的研究。我尽量用简单的语言为你解释它的核心内容。\n\n### (1) 任务是什么？\n*   **任务输入**：一对人脸图像。其中一张是原始照片（比如你的自拍），另一张是经过风格化处理后的图像（比如把你的自拍变成卡通画、油画或素描效果）。\n*   **任务输出**：判断这两张图像里的是否是同一个人。换句话说，就是判断风格化处理有没有“失真”，导致你认不出这是同一个人了。\n*   **任务功能**：评估或设计一种 **“风格化无关”** 的身份识别系统。这个系统要像人一样，能忽略掉图像的**风格、画风、颜色、纹理**等变化，只抓住决定“你是谁”的核心身份特征。\n\n### (2) 想解决什么问题？\n现在很多AI工具（如ChatGPT的图片生成、各种头像制作App）都能给人脸做风格化。但有一个大问题：\n**现有的“人脸识别”模型，都是在大量真实照片上训练出来的。当它们面对风格化后的图像时，表现非常糟糕！**\n\n具体来说：\n*   **识别错误**：模型可能因为图像从照片变成了卡通（只是风格变了），就认为这完全是两个人。\n*   **放过错误**：模型也可能因为两张画风相似的卡通脸，就错误地认为他们是同一个人，即便他们的五官其实差别很大。\n*   **缺乏标准**：目前没有一个好的、基于**人类感知**的标准，来衡量不同风格化方法在“保持身份一致性”方面的好坏。大家要么错误地沿用照片识别模型，要么用不相关的指标（如图像整体相似度）。\n\n这篇论文就是想解决这个“**风格化图像的身份识别缺乏可靠评估标准和有效模型**”的问题。\n\n### (3) 核心思路是什么？\n核心思路是 **“向人看齐”** ，用人类的感知来指导和校准AI模型。\n\n1.  **构建人类感知数据集**：他们不是凭空想一个算法，而是先去做实验，收集**真人**怎么看风格化图像的身份。\n    *   **StyleBench-H（基准数据集）**：用不同的风格化方法、不同的“风格强度”，生成大量风格化图像。然后让真人来玩“找相同”游戏，判断两张图是不是同一个人。这样就得到了一个“**人类判断标准**”。\n    *   **StyleBench-S（训练数据集）**：进行更精细的“二选一”实验，绘制出“**人类识别准确率 vs. 风格强度**”的曲线。这条曲线告诉我们，对于每种风格，人类在多大强度下还能认出同一个人。这些数据用来**训练**模型。\n\n2.  **用人类数据校准AI模型**：他们拿一个现成的、在照片上表现很好的人脸识别模型（作为**基模**），然后用上面收集到的、代表人类判断的 **StyleBench-S** 数据集去“微调”它。\n    *   目标是让这个模型在面对风格化图像时，其内部的“相似度打分”顺序，能和人眼判断的顺序保持一致。也就是说，**模型认为“更像”的配对，人也觉得“更像”**。\n\n### (4) 结果怎么样？\n*   **效果好**：经过用人类数据校准后的 **StyleID 模型**，在判断风格化图像身份时，与**人类判断的相关性**显著高于所有之前的模型。\n*   **更鲁棒**：对于论文中没见过的、由艺术家手绘的肖像风格，StyleID 模型的识别能力也更强。\n*   **贡献开源**：他们公开了数据集（StyleBench-H/S）、代码和训练好的模型，方便其他研究者使用和比较。\n\n### (5) 模型结构与流程\n这篇论文没有提出一个全新的、复杂的模型结构，它的核心贡献在于**数据集**和**训练方法**。\n\n*   **基模**：他们使用了现有优秀的人脸识别模型作为基础，论文中主要使用的是 **“FaceNet”** 或类似架构的模型。你可以把它理解为一个已经学会从照片中提取“身份特征向量”的专家。\n*   **整体流程**：\n    1.  **输入**：一对图像 `(原始照片A, 风格化图像B)`。\n    2.  **特征提取**：将A和B分别输入 **StyleID 模型（即用StyleBench-S微调后的基模）**。\n    3.  **获得特征向量**：模型为每张图像输出一个高维的“身份特征向量”。这个向量应该只编码“这个人是谁”的信息，过滤掉了风格、光照等干扰。\n    4.  **计算相似度**：计算这两个特征向量之间的**余弦相似度**（一个介于-1到1之间的值，越接近1表示越相似）。\n    5.  **输出判断**：将这个相似度值与一个**阈值**比较。如果大于阈值，则判断为“同一个人”；否则判断为“不同人”。\n*   **关键的训练流程（如何得到StyleID模型）**：\n    1.  收集 **StyleBench-S** 数据（人类对风格化图像对的相似度判断）。\n    2.  取一个预训练好的**人脸识别基模**。\n    3.  用 **StyleBench-S** 数据对这个基模进行**微调**。训练时，模型的**目标**不是简单地分类，而是让它输出的特征向量之间的**相似度排序**，尽可能与人类判断的排序一致。\n    4.  训练完成后，就得到了 **StyleID 模型**，它继承了基模的强大特征提取能力，同时又具备了人类对风格化图像的判断逻辑。\n\n**简单总结**：这篇论文发现了一个实际问题（AI不擅长判断风格化人脸的身份），然后想了一个很聪明实在的办法——**“让AI去学习人类是怎么看的”**。他们通过精心设计实验获取人类数据，并用这些数据去微调现有模型，最终得到了一个更符合人类感知、更擅长处理风格化图像的“风格化无关身份识别模型”。",
+    "2604.21904": "好的，没问题！我以博士生学弟/学妹的身份，用简单的语言为你拆解这篇论文。\n\n### (1) 任务是什么？\n这篇论文同时处理两个看似相反的任务，把它们统一到了一个模型中：\n*   **任务输入**：文本描述（比如“一只戴着帽子的猫”）。\n*   **任务输出**：可以有两个分支：\n    1.  **生成图像**：根据文本描述，生成一张看起来真实的图片。\n    2.  **检测图像**：对于输入的一张图片（无论是模型自己生成的，还是别人给的），判断它是“AI生成的”还是“真实拍摄的”，并且最好能说出哪里看起来假（可解释性）。\n*   **任务功能**：构建一个既能“造图”又能“验图”的智能系统，让这两个能力互相促进，共同进化。\n\n### (2) 想解决什么问题？\n目前AI图像生成和AI图像检测是两个独立发展的领域，存在一个“矛与盾”的困境：\n*   **生成器（矛）**：只管把图造得越来越真，但造出来的图在细节上（光影、物理规律）可能还是有破绽。\n*   **检测器（盾）**：总是跟在生成器后面跑。它们用旧的假图训练，一旦遇到新的、没见过的生成器或技术，检测效果就变差。它们也不知道生成器是怎么“造假”的，只能“死记硬背”一些假图特征。\n\n**核心问题**：这种分离的发展模式，导致检测器总是落后，且缺乏对“造假过程”的理解，泛化能力弱。论文想打破这个隔阂。\n\n### (3) 核心思路是什么？\n**核心思路是“左右互搏，共同进化”**。用一个统一的模型，让生成和检测两个任务相互学习、相互促进。\n\n1.  **用生成来辅助检测（理解如何造假）**：如果我的模型自己就会生成图片，那它自然就“懂”AI图片是怎么造出来的。当它再去检测别人造的假图时，就能从“制造者”的角度去分析破绽，而不是仅仅看表面特征。这提升了检测器的**泛化能力**和**可解释性**（能说出哪里假）。\n2.  **用检测来指导生成（造得更真）**：我的模型内部还有一个“质检员”（检测分支）。每次生成一张图，这个“质检员”就会立刻检查，并反馈：“你造的这张图，这里光影不对，那里纹理有瑕疵”。生成器收到这个严格的“内部反馈”后，就会努力改进，造出更能通过“质检”的、更逼真的图片。\n\n### (4) 结果怎么样？\n根据论文中的实验（在多个数据集上测试）：\n*   **在检测任务上**：他们的统一模型在判断图片真假的准确率上，达到了**最先进的水平（State-of-the-Art）**，并且对于没见过的、新的生成器造出的图片，检测效果也很好（泛化性强）。\n*   **在生成任务上**：在“质检员”的严格反馈下，模型生成的图片质量（逼真度、与文本的匹配度）也**非常高**，证明了“以检促生”的有效性。\n\n### (5) 模型结构与流程\n*   **基模**：论文没有明确说具体基于哪个开源模型，但从架构描述看，它很可能基于一个**大型多模态模型（Large Multimodal Model, LMM）**，比如类似 **Flamingo**、**BLIP-2** 或 **LLaVA** 这种能同时处理图像和文本的模型作为基础进行改造。\n*   **核心组件**：**共生多模态自注意力机制**。你可以把它想象成模型内部的一个“多功能会议室”，能让图像信息和文本信息充分、智能地交流。\n*   **整体流程**：\n    1.  **输入**：你给模型一段文本（如“夕阳下的帆船”）。\n    2.  **统一编码**：模型将文本和（如果是检测任务）或即将生成的图像特征，一起送入那个“多功能会议室”（共生注意力模块）进行深度融合和理解。\n    3.  **任务分流**：\n        *   **如果执行生成任务**：模型基于融合后的理解，通过一个**图像解码器**，一步步“画”出符合描述的图片。画完后，**立刻**调用内部的检测分支对这个刚生成的图做“自检”。\n        *   **如果执行检测任务**：模型直接对输入的图片进行分析。因为它自己也会生成，所以它能从“造假者”视角，在“会议室”里对比真实图片特征和生成逻辑，最后输出一个判断（真/假），并可能用文本指出可疑之处。\n    4.  **协同训练关键**：在训练时，两个任务是**一起训练**的。生成任务的损失（让图更真更符合文本）和检测任务的损失（准确区分真假）会**同时**用来更新整个模型。此外，还有一个 **“检测器通知的生成对齐”** 机制，这其实就是把检测分支提供的“哪里假”的**强反馈信号**，直接作为指导，用来调整生成过程，确保生成的图能通过更严格的检测标准。\n\n**简单比喻**：这个模型就像一个既是“顶尖画家”又是“顶级鉴定家”的大师。他画画时，会用自己鉴定家的眼光不断挑剔自己的画作，从而画得更逼真（**以检促生**）。他鉴定时，因为自己精通所有绘画技巧和可能露馅的地方，所以一眼就能看穿赝品的破绽（**以生促检**）。两者合二为一，共同进步。",
+    "2604.21915": "我来用简单易懂的语言为你解读这篇论文的核心内容。\n\n## (1) 任务是什么\n\n**任务功能**：视频重拍（Video Reshooting）\n\n**任务输入**：\n1. 一段已有的视频（源视频）\n2. 用户定义的新相机轨迹（目标相机）\n\n**任务输出**：一段新的视频，展示**同一个动态场景**，但是从**不同角度和不同相机路径**拍摄的\n\n**简单理解**：就像电影拍摄中，同一个场景用不同机位重新拍了一遍，但这里是用AI自动生成的。\n\n## (2) 想解决什么问题\n\n现有方法存在三个主要问题：\n1. **深度估计不准**：从单视角视频重建3D结构时，深度信息不准确，导致生成的画面几何失真\n2. **内容保持不好**：从新角度拍摄时，原来视频中能看到的内容在新视频中丢失或变形\n3. **相机控制不精确**：难以精确控制新相机的运动轨迹，特别是当新相机与原来的拍摄角度差异很大时\n\n## (3) 核心思路\n\n论文的核心创新是使用**4D点云**（3D空间+时间维度）来“锚定”整个场景：\n\n1. **构建4D点云表示**：\n   - 从源视频中分离出静态像素（背景）和动态像素（运动物体）\n   - 将静态像素在整个时间线上保持一致（时间持久性）\n   - 形成一个包含时空信息的4D点云\n\n2. **更鲁棒的训练方式**：\n   - 传统方法：只用正面视角的干净深度图训练\n   - Vista4D：用多视角的动态数据训练，包含从侧面看时的深度估计错误\n   - 这样模型在真实应用中对点云渲染的瑕疵更加鲁棒\n\n3. **双重条件输入**：\n   - 同时输入源视频和点云渲染结果\n   - 让模型既能参考原始内容，又能理解场景的3D结构\n\n## (4) 结果怎么样\n\n**比现有方法更好**：\n- 更好地保持了原视频内容\n- 更精确的相机控制\n- 更高的视觉质量\n- 减少了时间上的闪烁（画面更稳定）\n\n**额外能力**：\n- 动态场景扩展（扩展画面边界外的内容）\n- 4D场景重组（重新组合场景元素）\n- 支持长视频推理（内存效率更高）\n\n## (5) 模型结构和流程\n\n**基模**：基于视频扩散模型（Video Diffusion Model）\n\n**整体流程**（对照图2）：\n\n1. **输入处理阶段**：\n   - 输入：源视频 + 用户定义的目标相机轨迹\n   - 第一步：对源视频进行静态像素分割（分离背景和前景）\n   - 第二步：进行4D重建，生成包含时空信息的点云\n\n2. **点云渲染阶段**：\n   - 将4D点云按照目标相机的轨迹进行渲染\n   - 生成：点云渲染图 + 透明度掩码（alpha mask）\n\n3. **视频生成阶段**：\n   - 将三样东西同时输入到视频扩散模型：\n     - 源视频（提供内容先验）\n     - 点云渲染图（提供3D结构信息）\n     - 透明度掩码（区分可见/不可见区域）\n   - 模型基于这些条件生成新的视频\n\n4. **输出**：\n   - 一段从新角度、新轨迹拍摄的同一动态场景的视频\n\n**关键区别**：传统方法使用每帧独立的3D点云，而Vista4D使用整个视频的4D点云，让静态背景在时间上保持一致，这是它效果更好的重要原因。\n\n**简单比喻**：就像用乐高积木搭建了一个场景的4D模型，然后你可以把这个模型放在虚拟摄像机前，从任何角度拍摄，AI会帮你“补全”摄像机看不到的部分，保证画面真实自然。"
+  },
+  "images_meta": {
+    "2604.17492": [
+      {
+        "path": "https://arxiv.org/html/2604.17492v1/x1.png",
+        "caption": "Figure 3:Overview of CoReDi. Given an input image, a frozen pretrained visual encoder extracts semantic features, which are projected to a lower-dimensional space via a learnable projectiongϕg_{\\phi}, followed by batch normalization and a regularization loss to prevent collapse. Both the noisy image tokens and the noisy coevolving feature tokens are passed as input to a diffusion backbone, which jointly predicts the image and representation velocities. A stop-gradient is applied through the clean representation target in the representation loss, allowing the projection to coevolve with the generative model without degeneracy.",
+        "caption_zh": "图 3：CoReDi 方法概述。给定输入图像，一个冻结的预训练视觉编码器提取语义特征，这些特征通过可学习的投影层 g_phi 映射到低维空间，随后经过批归一化以及用于防止塌缩的正则化损失。带噪的图像标记和带噪的协同演化特征标记均作为输入传入扩散主干网络，该网络联合预测图像和表征的速度。在表征损失中，对干净表征目标应用停止梯度操作，使得投影层能够与生成模型协同演化而不发生退化。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.17492v1/figs/0_image.png",
+        "caption": "w/o RegularizationFeature Variance RegularizationFigure 4:Regularization Prevents Feature Collapse.Visualization of all88channels of the coevolving representationz0~\\tilde{\\textbf{z}_{0}}at200200K steps, under two training configurations. Without regularization, the projected channels collapse, failing to capture diverse semantic information. The Feature Variance Regularization strategy successfully prevents collapse, yielding semantically meaningful channel activations.",
+        "caption_zh": "图4：正则化防止特征塌陷。在两种训练配置下，演化表示 \tilde{\textbf{z}_{0}} 的全部 88 个通道在 200K 步时的可视化。无正则化时，投影通道发生塌陷，无法捕获多样化的语义信息；而特征方差正则化策略成功防止了塌陷，产生了具有语义意义的通道激活。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.17492v1/figs/zproj_outputs/0_image.png",
+        "caption": "ImageDINOv2+CoReDiMOCOv3+CoReDi100K200K300K400K4M510152025×13\\times 13FIDREPA-XL/2ReDi-XL/2CoReDi-XL/250K100K150K200K2035507090×2\\times 2FIDDeCo-L/16CoReDi-L/16Figure 2:(Left) Comparison of fixed PCA and learnedCoReDirepresentations forDINOv2andMOCOv3. The learned projections yield cleaner, more structured representations with coherent spatial organization, while the fixed PCA projections produce noisier, less semantically meaningful activations. (Right) By jointly adapting the representation space alongside the generative model,CoReDiconsistently speeds up convergence. In latent space (Top),CoReDioutperformsReDiand, notably, converges∼13×\\sim 13\\timesfaster thanREPA. In pixel space (Bottom) it improves convergence by×2\\times 2overDeCo.",
+        "caption_zh": "图 2：（左）DINOv2 与 MOCOv3 的固定 PCA 与学习式 CoReDi 表征对比。学习式投影产生更清晰、更具结构性的表征，具有连贯的空间组织；而固定 PCA 投影产生的激活则噪声更多、语义意义较弱。（右）通过联合调整表征空间与生成模型，CoReDi 能持续加速收敛。在潜空间中（上），CoReDi 优于 ReDi，且收敛速度显著快于 REPA 约 13 倍；在像素空间中（下），其收敛速度较 DeCo 提升 2 倍。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.21686": [
+      {
+        "path": "https://arxiv.org/html/2604.21686v1/x1.png",
+        "caption": "Figure 1:Overview ofWorldMark.\nCurrent interactive world models each define their own control interfaces, scenes, and evaluation protocols, making cross-model comparison impossible.WorldMarkresolves this fragmentation through three pillars:(a)A curated test suite of 500 cases spanning first- and third-person views with both photorealistic and stylized reference scenes, ensuring broad coverage of real-world evaluation conditions.(b)A unified action-mapping layer that translates a shared action vocabulary—WASD for movement and L/R for yaw rotation—into each model’s native control format (caption prompts, pose parameters, gamepad signals, action vectors, etc.), so that all models receive semantically identical instructions.(c)Under these standard conditions, feeding thesamereference image andsameaction sequence to different models reveals striking quality divergence that proprietary benchmarks obscure.",
+        "caption_zh": "图1：WorldMark 概述。现有的交互式世界模型各自定义了不同的控制接口、场景和评估协议，导致无法进行跨模型比较。WorldMark 通过三大支柱解决此碎片化问题：(a) 精心构建的测试套件，包含 500 个涵盖第一人称与第三人称视角、兼具真实感与风格化参考场景的测试案例，确保广泛覆盖现实评估条件。(b) 统一的动作映射层，将共享动作词汇——用 WASD 控制移动、L/R 控制偏航旋转——转换为各模型的原生控制格式（描述提示、姿态参数、手柄信号、动作向量等），使所有模型接收语义完全一致的指令。(c) 在此标准化条件下，向不同模型输入相同的参考图像和相同的动作序列，揭示了专有基准所掩盖的显著质量差异。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21686v1/x4.png",
+        "caption": "Figure 4:Context-aware action selection. A VLM analyzes the initial image to identify physical constraints and selects plausible action sequences from the predefined library.",
+        "caption_zh": "图 4：情境感知的动作选择。视觉语言模型通过分析初始图像以识别物理约束，并从预定义的动作序列库中选择可行的动作序列。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21686v1/x3.png",
+        "caption": "Figure 3:The 15 standardized action sequences, ranging from elementary translations and rotations to combined and cyclic trajectories.",
+        "caption_zh": "图 3：15 个标准化动作序列，涵盖从基本平动与转动到复合及循环轨迹的多种类型。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.21689": [
+      {
+        "path": "https://arxiv.org/html/2604.21689v1/figure/teaserrm.png",
+        "caption": "Figure 1.StyleBench-His a human-judged benchmark for identity verification under controllable face stylization, andStyleBench-Sis a large-scale synthetic supervision set derived from human-calibrated recognition statistics.StyleIDis trained on StyleBench-S, enabling robust identity recognition across diverse styles while remaining aligned with human judgment. The resulting model supports identity recognition, stylization, and retrieval tasks.",
+        "caption_zh": "图 1：StyleBench-H 是一个基于人工判定的可控人脸风格化身份验证基准，StyleBench-S 则是源自人工校准识别统计数据的大规模合成监督数据集。StyleID 在 StyleBench-S 上训练，能够在多种风格下实现鲁棒的身份识别，同时保持与人类判断的一致性。该模型支持身份识别、风格化与检索任务。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21689v1/figure/train.png",
+        "caption": "Figure 7.StyleID training overview. While the angular margin loss is computed with respect to class centers and the supervised contrastive loss is computed withpositive-negativepairs rather than individual samples, we visualize it using sample-level relationships for simplicity.",
+        "caption_zh": "图 7.StyleID 训练流程示意图。尽管角度间隔损失是针对类别中心计算的，监督对比损失是基于正负样本对而非单个样本计算的，但为简洁起见，我们使用样本层面的关系进行可视化。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21689v1/figure/scale_tpr01.png",
+        "caption": "(a) StyleBench-H (TPR)(b) SKSF-A (TPR)(c) StyleBench-H (AUROC)(d) SKSF-A (AUROC)Figure 8.Performance versus computational cost for StyleID variants across datasets. Panels (a) and (b) show TPR versus GFLOPs, while panels (c) and (d) show AUROC versus GFLOPs. All FLOPs are plotted on a logarithmic scale. Across all datasets and metrics, performance decreases as the model size is reduced.",
+        "caption_zh": "(a) StyleBench-H (TPR)；(b) SKSF-A (TPR)；(c) StyleBench-H (AUROC)；(d) SKSF-A (AUROC) 图 8. 不同数据集上 StyleID 变体的性能与计算成本对比。(a) 和 (b) 子图展示了 TPR 与 GFLOPs 的关系，(c) 和 (d) 子图展示了 AUROC 与 GFLOPs 的关系。所有 FLOPs 均采用对数坐标绘制。在所有数据集和评估指标下，随着模型规模减小，性能均呈现下降趋势。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.21904": [
+      {
+        "path": "https://arxiv.org/html/2604.21904v1/x2.png",
+        "caption": "Figure 2:Overview of the Generation–Detection Unified Fine-tuning (GDUF) pipeline.(a)Generative-Assisted Fake Detection and Interpretation:theSymbiotic Multi-modal Self-Attention (SMSA)guides the detector using generator features for authenticity analysis and textual explanation.\n(b)Image Generation:discriminative cues from the detector are injected into the generator for authenticity-aware synthesis.denotes trainable modules, andindicates frozen ones.",
+        "caption_zh": "图2：生成–检测统一微调（GDUF）流程概述。（a）生成辅助的伪造检测与解释：通过共生多模态自注意力（SMSA）模块，利用生成器的特征引导检测器进行真实性分析和文本解释。（b）图像生成：来自检测器的判别性线索被注入生成器中，以实现真实性感知的合成。表示可训练模块，表示冻结模块。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21904v1/x3.png",
+        "caption": "Figure 3:Detector-Informed Generative Alignment (DIGA) pipeline.The generator () learns from the frozen detector () via feature alignment and flow matching.\nThis detector-informed alignment injects forensic knowledge into the generator, enabling authenticity-aware synthesis while preserving generative fidelity.",
+        "caption_zh": "图 3：检测器知情的生成式对齐（DIGA）流程。生成器（）通过特征对齐与流匹配向冻结的检测器（）学习。这种检测器知情对齐将取证知识注入生成器，使其在保持生成保真度的同时，实现真实性感知的合成。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21904v1/x1.png",
+        "caption": "Figure 1:Our unified framework bridges generation and authenticity discrimination synergistically.\n(a) Generation enhances detection by reducing distributional gaps.\n(b) Detection feedback refines generation for higher realism.\n(c) Our unified model supports multiple input modalities and tasks within a single architecture.",
+        "caption_zh": "图 1：我们的统一框架以协同方式连接生成与真实性鉴别。(a) 生成通过减少分布差异来增强检测能力。(b) 检测反馈优化生成以实现更高真实感。(c) 我们的统一模型在单一架构内支持多种输入模态与任务。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.21915": [
+      {
+        "path": "https://arxiv.org/html/2604.21915v1/x2.png",
+        "caption": "Figure 2:Overview of Vista4D.Given an input source video, we build a 4D point cloud where static pixels are temporally persistent via segmentation and 4D reconstruction. We then render the point cloud in the target cameras which users define. Lastly, the source video and point cloud render & alpha mask are jointly processed by the finetuned video diffusion model to generate a video of the same dynamic scene in the target cameras. We provide model architecture details in SupplementaryB.",
+        "caption_zh": "图2：Vista4D 方法总览。给定输入源视频，我们通过分割与四维重建构建一个四维点云，其中静态像素具有时间持续性。随后，我们将点云渲染至用户定义的目标相机视角中。最后，源视频与点云渲染结果及透明度蒙版经由微调后的视频扩散模型共同处理，从而在目标相机视角下生成同一动态场景的视频。模型架构细节见补充材料 B。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21915v1/x3.png",
+        "caption": "Figure 3:Multiview 4D reconstruction artifacts.(a) Double reprojectionYuet al.[2025]first renders the target video point cloud in the source camera, then rerendering it in the target camera to create occluded regions for paired training, thus viewing the target video depth map from its frontal, artifact-free view. (b) In contrast, rendering the source video point cloud from the target camera with dynamic multiview data exposes non-frontal-view artifacts that better match real-world inference. The above source-target video pair is from MultiCamVideoBaiet al.[2025]with 4D reconstruction by STream3RLanet al.[2025].",
+        "caption_zh": "图3：多视角4D重建伪影对比。(a) 双重重投影法（Yue等人，2025）：首先将目标视频点云在源相机视角下渲染，随后在目标相机视角下再次渲染，以创建用于配对训练的遮挡区域，从而从无伪影的正面视角观察目标视频深度图。(b) 相比之下，利用动态多视角数据从目标相机视角渲染源视频点云，会暴露出非正面视角的伪影，这些伪影更符合真实世界推理场景。上述源-目标视频对来自MultiCamVideo（Bai等人，2025），其4D重建由STream3R（Lan等人，2025）完成。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21915v1/x9.png",
+        "caption": "Figure 9:Long video inference with memory.Vista4D can reshoot long videos by doing inference in chunks. By registering static pixels of newly generated chunks back into the temporally-persistent 4D point cloud, Vista4D maintains an explicit, 4D-grounded memory of generated content. We showcase this above as the camera arcs around the scene, indicated with color-matched yellow and pink boxes.",
+        "caption_zh": "图9：基于记忆的长视频推理。Vista4D 可通过分块推理重新生成长视频。通过将新生成块中的静态像素注册回具有时间持久性的4D点云，Vista4D 对已生成内容保持了显式的、基于4D空间的记忆。上图展示了相机围绕场景进行弧形运动的过程，该过程由色彩匹配的黄色与粉色框标示。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2506.17001": {
+      "abstract": "Personalizing language models by effectively incorporating user interaction history remains a central challenge in the development of adaptive AI systems. While large language models (LLMs), combined with Retrieval-Augmented Generation (RAG), have improved factual accuracy, they often lack structured memory and fail to scale in complex, long-term interactions. To address this, we propose a flexible external memory framework based on a knowledge graph that is constructed and updated automatically by the LLM. Building upon the AriGraph architecture, we introduce a novel hybrid graph design that supports both standard edges and two types of hyper-edges, enabling rich and dynamic semantic and temporal representations. Our framework also supports diverse retrieval mechanisms, including A*, WaterCircles traversal, beam search, and hybrid methods, making it adaptable to different datasets and LLM capacities. We evaluate our system on TriviaQA, HotpotQA, DiaASQ benchmarks and demonstrate that different memory and retrieval configurations yield optimal performance depending on the task. Additionally, we extend the DiaASQ benchmark with temporal annotations and internally contradictory statements, showing that our system remains robust and effective in managing temporal dependencies and context-aware reasoning",
+      "comments": ""
+    },
+    "2604.08645": {
+      "abstract": "Large multimodal models are increasingly used as the reasoning core of embodied agents operating in 3D environments, yet they remain prone to hallucinations that can produce unsafe and ungrounded decisions. Existing inference-time hallucination mitigation methods largely target 2D vision-language settings and do not transfer to embodied 3D reasoning, where failures arise from object presence, spatial layout, and geometric grounding rather than pixel-level inconsistencies. We introduce 3D-VCD, the first inference-time visual contrastive decoding framework for hallucination mitigation in 3D embodied agents. 3D-VCD constructs a distorted 3D scene graph by applying semantic and geometric perturbations to object-centric representations, such as category substitutions and coordinate or extent corruption. By contrasting predictions under the original and distorted 3D contexts, our method suppresses tokens that are insensitive to grounded scene evidence and are therefore likely driven by language priors. We evaluate 3D-VCD on the 3D-POPE and HEAL benchmarks and show that it consistently improves grounded reasoning without any retraining, establishing inference-time contrastive decoding over structured 3D representations as an effective and practical route to more reliable embodied intelligence.",
+      "comments": "8 pages, 6 figures, Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026"
+    },
+    "2604.10268": {
+      "abstract": "We propose EditCrafter, a high-resolution image editing method that operates without tuning, leveraging pretrained text-to-image (T2I) diffusion models to process images at resolutions significantly exceeding those used during training. Leveraging the generative priors of large-scale T2I diffusion models enables the development of a wide array of novel generation and editing applications. Although numerous image editing methods have been proposed based on diffusion models and exhibit high-quality editing results, they are difficult to apply to images with arbitrary aspect ratios or higher resolutions since they only work at the training resolutions (512x512 or 1024x1024). Naively applying patch-wise editing fails with unrealistic object structures and repetition. To address these challenges, we introduce EditCrafter, a simple yet effective editing pipeline. EditCrafter operates by first performing tiled inversion, which preserves the original identity of the input high-resolution image. We further propose a noise-damped manifold-constrained classifier-free guidance (NDCFG++) that is tailored for high resolution image editing from the inverted latent. Our experiments show that the our EditCrafter can achieve impressive editing results across various resolutions without fine-tuning and optimization.",
+      "comments": "Accepted to CVPRW 2026 Proceeding Track. Project page: <a class=\"link-external link-https\" href=\"https://editcrafter.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.16926": {
+      "abstract": "Electroencephalography (EEG) foundation models have shown strong potential for learning generalizable representations from large-scale neural data, yet their clinical deployment is hindered by distribution shifts across clinical settings, devices, and populations. Test-time adaptation (TTA) offers a promising solution by enabling models to adapt to unlabeled target data during inference without access to source data, a valuable property in healthcare settings constrained by privacy regulations and limited labeled data. However, its effectiveness for EEG remains largely underexplored. In this work, we introduce NeuroAdapt-Bench, a systematic benchmark for evaluating test-time adaptation methods on EEG foundation models under realistic distribution shifts. We evaluate representative TTA approaches from other domains across multiple pretrained foundation models, diverse downstream tasks, and heterogeneous datasets spanning in-distribution, out-of-distribution, and extreme modality shifts (e.g., Ear-EEG). Our results show that standard TTA methods yield inconsistent gains and often degrade performance, with gradient-based approaches particularly prone to heavy degradation. In contrast, optimization-free methods demonstrate greater stability and more reliable improvements. These findings highlight the limitations of existing TTA techniques in EEG, provide guidance for future development, and underscore the need for domain-specific adaptation strategies.",
+      "comments": ""
+    },
+    "2604.17295": {
+      "abstract": "Comprehensive understanding of time series remains a significant challenge for Large Language Models (LLMs). Current research is hindered by fragmented task definitions and benchmarks with inherent ambiguities, precluding rigorous evaluation and the development of unified Time Series Reasoning Models(TSRMs). To bridge this gap, we formalize Time Series Reasoning (TSR) via a four-level taxonomy of increasing cognitive complexity. We introduce HiTSR, a hierarchical time series reasoning dataset comprising 83k samples with diverse task combinations and verified Chain-of-Thought (CoT) trajectories. Leveraging HiTSR, we propose LLaTiSA, a strong TSRM that integrates visualized patterns with precision-calibrated numerical tables to enhance the temporal perception of Vision-Language Models (VLMs). Through a multi-stage curriculum fine-tuning strategy, LLaTiSA achieves superior performance and exhibits robust out-of-distribution generalization across diverse TSR tasks and real-world scenarios. Our code is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.17492": {
+      "abstract": "Joint image-feature generative modeling has recently emerged as an effective strategy for improving diffusion training by coupling low-level VAE latents with high-level semantic features extracted from pre-trained visual encoders. However, existing approaches rely on a fixed representation space, constructed independently of the generative objective and kept unchanged during training. We argue that the representation space guiding diffusion should itself adapt to the generative task. To this end, we propose Coevolving Representation Diffusion (CoReDi), a framework in which the semantic representation space evolves during training by learning a lightweight linear projection jointly with the diffusion model. While naively optimizing this projection leads to degenerate solutions, we show that stable coevolution can be achieved through a combination of stop-gradient targets, normalization, and targeted regularization that prevents feature collapse. This formulation enables the semantic space to progressively specialize to the needs of image synthesis, improving its complementarity with image latents. We apply CoReDi to both VAE latent diffusion and pixel-space diffusion, demonstrating that adaptive semantic representations improve generative modeling across both settings. Experiments show that CoReDi achieves faster convergence and higher sample quality compared to joint diffusion models operating in fixed representation spaces.",
+      "comments": ""
+    },
+    "2604.19734": {
+      "abstract": "Scaling humanoid foundation models is bottlenecked by the scarcity of robotic data. While massive egocentric human data offers a scalable alternative, bridging the cross-embodiment chasm remains a fundamental challenge due to kinematic mismatches. We introduce UniT (Unified Latent Action Tokenizer via Visual Anchoring), a framework that establishes a unified physical language for human-to-humanoid transfer. Grounded in the philosophy that heterogeneous kinematics share universal visual consequences, UniT employs a tri-branch cross-reconstruction mechanism: actions predict vision to anchor kinematics to physical outcomes, while vision reconstructs actions to filter out irrelevant visual confounders. Concurrently, a fusion branch synergies these purified modalities into a shared discrete latent space of embodiment-agnostic physical intents. We validate UniT across two paradigms: 1) Policy Learning (VLA-UniT): By predicting these unified tokens, it effectively leverages diverse human data to achieve state-of-the-art data efficiency and robust out-of-distribution (OOD) generalization on both humanoid simulation benchmark and real-world deployments, notably demonstrating zero-shot task transfer. 2) World Modeling (WM-UniT): By aligning cross-embodiment dynamics via unified tokens as conditions, it realizes direct human-to-humanoid action transfer. This alignment ensures that human data seamlessly translates into enhanced action controllability for humanoid video generation. Ultimately, by inducing a highly aligned cross-embodiment representation (empirically verified by t-SNE visualizations revealing the convergence of human and humanoid features into a shared manifold), UniT offers a scalable path to distill vast human knowledge into general-purpose humanoid capabilities.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://xpeng-robotics.github.io/unit/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.20156": {
+      "abstract": "Mixture-of-Experts models, now popular for scaling capacity at fixed inference speed, switch experts at nearly every token. Once a model outgrows available GPU memory, this churn can render optimizations like offloading and pre-fetching ineffective. We make the case that the options framework in reinforcement learning is a perfect match to tackle this problem, and argue for temporally extended mixture-of-experts layers. Building on the option-critic framework with deliberation costs, we add a controller to each layer that learns when to switch expert sets and which to load. By applying this to gpt-oss-20b with low-rank adapters and a self-distillation reward, our method reduces switch rates from over 50% to below 5% while retaining up to 90% of base-model accuracy on MATH, MMLU, and MMMLU. This shows that even existing pre-trained models can be converted to temporally extended MoEs with lightweight training, with the deliberation cost allowing model trainers to trade off switching rates against capability. We hope this opens a principled path, grounded in the options framework, for memory-efficient serving and continual learning in ever-growing MoE models.",
+      "comments": ""
+    },
+    "2604.20244": {
+      "abstract": "Knowledge distillation (KD) is a powerful paradigm for compressing large language models (LLMs), whose effectiveness depends on intertwined choices of divergence direction, optimization strategy, and data regime. We break down the design of existing KD methods and present a unified view that establishes connections between them, reformulating KD as a reweighted log-likelihood objective at the token level. We further propose Hybrid Policy Distillation (HPD), which integrates the complementary advantages of forward and reverse KL to balance mode coverage and mode-seeking, and combines off-policy data with lightweight, approximate on-policy sampling. We validate HPD on long-generation math reasoning as well as short-generation dialogue and code tasks, demonstrating improved optimization stability, computational efficiency, and final performance across diverse model families and scales. The code related to this work is available atthis https URL.",
+      "comments": "WIP"
+    },
+    "2604.20398": {
+      "abstract": "While Large Language Models (LLMs) excel at function-level code generation, project-level tasks such as generating functional and visually aesthetic multi-page websites remain highly challenging. Existing works are often limited to single-page static websites, while agentic frameworks typically rely on multi-turn execution with proprietary models, leading to substantial token costs, high latency, and brittle integration. Training a small LLM end-to-end with reinforcement learning (RL) is a promising alternative, yet it faces a critical bottleneck in designing reliable and computationally feasible rewards for website generation. Unlike single-file coding tasks that can be verified by unit tests, website generation requires evaluating inherently subjective aesthetics, cross-page interactions, and functional correctness. To this end, we propose WebGen-R1, an end-to-end RL framework tailored for project-level website generation. We first introduce a scaffold-driven structured generation paradigm that constrains the large open-ended action space and preserves architectural integrity. We then design a novel cascaded multimodal reward that seamlessly couples structural guarantees with execution-grounded functional feedback and vision-based aesthetic supervision. Extensive experiments demonstrate that our WebGen-R1 substantially transforms a 7B base model from generating nearly nonfunctional websites into producing deployable, aesthetically aligned multi-page websites. Remarkably, our WebGen-R1 not only consistently outperforms heavily scaled open-source models (up to 72B), but also rivals the state-of-the-art DeepSeek-R1 (671B) in functional success, while substantially exceeding it in valid rendering and aesthetic alignment. These results position WebGen-R1 as a viable path for scaling small open models from function-level code generation to project-level web application generation.",
+      "comments": ""
+    },
+    "2604.20987": {
+      "abstract": "Long horizon interactive environments are a testbed for evaluating agents skill usage abilities. These environments demand multi step reasoning, the chaining of multiple skills over many timesteps, and robust decision making under delayed rewards and partial observability. Games are a good testbed for evaluating agent skill usage in environments. Large Language Models (LLMs) offer a promising alternative as game playing agents, but they often struggle with consistent long horizon decision making because they lack a mechanism to discover, retain, and reuse structured skills across episodes. We present COSPLAY, a co evolution framework in which an LLM decision agent retrieves skills from a learnable skill bank to guide action taking, while an agent managed skill pipeline discovers reusable skills from the agents unlabeled rollouts to form a skill bank. Our framework improves both the decision agent to learn better skill retrieval and action generation, while the skill bank agent continually extracts, refines, and updates skills together with their contracts. Experiments across six game environments show that COSPLAY with an 8B base model achieves over 25.1 percent average reward improvement against four frontier LLM baselines on single player game benchmarks while remaining competitive on multi player social reasoning games.",
+      "comments": "26 pages"
+    },
+    "2604.21193": {
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable fluency and versatility across a wide range of NLP tasks, yet they remain prone to factual inaccuracies and hallucinations. This limitation poses significant risks in high-stakes domains such as healthcare, law, and scientific communication, where trust and verifiability are paramount. In this paper, we introduce DAVinCI - a Dual Attribution and Verification framework designed to enhance the factual reliability and interpretability of LLM outputs. DAVinCI operates in two stages: (i) it attributes generated claims to internal model components and external sources; (ii) it verifies each claim using entailment-based reasoning and confidence calibration. We evaluate DAVinCI across multiple datasets, including FEVER and CLIMATE-FEVER, and compare its performance against standard verification-only baselines. Our results show that DAVinCI significantly improves classification accuracy, attribution precision, recall, and F1-score by 5-20%. Through an extensive ablation study, we isolate the contributions of evidence span selection, recalibration thresholds, and retrieval quality. We also release a modular DAVinCI implementation that can be integrated into existing LLM pipelines. By bridging attribution and verification, DAVinCI offers a scalable path to auditable, trustworthy AI systems. This work contributes to the growing effort to make LLMs not only powerful but also accountable.",
+      "comments": ""
+    },
+    "2604.21300": {
+      "abstract": "Learning robust representations of authorial style is crucial for authorship attribution and AI-generated text detection. However, existing methods often struggle with content-style entanglement, where models learn spurious correlations between authors' writing styles and topics, leading to poor generalization across domains. To address this challenge, we propose Explainable Authorship Variational Autoencoder (EAVAE), a novel framework that explicitly disentangles style from content through architectural separation-by-design. EAVAE first pretrains style encoders using supervised contrastive learning on diverse authorship data, then finetunes with a Variational Autoencoder (VEA) architecture using separate encoders for style and content representations. Disentanglement is enforced through a novel discriminator that not only distinguishes whether pairs of style/content representations belong to the same or different authors/content sources, but also generates natural language explanation for their decision, simultaneously mitigating confounding information and enhancing interpretability. Extensive experiments demonstrate the effectiveness of EAVAE. On authorship attribution, we achieve state-of-the-art performance on various datasets, including Amazon Reviews, PAN21, and HRS. For AI-generated text detection, EAVAE excels in few-shot learning over the M4 dataset. Code and data repositories are available online\\footnote{this https URL} \\footnote{this https URL}.",
+      "comments": ""
+    },
+    "2604.21375": {
+      "abstract": "Autonomous GUI agents face two fundamental challenges: early stopping, where agents prematurely declare success without verifiable evidence, and repetitive loops, where agents cycle through the same failing actions without recovery. We present VLAA-GUI, a modular GUI agentic framework built around three integrated components that guide the system on when to Stop, Recover, and Search. First, a mandatory Completeness Verifier enforces UI-observable success criteria and verification at every finish step -- with an agent-level verifier that cross-examines completion claims with decision rules, rejecting those lacking direct visual evidence. Second, a mandatory Loop Breaker provides multi-tier filtering: switching interaction mode after repeated failures, forcing strategy changes after persistent screen-state recurrence, and binding reflection signals to strategy shifts. Third, an on-demand Search Agent searches online for unfamiliar workflows by directly querying a capable LLM with search ability, returning results as plain text. We additionally integrate a Coding Agent for code-intensive actions and a Grounding Agent for precise action grounding, both invoked on demand when required. We evaluate VLAA-GUI across five top-tier backbones, including Opus 4.5, 4.6 and Gemini 3.1 Pro, on two benchmarks with Linux and Windows tasks, achieving top performance on both (77.5% on OSWorld and 61.0% on WindowsAgentArena). Notably, three of the five backbones surpass human performance (72.4%) on OSWorld in a single pass. Ablation studies show that all three proposed components consistently improve a strong backbone, while a weaker backbone benefits more from these tools when the step budget is sufficient. Further analysis also shows that the Loop Breaker nearly halves wasted steps for loop-prone models.",
+      "comments": "The first two authors contribute equally"
+    },
+    "2604.21668": {
+      "abstract": "The world knowledge and reasoning capabilities of text-based large language models (LLMs) are advancing rapidly, yet current approaches to human motion understanding, including motion question answering and captioning, have not fully exploited these capabilities. Existing LLM-based methods typically learn motion-language alignment through dedicated encoders that project motion features into the LLM's embedding space, remaining constrained by cross-modal representation and alignment. Inspired by biomechanical analysis, where joint angles and body-part kinematics have long served as a precise descriptive language for human movement, we propose \\textbf{Structured Motion Description (SMD)}, a rule-based, deterministic approach that converts joint position sequences into structured natural language descriptions of joint angles, body part movements, and global trajectory. By representing motion as text, SMD enables LLMs to apply their pretrained knowledge of body parts, spatial directions, and movement semantics directly to motion reasoning, without requiring learned encoders or alignment modules. We show that this approach goes beyond state-of-the-art results on both motion question answering (66.7\\% on BABEL-QA, 90.1\\% on HuMMan-QA) and motion captioning (R@1 of 0.584, CIDEr of 53.16 on HumanML3D), surpassing all prior methods. SMD additionally offers practical benefits: the same text input works across different LLMs with only lightweight LoRA adaptation (validated on 8 LLMs from 6 model families), and its human-readable representation enables interpretable attention analysis over motion descriptions. Code, data, and pretrained LoRA adapters are available atthis https URL.",
+      "comments": ""
+    },
+    "2604.21686": {
+      "abstract": "Interactive video generation models such as Genie, YUME, HY-World, and Matrix-Game are advancing rapidly, yet every model is evaluated on its own benchmark with private scenes and trajectories, making fair cross-model comparison impossible. Existing public benchmarks offer useful metrics such as trajectory error, aesthetic scores, and VLM-based judgments, but none supplies the standardized test conditions -- identical scenes, identical action sequences, and a unified control interface -- needed to make those metrics comparable across models with heterogeneous inputs. We introduce WorldMark, the first benchmark that provides such a common playing field for interactive Image-to-Video world models. WorldMark contributes: (1) a unified action-mapping layer that translates a shared WASD-style action vocabulary into each model's native control format, enabling apples-to-apples comparison across six major models on identical scenes and trajectories; (2) a hierarchical test suite of 500 evaluation cases covering first- and third-person viewpoints, photorealistic and stylized scenes, and three difficulty tiers from Easy to Hard spanning 20-60s; and (3) a modular evaluation toolkit for Visual Quality, Control Alignment, and World Consistency, designed so that researchers can reuse our standardized inputs while plugging in their own metrics as the field evolves. We will release all data, evaluation code, and model outputs to facilitate future research. Beyond offline metrics, we launch World Model Arena (this http URL), an online platform where anyone can pit leading world models against each other in side-by-side battles and watch the live leaderboard.",
+      "comments": ""
+    },
+    "2604.21689": {
+      "abstract": "Creative face stylization aims to render portraits in diverse visual idioms such as cartoons, sketches, and paintings while retaining recognizable identity. However, current identity encoders, which are typically trained and calibrated on natural photographs, exhibit severe brittleness under stylization. They often mistake changes in texture or color palette for identity drift or fail to detect geometric exaggerations. This reveals the lack of a style-agnostic framework to evaluate and supervise identity consistency across varying styles and strengths. To address this gap, we introduce StyleID, a human perception-aware dataset and evaluation framework for facial identity under stylization. StyleID comprises two datasets: (i) StyleBench-H, a benchmark that captures human same-different verification judgments across diffusion- and flow-matching-based stylization at multiple style strengths, and (ii) StyleBench-S, a supervision set derived from psychometric recognition-strength curves obtained through controlled two-alternative forced-choice (2AFC) experiments. Leveraging StyleBench-S, we fine-tune existing semantic encoders to align their similarity orderings with human perception across styles and strengths. Experiments demonstrate that our calibrated models yield significantly higher correlation with human judgments and enhanced robustness for out-of-domain, artist drawn portraits. All of our datasets, code, and pretrained models are publicly available atthis https URL",
+      "comments": "SIGGRAPH 2026 / ACM TOG. Project page at <a class=\"link-external link-https\" href=\"https://kwanyun.github.io/StyleID_page/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.21889": {
+      "abstract": "Real-time detection and mitigation of technical anomalies are critical for large-scale cloud-native services, where even minutes of downtime can result in massive financial losses and diminished user trust. While customer incidents serve as a vital signal for discovering risks missed by monitoring, extracting actionable intelligence from this data remains challenging due to extreme noise, high throughput, and semantic complexity of diverse business lines. In this paper, we present TingIS, an end-to-end system designed for enterprise-grade incident discovery. At the core of TingIS is a multi-stage event linking engine that synergizes efficient indexing techniques with Large Language Models (LLMs) to make informed decisions on event merging, enabling the stable extraction of actionable incidents from just a handful of diverse user descriptions. This engine is complemented by a cascaded routing mechanism for precise business attribution and a multi-dimensional noise reduction pipeline that integrates domain knowledge, statistical patterns, and behavioral filtering. Deployed in a production environment handling a peak throughput of over 2,000 messages per minute and 300,000 messages per day, TingIS achieves a P90 alert latency of 3.5 minutes and a 95\\% discovery rate for high-priority incidents. Benchmarks constructed from real-world data demonstrate that TingIS significantly outperforms baseline methods in routing accuracy, clustering quality, and Signal-to-Noise Ratio.",
+      "comments": "Accepted to ACL 2026 Industry Track"
+    },
+    "2604.21904": {
+      "abstract": "In recent years, significant progress has been made in both image generation and generated image detection. Despite their rapid, yet largely independent, development, these two fields have evolved distinct architectural paradigms: the former predominantly relies on generative networks, while the latter favors discriminative frameworks. A recent trend in both domains is the use of adversarial information to enhance performance, revealing potential for synergy. However, the significant architectural divergence between them presents considerable challenges. Departing from previous approaches, we propose UniGenDet: a Unified generative-discriminative framework for co-evolutionary image Generation and generated image Detection. To bridge the task gap, we design a symbiotic multimodal self-attention mechanism and a unified fine-tuning algorithm. This synergy allows the generation task to improve the interpretability of authenticity identification, while authenticity criteria guide the creation of higher-fidelity images. Furthermore, we introduce a detector-informed generative alignment mechanism to facilitate seamless information exchange. Extensive experiments on multiple datasets demonstrate that our method achieves state-of-the-art performance. Code: \\href{this https URL}{this https URL}.",
+      "comments": "Accepted to CVPR 2026"
+    },
+    "2604.21915": {
+      "abstract": "We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud. Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint. Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories. We build a 4D-grounded point cloud representation with static pixel segmentation and 4D reconstruction to explicitly preserve seen content and provide rich camera signals, and we train with reconstructed multiview dynamic data for robustness against point cloud artifacts during real-world inference. Our results demonstrate improved 4D consistency, camera control, and visual quality compared to state-of-the-art baselines under a variety of videos and camera paths. Moreover, our method generalizes to real-world applications such as dynamic scene expansion and 4D scene recomposition. See our project page for results, code, and models:this https URL",
+      "comments": "24 pages, 20 figures, CVPR 2026, see project page at <a class=\"link-external link-https\" href=\"https://eyeline-labs.github.io/Vista4D\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.21921": {
+      "abstract": "We present Omni, a unified multimodal model natively trained on diverse modalities, including text, images, videos, 3D geometry, and hidden representations. We find that such training enables Context Unrolling, where the model explicitly reasons across multiple modal representations before producing predictions. This process enables the model to aggregate complementary information across heterogeneous modalities, facilitating a more faithful approximation of the shared multimodal knowledge manifold and improving downstream reasoning fidelity. As a result, Omni achieves strong performance on both multimodal generation and understanding benchmarks, while demonstrating advanced multimodal reasoning capabilities, including in-context generation of text, image, video, and 3D geometry.",
+      "comments": "Report"
+    },
+    "2604.21931": {
+      "abstract": "How can we tell whether a video has been sped up or slowed down? How can we generate videos at different speeds? Although videos have been central to modern computer vision research, little attention has been paid to perceiving and controlling the passage of time. In this paper, we study time as a learnable visual concept and develop models for reasoning about and manipulating the flow of time in videos. We first exploit the multimodal cues and temporal structure naturally present in videos to learn, in a self-supervised manner, to detect speed changes and estimate playback speed. We then show that these learned temporal reasoning models enable us to curate the largest slow-motion video dataset to date from noisy in-the-wild sources. Such slow-motion footage, typically filmed by high-speed cameras, contains substantially richer temporal detail than standard videos. Using this data, we further develop models capable of temporal control, including speed-conditioned video generation, which produces motion at specified playback speed, and temporal super-resolution, which tranforms low-FPS, blurry videos into high-FPS sequences with fine-grained temporal details. Our findings highlight time as a manipulable, perceptual dimension in video learning, opening doors to temporally controllable video generation, temporal forensics detection, and potentially richer world-models that understand how events unfold over time.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://seeing-fast-and-slow.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}

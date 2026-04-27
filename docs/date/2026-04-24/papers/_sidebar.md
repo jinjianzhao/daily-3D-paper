@@ -1,0 +1,28 @@
+- [**2026-04-24 日报**](/2026-04-24/)
+
+  - **3D重建/生成**
+    - [Vista4D | 视频重拍四维点云法](/2026-04-24/papers/2604.21915.md)
+  - **视频生成模型**
+    - [WorldMark | 构建交互式视频生成统一评测基准](/2026-04-24/papers/2604.21686.md)
+    - [Seeing Fast and Slow | 学习视频时间感知与控制](/2026-04-24/papers/2604.21931.md)
+  - **图片生成模型**
+    - [EditCrafter | 免调优高分辨率图像编辑](/2026-04-24/papers/2604.10268.md)
+    - [Coevolving Representations... | 联合扩散中语义空间协同优化](/2026-04-24/papers/2604.17492.md)
+    - [StyleID | 风格化人脸身份识别数据集](/2026-04-24/papers/2604.21689.md)
+    - [UniGenDet | 统一生成对抗图像检测框架](/2026-04-24/papers/2604.21904.md)
+  - [**全量简报 (15 篇)**](/2026-04-24/briefs.md)
+    - [PersonalAI | 个性化知识图谱记忆框架对比  ](/2026-04-24/briefs.md?id=personalai)
+    - [3D-VCD | 3D大模型的幻觉抑制方法  ](/2026-04-24/briefs.md?id=3d-vcd)
+    - [Test-Time Adaptation... | 脑电基础模型测试时适应研究](/2026-04-24/briefs.md?id=test-time-adaptation)
+    - [LLaTiSA | 构建分层时序推理模型](/2026-04-24/briefs.md?id=llatisa)
+    - [UniT | 人形机器人跨身体策略学习框架](/2026-04-24/briefs.md?id=unit)
+    - [Temporally Extended... | 延长专家混合模型切换间隔](/2026-04-24/briefs.md?id=temporally-extended)
+    - [Hybrid Policy... | 用混合策略蒸馏优化大语言模型](/2026-04-24/briefs.md?id=hybrid-policy)
+    - [WebGen-R1 | 强化学习训练小模型生成多页网站](/2026-04-24/briefs.md?id=webgen-r1)
+    - [Co-Evolving LLM... | 大模型协同进化提升长程任务能力](/2026-04-24/briefs.md?id=co-evolving-llm)
+    - [Trust but Verify | 提升语言模型事实可靠性验证框架  ](/2026-04-24/briefs.md?id=trust-but-verify)
+    - [Explainable Disentangled... | 可解释作者风格解耦学习](/2026-04-24/briefs.md?id=explainable-disentangled)
+    - [VLAA-GUI | 自动GUI代理框架防停防循环  ](/2026-04-24/briefs.md?id=vlaa-gui)
+    - [Encoder-Free Human... | 用结构化文本描述理解人体运动](/2026-04-24/briefs.md?id=encoder-free-human)
+    - [TingIS | 企业级客户事件实时风险发现](/2026-04-24/briefs.md?id=tingis)
+    - [Context Unrolling... | 多模态模型上下文展开](/2026-04-24/briefs.md?id=context-unrolling)

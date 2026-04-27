@@ -1,0 +1,228 @@
+{
+  "date": "2026-04-27",
+  "focus_ids": [
+    "2604.21518",
+    "2604.21718",
+    "2604.22554",
+    "2604.22586"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.21518"
+    ],
+    "视频生成模型": [
+      "2604.21718",
+      "2604.22554",
+      "2604.22586"
+    ],
+    "图片生成模型": []
+  },
+  "base_info": {
+    "2604.16353": {
+      "title": "AgriIR: A Scalable Framework for Domain-Specific Knowledge Retrieval",
+      "hf_link": "https://hf-mirror.com/papers/2604.16353"
+    },
+    "2604.18519": {
+      "title": "LLM Safety From Within: Detecting Harmful Content with Internal Representations",
+      "hf_link": "https://hf-mirror.com/papers/2604.18519"
+    },
+    "2604.18580": {
+      "title": "Sessa: Selective State Space Attention",
+      "hf_link": "https://hf-mirror.com/papers/2604.18580"
+    },
+    "2604.20012": {
+      "title": "EmbodiedMidtrain: Bridging the Gap between Vision-Language Models and Vision-Language-Action Models via Mid-training",
+      "hf_link": "https://hf-mirror.com/papers/2604.20012"
+    },
+    "2604.20857": {
+      "title": "DiagramBank: A Large-scale Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.20857"
+    },
+    "2604.21518": {
+      "title": "DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction",
+      "hf_link": "https://hf-mirror.com/papers/2604.21518"
+    },
+    "2604.21718": {
+      "title": "Building a Precise Video Language with Human-AI Oversight",
+      "hf_link": "https://hf-mirror.com/papers/2604.21718"
+    },
+    "2604.22085": {
+      "title": "Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents",
+      "hf_link": "https://hf-mirror.com/papers/2604.22085"
+    },
+    "2604.22152": {
+      "title": "dWorldEval: Scalable Robotic Policy Evaluation via Discrete Diffusion World Model",
+      "hf_link": "https://hf-mirror.com/papers/2604.22152"
+    },
+    "2604.22294": {
+      "title": "Contexts are Never Long Enough: Structured Reasoning for Scalable Question Answering over Long Document Sets",
+      "hf_link": "https://hf-mirror.com/papers/2604.22294"
+    },
+    "2604.22436": {
+      "title": "AgentSearchBench: A Benchmark for AI Agent Search in the Wild",
+      "hf_link": "https://hf-mirror.com/papers/2604.22436"
+    },
+    "2604.22554": {
+      "title": "Video Analysis and Generation via a Semantic Progress Function",
+      "hf_link": "https://hf-mirror.com/papers/2604.22554"
+    },
+    "2604.22565": {
+      "title": "Learning Evidence Highlighting for Frozen LLMs",
+      "hf_link": "https://hf-mirror.com/papers/2604.22565"
+    },
+    "2604.22586": {
+      "title": "FlowAnchor: Stabilizing the Editing Signal for Inversion-Free Video Editing",
+      "hf_link": "https://hf-mirror.com/papers/2604.22586"
+    },
+    "2604.22748": {
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "hf_link": "https://hf-mirror.com/papers/2604.22748"
+    }
+  },
+  "summaries": {
+    "2604.16353": "农业领域知识检索框架\n自然语言处理;检索增强生成;农业知识检索\n针对农业领域知识获取需求，设计可配置的检索增强生成框架。\n该框架采用模块化流程，集成轻量模型与领域知识库，实现低成本、可追溯的精准信息检索。",
+    "2604.18519": "利用模型内部特征检测有害内容\n自然语言处理;AI安全;有害内容检测\n现有防护模型仅关注终端层表示，忽略了模型内部各层的安全相关特征。\n本文提出了SIREN，通过线性探测识别安全神经元并自适应加权，构建了一个轻量高效的检测器，性能显著优于现有方法。",
+    "2604.18580": "选择性状态空间注意机制\n序列建模;语言模型;长上下文建模\n当前主流的Transformer和结构化状态空间模型在处理长上下文时，都存在信息保持与选择性检索的挑战。\n提出Sessa模型，将注意力置于循环反馈路径中，实现了更慢衰减的幂律记忆和灵活的选择性检索，在长上下文任务中表现优异。",
+    "2604.20012": "视觉语言动作模型的中期训练预适应\n机器人学;具身智能;视觉语言动作模型\n当前视觉语言动作模型直接继承自视觉语言模型，未针对具身任务优化，性能受限。\n提出中期训练方法，通过数据分布分析与筛选，构建适配具身任务的数据集进行预训练，再微调，提升了多个机器人操作任务的性能。",
+    "2604.20857": "构建科研示意图数据集\n多模态信息检索;科学图表生成;科研示意图检索增强生成\n当前AI科研系统能自动撰写论文和代码，但难以生成高质量的示意图。为此，我们构建了DiagramBank数据集。\n该数据集包含近9万张从顶级论文中提取的示意图，并提供了用于检索增强生成的代码库。",
+    "2604.21518": "扩散模型辅助稀疏视角CT重建\n医学影像处理;三维重建;稀疏视角CT重建\n神经表示能有效建模CT体积数据，但在稀疏视角下会产生严重伪影。\n提出DiffNR框架，通过单步扩散模型在优化中生成伪参考体积进行三维感知监督，以高效修复伪影。",
+    "2604.21718": "构建视频语言模型精准描述体系\n计算机视觉;视频理解;视频精准描述与生成\n视频语言模型需要更精确地描述动态视觉世界。\n提出了结构化描述规范和人类-AI协同标注框架，提升了模型描述精度，并将其应用于视频生成以获得专业级控制。",
+    "2604.22085": "为长程智能体打造高效语义记忆系统  \n智能体系统；记忆与检索；语义记忆检索优化  \n现有智能体系统依赖复杂知识图谱，导致计算开销大、延迟高。  \n本文提出Memanto，通过类型化语义记忆和信息论检索，实现了高准确、低延迟、无索引成本的智能体记忆系统。",
+    "2604.22152": "离散扩散世界模型评估机器人策略\n机器人;具身智能;机器人策略评估\n现有方法难以在成千上万的环境和任务中评估机器人策略，需要一种可扩展的新方法。\n我们提出了dWorldEval，使用离散扩散世界模型作为机器人策略的可扩展评估代理，通过统一的多模态令牌空间建模和稀疏关键帧记忆，显著优于先前方法。",
+    "2604.22294": "长文档问答的结构化推理框架\n自然语言处理;问答系统;长文档集问答\n现实中文档问答面临文档集合长、信息分散的挑战，现有方法在聚合大量文档片段证据时存在瓶颈。\n我们提出了SLIDERS框架，它将文档信息提取到关系数据库进行结构化推理，并通过数据调和确保信息一致性，在多尺度基准上超越了现有方法。",
+    "2604.22436": "评测AI智能体搜索性能\n智能代理系统;智能体发现与选择;智能体搜索基准\n现有基准未充分模拟现实场景，无法评估智能体描述与执行能力的差距。\n构建大规模现实智能体搜索基准，揭示语义相似与执行性能的差距，提出改进方法。",
+    "2604.22554": "视频生成语义节奏分析调控\n计算机视觉；视频生成与分析；生成语义节奏控制\n图像和视频生成模型常产生语义变化不均匀的序列。\n提出语义进展函数分析节奏，并通过重参数化实现语义匀速变化。",
+    "2604.22565": "大模型长文本关键信息强调\n自然语言处理;大型语言模型高效推理;证据选择与强调\n大语言模型擅长推理，但在长而嘈杂的文本中容易忽略关键证据。\n我们提出了HiLight框架，训练一个轻量的强调模块自动标记关键证据，让冻结的大模型基于此进行推理，无需证据标注且能泛化到不同模型。",
+    "2604.22586": "稳定视频编辑无需反演\n计算机视觉;视频编辑;基于流的视频编辑\n现有免反演视频编辑方法在多物体场景或长视频中易失效，源于编辑信号不稳定。\n我们提出FlowAnchor，通过空间感知注意力优化与自适应强度调制来稳定编辑信号，实现高效、连贯的视频编辑。",
+    "2604.22748": "智能体世界模型能力分类综述\n强化学习；模型基础方法；环境建模\nAI智能体需要通过持续交互完成任务但环境建模能力是瓶颈。\n提出了基于能力层级与法则维度的分类框架以梳理跨领域研究并给出路线图。"
+  },
+  "deep_analysis": {
+    "2604.21518": "好的，没问题。我们把这个研究像拼乐高一样拆开来看，用简单的语言解释清楚。\n\n### (1) 任务是什么？\n*   **任务输入**：从CT扫描仪获得的**稀疏视角（Sparse-View）的2D投影图像**。想象一下，正常CT需要拍几百张不同角度的“照片”，而这个任务只用几十张甚至更少的“照片”来工作。\n*   **任务输出**：一个高质量的**3D体积数据（Volume）**。也就是能清晰看到物体内部结构的3D模型，比如人体器官、工业零件内部等。\n*   **任务功能**：**用很少的X射线照片，重建出清晰、无伪影的3D影像**。它的核心目标是**降低辐射剂量**（拍得少，辐射就少），同时保证图像质量不下降。\n\n### (2) 想解决什么问题？\n**问题**：现有技术各有各的“短板”。\n1.  **“神经表示”方法**：把3D物体当作一个可学习的神经网络或一堆3D高斯点云来优化。这种方法很快，但在输入照片太少时（稀疏视角），重建出的3D模型里会有很多**条状伪影和模糊区域**，因为信息不够，模型“猜”不准。\n2.  **“扩散模型”方法**：用强大的图像生成模型（如Stable Diffusion）作为“先验知识”来引导重建。它能生成很逼真的细节，但容易产生**层与层之间不连贯**（想象一下3D动画的每一帧对不上）、**凭空想象出不存在的东西**（幻觉），而且**计算速度非常慢**，因为它需要反复调用大模型。\n\n这篇论文想**取长补短**：既想保留“神经表示”的**快速和3D一致性**，又想借助“扩散模型”的**强大细节修复能力**，来解决稀疏视角下的伪影问题。\n\n### (3) 核心思路是什么？\n**核心思路**：**“边修边学”**。\n他们不像传统扩散模型方法那样，在每一步重建中都反复调用大模型（费时且容易出错）。而是：\n1.  **先训练一个“切片修复专家”（SliceFixer）**：这是一个经过微调的**单步扩散模型**，专门学习如何把一张有伪影的CT切片（2D图像）修复成干净的切片。它很快，因为一步就能出结果。\n2.  **在重建过程中“请教专家”**：当用神经表示法优化3D模型时，定期把当前还不太好的3D模型“切”成2D切片，交给“切片修复专家”去修复，得到一组“伪参考体积”。\n3.  **用“专家意见”指导优化**：用这些修复后的“伪参考体积”作为额外的、高质量的监督信号，来指导神经表示的优化。重点是，他们不是简单地比较每个像素值，而是用**感知损失（如SSIM）** 来比较**整体结构**，这样既能修复伪影，又能避免扩散模型“胡思乱想”。\n\n简单说：**让一个快速的“修复专家”定期给正在学习的3D模型“批改作业”，告诉它哪里结构不对，从而引导它学得更好。**\n\n### (4) 结果怎么样？\n*   **效果显著提升**：在多个数据集上测试，他们的方法（DiffNR）比之前最好的神经表示方法，平均**图像质量（PSNR）提升了约4 dB**，这是一个很大的进步。\n*   **泛化能力强**：即使在训练时没见过的、不同领域的物体（比如从医疗数据训练，应用到工业零件）上，效果依然很好。\n*   **效率有保障**：因为采用了“定期请教”的策略，而不是每一步都调用大模型，所以**运行速度比纯扩散模型方法快很多**，保持了实用性。\n\n### (5) 模型结构与整体流程\n**基模**：他们使用了**已有的2D基础扩散模型**（如Stable Diffusion）作为起点，而不是从头训练。\n\n**整体流程分为两大阶段：**\n**阶段一：训练“切片修复专家”（SliceFixer）**\n1.  **数据准备**：收集一批干净的3D CT数据。用不同的稀疏视角（比如10张、20张投影）去模拟重建，得到各种带有伪影的3D体积。然后把这些体积切成2D切片，就得到了 **“有伪影的切片”** 和对应的 **“干净的切片”** 作为配对数据。\n2.  **模型微调**：\n    *   在基础扩散模型里加入**特殊的条件输入层**。\n    *   输入不仅包括“有伪影的切片”，还加入了与该切片对应的**两个正交方向的X射线投影图**，让模型更有空间结构感。\n    *   用准备好的配对数据对这个模型进行**微调**，让它学会从“有伪影”到“干净”的映射。最终得到一个高效的**单步修复模型**。\n\n**阶段二：DiffNR主流程（稀疏视角重建）**\n1.  **输入**：稀疏的2D投影图像。\n2.  **初始化**：用一个神经表示（比如3D高斯）来初始化一个3D体积。\n3.  **循环优化**：\n    a.  **神经表示优化**：用现有的投影数据，通过渲染和比对，优化当前的3D模型。\n    b.  **定期修复与增强**：\n        *   每隔一定的优化步数，把当前这个还不太完美的3D模型**渲染成多个2D切片**。\n        *   将这些切片输入训练好的 **“切片修复专家”** 模型中。\n        *   “切片修复专家”快速输出**修复后的干净切片**。\n        *   将所有修复后的切片堆叠起来，形成一个 **“伪参考3D体积”**。\n    c.  **感知损失监督**：计算当前3D模型与“伪参考3D体积”之间的**结构相似性损失**。这个损失不苛求像素完全一致，而是鼓励整体结构一致。将这个损失加入总优化目标。\n4.  **输出**：经过多轮“优化-修复-再优化”的循环后，得到一个高质量的、无明显伪影的**最终3D重建体积**。\n\n**流程图核心**：`稀疏投影` -> `初始化3D神经表示` -> `[循环：用投影优化3D -> 定期切片并用SliceFixer修复 -> 用修复结果计算感知损失以进一步优化3D]` -> `输出高质量3D体积`。",
+    "2604.22554": "好的，我们先来“翻译”一下这篇论文的核心内容。我会用尽量简单、直观的方式来解释。\n\n### (1) 任务是什么\n*   **任务输入**：一段视频（无论是AI生成的，还是真实拍摄的）。视频的内容通常是从一个画面逐渐变化到另一个画面（比如从“一颗珠子”变成一个“蜜蜂”）。\n*   **任务输出**：一段**经过“调速”的新视频**。新视频的“故事”或“含义”变化得更加均匀、平滑。\n*   **任务功能**：像一个**视频节奏剪辑师**或**语义调速器**。它能分析原视频里“含义”变化的快慢，发现哪里突然“跳戏”了，然后通过调整时间（重新生成某些片段），让整个变化过程流畅自然。\n\n### (2) 想解决什么问题\n目前AI生成的视频（比如从一个东西变到另一个东西）存在一个普遍问题：**语义变化不均匀**。简单说就是，视频前半段可能磨磨蹭蹭没啥变化，后半段突然“唰”一下就变了，让人感觉很突兀、不连贯（就像摘要图里珠子突然变成蜜蜂那样）。\n\n这篇论文想解决的问题就是：**如何量化并矫正这种“语义变化节奏”的波动，让视频的“含义”能像匀速播放的音乐一样，平稳、线性地向前推进。**\n\n### (3) 核心思路是什么\n核心思路可以概括为 **“先诊断，后治疗”**。\n\n1.  **诊断（构建语义进度函数 - SPF）**：\n    *   用一个大语言模型（比如CLIP）把视频的每一帧都变成一个代表其“含义”的向量。\n    *   计算相邻帧“含义向量”之间的“距离”（差异有多大）。\n    *   把这些距离累加起来，画成一条曲线。**理想情况下**，如果含义匀速变化，这条曲线应该是一条**笔直的斜线**（匀速前进）。\n    *   但实际上，这条曲线常常是**弯曲的**：平坦的地方代表语义停滞（没怎么变），陡峭的地方代表语义跳跃（突然大变）。这条曲线就是“语义进度函数”，它直观地揭示了视频的“语义节奏病”在哪里。\n\n2.  **治疗（基于SPF的“重定时” - ReTime）**：\n    *   既然我们知道了原视频的“语义进度曲线”是弯的，目标是把它“掰直”。\n    *   论文提出一种叫 **“ReTime”** 的方法。它的核心思想是：**在原视频扭曲的时间线上，找到一些“关键时间点”，让这些点在新视频里对应均匀的语义进度。**\n    *   然后，利用现有的**视频生成模型**（比如Stable Video Diffusion），以这些“关键时间点”的画面为引导，重新生成它们之间的过渡片段，从而得到一个语义变化平滑均匀的新视频。\n\n### (4) 结果怎么样\n*   **定性结果（肉眼可见）**：如图1所示，经过该方法处理后的视频（下图），从珠子到蜜蜂的转变过程明显更平滑、更自然，没有了原视频（上图）中那种生硬的突然切换。\n*   **定量结果（数据支持）**：论文通过人工评估和计算指标（如时间一致性得分）证明，经过“语义线性化”处理的视频，在视觉平滑度和感知质量上均优于原始视频和其他对比方法。\n*   **灵活性**：这个方法不仅能“拉直”曲线（匀速变化），还能根据需要把语义进度曲线变成其他形状，比如先慢后快（指数加速），实现对视频语义节奏的**编程式控制**。\n\n### (5) 模型结构与整体流程\n这篇论文的**核心贡献是“分析框架”和“调速算法”**，而不是从头训练一个新模型。它像一个聪明的“外挂”，利用现有的、强大的**视频生成模型作为“基模”**（文中主要使用了 **Stable Video Diffusion**）。\n\n**整体流程如下：**\n\n1.  **输入视频**：一段待分析的视频（例如AI生成的从A到B的变形视频）。\n2.  **提取语义特征**：使用 **CLIP 图像编码器** 处理每一帧，得到一系列语义特征向量。\n3.  **构建语义进度函数**：\n    *   计算每两帧特征向量之间的距离（如余弦距离）。\n    *   将这些距离值视为“语义速度”，通过数学拟合（如单调样条拟合）得到一条累积语义进度曲线——**SPF曲线**。这条曲线反映了“真实语义进度” vs “视频时间”。\n4.  **制定调速计划**：\n    *   **目标**：定义一条理想的进度曲线（例如一条直线，代表匀速语义变化）。\n    *   **映射**：将目标曲线上均匀分布的“语义进度点”，反向映射回原视频扭曲的时间线，找到原视频中对应的“关键帧时间戳”。这就好比把一首歌的均匀节拍，对应到歌手原本忽快忽慢的演唱时间点上。\n5.  **基于基模重新生成视频**：\n    *   **关键帧引导**：以上一步找到的“关键帧时间戳”对应的原视频画面作为条件（或起点）。\n    *   **调用视频生成基模**：使用 **Stable Video Diffusion** 这类模型，在这些关键帧之间进行插值生成。模型在生成时，会受到一种特殊的“位置编码调制”技术引导，确保新生成的片段在语义上精确地填充预设的、均匀的语义进度。\n    *   这个过程可能迭代进行，逐步优化。\n6.  **输出视频**：得到一段全新的视频。这段视频的画面内容由基模生成，但其**语义变化的节奏**被严格调控，从而实现了平滑、均匀的过渡。\n\n**简单总结**：这篇论文就像给视频生成模型配了一个“语义节奏导航仪”。导航仪（SPF）先分析原路线（原视频）哪里堵车哪里飙车，然后规划出一条匀速前进的新路线（理想进度曲线），最后指挥司机（Stable Video Diffusion等基模）按照新路线重新开一遍，最终到达终点（输出流畅视频）。",
+    "2604.22586": "我来用简单的语言为你解读这篇论文：\n\n### (1) 任务是什么\n**任务输入**：一个原始视频 + 一段文字描述（想要修改的内容）\n**任务输出**：编辑后的视频（只有文字描述的部分被修改，其他部分保持不变）\n**任务功能**：根据文字指令，只修改视频中特定物体的外观或属性，同时保持视频的流畅性和背景不变\n\n### (2) 想解决什么问题\n之前基于“反演”（inversion）的视频编辑方法速度慢、容易产生累积误差。后来出现了基于“流”（flow）的非反演编辑方法，在图片上效果很好，但**直接应用到视频上就出问题**：\n- 在多物体场景中，编辑会“跑偏”到错误的物体上\n- 视频越长，编辑效果越弱甚至消失\n- 编辑后的视频不连贯、有闪烁\n\n**根本原因**：编辑信号（决定“改哪里、怎么改”的信号）在视频的高维空间中不稳定\n\n### (3) 核心思路\n提出 **FlowAnchor（流锚点）** 框架，核心思想是“稳定编辑信号”：\n1. **空间感知的注意力细化**（SAR）\n   - **问题**：扩散模型的注意力机制经常“看错地方”，把编辑指令应用到错误区域\n   - **解决**：用空间先验（比如用户提供的粗略掩码）来引导注意力，确保编辑指令只作用于目标物体\n   \n2. **自适应幅度调制**（AMM）\n   - **问题**：编辑信号在长视频中会逐渐变弱\n   - **解决**：动态调整编辑信号的强度，保证它有足够的力量完成编辑\n\n### (4) 结果怎么样\n**效果更好**：\n- 在多物体场景中能准确定位，不会“误伤”其他物体\n- 编辑效果更忠实于文字指令\n- 视频更连贯、没有闪烁\n- 背景保持得更好\n\n**速度更快**：比基于反演的方法快很多（因为不需要复杂的反演过程）\n\n### (5) 模型结构与流程\n\n**基模**：基于 Stable Diffusion 的扩散模型\n\n**整体流程**：\n\n```\n输入视频 → 提取特征 → 生成编辑信号 → 稳定编辑信号 → 生成编辑后视频\n```\n\n**详细步骤**：\n\n1. **输入阶段**：\n   - 输入：原始视频 + 编辑指令（如“把红苹果变成青苹果”）\n   - 可选输入：粗略的掩码（告诉模型大概要改哪里）\n\n2. **特征提取**：\n   - 用预训练的编码器把视频帧变成潜在特征\n   - 这些特征包含了视频的视觉信息\n\n3. **生成编辑信号**：\n   - 用扩散模型同时处理两个条件：\n     a. **原始条件**：基于原始视频的文本描述\n     b. **目标条件**：基于编辑后的文本描述\n   - 计算两个条件预测的“速度场”之差，这就是“编辑信号”\n   - 这个信号理论上应该只作用于要修改的区域\n\n4. **稳定编辑信号**（FlowAnchor的核心）：\n   - **SAR模块**：\n     - 检查扩散模型的注意力图\n     - 如果发现注意力“跑偏”，就用空间先验把它“拉回来”\n     - 确保编辑信号只作用于目标区域\n   \n   - **AMM模块**：\n     - 监测编辑信号的强度\n     - 如果发现信号变弱，就适当增强它\n     - 确保编辑有足够的力量完成\n\n5. **生成编辑后视频**：\n   - 用稳定的编辑信号引导扩散模型的生成过程\n   - 从原始特征开始，沿着编辑信号指示的方向“流动”\n   - 生成编辑后的潜在特征\n   - 解码器把特征变回视频帧\n\n6. **输出**：编辑后的视频\n\n**关键特点**：\n- **训练免费**：不需要重新训练模型，直接在推理时应用\n- **即插即用**：可以应用到现有的扩散模型上\n- **计算高效**：比反演方法快很多\n\n简单理解：就像给一个容易“手抖”的画家提供了**瞄准器**（SAR）和**力量调节器**（AMM），让他能更准确、更有力地完成修改工作。"
+  },
+  "images_meta": {
+    "2604.21518": [
+      {
+        "path": "https://arxiv.org/html/2604.21518v1/x1.png",
+        "caption": "Figure 1:We propose DiffNR for sparse-view 3D CT reconstruction. (a) Geometry of a cone-beam CT scanner. (b) Method overview. (c) Comparison between the baseline methods(Zhaet al.2022,2024)and our proposed DiffNR.",
+        "caption_zh": "图 1：我们提出 DiffNR 用于稀疏视图三维 CT 重建。（a）锥束 CT 扫描仪的几何结构。（b）方法概览。（c）基线方法（Zha 等人，2022，2024）与我们提出的 DiffNR 之间的对比。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21518v1/x3.png",
+        "caption": "Figure 3:DiffNR Pipeline. During the training, we train neural representations using image losses and low-level regularization. In Stage 2, we generate a\npseudo-reference volume with SliceFixer everyℓ\\elliterations, and then apply SSIM regularization on queried and reference volumes.",
+        "caption_zh": "图 3：DiffNR 流程。在训练阶段，我们使用图像损失与低层正则化训练神经表征。在第 2 阶段，我们每隔 ℓ 次迭代使用 SliceFixer 生成一个伪参考体数据，并在查询体数据与参考体数据上应用 SSIM 正则化。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.21518v1/x2.png",
+        "caption": "Figure 2:SliceFixer Architecture. It takes as input a CT slice queried from NRs, along with biplanar projections and a text prompt as conditions. It outputs a refined slice without artifacts. The model is built on SD-Turbo(Saueret al.2024), a single-step diffusion backbone. Trainable LoRA layers and zero convolutions are injected to adapt the model for our purpose.",
+        "caption_zh": "图 2：SliceFixer 架构。该模型以从 NRs 中查询得到的 CT 切片作为输入，并以双平面投影与文本提示作为条件。它输出一个经过优化、无伪影的切片。该模型基于 SD-Turbo（Sauer 等人，2024）这一单步扩散主干构建，并通过注入可训练的 LoRA 层与零卷积层来使其适应我们的任务。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.22554": [
+      {
+        "path": "https://arxiv.org/html/2604.22554v1/images/method_figure.jpg",
+        "caption": "Figure 2.ReTime Overview.The top row shows an input sequence with an abrupt semantic shift, reflected by the discontinuity in thesemantic progress function(top right).\nThe center diagram visualizes the retiming as performed on the RoPE embeddings, where input time embeddings (blue) are warped in order tolinearizethe output timestamps (red).\nThe bottom row demonstrates the retimed result, achieving a constant semantic pace as shown by the linearized function (bottom right).",
+        "caption_zh": "图 2：ReTime 方法概览。顶行展示了一个存在突变的语义跳变的输入序列，该跳变体现为语义进度函数的不连续性（右上）。中间示意图展示了在 RoPE 嵌入上执行的时序重映射过程，其中输入时间嵌入（蓝色）被扭曲以线性化输出时间戳（红色）。底行展示了重映射后的结果，实现了恒定的语义节奏，如线性化函数所示（右下）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.22554v1/images/rope_retime.png",
+        "caption": "Figure 3.Frequency-Aware Retiming.(Top)Retiming schedule maps theFrame Indexkkto theSampled Frame Indexτ\\tau. Thetarget schedule(solid grey) creates a plateau effectively slowing down the fast semantic jump.Low-frequency bands(red,α=0.77\\alpha=0.77) strictly track this schedule to correct global pacing, whileHigh-frequency bands(blue,α=0.20\\alpha=0.20) remain nearly linear to preserve local motion smoothness.(Middle)Waveforms illustrate the mechanism: low frequencies spatially warped (stretched) to dilate time.(Bottom)TheInput Videosequence being analyzed.",
+        "caption_zh": "图 3. 频率感知重定时。（上）重定时调度将帧索引 k 映射至采样帧索引 τ。目标调度（灰色实线）形成一个平台区，有效减缓快速的语义跳跃。低频带（红色，α=0.77）严格跟随该调度以校正全局节奏，而高频带（蓝色，α=0.20）保持近乎线性以维持局部运动平滑性。（中）波形图展示了其机制：低频成分在空间上被扭曲（拉伸）以延展时间。（下）正在分析的输入视频序列。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.22554v1/images/teaser.png",
+        "caption": "Figure 1.From Bead to Bee.An input generated by a video model (top) experiences an abrupt change from a bead to a bee (marked frames). Our method regenerates the video to enforce an approximately linear progression, producing smooth, evenly paced transitions (bottom) compared to the original (top).",
+        "caption_zh": "图1：从珠子到蜜蜂。由视频模型生成的输入序列（顶部）经历了从珠子到蜜蜂的突然变化（已标记帧）。我们的方法通过重新生成视频来强制执行近似线性的演化过程，与原始序列（顶部）相比，生成了平滑且节奏均匀的过渡（底部）。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.22586": [
+      {
+        "path": "https://arxiv.org/html/2604.22586v1/x4.png",
+        "caption": "Figure 4.Framework of FlowAnchor.(a) At each timestep,ZtisrcZ^{\\text{src}}_{t_{i}}andZtitarZ^{\\text{tar}}_{t_{i}}are fed into the backbone model to obtain the corresponding velocityVtisrcV^{\\text{src}}_{t_{i}}andVtitarV^{\\text{tar}}_{t_{i}}.\nWithin the backbone model,SARinjects a semantic alignment anchor, ensuring the editing signalΔ​Vti=Vtitar−Vtisrc\\Delta V_{t_{i}}=V^{\\text{tar}}_{t_{i}}-V^{\\text{src}}_{t_{i}}precisely captures the semantic variation in the target region.\nThen,AMMprovides a magnitude anchor to enhance the semantic contrast.\n(b) The CA maps produced inside the backbone are modulated at the text token and spatio-temporal levels, enabling consistent localization associated with the target word across frames.\nAfter this modulation, the CA maps become strongly concentrated compared with Wan-Edit(Liet al.,2025b).\n(c) Once the editing signalΔ​Vti\\Delta V_{t_{i}}is localized within the target region, it is further amplified by adding back its normalized map, further enhancing the semantic variation.",
+        "caption_zh": "图 4. FlowAnchor 框架。(a) 在每个时间步，将 Z_{t_i}^{src} 与 Z_{t_i}^{tar} 输入骨干模型，以获得对应的速度 V_{t_i}^{src} 与 V_{t_i}^{tar}。在骨干模型中，SAR 注入语义对齐锚点，确保编辑信号 ΔV_{t_i}=V_{t_i}^{tar}-V_{t_i}^{src} 精确捕获目标区域的语义变化。随后，AMM 提供幅度锚点以增强语义对比度。(b) 骨干模型内部生成的交叉注意力（CA）图在文本词元与时空层面进行调制，使得与目标词相关联的定位在跨帧间保持一致。经过此调制，CA 图相较于 Wan-Edit (Li 等人, 2025b) 变得高度集中。(c) 一旦编辑信号 ΔV_{t_i} 被定位在目标区域内，通过加回其归一化映射图进行进一步放大，从而进一步增强语义变化。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.22586v1/x2.png",
+        "caption": "Figure 2.Wan-Edit(Liet al.,2025b)vs. Ours.(a) Naively extending FlowEdit(Kulikovet al.,2025)to videos such as Wan-Edit(Liet al.,2025b)produces unstable editing signals, causing the editing trajectory to distort and resulting in suboptimal edits.\n(b) FlowAnchor provides an explicit anchor to stabilize the editing trajectory toward the intended target.",
+        "caption_zh": "图 2. Wan-Edit(Li 等人, 2025b) 与我们的方法对比。(a) 直接将 FlowEdit(Kulikov 等人, 2025) 等图像编辑方法简单扩展至视频（如 Wan-Edit(Li 等人, 2025b)）会产生不稳定的编辑信号，导致编辑轨迹扭曲，从而生成次优的编辑结果。(b) FlowAnchor 通过提供一个显式的锚点来稳定编辑轨迹，使其朝向预期目标。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.22586v1/x1.png",
+        "caption": "Figure 1.FlowAnchor stabilizes inversion-free video editing across diverse challenging scenarios.While the inversion-free baselineWan-Edit(Liet al.,2025b)often struggles with mislocalized or weak edits, especially in multi-object scenes, fast-motion videos, and large semantic changes, our FlowAnchor achieves precise localized editing with improved temporal consistency, semantic faithfulness, and background preservation.Teaser figure showing representative video editing results across different scenes.",
+        "caption_zh": "图1：FlowAnchor 在多样化的挑战性场景中稳定实现了无需反演的视频编辑。虽然无需反演的基础方法 Wan-Edit (Li 等人, 2025b) 常常在定位偏差或编辑效果薄弱方面遇到困难，尤其是在多物体场景、快速运动视频和大语义变化的情况下，但我们的 FlowAnchor 方法实现了精准的局部化编辑，并提升了时间一致性、语义忠实度及背景保持能力。本示例图展示了跨不同场景的代表性视频编辑结果。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.16353": {
+      "abstract": "This paper introduces AgriIR, a configurable retrieval augmented generation (RAG) framework designed to deliver grounded, domain-specific answers while maintaining flexibility and low computational cost. Instead of relying on large, monolithic models, AgriIR decomposes the information access process into declarative modular stages -- query refinement, sub-query planning, retrieval, synthesis, and evaluation. This design allows practitioners to adapt the framework to new knowledge verticals without modifying the architecture. Our reference implementation targets Indian agricultural information access, integrating 1B-parameter language models with adaptive retrievers and domain-aware agent catalogues. The system enforces deterministic citation, integrates telemetry for transparency, and includes automated deployment assets to ensure auditable, reproducible operation. By emphasizing architectural design and modular control, AgriIR demonstrates that well-engineered pipelines can achieve domain-accurate, trustworthy retrieval even under constrained resources. We argue that this approach exemplifies ``AI for Agriculture'' by promoting accessibility, sustainability, and accountability in retrieval-augmented generation systems.",
+      "comments": "Accepted at ECIR 2026"
+    },
+    "2604.18519": {
+      "abstract": "Guard models are widely used to detect harmful content in user prompts and LLM responses. However, state-of-the-art guard models rely solely on terminal-layer representations and overlook the rich safety-relevant features distributed across internal layers. We present SIREN, a lightweight guard model that harnesses these internal features. By identifying safety neurons via linear probing and combining them through an adaptive layer-weighted strategy, SIREN builds a harmfulness detector from LLM internals without modifying the underlying model. Our comprehensive evaluation shows that SIREN substantially outperforms state-of-the-art open-source guard models across multiple benchmarks while using 250 times fewer trainable parameters. Moreover, SIREN exhibits superior generalization to unseen benchmarks, naturally enables real-time streaming detection, and significantly improves inference efficiency compared to generative guard models. Overall, our results highlight LLM internal states as a promising foundation for practical, high-performance harmfulness detection.",
+      "comments": "17 pages,10 figures,6 tables"
+    },
+    "2604.18580": {
+      "abstract": "Modern sequence modeling is dominated by two families: Transformers, whose self-attention can access arbitrary elements of the visible sequence, and structured state-space models, which propagate information through an explicit recurrent state. These mechanisms face different limitations on long contexts: when attention is diffuse, the influence of individual tokens is diluted across the effective support, while recurrent state propagation can lose long-range sensitivity unless information is actively preserved. As a result, both mechanisms face challenges in preserving and selectively retrieving information over long contexts. We propose Sessa, a decoder that places attention inside a recurrent feedback path. This creates many attention-based paths through which past tokens can influence future states, rather than relying on a single attention read or a single recurrent chain. We prove that, under explicit assumptions and matched regimes, Sessa admits power-law memory tails $O(\\ell^{-\\beta})$ for $0 < \\beta < 1$, with slower decay than in the corresponding Transformer and Mamba-style baselines. We further give an explicit construction that achieves this power-law rate. Under the same assumptions, Sessa is the only model class among those considered that realizes flexible selective retrieval, including profiles whose influence does not decay with distance. Consistent with this theoretical advantage, across matched experiments, Sessa achieves the strongest performance on long-context benchmarks while remaining competitive with Transformer and Mamba-style baselines on short-context language modeling.",
+      "comments": "v2: revised abstract for clarity; main results unchanged. Code available at: <a class=\"link-external link-https\" href=\"https://github.com/LibratioAI/sessa\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.20012": {
+      "abstract": "Vision-Language-Action Models (VLAs) inherit their visual and linguistic capabilities from Vision-Language Models (VLMs), yet most VLAs are built from off-the-shelf VLMs that are not adapted to the embodied domain, limiting their downstream performance. In this work, we propose EmbodiedMidtrain to bridge the gap between VLMs and VLAs. We first characterize the data distribution gap between them, showing that VLA data occupy compact regions that are largely separated from the broader VLM distribution, while the degree of alignment varies substantially both across and within VLM data sources. Then, we build a mid-training data engine that leverages a lightweight learnable proximity estimator to select the most VLA-aligned candidates from a large VLM pool, and mid-trains the VLM on this curated mixture before downstream VLA fine-tuning. Experiments on three robot manipulation benchmarks show that mid-training consistently improves performance across different VLM backbones, achieving results competitive with expert VLAs and off-the-shelf VLMs trained with larger model scale and training budgets. Further analysis reveals that mid-training provides a stronger initialization for VLA fine-tuning, with gains emerging from the earliest steps and widening throughout training. Moreover, the data engine captures both dataset-level and sample-level alignment signals, favoring spatial reasoning over text-centric tasks while preserving the diversity of the VLM data. We will release all code, data and models for future research.",
+      "comments": ""
+    },
+    "2604.20857": {
+      "abstract": "Recent advances in autonomous ``AI scientist'' systems have demonstrated the ability to automatically write scientific manuscripts and codes with execution. However, producing a publication-grade scientific diagram (e.g., teaser figure) is still a major bottleneck in the ``end-to-end'' paper generation process. For example, a teaser figure acts as a strategic visual interface and serves a different purpose than derivative data plots. It demands conceptual synthesis and planning to translate complex logic workflow into a compelling graphic that guides intuition and sparks curiosity. Existing AI scientist systems usually omit this component or fall back to an inferior alternative. To bridge this gap, we present DiagramBank, a large-scale dataset consisting of 89,422 schematic diagrams curated from existing top-tier scientific publications, designed for multimodal retrieval and exemplar-driven scientific figure generation. DiagramBank is developed through our automated curation pipeline that extracts figures and corresponding in-text references, and uses a CLIP-based filter to differentiate schematic diagrams from standard plots or natural images. Each instance is paired with rich context from abstract, caption, to figure-reference pairs, enabling information retrieval under different query granularities. We release DiagramBank in a ready-to-index format and provide a retrieval-augmented generation codebase to demonstrate exemplar-conditioned synthesis of teaser figures. DiagramBank is publicly available atthis https URLwith code atthis https URL.",
+      "comments": "15 pages"
+    },
+    "2604.21518": {
+      "abstract": "Neural representations (NRs), such as neural fields and 3D Gaussians, effectively model volumetric data in computed tomography (CT) but suffer from severe artifacts under sparse-view settings. To address this, we propose DiffNR, a novel framework that enhances NR optimization with diffusion priors. At its core is SliceFixer, a single-step diffusion model designed to correct artifacts in degraded slices. We integrate specialized conditioning layers into the network and develop tailored data curation strategies to support model finetuning. During reconstruction, SliceFixer periodically generates pseudo-reference volumes, providing auxiliary 3D perceptual supervision to fix underconstrained regions. Compared to prior methods that embed CT solvers into time-consuming iterative denoising, our repair-and-augment strategy avoids frequent diffusion model queries, leading to better runtime performance. Extensive experiments show that DiffNR improves PSNR by 3.99 dB on average, generalizes well across domains, and maintains efficient optimization.",
+      "comments": "Accepted to AAAI 2026. Project page: <a class=\"link-external link-https\" href=\"https://ooonesevennn.github.io/DiffNR/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.21718": {
+      "abstract": "Video-language models (VLMs) learn to reason about the dynamic visual world through natural language. We introduce a suite of open datasets, benchmarks, and recipes for scalable oversight that enable precise video captioning. First, we define a structured specification for describing subjects, scenes, motion, spatial, and camera dynamics, grounded by hundreds of carefully defined visual primitives developed with professional video creators such as filmmakers. Next, to curate high-quality captions, we introduce CHAI (Critique-based Human-AI Oversight), a framework where trained experts critique and revise model-generated pre-captions into improved post-captions. This division of labor improves annotation accuracy and efficiency by offloading text generation to models, allowing humans to better focus on verification. Additionally, these critiques and preferences between pre- and post-captions provide rich supervision for improving open-source models (Qwen3-VL) on caption generation, reward modeling, and critique generation through SFT, DPO, and inference-time scaling. Our ablations show that critique quality in precision, recall, and constructiveness, ensured by our oversight framework, directly governs downstream performance. With modest expert supervision, the resulting model outperforms closed-source models such as Gemini-3.1-Pro. Finally, we apply our approach to re-caption large-scale professional videos (e.g., films, commercials, games) and fine-tune video generation models such as Wan to better follow detailed prompts of up to 400 words, achieving finer control over cinematography including camera motion, angle, lens, focus, point of view, and framing. Our results show that precise specification and human-AI oversight are key to professional-level video understanding and generation. Data and code are available on our project page:this https URL",
+      "comments": "CVPR 2026 Highlight. Project page: <a class=\"link-external link-https\" href=\"https://linzhiqiu.github.io/papers/chai/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.22085": {
+      "abstract": "The transition from stateless language model inference to persistent, multi session autonomous agents has revealed memory to be a primary architectural bottleneck in the deployment of production grade agentic systems. Existing methodologies largely depend on hybrid semantic graph architectures, which impose substantial computational overhead during both ingestion and retrieval. These systems typically require large language model mediated entity extraction, explicit graph schema maintenance, and multi query retrieval pipelines. This paper introduces Memanto, a universal memory layer for agentic artificial intelligence that challenges the prevailing assumption that knowledge graph complexity is necessary to achieve high fidelity agent memory. Memanto integrates a typed semantic memory schema comprising thirteen predefined memory categories, an automated conflict resolution mechanism, and temporal versioning. These components are enabled by Moorcheh's Information Theoretic Search engine, a no indexing semantic database that provides deterministic retrieval within sub ninety millisecond latency while eliminating ingestion delay. Through systematic benchmarking on the LongMemEval and LoCoMo evaluation suites, Memanto achieves state of the art accuracy scores of 89.8 percent and 87.1 percent respectively. These results surpass all evaluated hybrid graph and vector based systems while requiring only a single retrieval query, incurring no ingestion cost, and maintaining substantially lower operational complexity. A five stage progressive ablation study is presented to quantify the contribution of each architectural component, followed by a discussion of the implications for scalable deployment of agentic memory systems.",
+      "comments": "13 Pages, 10 Tables, 8 Figures"
+    },
+    "2604.22152": {
+      "abstract": "Evaluating robotics policies across thousands of environments and thousands of tasks is infeasible with existing approaches. This motivates the need for a new methodology for scalable robotics policy evaluation. In this paper, we propose dWorldEval, which uses a discrete diffusion world model as a scalable evaluation proxy for robotics policies. Specifically, dWorldEval maps all modalities - including vision, language, and robotic actions - into a unified token space, modeling them via a single transformer-based denoising network. In this paper, we propose dWorldEval, using a discrete diffusion world model as a scalable evaluation proxy for robotics policy. Specifically, it maps all modalities, including vision, language, and robotics action into a unified token space, then denoises them with a single transformer network. Building on this architecture, we employ a sparse keyframe memory to maintain spatiotemporal consistency. We also introduce a progress token that indicates the degree of task completion. At inference, the model jointly predicts future observations and progress token, allowing automatically determine success when the progress reaches 1. Extensive experiments demonstrate that dWorldEval significantly outperforms previous approaches, i.e., WorldEval, Ctrl-World, and WorldGym, on LIBERO, RoboTwin, and multiple real-robot tasks. It paves the way for a new architectural paradigm in building world simulators for robotics evaluation at scale.",
+      "comments": ""
+    },
+    "2604.22294": {
+      "abstract": "Real-world document question answering is challenging. Analysts must synthesize evidence across multiple documents and different parts of each document. However, any fixed LLM context window can be exceeded as document collections grow. A common workaround is to decompose documents into chunks and assemble answers from chunk-level outputs, but this introduces an aggregation bottleneck: as the number of chunks grows, systems must still combine and reason over an increasingly large body of extracted evidence. We present SLIDERS, a framework for question answering over long document collections through structured reasoning. SLIDERS extracts salient information into a relational database, enabling scalable reasoning over persistent structured state via SQL rather than concatenated text. To make this locally extracted representation globally coherent, SLIDERS introduces a data reconciliation stage that leverages provenance, extraction rationales, and metadata to detect and repair duplicated, inconsistent, and incomplete records. SLIDERS outperforms all baselines on three existing long-context benchmarks, despite all of them fitting within the context window of strong base LLMs, exceeding GPT-4.1 by 6.6 points on average. It also improves over the next best baseline by ~19 and ~32 points on two new benchmarks at 3.9M and 36M tokens, respectively.",
+      "comments": "49 pages (14 main), preprint"
+    },
+    "2604.22436": {
+      "abstract": "The rapid growth of AI agent ecosystems is transforming how complex tasks are delegated and executed, creating a new challenge of identifying suitable agents for a given task. Unlike traditional tools, agent capabilities are often compositional and execution-dependent, making them difficult to assess from textual descriptions alone. However, existing research and benchmarks typically assume well-specified functionalities, controlled candidate pools, or only executable task queries, leaving realistic agent search scenarios insufficiently studied. We introduce AgentSearchBench, a large-scale benchmark for agent search in the wild, built from nearly 10,000 real-world agents across multiple providers. The benchmark formalizes agent search as retrieval and reranking problems under both executable task queries and high-level task descriptions, and evaluates relevance using execution-grounded performance signals. Experiments reveal a consistent gap between semantic similarity and actual agent performance, exposing the limitations of description-based retrieval and reranking methods. We further show that lightweight behavioral signals, including execution-aware probing, can substantially improve ranking quality, highlighting the importance of incorporating execution signals into agent discovery. Our code is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.22554": {
+      "abstract": "Transformations produced by image and video generation models often evolve in a highly non-linear manner: long stretches where the content barely changes are followed by sudden, abrupt semantic jumps. To analyze and correct this behavior, we introduce a Semantic Progress Function, a one-dimensional representation that captures how the meaning of a given sequence evolves over time. For each frame, we compute distances between semantic embeddings and fit a smooth curve that reflects the cumulative semantic shift across the sequence. Departures of this curve from a straight line reveal uneven semantic pacing. Building on this insight, we propose a semantic linearization procedure that reparameterizes (or retimes) the sequence so that semantic change unfolds at a constant rate, yielding smoother and more coherent transitions. Beyond linearization, our framework provides a model-agnostic foundation for identifying temporal irregularities, comparing semantic pacing across different generators, and steering both generated and real-world video sequences toward arbitrary target pacing.",
+      "comments": "SIGGRAPH 2026"
+    },
+    "2604.22565": {
+      "abstract": "Large Language Models (LLMs) can reason well, yet often miss decisive evidence when it is buried in long, noisy contexts. We introduce HiLight, an Evidence Emphasis framework that decouples evidence selection from reasoning for frozen LLM solvers. HiLight avoids compressing or rewriting the input, which can discard or distort evidence, by training a lightweight Emphasis Actor to insert minimal highlight tags around pivotal spans in the unaltered context. A frozen Solver then performs downstream reasoning on the emphasized input. We cast highlighting as a weakly supervised decision-making problem and optimize the Actor with reinforcement learning using only the Solver's task reward, requiring no evidence labels and no access to or modification of the Solver. Across sequential recommendation and long-context question answering, HiLight consistently improves performance over strong prompt-based and automated prompt-optimization baselines. The learned emphasis policy transfers zero-shot to both smaller and larger unseen Solver families, including an API-based Solver, suggesting that the Actor captures genuine, reusable evidence structure rather than overfitting to a single backbone.",
+      "comments": ""
+    },
+    "2604.22586": {
+      "abstract": "We propose FlowAnchor, a training-free framework for stable and efficient inversion-free, flow-based video editing. Inversion-free editing methods have recently shown impressive efficiency and structure preservation in images by directly steering the sampling trajectory with an editing signal. However, extending this paradigm to videos remains challenging, often failing in multi-object scenes or with increased frame counts. We identify the root cause as the instability of the editing signal in high-dimensional video latent spaces, which arises from imprecise spatial localization and length-induced magnitude attenuation. To overcome this challenge, FlowAnchor explicitly anchors both where to edit and how strongly to edit. It introduces Spatial-aware Attention Refinement, which enforces consistent alignment between textual guidance and spatial regions, and Adaptive Magnitude Modulation, which adaptively preserves sufficient editing strength. Together, these mechanisms stabilize the editing signal and guide the flow-based evolution toward the desired target distribution. Extensive experiments demonstrate that FlowAnchor achieves more faithful, temporally coherent, and computationally efficient video editing across challenging multi-object and fast-motion scenarios. The project page is available atthis https URL.",
+      "comments": "Under review"
+    },
+    "2604.22748": {
+      "abstract": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models, yet the term world model carries different meanings across research communities. We introduce a \"levels x laws\" taxonomy organized along two axes. The first defines three capability levels: L1 Predictor, which learns one-step local transition operators; L2 Simulator, which composes them into multi-step, action-conditioned rollouts that respect domain laws; and L3 Evolver, which autonomously revises its own model when predictions fail against new evidence. The second identifies four governing-law regimes: physical, digital, social, and scientific. These regimes determine what constraints a world model must satisfy and where it is most likely to fail. Using this framework, we synthesize over 400 works and summarize more than 100 representative systems spanning model-based reinforcement learning, video generation, web and GUI agents, multi-agent social simulation, and AI-driven scientific discovery. We analyze methods, failure modes, and evaluation practices across level-regime pairs, propose decision-centric evaluation principles and a minimal reproducible evaluation package, and outline architectural guidance, open problems, and governance challenges. The resulting roadmap connects previously isolated communities and charts a path from passive next-step prediction toward world models that can simulate, and ultimately reshape, the environments in which agents operate.",
+      "comments": ""
+    }
+  }
+}

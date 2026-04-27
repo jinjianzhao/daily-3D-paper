@@ -18,7 +18,7 @@ CST = timezone(timedelta(hours=8))
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DAILY_SLOTS: list[int] = [2, 10, 19]
-AREA_INTERVAL_SEC: int = 120
+AREA_INTERVAL_SEC: int = 3600
 
 # 全局互斥锁：date 和 area 不同时跑
 _mutex = threading.Lock()

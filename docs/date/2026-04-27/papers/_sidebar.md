@@ -1,0 +1,20 @@
+- [**2026-04-27 日报**](/2026-04-27/)
+
+  - **3D重建/生成**
+    - [DiffNR | 扩散模型辅助稀疏视角CT重建](/2026-04-27/papers/2604.21518.md)
+  - **视频生成模型**
+    - [Building a... | 构建视频语言模型精准描述体系](/2026-04-27/papers/2604.21718.md)
+    - [Video Analysis... | 视频生成语义节奏分析调控](/2026-04-27/papers/2604.22554.md)
+    - [FlowAnchor | 稳定视频编辑无需反演](/2026-04-27/papers/2604.22586.md)
+  - [**全量简报 (11 篇)**](/2026-04-27/briefs.md)
+    - [AgriIR | 农业领域知识检索框架](/2026-04-27/briefs.md?id=agriir)
+    - [LLM Safety From Within | 利用模型内部特征检测有害内容](/2026-04-27/briefs.md?id=llm-safety-from-within)
+    - [Sessa | 选择性状态空间注意机制](/2026-04-27/briefs.md?id=sessa)
+    - [EmbodiedMidtrain | 视觉语言动作模型的中期训练预适应](/2026-04-27/briefs.md?id=embodiedmidtrain)
+    - [DiagramBank | 构建科研示意图数据集](/2026-04-27/briefs.md?id=diagrambank)
+    - [Memanto | 为长程智能体打造高效语义记忆系统  ](/2026-04-27/briefs.md?id=memanto)
+    - [dWorldEval | 离散扩散世界模型评估机器人策略](/2026-04-27/briefs.md?id=dworldeval)
+    - [Contexts are Never Long Enough | 长文档问答的结构化推理框架](/2026-04-27/briefs.md?id=contexts-are-never-long-enough)
+    - [AgentSearchBench | 评测AI智能体搜索性能](/2026-04-27/briefs.md?id=agentsearchbench)
+    - [Learning Evidence... | 大模型长文本关键信息强调](/2026-04-27/briefs.md?id=learning-evidence)
+    - [Agentic World Modeling | 智能体世界模型能力分类综述](/2026-04-27/briefs.md?id=agentic-world-modeling)

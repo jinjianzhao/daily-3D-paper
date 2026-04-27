@@ -219,3 +219,6 @@ __marimo__/
 output/cache/
 areas/
 delete/
+
+# IDE settings (may contain API keys)
+.claude/
