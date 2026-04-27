@@ -122,8 +122,9 @@ class PipelineConfig:
     llm_temperature: float = 0.7
     llm_max_tokens: int = 2048
     llm_request_timeout_sec: int = 60
-    # hf_mirror_base_url: str = "https://hf-mirror.com"
-    hf_paper_link_prefix: str = "https://huggingface.co"
+    hf_mirror_base_url: str = "https://hf-mirror.com"
+    hf_paper_link_prefix: str = "https://hf-mirror.com"
+    # hf_paper_link_prefix: str = "https://huggingface.co"
     hf_href_arxiv_id_regex: str = r"(\d{4}\.\d+)"
     http_user_agent: str = "Mozilla/5.0"
     timeout_hf_list_sec: int = 30
@@ -418,6 +419,7 @@ class PaperPipeline:
             return base_info, hf_votes
 
         url = f"{self.cfg.hf_paper_link_prefix}/papers/date/{date_str}"
+        pipeline_debug("step01", "拉取论文列表", f"请求URL={url}")
         resp = requests.get(url, headers=self.headers, timeout=self.cfg.timeout_hf_list_sec)
         soup = BeautifulSoup(resp.text, "html.parser")
         results_with_votes = []
