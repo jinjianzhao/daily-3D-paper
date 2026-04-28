@@ -1,0 +1,20 @@
+- [**2026-04-28 日报**](/2026-04-28/)
+
+  - **3D重建/生成**
+    - [DiffNR | 用扩散模型增强稀疏断层成像三维重建](/2026-04-28/papers/2604.21518.md)
+  - **视频生成模型**
+    - [Building a... | 构建高精度视频语言模型](/2026-04-28/papers/2604.21718.md)
+    - [Video Analysis... | 视频语义节奏分析与调控](/2026-04-28/papers/2604.22554.md)
+    - [FlowAnchor | 稳定视频编辑信号的新框架](/2026-04-28/papers/2604.22586.md)
+  - [**全量简报 (11 篇)**](/2026-04-28/briefs.md)
+    - [AgriIR | 面向农业的模块化检索增强框架](/2026-04-28/briefs.md?id=agriir)
+    - [LLM Safety From Within | 用大模型内部特征检测有害内容](/2026-04-28/briefs.md?id=llm-safety-from-within)
+    - [Sessa | 选择性状态空间注意力模型](/2026-04-28/briefs.md?id=sessa)
+    - [EmbodiedMidtrain | 通过中间训练提升机器人视觉语言动作模型性能](/2026-04-28/briefs.md?id=embodiedmidtrain)
+    - [DiagramBank | 大规模科学图示数据集构建](/2026-04-28/briefs.md?id=diagrambank)
+    - [Memanto | 新型智能体记忆系统](/2026-04-28/briefs.md?id=memanto)
+    - [dWorldEval | 用离散扩散模型评估机器人策略](/2026-04-28/briefs.md?id=dworldeval)
+    - [Contexts are Never Long Enough | 长文档集问答结构化推理框架](/2026-04-28/briefs.md?id=contexts-are-never-long-enough)
+    - [AgentSearchBench | 评估真实AI智能体检索效果](/2026-04-28/briefs.md?id=agentsearchbench)
+    - [Learning Evidence... | 大模型证据高亮增强推理](/2026-04-28/briefs.md?id=learning-evidence)
+    - [Agentic World Modeling | AI环境建模能力分级](/2026-04-28/briefs.md?id=agentic-world-modeling)

@@ -28,7 +28,7 @@
 | [**3D-VCD**](/2026-04-24/briefs.md?id=3d-vcd) | 3D大模型的幻觉抑制方法   | 具身智能;三维场景理解;三维大语言模型幻觉消减   | 3D-VCD: Hallucination Mitigation in 3D-LLM Embodied Agents through Visual Contrastive Decoding | 1 |
 | [**Test-Time Adaptation...**](/2026-04-24/briefs.md?id=test-time-adaptation) | 脑电基础模型测试时适应研究 | 机器学习;脑电信号处理;测试时适应基准评测 | Test-Time Adaptation for EEG Foundation Models: A Systematic Study under Real-World Distribution Shifts | 2 |
 | [**LLaTiSA**](/2026-04-24/briefs.md?id=llatisa) | 构建分层时序推理模型 | 时间序列分析;时序推理;时序感知增强 | LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics | 84 |
-| [**UniT**](/2026-04-24/briefs.md?id=unit) | 人形机器人跨身体策略学习框架 | 机器人；具身智能；人形机器人策略学习 | UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling | 27 |
+| [**UniT**](/2026-04-24/briefs.md?id=unit) | 人形机器人跨身体策略学习框架 | 机器人；具身智能；人形机器人策略学习 | UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling | 28 |
 | [**Temporally Extended...**](/2026-04-24/briefs.md?id=temporally-extended) | 延长专家混合模型切换间隔 | 机器学习;大规模语言模型;专家混合模型优化 | Temporally Extended Mixture-of-Experts Models | 3 |
 | [**Hybrid Policy...**](/2026-04-24/briefs.md?id=hybrid-policy) | 用混合策略蒸馏优化大语言模型 | 自然语言处理;大语言模型压缩;知识蒸馏 | Hybrid Policy Distillation for LLMs | 10 |
 | [**WebGen-R1**](/2026-04-24/briefs.md?id=webgen-r1) | 强化学习训练小模型生成多页网站 | 自然语言处理;代码生成;多页网站生成 | WebGen-R1: Incentivizing Large Language Models to Generate Functional and Aesthetic Websites with Reinforcement Learning | 3 |

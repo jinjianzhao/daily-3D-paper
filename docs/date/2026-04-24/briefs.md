@@ -79,7 +79,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19734  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19734  
 **HF Paper**: https://hf-mirror.com/papers/2604.19734  
-**HF Votes**: 27
+**HF Votes**: 28
 
 ## 简要摘要
 
