@@ -1,5 +1,113 @@
 # 2026-04-28 全量简报
 
+# For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs
+
+**【高效估值大模型微调数据】**
+
+**arXiv**: https://arxiv.org/abs/2508.10180  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2508.10180  
+**HF Paper**: https://hf-mirror.com/papers/2508.10180  
+**HF Votes**: 6
+
+## 简要摘要
+
+*机器学习;数据估值;大模型数据价值评估*
+
+数据估值对提升大模型透明度与问责制至关重要，但现有依赖梯度的方法计算成本极高。
+本文提出仅需前向传播即可高效批量估算数据价值的框架，在多项任务中表现优异且效率显著提升。
+
+---
+
+# Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining
+
+**【分离机器人视觉前向逆动力学预训练】**
+
+**arXiv**: https://arxiv.org/abs/2604.16391  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16391  
+**HF Paper**: https://hf-mirror.com/papers/2604.16391  
+**HF Votes**: 1
+
+## 简要摘要
+
+*机器人;机器人学习;视觉语言动作模型*
+
+视觉语言动作模型在构建通用机器人时面临二维图像预测与三维动作预测不匹配的困境。
+提出DeFI框架，分别预训练前向与逆动力学模型以利用不同数据源，再整合微调，在多个基准测试中实现领先性能。
+
+---
+
+# Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment
+
+**【减少多智能体角色偏见】**
+
+**arXiv**: https://arxiv.org/abs/2604.19548  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19548  
+**HF Paper**: https://hf-mirror.com/papers/2604.19548  
+**HF Votes**: 8
+
+## 简要摘要
+
+*自然语言处理;多智能体系统;行为者-观察者不对称*
+
+大型语言模型智能体在角色扮演中会出现行为者-观察者不对称的认知偏差，影响其可靠性。
+提出通过辩证对齐训练的ReTAS方法，能合成矛盾观点以减轻偏见，提升模糊场景的故障解决率。
+
+---
+
+# How Much Is One Recurrence Worth? Iso-Depth Scaling Laws for Looped Language Models
+
+**【循环语言模型深度循环等效参数标度律】**
+
+**arXiv**: https://arxiv.org/abs/2604.21106  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21106  
+**HF Paper**: https://hf-mirror.com/papers/2604.21106  
+**HF Votes**: 4
+
+## 简要摘要
+
+*自然语言处理;语言模型;循环模型标度律*
+
+研究循环语言模型增加循环次数带来的性能提升，需要量化其相当于增加多少唯一参数。
+通过大量训练实验拟合出包含循环等价指数φ的联合标度律，发现φ约为0.46，并验证其作为评估工具可区分训练技巧带来的真实能力提升与计算增益。
+
+---
+
+# Efficient Agent Evaluation via Diversity-Guided User Simulation
+
+**【高效评估对话智能体】**
+
+**arXiv**: https://arxiv.org/abs/2604.21480  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21480  
+**HF Paper**: https://hf-mirror.com/papers/2604.21480  
+**HF Votes**: 11
+
+## 简要摘要
+
+*自然语言处理;语言模型评估;用户模拟*
+
+当前对大型语言模型作为客服智能体的评估方法效率低且难以发现深层故障。
+提出DIVERT框架，通过状态快照复用与多样化用户响应分支，系统探索交互路径以提升评估效率与覆盖率。
+
+---
+
+# From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
+
+**【构建自组织多智能体公司系统】**
+
+**arXiv**: https://arxiv.org/abs/2604.22446  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22446  
+**HF Paper**: https://hf-mirror.com/papers/2604.22446  
+**HF Votes**: 75
+
+## 简要摘要
+
+*智能体系统;多智能体协作;智能体组织架构*
+
+当前多智能体系统受限于固定团队结构和紧耦合协调逻辑，缺乏能动态组建、治理和改进智能体工作队伍的组织层。
+提出OneManCompany框架，通过可移植的Talent封装技能、Talent市场动态招募、以及探索-执行-审查树搜索统一规划执行与评估，将多智能体系统提升为能自适应开放任务的自组织AI组织。
+
+---
+
 # Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing
 
 **【自适应共享KV缓存优化大模型推理】**
@@ -7,6 +115,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22782  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22782  
 **HF Paper**: https://hf-mirror.com/papers/2604.22782  
+**HF Votes**: 1
 
 ## 简要摘要
 
@@ -17,6 +126,42 @@
 
 ---
 
+# ATTN-FIQA: Interpretable Attention-based Face Image Quality Assessment with Vision Transformers
+
+**【用注意力评估人脸图像质量  】**
+
+**arXiv**: https://arxiv.org/abs/2604.22841  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22841  
+**HF Paper**: https://hf-mirror.com/papers/2604.22841  
+**HF Votes**: 2
+
+## 简要摘要
+
+*计算机视觉;生物特征识别;人脸图像质量评估  *
+
+人脸图像质量评估任务旨在判断人脸图像对识别系统的可用性。  
+本研究提出一种免训练方法，利用预训练视觉变换器的注意力分数作为人脸图像质量指标。
+
+---
+
+# EX-FIQA: Leveraging Intermediate Early eXit Representations from Vision Transformers for Face Image Quality Assessment
+
+**【利用中间层提升人脸质量评估  】**
+
+**arXiv**: https://arxiv.org/abs/2604.22842  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22842  
+**HF Paper**: https://hf-mirror.com/papers/2604.22842  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;人脸识别;人脸图像质量评估  *
+
+现有基于视觉变换器的人脸质量评估方法仅依赖最终层特征，忽略了中间层的质量信息。  
+系统分析了视觉变换器中所有中间层的作用，提出无需修改架构的分数融合框架，在保持性能的同时显著降低计算成本。
+
+---
+
 # SketchVLM: Vision language models can annotate images to explain thoughts and guide users
 
 **【让视觉语言模型在图上标注解释】**
@@ -24,7 +169,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22875  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22875  
 **HF Paper**: https://hf-mirror.com/papers/2604.22875  
-**HF Votes**: 8
+**HF Votes**: 17
 
 ## 简要摘要
 
@@ -35,6 +180,24 @@
 
 ---
 
+# TexOCR: Advancing Document OCR Models for Compilable Page-to-LaTeX Reconstruction
+
+**【优化文档OCR生成可编译LaTeX  】**
+
+**arXiv**: https://arxiv.org/abs/2604.22880  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22880  
+**HF Paper**: https://hf-mirror.com/papers/2604.22880  
+**HF Votes**: 5
+
+## 简要摘要
+
+*文档智能;光学字符识别与理解;科学文档LaTeX重建  *
+
+现有文档OCR主要关注提取纯文本或Markdown格式，忽略了LaTeX在科学出版中至关重要的结构与可编译特性。  
+我们构建了包含评测基准与训练数据集的TexOCR系统，通过监督微调和基于可验证奖励的强化学习训练模型，显著提升了科学PDF到可编译LaTeX的重建质量。
+
+---
+
 # ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation
 
 **【高效评估生成式AI模型性能】**
@@ -42,6 +205,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23099  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23099  
 **HF Paper**: https://hf-mirror.com/papers/2604.23099  
+**HF Votes**: 1
 
 ## 简要摘要
 
@@ -52,6 +216,78 @@
 
 ---
 
+# Discovering Agentic Safety Specifications from 1-Bit Danger Signals
+
+**【大模型从稀疏危险信号学安全规则】**
+
+**arXiv**: https://arxiv.org/abs/2604.23210  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23210  
+**HF Paper**: https://hf-mirror.com/papers/2604.23210  
+**HF Votes**: 1
+
+## 简要摘要
+
+*强化学习;智能体安全;稀疏反馈安全性*
+
+背景/任务：研究大语言模型智能体能否仅通过稀疏的二进制危险信号（而非丰富反馈）来发现隐藏的安全约束。
+做了什么：提出了EPO-Safe框架，让智能体通过反思从危险信号中演化出可读的安全规范，并在网格世界和文本场景中验证了其有效性，发现仅基于奖励的反思会损害安全。
+
+---
+
+# Learning to Identify Out-of-Distribution Objects for 3D LiDAR Anomaly Segmentation
+
+**【3D激光雷达异常物体分割】**
+
+**arXiv**: https://arxiv.org/abs/2604.23604  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23604  
+**HF Paper**: https://hf-mirror.com/papers/2604.23604  
+**HF Votes**: 2
+
+## 简要摘要
+
+*自动驾驶感知;三维点云理解;异常物体分割*
+
+在自动驾驶中，识别三维点云中未知的异常物体是关键任务。
+我们提出一种直接在特征空间建模的方法，并构建了混合数据集来提升性能。
+
+---
+
+# RaV-IDP: A Reconstruction-as-Validation Framework for Faithful Intelligent Document Processing
+
+**【文档处理重建验证框架】**
+
+**arXiv**: https://arxiv.org/abs/2604.23644  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23644  
+**HF Paper**: https://hf-mirror.com/papers/2604.23644  
+**HF Votes**: 1
+
+## 简要摘要
+
+*文档智能;信息抽取;抽取结果验证*
+
+现有智能文档处理流程提取文档实体但缺乏验证其是否忠实于原文档的内在机制
+提出重建验证框架，通过将抽取结果重建并与原文档区域比较来提供保真度分数，分数过低时触发结构化大模型回退并重复验证循环
+
+---
+
+# PageGuide: Browser extension to assist users in navigating a webpage and locating information
+
+**【浏览器插件助用户浏览网页定位信息】**
+
+**arXiv**: https://arxiv.org/abs/2604.23772  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23772  
+**HF Paper**: https://hf-mirror.com/papers/2604.23772  
+**HF Votes**: 3
+
+## 简要摘要
+
+*人机交互;智能用户界面;网页信息导航*
+
+用户常难以在杂乱网页中快速定位信息、完成多步任务并保持专注，现有AI助手和浏览器代理无法直观展示信息来源。
+我们开发了PageGuide浏览器扩展，通过视觉叠加将LLM回答直接锚定在网页DOM中，提供查找、引导和隐藏功能，有效提升信息查找准确性、任务完成率和专注度。
+
+---
+
 # Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms
 
 **【视觉语言动作模型安全综述】**
@@ -59,7 +295,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23775  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23775  
 **HF Paper**: https://hf-mirror.com/papers/2604.23775  
-**HF Votes**: 1
+**HF Votes**: 40
 
 ## 简要摘要
 
@@ -77,7 +313,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23781  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23781  
 **HF Paper**: https://hf-mirror.com/papers/2604.23781  
-**HF Votes**: 14
+**HF Votes**: 23
 
 ## 简要摘要
 
@@ -95,7 +331,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24003  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24003  
 **HF Paper**: https://hf-mirror.com/papers/2604.24003  
-**HF Votes**: 1
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -113,7 +349,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24198  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24198  
 **HF Paper**: https://hf-mirror.com/papers/2604.24198  
-**HF Votes**: 10
+**HF Votes**: 14
 
 ## 简要摘要
 
@@ -131,7 +367,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24300  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24300  
 **HF Paper**: https://hf-mirror.com/papers/2604.24300  
-**HF Votes**: 14
+**HF Votes**: 53
 
 ## 简要摘要
 
@@ -142,6 +378,41 @@
 
 ---
 
+# Improving Vision-language Models with Perception-centric Process Reward Models
+
+**【提升视觉语言模型感知精度】**
+
+**arXiv**: https://arxiv.org/abs/2604.24583  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24583  
+**HF Paper**: https://hf-mirror.com/papers/2604.24583  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;视觉语言模型;过程奖励模型*
+
+现有视觉语言模型依赖结果级奖励信号，难以诊断和纠正推理链中的感知错误。
+提出感知中心过程奖励模型，在训练中提供细粒度监督信号并在推理中实现测试时扩展。
+
+---
+
+# Quantum Kernel Advantage over Classical Collapse in Medical Foundation Model Embeddings
+
+**【量子核在医学图像分类中的优势】**
+
+**arXiv**: https://arxiv.org/abs/2604.24597  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24597  
+**HF Paper**: https://hf-mirror.com/papers/2604.24597  
+
+## 简要摘要
+
+*机器学习;核方法;量子支持向量机*
+
+研究量子支持向量机在医学影像嵌入分类任务中的潜力。
+在公平对比下，量子核在多项指标上显著优于经典线性核，并分析了其高有效秩的特性。
+
+---
+
 # OmniShotCut: Holistic Relational Shot Boundary Detection with Shot-Query Transformer
 
 **【用Transformer检测视频镜头边界】**
@@ -149,7 +420,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24762  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24762  
 **HF Paper**: https://hf-mirror.com/papers/2604.24762  
-**HF Votes**: 2
+**HF Votes**: 6
 
 ## 简要摘要
 
