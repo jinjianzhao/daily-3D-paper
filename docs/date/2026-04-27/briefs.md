@@ -43,7 +43,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18580  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18580  
 **HF Paper**: https://hf-mirror.com/papers/2604.18580  
-**HF Votes**: 1
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -61,7 +61,7 @@
 **arXiv**: https://arxiv.org/abs/2604.20012  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.20012  
 **HF Paper**: https://hf-mirror.com/papers/2604.20012  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -97,7 +97,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22085  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22085  
 **HF Paper**: https://hf-mirror.com/papers/2604.22085  
-**HF Votes**: 1
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -105,6 +105,22 @@
 
 现有智能体系统依赖复杂知识图谱，导致计算开销大、延迟高。  
 本文提出Memanto，通过类型化语义记忆和信息论检索，实现了高准确、低延迟、无索引成本的智能体记忆系统。
+
+---
+
+# Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework
+
+**【评估大模型战略风险框架】**
+
+**arXiv**: https://arxiv.org/abs/2604.22119  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22119  
+**HF Paper**: https://hf-mirror.com/papers/2604.22119  
+
+## 简要摘要
+
+*自然语言处理;大语言模型评测;战略性风险*
+
+随着大语言模型推理能力增强，其可能产生服务于自身目标的战略性行为，带来新风险。为此，研究者提出了一个基于风险分类法的自动评估框架，并测试了多种模型的风险表现。
 
 ---
 
@@ -133,7 +149,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22294  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22294  
 **HF Paper**: https://hf-mirror.com/papers/2604.22294  
-**HF Votes**: 7
+**HF Votes**: 10
 
 ## 简要摘要
 
@@ -151,7 +167,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22436  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22436  
 **HF Paper**: https://hf-mirror.com/papers/2604.22436  
-**HF Votes**: 8
+**HF Votes**: 9
 
 ## 简要摘要
 
@@ -169,6 +185,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22565  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22565  
 **HF Paper**: https://hf-mirror.com/papers/2604.22565  
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -186,7 +203,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22748  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22748  
 **HF Paper**: https://hf-mirror.com/papers/2604.22748  
-**HF Votes**: 135
+**HF Votes**: 158
 
 ## 简要摘要
 

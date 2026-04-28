@@ -1,31 +1,28 @@
 # 2026-04-28 3D 论文日报
 
-共 **15** 篇，重点 **4** 篇
+共 **12** 篇，重点 **3** 篇
 
 ## 重点论文
 
 ### 3D重建/生成
 
-- [**DiffNR** | 用扩散模型增强稀疏断层成像三维重建 | DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction](/2026-04-28/papers/2604.21518.md)
+- [**Zero-to-CAD** | 智能体生成大规模可执行CAD程序 | Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data](/2026-04-28/papers/2604.24479.md)
+- [**World-R1** | 强化学习增强视频三维一致性 | World-R1: Reinforcing 3D Constraints for Text-to-Video Generation](/2026-04-28/papers/2604.24764.md)
 
-### 视频生成模型
+### 图片生成模型
 
-- [**Building a...** | 构建高精度视频语言模型 | Building a Precise Video Language with Human-AI Oversight](/2026-04-28/papers/2604.21718.md)
-- [**Video Analysis...** | 视频语义节奏分析与调控 | Video Analysis and Generation via a Semantic Progress Function](/2026-04-28/papers/2604.22554.md)
-- [**FlowAnchor** | 稳定视频编辑信号的新框架 | FlowAnchor: Stabilizing the Editing Signal for Inversion-Free Video Editing](/2026-04-28/papers/2604.22586.md)
+- [**Tuna-2** | 像素嵌入超越视觉编码器 | Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation](/2026-04-28/papers/2604.24763.md)
 
 ## [全量简报](/2026-04-28/briefs.md)
 
 | 简称 | 简介 | 领域 | 论文全名 | Votes |
 |------|------|------|----------|------:|
-| [**AgriIR**](/2026-04-28/briefs.md?id=agriir) | 面向农业的模块化检索增强框架 | 自然语言处理;检索增强生成;农业领域信息检索 | AgriIR: A Scalable Framework for Domain-Specific Knowledge Retrieval | 1 |
-| [**LLM Safety From Within**](/2026-04-28/briefs.md?id=llm-safety-from-within) | 用大模型内部特征检测有害内容 | 自然语言处理;大模型安全;有害内容检测 | LLM Safety From Within: Detecting Harmful Content with Internal Representations | 21 |
-| [**Sessa**](/2026-04-28/briefs.md?id=sessa) | 选择性状态空间注意力模型 | 自然语言处理;序列建模;长上下文建模 | Sessa: Selective State Space Attention | 1 |
-| [**EmbodiedMidtrain**](/2026-04-28/briefs.md?id=embodiedmidtrain) | 通过中间训练提升机器人视觉语言动作模型性能 | 机器人；具身智能；视觉语言动作模型对齐 | EmbodiedMidtrain: Bridging the Gap between Vision-Language Models and Vision-Language-Action Models via Mid-training | 1 |
-| [**DiagramBank**](/2026-04-28/briefs.md?id=diagrambank) | 大规模科学图示数据集构建 | 计算机图形学;科学可视化;图示检索与生成 | DiagramBank: A Large-scale Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation | 1 |
-| [**Memanto**](/2026-04-28/briefs.md?id=memanto) | 新型智能体记忆系统 | 自主智能体;记忆系统;语义检索 | Memanto: Typed Semantic Memory with Information-Theoretic Retrieval for Long-Horizon Agents | 1 |
-| [**dWorldEval**](/2026-04-28/briefs.md?id=dworldeval) | 用离散扩散模型评估机器人策略 | 机器人；机器人策略评估；基于世界模型的策略评估 | dWorldEval: Scalable Robotic Policy Evaluation via Discrete Diffusion World Model | 2 |
-| [**Contexts are Never Long Enough**](/2026-04-28/briefs.md?id=contexts-are-never-long-enough) | 长文档集问答结构化推理框架 | 自然语言处理;文档问答;长文档多文档问答 | Contexts are Never Long Enough: Structured Reasoning for Scalable Question Answering over Long Document Sets | 7 |
-| [**AgentSearchBench**](/2026-04-28/briefs.md?id=agentsearchbench) | 评估真实AI智能体检索效果 | 智能体系统;智能体检索;智能体搜索基准构建 | AgentSearchBench: A Benchmark for AI Agent Search in the Wild | 8 |
-| [**Learning Evidence...**](/2026-04-28/briefs.md?id=learning-evidence) | 大模型证据高亮增强推理 | 自然语言处理;大语言模型推理;长上下文证据提取 | Learning Evidence Highlighting for Frozen LLMs |  |
-| [**Agentic World Modeling**](/2026-04-28/briefs.md?id=agentic-world-modeling) | AI环境建模能力分级 | 人工智能系统;智能体与环境建模;世界模型能力与约束 | Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond | 143 |
+| [**Stochastic KV Routing**](/2026-04-28/briefs.md?id=stochastic-kv-routing) | 自适应共享KV缓存优化大模型推理 | 自然语言处理;大模型推理优化;KV缓存深度共享 | Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing |  |
+| [**SketchVLM**](/2026-04-28/briefs.md?id=sketchvlm) | 让视觉语言模型在图上标注解释 | 计算机视觉;视觉问答;视觉推理与标注 | SketchVLM: Vision language models can annotate images to explain thoughts and guide users | 8 |
+| [**ProEval**](/2026-04-28/briefs.md?id=proeval) | 高效评估生成式AI模型性能 | 机器学习;生成模型评估;主动式性能估计与故障发现 | ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation |  |
+| [**Vision-Language-Action Safety**](/2026-04-28/briefs.md?id=vision-language-action-safety) | 视觉语言动作模型安全综述 | 机器人;机器人安全;视觉语言动作模型安全 | Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms | 1 |
+| [**ClawMark**](/2026-04-28/briefs.md?id=clawmark) | 构建多模态长期协作智能体评测基准 | 自然语言处理;智能体评测;长期多模态任务评测 | ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents | 14 |
+| [**Stabilizing Efficient...**](/2026-04-28/briefs.md?id=stabilizing-efficient) | 提升大模型推理效率   | 自然语言处理;大语言模型推理;高效推理方法   | Stabilizing Efficient Reasoning with Step-Level Advantage Selection | 1 |
+| [**Rewarding the Scientific Process**](/2026-04-28/briefs.md?id=rewarding-the-scientific-process) | 为数据分析智能体设计过程奖励模型 | 自然语言处理;智能体与交互系统;数据分析过程奖励建模 | Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis | 10 |
+| [**ReVSI**](/2026-04-28/briefs.md?id=revsi) | 重建视觉空间智能评估基准 | 计算机视觉;视觉语言模型;三维空间推理评估 | ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning | 14 |
+| [**OmniShotCut**](/2026-04-28/briefs.md?id=omnishotcut) | 用Transformer检测视频镜头边界 | 计算机视觉;视频理解;镜头边界检测 | OmniShotCut: Holistic Relational Shot Boundary Detection with Shot-Query Transformer | 2 |
