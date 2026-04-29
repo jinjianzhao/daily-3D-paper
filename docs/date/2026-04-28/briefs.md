@@ -7,7 +7,7 @@
 **arXiv**: https://arxiv.org/abs/2508.10180  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2508.10180  
 **HF Paper**: https://hf-mirror.com/papers/2508.10180  
-**HF Votes**: 6
+**HF Votes**: 15
 
 ## 简要摘要
 
@@ -15,6 +15,24 @@
 
 数据估值对提升大模型透明度与问责制至关重要，但现有依赖梯度的方法计算成本极高。
 本文提出仅需前向传播即可高效批量估算数据价值的框架，在多项任务中表现优异且效率显著提升。
+
+---
+
+# Why Fine-Tuning Encourages Hallucinations and How to Fix It
+
+**【微调如何导致幻觉及解决】**
+
+**arXiv**: https://arxiv.org/abs/2604.15574  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15574  
+**HF Paper**: https://hf-mirror.com/papers/2604.15574  
+**HF Votes**: 9
+
+## 简要摘要
+
+*自然语言处理;语言模型微调;幻觉缓解*
+
+大语言模型在微调时容易产生事实性幻觉，这是知识遗忘或干扰所致。
+提出自蒸馏微调法和冻结参数法来减轻幻觉，并验证了语义表征干扰是主因。
 
 ---
 
@@ -36,6 +54,24 @@
 
 ---
 
+# Towards Understanding the Robustness of Sparse Autoencoders
+
+**【稀疏自编码器增强大模型抗攻击性】**
+
+**arXiv**: https://arxiv.org/abs/2604.18756  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18756  
+**HF Paper**: https://hf-mirror.com/papers/2604.18756  
+**HF Votes**: 1
+
+## 简要摘要
+
+*大语言模型安全;对抗攻击与防御;稀疏自编码器鲁棒性研究*
+
+大语言模型易受基于梯度的越狱攻击，而用于可解释性的稀疏自编码器（SAE）的鲁棒性尚未被充分研究。
+本研究通过在推理时将预训练SAE集成到大模型的残差流中，显著降低了多种攻击的成功率，并探究了稀疏度与层位置对防御效果和模型性能的影响。
+
+---
+
 # Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment
 
 **【减少多智能体角色偏见】**
@@ -43,7 +79,7 @@
 **arXiv**: https://arxiv.org/abs/2604.19548  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19548  
 **HF Paper**: https://hf-mirror.com/papers/2604.19548  
-**HF Votes**: 8
+**HF Votes**: 13
 
 ## 简要摘要
 
@@ -61,7 +97,7 @@
 **arXiv**: https://arxiv.org/abs/2604.21106  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21106  
 **HF Paper**: https://hf-mirror.com/papers/2604.21106  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -79,7 +115,7 @@
 **arXiv**: https://arxiv.org/abs/2604.21480  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21480  
 **HF Paper**: https://hf-mirror.com/papers/2604.21480  
-**HF Votes**: 11
+**HF Votes**: 12
 
 ## 简要摘要
 
@@ -90,6 +126,24 @@
 
 ---
 
+# Sapiens2
+
+**【高分辨率人体视觉通用模型  】**
+
+**arXiv**: https://arxiv.org/abs/2604.21681  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21681  
+**HF Paper**: https://hf-mirror.com/papers/2604.21681  
+**HF Votes**: 10
+
+## 简要摘要
+
+*计算机视觉;人体视觉;高分辨率人体图像理解  *
+
+本文聚焦于构建具备强泛化、多用途和高保真输出能力的人体中心视觉模型。  
+我们提出了Sapiens2模型系列，通过结合掩码图像重建与自蒸馏对比目标进行预训练，并在十亿级高质量人体图像数据及改进的标注上进行训练，在姿态估计、部件分割等多个任务上取得了显著性能提升。
+
+---
+
 # From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
 
 **【构建自组织多智能体公司系统】**
@@ -97,7 +151,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22446  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22446  
 **HF Paper**: https://hf-mirror.com/papers/2604.22446  
-**HF Votes**: 75
+**HF Votes**: 101
 
 ## 简要摘要
 
@@ -115,7 +169,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22782  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22782  
 **HF Paper**: https://hf-mirror.com/papers/2604.22782  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -169,7 +223,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22875  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22875  
 **HF Paper**: https://hf-mirror.com/papers/2604.22875  
-**HF Votes**: 17
+**HF Votes**: 23
 
 ## 简要摘要
 
@@ -187,7 +241,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22880  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22880  
 **HF Paper**: https://hf-mirror.com/papers/2604.22880  
-**HF Votes**: 5
+**HF Votes**: 7
 
 ## 简要摘要
 
@@ -205,7 +259,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23099  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23099  
 **HF Paper**: https://hf-mirror.com/papers/2604.23099  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -234,6 +288,41 @@
 
 ---
 
+# IndustryAssetEQA: A Neurosymbolic Operational Intelligence System for Embodied Question Answering in Industrial Asset Maintenance
+
+**【工业资产问答神经符号系统】**
+
+**arXiv**: https://arxiv.org/abs/2604.23446  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23446  
+**HF Paper**: https://hf-mirror.com/papers/2604.23446  
+**HF Votes**: 1
+
+## 简要摘要
+
+*操作智能；具身问答；工业资产维护*
+
+工业维护需要AI助手，但现有大模型解释模糊、缺乏可验证依据。
+我们结合时序数据与知识图谱，构建了可验证、支持反事实推理的维护问答系统。
+
+---
+
+# Personality Shapes Gender Bias in Persona-Conditioned LLM Narratives Across English and Hindi: An Empirical Investigation
+
+**【人格特质影响大语言模型性别偏见  】**
+
+**arXiv**: https://arxiv.org/abs/2604.23600  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23600  
+**HF Paper**: https://hf-mirror.com/papers/2604.23600  
+
+## 简要摘要
+
+*自然语言处理;社会偏见分析;人格条件化文本生成  *
+
+背景/任务是研究在人格设定下大语言模型生成文本中的性别偏见问题。  
+我们让多个大模型生成了大量故事，发现人格特质会显著改变性别偏见的程度和方向，且黑暗人格特质会强化刻板印象。
+
+---
+
 # Learning to Identify Out-of-Distribution Objects for 3D LiDAR Anomaly Segmentation
 
 **【3D激光雷达异常物体分割】**
@@ -241,7 +330,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23604  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23604  
 **HF Paper**: https://hf-mirror.com/papers/2604.23604  
-**HF Votes**: 2
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -277,7 +366,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23772  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23772  
 **HF Paper**: https://hf-mirror.com/papers/2604.23772  
-**HF Votes**: 3
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -295,7 +384,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23775  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23775  
 **HF Paper**: https://hf-mirror.com/papers/2604.23775  
-**HF Votes**: 40
+**HF Votes**: 42
 
 ## 简要摘要
 
@@ -313,7 +402,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23781  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23781  
 **HF Paper**: https://hf-mirror.com/papers/2604.23781  
-**HF Votes**: 23
+**HF Votes**: 28
 
 ## 简要摘要
 
@@ -331,7 +420,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24003  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24003  
 **HF Paper**: https://hf-mirror.com/papers/2604.24003  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -342,6 +431,41 @@
 
 ---
 
+# Improving Robustness of Tabular Retrieval via Representational Stability
+
+**【提升表格检索抗干扰能力】**
+
+**arXiv**: https://arxiv.org/abs/2604.24040  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24040  
+**HF Paper**: https://hf-mirror.com/papers/2604.24040  
+**HF Votes**: 1
+
+## 简要摘要
+
+*自然语言处理;信息检索;表格检索稳定性*
+
+表格语义不变时，不同序列化格式仍会导致检索结果不稳定。
+通过中心表征和轻量适配器抑制格式扰动，提升多格式下表格检索的鲁棒性。
+
+---
+
+# Credal Concept Bottleneck Models for Epistemic-Aleatoric Uncertainty Decomposition
+
+**【概念瓶颈模型不确定性分解】**
+
+**arXiv**: https://arxiv.org/abs/2604.24170  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24170  
+**HF Paper**: https://hf-mirror.com/papers/2604.24170  
+
+## 简要摘要
+
+*可信推理;可解释人工智能;概念不确定性分解*
+
+概念瓶颈模型通过可解释概念预测，但其点估计概念概率混合了认知不确定性和偶然不确定性，导致概念级不确定性难以解释和决策。
+我们提出CREDENCE框架，将概念表示为概率区间，通过不同概念头间的差异分离认知不确定性，并训练专门输出估计偶然不确定性，从而支持自动化、数据收集和人工审查等决策。
+
+---
+
 # Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis
 
 **【为数据分析智能体设计过程奖励模型】**
@@ -349,7 +473,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24198  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24198  
 **HF Paper**: https://hf-mirror.com/papers/2604.24198  
-**HF Votes**: 14
+**HF Votes**: 16
 
 ## 简要摘要
 
@@ -367,7 +491,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24300  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24300  
 **HF Paper**: https://hf-mirror.com/papers/2604.24300  
-**HF Votes**: 53
+**HF Votes**: 58
 
 ## 简要摘要
 
@@ -420,7 +544,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24762  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24762  
 **HF Paper**: https://hf-mirror.com/papers/2604.24762  
-**HF Votes**: 6
+**HF Votes**: 9
 
 ## 简要摘要
 

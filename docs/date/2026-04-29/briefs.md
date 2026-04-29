@@ -1,449 +1,235 @@
 # 2026-04-29 全量简报
 
-# For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs
+# Preferences of a Voice-First Nation: Large-Scale Pairwise Evaluation and Preference Analysis for TTS in Indian Languages
 
-**【高效前向数据估值框架】**
+**【大规模印度语言TTS系统评测排名】**
 
-**arXiv**: https://arxiv.org/abs/2508.10180  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2508.10180  
-**HF Paper**: https://hf-mirror.com/papers/2508.10180  
-**HF Votes**: 12
-
-## 简要摘要
-
-*机器学习;数据估值;大模型数据价值评估*
-
-现有数据估值方法依赖梯度计算，在大模型上计算成本高且难以批量并行
-本文提出仅需单次前向传播的闭式估值方法，在保持效果的同时显著提升效率
-
----
-
-# Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining
-
-**【分离训练机器人视觉与动作模型】**
-
-**arXiv**: https://arxiv.org/abs/2604.16391  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.16391  
-**HF Paper**: https://hf-mirror.com/papers/2604.16391  
+**arXiv**: https://arxiv.org/abs/2604.21481  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21481  
+**HF Paper**: https://hf-mirror.com/papers/2604.21481  
 **HF Votes**: 1
 
 ## 简要摘要
 
-*机器人;机器人学习;视觉语言动作模型*
+*自然语言处理;语音合成;多语言TTS评估*
 
-视觉语言动作模型面临二维图像预测与三维动作预测的对齐难题，且训练方式限制了模型从无动作网络视频中学习。
-提出DeFI框架，分别预训练前向和逆向动力学模型以利用不同数据源，再整合微调，在多个基准上取得了领先性能。
+为应对多语言语音合成评估的多样性挑战，本研究构建了一个可控的多维配对评测框架。
+通过超12万次两两对比和超1900名母语者打分，评估了7个顶尖TTS系统，并分析了6个感知维度的模型优劣。
 
 ---
 
-# Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment
+# Seeing Isn't Believing: Uncovering Blind Spots in Evaluator Vision-Language Models
 
-**【解决多智能体视角偏差】**
+**【评估大视觉语言模型可靠性】**
 
-**arXiv**: https://arxiv.org/abs/2604.19548  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.19548  
-**HF Paper**: https://hf-mirror.com/papers/2604.19548  
-**HF Votes**: 13
+**arXiv**: https://arxiv.org/abs/2604.21523  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21523  
+**HF Paper**: https://hf-mirror.com/papers/2604.21523  
+**HF Votes**: 1
 
 ## 简要摘要
 
-*自然语言处理;大语言模型智能体;角色扮演认知偏差*
+*计算机视觉;视觉语言模型;模型评估*
 
-大语言模型智能体在执行复杂任务时，因扮演不同角色会产生类似人类的认知偏差，即行动者-旁观者不对称。
-我们提出了ReTAS方法，通过辩证法对齐训练，引导智能体综合矛盾观点，有效缓解偏差并提升故障解决率。
+当前视觉语言模型被广泛用于评估其他模型的输出，但其可靠性尚未得到充分检验
+我们通过大规模扰动实验揭示现有评估模型存在显著盲点，特别是在检测细粒度错误方面表现不佳
 
 ---
 
-# How Much Is One Recurrence Worth? Iso-Depth Scaling Laws for Looped Language Models
+# GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction
 
-**【循环模型深度与参数效率关系】**
+**【轻量级界面元素定位模型】**
 
-**arXiv**: https://arxiv.org/abs/2604.21106  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21106  
-**HF Paper**: https://hf-mirror.com/papers/2604.21106  
+**arXiv**: https://arxiv.org/abs/2604.23941  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23941  
+**HF Paper**: https://hf-mirror.com/papers/2604.23941  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;多模态学习;图形界面元素定位*
+
+为在资源受限设备上实现低延迟的图形界面自动化交互，需要精确地将自然语言指令定位到屏幕截图上的元素。
+本文提出了GoClick模型，它采用编码器-解码器架构和渐进式数据精炼方法，以极小的参数量实现了高精度元素定位，并能提升云-端协作框架中智能体的任务成功率。
+
+---
+
+# TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents
+
+**【时序课程策略蒸馏优化多轮智能体】**
+
+**arXiv**: https://arxiv.org/abs/2604.24005  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24005  
+**HF Paper**: https://hf-mirror.com/papers/2604.24005  
 **HF Votes**: 5
 
 ## 简要摘要
 
-*自然语言处理;语言模型;循环模型缩放定律*
+*强化学习；智能体蒸馏；多轮决策学习*
 
-研究循环语言模型中额外循环层对模型性能的提升效果，量化其相当于增加多少唯一参数。
-通过大量实验拟合出包含循环等价指数的缩放定律，并用该指数评估不同训练策略对循环机制真实容量的影响。
-
----
-
-# Efficient Agent Evaluation via Diversity-Guided User Simulation
-
-**【高效评估AI客服的可靠性】**
-
-**arXiv**: https://arxiv.org/abs/2604.21480  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21480  
-**HF Paper**: https://hf-mirror.com/papers/2604.21480  
-**HF Votes**: 12
-
-## 简要摘要
-
-*自然语言处理;智能体评估;用户模拟*
-
-当前评估大型语言模型客服效率低且难以发现深层故障
-提出DIVERT框架，利用快照复用和多样性引导模拟提升评估效率与覆盖
+策略蒸馏能转移大模型推理能力给小模型，但在多轮任务中因误差累积导致训练不稳定。
+提出时序课程学习框架，通过由浅入深控制任务长度来稳定训练，提升智能体表现。
 
 ---
 
-# From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company
+# AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark
 
-**【构建动态自组织多智能体系统】**
+**【评估图形界面深层理解能力】**
 
-**arXiv**: https://arxiv.org/abs/2604.22446  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22446  
-**HF Paper**: https://hf-mirror.com/papers/2604.22446  
-**HF Votes**: 95
-
-## 简要摘要
-
-*多智能体系统;组织与协作;动态任务分解与执行*
-
-当前多智能体系统受限于固定的团队结构、紧密耦合的协调逻辑和会话绑定学习，缺乏一个原则性的组织层。
-本文提出OneManCompany框架，通过封装技能为可移植的Talent身份，利用Talent市场按需招募，并采用E²R树搜索进行组织决策，将多智能体系统提升为能够适应开放领域任务的自组织和自改进AI组织。
-
----
-
-# Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing
-
-**【随机KV路由实现跨层缓存共享】**
-
-**arXiv**: https://arxiv.org/abs/2604.22782  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22782  
-**HF Paper**: https://hf-mirror.com/papers/2604.22782  
+**arXiv**: https://arxiv.org/abs/2604.24441  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24441  
+**HF Paper**: https://hf-mirror.com/papers/2604.24441  
 **HF Votes**: 1
 
 ## 简要摘要
 
-*自然语言处理;大语言模型推理;KV缓存优化*
+*人机交互;图形用户界面理解;界面功能理解与状态预测*
 
-自回归生成时KV缓存内存开销大，现有方法多在时间维度优化，深度维度潜力未充分挖掘。
-提出随机跨层注意力训练法，使模型适应不同深度缓存共享策略，显著减少内存且常提升性能。
+现有图形用户界面代理评测基准存在割裂，未能评估其对界面隐含功能和交互逻辑的真实理解。
+提出了一个多模态评测基准AutoGUI-v2，通过分层解析界面生成多样化任务，系统评估了模型在语义理解、功能定位和动态预测上的能力。
 
 ---
 
-# ATTN-FIQA: Interpretable Attention-based Face Image Quality Assessment with Vision Transformers
+# Programming with Data: Test-Driven Data Engineering for Self-Improving LLMs from Raw Corpora
 
-**【用注意力评估人脸图像质量  】**
+**【用结构化数据为LLM构建自改进训练循环】**
 
-**arXiv**: https://arxiv.org/abs/2604.22841  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22841  
-**HF Paper**: https://hf-mirror.com/papers/2604.22841  
-**HF Votes**: 2
+**arXiv**: https://arxiv.org/abs/2604.24819  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24819  
+**HF Paper**: https://hf-mirror.com/papers/2604.24819  
+**HF Votes**: 33
 
 ## 简要摘要
 
-*计算机视觉;生物特征识别;人脸图像质量评估  *
+*自然语言处理;大语言模型训练;训练数据工程*
 
-人脸识别系统的可靠性依赖于对人脸图像识别效用的评估，即人脸图像质量评估。  
-本研究提出一种无需训练的方法，利用预训练视觉Transformer模型中的注意力分数来评估人脸图像质量，仅需一次前向传播即可获得质量分数和空间可解释性。
+将人类专业知识可靠地从文本迁移到大语言模型中仍是一个根本挑战，而现有微调过程缺乏反馈，无法诊断和修复训练数据的缺陷。
+本文提出“用数据编程”原则，将结构化知识作为训练和评估的共同基础，将数据工程映射到软件开发周期，从而可追溯、可修复数据缺陷，实现模型能力的定向提升。
 
 ---
 
-# EX-FIQA: Leveraging Intermediate Early eXit Representations from Vision Transformers for Face Image Quality Assessment
+# BARRED: Synthetic Training of Custom Policy Guardrails via Asymmetric Debate
 
-**【利用ViT中间层进行人脸质量评估  】**
+**【合成数据训练定制护栏】**
 
-**arXiv**: https://arxiv.org/abs/2604.22842  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22842  
-**HF Paper**: https://hf-mirror.com/papers/2604.22842  
-**HF Votes**: 1
+**arXiv**: https://arxiv.org/abs/2604.25203  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25203  
+**HF Paper**: https://hf-mirror.com/papers/2604.25203  
+**HF Votes**: 5
 
 ## 简要摘要
 
-*计算机视觉;生物识别;人脸图像质量评估  *
+*自然语言处理;大语言模型安全;策略护栏训练*
 
-现有基于ViT的人脸图像质量评估方法仅依赖最终层特征，忽略了中间层的质量相关信息。  
-本文首次系统研究了ViT各中间层表示通过早期退出机制对质量评估的贡献，并提出一种无需修改结构或额外训练的分数融合框架，在多个基准上验证了其性能提升与计算效率优势。
+为定制策略部署护栏常面临标注数据不足、通用模型难符特定任务要求的挑战。
+BARRED框架通过维度分解与多智能体辩论生成高质量合成数据，训练的小模型在多个任务上优于大模型和专用护栏模型。
 
 ---
 
-# SketchVLM: Vision language models can annotate images to explain thoughts and guide users
+# AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery
 
-**【视觉语言模型用草图注释图像解释答案】**
+**【评测AI智能体科研文献检索能力】**
 
-**arXiv**: https://arxiv.org/abs/2604.22875  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22875  
-**HF Paper**: https://hf-mirror.com/papers/2604.22875  
-**HF Votes**: 17
+**arXiv**: https://arxiv.org/abs/2604.25256  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25256  
+**HF Paper**: https://hf-mirror.com/papers/2604.25256  
+**HF Votes**: 22
 
 ## 简要摘要
 
-*计算机视觉;多模态学习;视觉问答*
+*智能体;智能体评测;科研文献检索评测*
 
-现有视觉语言模型仅用文本回答图像问题，用户难以验证
-提出无需训练的通用框架，让模型在图像上叠加可编辑草图进行可视化解释
+评估AI智能体自主完成复杂科学文献发现的能力。
+提出了一个名为AutoResearchBench的专用评测基准，包含两类任务，实验表明现有强大模型在该基准上表现不佳。
 
 ---
 
-# TexOCR: Advancing Document OCR Models for Compilable Page-to-LaTeX Reconstruction
+# Step-Audio-R1.5 Technical Report
 
-**【将科学文档重建为可编译的LaTeX】**
+**【用人类反馈优化听觉推理模型的语言模型】**
 
-**arXiv**: https://arxiv.org/abs/2604.22880  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22880  
-**HF Paper**: https://hf-mirror.com/papers/2604.22880  
-**HF Votes**: 6
+**arXiv**: https://arxiv.org/abs/2604.25719  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25719  
+**HF Paper**: https://hf-mirror.com/papers/2604.25719  
+**HF Votes**: 9
 
 ## 简要摘要
 
-*自然语言处理;文档理解;科学文档OCR*
+*自然语言处理;语音与音频处理;听觉推理模型*
 
-现有文档OCR主要针对纯文本或Markdown，忽略了LaTeX在科学出版中至关重要的结构和可执行属性。
-我们提出了TexOCR-Bench基准、TexOCR-Train训练集和TexOCR模型，通过监督微调和带可验证奖励的强化学习，在转录保真度、结构忠实度和端到端可编译性上提升科学PDF到LaTeX的重建。
+现有音频语言模型依赖奖励验证强化学习优化，导致推理机械且对话体验差。
+我们引入Step-Audio-R1.5，采用人类反馈强化学习，在保持推理能力的同时显著提升了长对话的交互沉浸感。
 
 ---
 
-# ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation
+# Toward Scalable Terminal Task Synthesis via Skill Graphs
 
-**【高效评估生成式人工智能】**
+**【技能图辅助合成终端任务】**
 
-**arXiv**: https://arxiv.org/abs/2604.23099  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23099  
-**HF Paper**: https://hf-mirror.com/papers/2604.23099  
-**HF Votes**: 1
+**arXiv**: https://arxiv.org/abs/2604.25727  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25727  
+**HF Paper**: https://hf-mirror.com/papers/2604.25727  
+**HF Votes**: 5
 
 ## 简要摘要
 
-*机器学习;模型评估;主动性能估计与故障发现*
+*强化学习;自主智能体;终端任务合成与执行*
 
-当前生成式AI模型评估面临推理慢、人工标注成本高、模型与基准测试数量激增的挑战。
-提出主动评估框架ProEval，利用预训练高斯过程作为代理，通过贝叶斯求积主动选择测试输入，高效估计性能并发现故障案例。
-
----
-
-# Discovering Agentic Safety Specifications from 1-Bit Danger Signals
-
-**【大模型从1比特危险信号学安全规则】**
-
-**arXiv**: https://arxiv.org/abs/2604.23210  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23210  
-**HF Paper**: https://hf-mirror.com/papers/2604.23210  
-**HF Votes**: 1
-
-## 简要摘要
-
-*强化学习；AI安全；安全规范发现*
-
-要让大语言模型代理从极简的二元危险信号中，自主发现隐藏的安全约束，而非依赖人类详尽规定。
-提出了EPO-Safe框架，仅凭稀疏危险警告迭代优化行为规范，发现安全行为并生成可读的安全假设。
+终端智能体训练受限于高质量执行轨迹的稀缺，现有方法在扩展任务数量时难以控制执行轨迹的多样性。
+提出了基于场景中介技能图的自动框架SkillSynth，通过构建技能图、采样路径并实例化任务，控制任务解决所需轨迹的多样性，实验证实其有效性并成功用于训练智能体。
 
 ---
 
-# Learning to Identify Out-of-Distribution Objects for 3D LiDAR Anomaly Segmentation
+# MAIC-UI: Making Interactive Courseware with Generative UI
 
-**【三维激光雷达异常分割新方法  】**
+**【生成式UI制作交互课件】**
 
-**arXiv**: https://arxiv.org/abs/2604.23604  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23604  
-**HF Paper**: https://hf-mirror.com/papers/2604.23604  
-**HF Votes**: 2
-
-## 简要摘要
-
-*计算机视觉;三维场景理解;激光雷达异常分割  *
-
-在自动驾驶等应用中，识别三维激光雷达点云中的未知物体至关重要，但现有研究不足。  
-提出了一种直接在特征空间建模已知类分布以约束异常的方法，并构建了包含复杂场景的新混合数据集进行验证。
-
----
-
-# RaV-IDP: A Reconstruction-as-Validation Framework for Faithful Intelligent Document Processing
-
-**【通过重建验证文档处理准确性】**
-
-**arXiv**: https://arxiv.org/abs/2604.23644  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23644  
-**HF Paper**: https://hf-mirror.com/papers/2604.23644  
-**HF Votes**: 1
-
-## 简要摘要
-
-*文档处理;信息抽取;文档处理质量验证*
-
-现有文档处理流程提取结构化信息时缺乏对提取结果是否忠实于原文的验证机制。
-提出RaV-IDP框架，让每个提取的实体通过重建并与原文比对来获得保真度分数，分数过低则触发GPT-4.1备用方案，从而验证提取的忠实性。
-
----
-
-# PageGuide: Browser extension to assist users in navigating a webpage and locating information
-
-**【网页导航助手提升浏览效率】**
-
-**arXiv**: https://arxiv.org/abs/2604.23772  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23772  
-**HF Paper**: https://hf-mirror.com/papers/2604.23772  
+**arXiv**: https://arxiv.org/abs/2604.25806  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25806  
+**HF Paper**: https://hf-mirror.com/papers/2604.25806  
 **HF Votes**: 3
 
 ## 简要摘要
 
-*人机交互;智能辅助界面;网页信息定位*
+*人机交互;智能用户界面;课件内容可视化*
 
-用户浏览网页时难以快速定位信息、完成多步骤任务并避开干扰内容。
-开发了PageGuide浏览器扩展，通过视觉叠加将LLM答案与网页DOM关联，实现信息定位、分步引导和干扰内容隐藏功能。
-
----
-
-# Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms
-
-**【VLA系统的安全威胁与防御综述】**
-
-**arXiv**: https://arxiv.org/abs/2604.23775  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23775  
-**HF Paper**: https://hf-mirror.com/papers/2604.23775  
-**HF Votes**: 41
-
-## 简要摘要
-
-*机器人学习;具身智能安全;多模态攻击与防御*
-
-随着视觉-语言-动作模型成为具身智能的统一平台，其安全问题因物理不可逆性、多模态攻击面等新挑战而日益突出。
-本文系统梳理了VLA模型在攻击、防御、评估与部署四个方面的安全研究，并指出了未来关键开放问题。
+为降低技术门槛，帮助教育者快速制作交互式STEM课件
+提出MAIC-UI系统，通过结构化知识分析、两阶段生成优化及点击定位编辑技术，实现快速创建与迭代，并验证了其有效性和实用性
 
 ---
 
-# ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents
+# DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios
 
-**【构建长期多模态工作助手评测基准】**
+**【评测数据可视化智能体】**
 
-**arXiv**: https://arxiv.org/abs/2604.23781  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23781  
-**HF Paper**: https://hf-mirror.com/papers/2604.23781  
-**HF Votes**: 24
+**arXiv**: https://arxiv.org/abs/2604.25914  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25914  
+**HF Paper**: https://hf-mirror.com/papers/2604.25914  
+**HF Votes**: 35
 
 ## 简要摘要
 
-*智能代理;多模态语言模型;长期协作任务评估*
+*数据可视化;可视化自动生成;真实场景智能体评测*
 
-现有基准难以评估在多日多模态动态环境中持续工作的语言模型助手
-提出了一个多日多任务基准并评估了前沿系统发现完全执行仍很困难
+现有基准无法评估数据可视化智能体在真实工作流中的复杂能力。
+提出了DV-World基准，包含三大真实场景任务，并构建了混合评估框架。
 
 ---
 
-# Stabilizing Efficient Reasoning with Step-Level Advantage Selection
+# Recursive Multi-Agent Systems
 
-**【稳定高效推理的步骤优势选择  】**
+**【递归多智能体协作优化】**
 
-**arXiv**: https://arxiv.org/abs/2604.24003  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24003  
-**HF Paper**: https://hf-mirror.com/papers/2604.24003  
-**HF Votes**: 4
-
-## 简要摘要
-
-*自然语言处理;大语言模型推理;推理过程压缩  *
-
-大型语言模型推理需要大量计算生成冗长推理链，现有高效推理方法在缩短上下文窗口后训练会损害稳定性与准确性。  
-提出步骤级优势选择法，通过动态评估推理步骤置信度实现更优的准确率与效率平衡。
-
----
-
-# Credal Concept Bottleneck Models for Epistemic-Aleatoric Uncertainty Decomposition
-
-**【概念瓶颈模型的不确定性分解】**
-
-**arXiv**: https://arxiv.org/abs/2604.24170  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24170  
-**HF Paper**: https://hf-mirror.com/papers/2604.24170  
+**arXiv**: https://arxiv.org/abs/2604.25917  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25917  
+**HF Paper**: https://hf-mirror.com/papers/2604.25917  
+**HF Votes**: 56
 
 ## 简要摘要
 
-*机器学习;可解释人工智能;概念不确定性分解*
+*自然语言处理;智能体系统;多智能体递归计算*
 
-概念瓶颈模型通过可解释概念进行预测，但通常输出的点概率混淆了认识不确定性和偶然不确定性。
-提出CREDENCE框架，用概率区间表示概念，分解不确定性以支持决策，并能指导自动化、数据收集和人工审查。
-
----
-
-# Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis
-
-**【设计数据分析智能体的过程奖励模型】**
-
-**arXiv**: https://arxiv.org/abs/2604.24198  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24198  
-**HF Paper**: https://hf-mirror.com/papers/2604.24198  
-**HF Votes**: 15
-
-## 简要摘要
-
-*自然语言处理;智能体与交互系统;过程奖励建模*
-
-现有过程奖励模型在静态领域成功，但难以监督动态数据分析任务，常误判探索行为或漏检静默错误。
-本文提出DataPRM，一种能主动与环境交互检验中间状态、区分可纠正错误与不可恢复错误的环境感知过程奖励模型，并通过大规模数据构建和实验验证其有效性。
-
----
-
-# ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning
-
-**【改进视觉空间智能评测基准  】**
-
-**arXiv**: https://arxiv.org/abs/2604.24300  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24300  
-**HF Paper**: https://hf-mirror.com/papers/2604.24300  
-**HF Votes**: 53
-
-## 简要摘要
-
-*计算机视觉;视觉语言模型;3D空间推理评测  *
-
-现有3D空间推理评测方法因数据缺陷和模型输入不匹配导致评估失真。  
-作者构建了高质量数据集ReVSI，通过重新标注和生成可回答问题，支持可控诊断评估。
-
----
-
-# Improving Vision-language Models with Perception-centric Process Reward Models
-
-**【用感知奖励模型提升视觉语言模型】**
-
-**arXiv**: https://arxiv.org/abs/2604.24583  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24583  
-**HF Paper**: https://hf-mirror.com/papers/2604.24583  
-**HF Votes**: 1
-
-## 简要摘要
-
-*多模态人工智能;视觉语言模型;感知错误检测与纠正*
-
-当前强化学习对视觉语言模型（VLM）的监督过于粗放，难以诊断和纠正推理链中的具体错误。
-本文提出感知奖励模型Perceval，能在训练和推理阶段实现细粒度错误定位与修正，显著提升多种VLM在多项任务上的性能。
-
----
-
-# Quantum Kernel Advantage over Classical Collapse in Medical Foundation Model Embeddings
-
-**【量子核在医学嵌入分类中胜出】**
-
-**arXiv**: https://arxiv.org/abs/2604.24597  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24597  
-**HF Paper**: https://hf-mirror.com/papers/2604.24597  
-
-## 简要摘要
-
-*机器学习;量子机器学习;医学影像分类*
-
-在胸部X光医保分类任务中，比较量子支持向量机与经典支持向量机的性能。
-量子支持向量机在多种配置下性能显著优于经典方法，并分析了量子核有效秩高的优势。
-
----
-
-# OmniShotCut: Holistic Relational Shot Boundary Detection with Shot-Query Transformer
-
-**【镜头边界检测新方法  】**
-
-**arXiv**: https://arxiv.org/abs/2604.24762  
-**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24762  
-**HF Paper**: https://hf-mirror.com/papers/2604.24762  
-**HF Votes**: 7
-
-## 简要摘要
-
-*计算机视觉;视频分析;镜头边界检测  *
-
-现有镜头边界检测方法存在边界不清晰、漏检严重、依赖有噪声标注等问题。  
-提出基于合成数据和关系预测的镜头边界检测框架，并构建现代多领域评测基准。
+背景/任务：递归语言模型通过迭代计算深化推理，但现有研究多集中于单智能体，本文探讨能否将递归计算扩展至多智能体系统以提升协作效率和性能。
+做了什么：提出了RecursiveMAS框架，通过轻量递归链接模块构建多智能体协作循环，实现潜在状态传递与协同优化，在多个基准测试中显著提升了准确率、推理速度并降低了计算开销。
 
 ---
