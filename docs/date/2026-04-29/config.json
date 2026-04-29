@@ -1,0 +1,376 @@
+{
+  "date": "2026-04-29",
+  "focus_ids": [
+    "2604.24479",
+    "2604.24764",
+    "2604.17565",
+    "2604.24763"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.24479",
+      "2604.24764"
+    ],
+    "视频生成模型": [
+      "2604.17565"
+    ],
+    "图片生成模型": [
+      "2604.24763"
+    ]
+  },
+  "base_info": {
+    "2508.10180": {
+      "title": "For-Value: Efficient Forward-Only Data Valuation for finetuning LLMs and VLMs",
+      "hf_link": "https://hf-mirror.com/papers/2508.10180"
+    },
+    "2604.16391": {
+      "title": "Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining",
+      "hf_link": "https://hf-mirror.com/papers/2604.16391"
+    },
+    "2604.17565": {
+      "title": "UniGeo: Unifying Geometric Guidance for Camera-Controllable Image Editing via Video Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.17565"
+    },
+    "2604.19548": {
+      "title": "Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment",
+      "hf_link": "https://hf-mirror.com/papers/2604.19548"
+    },
+    "2604.21106": {
+      "title": "How Much Is One Recurrence Worth? Iso-Depth Scaling Laws for Looped Language Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.21106"
+    },
+    "2604.21480": {
+      "title": "Efficient Agent Evaluation via Diversity-Guided User Simulation",
+      "hf_link": "https://hf-mirror.com/papers/2604.21480"
+    },
+    "2604.22446": {
+      "title": "From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company",
+      "hf_link": "https://hf-mirror.com/papers/2604.22446"
+    },
+    "2604.22782": {
+      "title": "Stochastic KV Routing: Enabling Adaptive Depth-Wise Cache Sharing",
+      "hf_link": "https://hf-mirror.com/papers/2604.22782"
+    },
+    "2604.22841": {
+      "title": "ATTN-FIQA: Interpretable Attention-based Face Image Quality Assessment with Vision Transformers",
+      "hf_link": "https://hf-mirror.com/papers/2604.22841"
+    },
+    "2604.22842": {
+      "title": "EX-FIQA: Leveraging Intermediate Early eXit Representations from Vision Transformers for Face Image Quality Assessment",
+      "hf_link": "https://hf-mirror.com/papers/2604.22842"
+    },
+    "2604.22875": {
+      "title": "SketchVLM: Vision language models can annotate images to explain thoughts and guide users",
+      "hf_link": "https://hf-mirror.com/papers/2604.22875"
+    },
+    "2604.22880": {
+      "title": "TexOCR: Advancing Document OCR Models for Compilable Page-to-LaTeX Reconstruction",
+      "hf_link": "https://hf-mirror.com/papers/2604.22880"
+    },
+    "2604.23099": {
+      "title": "ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation",
+      "hf_link": "https://hf-mirror.com/papers/2604.23099"
+    },
+    "2604.23210": {
+      "title": "Discovering Agentic Safety Specifications from 1-Bit Danger Signals",
+      "hf_link": "https://hf-mirror.com/papers/2604.23210"
+    },
+    "2604.23604": {
+      "title": "Learning to Identify Out-of-Distribution Objects for 3D LiDAR Anomaly Segmentation",
+      "hf_link": "https://hf-mirror.com/papers/2604.23604"
+    },
+    "2604.23644": {
+      "title": "RaV-IDP: A Reconstruction-as-Validation Framework for Faithful Intelligent Document Processing",
+      "hf_link": "https://hf-mirror.com/papers/2604.23644"
+    },
+    "2604.23772": {
+      "title": "PageGuide: Browser extension to assist users in navigating a webpage and locating information",
+      "hf_link": "https://hf-mirror.com/papers/2604.23772"
+    },
+    "2604.23775": {
+      "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+      "hf_link": "https://hf-mirror.com/papers/2604.23775"
+    },
+    "2604.23781": {
+      "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+      "hf_link": "https://hf-mirror.com/papers/2604.23781"
+    },
+    "2604.24003": {
+      "title": "Stabilizing Efficient Reasoning with Step-Level Advantage Selection",
+      "hf_link": "https://hf-mirror.com/papers/2604.24003"
+    },
+    "2604.24170": {
+      "title": "Credal Concept Bottleneck Models for Epistemic-Aleatoric Uncertainty Decomposition",
+      "hf_link": "https://hf-mirror.com/papers/2604.24170"
+    },
+    "2604.24198": {
+      "title": "Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis",
+      "hf_link": "https://hf-mirror.com/papers/2604.24198"
+    },
+    "2604.24300": {
+      "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+      "hf_link": "https://hf-mirror.com/papers/2604.24300"
+    },
+    "2604.24479": {
+      "title": "Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data",
+      "hf_link": "https://hf-mirror.com/papers/2604.24479"
+    },
+    "2604.24583": {
+      "title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.24583"
+    },
+    "2604.24597": {
+      "title": "Quantum Kernel Advantage over Classical Collapse in Medical Foundation Model Embeddings",
+      "hf_link": "https://hf-mirror.com/papers/2604.24597"
+    },
+    "2604.24762": {
+      "title": "OmniShotCut: Holistic Relational Shot Boundary Detection with Shot-Query Transformer",
+      "hf_link": "https://hf-mirror.com/papers/2604.24762"
+    },
+    "2604.24763": {
+      "title": "Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.24763"
+    },
+    "2604.24764": {
+      "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.24764"
+    }
+  },
+  "summaries": {
+    "2508.10180": "高效前向数据估值框架\n机器学习;数据估值;大模型数据价值评估\n现有数据估值方法依赖梯度计算，在大模型上计算成本高且难以批量并行\n本文提出仅需单次前向传播的闭式估值方法，在保持效果的同时显著提升效率",
+    "2604.16391": "分离训练机器人视觉与动作模型\n机器人;机器人学习;视觉语言动作模型\n视觉语言动作模型面临二维图像预测与三维动作预测的对齐难题，且训练方式限制了模型从无动作网络视频中学习。\n提出DeFI框架，分别预训练前向和逆向动力学模型以利用不同数据源，再整合微调，在多个基准上取得了领先性能。",
+    "2604.17565": "相机可控图像编辑\n计算机视觉;图像生成;相机可控图像编辑\n现有相机可控图像编辑方法依赖碎片化几何引导，易导致几何漂移和结构退化。\n提出UniGeo框架，在表示、架构和损失三个层面统一注入几何引导，提升了编辑的视觉质量和几何一致性。",
+    "2604.19548": "解决多智能体视角偏差\n自然语言处理;大语言模型智能体;角色扮演认知偏差\n大语言模型智能体在执行复杂任务时，因扮演不同角色会产生类似人类的认知偏差，即行动者-旁观者不对称。\n我们提出了ReTAS方法，通过辩证法对齐训练，引导智能体综合矛盾观点，有效缓解偏差并提升故障解决率。",
+    "2604.21106": "循环模型深度与参数效率关系\n自然语言处理;语言模型;循环模型缩放定律\n研究循环语言模型中额外循环层对模型性能的提升效果，量化其相当于增加多少唯一参数。\n通过大量实验拟合出包含循环等价指数的缩放定律，并用该指数评估不同训练策略对循环机制真实容量的影响。",
+    "2604.21480": "高效评估AI客服的可靠性\n自然语言处理;智能体评估;用户模拟\n当前评估大型语言模型客服效率低且难以发现深层故障\n提出DIVERT框架，利用快照复用和多样性引导模拟提升评估效率与覆盖",
+    "2604.22446": "构建动态自组织多智能体系统\n多智能体系统;组织与协作;动态任务分解与执行\n当前多智能体系统受限于固定的团队结构、紧密耦合的协调逻辑和会话绑定学习，缺乏一个原则性的组织层。\n本文提出OneManCompany框架，通过封装技能为可移植的Talent身份，利用Talent市场按需招募，并采用E²R树搜索进行组织决策，将多智能体系统提升为能够适应开放领域任务的自组织和自改进AI组织。",
+    "2604.22782": "随机KV路由实现跨层缓存共享\n自然语言处理;大语言模型推理;KV缓存优化\n自回归生成时KV缓存内存开销大，现有方法多在时间维度优化，深度维度潜力未充分挖掘。\n提出随机跨层注意力训练法，使模型适应不同深度缓存共享策略，显著减少内存且常提升性能。",
+    "2604.22841": "用注意力评估人脸图像质量  \n计算机视觉;生物特征识别;人脸图像质量评估  \n人脸识别系统的可靠性依赖于对人脸图像识别效用的评估，即人脸图像质量评估。  \n本研究提出一种无需训练的方法，利用预训练视觉Transformer模型中的注意力分数来评估人脸图像质量，仅需一次前向传播即可获得质量分数和空间可解释性。",
+    "2604.22842": "利用ViT中间层进行人脸质量评估  \n计算机视觉;生物识别;人脸图像质量评估  \n现有基于ViT的人脸图像质量评估方法仅依赖最终层特征，忽略了中间层的质量相关信息。  \n本文首次系统研究了ViT各中间层表示通过早期退出机制对质量评估的贡献，并提出一种无需修改结构或额外训练的分数融合框架，在多个基准上验证了其性能提升与计算效率优势。",
+    "2604.22875": "视觉语言模型用草图注释图像解释答案\n计算机视觉;多模态学习;视觉问答\n现有视觉语言模型仅用文本回答图像问题，用户难以验证\n提出无需训练的通用框架，让模型在图像上叠加可编辑草图进行可视化解释",
+    "2604.22880": "将科学文档重建为可编译的LaTeX\n自然语言处理;文档理解;科学文档OCR\n现有文档OCR主要针对纯文本或Markdown，忽略了LaTeX在科学出版中至关重要的结构和可执行属性。\n我们提出了TexOCR-Bench基准、TexOCR-Train训练集和TexOCR模型，通过监督微调和带可验证奖励的强化学习，在转录保真度、结构忠实度和端到端可编译性上提升科学PDF到LaTeX的重建。",
+    "2604.23099": "高效评估生成式人工智能\n机器学习;模型评估;主动性能估计与故障发现\n当前生成式AI模型评估面临推理慢、人工标注成本高、模型与基准测试数量激增的挑战。\n提出主动评估框架ProEval，利用预训练高斯过程作为代理，通过贝叶斯求积主动选择测试输入，高效估计性能并发现故障案例。",
+    "2604.23210": "大模型从1比特危险信号学安全规则\n强化学习；AI安全；安全规范发现\n要让大语言模型代理从极简的二元危险信号中，自主发现隐藏的安全约束，而非依赖人类详尽规定。\n提出了EPO-Safe框架，仅凭稀疏危险警告迭代优化行为规范，发现安全行为并生成可读的安全假设。",
+    "2604.23604": "三维激光雷达异常分割新方法  \n计算机视觉;三维场景理解;激光雷达异常分割  \n在自动驾驶等应用中，识别三维激光雷达点云中的未知物体至关重要，但现有研究不足。  \n提出了一种直接在特征空间建模已知类分布以约束异常的方法，并构建了包含复杂场景的新混合数据集进行验证。",
+    "2604.23644": "通过重建验证文档处理准确性\n文档处理;信息抽取;文档处理质量验证\n现有文档处理流程提取结构化信息时缺乏对提取结果是否忠实于原文的验证机制。\n提出RaV-IDP框架，让每个提取的实体通过重建并与原文比对来获得保真度分数，分数过低则触发GPT-4.1备用方案，从而验证提取的忠实性。",
+    "2604.23772": "网页导航助手提升浏览效率\n人机交互;智能辅助界面;网页信息定位\n用户浏览网页时难以快速定位信息、完成多步骤任务并避开干扰内容。\n开发了PageGuide浏览器扩展，通过视觉叠加将LLM答案与网页DOM关联，实现信息定位、分步引导和干扰内容隐藏功能。",
+    "2604.23775": "VLA系统的安全威胁与防御综述\n机器人学习;具身智能安全;多模态攻击与防御\n随着视觉-语言-动作模型成为具身智能的统一平台，其安全问题因物理不可逆性、多模态攻击面等新挑战而日益突出。\n本文系统梳理了VLA模型在攻击、防御、评估与部署四个方面的安全研究，并指出了未来关键开放问题。",
+    "2604.23781": "构建长期多模态工作助手评测基准\n智能代理;多模态语言模型;长期协作任务评估\n现有基准难以评估在多日多模态动态环境中持续工作的语言模型助手\n提出了一个多日多任务基准并评估了前沿系统发现完全执行仍很困难",
+    "2604.24003": "稳定高效推理的步骤优势选择  \n自然语言处理;大语言模型推理;推理过程压缩  \n大型语言模型推理需要大量计算生成冗长推理链，现有高效推理方法在缩短上下文窗口后训练会损害稳定性与准确性。  \n提出步骤级优势选择法，通过动态评估推理步骤置信度实现更优的准确率与效率平衡。",
+    "2604.24170": "概念瓶颈模型的不确定性分解\n机器学习;可解释人工智能;概念不确定性分解\n概念瓶颈模型通过可解释概念进行预测，但通常输出的点概率混淆了认识不确定性和偶然不确定性。\n提出CREDENCE框架，用概率区间表示概念，分解不确定性以支持决策，并能指导自动化、数据收集和人工审查。",
+    "2604.24198": "设计数据分析智能体的过程奖励模型\n自然语言处理;智能体与交互系统;过程奖励建模\n现有过程奖励模型在静态领域成功，但难以监督动态数据分析任务，常误判探索行为或漏检静默错误。\n本文提出DataPRM，一种能主动与环境交互检验中间状态、区分可纠正错误与不可恢复错误的环境感知过程奖励模型，并通过大规模数据构建和实验验证其有效性。",
+    "2604.24300": "改进视觉空间智能评测基准  \n计算机视觉;视觉语言模型;3D空间推理评测  \n现有3D空间推理评测方法因数据缺陷和模型输入不匹配导致评估失真。  \n作者构建了高质量数据集ReVSI，通过重新标注和生成可回答问题，支持可控诊断评估。",
+    "2604.24479": "智能体合成可执行CAD程序\n计算机图形学；三维建模；CAD程序生成\n现有大规模三维数据集缺乏CAD模型的关键构造历史信息\n提出Zero-to-CAD框架，用大语言模型智能体在交互环境中合成百万级可执行CAD序列，并利用数据训练模型从图像重建可编辑CAD程序",
+    "2604.24583": "用感知奖励模型提升视觉语言模型\n多模态人工智能;视觉语言模型;感知错误检测与纠正\n当前强化学习对视觉语言模型（VLM）的监督过于粗放，难以诊断和纠正推理链中的具体错误。\n本文提出感知奖励模型Perceval，能在训练和推理阶段实现细粒度错误定位与修正，显著提升多种VLM在多项任务上的性能。",
+    "2604.24597": "量子核在医学嵌入分类中胜出\n机器学习;量子机器学习;医学影像分类\n在胸部X光医保分类任务中，比较量子支持向量机与经典支持向量机的性能。\n量子支持向量机在多种配置下性能显著优于经典方法，并分析了量子核有效秩高的优势。",
+    "2604.24762": "镜头边界检测新方法  \n计算机视觉;视频分析;镜头边界检测  \n现有镜头边界检测方法存在边界不清晰、漏检严重、依赖有噪声标注等问题。  \n提出基于合成数据和关系预测的镜头边界检测框架，并构建现代多领域评测基准。",
+    "2604.24763": "像素嵌入统一多模态模型\n多模态学习;视觉语言模型;统一视觉表示与生成\n现有统一多模态模型通常依赖预训练视觉编码器，导致理解与生成任务不对齐且无法端到端优化。\nTuna-2模型直接基于像素嵌入实现视觉理解与生成，架构简化，在多项任务上取得领先性能，证明像素空间建模具有强大潜力。",
+    "2604.24764": "强化视频生成三维一致性\n计算机视觉;视频生成;三维一致性约束\n现有视频生成模型常出现几何不一致问题，需兼顾三维约束与视觉质量。\n提出通过强化学习框架，利用三维基础模型反馈优化视频生成，无需改变原模型结构。"
+  },
+  "deep_analysis": {
+    "2604.17565": "好的，我以简单的语言，为你梳理一下这篇论文的核心内容。\n\n### (1) 任务是什么\n*   **任务名称**：**可控相机视角的图像编辑**。\n*   **任务输入**：\n    1.  **一张给定的图片**（比如一张风景照或一个物体的照片）。\n    2.  **一个目标相机位姿**（比如“把相机向右旋转30度，并向上看一点”）。\n*   **任务输出**：**一张新的图片**，这张图片看起来像是你拿着相机，从你指定的那个新位置和角度去拍摄原场景，得到的效果。\n*   **任务功能**：想象一下，你拍了一张照片，但你想看看从这个场景的左边、右边或者上面看是什么样子，但又不可能真的回去重拍。这个任务就是用AI模型，根据你给的指令，帮你“脑补”并生成出那个新角度的画面。关键在于，生成的画面在**几何结构上要和原图保持一致**（比如房子的轮廓、物体的形状不能乱变），不能只是随便画一张看起来像的图。\n\n### (2) 想解决什么问题\n现有的方法在做这个任务时，普遍存在两个大问题：\n1.  **视角不连续**：很多方法像“跳棋”，只能生成几个固定角度之间的图。但真实的相机移动是平滑、连续的。当你想生成一个连续移动视角的视频，或者角度变化很大时，这些方法生成的画面就容易出现抖动、变形。\n2.  **几何信息“碎片化”**：为了让AI理解场景的3D结构，现有方法会给它一些“小抄”，比如原图的**深度图**或**点云**（一种3D数据）。但问题在于，它们通常只把这些信息“塞”到模型的某一个环节（比如输入层），没有让模型的**整个生成过程**（从理解、到计算、到最终画图）都得到这个几何信息的统一指导。这就好比一个建筑队，图纸只给了队长，但工人和质检员没看，最后盖出来的楼可能就和图纸对不上了，导致生成的图片**几何结构崩坏、扭曲**。\n\n### (3) 核心思路是什么\n这篇论文的核心思路非常清晰：**既然几何信息很重要，那就不能只给模型一个“碎片化”的小抄，而是要在它工作的“全流程”里，都注入统一的几何指导。**\n\n作者将模型的生成过程分解为三个层面，并在这三个层面都加入了针对性的几何信息：\n1.  **表示层面（输入怎么给）**：把原图的点云数据，以更聪明的方式送给模型，避免信息缺失干扰生成。\n2.  **架构层面（模型怎么算）**：在模型内部的注意力机制里，加入“几何锚点”，让模型在合成新视角时，时刻想着原图的几何结构。\n3.  **损失函数层面（目标怎么定）**：在训练时，不仅要求最终图片好看，还明确要求其几何结构（如深度）必须符合预期。\n\n通过这种“三位一体”的统一几何指导，模型就能生成既视角连续、又几何结构稳定的新图片。\n\n### (4) 结果怎么样\n论文在多个公开的数据集上进行了实验。\n*   **对比实验**：与当时其他先进方法相比，UniGeo生成的图片在**视觉质量**和**几何一致性**上都显著更好。特别是在相机移动幅度较大或连续变化时，UniGeo能更好地保持场景结构，而其他方法容易出现扭曲、模糊或奇怪的伪影。\n*   **消融实验**：论文验证了提出的三个核心模块（表示、架构、损失）每一个都有效，组合起来效果最佳。这说明“统一指导”的思路是成功的。\n\n### (5) 模型结构与流程\n1.  **基模**：这篇论文的基础模型是一个**视频扩散模型**。之所以选它，是因为视频模型天然就具备生成连续、连贯画面的能力，这与生成连续相机视角的需求相匹配。\n2.  **整体流程**：\n    *   **步骤1：准备几何信息**：给定一张输入图片，先用一个现成的工具（如预训练的深度估计模型）估算出它的深度图，再转换成**点云**（一组3D空间中的点）。然后，根据用户指定的相机运动轨迹，把这个点云“移动”到对应的各个新视角下，形成一系列点云。\n    *   **步骤2：构建模型输入**（对应**Frame-Decoupled Point Cloud Injection**）：\n        *   将原始图片进行加噪处理（这是扩散模型的标准流程）。\n        *   将上一步得到的一系列新视角点云，**分别渲染成一张张2D的“几何参考帧”**，而不是直接和图片混在一起。这些“几何参考帧”和加噪的原图一起，组成一个“视频序列”输入给模型。\n    *   **步骤3：特征提取与对齐**（对应**Geometric Anchor Attention**）：\n        *   模型开始工作。在处理每一帧（对应一个新视角）时，模型内部会进行“注意力”计算。\n        *   关键设计来了：模型会把**第一帧（原始视角）的几何特征**作为一个 **“几何锚点”** 。在计算每个新视角的特征时，都会去和这个“锚点”进行注意力交互。这就像是一个“校准”过程，确保所有新视角生成时，其几何结构都向原始结构看齐，从而保证一致性。\n    *   **步骤4：生成与监督**（对应**Trajectory-Endpoint Geometric Supervision**）：\n        *   模型最终输出一系列去噪后的新视角图片。\n        *   在训练阶段，为了强化学习效果，论文设计了一个特别的损失函数。它不仅计算最终生成的图片和真实图片的差异，还会**专门计算生成图片的深度图**，与**真实新视角的深度图**之间的差异。这相当于给模型一个明确的几何结构“考试”，逼着它学好几何。\n\n**总结一下流程**：输入图片 -> 提取深度/点云 -> 根据目标视角生成几何参考帧序列 -> 与加噪原图一起输入视频扩散模型 -> 模型内部利用“几何锚点注意力”对齐特征 -> 输出新视角图片 -> 训练时用深度损失强化几何学习。",
+    "2604.24479": "这篇论文介绍了一个叫 **Zero-to-CAD** 的系统，它主要解决的是**生成计算机辅助设计（CAD）模型**时的一个关键难题。下面我用简单的语言为你拆解它的核心内容：\n\n### 1. 任务是什么\n- **任务输入**：无输入（零样本），或后续实验中用到的**多视角图片**。\n- **任务输出**：**可执行的、可读的、可编辑的CAD程序代码序列**。这段代码描述了一个三维机械零件（如支架、外壳、齿轮等）的**完整建模历史**，包括每一步操作（如拉伸、布尔运算、倒角、圆角等）。\n- **任务功能**：**自动化生成大量高质量的CAD设计程序**，这些程序不仅能在CAD软件中运行出三维模型，而且代码本身结构清晰、参数明确，人类工程师可以轻松理解和修改。\n\n### 2. 想解决什么问题\n当前AI在3D生成领域面临一个**数据鸿沟**：\n- 虽然有数百万个3D模型数据集，但它们大多是**静态的网格或表面模型**，就像一张“成品照片”，丢失了“如何一步步建造出来”的**设计意图和历史**。\n- 少数包含建模步骤的数据集（如DeepCAD）规模小，且操作单一（主要是画草图然后拉伸），缺乏真实设计中常用的复杂操作（如布尔运算、倒圆角、抽壳等）。\n- 因此，缺乏**大规模、多样化、可执行的CAD程序数据**来训练更智能的CAD生成AI。\n\n**这篇论文的核心目标就是：在没有真实CAD程序数据的情况下，合成一个超大规模的、包含丰富操作的可执行CAD程序数据集。**\n\n### 3. 核心思路\n**把大语言模型（LLM）变成一个“CAD设计智能体”**。\n- 不是让LLM直接瞎编代码，而是把它**嵌入一个有反馈的CAD模拟环境**里。\n- LLM扮演“设计师”，它**构思零件描述、编写代码、执行代码、检查结果**，并根据环境反馈（比如代码报错、模型太简单）不断**迭代优化**。\n- 通过让LLM能**调用CAD工具和查阅文档**，引导它生成**几何上有效**且**操作多样化**的程序。\n- 整个过程是 **“从零开始”的自主合成**，不依赖于任何现有的真实CAD程序数据。\n\n### 4. 结果怎么样\n- **成功合成并发布了约100万个可执行的CAD程序序列**，覆盖了丰富的操作类型。\n- 从中精选了**10万个高质量、多样化的模型**作为更易使用的子集发布。\n- 为了证明数据有用，他们用合成数据训练了一个**视觉-语言模型**，让它能从**几张图片重建出可编辑的CAD程序**。\n- 这个训练出来的模型，在“看图生成CAD程序”的任务上，**表现超过了强大的GPT-5.2等基线模型**。这证明了用纯合成数据也能成功“引导”出强大的CAD程序生成能力。\n\n### 5. 模型结构与整体流程\n**基模**：论文使用了**大语言模型（LLM）** 作为核心推理引擎，但没有具体指明是哪个LLM（如GPT-4等），它被用作一个通用的代码生成和规划智能体。\n\n**整体流程**（对照论文第4节方法）：\n\n整个系统是一个多节点的 **“智能体流水线”** ，核心是 **“两阶段生成协议”**：\n\n1.  **第一阶段：目录生成**\n    - **输入**：无。系统启动。\n    - **过程**：LLM根据一个提示（Prompt），扮演“产品经理”，**构思一个机械零件的文字描述**。比如：“一个带有四个安装孔和加强筋的L型支架”。\n    - **输出**：一个结构化的**零件描述文本**，包含类别、特征、目标操作等。\n\n2.  **第二阶段：代码生成与迭代优化**\n    - **输入**：上一阶段生成的零件描述。\n    - **过程**：这是一个循环：\n        - **生成**：另一个LLM（或同一LLM不同提示）根据描述，**生成对应的CAD程序代码**（如使用CadQuery/Python API）。\n        - **执行与验证**：代码被发送到 **“工具化工作节点”** ，在一个CAD内核（如OCCT）中**实际执行**。\n        - **反馈**：系统进行三重检查：\n            - **代码执行验证**：能运行不报错吗？\n            - **几何验证**：生成的3D模型是有效的实体吗？（不是破碎的面）\n            - **导出验证**：能成功导出为标准文件格式（如STEP）吗？\n        - **迭代**：如果失败或太简单，LLM会收到错误信息或要求，**重新思考并修改代码**，直到通过验证或达到尝试次数上限。\n    - **输出**：**最终通过验证的可执行CAD代码、生成的3D模型（B-Rep）以及导出文件**。\n\n**整个系统的关键**在于将LLM的创造力与CAD环境的严格几何约束结合起来，通过**试错反馈**确保生成结果的**可用性和多样性**。最终，海量成功的案例被收集起来，就构成了Zero-to-CAD数据集。\n\n**简单比喻**：就像一个刚毕业的机械工程师（LLM），被扔进一个配备了所有CAD软件和设计手册（工具与文档）的办公室（环境）。老板（系统）不断给他派发设计任务（生成描述），他边学边做，画图（写代码），软件会立刻告诉他哪里画错了（验证反馈），他反复修改直到图纸合格。就这样，他一个人高效地产出了海量的合格设计图纸（数据集）。",
+    "2604.24763": "这篇论文讨论的是**多模态AI模型**。简单来说，就是让一个模型既能**理解**图像和文字，又能**生成**新的图像。\n\n---\n\n### (1) 任务是什么？\n*   **任务输入**：文字指令 + 图像（或视频）。\n*   **任务输出**：\n    *   **理解任务**：根据图像和问题，输出文字回答（例如，图像描述、视觉问答）。\n    *   **生成任务**：根据文字描述，输出一张新的图像。\n*   **任务功能**：构建一个 **“统一”** 的模型，让它既能看图说话（理解），又能文生图（生成），而不是用两个独立的模型来做这两件事。\n\n---\n\n### (2) 想解决什么问题？\n过去构建这种统一模型时，通常需要依赖**预先训练好的“视觉编码器”**（比如CLIP、VAE）来把图像压缩成一个“特征向量”，再交给大语言模型处理。\n**问题在于**：\n1.  **模块化设计**：理解任务和生成任务用的编码器不同，导致学到的“视觉表示”不一致，模型内部不够协调。\n2.  **非端到端**：依赖外部预训练编码器，模型无法从原始像素开始进行**完整的、端到端**的学习和优化。\n**核心问题**：**我们能不能抛弃这些预训练编码器，让模型直接从原始像素学习，并同时做好理解和生成两件事？**\n\n---\n\n### (3) 核心思路是什么？\n作者的回答是：**能！直接用“像素嵌入”效果更好。**\n他们提出了一个名为 **Tuna-2** 的模型，其核心思路是**极简设计**：\n1.  **抛弃所有预训练视觉编码器**：不再使用CLIP或VAE。\n2.  **直接处理原始像素**：将图像简单切分成小块（Patch），然后用一个可学习的**嵌入层（Embedding Layer）** 将每个像素块转换成向量（即“像素嵌入”）。\n3.  **一个模型干所有事**：将这些像素嵌入向量和文字词向量混合在一起，输入给**同一个Transformer解码器**。这个解码器既负责理解任务（输出文字答案），也负责生成任务（一步步“画”出像素）。\n\n**关键创新**：为了帮助模型在复杂的像素空间中学到更鲁棒的特征，他们引入了**掩码学习**（类似BERT的掩码语言模型，但用在图像块上），随机遮盖一些图像块让模型去预测，从而学习更好的视觉表示。\n\n---\n\n### (4) 结果怎么样？\n**效果非常好，达到了业内领先水平。**\n*   **在多项多模态理解基准测试**（如视觉问答、图像描述等）上，Tuna-2取得了**最先进（SOTA）的性能**。\n*   **在图像生成质量**上，Tuna-2证明了**直接在像素空间建模**完全可以和依赖VAE在“潜空间”生成的方法**竞争**，生成高质量图片。\n*   **更重要的是对比发现**：与保留了一个编码器的版本（Tuna-R）相比，完全无编码器的Tuna-2在经过充分预训练后：\n    *   在**生成任务**上与之相当。\n    *   在**理解任务**上，**尤其是需要细粒度视觉感知的任务**（比如看细节回答问题），**表现得更强**。\n*   **结论**：预训练视觉编码器对于多模态模型**不是必需的**。端到端的像素级学习，是通向更强视觉理解与生成能力的可扩展路径。\n\n---\n\n### (5) 模型结构与流程\n**基模**：本质上是一个**自回归的Transformer解码器**（类似GPT、LLaMA等大语言模型的结构），但被改造用于处理视觉和文本的混合序列。\n\n**整体流程（以生成为例）**：\n1.  **输入处理**：\n    *   **文本部分**：用户输入的文字指令（如“画一只猫”），通过词嵌入层变成一串向量。\n    *   **图像部分**（如果是理解任务）：输入的图片被均匀分割成 NxN 个小图块（例如16x16像素）。每个图块通过一个**简单的线性投影层（即Patch Embedding层）** 转换为一个向量。这就是“像素嵌入”。\n2.  **序列拼接**：将文本向量序列和图像像素嵌入序列按顺序拼接起来，形成一条长的“多模态序列”。在序列开头会加上一个特殊的`[BOS]`（序列开始）标记。\n3.  **Transformer解码器处理**：将这条长序列输入Transformer解码器。解码器通过**自注意力机制**，让序列中的每个位置（无论是文字还是图像块）都能关注到它之前的所有位置，从而建立文本和图像的关联。\n4.  **输出**：\n    *   **对于理解任务**：解码器输出的是文字答案的词向量，经过最后的线性层转换为概率分布，预测出下一个词，以自回归的方式生成完整答案。\n    *   **对于生成任务**：这是一个**迭代去噪**的过程（基于流匹配或扩散模型思想）。初始时，模型接收文本和一张纯噪声图片的像素嵌入。在每一步，解码器预测出如何从当前噪声图像“走向”更清晰的图像。经过多步迭代，最终输出干净的、符合文本描述的图像像素。\n\n**简而言之**：`文本+图像像素块` -> `嵌入为向量并拼接` -> `送入统一的Transformer解码器` -> `根据任务目标，解码器要么输出文字，要么迭代输出图像像素`。\n\n这个过程完全**端到端**，没有使用任何外部预训练编码器来提取特征，所有表示都是从原始像素开始学起的。",
+    "2604.24764": "好的，没问题。我们来一步步拆解这篇论文，用通俗易懂的语言来解释。\n\n### (1) 这篇论文所在的任务是什么：文本到视频生成\n\n*   **任务输入**：一段描述性的文字（例如：“一架无人机低空飞越一片宁静的湖泊，四周是秋天的树林”）。\n*   **任务输出**：一个符合文字描述、看起来真实且连贯的视频。\n*   **任务功能**：就像“文生图”，但更进了一步，是“文生视频”。目标是让AI模型能够根据文字描述，凭空生成一个动态的、具有时空一致性的视频片段。\n\n### (2) 这篇论文想解决什么问题\n\n当前最先进的文本到视频模型（如Sora等）虽然能生成画质很高的视频，但存在一个**核心缺陷**：它们不理解“3D世界”的几何规则。\n\n**通俗比喻**：就像一个非常厉害的画家，能画出单张精美的风景画，但让他画一套从不同角度、不同时间观察同一风景的连环画时，画中的山、树、房子的大小、形状、位置可能会对不上，违反了现实世界的物理和几何规律。在视频里，这就表现为：当镜头移动时，物体会扭曲、变形、突然消失或不合理地出现。\n\n这篇论文要解决的，就是让视频生成模型从“画一系列好看的2D图片”升级为“模拟一个内部自洽的3D世界”。\n\n### (3) 论文的核心思路是什么\n\n**核心思路：不改造模型“身体”，而是用“奖励”训练它的“大脑”。**\n\n1.  **不改架构**：他们不修改视频生成模型（基模）的内部结构，这保证了模型原有的强大生成能力和效率。\n2.  **巧用强化学习**：他们把生成视频的过程看作一个“游戏”，模型是“玩家”。每次生成一个视频，就由几位“裁判”来打分。\n3.  **设计聪明的“裁判”**：\n    *   **几何裁判（3D模型）**：把生成的视频帧喂给一个现成的、能理解3D的AI模型，让它尝试从视频中重建出3D场景。如果重建得好、不同视角看起来一致，说明视频的几何是合理的，就给**高分**。\n    *   **语义裁判（图文理解模型）**：把视频里虚拟摄像机“看到”的画面（包括从没生成过的角度）给另一个现成的AI看，问它“这画面符合文字描述吗？看起来自然吗？”。如果回答是肯定的，就给**高分**。\n4.  **引导学习**：模型通过不断生成视频、接受裁判打分（奖励），逐渐学会调整自己的内部参数，让生成的视频越来越能满足这些3D几何和语义合理性的要求。这个过程就叫**强化学习**。\n\n**简单总结**：论文用“3D一致性”和“语义合理性”作为奖励信号，通过强化学习“微调”现有视频大模型，让它自己悟出生成3D一致视频的诀窍。\n\n### (4) 结果怎么样\n\n效果非常显著：\n*   **3D一致性大幅提升**：论文用PSNR（衡量图像质量的指标，越高越好）来量化3D重建的质量，他们的方法比基线模型提升了超过 **7-10 dB**，这是一个很大的进步。\n*   **不牺牲原有能力**：在提升3D一致性的同时，模型在**通用视频生成**任务上的表现（如画质、文本符合度）并没有下降，保持了原有水准。\n*   **验证充分**：论文还做了大量其他实验，比如生成长视频、处理复杂场景等，都证明了方法的有效性。\n\n### (5) 论文的模型结构与流程\n\n*   **基模**：论文使用的是现有的**文本到视频生成基础模型**（例如类似Sora、Pika这类模型，具体是哪个在正文中没有明确写出，但这是一个可以替换的组件）。我们把它称为 **“视频生成器”**。\n*   **整体流程**（结合了你的描述和论文方法）：\n\n    1.  **输入**：用户提供一段 **文本描述**（Prompt）。\n    2.  **隐含相机控制**：系统会根据文本，生成一个**虚拟摄像机的运动轨迹**（如向前推、环绕等）。这个轨迹信息被巧妙地编码后，输入给“视频生成器”，告诉它镜头应该怎么动。\n    3.  **视频生成**：**视频生成器** 接收“文本”和“隐含的相机轨迹”信息，运行一次前向传播，**生成一段原始视频**。\n    4.  **裁判团打分（奖励计算）**：\n        *   **步骤A（给3D裁判看）**：将生成的视频送入一个**预训练的3D重建模型**。该模型会尝试从视频中反推出一个3D场景，并计算这个3D场景的质量（重建得好不好）以及它和输入的相机轨迹是否匹配。这部分给出 **“几何奖励”**。\n        *   **步骤B（给语义裁判看）**：利用上一步得到的3D场景，**渲染出一些全新的、视频里根本没有的视角图片**（称为“元视图”）。把这些图片和原始文本描述，一起送给一个**强大的视觉-语言模型**（例如GPT-4V）。问VLM：“这些新视角的图片，符合原始的文字描述吗？看起来自然吗？”。根据VLM的回答，计算 **“语义奖励”**。\n    5.  **模型优化**：将 **几何奖励** 和 **语义奖励** 结合起来，形成一个**总奖励**。使用一种名为 **Flow-GRPO** 的强化学习算法，用这个总奖励来更新 **视频生成器** 的模型参数。\n    6.  **迭代与输出**：重复步骤3-5多次（在大量文本数据上训练）。训练完成后，得到一个**增强版的视频生成器（即World-R1）**。此时，用户再输入文本，模型就能**直接输出**在3D几何上更一致、更逼真的视频了。\n\n**流程图简化版**：\n`文本 + 相机轨迹` → **视频生成器（基模）** → `原始视频` → **3D裁判 + 语义裁判** → `计算奖励` → **强化学习优化器** → **更新视频生成器参数** → (循环) → **最终模型：World-R1** → `高质量3D一致视频`\n\n希望这个解释能帮助你清晰理解这篇论文的工作！"
+  },
+  "images_meta": {
+    "2604.17565": [
+      {
+        "path": "https://arxiv.org/html/2604.17565v1/x2.png",
+        "caption": "Figure 2:UniGeo Framework.UniGeo incorporates unified geometric guidance through: (a) Geometry Construction: Lifting input images into 3D point cloud sequences. (b) Frame-Decoupled Geometry Injection: Injecting sequences along the frame dimension. (c) Geometric Anchor Attention: Aligning cross-view features using first-frame tokens as anchors. (d) Trajectory-Endpoint Geometric Supervision: Applying higher loss weights to trajectory endpoints versus intermediate frames.",
+        "caption_zh": "图 2：UniGeo 框架。UniGeo 通过以下方式融入统一的几何引导：(a) 几何构建：将输入图像提升为三维点云序列。(b) 帧解耦几何注入：沿帧维度注入序列。(c) 几何锚点注意力：以首帧令牌为锚点对齐跨视图特征。(d) 轨迹端点几何监督：对轨迹端点（相较于中间帧）施加更高的损失权重。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.17565v1/x1.png",
+        "caption": "Figure 1:Visual comparisons. Existing methods relying on fragmented geometric guidance often suffer from structural distortions or artifacts under camera motion (highlighted in red). In contrast, by enforcing unified geometric guidance, ourUniGeosuccessfully preserves global scene geometry and structural fidelity (highlighted in green, with selected details enlarged).",
+        "caption_zh": "图 1：视觉对比。依赖碎片化几何引导的现有方法在相机运动下常出现结构扭曲或伪影（红色高亮部分）。相比之下，通过实施统一的几何引导，我们的 UniGeo 成功保持了全局场景几何与结构保真度（绿色高亮部分，并放大展示了部分细节）。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.17565v1/x6.png",
+        "caption": "Figure 6:Qualitative comparison on theMannequinChallengedataset.\nUnder camera motion, our method achieves more stable identity preservation compared with other methods, maintaining more consistent appearance.",
+        "caption_zh": "图6：在MannequinChallenge数据集上的定性对比。在相机运动条件下，相较于其他方法，我们的方法实现了更稳定的身份保持，维持了更一致的外观表现。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.24479": [
+      {
+        "path": "https://arxiv.org/html/2604.24479v1/x2.png",
+        "caption": "Figure 2:Example of an agentic code synthesis rollout. The LLM generates CadQuery code from a part description, executes it, uses documentation lookup after failures, and revises the code until validation succeeds. See AppendixEfor the corresponding code.",
+        "caption_zh": "图 2：自主代码生成流程示例。大语言模型根据部件描述生成 CadQuery 代码，执行后若出现故障则通过查阅文档进行修正，并迭代优化代码直至通过验证。对应代码详见附录 E。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24479v1/x1.png",
+        "caption": "Figure 1:Zero-to-CAD uses an LLM with tool access to generate approximately one million executable CAD construction sequences with interpretable parameters. The examples show diverse mechanical parts, including brackets, housings, gears, and connectors, with fillets, chamfers, holes, and Boolean operations.",
+        "caption_zh": "图1：Zero-to-CAD 采用具备工具访问能力的大型语言模型，生成约一百万条带有可解释参数的可执行 CAD 构建序列。示例展示了多样化的机械零件，包括支架、外壳、齿轮和连接器，并包含圆角、倒角、孔以及布尔运算等特征。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24479v1/x5.png",
+        "caption": "Figure 5:Qualitative comparison of Image-to-Sequence reconstruction on selected ABC samples, comparing ground truth, the fine-tuned Qwen3-VL-2B model, and GPT-5.2 outputs.",
+        "caption_zh": "图 5：在精选 ABC 样本上对图像到序列重建的定性比较，对比了真实情况、微调后的 Qwen3-VL-2B 模型以及 GPT-5.2 的输出结果。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.24763": [
+      {
+        "path": "https://arxiv.org/html/2604.24763v1/x1.png",
+        "caption": "Figure 1:Evolution ofTuna-2architecture and multimodal performance comparison. We simplifyTuna(liu2025tuna)by progressively stripping away its visual encoding components. By removing the VAE, we first deriveTuna-R, a pixel-space UMM that relies solely on a representation encoder.Tuna-2further streamlines the design by bypassing the representation encoder entirely, utilizing direct patch embedding layers for raw image inputs.Tuna-2using pixel embeddings outperforms bothTuna-RandTunaacross a diverse suite of multimodal benchmarks.",
+        "caption_zh": "图1：Tuna-2架构演进与多模态性能对比。我们通过逐步剥离原Tuna模型（liu2025tuna）的视觉编码组件来简化其结构：移除VAE后得到Tuna-R，这是一个仅依赖表征编码器的像素空间统一多模态模型；Tuna-2进一步精简设计，完全绕过表征编码器，直接使用补丁嵌入层处理原始图像输入。在多样化多模态基准测试中，采用像素嵌入的Tuna-2性能均优于Tuna-R与原始Tuna模型。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24763v1/x3.png",
+        "caption": "Figure 3:Illustration of our proposed masking-based feature learning scheme. During training, we use the learnable mask token to regularize multimodal understanding and perform masked prediction for visual generation.",
+        "caption_zh": "图 3：本文提出的基于掩码的特征学习方案示意图。在训练过程中，我们使用可学习的掩码标记来规范化多模态理解，并执行掩码预测以实现视觉生成。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24763v1/x4.png",
+        "caption": "Table 5:Image reconstruction performance for different visual tokenizers.TokenizerRes.rFID↓\\downarrowPSNR↑\\uparrowSSIM↑\\uparrowSpecialized tokenizersSD-VAE2561.0628.620.86GigaTok2560.5121.320.69VA-VAE2560.2628.590.80DC-AE5120.2226.150.71MAE-Tok5120.62––TexTok5120.7324.450.66FLUX.1[dev]-VAE†5120.0633.650.93Unified tokenizersUniTok2560.38––TokenFlow3840.6322.770.73X-Omni†5128.3015.660.38MingTok†5120.5323.490.61RAE2560.6119.200.44PS-VAE2560.2028.790.82Tuna-R5120.1232.220.93Tuna-25120.1532.800.93Figure 4:Qualitative results for different visual tokenizers.",
+        "caption_zh": "表 5：不同视觉分词器的图像重建性能。分词器分辨率 rFID↓ PSNR↑ SSIM↑ 专用分词器 SD-VAE 256 1.06 28.62 0.86 GigaTok 256 0.51 21.32 0.69 VA-VAE 256 0.26 28.59 0.80 DC-AE 512 0.22 26.15 0.71 MAE-Tok 512 0.62 – – TexTok 512 0.73 24.45 0.66 FLUX.1[dev]-VAE† 512 0.06 33.65 0.93 统一分词器 UniTok 256 0.38 – – TokenFlow 384 0.63 22.77 0.73 X-Omni† 512 8.30 15.66 0.38 MingTok† 512 0.53 23.49 0.61 RAE 256 0.61 19.20 0.44 PS-VAE 256 0.20 28.79 0.82 Tuna-R 512 0.12 32.22 0.93 Tuna-2 512 0.15 32.80 0.93 图 4：不同视觉分词器的定性结果。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.24764": [
+      {
+        "path": "https://arxiv.org/html/2604.24764v1/x3.png",
+        "caption": "Figure 2:Overview of World-R1.Left:Given a text prompt, we synthesize a camera trajectory and embed it into the latent space via noise wrapping[34]to achieve implicit camera conditioning.Middle:The foundation model[3]generates candidate video clips.Right:We employ an comprehensive reward system: the generated video is lifted to a 3D Gaussian Splatting representation via a 3D Foundation Model[17]. We compute a 3D-aware reward score based on meta-view evaluation, rendering fidelity, and trajectory alignment, combined with a general generation reward. The model is optimized using Flow-GRPO-Fast[24]to internalize these geometric constraints.",
+        "caption_zh": "图 2：World-R1 模型总览。左图：给定文本提示，我们合成相机轨迹并通过噪声缠绕法 [34] 将其嵌入隐空间，以实现隐式的相机条件控制。中图：基础模型 [3] 生成候选视频片段。右图：我们采用一套综合奖励机制：通过 3D 基础模型 [17] 将生成的视频提升为 3D 高斯溅射表示，并基于多视角评估、渲染保真度与轨迹对齐性计算 3D 感知奖励分数，同时结合通用生成奖励。模型使用 Flow-GRPO-Fast [24] 进行优化，以将这些几何约束内化。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24764v1/x2.png",
+        "caption": "Figure 1:World-R1 enables geometrically consistent world modeling in video foundation models via reinforcement learning. It accepts text input and generates high-quality 3D consistent videos. We visualize the reconstruction results alongside the video frames. Video results are in our supplementary material.",
+        "caption_zh": "图1：World-R1 通过强化学习在视频基础模型中实现了几何一致的世界建模。它接受文本输入并生成高质量的三维一致视频。我们在视频帧旁展示了重建结果的可视化。视频结果见补充材料。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24764v1/x5.png",
+        "caption": "Figure 4:Ablation study.We visualize the evolution of the general generation reward and the 3D-aware reward during fine-tuning of World-R1-Small. The curves demonstrate the contribution of each component.",
+        "caption_zh": "图 4：消融实验。我们在 World-R1-Small 模型微调过程中，可视化了一般生成奖励与 3D 感知奖励的演变曲线，结果展示了各组成部分的贡献。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2508.10180": {
+      "abstract": "Data valuation is essential for enhancing the transparency and accountability of large language models (LLMs) and vision-language models (VLMs). However, existing methods typically rely on gradient computations, making them computationally prohibitive for billion-parameter models and precluding batch parallelization. In this work, we introduce For-Value, a forward-only data valuation framework that enables efficient batch-scalable value estimation while maintaining effectiveness. Leveraging the expressive power of pretrained LLMs/VLMs, we theoretically demonstrate that data valuation can be captured by the alignment between the final hidden representations and prediction errors at the last layer. In light of this insight, For-Value computes data value using a simple closed-form expression with a single forward pass, eliminating the need for costly backpropagation and enabling efficient batch calculating at scale. Extensive experiments show that For-Value matches or outperforms gradient-based baselines in detecting influential data and mislabeled data, while achieving significant efficiency improvements.",
+      "comments": ""
+    },
+    "2604.16391": {
+      "abstract": "Vision-language-action (VLA) models have shown great potential in building generalist robots, but still face a dilemma-misalignment of 2D image forecasting and 3D action prediction. Besides, such a vision-action entangled training manner limits model learning from large-scale, action-free web video data. To address these issues, we propose DeFI, a novel framework that Decouples visual Forward and Inverse dynamics pretraining to exploit respective data sources, wherein video generation and action prediction are disentangled. We introduce the General Forward Dynamics Model (GFDM), pretrained on diverse human and robot videos for future prediction, and the General Inverse Dynamics Model (GIDM), trained via self-supervised learning to infer latent actions from unlabeled video transitions. These models are then integrated into a unified architecture for end-to-end finetuning on downstream tasks. In this manner, GFDM and GIDM first shine separately and then cooperate for mutual benefit. Extensive experiments on CALVIN ABC-D and SimplerEnv demonstrate state-of-the-art performance, with DeFI achieving an average task length of 4.51 for CALVIN, 51.2% success rate on SimplerEnv-Fractal benchmark and 81.3% success rate in real-world deployment, significantly outperforming prior methods.",
+      "comments": "ICLR 2026"
+    },
+    "2604.17565": {
+      "abstract": "Camera-controllable image editing aims to synthesize novel views of a given scene under varying camera poses while strictly preserving cross-view geometric consistency. However, existing methods typically rely on fragmented geometric guidance, such as only injecting point clouds at the representation level despite models containing multiple levels, and are mainly based on image diffusion models that operate on discrete view mappings. These two limitations jointly lead to geometric drift and structural degradation under continuous camera motion.We observe that while leveraging video models provides continuous viewpoint priors for camera-controllable image editing, they still struggle to form stable geometric understanding if geometric guidance remains fragmented. To systematically address this, we inject unified geometric guidance across three levels that jointly determine the generative output: representation, architecture, and loss function.To this end, we propose UniGeo, a novel camera-controllable editing framework. Specifically, at the representation level, UniGeo incorporates a frame-decoupled geometric reference injection mechanism to provide robust cross-view geometry context. At the architecture level, it introduces geometric anchor attention to align multi-view features. At the loss function level, it proposes a trajectory-endpoint geometric supervision strategy to explicitly reinforce the structural fidelity of target views.Comprehensive experiments across multiple public benchmarks, encompassing both extensive and limited camera motion settings, demonstrate that UniGeo significantly outperforms existing methods in both visual quality and geometric consistency.",
+      "comments": ""
+    },
+    "2604.19548": {
+      "abstract": "Large Language Model agents have rapidly evolved from static text generators into dynamic systems capable of executing complex autonomous workflows. To enhance reliability, multi-agent frameworks assigning specialized roles are increasingly adopted to enable self-reflection and mutual auditing. While such role-playing effectively leverages domain expert knowledge, we find it simultaneously induces a human-like cognitive bias known as Actor-Observer Asymmetry (AOA). Specifically, an agent acting as an actor (during self-reflection) tends to attribute failures to external factors, whereas an observer (during mutual auditing) attributes the same errors to internal faults. We quantify this using our new Ambiguous Failure Benchmark, which reveals that simply swapping perspectives triggers the AOA effect in over 20% of cases for most models. To tame this bias, we introduce ReTAS (Reasoning via Thesis-Antithesis-Synthesis), a model trained through dialectical alignment to enforce perspective-invariant reasoning. By integrating dialectical chain-of-thought with Group Relative Policy Optimization, ReTAS guides agents to synthesize conflicting viewpoints into an objective consensus. Experiments demonstrate that ReTAS effectively mitigates attribution inconsistency and significantly improves fault resolution rates in ambiguous scenarios.",
+      "comments": "ACL 2026 Main Conference. Project page: <a class=\"link-external link-https\" href=\"https://unikcc.github.io/ReTAS/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.21106": {
+      "abstract": "We measure how much one extra recurrence is worth to a looped (depth-recurrent) language model, in equivalent unique parameters. From an iso-depth sweep of 116 pretraining runs across recurrence counts $r \\in \\{1, 2, 4, 8\\}$ spanning ${\\sim}50\\times$ in training compute, we fit a joint scaling law $L = E + A\\,(N_\\text{once} + r^{\\varphi} N_\\text{rec})^{-\\alpha} + B\\,D^{-\\beta}$ and recover a new recurrence-equivalence exponent $\\varphi = 0.46$. Intuitively, $\\varphi$ tells us whether looping a block $r$ times is equivalent in validation loss to $r$ unique blocks of a non-looped model (full equivalence, $\\varphi{=}1$) or to a single block run repeatedly with no capacity gain ($\\varphi{=}0$). Our $\\varphi = 0.46$ sits in between, so each additional recurrence predictably increases validation loss at matched training compute. For example, at $r{=}4$ a 410M looped model performs on par with a 580M non-looped model, but incurs the training cost of a 1B non-looped one. We demonstrate the utility of $\\varphi$ as a measurement tool on two probes. Truncated backpropagation lowers $\\varphi$ to $0.38$, indicating that the loop mechanism is poorly trained under truncation, even though validation loss decreases. Conversely, hyperconnections raise $\\varphi$ to $0.65$, a genuine capacity gain. Our method applies to any looped LM and separates true loop improvements from token-budget gains.",
+      "comments": "v2: added interesting truncated-BPTT and hyperconnections probes, new discussion sections on $φ$ as decision metric and inference cost"
+    },
+    "2604.21480": {
+      "abstract": "Large language models (LLMs) are increasingly deployed as customer-facing agents, yet evaluating their reliability remains challenging due to stochastic, multi-turn interactions. Current evaluation protocols rely on linear Monte Carlo rollouts of complete agent-user conversations to estimate success. However, this approach is computationally inefficient, repeatedly regenerating identical early prefixes, and often fails to uncover deep failure modes that arise from rare user behaviors.We introduce DIVERT (Diversity-Induced Evaluation via Branching of Trajectories), an efficient, snapshot-based, coverage-guided user simulation framework for systematic exploration of agent-user interactions. DIVERT captures the full agent-environment state at critical decision points and resumes execution from these snapshots, enabling reuse of shared conversation prefixes and reducing redundant computation. From each junction, the framework branches using targeted, diversity-inducing user responses, allowing directed exploration of alternative interaction paths.By focusing evaluation on semantically diverse and underexplored trajectories, DIVERT improves both efficiency and coverage. Empirical results show that it discovers more failures per token compared to standard linear rollout protocols, while expanding the set of tasks on which failures are identified.",
+      "comments": ""
+    },
+    "2604.22446": {
+      "abstract": "Individual agent capabilities have advanced rapidly through modular skills and tool integrations, yet multi-agent systems remain constrained by fixed team structures, tightly coupled coordination logic, and session-bound learning. We argue that this reflects a deeper absence: a principled organisational layer that governs how a workforce of agents is assembled, governed, and improved over time, decoupled from what individual agents know. To fill this gap, we introduce \\emph{OneManCompany (OMC)}, a framework that elevates multi-agent systems to the organisational level. OMC encapsulates skills, tools, and runtime configurations into portable agent identities called \\emph{Talents}, orchestrated through typed organisational interfaces that abstract over heterogeneous backends. A community-driven \\emph{Talent Market} enables on-demand recruitment, allowing the organisation to close capability gaps and reconfigure itself dynamically during execution. Organisational decision-making is operationalised through an \\emph{Explore-Execute-Review} ($\\text{E}^2$R) tree search, which unifies planning, execution, and evaluation in a single hierarchical loop: tasks are decomposed top-down into accountable units and execution outcomes are aggregated bottom-up to drive systematic review and refinement. This loop provides formal guarantees on termination and deadlock freedom while mirroring the feedback mechanisms of human enterprises. Together, these contributions transform multi-agent systems from static, pre-configured pipelines into self-organising and self-improving AI organisations capable of adapting to open-ended tasks across diverse domains. Empirical evaluation on PRDBench shows that OMC achieves an $84.67\\%$ success rate, surpassing the state of the art by $15.48$ percentage points, with cross-domain case studies further demonstrating its generality.",
+      "comments": "33 pages,13 figures"
+    },
+    "2604.22782": {
+      "abstract": "Serving transformer language models with high throughput requires caching Key-Values (KVs) to avoid redundant computation during autoregressive generation. The memory footprint of KV caching is significant and heavily impacts serving costs. This work proposes to lessen these memory requirements. While recent work has largely addressed KV cache reduction via compression and eviction along the temporal axis, we argue that the \\emph{depth} dimension offers an orthogonal and robust avenue for optimization. Although prior research suggests that a full cache for every layer is redundant, implementing cross-layer cache sharing remains a practical challenge; existing methods typically suffer from reduced throughput or increased time-to-first-token. In this paper, we demonstrate that dropping a layer's cache offers efficient optimization without information loss. We propose a simple training approach: random cross-layer attention. During training, layers randomly choose to attend either to their own KV states or those of a preceding layer. This stochastic process adapts the model to be robust to various depth-wise cache sharing strategies, ensuring flexibility for unknown hardware constraints at deployment time. Our evaluations show that applying this scheme during pre-training or fine-tuning enables depth-wise cache sharing for various model families. Furthermore, for larger models in data-constrained settings, this approach is suggestive of a regularization-like effect, frequently preserving or improving performance while significantly reducing the cache's memory footprint.",
+      "comments": ""
+    },
+    "2604.22841": {
+      "abstract": "Face Image Quality Assessment (FIQA) aims to assess the recognition utility of face samples and is essential for reliable face recognition (FR) systems. Existing approaches require computationally expensive procedures such as multiple forward passes, backpropagation, or additional training, and only recent work has focused on the use of Vision Transformers. Recent studies highlighted that these architectures inherently function as saliency learners with attention patterns naturally encoding spatial importance. This work proposes ATTN-FIQA, a novel training-free approach that investigates whether pre-softmax attention scores from pre-trained Vision Transformer-based face recognition models can serve as quality indicators. We hypothesize that attention magnitudes intrinsically encode quality: high-quality images with discriminative facial features enable strong query-key alignments producing focused, high-magnitude attention patterns, while degraded images generate diffuse, low-magnitude patterns. ATTN-FIQA extracts pre-softmax attention matrices from the final transformer block, aggregate multi-head attention information across all patches, and compute image-level quality scores through simple averaging, requiring only a single forward pass through pre-trained models without architectural modifications, backpropagation, or additional training. Through comprehensive evaluation across eight benchmark datasets and four FR models, this work demonstrates that attention-based quality scores effectively correlate with face image quality and provide spatial interpretability, revealing which facial regions contribute most to quality determination.",
+      "comments": "Accepted at FG2026"
+    },
+    "2604.22842": {
+      "abstract": "Face Image Quality Assessment is crucial for reliable face recognition systems, yet existing Vision Transformer-based approaches rely exclusively on final-layer representations, ignoring quality-relevant information captured at intermediate network depths. This paper presents the first comprehensive investigation of how intermediate representations within ViTs contribute to face quality assessment through early exit mechanisms and score fusion strategies. We systematically analyze all twelve transformer blocks of ViT-FIQA architectures, demonstrating that different depths capture distinct and complementary quality-relevant information, as evidenced by varying attention patterns and performance characteristics across network layers. We propose a score fusion framework that combines quality predictions from multiple transformer blocks without architectural modifications or additional training. Our early exit analysis reveals optimal performance-efficiency trade-offs, enabling significant computational savings while maintaining competitive performance. Through extensive evaluation across eight benchmark datasets using four FR models, we demonstrate that our fusion strategy improves upon single-exit approaches. Our proposed quality fusion approach employs depth-weighted averaging that assigns progressively higher importance to deeper transformer blocks, achieving the best quality assessment performance by effectively leveraging the hierarchical nature of feature learning in ViTs. Our work challenges the conventional wisdom that only deep features matter for face analysis, revealing that intermediate representations contain valuable information for quality assessment. The proposed framework offers practical benefits for real-world biometric systems by enabling adaptive computation based on resource constraints while maintaining competitive quality assessment capabilities.",
+      "comments": "Accepted at FG2026"
+    },
+    "2604.22875": {
+      "abstract": "When answering questions about images, humans naturally point, label, and draw to explain their reasoning. In contrast, modern vision-language models (VLMs) such as Gemini-3-Pro and GPT-5 only respond with text, which can be difficult for users to verify. We present SketchVLM, a training-free, model-agnostic framework that enables VLMs to produce non-destructive, editable SVG overlays on the input image to visually explain their answers. Across seven benchmarks spanning visual reasoning (maze navigation, ball-drop trajectory prediction, and object counting) and drawing (part labeling, connecting-the-dots, and drawing shapes around objects), SketchVLM improves visual reasoning task accuracy by up to +28.5 percentage points and annotation quality by up to 1.48x relative to image-editing and fine-tuned sketching baselines, while also producing annotations that are more faithful to the model's stated answer. We find that single-turn generation already achieves strong accuracy and annotation quality, and multi-turn generation opens up further opportunities for human-AI collaboration. An interactive demo and code are atthis https URL.",
+      "comments": ""
+    },
+    "2604.22880": {
+      "abstract": "Existing document OCR largely targets plain text or Markdown, discarding the structural and executable properties that make LaTeX essential for scientific publishing. We study page-level reconstruction of scientific PDFs into compilable LaTeX and introduce TexOCR-Bench, a benchmark, and TexOCR-Train, a large-scale training corpus, for this task. TexOCR-Bench features a multi-dimensional evaluation suite that jointly assesses transcription fidelity, structural faithfulness, and end-to-end compilability. Leveraging TexOCR-Train, we train a 2B-parameter model, TexOCR, using supervised fine-tuning (SFT) and reinforcement learning (RL) with verifiable rewards derived from LaTeX unit tests that directly enforce compilability and referential integrity. Experiments across 21 frontier models on TexOCR-Bench show that existing systems frequently violate key document invariants, including consistent section structure, correct float placement, and valid label-reference links, which undermines compilation reliability and downstream usability. Our analysis further reveals that RL with verifiable rewards yields consistent improvements over SFT alone, particularly on structural and compilation metrics.",
+      "comments": "Accepted by ACL 2026 Main"
+    },
+    "2604.23099": {
+      "abstract": "Evaluating generative AI models is increasingly resource-intensive due to slow inference, expensive raters, and a rapidly growing landscape of models and benchmarks. We propose ProEval, a proactive evaluation framework that leverages transfer learning to efficiently estimate performance and identify failure cases. ProEval employs pre-trained Gaussian Processes (GPs) as surrogates for the performance score function, mapping model inputs to metrics such as the severity of errors or safety violations. By framing performance estimation as Bayesian quadrature (BQ) and failure discovery as superlevel set sampling, we develop uncertainty-aware decision strategies that actively select or synthesize highly informative inputs for testing. Theoretically, we prove that our pre-trained GP-based BQ estimator is unbiased and bounded. Empirically, extensive experiments on reasoning, safety alignment, and classification benchmarks demonstrate that ProEval is significantly more efficient than competitive baselines. It requires 8-65x fewer samples to achieve estimates within 1% of the ground truth, while simultaneously revealing more diverse failure cases under a stricter evaluation budget.",
+      "comments": "Our open-sourced code and data can be found at <a class=\"link-external link-https\" href=\"https://github.com/google-deepmind/proeval\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.23210": {
+      "abstract": "Can large language model agents discover hidden safety objectives through experience alone? We introduce EPO-Safe (Experiential Prompt Optimization for Safe Agents), a framework where an LLM iteratively generates action plans, receives sparse binary danger warnings, and evolves a natural language behavioral specification through reflection. Unlike standard LLM reflection methods that rely on rich textual feedback (e.g., compiler errors or detailed environment responses), EPO-Safe demonstrates that LLMs can perform safety reasoning from a strictly impoverished signal in structured, low-dimensional environments: the agent never observes the hidden performance function $R^*$, only a single bit per timestep indicating that an action was unsafe. We evaluate on five AI Safety Gridworlds (Leike et al., 2017) and five text-based scenario analogs where visible reward $R$ may diverge from $R^*$. EPO-Safe discovers safe behavior within 1-2 rounds (5-15 episodes), producing human-readable specifications with correct explanatory hypotheses about hazards (e.g., \"X cells are directionally hazardous: entering from the north is dangerous\"). Critically, we show that standard reward-driven reflection actively degrades safety: agents reflecting on reward alone use the loop to justify and accelerate reward hacking, proving that reflection must be paired with a dedicated safety channel to discover hidden constraints. We further evaluate robustness to noisy oracles: even when 50% of non-dangerous steps produce spurious warnings, mean safety performance degrades by only 15% on average, though sensitivity is environment-dependent, as cross-episode reflection naturally filters inconsistent signals. Each evolved specification functions as an auditable set of grounded behavioral rules discovered autonomously through interaction, rather than authored by humans as in Constitutional AI (Bai et al., 2022).",
+      "comments": "Accepted to the Adaptive and Learning Agents Workshop (ALA 2026) @ AAMAS 2026. Code is available at <a class=\"link-external link-http\" href=\"http://github.com/vicgalle/experiential-prompt-optimization-safe\" rel=\"external noopener nofollow\">this http URL</a>"
+    },
+    "2604.23604": {
+      "abstract": "Understanding the surrounding environment is fundamental in autonomous driving and robotic perception. Distinguishing between known classes and previously unseen objects is crucial in real-world environments, as done in Anomaly Segmentation. However, research in the 3D field remains limited, with most existing approaches applying post-processing techniques from 2D vision. To cover this lack, we propose a new efficient approach that directly operates in the feature space, modeling the feature distribution of inlier classes to constrain anomalous samples. Moreover, the only publicly available 3D LiDAR anomaly segmentation dataset contains simple scenarios, with few anomaly instances, and exhibits a severe domain gap due to its sensor resolution. To bridge this gap, we introduce a set of mixed real-synthetic datasets for 3D LiDAR anomaly segmentation, built upon established semantic segmentation benchmarks, with multiple out-of-distribution objects and diverse, complex environments. Extensive experiments demonstrate that our approach achieves state-of-the-art and competitive results on the existing real-world dataset and the newly introduced mixed datasets, respectively, validating the effectiveness of our method and the utility of the proposed datasets. Code and datasets are available atthis https URL.",
+      "comments": "This paper has been accepted at the 2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    },
+    "2604.23644": {
+      "abstract": "Intelligent document processing pipelines extract structured entities (tables, images, and text) from documents for use in downstream systems such as knowledge bases, retrieval-augmented generation, and analytics. A persistent limitation of existing pipelines is that extraction output is produced without any intrinsic mechanism to verify whether it faithfully represents the source. Model-internal confidence scores measure inference certainty, not correspondence to the document, and extraction errors pass silently into downstream consumers.We present Reconstruction as Validation (RaV-IDP), a document processing pipeline that introduces reconstruction as a first-class architectural component. After each entity is extracted, a dedicated reconstructor renders the extracted representation back into a form comparable to the original document region, and a comparator scores fidelity between the reconstruction and the unmodified source crop. This fidelity score is a grounded, label-free quality signal. When fidelity falls below a per-entity-type threshold, a structured GPT-4.1 vision fallback is triggered and the validation loop repeats. We enforce a bootstrap constraint: the comparator always anchors against the original document region, never against the extraction, preventing the validation from becoming circular.We further propose a per-stage evaluation framework pairing each pipeline component with an appropriate benchmark. The code pipeline is publicly available atthis https URLfor experimentation and use.",
+      "comments": ""
+    },
+    "2604.23772": {
+      "abstract": "Users browsing the web daily struggle to quickly locate relevant information in cluttered pages, complete unfamiliar multi-step tasks, and stay focused amid distracting content. State-of-the-art AI assistants (e.g., ChatGPT, Gemini, Claude) and browser agents (e.g., OpenAI Operator, Browser Use) can answer questions and automate actions, yet they return answers without showing where the information comes from on the page, forcing users to manually verify results and blindly trust every automated steps. We present PageGuide, a browser extension that grounds LLM answers directly in the HTML DOM via visual overlays, addressing three core user needs: (a) Find-locating and highlighting relevant evidence in-situ so users can instantly verify answers on the page; (b) Guide-showing step-by-step instructions (e.g. how to change password) one at a time so users can follow and perform actions by themselves; and (c) Hide-hiding distracting content-giving users a chance to decide to hide an element or not. In a user study (N=94), PageGuide outperform unaided browsing across all modes: Hide accuracy improve by 26 percentage points (86.7% relative gain) and task completion time drops by 70%; Guide completion rate increases by 30 percentage points; and Find reduces manual search effort, with Ctrl+F usage falling by 80% and task time decreasing by 19%. Code and demo is at:this http URL.",
+      "comments": ""
+    },
+    "2604.23775": {
+      "abstract": "Vision-Language-Action (VLA) models are emerging as a unified substrate for embodied intelligence. This shift raises a new class of safety challenges, stemming from the embodied nature of VLA systems, including irreversible physical consequences, a multimodal attack surface across vision, language, and state, real-time latency constraints on defense, error propagation over long-horizon trajectories, and vulnerabilities in the data supply chain. Yet the literature remains fragmented across robotic learning, adversarial machine learning, AI alignment, and autonomous systems safety. This survey provides a unified and up-to-date overview of safety in Vision-Language-Action models. We organize the field along two parallel timing axes, attack timing (training-time vs. inference-time and defense timing (training-time vs. inference-time, linking each class of threat to the stage at which it can be mitigated. We first define the scope of VLA safety, distinguishing it from text-only LLM safety and classical robotic safety, and review the foundations of VLA models, including architectures, training paradigms, and inference mechanisms. We then examine the literature through four lenses: Attacks, Defenses, Evaluation, and Deployment. We survey training-time threats such as data poisoning and backdoors, as well as inference-time attacks including adversarial patches, cross-modal perturbations, semantic jailbreaks, and freezing attacks. We review training-time and runtime defenses, analyze existing benchmarks and metrics, and discuss safety challenges across six deployment domains. Finally, we highlight key open problems, including certified robustness for embodied trajectories, physically realizable defenses, safety-aware training, unified runtime safety architectures, and standardized evaluation.",
+      "comments": ""
+    },
+    "2604.23781": {
+      "abstract": "Language-model agents are increasingly used as persistent coworkers that assist users across multiple working days. During such workflows, the surrounding environment may change independently of the agent: new emails arrive, calendar entries shift, knowledge-base records are updated, and evidence appears across images, scanned PDFs, audio, video, and spreadsheets. Existing benchmarks do not adequately evaluate this setting because they typically run within a single static episode and remain largely text-centric. We introduce \\bench{}, a benchmark for coworker agents built around multi-turn multi-day tasks, a stateful sandboxed service environment whose state evolves between turns, and rule-based verification. The current release contains 100 tasks across 13 professional scenarios, executed against five stateful sandboxed services (filesystem, email, calendar, knowledge base, spreadsheet) and scored by 1537 deterministic Python checkers over post-execution service state; no LLM-as-judge is invoked during scoring. We benchmark seven frontier agent systems. The strongest model reaches 75.8 weighted score, but the best strict Task Success is only 20.0\\%, indicating that partial progress is common while complete end-to-end workflow completion remains rare. Turn-level analysis shows that performance drops after the first exogenous environment update, highlighting adaptation to changing state as a key open challenge. We release the benchmark, evaluation harness, and construction pipeline to support reproducible coworker-agent evaluation.",
+      "comments": "github repo: <a class=\"link-external link-https\" href=\"https://github.com/evolvent-ai/ClawMark\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.24003": {
+      "abstract": "Large language models (LLMs) achieve strong reasoning performance by allocating substantial computation at inference time, often generating long and verbose reasoning traces. While recent work on efficient reasoning reduces this overhead through length-based rewards or pruning, many approaches are post-trained under a much shorter context window than base-model training, a factor whose effect has not been systematically isolated. We first show that short-context post-training alone, using standard GRPO without any length-aware objective, already induces substantial reasoning compression-but at the cost of increasingly unstable training dynamics and accuracy degradation. To address this, we propose Step-level Advantage Selection (SAS), which operates at the reasoning-step level and assigns a zero advantage to low-confidence steps in correct rollouts and to high-confidence steps in verifier-failed rollouts, where failures often arise from truncation or verifier issues rather than incorrect reasoning. Across diverse mathematical and general reasoning benchmarks, SAS improves average Pass@1 accuracy by 0.86 points over the strongest length-aware baseline while reducing average reasoning length by 16.3%, yielding a better accuracy-efficiency trade-off.",
+      "comments": "Findings of ACL 2026, Code: <a class=\"link-external link-https\" href=\"https://github.com/HanNight/SAS\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.24170": {
+      "abstract": "Concept Bottleneck Models (CBMs) predict through human-interpretable concepts, but they typically output point concept probabilities that conflate epistemic uncertainty (reducible model underspecification) with aleatoric uncertainty (irreducible input ambiguity). This makes concept-level uncertainty hard to interpret and, more importantly, hard to act upon. We introduce CREDENCE (Credal Ensemble Concept Estimation), a CBM framework that decomposes concept uncertainty by construction. CREDENCE represents each concept as a credal prediction (a probability interval), derives epistemic uncertainty from disagreement across diverse concept heads, and estimates aleatoric uncertainty via a dedicated ambiguity output trained to match annotator disagreement when available. The resulting signals support prescriptive decisions: automate low-uncertainty cases, prioritize data collection for high-epistemic cases, route high-aleatoric cases to human review, and abstain when both are high. Across several tasks, we show that epistemic uncertainty is positively associated with prediction errors, whereas aleatoric uncertainty closely tracks annotator disagreement, providing guidance beyond error correlation. Our implementation is available at the following link:this https URL",
+      "comments": ""
+    },
+    "2604.24198": {
+      "abstract": "Process Reward Models (PRMs) have achieved remarkable success in augmenting the reasoning capabilities of Large Language Models (LLMs) within static domains such as mathematics. However, their potential in dynamic data analysis tasks remains underexplored. In this work, we first present a empirical study revealing that general-domain PRMs struggle to supervise data analysis agents. Specifically, they fail to detect silent errors, logical flaws that yield incorrect results without triggering interpreter exceptions, and erroneously penalize exploratory actions, mistaking necessary trial-and-error exploration for grounding failures. To bridge this gap, we introduce DataPRM, a novel environment-aware generative process reward model that (1) can serve as an active verifier, autonomously interacting with the environment to probe intermediate execution states and uncover silent errors, and (2) employs a reflection-aware ternary reward strategy that distinguishes between correctable grounding errors and irrecoverable mistakes. We design a scalable pipeline to construct over 8K high-quality training instances for DataPRM via diversity-driven trajectory generation and knowledge-augmented step-level annotation. Experimental results demonstrate that DataPRM improves downstream policy LLMs by 7.21% on ScienceAgentBench and 11.28% on DABStep using Best-of-N inference. Notably, with only 4B parameters, DataPRM outperforms strong baselines, and exhibits robust generalizability across diverse Test-Time Scaling strategies. Furthermore, integrating DataPRM into Reinforcement Learning yields substantial gains over outcome-reward baselines, achieving 78.73% on DABench and 64.84% on TableBench, validating the effectiveness of process reward supervision. Code is available atthis https URL.",
+      "comments": "Work in progress"
+    },
+    "2604.24300": {
+      "abstract": "Current evaluations of spatial intelligence can be systematically invalid under modern vision-language model (VLM) settings. First, many benchmarks derive question-answer (QA) pairs from point-cloud-based 3D annotations originally curated for traditional 3D perception. When such annotations are treated as ground truth for video-based evaluation, reconstruction and annotation artifacts can miss objects that are clearly visible in the video, mislabel object identities, or corrupt geometry-dependent answers (e.g., size), yielding incorrect or ambiguous QA pairs. Second, evaluations often assume full-scene access, while many VLMs operate on sparsely sampled frames (e.g., 16-64), making many questions effectively unanswerable under the actual model inputs. We improve evaluation validity by introducing ReVSI, a benchmark and protocol that ensures each QA pair is answerable and correct under the model's actual inputs. To this end, we re-annotate objects and geometry across 381 scenes from 5 datasets to improve data quality, and regenerate all QA pairs with rigorous bias mitigation and human verification using professional 3D annotation tools. We further enhance evaluation controllability by providing variants across multiple frame budgets (16/32/64/all) and fine-grained object visibility metadata, enabling controlled diagnostic analyses. Evaluations of general and domain-specific VLMs on ReVSI reveal systematic failure modes that are obscured by prior benchmarks, yielding a more reliable and diagnostic assessment of spatial intelligence.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://3dlg-hcvc.github.io/revsi/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.24479": {
+      "abstract": "Computer-Aided Design (CAD) models are defined by their construction history: a parametric recipe that encodes design intent. However, existing large-scale 3D datasets predominantly consist of boundary representations (B-Reps) or meshes, stripping away this critical procedural information. To address this scarcity, we introduce Zero-to-CAD, a scalable framework for synthesizing executable CAD construction sequences. We frame synthesis as an agentic search problem: by embedding a large language model (LLM) within a feedback-driven CAD environment, our system iteratively generates, executes, and validates code using tools and documentation lookup to promote geometric validity and operation diversity. This agentic approach enables the synthesis of approximately one million executable, readable, editable CAD sequences, covering a rich vocabulary of operations beyond sketch-and-extrude workflows. We also release a curated subset of 100,000 high-quality models selected for geometric diversity. To demonstrate the dataset's utility, we fine-tune a vision-language model on our synthetic data to reconstruct editable CAD programs from multi-view images, outperforming strong baselines, including GPT-5.2, and effectively bootstrapping sequence generation capabilities without real construction-history training data. Zero-to-CAD bridges the gap between geometric scale and parametric interpretability, offering a vital resource for the next generation of CAD AI.",
+      "comments": ""
+    },
+    "2604.24583": {
+      "abstract": "Recent advancements in reinforcement learning with verifiable rewards (RLVR) have significantly improved the complex reasoning ability of vision-language models (VLMs). However, its outcome-level supervision is too coarse to diagnose and correct errors within the reasoning chain. To this end, we propose Perceval, a process reward model (PRM) that enables token-level error grounding, which can extract image-related claims from the response and compare them one by one with the visual evidence in the image, ultimately returning claims that contain perceptual errors. Perceval is trained with perception-intensive supervised training data. We then integrate Perceval into the RL training process to train the policy models. Specifically, compared to traditional GRPO, which applies sequence-level advantages, we apply token-level advantages by targeting penalties on hallucinated spans identified by Perceval, thus enabling fine-grained supervision signals. In addition to augmenting the training process, Perceval can also assist VLMs during the inference stage. Using Perceval, we can truncate the erroneous portions of the model's response, and then either have the model regenerate the response directly or induce the model to reflect on its previous output. This process can be repeated multiple times to achieve test-time scaling. Experiments show significant improvements on benchmarks from various domains across multiple reasoning VLMs trained with RL, highlighting the promise of perception-centric supervision as a general-purpose strategy. For test-time scaling, it also demonstrates consistent performance gains over other strategies, such as major voting. Our code and data will be publicly released atthis https URL.",
+      "comments": "8 pages"
+    },
+    "2604.24597": {
+      "abstract": "We provide evidence of quantum kernel advantage under noiseless simulation in binary insurance classification on MIMIC-CXR chest radiographs using quantum support vector machines (QSVM) with frozen embeddings from three medical foundation models (MedSigLIP-448, RAD-DINO, ViT-patch32). We propose a two-tier fair comparison framework in which both classifiers receive identical PCA-q features. At Tier 1 (untuned QSVM vs. untuned linear SVM, C = 1 both sides), QSVM wins minority-class F1 in all 18 tested configurations (17 at p < 0.001, 1 at p < 0.01). The classical linear kernel collapses to majority-class prediction on 90-100% of seeds at every qubit count, while QSVM maintains non-trivial recall. At q = 11 (MedSigLIP-448 plateau center), QSVM achieves mean F1 = 0.343 vs. classical F1 = 0.050 (F1 gain = +0.293, p < 0.001) without hyperparameter tuning. Under Tier 2 (untuned QSVM vs. C-tuned RBF SVM), QSVM wins all seven tested configurations (mean gain +0.068, max +0.112). Eigenspectrum analysis reveals quantum kernel effective rank reaches 69.80 at q = 11, far exceeding linear kernel rank, while classical collapse remains C-invariant. A full qubit sweep reveals architecture-dependent concentration onset across models. Code:this https URL",
+      "comments": ""
+    },
+    "2604.24762": {
+      "abstract": "Shot Boundary Detection (SBD) aims to automatically identify shot changes and divide a video into coherent shots. While SBD was widely studied in the literature, existing state-of-the-art methods often produce non-interpretable boundaries on transitions, miss subtle yet harmful discontinuities, and rely on noisy, low-diversity annotations and outdated benchmarks. To alleviate these limitations, we propose OmniShotCut to formulate SBD as structured relational prediction, jointly estimating shot ranges with intra-shot relations and inter-shot relations, by a shot query-based dense video Transformer. To avoid imprecise manual labeling, we adopt a fully synthetic transition synthesis pipeline that automatically reproduces major transition families with precise boundaries and parameterized variants. We also introduce OmniShotCutBench, a modern wide-domain benchmark enabling holistic and diagnostic evaluation.",
+      "comments": ""
+    },
+    "2604.24763": {
+      "abstract": "Unified multimodal models typically rely on pretrained vision encoders and use separate visual representations for understanding and generation, creating misalignment between the two tasks and preventing fully end-to-end optimization from raw pixels. We introduce Tuna-2, a native unified multimodal model that performs visual understanding and generation directly based on pixel embeddings. Tuna-2 drastically simplifies the model architecture by employing simple patch embedding layers to encode visual input, completely discarding the modular vision encoder designs such as the VAE or the representation encoder. Experiments show that Tuna-2 achieves state-of-the-art performance in multimodal benchmarks, demonstrating that unified pixel-space modelling can fully compete with latent-space approaches for high-quality image generation. Moreover, while the encoder-based variant converges faster in early pretraining, Tuna-2's encoder-free design achieves stronger multimodal understanding at scale, particularly on tasks requiring fine-grained visual perception. These results show that pretrained vision encoders are not necessary for multimodal modelling, and end-to-end pixel-space learning offers a scalable path toward stronger visual representations for both generation and perception.",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://tuna-ai.org/tuna-2\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.24764": {
+      "abstract": "Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a framework that aligns video generation with 3D constraints through reinforcement learning. To facilitate this alignment, we introduce a specialized pure text dataset tailored for world simulation. Utilizing Flow-GRPO, we optimize the model using feedback from pre-trained 3D foundation models and vision-language models to enforce structural coherence without altering the underlying architecture. We further employ a periodic decoupled training strategy to balance rigid geometric consistency with dynamic scene fluidity. Extensive evaluations reveal that our approach significantly enhances 3D consistency while preserving the original visual quality of the foundation model, effectively bridging the gap between video generation and scalable world simulation.",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://aka.ms/world-r1\" rel=\"external noopener nofollow\">this https URL</a>, Code: <a class=\"link-external link-https\" href=\"https://github.com/microsoft/World-R1\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}
