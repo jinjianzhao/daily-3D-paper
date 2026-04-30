@@ -25,7 +25,7 @@
 **arXiv**: https://arxiv.org/abs/2604.15574  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.15574  
 **HF Paper**: https://hf-mirror.com/papers/2604.15574  
-**HF Votes**: 17
+**HF Votes**: 18
 
 ## 简要摘要
 
@@ -61,7 +61,7 @@
 **arXiv**: https://arxiv.org/abs/2604.18756  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.18756  
 **HF Paper**: https://hf-mirror.com/papers/2604.18756  
-**HF Votes**: 2
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -133,7 +133,7 @@
 **arXiv**: https://arxiv.org/abs/2604.21681  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21681  
 **HF Paper**: https://hf-mirror.com/papers/2604.21681  
-**HF Votes**: 12
+**HF Votes**: 13
 
 ## 简要摘要
 
@@ -151,7 +151,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22446  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22446  
 **HF Paper**: https://hf-mirror.com/papers/2604.22446  
-**HF Votes**: 110
+**HF Votes**: 112
 
 ## 简要摘要
 
@@ -223,7 +223,7 @@
 **arXiv**: https://arxiv.org/abs/2604.22875  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.22875  
 **HF Paper**: https://hf-mirror.com/papers/2604.22875  
-**HF Votes**: 27
+**HF Votes**: 28
 
 ## 简要摘要
 
@@ -384,7 +384,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23775  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23775  
 **HF Paper**: https://hf-mirror.com/papers/2604.23775  
-**HF Votes**: 42
+**HF Votes**: 43
 
 ## 简要摘要
 
@@ -491,7 +491,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24300  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24300  
 **HF Paper**: https://hf-mirror.com/papers/2604.24300  
-**HF Votes**: 59
+**HF Votes**: 60
 
 ## 简要摘要
 
@@ -544,7 +544,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24762  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24762  
 **HF Paper**: https://hf-mirror.com/papers/2604.24762  
-**HF Votes**: 9
+**HF Votes**: 10
 
 ## 简要摘要
 
