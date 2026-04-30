@@ -1,0 +1,27 @@
+- [**2026-04-30 日报**](/2026-04-30/)
+
+  - **3D重建/生成**
+    - [IAM | 身份感知人体动作形状生成](/2026-04-30/papers/2604.25164.md)
+  - **视频生成模型**
+    - [Co-Director | 多智能体协作视频叙事生成](/2026-04-30/papers/2604.24842.md)
+    - [A Systematic... | 视频生成模型后训练系统框架](/2026-04-30/papers/2604.25427.md)
+    - [Mutual Forcing | 双模态自演进的快速音视频生成](/2026-04-30/papers/2604.25819.md)
+  - **图片生成模型**
+    - [V-GRPO | 用在线强化学习优化降噪生成模型](/2026-04-30/papers/2604.23380.md)
+    - [Meta-CoT | 图像编辑链式推理增强](/2026-04-30/papers/2604.24625.md)
+    - [Refinement via Regeneration | 多模态图像精修新范式](/2026-04-30/papers/2604.25636.md)
+  - [**全量简报 (14 篇)**](/2026-04-30/briefs.md)
+    - [Preferences of a Voice-First Nation | 印度语言语音合成大规模评估](/2026-04-30/briefs.md?id=preferences-of-a-voice-first-nation)
+    - [Seeing Isn't Believing | 评估大视觉语言模型的可靠性](/2026-04-30/briefs.md?id=seeing-isn't-believing)
+    - [GoClick | 轻量GUI元素视觉定位模型](/2026-04-30/briefs.md?id=goclick)
+    - [TCOD | 多轮自主智能体策略蒸馏  ](/2026-04-30/briefs.md?id=tcod)
+    - [AutoGUI-v2 | 评估界面功能理解新基准](/2026-04-30/briefs.md?id=autogui-v2)
+    - [Programming with Data | 数据编程驱动大模型自提升](/2026-04-30/briefs.md?id=programming-with-data)
+    - [Offline Evaluation... | 评推荐系统公平性离线评估指标](/2026-04-30/briefs.md?id=offline-evaluation)
+    - [BARRED | 通过多智能体辩论生成高质量训练数据](/2026-04-30/briefs.md?id=barred)
+    - [AutoResearchBench | AI智能体科研文献发现基准](/2026-04-30/briefs.md?id=autoresearchbench)
+    - [Step-Audio-R1.5 Technical... | 音频推理模型情感交互优化](/2026-04-30/briefs.md?id=step-audio-r15-technical)
+    - [Toward Scalable... | 用技能图合成终端任务](/2026-04-30/briefs.md?id=toward-scalable)
+    - [MAIC-UI | 零代码制作交互式课件](/2026-04-30/briefs.md?id=maic-ui)
+    - [DV-World | 构建真实世界数据可视化智能体评测基准](/2026-04-30/briefs.md?id=dv-world)
+    - [Recursive Multi-Agent... | 递归多智能体系统研究](/2026-04-30/briefs.md?id=recursive-multi-agent)

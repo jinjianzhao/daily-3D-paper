@@ -1,0 +1,373 @@
+{
+  "date": "2026-04-30",
+  "focus_ids": [
+    "2604.25164",
+    "2604.24842",
+    "2604.25427",
+    "2604.25819",
+    "2604.23380",
+    "2604.24625",
+    "2604.25636"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2604.25164"
+    ],
+    "视频生成模型": [
+      "2604.24842",
+      "2604.25427",
+      "2604.25819"
+    ],
+    "图片生成模型": [
+      "2604.23380",
+      "2604.24625",
+      "2604.25636"
+    ]
+  },
+  "base_info": {
+    "2604.21481": {
+      "title": "Preferences of a Voice-First Nation: Large-Scale Pairwise Evaluation and Preference Analysis for TTS in Indian Languages",
+      "hf_link": "https://hf-mirror.com/papers/2604.21481"
+    },
+    "2604.21523": {
+      "title": "Seeing Isn't Believing: Uncovering Blind Spots in Evaluator Vision-Language Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.21523"
+    },
+    "2604.23380": {
+      "title": "V-GRPO: Online Reinforcement Learning for Denoising Generative Models Is Easier than You Think",
+      "hf_link": "https://hf-mirror.com/papers/2604.23380"
+    },
+    "2604.23941": {
+      "title": "GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction",
+      "hf_link": "https://hf-mirror.com/papers/2604.23941"
+    },
+    "2604.24005": {
+      "title": "TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents",
+      "hf_link": "https://hf-mirror.com/papers/2604.24005"
+    },
+    "2604.24441": {
+      "title": "AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark",
+      "hf_link": "https://hf-mirror.com/papers/2604.24441"
+    },
+    "2604.24625": {
+      "title": "Meta-CoT: Enhancing Granularity and Generalization in Image Editing",
+      "hf_link": "https://hf-mirror.com/papers/2604.24625"
+    },
+    "2604.24819": {
+      "title": "Programming with Data: Test-Driven Data Engineering for Self-Improving LLMs from Raw Corpora",
+      "hf_link": "https://hf-mirror.com/papers/2604.24819"
+    },
+    "2604.24842": {
+      "title": "Co-Director: Agentic Generative Video Storytelling",
+      "hf_link": "https://hf-mirror.com/papers/2604.24842"
+    },
+    "2604.25032": {
+      "title": "Offline Evaluation Measures of Fairness in Recommender Systems",
+      "hf_link": "https://hf-mirror.com/papers/2604.25032"
+    },
+    "2604.25164": {
+      "title": "IAM: Identity-Aware Human Motion and Shape Joint Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.25164"
+    },
+    "2604.25203": {
+      "title": "BARRED: Synthetic Training of Custom Policy Guardrails via Asymmetric Debate",
+      "hf_link": "https://hf-mirror.com/papers/2604.25203"
+    },
+    "2604.25256": {
+      "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+      "hf_link": "https://hf-mirror.com/papers/2604.25256"
+    },
+    "2604.25427": {
+      "title": "A Systematic Post-Train Framework for Video Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.25427"
+    },
+    "2604.25636": {
+      "title": "Refinement via Regeneration: Enlarging Modification Space Boosts Image Refinement in Unified Multimodal Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.25636"
+    },
+    "2604.25719": {
+      "title": "Step-Audio-R1.5 Technical Report",
+      "hf_link": "https://hf-mirror.com/papers/2604.25719"
+    },
+    "2604.25727": {
+      "title": "Toward Scalable Terminal Task Synthesis via Skill Graphs",
+      "hf_link": "https://hf-mirror.com/papers/2604.25727"
+    },
+    "2604.25806": {
+      "title": "MAIC-UI: Making Interactive Courseware with Generative UI",
+      "hf_link": "https://hf-mirror.com/papers/2604.25806"
+    },
+    "2604.25819": {
+      "title": "Mutual Forcing: Dual-Mode Self-Evolution for Fast Autoregressive Audio-Video Character Generation",
+      "hf_link": "https://hf-mirror.com/papers/2604.25819"
+    },
+    "2604.25914": {
+      "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+      "hf_link": "https://hf-mirror.com/papers/2604.25914"
+    },
+    "2604.25917": {
+      "title": "Recursive Multi-Agent Systems",
+      "hf_link": "https://hf-mirror.com/papers/2604.25917"
+    }
+  },
+  "summaries": {
+    "2604.21481": "印度语言语音合成大规模评估\n自然语言处理;语音技术;多语言语音合成评估\n大语言模型评估常采用众包成对比较法，但语音合成评估因语言多样性和感知多维性而充满挑战。\n本文针对10种印度语言，提出了一个多维成对评估框架，收集了超过12万对比较数据，构建了排行榜并分析了模型在多个感知维度上的表现与权衡。",
+    "2604.21523": "评估大视觉语言模型的可靠性\n多模态人工智能;视觉语言模型;模型评估基准\n大型视觉语言模型越来越多地被用来评估其他模型的输出，但其可靠性尚未得到充分验证。\n本研究通过引入系统性扰动并测试多个模型，揭示了现有评估模型存在显著的盲点和不可靠性。",
+    "2604.23380": "用在线强化学习优化降噪生成模型\n机器学习;生成模型;扩散模型强化学习\n对齐降噪生成模型与人类偏好或可验证奖励仍是一项关键挑战，而直接应用策略梯度在线强化学习会因模型似然难解而受阻。\n我们提出了V-GRPO方法，通过改进基于ELBO的似然代理，使其更稳定高效，从而在图像生成任务中超越了基于MDP的方法，实现了更优的性能和速度。",
+    "2604.23941": "轻量GUI元素视觉定位模型\n多模态学习;视觉语言模型;图形界面元素定位\n图形用户界面（GUI）元素视觉定位是GUI交互智能体的基础，但现有大模型难以在手机等资源受限设备上直接部署。\n本文提出GoClick，一个仅230M参数的高效模型，通过编码器-解码器架构和渐进式数据精炼，在多个基准上达到高精度与高推理速度，并能提升云端任务规划器的成功率。",
+    "2604.24005": "多轮自主智能体策略蒸馏  \n机器学习;强化学习;多轮决策代理  \n在将前沿模型推理能力蒸馏到小模型的过程中，直接应用策略蒸馏于多轮智能体任务时，存在误差积累导致训练不稳定的问题。  \n提出了一种时序课程学习框架，通过控制学生模型接触的任务轨迹长度并逐步增加，稳定训练并提升了智能体在多轮任务中的性能。",
+    "2604.24441": "评估界面功能理解新基准\n多模态交互;图形界面理解;功能与状态预测\n现有基准未能评估智能体对图形界面(GUI)深层功能与交互逻辑的理解。\n提出了AutoGUI-v2，通过多模态任务测试模型对界面语义、定位及状态预测的能力。",
+    "2604.24625": "图像编辑链式推理增强\n多模态模型;图像编辑;链式推理\n现有统一多模态模型在图像编辑中引入细粒度链式推理，但如何提升其理解粒度和泛化能力仍未充分探索。\n提出Meta-CoT方法，通过两级分解编辑操作并引入一致性奖励，显著提升编辑性能与任务泛化能力。",
+    "2604.24819": "数据编程驱动大模型自提升\n自然语言处理;语言模型训练;结构化知识驱动数据工程\n将专业知识从文本可靠迁移到大模型中仍是挑战，当前基于领域语料的微调缺乏反馈与诊断机制。\n提出“数据编程”方法，将结构化知识作为训练与评估基础，类比软件开发流程，实现训练数据可追溯、可调试的系统化修复，在多个学科验证了其有效性。",
+    "2604.24842": "多智能体协作视频叙事生成\n生成式人工智能；视频生成；智能体叙事生成\n现有扩散模型能生成高质量视频片段，但将其组合成连贯故事仍面临挑战。\n提出Co-Director框架，引入分层参数化方法，在探索新叙事与利用有效创意间取得平衡，显著提升视频故事的连贯性。",
+    "2604.25032": "评推荐系统公平性离线评估指标\n推荐系统;公平性评估;离线评估方法\n近年立法强调发展负责任AI，但现有推荐系统公平性评估指标缺少鲁棒性分析，导致其局限性和适用性不明。\n本文分析现有指标的理论与经验缺陷，提出新方法与指标来克服局限，并给出指标选用指南。",
+    "2604.25164": "身份感知人体动作形状生成\n计算机图形学;数字人技术;身份感知运动生成\n现有文本驱动人体运动生成模型常忽略身体形态对动作的显著影响，导致动作与身份不一致。\n本文提出一个联合生成框架，通过多模态身份信号同时合成运动序列和身体形状，提升了运动真实感与身份一致性。",
+    "2604.25203": "通过多智能体辩论生成高质量训练数据\n自然语言处理;大语言模型应用与对齐;定制化政策护栏训练\n为特定任务定制策略护栏时，面临高质量标注数据稀缺和现有方法效果不佳的挑战。\n提出了BARRED框架，仅需任务描述和少量未标注样本，通过维度分解和多智能体辩论生成忠实且多样的合成数据，用于训练高效准确的定制护栏模型。",
+    "2604.25256": "AI智能体科研文献发现基准\n自然语言处理;智能体评估;科研文献发现\n评估AI智能体在复杂科研文献发现任务中的能力。\n提出了AutoResearchBench基准，包含深度和广度两类任务，并验证其挑战性。",
+    "2604.25427": "视频生成模型后训练系统框架\n计算机图形学;视频生成;扩散模型后训练优化\n大型视频扩散模型在预训练后存在提示词敏感、时序不一致和推理成本高等问题，难以直接满足实际部署要求。\n提出了一个包含监督微调、基于组相对策略优化的人类反馈强化学习、提示词增强和推理优化的四阶段后训练框架，以系统性地提升模型质量与效率。",
+    "2604.25636": "多模态图像精修新范式\n计算机视觉;多模态生成;图像精修\n当前统一多模态模型通过编辑指令进行图像精修，但存在修改空间受限、描述粗略的问题。\n提出再生式精修框架，通过以目标提示和初始图像语义为条件的图像再生成，实现更完整的语义对齐。",
+    "2604.25719": "音频推理模型情感交互优化\n自然语言处理;语音与音频处理;音频语言模型推理与交互\n当前音频推理模型过度依赖强化学习与可验证奖励，导致交互机械、缺乏情感连续性。\n本文引入Step-Audio-R1.5模型，基于人类反馈强化学习，在保持推理能力的同时显著提升了长对话的沉浸感和交互自然度。",
+    "2604.25727": "用技能图合成终端任务\n人机交互;具身智能;命令行智能体\n现有方法在合成大规模终端任务时，难以控制训练轨迹的多样性。\n我们提出了基于场景中介技能图的任务合成框架，能控制任务的最小执行轨迹多样性，有效提升了终端智能体的能力。",
+    "2604.25806": "零代码制作交互式课件\n人机交互;智能教育;交互课件生成\n传统制作交互式STEM课件需编程技能，阻碍了教师创作\n提出了MAIC-UI系统，通过结构化分析、生成验证优化流程和快速编辑功能，帮助教师从文档快速创建和迭代交互课件",
+    "2604.25819": "双模态自演进的快速音视频生成\n计算机图形学；音视频生成；音视频同步的自回归生成\n本文旨在实现长时序音视频同步的快速自回归音视频生成，需解决联合建模与快速生成两个关键挑战。\n提出了双模式自演进框架，通过共享参数的单模型实现自蒸馏与训练推理一致性提升，无需额外双向模型支持，在4-8步内达到50步基线效果。",
+    "2604.25914": "构建真实世界数据可视化智能体评测基准\n数据可视化;智能评测基准;真实世界任务评测\n现有评测基准存在理想化、封闭等问题，未能反映真实世界数据可视化的复杂需求。\n我们提出DV-World基准，包含260个任务，覆盖表格操作、可视化演进与意图对齐，并建立混合评估框架，发现现有模型表现不足。",
+    "2604.25917": "递归多智能体系统研究\n自然语言处理；智能体协作；递归推理优化\n现有递归语言模型通过迭代优化潜空间计算来深化推理，本研究将这一递归扩展原则从单一模型推广到多智能体系统，探索智能体协作能否通过递归实现规模化。\n提出了RecursiveMAS框架，通过轻量级RecursiveLink模块连接异质智能体构成协作循环，实现潜空间思维生成与状态传递；设计了内外双环学习算法进行整体优化，在数学、科学、编程等9个基准测试中实现了精度提升、推理加速和令牌使用减少。"
+  },
+  "deep_analysis": {
+    "2604.23380": "### (1) 任务是什么？\n这篇论文研究的任务是 **对齐去噪生成模型与人类偏好或可验证的奖励**。  \n- **任务输入**：一条文本描述（例如，“一只戴着太阳镜的猫”）。  \n- **任务输出**：一张符合文本描述且质量高、符合人类偏好的图像。  \n- **任务功能**：在已有的预训练生成模型（如FLUX或Stable Diffusion）基础上，通过强化学习进一步优化模型，使其生成的图像不仅符合文本描述，还能在审美、真实性等方面获得更高的奖励分数（例如人类评分或自动化评估指标）。\n\n---\n\n### (2) 想解决什么问题？\n直接将对齐大语言模型（LLM）的强化学习方法（如PPO、GRPO）应用到去噪生成模型（如扩散模型）时，会遇到一个根本难题：这些方法需要计算模型的**精确似然概率**，但扩散模型的似然是难以直接计算的。  \n现有的两种主流解决方案各有缺陷：\n\n1. **MDP（马尔可夫决策过程）方法**：将图像生成过程建模成一步步去噪的序列决策过程。虽然理论正确，但训练效率低、速度慢，且只能使用特定的采样方法，不够灵活。\n2. **ELBO（证据下界）替代方法**：使用扩散模型训练时常用的ELBO损失作为似然的近似。虽然更高效且与预训练目标一致，但之前的研究认为它在图像生成任务上效果不佳，表现不如MDP方法。\n\n**本文要解决的问题**：证明ELBO替代方法实际上可以既稳定又高效，甚至超过MDP方法，从而提供一种更简单、更快速的对齐方案。\n\n---\n\n### (3) 核心思路是什么？\n核心思路是 **将ELBO替代方法与GRPO算法结合，并通过一系列简单但关键的技术来稳定训练**。  \n具体来说：\n\n1. **采用ELBO作为似然替代**：直接使用扩散模型预训练时的变分下界作为策略梯度的似然估计，避免了MDP的序列决策建模。\n2. **降低替代方差**：\n   - 使用**组共享的时间步-噪声对**：让同一组数据样本共享相同的噪声和时间步，减少估计的随机性。\n   - **分层时间步采样**：更均匀地采样不同时间步，避免某些时间步被忽略。\n   - **自适应损失加权**：根据时间步的重要性调整损失权重。\n3. **控制梯度步长**：\n   - **重要性比率裁剪**：防止策略更新过大。\n   - **KL惩罚**：防止新策略偏离旧策略太远。\n   - **优势函数软裁剪**：稳定优势估计。\n\n这些技术共同使得ELBO方法在训练中既稳定又高效，从而超越了复杂的MDP方法。\n\n---\n\n### (4) 结果怎么样？\n论文在两个主流文本到图像模型上进行了实验：\n\n| 模型         | 基线方法          | V-GRPO结果                                                                 |\n|--------------|-------------------|---------------------------------------------------------------------------|\n| FLUX.1-dev   | MixGRPO（MDP方法） | **效果更好**（奖励分数更高），且训练速度**快2倍**。                         |\n| SD 3.5 M     | DiffusionNFT      | **效果相当**，但训练速度**快3倍**。                                        |\n\n**结论**：V-GRPO在多项任务中达到了最先进的性能，同时大幅提升了训练效率，证明了ELBO方法的优越性。\n\n---\n\n### (5) 模型结构与整体流程\n- **基模**：预训练的去噪生成模型，如**FLUX.1-dev**或**Stable Diffusion 3.5 Medium**。\n- **整体流程**：\n\n1. **输入**：文本提示 \\( p \\)（例如，“一只猫”）。\n2. **采样噪声和时间步**：\n   - 从噪声分布中采样一个初始噪声 \\( x_T \\)。\n   - 采样一个时间步 \\( t \\)。\n3. **前向扩散**（可选，用于计算ELBO）：\n   - 根据真实图像 \\( x_0 \\)（如果有）和噪声调度，计算加噪后的图像 \\( x_t \\)。\n4. **策略（生成模型）前向**：\n   - 输入 \\( x_t \\) 和文本提示 \\( p \\) 到当前策略模型（即微调中的生成模型）。\n   - 模型预测去噪后的图像 \\( \\hat{x}_0 \\) 或噪声残差。\n5. **计算奖励**：\n   - 将 \\( \\hat{x}_0 \\) 输入奖励模型（如审美评分、文本对齐度等），得到奖励分数 \\( R \\)。\n6. **计算ELBO替代损失**：\n   - 使用ELBO公式近似计算当前策略的似然。\n   - 结合奖励和似然，构造强化学习目标函数。\n7. **梯度更新**：\n   - 使用GRPO算法，结合**梯度裁剪**、**KL惩罚**等技术更新模型参数。\n8. **迭代**：\n   - 重复以上步骤，直到模型收敛。\n\n**流程图示意**：  \n```\n文本提示 → 采样噪声+时间步 → 策略模型生成图像 → 奖励模型评分 → 计算ELBO损失 → 梯度更新 → 重复\n```\n\n**特点**：整个流程**不需要**将生成过程展开为多步MDP，而是直接基于ELBO进行单步或少量步的更新，因此更高效、更灵活。",
+    "2604.24625": "好的，没问题。我们就像同学一样讨论这篇论文，我会用最简单直接的方式解释给你听。\n\n### (1) 这篇论文所在的任务是什么？\n\n*   **任务名称**：**指令驱动的图像编辑**。\n*   **任务输入**：一张原始图片 + 一段用自然语言写的编辑指令（比如：“把小狗的毛换成棕色”，“给这辆车加上一个车顶行李架”）。\n*   **任务输出**：一张编辑后的新图片，它应该准确地反映输入指令的要求，同时保持原图中未被要求修改的部分不变。\n*   **任务功能**：让AI模型像人类设计师一样，理解和执行用户用文字描述的、对图像的各种复杂修改。\n\n### (2) 这篇论文想解决什么问题？\n\n现有的图像编辑模型，即使用了“思维链”技术，也存在两个核心问题：\n1.  **理解不够细**：模型可能只理解了“要改什么”，但没想清楚“怎么改”和“改哪里”，导致编辑结果粗糙或不准确。\n2.  **泛化能力差**：模型在训练时见过的任务（如换颜色）上表现不错，但在**没见过的、更复杂的新任务**（如“根据逻辑推理改变物体位置”）上，表现就很差，不知道怎么处理。\n\n这篇论文的核心目标就是：**设计一种新的“思维链”方法和训练策略，让模型既能进行更精细的理解和编辑，又能更好地泛化到各种新奇的、没见过的编辑任务上。**\n\n### (3) 论文的核心思路是什么？\n\n作者的核心洞察是：**任何图像编辑指令，都可以拆解成一个“三元组”**：（**编辑任务类型**，**要编辑的目标物体**，**完成此编辑所需的理解能力**）。\n\n举个例子：指令“把小狗的数量改成3只”。\n*   **任务**：数量修改\n*   **目标**：小狗\n*   **所需能力**：**定位**（找到所有小狗）+ **计数**（数清有几只）\n\n基于这个洞察，他们提出了“元思维链”框架，包含两个关键分解：\n1.  **三元组分解**：在推理时，让模型按步骤思考：\n    *   **任务总结**：这个指令属于什么任务类型？\n    *   **任务思考**：完成这个任务需要哪些步骤？（比如先定位，再计数，再决定删哪只/加几只）\n    *   **目标遍历**：对每个需要编辑的目标（比如每只小狗）分别应用编辑策略。这让模型思考得更精细。\n2.  **元任务分解**：作者发现，成百上千种复杂的编辑任务，其实都是由少数几个**基础操作（元任务）** 组合而成的，比如 **“增加”、“删除”、“替换”、“改变位置”、“改变视角”**。这就像所有复杂的乐高造型都是由基础积木块拼成的一样。\n    *   **关键思路**：在**训练时**，不直接去学所有复杂的任务，而是重点训练模型掌握这5个基础元任务，以及如何组合它们。这样，当遇到一个全新的复杂指令时，模型就能“举一反三”，通过组合这些基础能力来完成它，从而获得强大的泛化能力。\n\n为了确保模型真的按照它的“思维链”去执行编辑，他们还引入了一个 **“思维-编辑一致性奖励”** ，在训练中鼓励模型的最终编辑结果与其中间的推理过程保持一致。\n\n### (4) 结果怎么样？\n\n根据论文的实验：\n*   **性能提升**：在21个不同的图像编辑任务上，他们的方法比之前的先进方法平均提升了 **15.8%**。\n*   **泛化能力强**：即使在训练时只见过那5个基础元任务，他们的模型也能很好地处理很多**训练时从未见过的、更复杂的编辑任务**（如逻辑推理编辑、因果推理编辑），证明了其强大的泛化能力。\n*   **定性效果好**：从论文展示的例子看，编辑结果更准确、更符合指令，对非目标区域的保护也更好。\n\n### (5) 模型结构与整体流程\n\n*   **基座模型**：论文基于一个**统一的多模态理解和生成模型**（类似GPT-4V或Gemini这种既能看懂图又能生成图的模型）进行构建。文中没有明确点名具体是哪个模型，我们可以把它想象成一个强大的、通用的“图文大脑”。\n*   **整体流程**（参考图1和论文方法部分）：\n    1.  **输入**：用户提供一张图片和一段编辑指令。\n    2.  **启动三元组分解推理**：模型被要求按照“任务总结 → 任务思考 → 目标遍历”的格式，生成一条详细的、分步骤的**思维链文本**。例如：“任务：数量修改。思考：我需要先找到图中的所有小狗，数一数，目前有2只，需要增加到3只，所以我应该添加1只小狗。目标遍历：对于背景区域，我需要在合理的位置添加一只形态自然的小狗...”\n    3.  **结合元任务知识**：在生成上述思维链时，模型会调用它在训练中学到的关于“增加”、“删除”等元任务的知识。\n    4.  **执行编辑**：模型将**原始图片**和它自己生成的这条**详细的思维链文本**，一起作为条件输入给图像生成器（通常是模型内部的扩散模型模块）。\n    5.  **对齐与优化**：在训练阶段，**“思维-编辑一致性奖励”** 会发挥作用。系统会检查最终生成的图片是否真的完美体现了思维链中的每一步计划。如果编辑结果与推理不一致，模型参数就会得到调整，迫使它下次“说到做到”。\n    6.  **输出**：最终，模型生成一张编辑后的新图片。\n\n**简单总结**：这篇论文的核心就是教AI模型一个“**先动脑、后动手**”的好习惯。通过把复杂指令拆解成（任务、目标、能力）来**精细思考**，并通过学习少数基础操作来获得**举一反三**的能力，最终实现更精准、更通用的图像编辑。",
+    "2604.24842": "我来为你详细解读一下这篇论文，你可以把它看作是一个“AI导演助理”的研究。\n\n### (1) 任务是什么？\n*   **任务功能**：**生成一个完整的、有故事的短视频**。想象一下，你要为一个新产品做一个广告视频。这个系统就是帮你完成这件事的。\n*   **任务输入**：一个简单的**抽象想法**。比如，一个产品标语（“让沟通无界”）和几张产品参考图片。\n*   **任务输出**：一个**连贯、有叙事逻辑的短视频**。视频里的人物、场景、动作、台词、配乐等都要围绕核心故事展开，并且前后一致。\n\n### (2) 想解决什么问题？\n当前，虽然视频生成模型（如扩散模型）能做出很逼真的短视频片段，但想把它们“串”成一个好故事非常困难。现有方法主要存在两个问题：\n1.  **语义漂移**：就像传话游戏，第一个AI写的剧本，传到第二个AI去画分镜时，意思可能就偏了。这种偏差会一直累积到最终视频，导致故事走样、人物“变脸”。\n2.  **缺乏创意探索**：现有系统像一条固定的流水线，用设定好的模板来生成。这好比一个只会按菜谱做菜的厨师，永远做不出让人惊喜的新菜。真正的导演需要不断尝试新想法，才能找到最打动人心的创意。\n\n### (3) 核心思路是什么？\n论文提出了一个叫 **Co-Director** 的系统，其核心是**将视频创作变成一个“全局优化”问题**。简单来说，就是让AI学会：\n*   **探索**：像试吃不同菜品一样，尝试各种不同的故事方向、拍摄风格。\n*   **利用**：一旦发现某个方向效果不错，就深入优化它，把它做到最好。\n*   **统一指挥**：确保从写剧本、画分镜到生成视频的每一个AI“员工”，都朝着同一个“导演意图”工作，避免语义漂移。\n\n### (4) 结果怎么样？\n论文提出了一个新的评测标准**GenAd-Bench**（包含400个虚构产品的广告创意）。在这个标准上，**Co-Director** 的表现显著超过了现有的其他方法。人类评价也认为它生成的视频在故事连贯性、吸引力等方面更好。实验还证明，它的两个核心设计（自我反思循环和多臂老虎机）都对提升效果起到了关键作用。\n\n### (5) 模型结构是什么？整体流程是怎样的？\n**Co-Director** 是一个**分层多智能体**系统，你可以把它想象成一个电影剧组，有一个总导演和三个部门主管。它底层使用的是现有的**大型语言模型**和**视频生成模型**作为“基模”，但核心创新在于如何组织和协调它们。\n\n**整体流程（从输入到输出）：**\n\n**第一步：创意探索（总导演定方向）**\n*   **输入**：用户的想法（如“一款能让你在梦中学习的智能眼罩”）。\n*   **流程**：\n    1.  系统将这个想法扩展成多个不同的“创意方向”，比如方向A：“科幻感、未来科技风”；方向B：“温馨治愈、梦境漫游风”；方向C：“搞笑夸张、脑洞大开风”。\n    2.  系统扮演一个“多臂老虎机”，去**探索**这些方向。它会先随机或根据经验尝试几个方向，生成一些初步的“故事大纲”。\n    3.  用一个评估标准（比如故事是否有趣、是否贴合产品）给每个方向打分。\n    4.  系统根据分数，决定是继续**探索**新方向，还是**利用**当前表现最好的方向进行深入创作。\n\n**第二步：分层制作（各部门协同工作）**\n总导演确定了最佳创意方向后，会把这个“风格指南”下发给三个部门，让他们在这个统一的框架下工作：\n1.  **前期制作Agent**：相当于**编剧和美术指导**。\n    *   接收总导演的创意方向。\n    *   写出详细的剧本，包括场景、对话、动作描述。\n    *   设计关键的画面（关键帧），描述每个重要镜头的构图、光影、色彩。\n2.  **制作Agent**：相当于**摄影师和动画师**。\n    *   根据剧本和关键帧描述，利用视频生成模型（如Sora、Lumiere等）生成对应的视频片段。\n3.  **后期制作Agent**：相当于**剪辑师和音效师**。\n    *   把生成的视频片段剪辑在一起，调整节奏。\n    *   添加背景音乐、音效和字幕，输出最终成片。\n\n**第三步：局部优化（各部门内部的自我检查）**\n在各自工作过程中，每个部门Agent都有一个**自我反思循环**：\n*   **例如，编剧写完剧本后**，会自己问自己：“这个剧本逻辑通顺吗？人物性格一致吗？”如果不通顺，它就自己修改，直到满意为止。\n*   **例如，画师画好关键帧后**，会检查：“这个画面和剧本描述一致吗？主角的样子前后一致吗？”如果发现问题，就重新调整。\n*   这个机制就像每个员工都有一面镜子，随时检查自己的工作质量，防止错误传递下去。\n\n**总结一下流程**：\n**用户输入创意** -> **总导演用“多臂老虎机”探索并选定最佳创意方向** -> **将方向下达给编剧、画师、动画师、剪辑师（各Agent）** -> **各Agent在统一方向下工作，并不断自我检查优化** -> **输出最终的高质量、故事连贯的视频**。\n\n简单说，这篇论文的核心是**用一套聪明的管理和协作机制（分层多智能体+全局优化探索+局部自我反思），让现有的AI模型能更好地协同工作，创作出既有创意又连贯的好故事视频。**",
+    "2604.25164": "这篇论文讲的是“身份感知的人体动作与形状联合生成”。我来用简单的语言给你解释一下。\n\n**(1) 任务是什么？**\n*   **任务输入**：一段描述动作的文本（例如“这个人正在慢跑”） + 一段描述人物**身份/体型**的信息。\n    *   “身份信息”可以是文本描述（如“一个高个子、健壮的男性”），也可以是一张图片（比如一个人的照片）。\n*   **任务输出**：**同时生成**两样东西：\n    1.  **一个3D人体动作序列**（比如“慢跑”的完整动作）。\n    2.  **对应的人体3D形状参数**（比如这个人的身高、胖瘦、四肢比例等）。\n*   **任务功能**：生成的动作不仅要符合“做什么”的指令，还要和生成的人物体型“相匹配”，让动作看起来更真实、自然。比如，给一个“高个子”生成“慢跑”动作，他的步幅、身体摆动方式就应该和“矮个子”有所不同。\n\n**(2) 想解决什么问题？**\n现有的文本生成动作模型，大多用一个“标准身材”的人体模型来生成动作，忽略了**不同体型的人做同一个动作时，动作细节是不同的**。比如，高个子慢跑和矮个子慢跑，姿态和节奏会不一样。如果只用标准模型，生成的动作会比较“平均”，如果把这种“平均”动作硬套到各种体型上，就会看起来不自然、甚至像穿模。这篇论文就是想解决**如何生成与特定体型（身份）相匹配的真实动作**这个问题。\n\n**(3) 核心思路是什么？**\n核心思路是：**不把动作和体型分开处理，而是一起生成**。\n1.  **联合生成**：以前的很多方法先生成一个“通用”动作，再想办法适配到不同体型上。这篇论文认为，动作细节本身就受体型影响，所以应该直接学习“动作”和“体型”的**联合分布**。在生成时，模型一起考虑“做什么动作”和“谁来做”，从而生成一个从根上就和这个体型匹配的动作。\n2.  **多模态身份描述**：为了让用户更方便地描述“谁”，论文使用了文本和图片两种方式。文本描述语义（如“高大”），图片提供更精确的视觉比例信息。这样比要求用户输入精确的身体测量数据（如腿长多少厘米）要友好得多。\n\n**(4) 结果怎么样？**\n根据论文的实验：\n*   **效果更好**：相比之前那些不专门考虑体型、或者把体型作为后期约束的方法，IAM生成的动作在**与体型的物理一致性**和**动作的真实感**上都有显著提升。\n*   **保持高质量**：在保证动作与体型匹配的同时，生成动作本身的质量（如流畅度、是否符合文本描述）仍然很高。\n*   **验证充分**：不仅在专业的动作捕捉数据集上测试，也在大规模“野生”（网络）视频数据上进行了验证，证明了方法的有效性和泛化能力。\n\n**(5) 模型结构是什么？**\n这篇论文的模型**IAM本身是一个框架，不特指某一个模型**，它可以和不同的生成模型“基模”结合。论文主要尝试了两种主流生成范式作为基模：\n1.  **扩散模型（Diffusion-based）**\n2.  **向量量化模型（VQ-based）**，可以理解为先把动作和形状编码成离散的“词”，然后用类似GPT的方式生成。\n\n**整体流程（以论文中的框架图逻辑描述）：**\n1.  **输入处理**：\n    *   **动作文本**：比如“慢跑”，经过一个文本编码器（如CLIP）变成特征向量。\n    *   **身份信息**：\n        *   如果是**文本**（如“高个子”），也经过文本编码器变成特征向量。\n        *   如果是**图片**，经过一个图像编码器（如一个预训练的模型）提取视觉特征。\n    *   这两种身份特征会被融合成一个统一的“身份表征”。\n2.  **身份条件注入**：\n    *   将融合后的“身份表征”和“动作文本特征”结合起来，形成一个**强化的条件信号**。这个信号会告诉模型：“请为具有这种体型的人，生成这样一个动作。”\n3.  **联合生成**：\n    *   这个强化条件信号会输入到**生成模型基模**（比如扩散模型或VQ模型）中。\n    *   关键在于，这个基模的**训练目标**和**生成过程**都是同时针对**动作序列**和**身体形状参数**的。模型在学习时，就看到无数“（特定体型，对应动作）”的配对数据。\n    *   在生成时，模型基于条件信号，**一步到位**地同时输出动作序列和3D人体网格的形状参数。\n4.  **输出**：\n    *   最终得到**一对匹配的输出**：一个3D人体动作动画 + 一个与之完美适配的3D人体模型。这个人体模型可以直接用动作动画驱动起来。\n\n**简单总结**：这篇论文提出了一个聪明的想法——要生成真实的动作，就不能把人和动作分开看。它设计了一个框架，让模型学会“看人下菜碟”，根据对目标人物体型（用文字或图片描述）的理解，直接生成出最适合他/她的动作，从而解决了动作与体型脱节的问题。",
+    "2604.25427": "当然可以，我们用简单的语言来拆解这篇论文。\n\n### (1) 任务是什么？\n*   **任务名称**：高质量文本到视频生成。\n*   **任务输入**：用户用自然语言描述的一段话（即“文本提示”或“Prompt”），例如“一只宇航员猫在月球上跳舞”。\n*   **任务输出**：一段与输入描述相匹配的、高清晰度、连贯的视频。\n*   **任务功能**：根据用户的文字指令，自动生成符合要求的、逼真且流畅的视频内容。\n\n### (2) 想解决什么问题？\n作者指出，当前主流的视频生成大模型虽然功能强大，但离**实际应用**还有很大差距，存在四个主要问题：\n1.  **提示词敏感**：稍微改一下描述词，生成效果就可能天差地别。\n2.  **时间不一致**：视频前后帧可能不连贯，比如物体突然变形或消失。\n3.  **生成质量缺陷**：容易出现手、文字等细节错误，或快速运动时画面模糊。\n4.  **推理成本高**：生成视频速度慢、计算资源消耗大，难以大规模部署。\n\n简单说，这篇论文想解决的是：**如何让一个已经训练好的、基础能力不错的视频生成模型，变得更好用、更稳定、更高效。**\n\n### (3) 核心思路是什么？\n核心思路是提出一个**系统性的“后训练”框架**。他们不从头训练一个新模型，而是在一个已有的强大“基模”之上，分四个阶段进行“精加工”，像一条工厂流水线，每个阶段解决不同问题：\n\n1.  **有监督微调**：先教模型“听懂人话”。用精心标注的数据微调，让模型能稳定地根据指令生成视频，打好基础。\n2.  **基于人类反馈的强化学习**：再教模型“做得更美”。用强化学习（RLHF），让模型学习人类的审美偏好（如画面更美、动作更连贯），但这里他们用了一种更稳定、专门为视频设计的优化方法。\n3.  **提示词增强**：同时优化“用户的指令”。训练一个大语言模型（如GPT）作为“提示词优化器”，自动把用户简单的描述扩充成更详细、更适合生成高质量视频的“专业提示词”。\n4.  **自回归蒸馏**：最后让模型“跑得更快”。把前面优化好的复杂模型，压缩成一个结构更简单、推理速度更快的“学生模型”，方便实际部署，同时尽量保持生成质量。\n\n**核心洞察**：这四个阶段是互补的。**微调**是基础，**强化学习**优化生成结果，**提示词增强**优化输入指令，**模型蒸馏**优化运行效率，四管齐下才能达到最佳实用效果。\n\n### (4) 结果怎么样？\n根据论文摘要和实验部分的描述：\n*   **有效缓解了常见缺陷**：减少了画面瑕疵和时间不一致的问题。\n*   **显著提升了可控性和视觉美感**：生成的视频更符合用户指令，画面质量更高。\n*   **满足了严格的采样成本限制**：在提升质量的同时，通过蒸馏等手段，保证了模型推理的效率，使其更易于部署。\n\n总的来说，这套方法成功地将预训练模型与**实际部署要求**之间的差距大大缩小了。\n\n### (5) 模型结构与整体流程\n*   **基模**：论文没有特指某一个，但这类工作通常基于像 **Stable Video Diffusion (SVD)**、**HunyuanVideo** 或 **Kling** 这类已公开发表的**大规模视频扩散模型**。可以把它理解为一个功能强大但“粗糙”的初始模型。\n*   **整体流程（对照图1）**：\n    1.  **输入**：用户提交一段原始文本提示（如“猫在玩球”）。\n    2.  **阶段一：提示词增强**：原始提示首先被送入一个**经过GRPO训练的大语言模型**。这个模型就像一位“编剧”，将简单的“猫在玩球”扩充为更详细、更具画面感的描述，例如“一只橘色的小猫在阳光下的草地上欢快地追逐一个红色的毛线球”。\n    3.  **阶段二：视频生成**：优化后的详细提示词被送入**经过SFT和RLHF优化的视频生成模型**。这个模型已经学会了如何稳定地遵循指令并生成高质量、连贯的视频帧。它开始工作，逐步去噪，生成视频的每一帧。\n    4.  **阶段三：模型蒸馏（为了部署）**：为了让最终产品更快，他们会把第2步中这个优化好的、但可能较慢的“教师模型”的知识，压缩到一个**结构更简单的自回归模型（学生模型）** 中。这个学生模型学习模仿教师模型的输出，但推理速度快得多。\n    5.  **输出**：最终，系统输出一段高质量、符合用户意图的视频。在部署时，可以直接使用第4步得到的快速“学生模型”来服务用户。\n\n**简单总结**：这篇论文就像一份“视频生成模型工业化改造指南”，通过一套组合拳——**先微调听话，再强化学习变好，同时优化输入指令，最后压缩模型提速**——把一个“科研原型”级别的模型，打磨成了一个更接近“商业产品”的实用工具。",
+    "2604.25636": "(1) **任务是什么**  \n- **任务输入**：  \n  1. 一段描述性的文字（文本提示，例如“一只猫坐在红色的沙发上”）。  \n  2. 一张由AI生成的、与文本提示不完全匹配的初始图片。  \n- **任务输出**：  \n  一张新的图片，它比初始图片**更准确地匹配**文本提示的内容。  \n- **任务功能**：  \n  对AI生成的图片进行**优化**，使其更好地满足用户的要求，纠正初始图片中的错误（例如多画了物体、少画了物体、属性错误等）。  \n\n---\n\n(2) **想解决什么问题**  \n之前的方法（称为“**编辑式优化**”）存在两个主要问题：  \n1. **指令描述不完整**：  \n   模型需要先分析图片哪里不对，生成一句“编辑指令”（例如“在左边加一只猫”）。但指令往往只能描述一部分错误，忽略了其他需要修改的地方。  \n2. **修改空间受限**：  \n   编辑时要求**只改动指定的区域**，其他部分必须原封不动保留。这导致有时候无法做出必要的整体调整（例如调整布局、改变大小等），最终效果不佳。  \n\n这篇论文的目标是：**让模型有更大的“修改自由度”，从而更彻底地纠正图片中的错误**。  \n\n---\n\n(3) **核心思路是什么**  \n把“优化”问题从 **“编辑”** 转变为 **“重新生成”**：  \n- **旧思路（编辑）**：  \n  输入：初始图片 + 文本提示 → 生成编辑指令 → 只修改指令提到的区域。  \n- **新思路（重新生成）**：  \n  输入：初始图片的**语义信息** + 文本提示 → 直接重新生成一张新图片。  \n\n**关键区别**：  \n1. **不需要生成编辑指令**，避免了指令描述不完整的问题。  \n2. **不要求保留原图的像素**，只保留其高级语义信息（例如“图里有一只猫”），允许模型自由调整任何区域。  \n3. **修改空间更大**：可以整体重构图片，使得最终结果更符合文本描述。  \n\n---\n\n(4) **结果怎么样**  \n在多个标准测试集上，新方法（RvR）显著优于之前的编辑式优化方法：  \n- **Geneval**：从 0.78 提升到 0.91  \n- **DPGBench**：从 84.02 提升到 87.21  \n- **UniGenBench++**：从 61.53 提升到 77.41  \n\n这表明，通过“重新生成”而非“编辑”，可以更有效地提升图片与文本的匹配度。  \n\n---\n\n(5) **模型结构与流程**  \n\n**基模**：  \n使用统一的视觉-语言模型（例如 **BAGEL**），它同时具备**理解图片**和**生成图片**的能力。  \n\n**整体流程**（对照论文中的流程图）：  \n1. **输入**：  \n   - 文本提示（例如“三张长椅在公园里”）  \n   - 一张初始生成的图片（例如只有两张长椅）  \n\n2. **提取语义信息**：  \n   - 用视觉编码器（如 Vision Transformer）将初始图片转换成一组**语义token**（高级特征向量），捕捉图片的“意思”而不是像素细节。  \n\n3. **条件化生成**：  \n   - 将**文本提示**和**初始图片的语义token**一起输入到图像生成模块（通常是扩散模型或类似结构）。  \n   - 模型根据这两部分信息，**重新生成一张新图片**。  \n\n4. **输出**：  \n   - 一张新的图片，它既参考了初始图片的语义（例如“公园、长椅”），又严格遵循文本提示（例如“三张长椅”）。  \n\n**简单比喻**：  \n- **旧方法**：像“修图师”，只按照客户给的修改清单一点点改动。  \n- **新方法**：像“画家”，先理解原图的意图，再根据新要求重新画一幅更符合要求的画。  \n\n---\n\n**总结**：  \n这篇论文提出了一种新的图片优化方法，通过**重新生成**而非**编辑**，让模型有更大自由度去纠正错误，从而得到更符合文本描述的图片。实验证明，这种方法在多个测试集上表现更好。",
+    "2604.25819": "我来用简单的语言帮你梳理这篇论文的核心内容。\n\n## (1) 任务是什么\n- **任务输入**：文本描述（比如“一个人在弹吉他”）\n- **任务输出**：一段带有同步声音的视频（比如一个弹吉他的人的视频，同时有吉他声）\n- **任务功能**：根据文本描述，同时生成视频和与之匹配的音频，而且音频和视频要同步\n\n## (2) 想解决什么问题\n这篇论文要解决两个主要问题：\n1. **音频-视频联合生成的难题**：同时生成视频和音频很难训练，因为模型要同时保证内容符合文本描述，还要让声音和画面同步\n2. **快速生成的问题**：现有方法生成视频需要很多步骤（比如50步），速度很慢，作者想让模型用很少的步骤（比如4-8步）就能生成高质量视频\n\n## (3) 核心思路\n作者提出了一个叫 **“Mutual Forcing”（互促学习）** 的方法：\n- **不要从双向模型开始**：传统方法先训练一个能看全视频的双向模型，再把它变成只能看过去的单向模型，过程复杂\n- **直接训练单向模型**：作者直接从只能看过去帧的单向模型开始训练\n- **双模式设计**：同一个模型有两种模式：\n    - **少步模式**：用很少的步骤生成历史帧（用于训练时模拟真实推理）\n    - **多步模式**：用更多步骤生成更准确的帧（用于提高质量）\n- **互相促进**：这两个模式共享参数，互相帮助对方改进：\n    - 多步模式通过自我蒸馏帮助少步模式提高质量\n    - 少步模式生成的历史帧让训练更接近真实推理情况\n\n## (4) 结果怎么样\n- **效率高**：只需要4-8步就能生成视频，而传统方法需要50步左右\n- **质量好**：生成质量与传统方法相当甚至更好\n- **音频-视频同步**：生成的音频和视频能够很好地同步\n- **训练更简单**：不需要额外的教师模型，训练开销更小\n\n## (5) 模型结构与流程\n\n### 模型基础\n- 使用了类似 **Transformer** 的架构\n- 有两个分支：视频分支和音频分支\n- 通过**交叉注意力机制**让音频和视频信息互相影响\n\n### 训练流程（两阶段）\n**第一阶段：单模态预训练**\n1. 分别训练音频生成器和视频生成器\n2. 让它们各自学会生成好的音频和视频\n\n**第二阶段：联合训练**\n1. 把两个单模态模型结合起来\n2. 在音频-视频配对数据上训练\n3. 使用Mutual Forcing方法：\n   - 用“少步模式”快速生成历史帧\n   - 用“多步模式”在这些历史帧基础上生成当前帧\n   - 两个模式共享参数，互相促进\n\n### 推理流程（生成视频时）\n1. **输入文本描述**（如“一个人在唱歌”）\n2. **逐步生成**：\n   - 模型根据已有的视频帧，预测下一帧的视频和音频\n   - 每次只用4-8步就生成一帧\n   - 音频和视频同时生成，确保同步\n3. **连续生成**：重复这个过程，生成完整的视频\n\n### 关键创新点\n- **自蒸馏**：模型自己教自己，不需要额外的教师模型\n- **训练-推理一致**：训练时用的数据和推理时生成的数据更接近\n- **灵活的视频长度**：可以生成任意长度的视频，不像传统方法只能生成固定长度\n\n简单来说，这篇论文就像教一个学生同时学会画画（视频）和配乐（音频），而且让学生能快速完成作品，还能自己不断进步，不需要老师一直指导。"
+  },
+  "images_meta": {
+    "2604.23380": [
+      {
+        "path": "https://arxiv.org/html/2604.23380v1/x4.png",
+        "caption": "(a)Reducing surrogate variance is essential for training FLUX.1-dev.(b)Importance ratio clipping, but not KL penalty, can resist loss spikes in FLUX.1-dev training.(c)Advantage soft-clipping can stabilize the fully on-policy Stage-1 training of SD 3.5 M.(d)Advantage soft-clipping can further stabilize FLUX.1-dev training with 16 sampling steps.(e)Advantage soft-clipping is suboptimal for Stage-2 training of SD 3.5 M that targets GenEval.(f)NMCN_{\\text{MC}}saturates: too few samples hurt convergence, too many offer marginal gain.Figure 4:Results for ablation studies.",
+        "caption_zh": "(a) 降低代理方差对于训练 FLUX.1-dev 至关重要。(b) 重要性比率裁剪（而非 KL 惩罚）能够抵抗 FLUX.1-dev 训练中的损失尖峰。(c) 优势软裁剪可以稳定 SD 3.5 M 完全同策略的第一阶段训练。(d) 优势软裁剪能进一步稳定采用 16 采样步长的 FLUX.1-dev 训练。(e) 针对 GenEval 的 SD 3.5 M 第二阶段训练，优势软裁剪并非最优选择。(f) N_MC 趋于饱和：样本过少损害收敛，过多则带来边际收益。图 4：消融研究结果。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.23380v1/x2.png",
+        "caption": "Figure 2:Gradient norms scale with surrogate magnitude.Statistics are computed over∼\\sim20K samples using FLUX.1-dev. Gradient norms are computed by backpropagating through the importance ratios, without applying clipping or scaling by the advantages. Mean curves are truncated to the 1st-99th percentile range.",
+        "caption_zh": "图2：梯度范数与替代函数幅值成比例缩放。统计量基于约2万个样本、使用FLUX.1-dev计算得出。梯度范数通过重要性比率反向传播求得，未对优势函数进行裁剪或缩放处理。平均曲线截取至第1至99百分位区间。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.23380v1/x1.png",
+        "caption": "Figure 1:Per-sample loss varies substantially across timesteps.Statistics are computed over 400 samples usingEq.10. Shaded regions indicate±1\\pm 1standard deviation.",
+        "caption_zh": "图 1：不同时间步的逐样本损失差异显著。统计量基于 400 个样本通过公式 10 计算得出。阴影区域表示 ±1 个标准差。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.24625": [
+      {
+        "path": "https://arxiv.org/html/2604.24625v1/x1.png",
+        "caption": "Figure 1:Overview of Triplet Decomposition.Triplet Decomposition enables fine-grained reasoning over both the task and the target through three steps: (1) Task Summary, (2) Task Thinking, and (3) Target-wise Editing Traversal. This decomposition allows the model to optimize reasoning and editing along two elements: task and target. During training, we jointly incorporate diverse visual understanding tasks to capture all components of the (task, target, understanding capability) triplet, as illustrated in the bottom-right.",
+        "caption_zh": "图 1：三元分解概述。三元分解通过三个步骤实现对任务与目标的细粒度推理：(1) 任务总结，(2) 任务思考，(3) 目标导向的编辑遍历。该分解使模型能够沿任务与目标这两个要素优化推理与编辑过程。在训练中，我们联合引入多样化的视觉理解任务，以捕获（任务、目标、理解能力）三元组的所有组成部分，如右下角所示。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24625v1/x4.png",
+        "caption": "Figure 4:Meta-CoT Data Construction.This pipeline processes the source image, target image, and instruction to the Meta-CoT.",
+        "caption_zh": "图4：元思维链（Meta-CoT）数据构建流程。该流程对源图像、目标图像及指令进行处理，以生成元思维链数据。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24625v1/x3.png",
+        "caption": "Figure 3:Training pipeline(self attention omitted). (1) Stage 1: SFT on both reasoning and editing. (2) Stage 2: GRPO on editing.",
+        "caption_zh": "图 3：训练流程（自注意力机制已省略）。(1) 第一阶段：基于推理与编辑任务的监督微调。(2) 第二阶段：基于编辑任务的 GRPO 训练。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.24842": [
+      {
+        "path": "https://arxiv.org/html/2604.24842v1/x1.png",
+        "caption": "Figure 1:Co-Directormulti-agent pipeline:(Top):The Orchestrator Agent (Φo​r​c​h\\Phi_{orch}) utilizes MAB to navigate a factored creative action spaceθ=(θc​s,θn​m,θa​a)\\theta=(\\theta_{cs},\\theta_{nm},\\theta_{aa}).(Bottom):The Pre-Production Agent (Φp​r​e\\Phi_{pre}) synthesizes a creative brief (ℬ\\mathcal{B}), storyline (ℒ\\mathcal{L}), and visual assets (𝒱\\mathcal{V}) to establish a consistent storyboard (𝒮\\mathcal{S}), which the Production Agent (Φp​r​o​d\\Phi_{prod}) translates into synchronized keyframes (𝒦\\mathcal{K}), video clips (𝒞\\mathcal{C}), and audio (𝒜\\mathcal{A}). An MLLM Judge evaluates the final video (FF) to generate a factored reward signalR=(rc​s,rn​m,ra​a)R=(r_{cs},r_{nm},r_{aa}), which is propagated back to the MAB to iteratively refine the creative configuration overTToptimization loops.",
+        "caption_zh": "图1：协同导演多智能体流程：（上）编排智能体（Φₒᵣ_cₕ）利用多臂老虎机（MAB）在分解的创意动作空间θ=(θ_cₛ,θ_nₘ,θ_aₐ)中进行导航。（下）预制作智能体（Φₚᵣₑ）合成创意简报（ℬ）、故事情节（ℒ）和视觉资产（𝒱），以建立一致的故事板（𝒮）；随后，制作智能体（Φₚᵣₒ_d）将其转换为同步的关键帧（𝒦）、视频片段（𝒞）和音频（𝒜）。多模态大语言模型（MLLM）评估器对最终视频（F）进行评估，生成分解的奖励信号R=(r_cₛ,r_nₘ,r_aₐ)，该信号反馈至MAB，通过T次优化循环迭代优化创意配置。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24842v1/x2.png",
+        "caption": "Figure 2:MAB Optimization Efficiency.Cumulative best performance over 10 iterations comparingCo-Director’s MAB optimization against an undirected Random Search.",
+        "caption_zh": "图 2：多臂赌博机优化效率。在 10 次迭代中累积最佳性能对比，展示了协同导向器的多臂赌博机优化与无导向随机搜索的效果。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.24842v1/x3.png",
+        "caption": "Figure 3:Qualitative results onGenAd-Bench.Co-Directortranslates complex product prompts into cohesive visual narratives. The framework maintains character and product identity across dynamic poses and varied angles (top) and preserves precise product details during dramatic environmental and lighting transitions (bottom).",
+        "caption_zh": "图 3：在 GenAd-Bench 上的定性评估结果。Co-Director 可将复杂的产品提示转化为连贯的视觉叙事。该框架在动态姿势与多角度下保持角色与产品身份的一致性（上图），并在剧烈的环境与光照转换中保留精确的产品细节（下图）。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.25164": [
+      {
+        "path": "https://arxiv.org/html/2604.25164v1/figs/fig2_0422.png",
+        "caption": "Figure 2:Overview of the proposed framework.(a)Data Processing Pipeline: We extract motion sequencesℳ\\mathcal{M}, shape parametersβ\\beta, and multimodal identity descriptions (Ti,IiT_{i},I_{i}) from diverse sources including in-the-wild videos and MoCap data. (b)Motion-Shape Generation: A multimodal identity conditioning framework integrates textual and visual priors through frozen encoders to jointly generate identity-consistent motion sequences and body shapes via a diffusion model.",
+        "caption_zh": "图 2：所提框架概述。(a) 数据处理流程：我们从包括野采视频和动作捕捉数据在内的多种来源中提取运动序列 ℳ、形状参数 β 以及多模态身份描述 (Ti, Ii)。(b) 运动-形状生成：一个多模态身份条件框架通过冻结编码器整合文本与视觉先验，并借助扩散模型联合生成身份一致的运动序列与身体形状。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25164v1/figs/sstk_pie1.png",
+        "caption": "Figure 3:Overview of IdentityMotion Dataset.Left: Distribution of identity and motion attributes, including body type, age, gender, and motion category. Right: Word cloud of identity descriptions, highlighting common appearance attributes.",
+        "caption_zh": "图 3：IdentityMotion 数据集概览。左：身份与运动属性分布，包括体型、年龄、性别与运动类别。右：身份描述的词云图，突出常见外观属性。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25164v1/x4.png",
+        "caption": "Figure 6:Zero-shot Identity-Controllable Motion Generation.Columns correspond to different identity descriptions, while rows correspond to different action prompts. The generated motion sequences follow the same action prompt while adapting motion style and body proportions to match the specified identity, demonstrating the model’s ability to disentangle identity from action. A small spatial offset is added to the first row to avoid occlusion.",
+        "caption_zh": "图 6：零样本身份可控运动生成。各列对应不同的身份描述，各行对应不同的动作提示。生成的运动序列遵循相同的动作提示，同时调整运动风格和身体比例以匹配指定的身份，这证明了模型能够将身份与动作解耦。为避免遮挡，第一行添加了微小的空间偏移。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.25427": [
+      {
+        "path": "https://arxiv.org/html/2604.25427v1/x1.png",
+        "caption": "Figure 1:Overview of our post-training framework for video generation.We organize the pipeline into four complementary stages to bridge pretrained models and practical deployment. InPhase 1, supervised fine-tuning (SFT) uses curated data to establish a stable instruction-following baseline. InPhase 2, RLHF via a GRPO-based trainer aligns the generator with multi-dimensional reward signals, improving aesthetics, motion quality, and text alignment. InPhase 3, Prompt Enhancement (PE) optimizes an LLM using the same reward loop to enrich user inputs for better robustness and visual quality. Finally,Phase 4applies autoregressive distillation (AD) with a self-forcing objective to transfer these capabilities into a causal architecture, significantly boosting inference efficiency for real-world deployment.",
+        "caption_zh": "图1：我们的视频生成后训练框架概览。我们将流程组织为四个互补阶段，以弥合预训练模型与实际部署之间的差距。在阶段1中，监督微调（SFT）使用精选数据建立稳定的指令跟随基准。在阶段2中，基于GRPO的训练器通过RLHF，使生成器与多维度奖励信号对齐，提升美学、运动质量和文本对齐度。在阶段3中，提示增强（PE）利用相同的奖励循环优化LLM，以丰富用户输入，从而增强鲁棒性和视觉质量。最后，阶段4采用带自强制目标的自回归蒸馏（AD），将这些能力迁移至因果架构中，显著提升实际部署中的推理效率。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25427v1/x2.png",
+        "caption": "Figure 2:The visualization of RLHF on Wan-2.1.",
+        "caption_zh": "图2：Wan-2.1 上基于人类反馈的强化学习（RLHF）可视化。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25427v1/x1.png",
+        "caption": "Figure 1:Overview of our post-training framework for video generation.We organize the pipeline into four complementary stages to bridge pretrained models and practical deployment. InPhase 1, supervised fine-tuning (SFT) uses curated data to establish a stable instruction-following baseline. InPhase 2, RLHF via a GRPO-based trainer aligns the generator with multi-dimensional reward signals, improving aesthetics, motion quality, and text alignment. InPhase 3, Prompt Enhancement (PE) optimizes an LLM using the same reward loop to enrich user inputs for better robustness and visual quality. Finally,Phase 4applies autoregressive distillation (AD) with a self-forcing objective to transfer these capabilities into a causal architecture, significantly boosting inference efficiency for real-world deployment.",
+        "caption_zh": "图1：我们的视频生成后训练框架概览。我们将流程组织为四个互补阶段，以弥合预训练模型与实际部署之间的差距。在阶段1中，监督微调（SFT）使用精选数据建立稳定的指令跟随基准。在阶段2中，基于GRPO的训练器通过RLHF，使生成器与多维度奖励信号对齐，提升美学、运动质量和文本对齐度。在阶段3中，提示增强（PE）利用相同的奖励循环优化LLM，以丰富用户输入，从而增强鲁棒性和视觉质量。最后，阶段4采用带自强制目标的自回归蒸馏（AD），将这些能力迁移至因果架构中，显著提升实际部署中的推理效率。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.25636": [
+      {
+        "path": "https://arxiv.org/html/2604.25636v1/x5.png",
+        "caption": "Figure 5:Overview of RvR.During training (a), the unified multimodal model (UMM) takes text tokens, ViT tokens from a misaligned image, and noisy VAE tokens from an aligned image, and learns velocity prediction for denoising. During inference (b), conditioned on the system prompt and misaligned image, the UMM denoises the noise to refined VAE tokens, which are decoded into the final aligned image.",
+        "caption_zh": "图 5：RvR 方法总览。训练阶段（a），统一多模态模型（UMM）接收文本标记、来自未对齐图像的 ViT 标记以及来自对齐图像的带噪 VAE 标记，并学习去噪的速度预测。推理阶段（b），在系统提示和未对齐图像的条件引导下，UMM 对噪声进行去噪，得到细化的 VAE 标记，随后解码为最终的对齐图像。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25636v1/x4.png",
+        "caption": "Figure 4:Data construction pipeline for RvR.Step 1: An LLM generates prompts based on randomly selected semantic dimensions. Step 2: Multiple T2I generators independently generate images. Step 3: A VLM evaluates prompt–image alignment and labels generated images as aligned or misaligned. Each final training sample is constructed as a triplet of⟨\\langlemisaligned image, aligned image, prompt⟩\\rangle.",
+        "caption_zh": "图4：RvR的数据构建流程。步骤1：大语言模型基于随机选取的语义维度生成提示文本。步骤2：多个文生图生成器独立生成图像。步骤3：视觉语言模型评估提示文本与图像的匹配度，并将生成的图像标记为匹配或不匹配。每个最终训练样本构建为⟨不匹配图像、匹配图像、提示文本⟩的三元组。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25636v1/x3.png",
+        "caption": "Figure 3:Comparison between (a) prior Refinement via Editing (RvE) and (b) our Refinement via Regeneration (RvR).RvE requires precise instruction generation and content consistency for unedited regions, while RvR discards these unnecessary constraints, enlarging modification space for better refinement.",
+        "caption_zh": "图 3：（a）基于编辑的先验优化（RvE）与（b）我们提出的基于再生成的优化（RvR）的对比。RvE 需要对未编辑区域生成精确指令并保持内容一致性，而 RvR 摒弃了这些不必要的约束，从而扩大了修改空间以实现更好的优化效果。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2604.25819": [
+      {
+        "path": "https://arxiv.org/html/2604.25819v1/x2.png",
+        "caption": "Figure 2:Pipeline of Mutual Forcing for streaming audio-video joint diffusion generation. Our model operates in two\nweight-shared modes: aMulti-step mode and aFew-step mode, enabling self-evolution without a teacher. DuringMulti-step training, theFew-step mode generates the preceding tokens to form an inferred history; theMulti-step mode then predicts the next frame and is\nsupervised by the ground-truth target. Conversely, theFew-step mode is trained by distilling from theMulti-step mode. The backbone uses modality-specific VAEs and modality-specific branches;\naudio and video tokens are coupled and interact through shared self-attention.",
+        "caption_zh": "图 2：流式音视频联合扩散生成的互促框架流程。本模型以两种权重共享模式运行：多步模式与少步模式，无需教师模型即可实现自演化。在多步训练期间，少步模式生成先前的标记以形成推断历史；随后多步模式预测下一帧，并以真实目标帧进行监督。相反，少步模式通过从多步模式蒸馏进行训练。主干网络采用模态特定的 VAE 与模态特定的分支；音频与视频标记相互耦合，并通过共享的自注意力机制进行交互。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25819v1/x1.png",
+        "caption": "Figure 1:Illustration of Mutual Forcing.Left:Comparison between prior training paradigms and Mutual Forcing. Teacher forcing / diffusion forcing learns from real video history but suffers from training–inference mismatch. Self-Forcing replaces real history with model-inferred history, improving alignment at the cost of an additional fixed-duration bidirectional teacher, extra supervision, higher memory consumption, and limited training duration.\nMutual Forcing, by contrast, starts from a native causal model rather than first training a bidirectional model and then converting it into a streaming generator through multiple distillation stages. It employs a weight-shared dual-mode design and a self-evolution strategy to unify few-step and multi-step generation within a single framework, enabling self-distillation, teacher-free training, and flexible training sequence lengths while maintaining training-inference consistency.Right:Qualitative results and key advantages of Mutual Forcing. On long-duration streaming audio-video generation, Mutual Forcing produces stable results with only 8 NFEs, compared with 100 NFEs for a teacher-forcing-trained baseline, demonstrating clear advantages in both efficiency and generation quality. It further combines flexible training durations, teacher-free optimization, and training–inference alignment in a single framework.",
+        "caption_zh": "图1：互促式训练示意图。左：现有训练范式与互促式训练的对比。教师强制/扩散强制从真实视频历史中学习，但存在训练-推断不匹配问题。自促式训练将真实历史替换为模型推断的历史，虽改善了对齐效果，却需额外固定时长的双向教师模型、附加监督、更高内存消耗并限制了训练时长。相比之下，互促式训练始于原生因果模型，而非先训练双向模型再通过多阶段蒸馏转换为流式生成器；它采用权重共享的双模式设计和自演化策略，在单一框架内统一少步与多步生成，实现自蒸馏、无教师训练和灵活的训练序列长度，同时保持训练-推断一致性。右：互促式训练的定性结果与关键优势。在长时流式音视频生成任务中，互促式训练仅需8次网络前向评估即可生成稳定结果，而基于教师强制训练的基线需100次，在效率和生成质量上均展现出明显优势。该框架进一步将灵活训练时长、无教师优化及训练-推断对齐统一于一体。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2604.25819v1/x5.png",
+        "caption": "Figure 5:Qualitative comparison of distillation strategies in the 4-step regime. Our hybrid self-distillation (SC+DMD) produces sharper and clearer boundaries for fast-moving objects (e.g., the hand in this example), while the ShortCut-only model fails to generate the fast motion properly.",
+        "caption_zh": "图5：四步蒸馏策略的定性对比。我们的混合自蒸馏方法（SC+DMD）对快速运动物体（例如本例中的手部）能生成更清晰锐利的轮廓边界，而仅使用ShortCut的模型则无法正确生成快速运动效果。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.21481": {
+      "abstract": "Crowdsourced pairwise evaluation has emerged as a scalable approach for assessing foundation models. However, applying it to Text to Speech(TTS) introduces high variance due to linguistic diversity and multidimensional nature of speech perception. We present a controlled multidimensional pairwise evaluation framework for multilingual TTS that combines linguistic control with perceptually grounded annotation. Using 5K+ native and code-mixed sentences across 10 Indic languages, we evaluate 7 state-of-the-art TTS systems and collect over 120K pairwise comparisons from over 1900 native raters. In addition to overall preference, raters provide judgments across 6 perceptual dimensions: intelligibility, expressiveness, voice quality, liveliness, noise, and hallucinations. Using Bradley-Terry modeling, we construct a multilingual leaderboard, interpret human preference using SHAP analysis and analyze leaderboard reliability alongside model strengths and trade-offs across perceptual dimensions.",
+      "comments": ""
+    },
+    "2604.21523": {
+      "abstract": "Large Vision-Language Models (VLMs) are increasingly used to evaluate outputs of other models, for image-to-text (I2T) tasks such as visual question answering, and text-to-image (T2I) generation tasks. Despite this growing reliance, the reliability of these Evaluator VLMs remains under explored. In this work, we systematically evaluate the reliability of Evaluator VLMs across both I2T and T2I tasks. We introduce targeted perturbations that degrade output quality along key error dimensions, including object hallucinations, spatial reasoning, factual grounding, and visual fidelity. These perturbations test whether Evaluator VLMs can reliably account for these quality degrading errors in their evaluations. Using a comprehensive benchmark of over 4000 perturbed instances spanning 40 perturbation dimensions, we evaluate 4 prominent VLMs using single-answer scoring, pairwise comparison, and reference-guided paradigms. Our findings reveal that current VLM evaluators exhibit substantial blind spots: they often fail to detect perturbed outputs - in some cases exceeding 50%, struggle particularly with fine-grained compositional and spatial errors, and are often insensitive to hallucinated content that contradicts the input image. Pairwise comparison proves more reliable, though failure rates persist. These results highlight the unreliable nature of current Evaluator VLMs and urge caution in their deployment for benchmarking and development decisions. Code and data have been made publicly available.",
+      "comments": ""
+    },
+    "2604.23380": {
+      "abstract": "Aligning denoising generative models with human preferences or verifiable rewards remains a key challenge. While policy-gradient online reinforcement learning (RL) offers a principled post-training framework, its direct application is hindered by the intractable likelihoods of these models. Prior work therefore either optimizes an induced Markov decision process (MDP) over sampling trajectories, which is stable but inefficient, or uses likelihood surrogates based on the diffusion evidence lower bound (ELBO), which have so far underperformed on visual generation. Our key insight is that the ELBO-based approach can, in fact, be made both stable and efficient. By reducing surrogate variance and controlling gradient steps, we show that this approach can beat MDP-based methods. To this end, we introduce Variational GRPO (V-GRPO), a method that integrates ELBO-based surrogates with the Group Relative Policy Optimization (GRPO) algorithm, alongside a set of simple yet essential techniques. Our method is easy to implement, aligns with pretraining objectives, and avoids the limitations of MDP-based methods. V-GRPO achieves state-of-the-art performance in text-to-image synthesis, while delivering a $2\\times$ speedup over MixGRPO and a $3\\times$ speedup over DiffusionNFT.",
+      "comments": ""
+    },
+    "2604.23941": {
+      "abstract": "Graphical User Interface (GUI) element grounding (precisely locating elements on screenshots based on natural language instructions) is fundamental for agents interacting with GUIs. Deploying this capability directly on resource-constrained devices like mobile phones is increasingly critical for GUI agents requiring low latency. However, this goal faces a significant challenge, as current visual grounding methods typically employ large vision-language model (VLM) (more than 2.5B parameters), making them impractical for on-device execution due to memory and computational constraints. To address this, this paper introduces GoClick, a lightweight GUI element grounding VLM with only 230M parameters that achieves excellent visual grounding accuracy, even on par with significantly larger models. Simply downsizing existing decoder-only VLMs is a straightforward way to design a lightweight model, but our experiments reveal that this approach yields suboptimal results. Instead, we select an encoder-decoder architecture, which outperforms decoder-only alternatives at small parameter scales for GUI grounding tasks. Additionally, the limited capacity of small VLMs encourages us to develop a Progressive Data Refinement pipeline that utilizes task type filtering and data ratio adjustment to extract a high-quality 3.8M-sample core set from a 10.8M raw dataset. Training GoClick using this core set brings notable grounding accuracy gains. Our experiments show that GoClick excels on multiple GUI element grounding benchmarks while maintaining a small size and high inference speed. GoClick also enhances GUI agent performance when integrated into a device-cloud collaboration framework, where GoClick helps cloud-based task planners perform precise element localization and achieve higher success rates. We hope our method serves as a meaningful exploration within the GUI agent community.",
+      "comments": "Technical Report"
+    },
+    "2604.24005": {
+      "abstract": "On-policy distillation (OPD) has shown strong potential for transferring reasoning ability from frontier or domain-specific models to smaller students. While effective on static single-turn tasks, its behavior in multi-turn agent settings remains underexplored. In this work, we identify a key limitation of vanilla OPD in such settings, which we term Trajectory-Level KL Instability. Specifically, we observe that KL divergence increases together with a drop in success rate, and even after convergence, the KL remains high, leading to unstable training. This instability arises from inter-turn error compounding: as errors accumulate, the student is driven beyond the teacher's effective support, rendering the supervision signal unreliable. To address this, we propose TCOD (Temporal Curriculum On-Policy Distillation), a simple yet effective framework that controls the trajectory depth exposed to the student and progressively expands it from short to long with a curriculum schedule. Experimental results across four student-teacher pairs on three multi-turn agent benchmarks (ALFWorld, WebShop, ScienceWorld) show that TCOD mitigates KL escalation and enhances KL stability throughout training, improving agent performance by up to 18 points over vanilla OPD. Further evaluations show that TCOD can even surpass the teacher's performance and generalize to tasks on which the teacher fails. Our code is available atthis https URL.",
+      "comments": "Update code, model weight"
+    },
+    "2604.24441": {
+      "abstract": "Autonomous agents capable of navigating Graphical User Interfaces (GUIs) hold the potential to revolutionize digital productivity. However, achieving true digital autonomy extends beyond reactive element matching; it necessitates a predictive mental model of interface dynamics and the ability to foresee the \"digital world state\" resulting from interactions. Despite the perceptual capabilities of modern Vision-Language Models (VLMs), existing benchmarks remain bifurcated (focusing either on black-box task completion or static, shallow grounding), thereby failing to assess whether agents truly comprehend the implicit functionality and transition logic of GUIs. To bridge this gap, we introduce AutoGUI-v2, a comprehensive benchmark designed to evaluate deep GUI functionality understanding and interaction outcome prediction. We construct the benchmark using a novel VLM-human collaborative pipeline that recursively parses multi-platform screenshots into hierarchical functional regions to generate diverse evaluation tasks. Providing 2,753 tasks across six operating systems, AutoGUI-v2 rigorously tests agents on region and element-level semantics, grounding, and dynamic state prediction. Our evaluation reveals a striking dichotomy in VLMs: while open-source models fine-tuned on agent data (e.g., Qwen3-VL) excel at functional grounding, commercial models (e.g., Gemini-2.5-Pro-Thinking) dominate in functionality captioning. Crucially, all models struggle with complex interaction logic of uncommon actions, highlighting that deep functional understanding remains a significant hurdle. By systematically measuring these foundational capabilities, AutoGUI-v2 offers a new lens for advancing the next generation of GUI agents.",
+      "comments": "Technical Report"
+    },
+    "2604.24625": {
+      "abstract": "Unified multi-modal understanding/generative models have shown improved image editing performance by incorporating fine-grained understanding into their Chain-of-Thought (CoT) process. However, a critical question remains underexplored: what forms of CoT and training strategy can jointly enhance both the understanding granularity and generalization? To address this, we propose Meta-CoT, a paradigm that performs a two-level decomposition of any single-image editing operation with two key properties: (1) Decomposability. We observe that any editing intention can be represented as a triplet - (task, target, required understanding ability). Inspired by this, Meta-CoT decomposes both the editing task and the target, generating task-specific CoT and traversing editing operations on all targets. This decomposition enhances the model's understanding granularity of editing operations and guides it to learn each element of the triplet during training, substantially improving the editing capability. (2) Generalizability. In the second decomposition level, we further break down editing tasks into five fundamental meta-tasks. We find that training on these five meta-tasks, together with the other two elements of the triplet, is sufficient to achieve strong generalization across diverse, unseen editing tasks. To further align the model's editing behavior with its CoT reasoning, we introduce the CoT-Editing Consistency Reward, which encourages more accurate and effective utilization of CoT information during editing. Experiments demonstrate that our method achieves an overall 15.8% improvement across 21 editing tasks, and generalizes effectively to unseen editing tasks when trained on only a small set of meta-tasks. Our code, benchmark, and model are released atthis https URL",
+      "comments": "Accepted by CVPR2026, Project Page: <a class=\"link-external link-https\" href=\"https://shiyi-zh0408.github.io/projectpages/Meta-CoT/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.24819": {
+      "abstract": "Reliably transferring specialized human knowledge from text into large language models remains a fundamental challenge in artificial intelligence. Fine-tuning on domain corpora has enabled substantial capability gains, but the process operates without feedback: when a model fails on a domain task, there is no method to diagnose what is deficient in the training data, and the only recourse is to add more data indiscriminately. Here we show that when a structured knowledge representation extracted from the source corpus serves as the shared foundation for both training data and evaluation, the complete data-engineering lifecycle maps onto the software development lifecycle in a precise and operative way: training data becomes source code specifying what the model should learn, model training becomes compilation, benchmarking becomes unit testing, and failure-driven data repair becomes debugging. Under this correspondence, model failures decompose into concept-level gaps and reasoning-chain breaks that can be traced back to specific deficiencies in the data and repaired through targeted patches, with each repair cycle producing consistent improvements across model scales and architectures without degrading general capabilities. We formalize this principle as Programming with Data and instantiate it across sixteen disciplines spanning the natural sciences, engineering, biomedicine, and the social sciences, releasing a structured knowledge base, benchmark suite, and training corpus as open resources. By demonstrating that the relationship between training data and model behaviour is structurally traceable and systematically repairable, this work establishes a principled foundation for the reliable engineering of human expertise into language models.",
+      "comments": "57 pages, 28 figures, 14 tables"
+    },
+    "2604.24842": {
+      "abstract": "While diffusion models generate high-fidelity video clips, transforming them into coherent storytelling engines remains challenging. Current agentic pipelines automate this via chained modules but suffer from semantic drift and cascading failures due to independent, handcrafted prompting. We present Co-Director, a hierarchical multi-agent framework formalizing video storytelling as a global optimization problem. To ensure semantic coherence, we introduce hierarchical parameterization: a multi-armed bandit globally identifies promising creative directions, while a local multimodal self-refinement loop mitigates identity drift and ensures sequence-level consistency. This balances the exploration of novel narrative strategies with the exploitation of effective creative configurations. For evaluation, we introduce GenAD-Bench, a 400-scenario dataset of fictional products for personalized advertising. Experiments demonstrate that Co-Director significantly outperforms state-of-the-art baselines, offering a principled approach that seamlessly generalizes to broader cinematic narratives. Project Page:this https URL",
+      "comments": "Project Page: <a class=\"link-external link-https\" href=\"https://co-director-agent.github.io/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.25032": {
+      "abstract": "The evaluation of recommender system fairness has become increasingly important, especially with recent legislation that emphasises the development of fair and responsible artificial intelligence. This has led to the emergence of various fairness evaluation measures, which quantify fairness based on different definitions. However, many of such measures are simply proposed and used without further analysis on their robustness. As a result, there is insufficient understanding and awareness of the measures' limitations. Among other issues, it is not known what kind of model outputs produce the (un)fairest score, how the measure scores are empirically distributed, and whether there are cases where the measures cannot be computed (e.g., due to division by zero). These issues cause difficulty in interpreting the measure scores and confusion on which measure(s) should be used for a specific case.This thesis presents a series of papers that assess and overcome various theoretical, empirical, and conceptual limitations of existing recommender system fairness evaluation measures. We investigate a wide range of offline evaluation measures for different fairness notions, divided based on the evaluation subjects (users and items) and for different evaluation granularities (groups of subjects and individual subjects). Firstly, we perform theoretical and empirical analysis on the measures, exposing flaws that limit their interpretability, expressiveness, or applicability. Secondly, we contribute novel evaluation approaches and measures that overcome these limitations. Finally, considering the measures' limitations, we recommend guidelines for the appropriate measure usage, thereby allowing for more precise selection of fairness evaluation measures in practical scenarios.Overall, this thesis contributes to advancing the state-of-the-art offline evaluation of fairness in recommender systems.",
+      "comments": "PhD thesis"
+    },
+    "2604.25164": {
+      "abstract": "Recent advances in text-driven human motion generation enable models to synthesize realistic motion sequences from natural language descriptions. However, most existing approaches assume identity-neutral motion and generate movements using a canonical body representation, ignoring the strong influence of body morphology on motion dynamics. In practice, attributes such as body proportions, mass distribution, and age significantly affect how actions are performed, and neglecting this coupling often leads to physically inconsistent motions. We propose an identity-aware motion generation framework that explicitly models the relationship between body morphology and motion dynamics. Instead of relying on explicit geometric measurements, identity is represented using multimodal signals, including natural language descriptions and visual cues. We further introduce a joint motion-shape generation paradigm that simultaneously synthesizes motion sequences and body shape parameters, allowing identity cues to directly modulate motion dynamics. Extensive experiments on motion capture datasets and large-scale in-the-wild videos demonstrate improved motion realism and motion-identity consistency while maintaining high motion quality. Project page:this https URL",
+      "comments": ""
+    },
+    "2604.25203": {
+      "abstract": "Deploying guardrails for custom policies remains challenging, as generic safety models fail to capture task-specific requirements, while prompting LLMs suffers from inconsistent boundary-case performance and high inference costs. Training custom classifiers achieves both accuracy and efficiency, yet demands substantial labeled data that is costly to obtain. We present BARRED (Boundary Alignment Refinement through REflection and Debate), a framework for generating faithful and diverse synthetic training data using only a task description and a small set of unlabeled examples. Our approach decomposes the domain space into dimensions to ensure comprehensive coverage, and employs multi-agent debate to verify label correctness, yielding a high-fidelity training corpus. Experiments across diverse custom policies demonstrate that small language models finetuned on our synthetic data consistently outperform state-of-the-art proprietary LLMs (including reasoning models) and dedicated guardrail models. Ablation studies confirm that both dimension decomposition and debate-based verification are critical for ensuring the diversity and label fidelity required for effective fine-tuning. The BARRED framework eliminates the reliance on extensive human annotation, offering a scalable solution for accurate custom guardrails.",
+      "comments": ""
+    },
+    "2604.25256": {
+      "abstract": "Autonomous scientific research is significantly advanced thanks to the development of AI agents. One key step in this process is finding the right scientific literature, whether to explore existing knowledge for a research problem, or to acquire evidence for verifying assumptions and supporting claims. To assess AI agents' capability in driving this process, we present AutoResearchBench, a dedicated benchmark for autonomous scientific literature discovery. AutoResearchBench consists of two complementary task types: (1) Deep Research, which requires tracking down a specific target paper through a progressive, multi-step probing process, and (2) Wide Research, which requires comprehensively collecting a set of papers satisfying given conditions. Compared to previous benchmarks on agentic web browsing, AutoResearchBench is distinguished along three dimensions: it is research-oriented, calling for in-depth comprehension of scientific concepts; literature-focused, demanding fine-grained utilization of detailed information; and open-ended, involving an unknown number of qualified papers and thus requiring deliberate reasoning and search throughout. These properties make AutoResearchBench uniquely suited for evaluating autonomous research capabilities, and extraordinarily challenging. Even the most powerful LLMs, despite having largely conquered general agentic web-browsing benchmarks such as BrowseComp, achieve only 9.39% accuracy on Deep Research and 9.31% IoU on Wide Research, while many other strong baselines fall below 5%. We publicly release the dataset and evaluation pipeline to facilitate future research in this direction. We publicly release the dataset, evaluation pipeline, and code atthis https URL.",
+      "comments": ""
+    },
+    "2604.25427": {
+      "abstract": "While large-scale video diffusion models have demonstrated impressive capabilities in generating high-resolution and semantically rich content, a significant gap remains between their pretraining performance and real-world deployment requirements due to critical issues such as prompt sensitivity, temporal inconsistency, and prohibitive inference costs. To bridge this gap, we propose a comprehensive post-training framework that systematically aligns pretrained models with user intentions through four synergistic stages: we first employ Supervised Fine-Tuning (SFT) to transform the base model into a stable instruction-following policy, followed by a Reinforcement Learning from Human Feedback (RLHF) stage that utilizes a novel Group Relative Policy Optimization (GRPO) method tailored for video diffusion to enhance perceptual quality and temporal coherence; subsequently, we integrate Prompt Enhancement via a specialized language model to refine user inputs, and finally address system efficiency through Inference Optimization. Together, these components provide a systematic approach to improving visual quality, temporal coherence, and instruction following, while preserving the controllability learned during pretraining. The result is a practical blueprint for building scalable post-training pipelines that are stable, adaptable, and effective in real-world deployment. Extensive experiments demonstrate that this unified pipeline effectively mitigates common artifacts and significantly improves controllability and visual aesthetics while adhering to strict sampling cost constraints.",
+      "comments": "Tech report"
+    },
+    "2604.25636": {
+      "abstract": "Unified multimodal models (UMMs) integrate visual understanding and generation within a single framework. For text-to-image (T2I) tasks, this unified capability allows UMMs to refine outputs after their initial generation, potentially extending the performance upper bound. Current UMM-based refinement methods primarily follow a refinement-via-editing (RvE) paradigm, where UMMs produce editing instructions to modify misaligned regions while preserving aligned content. However, editing instructions often describe prompt-image misalignment only coarsely, leading to incomplete refinement. Moreover, pixel-level preservation, though necessary for editing, unnecessarily restricts the effective modification space for refinement. To address these limitations, we propose Refinement via Regeneration (RvR), a novel framework that reformulates refinement as conditional image regeneration rather than editing. Instead of relying on editing instructions and enforcing strict content preservation, RvR regenerates images conditioned on the target prompt and the semantic tokens of the initial image, enabling more complete semantic alignment with a larger modification space. Extensive experiments demonstrate the effectiveness of RvR, improving Geneval from 0.78 to 0.91, DPGBench from 84.02 to 87.21, and UniGenBench++ from 61.53 to 77.41.",
+      "comments": "GitHub: <a class=\"link-external link-https\" href=\"https://github.com/LeapLabTHU/RvR\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.25719": {
+      "abstract": "Recent advancements in large audio language models have extended Chain-of-Thought (CoT) reasoning into the auditory domain, enabling models to tackle increasingly complex acoustic and spoken tasks. To elicit and sustain these extended reasoning chains, the prevailing paradigm -- driven by the success of text-based reasoning models -- overwhelmingly relies on Reinforcement Learning with Verified Rewards (RLVR). However, as models are strictly optimized to distill rich, continuous auditory contexts into isolated, verifiable text labels, a fundamental question arises: are we fostering true audio intelligence, or merely reducing a continuous sensory medium into a discrete puzzle? We identify this as the \"verifiable reward trap.\" While RLVR yields remarkable scores on standardized objective benchmarks, it systematically degrades the real-world conversational feel of audio models. By prioritizing isolated correctness over acoustic nuance, RLVR reduces dynamic interactions to mechanical \"answering machines,\" severely compromising prosodic naturalness, emotional continuity, and user immersion, particularly in long-turn dialogues. To bridge the gap between mechanical objective verification and genuine sensory empathy, we introduce Step-Audio-R1.5, marking a paradigm shift toward Reinforcement Learning from Human Feedback (RLHF) in audio reasoning. Comprehensive evaluations demonstrate that Step-Audio-R1.5 not only maintains robust analytical reasoning but profoundly transforms the interactive experience, redefining the boundaries of deeply immersive long-turn spoken dialogue.",
+      "comments": ""
+    },
+    "2604.25727": {
+      "abstract": "Terminal agents have demonstrated strong potential for autonomous command-line execution, yet their training remains constrained by the scarcity of high-quality and diverse execution trajectories. Existing approaches mitigate this bottleneck by synthesizing large-scale terminal task instances for trajectory sampling. However, they primarily focus on scaling the number of tasks while providing limited control over the diversity of execution trajectories that agents actually experience during training. In this paper, we present SkillSynth, an automated framework for terminal task synthesis built on a scenario-mediated skill graph. SkillSynth first constructs a large-scale skill graph, where scenarios serve as intermediate transition nodes that connect diverse command-line skills. It then samples paths from this graph as abstractions of real-world workflows, and uses a multi-agent harness to instantiate them into executable task instances. By grounding task synthesis in graph-sampled workflow paths, SkillSynth explicitly controls the diversity of minimal execution trajectories required to solve the synthesized tasks. Experiments on Terminal-Bench demonstrate the effectiveness of SkillSynth. Moreover, task instances synthesized by SkillSynth have been adopted to train Hy3 Preview, contributing to its enhanced agentic capabilities in terminal-based settings.",
+      "comments": ""
+    },
+    "2604.25806": {
+      "abstract": "Creating interactive STEM courseware traditionally requires HTML/CSS/JavaScript expertise, leaving barriers for educators. While generative AI can produce HTML codes, existing tools generate static presentations rather than interactive simulations, struggle with long documents, and lack pedagogical accuracy mechanisms. Furthermore, full regeneration for modifications requires 200--600 seconds, disrupting creative flow. We present MAIC-UI, a zero-code authoring system that enables educators to create and rapidly edit interactive courseware from textbooks, PPTs, and PDFs. MAIC-UI employs: (1) structured knowledge analysis with multi-modal understanding to ensure pedagogical rigor; (2) a two-stage generate-verify-optimize pipeline separating content alignment from visual refinement; and (3) Click-to-Locate editing with Unified Diff-based incremental generation achieving sub-10-second iteration cycles. A controlled lab study with 40 participants shows MAIC-UI reduces editing iterations (4.9 vs. 7.0) and significantly improves learnability and controllability compared to direct Text-to-HTML generation. A three-month classroom deployment with 53 high school students demonstrates that MAIC-UI fosters learning agency and reduces outcome disparities -- the pilot class achieved 9.21-point gains in STEM subjects compared to -2.32 points in control classes. Our code is available atthis https URL.",
+      "comments": "You can try our demo at <a class=\"link-external link-https\" href=\"https://open.maic.chat/\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2604.25819": {
+      "abstract": "In this work, we propose Mutual Forcing, a framework for fast autoregressive audio-video generation with long-horizon audio-video synchronization. Our approach addresses two key challenges: joint audio-video modeling and fast autoregressive generation. To ease joint audio-video optimization, we adopt a two-stage training strategy: we first train uni-modal generators and then couple them into a unified audio-video model for joint training on paired data. For streaming generation, we ask whether a native fast causal audio-video model can be trained directly, instead of following existing streaming distillation pipelines that typically train a bidirectional model first and then convert it into a causal generator through multiple distillation stages. Our answer is Mutual Forcing, which builds directly on native autoregressive model and integrates few-step and multi-step generation within a single weight-shared model, enabling self-distillation and improved training-inference consistency. The multi-step mode improves the few-step mode via self-distillation, while the few-step mode generates historical context during training to improve training-inference consistency; because the two modes share parameters, these two effects reinforce each other within a single model. Compared with prior approaches such as Self-Forcing, Mutual Forcing removes the need for an additional bidirectional teacher model, supports more flexible training sequence lengths, reduces training overhead, and allows the model to improve directly from real paired data rather than a fixed teacher. Experiments show that Mutual Forcing matches or surpasses strong baselines that require around 50 sampling steps while using only 4 to 8 steps, demonstrating substantial advantages in both efficiency and quality. The project page is available atthis https URL.",
+      "comments": ""
+    },
+    "2604.25914": {
+      "abstract": "Real-world data visualization (DV) requires native environmental grounding, cross-platform evolution, and proactive intent alignment. Yet, existing benchmarks often suffer from code-sandbox confinement, single-language creation-only tasks, and assumption of perfect intent. To bridge these gaps, we introduce DV-World, a benchmark of 260 tasks designed to evaluate DV agents across real-world professional lifecycles. DV-World spans three domains: DV-Sheet for native spreadsheet manipulation including chart and dashboard creation as well as diagnostic repair; DV-Evolution for adapting and restructuring reference visual artifacts to fit new data across diverse programming paradigms and DV-Interact for proactive intent alignment with a user simulator that mimics real-world ambiguous requirements. Our hybrid evaluation framework integrates Table-value Alignment for numerical precision and MLLM-as-a-Judge with rubrics for semantic-visual assessment. Experiments reveal that state-of-the-art models achieve less than 50% overall performance, exposing critical deficits in handling the complex challenges of real-world data visualization. DV-World provides a realistic testbed to steer development toward the versatile expertise required in enterprise workflows. Our data and code are available at \\href{this https URL}{this project page}.",
+      "comments": ""
+    },
+    "2604.25917": {
+      "abstract": "Recursive or looped language models have recently emerged as a new scaling axis by iteratively refining the same model computation over latent states to deepen reasoning. We extend such scaling principle from a single model to multi-agent systems, and ask: Can agent collaboration itself be scaled through recursion? To this end, we introduce RecursiveMAS, a recursive multi-agent framework that casts the entire system as a unified latent-space recursive computation. RecursiveMAS connects heterogeneous agents as a collaboration loop through the lightweight RecursiveLink module, enabling in-distribution latent thoughts generation and cross-agent latent state transfer. To optimize our framework, we develop an inner-outer loop learning algorithm for iterative whole-system co-optimization through shared gradient-based credit assignment across recursion rounds. Theoretical analyses of runtime complexity and learning dynamics establish that RecursiveMAS is more efficient than standard text-based MAS and maintains stable gradients during recursive training. Empirically, we instantiate RecursiveMAS under 4 representative agent collaboration patterns and evaluate across 9 benchmarks spanning mathematics, science, medicine, search, and code generation. In comparison with advanced single/multi-agent and recursive computation baselines, RecursiveMAS consistently delivers an average accuracy improvement of 8.3%, together with 1.2$\\times$-2.4$\\times$ end-to-end inference speedup, and 34.6%-75.6% token usage reduction. Code and Data are provided inthis https URL.",
+      "comments": "36 Pages. Project Website: <a class=\"link-external link-https\" href=\"https://recursivemas.github.io\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}
