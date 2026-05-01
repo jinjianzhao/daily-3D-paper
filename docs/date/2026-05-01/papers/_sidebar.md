@@ -1,0 +1,22 @@
+- [**2026-05-01 日报**](/2026-05-01/)
+
+  - **视频生成模型**
+    - [Unified 4D... | 用视频模型统一机器人动作和世界重建](/2026-05-01/papers/2604.26694.md)
+  - **图片生成模型**
+    - [Probing Visual... | 探索图像编辑模型的视觉规划能力](/2026-05-01/papers/2604.22868.md)
+    - [Diffusion Templates | 扩散模型可控生成插件框架](/2026-05-01/papers/2604.24351.md)
+  - [**全量简报 (14 篇)**](/2026-05-01/briefs.md)
+    - [Enhanced Privacy... | 联邦学习隐私与通信优化](/2026-05-01/briefs.md?id=enhanced-privacy)
+    - [Large Language... | 大模型解码增强语义探索](/2026-05-01/briefs.md?id=large-language)
+    - [A Survey... | 大语言模型仿真对话用户研究](/2026-05-01/briefs.md?id=a-survey)
+    - [FAMA | 提升开源大模型工具交互可靠性  ](/2026-05-01/briefs.md?id=fama)
+    - [Praxy Voice | 零数据成本提升多语言TTS语音质量](/2026-05-01/briefs.md?id=praxy-voice)
+    - [PSP | 印度语音合成口音评测新方法](/2026-05-01/briefs.md?id=psp)
+    - [RADIO-ViPE | 动态环境下在线开放词汇语义SLAM系统](/2026-05-01/briefs.md?id=radio-vipe)
+    - [Operating-Layer Controls... | 基于真实资本的链上语言模型智能体运行层控制研究](/2026-05-01/briefs.md?id=operating-layer-controls)
+    - [Sample Selection... | 使用多任务自编码器筛选非独立同分布联邦学习样本](/2026-05-01/briefs.md?id=sample-selection)
+    - [FASH-iCNN | 时装品牌风格可解释分析  ](/2026-05-01/briefs.md?id=fash-icnn)
+    - [GLM-5V-Turbo | 构建原生多模态智能体基础模型](/2026-05-01/briefs.md?id=glm-5v-turbo)
+    - [Accelerating RL... | 加速强化学习后训练中的模型生成](/2026-05-01/briefs.md?id=accelerating-rl)
+    - [ClawGym | 构建高效桌面助理框架](/2026-05-01/briefs.md?id=clawgym)
+    - [Turning the TIDE | 跨架构扩散大模型蒸馏](/2026-05-01/briefs.md?id=turning-the-tide)

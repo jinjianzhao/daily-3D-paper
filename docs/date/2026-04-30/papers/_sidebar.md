@@ -5,9 +5,16 @@
   - **图片生成模型**
     - [Probing Visual... | 探究图像编辑模型的视觉规划能力](/2026-04-30/papers/2604.22868.md)
     - [Diffusion Templates | 扩散模型统一可控生成插件框架  ](/2026-04-30/papers/2604.24351.md)
-  - [**全量简报 (7 篇)**](/2026-04-30/briefs.md)
+  - [**全量简报 (14 篇)**](/2026-04-30/briefs.md)
+    - [Enhanced Privacy... | 非独立数据联邦学习隐私与通信优化](/2026-04-30/briefs.md?id=enhanced-privacy)
     - [Large Language... | 大模型解码时增强语义多样性](/2026-04-30/briefs.md?id=large-language)
     - [A Survey... | 大模型模拟对话用户的综述](/2026-04-30/briefs.md?id=a-survey)
+    - [FAMA | 大模型工具使用的故障感知框架](/2026-04-30/briefs.md?id=fama)
+    - [Praxy Voice | 零成本提升语音合成商业效果](/2026-04-30/briefs.md?id=praxy-voice)
+    - [PSP | 语音合成口音量化评估](/2026-04-30/briefs.md?id=psp)
+    - [RADIO-ViPE | 动态环境开放词汇语义SLAM多模态融合](/2026-04-30/briefs.md?id=radio-vipe)
+    - [Operating-Layer Controls... | 研究语言模型代理的真实资本操作可靠性](/2026-04-30/briefs.md?id=operating-layer-controls)
+    - [Sample Selection... | 联邦学习中用多任务自编码器选样本](/2026-04-30/briefs.md?id=sample-selection)
     - [FASH-iCNN | 识别时装品牌年代与风格](/2026-04-30/briefs.md?id=fash-icnn)
     - [GLM-5V-Turbo | GLM5V迈向多模态智能体原生基础模型](/2026-04-30/briefs.md?id=glm-5v-turbo)
     - [Accelerating RL... | 加速强化学习后训练中的模型推理](/2026-04-30/briefs.md?id=accelerating-rl)

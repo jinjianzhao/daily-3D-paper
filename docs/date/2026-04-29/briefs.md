@@ -25,7 +25,7 @@
 **arXiv**: https://arxiv.org/abs/2604.21481  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21481  
 **HF Paper**: https://hf-mirror.com/papers/2604.21481  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -115,7 +115,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24819  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24819  
 **HF Paper**: https://hf-mirror.com/papers/2604.24819  
-**HF Votes**: 77
+**HF Votes**: 78
 
 ## 简要摘要
 
@@ -204,7 +204,7 @@ BARRED框架通过维度分解与多智能体辩论生成高质量合成数据�
 **arXiv**: https://arxiv.org/abs/2604.25727  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25727  
 **HF Paper**: https://hf-mirror.com/papers/2604.25727  
-**HF Votes**: 6
+**HF Votes**: 7
 
 ## 简要摘要
 
@@ -258,7 +258,7 @@ BARRED框架通过维度分解与多智能体辩论生成高质量合成数据�
 **arXiv**: https://arxiv.org/abs/2604.25917  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25917  
 **HF Paper**: https://hf-mirror.com/papers/2604.25917  
-**HF Votes**: 164
+**HF Votes**: 200
 
 ## 简要摘要
 
