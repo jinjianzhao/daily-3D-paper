@@ -7,6 +7,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23426  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23426  
 **HF Paper**: https://hf-mirror.com/papers/2604.23426  
+**HF Votes**: 1
 
 ## 简要摘要
 
@@ -17,6 +18,24 @@
 
 ---
 
+# Agentic Fusion of Large Atomic and Language Models to Accelerate Superconductors Discovery
+
+**【智能融合大模型加速超导体发现】**
+
+**arXiv**: https://arxiv.org/abs/2604.23758  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23758  
+**HF Paper**: https://hf-mirror.com/papers/2604.23758  
+**HF Votes**: 1
+
+## 简要摘要
+
+*材料科学；计算材料设计；超导体发现*
+
+材料发现对能源与量子技术至关重要，而现有模型缺乏自主协调能力。
+我们提出智能框架，融合原子与语言模型，高效筛选并实验验证了新型超导体。
+
+---
+
 # Large Language Models Explore by Latent Distilling
 
 **【大模型解码时增强语义多样性】**
@@ -24,7 +43,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24927  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24927  
 **HF Paper**: https://hf-mirror.com/papers/2604.24927  
-**HF Votes**: 52
+**HF Votes**: 58
 
 ## 简要摘要
 
@@ -42,7 +61,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24977  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24977  
 **HF Paper**: https://hf-mirror.com/papers/2604.24977  
-**HF Votes**: 2
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -60,7 +79,7 @@
 **arXiv**: https://arxiv.org/abs/2604.25135  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25135  
 **HF Paper**: https://hf-mirror.com/papers/2604.25135  
-**HF Votes**: 6
+**HF Votes**: 7
 
 ## 简要摘要
 
@@ -78,7 +97,7 @@
 **arXiv**: https://arxiv.org/abs/2604.25441  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25441  
 **HF Paper**: https://hf-mirror.com/papers/2604.25441  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -96,7 +115,7 @@
 **arXiv**: https://arxiv.org/abs/2604.25476  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25476  
 **HF Paper**: https://hf-mirror.com/papers/2604.25476  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -114,7 +133,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26067  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26067  
 **HF Paper**: https://hf-mirror.com/papers/2604.26067  
-**HF Votes**: 49
+**HF Votes**: 57
 
 ## 简要摘要
 
@@ -132,7 +151,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26091  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26091  
 **HF Paper**: https://hf-mirror.com/papers/2604.26091  
-**HF Votes**: 3
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -150,6 +169,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26116  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26116  
 **HF Paper**: https://hf-mirror.com/papers/2604.26116  
+**HF Votes**: 1
 
 ## 简要摘要
 
@@ -167,7 +187,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26186  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26186  
 **HF Paper**: https://hf-mirror.com/papers/2604.26186  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -185,7 +205,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26752  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26752  
 **HF Paper**: https://hf-mirror.com/papers/2604.26752  
-**HF Votes**: 71
+**HF Votes**: 83
 
 ## 简要摘要
 
@@ -203,7 +223,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26779  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26779  
 **HF Paper**: https://hf-mirror.com/papers/2604.26779  
-**HF Votes**: 3
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -221,7 +241,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26904  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26904  
 **HF Paper**: https://hf-mirror.com/papers/2604.26904  
-**HF Votes**: 37
+**HF Votes**: 41
 
 ## 简要摘要
 
@@ -239,7 +259,7 @@ Claw式环境缺乏系统开发框架，限制了支持多步骤工作流程的�
 **arXiv**: https://arxiv.org/abs/2604.26951  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26951  
 **HF Paper**: https://hf-mirror.com/papers/2604.26951  
-**HF Votes**: 36
+**HF Votes**: 40
 
 ## 简要摘要
 

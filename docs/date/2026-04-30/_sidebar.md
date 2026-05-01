@@ -5,8 +5,9 @@
   - **图片生成模型**
     - [Probing Visual... | 探究图像编辑模型的视觉规划能力](/2026-04-30/papers/2604.22868.md)
     - [Diffusion Templates | 扩散模型统一可控生成插件框架  ](/2026-04-30/papers/2604.24351.md)
-  - [**全量简报 (14 篇)**](/2026-04-30/briefs.md)
+  - [**全量简报 (15 篇)**](/2026-04-30/briefs.md)
     - [Enhanced Privacy... | 非独立数据联邦学习隐私与通信优化](/2026-04-30/briefs.md?id=enhanced-privacy)
+    - [Agentic Fusion... | 智能融合大模型加速超导体发现](/2026-04-30/briefs.md?id=agentic-fusion)
     - [Large Language... | 大模型解码时增强语义多样性](/2026-04-30/briefs.md?id=large-language)
     - [A Survey... | 大模型模拟对话用户的综述](/2026-04-30/briefs.md?id=a-survey)
     - [FAMA | 大模型工具使用的故障感知框架](/2026-04-30/briefs.md?id=fama)
