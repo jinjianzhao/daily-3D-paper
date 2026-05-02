@@ -7,7 +7,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24658  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24658  
 **HF Paper**: https://hf-mirror.com/papers/2604.24658  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -18,6 +18,41 @@
 
 ---
 
+# Safety Drift After Fine-Tuning: Evidence from High-Stakes Domains
+
+**【微调后安全性会漂移】**
+
+**arXiv**: https://arxiv.org/abs/2604.24902  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24902  
+**HF Paper**: https://hf-mirror.com/papers/2604.24902  
+
+## 简要摘要
+
+*大模型安全;微调安全性评估;安全漂移分析*
+
+基础模型经微调后在特定领域应用时，其安全性评估通常只针对原始模型，这隐含地假设了安全性在微调后保持不变。
+我们测试了这一假设，分析了100个模型，发现在良性微调后，模型在不同安全基准上的表现出现大幅且不一致的变化，表明仅依赖原始模型评估无法有效管理下游风险。
+
+---
+
+# Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence
+
+**【新型高效多模态模型发布】**
+
+**arXiv**: https://arxiv.org/abs/2604.24954  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24954  
+**HF Paper**: https://hf-mirror.com/papers/2604.24954  
+**HF Votes**: 9
+
+## 简要摘要
+
+*多模态大模型；视觉语言模型；多模态推理效率优化*
+
+研究团队推出了Nemotron 3 Nano Omni，这是其多模态系列的最新模型，首次原生支持音频、文本、图像和视频四种模态输入。
+该模型在架构、训练数据和方案上取得进步，在各项任务上超越了前代模型，并通过创新的多模态令牌精简技术，实现了更低的推理延迟和更高的吞吐率，同时开源了部分资源。
+
+---
+
 # Length Value Model: Scalable Value Pretraining for Token-Level Length Modeling
 
 **【剩余生成长度建模】**
@@ -25,7 +60,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27039  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27039  
 **HF Paper**: https://hf-mirror.com/papers/2604.27039  
-**HF Votes**: 15
+**HF Votes**: 16
 
 ## 简要摘要
 
@@ -43,7 +78,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27083  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27083  
 **HF Paper**: https://hf-mirror.com/papers/2604.27083  
-**HF Votes**: 23
+**HF Votes**: 34
 
 ## 简要摘要
 
@@ -61,7 +96,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27085  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27085  
 **HF Paper**: https://hf-mirror.com/papers/2604.27085  
-**HF Votes**: 16
+**HF Votes**: 24
 
 ## 简要摘要
 
@@ -72,6 +107,24 @@
 
 ---
 
+# Step-level Optimization for Efficient Computer-use Agents
+
+**【GUI智能体动态计算优化】**
+
+**arXiv**: https://arxiv.org/abs/2604.27151  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27151  
+**HF Paper**: https://hf-mirror.com/papers/2604.27151  
+**HF Votes**: 1
+
+## 简要摘要
+
+*智能体系统;人机交互;GUI任务执行*
+
+现有GUI智能体每步都调用大模型，导致效率低下且易出错
+提出事件级联框架，默认用小模型，高风险时触发大模型介入
+
+---
+
 # Compliance versus Sensibility: On the Reasoning Controllability in Large Language Models
 
 **【大模型推理的可控性研究】**
@@ -79,7 +132,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27251  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27251  
 **HF Paper**: https://hf-mirror.com/papers/2604.27251  
-**HF Votes**: 4
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -97,7 +150,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27351  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27351  
 **HF Paper**: https://hf-mirror.com/papers/2604.27351  
-**HF Votes**: 141
+**HF Votes**: 176
 
 ## 简要摘要
 
@@ -115,7 +168,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27419  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27419  
 **HF Paper**: https://hf-mirror.com/papers/2604.27419  
-**HF Votes**: 6
+**HF Votes**: 8
 
 ## 简要摘要
 
@@ -126,6 +179,24 @@
 
 ---
 
+# Instruction-Guided Poetry Generation in Arabic and Its Dialects
+
+**【阿拉伯语可控诗歌生成】**
+
+**arXiv**: https://arxiv.org/abs/2604.27766  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27766  
+**HF Paper**: https://hf-mirror.com/papers/2604.27766  
+**HF Votes**: 1
+
+## 简要摘要
+
+*自然语言处理;文本生成;指令微调诗歌生成*
+
+阿拉伯语诗歌是重要的文化表达形式，但现有大语言模型研究多侧重分析而非创作。
+我们构建了大规模指令数据集，通过微调使模型能按要求生成、修订和分析阿拉伯语及方言诗歌。
+
+---
+
 # Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows
 
 **【评估智能体实时工作流程的基准  】**
@@ -133,7 +204,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28139  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28139  
 **HF Paper**: https://hf-mirror.com/papers/2604.28139  
-**HF Votes**: 14
+**HF Votes**: 17
 
 ## 简要摘要
 
@@ -141,6 +212,23 @@
 
 现有智能体基准的静态任务设置难以评估其适应不断变化的真实工作需求并验证任务执行过程。  
 本文提出了一个可更新的实时工作流智能体基准，通过分离需求信号层与可复现的快照来构建任务，记录执行痕迹进行多维度评估，发现当前前沿模型在复杂工作流任务上表现仍不理想。
+
+---
+
+# FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption
+
+**【提升长上下文大模型对抗效率】**
+
+**arXiv**: https://arxiv.org/abs/2604.28157  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28157  
+**HF Paper**: https://hf-mirror.com/papers/2604.28157  
+
+## 简要摘要
+
+*自然语言处理;大语言模型安全;对抗攻击优化*
+
+长上下文大语言模型应用广泛，但其面临提示注入和知识污染等安全威胁，现有基于优化的对抗攻击方法评估安全风险时计算和内存开销巨大。
+本文提出FlashRT框架，显著提升了长上下文下基于优化的对抗攻击效率，实现了更快的攻击速度和更低的内存消耗，并适用于多种黑盒优化方法。
 
 ---
 
@@ -169,7 +257,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28181  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28181  
 **HF Paper**: https://hf-mirror.com/papers/2604.28181  
-**HF Votes**: 6
+**HF Votes**: 8
 
 ## 简要摘要
 
