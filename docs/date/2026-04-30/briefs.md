@@ -61,7 +61,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24977  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24977  
 **HF Paper**: https://hf-mirror.com/papers/2604.24977  
-**HF Votes**: 5
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -79,7 +79,7 @@
 **arXiv**: https://arxiv.org/abs/2604.25135  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25135  
 **HF Paper**: https://hf-mirror.com/papers/2604.25135  
-**HF Votes**: 7
+**HF Votes**: 8
 
 ## 简要摘要
 
@@ -133,7 +133,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26067  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26067  
 **HF Paper**: https://hf-mirror.com/papers/2604.26067  
-**HF Votes**: 61
+**HF Votes**: 64
 
 ## 简要摘要
 
@@ -205,7 +205,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26752  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26752  
 **HF Paper**: https://hf-mirror.com/papers/2604.26752  
-**HF Votes**: 84
+**HF Votes**: 88
 
 ## 简要摘要
 
@@ -241,7 +241,7 @@
 **arXiv**: https://arxiv.org/abs/2604.26904  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26904  
 **HF Paper**: https://hf-mirror.com/papers/2604.26904  
-**HF Votes**: 43
+**HF Votes**: 46
 
 ## 简要摘要
 
@@ -259,7 +259,7 @@ Claw式环境缺乏系统开发框架，限制了支持多步骤工作流程的�
 **arXiv**: https://arxiv.org/abs/2604.26951  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.26951  
 **HF Paper**: https://hf-mirror.com/papers/2604.26951  
-**HF Votes**: 40
+**HF Votes**: 42
 
 ## 简要摘要
 
