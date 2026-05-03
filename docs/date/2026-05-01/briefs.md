@@ -42,7 +42,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24954  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24954  
 **HF Paper**: https://hf-mirror.com/papers/2604.24954  
-**HF Votes**: 13
+**HF Votes**: 14
 
 ## 简要摘要
 
@@ -60,7 +60,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27039  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27039  
 **HF Paper**: https://hf-mirror.com/papers/2604.27039  
-**HF Votes**: 16
+**HF Votes**: 19
 
 ## 简要摘要
 
@@ -78,7 +78,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27083  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27083  
 **HF Paper**: https://hf-mirror.com/papers/2604.27083  
-**HF Votes**: 36
+**HF Votes**: 39
 
 ## 简要摘要
 
@@ -96,7 +96,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27085  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27085  
 **HF Paper**: https://hf-mirror.com/papers/2604.27085  
-**HF Votes**: 28
+**HF Votes**: 30
 
 ## 简要摘要
 
@@ -150,7 +150,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27351  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27351  
 **HF Paper**: https://hf-mirror.com/papers/2604.27351  
-**HF Votes**: 185
+**HF Votes**: 187
 
 ## 简要摘要
 
@@ -186,7 +186,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27766  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27766  
 **HF Paper**: https://hf-mirror.com/papers/2604.27766  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -204,7 +204,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28139  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28139  
 **HF Paper**: https://hf-mirror.com/papers/2604.28139  
-**HF Votes**: 24
+**HF Votes**: 28
 
 ## 简要摘要
 
@@ -239,7 +239,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28158  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28158  
 **HF Paper**: https://hf-mirror.com/papers/2604.28158  
-**HF Votes**: 13
+**HF Votes**: 28
 
 ## 简要摘要
 
@@ -257,7 +257,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28181  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28181  
 **HF Paper**: https://hf-mirror.com/papers/2604.28181  
-**HF Votes**: 10
+**HF Votes**: 13
 
 ## 简要摘要
 
