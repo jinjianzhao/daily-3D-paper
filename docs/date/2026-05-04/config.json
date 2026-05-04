@@ -1,0 +1,164 @@
+{
+  "date": "2026-05-04",
+  "focus_ids": [
+    "2605.00781",
+    "2605.00658",
+    "2605.00503"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2605.00781"
+    ],
+    "视频生成模型": [
+      "2605.00658"
+    ],
+    "图片生成模型": [
+      "2605.00503"
+    ]
+  },
+  "base_info": {
+    "2604.23195": {
+      "title": "AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval",
+      "hf_link": "https://hf-mirror.com/papers/2604.23195"
+    },
+    "2604.24026": {
+      "title": "From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills",
+      "hf_link": "https://hf-mirror.com/papers/2604.24026"
+    },
+    "2605.00416": {
+      "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+      "hf_link": "https://hf-mirror.com/papers/2605.00416"
+    },
+    "2605.00503": {
+      "title": "End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer",
+      "hf_link": "https://hf-mirror.com/papers/2605.00503"
+    },
+    "2605.00658": {
+      "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors",
+      "hf_link": "https://hf-mirror.com/papers/2605.00658"
+    },
+    "2605.00754": {
+      "title": "Themis: Training Robust Multilingual Code Reward Models for Flexible Multi-Criteria Scoring",
+      "hf_link": "https://hf-mirror.com/papers/2605.00754"
+    },
+    "2605.00781": {
+      "title": "Map2World: Segment Map Conditioned Text to 3D World Generation",
+      "hf_link": "https://hf-mirror.com/papers/2605.00781"
+    },
+    "2605.00809": {
+      "title": "Let ViT Speak: Generative Language-Image Pre-training",
+      "hf_link": "https://hf-mirror.com/papers/2605.00809"
+    }
+  },
+  "summaries": {
+    "2604.23195": "跨模态模拟电路检索框架  \n计算机视觉;跨模态检索;模拟电路检索  \n模拟电路设计依赖复用现有设计，但跨异构表示形式的搜索仍具挑战。  \n提出AnalogRetriever框架，通过三模态编码与课程对比学习，将原理图、描述和网表映射到共享嵌入空间，显著提升了跨模态检索性能。",
+    "2604.24026": "为智能体技能构建结构化表示  \n智能体系统;技能表示与管理;技能结构化表示  \n当前智能体技能主要依赖文本描述，难以被机器高效利用。  \n我们提出一种调度-结构-逻辑表示法，能显著提升技能检索与风险评估效果。",
+    "2605.00416": "机器人持续部署学习\n机器人；强化学习；多任务操作策略\n通用机器人策略在真实部署中面临分布偏移、长尾故障等挑战，离线数据不足以支撑鲁棒应用。\n提出了一个基于机器人机群的离线到在线强化学习框架，通过共享实际部署经验与人类干预数据，持续改进通用视觉语言动作策略，并在真实机器人任务上验证了其性能提升。",
+    "2605.00503": "端到端联合训练图像生成\n计算机视觉;图像生成;自回归图像建模\n自回归图像建模通常依赖视觉分词器将图像压缩为隐式表征。\n本文设计了一个端到端训练框架，联合优化重建与生成，并利用视觉基础模型提升一维分词器。",
+    "2605.00658": "统一框架多模态视频生成\n计算机视觉；视频生成；多模态扩散模型\n现有视频扩散模型通常针对单一任务单独训练，限制了跨模态关联建模。\n提出统一框架UniVidX，通过随机条件掩码、解耦门控LoRA和跨模态注意力设计，实现多种模态间的视频生成与编辑。",
+    "2605.00754": "训练多标准代码奖励模型\n自然语言处理;代码生成;代码奖励模型\n现有代码奖励模型多关注功能正确性，难以评估代码的多维度质量。\n本文构建了多语言多标准代码偏好数据集，并训练了可灵活评估多维度代码质量的奖励模型系列。",
+    "2605.00781": "分割地图生成三维世界\n计算机图形学;三维场景生成;可控三维世界合成\n三维世界生成应用广泛，但现有方法在布局和物体尺度一致性上存在局限。\n提出了Map2World框架，可利用任意形状的分割地图控制生成尺度一致的三维世界，并通过细节增强网络提升质量，利用资产生成器先验实现强泛化。",
+    "2605.00809": "训练ViT直接生成语言描述\n计算机视觉;多模态学习;视觉语言预训练\n本文旨在改进多模态大语言模型中的视觉编码器与语言模型的协同。\n提出GenLIP框架，让视觉变换器通过语言建模目标直接预测文本标记，无需额外文本解码器，在多模态任务上取得优异性能。"
+  },
+  "deep_analysis": {
+    "2605.00503": "(1) **任务描述**\n*   **任务名称**：大规模图像生成。\n*   **任务输入**：一段文本描述（如“一只坐在草坪上的猫”），或者一个随机起始的令牌序列（用于无条件生成）。\n*   **任务输出**：一张高分辨率、高质量、符合输入描述的逼真图像。\n*   **任务功能**：像GPT生成文本一样，让模型能够“自回归地”生成图像，即一个接一个地预测出构成一张完整图像的“视觉词汇”（离散令牌）。\n\n(2) **想解决的核心问题**\n现有的自回归图像生成方法通常分两步走：第一步，用一个“图像分词器”把图片压缩成一串离散的符号（令牌）；第二步，用一个语言模型去学习预测这串符号的顺序。问题是，第一步的分词器只关心如何完美地重建原图，它并不知道自己产出的这串符号是否方便第二步的语言模型去学习和预测。这就像让一个人先写一篇加密的文章（分词器），再让另一个人去学习预测这篇文章的下一个词（生成模型），而写文章的人完全不管预测的人学得累不累。这种“各干各的”训练方式，导致最终生成图片的质量不够好。\n\n(3) **核心思路**\n这篇论文的核心思路是**“端到端联合训练”**。\n*   **打破两步隔离**：不再分开训练分词器和生成模型，而是把它们当作一个整体来训练。\n*   **用生成结果指导分词器**：在训练时，生成模型预测下一个“视觉词”的结果，会被解码回像素空间，计算一个额外的重建损失（称为APR损失）。这个损失会反向传播，直接影响分词器的学习。这样一来，分词器在学会“还原图像”的同时，也学会了生成“让语言模型更容易预测”的视觉符号序列。\n*   **引入语义先验**：为了让分词器学到的符号序列更有“语义”（更接近人类理解图像的方式），论文还巧妙地引入了预训练好的视觉基础模型（如CLIP、DINOv2）的知识，来指导分词器中间层的表示学习，但不强行规定符号的空间顺序。\n\n(4) **结果怎么样**\n取得了非常出色的效果。在ImageNet 256x256图像生成这个权威基准测试上，他们最大的模型（EOSTok-H，参数6.44亿）取得了**FID分数1.48**的优异成绩。FID分数越低代表生成的图像越真实、越多样。这个成绩在**不使用任何额外引导技术**的情况下，达到了当时（论文提交时）的**最先进水平**，超越了包括扩散模型在内的许多其他方法。\n\n(5) **模型结构与整体流程**\n这篇论文没有依赖一个特定的“基模”，而是构建了一套新的框架，核心包含两个模块：**1D视觉分词器**和**自回归生成模型**。\n\n**整体流程（以训练过程为例）：**\n1.  **输入图像**：一张256x256的图片送入模型。\n2.  **1D分词器编码**：\n    *   图片首先被分割成多个小块（Patch），并加上一些可学习的“查询令牌”。\n    *   这些Patch和查询令牌一起，经过一个类似ViT的Transformer编码器进行交互。\n    *   编码器输出的查询令牌序列（例如1024个），经过一个量化层，被映射成一个**一维的、紧凑的离散符号序列**。这个序列就是图像的“视觉句子”。关键点在于，这个序列是**一维的**，没有固定的二维空间网格结构，天然适合用语言模型处理。\n3.  **自回归生成模型预测**：\n    *   这个离散符号序列被送入一个**解码器式的Transformer语言模型**（例如类似GPT的结构）。\n    *   语言模型以“自回归”的方式，根据前面所有的符号，来预测序列中下一个符号是什么。这是标准的语言模型训练任务。\n4.  **关键创新：端到端损失计算**\n    *   **重建损失**：分词器的解码器会把第2步得到的离散序列，直接解码回一张重建的图片，与原始输入图片计算像素级重建损失。\n    *   **自回归预测重建损失**：在语言模型进行“教师强迫”训练时（即输入真实的前缀，预测下一个真实符号），语言模型每一步的预测输出（一个表示所有可能符号的概率分布）会被**立即解码回像素空间**，生成一张“预测重建图”，并与原始图片计算重建损失（APR损失）。\n    *   **语义对齐损失**：在分词器编码器的中间层，其输出的Patch嵌入表示，会被拉去与一个冻结的、强大的视觉基础模型（VFM）对同一图片产生的特征进行对齐（计算相似度损失），从而将丰富的语义知识注入到分词器中。\n5.  **联合优化**：上述**重建损失、APR损失和语义对齐损失**会加在一起，**同时反向传播，更新分词器和自回归生成模型的所有参数**。这就是“端到端联合训练”的精髓。\n6.  **推理（生成图像）**：\n    *   给定一个文本描述，先将其转化为一个起始的文本令牌序列（或无条件生成时，从一个特殊的开始符`[BOS]`开始）。\n    *   自回归生成模型开始工作，像写小说一样，根据已生成的“视觉词”，预测下一个最可能的“视觉词”，并追加到序列中。\n    *   重复此过程，直到生成完整的视觉符号序列。\n    *   最后，将这个完整的序列送入**训练好的1D分词器的解码器**，解码器就会输出一张全新的、高质量的图片。\n\n**简单总结**：这篇论文就像设计了一个既能“写密码文”（分词器编码）又能“破译并续写密码文”（生成模型）的联合特工小组。他们一起训练，写密码的人（分词器）会不断根据破译者的反馈（APR损失）来优化自己的密码规则，同时还会参考一本高级语义词典（VFM）来让密码更有意义，最终使得整个小组生成新密码文（图像）的能力达到顶尖水平。",
+    "2605.00658": "这篇论文《UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors》是一篇关于**视频多模态生成**的研究。下面我用简单的语言为你梳理它的核心内容：\n\n---\n\n### (1) 论文所在的任务是什么？\n- **任务输入**：可以是**文字描述（Text）**或**一种/多种视觉模态**（例如：RGB视频、反照率图Albedo、法线图Normal、透明度通道Alpha等）。\n- **任务输出**：生成**另一种或多种视觉模态**（例如：根据文字生成视频、根据RGB视频生成法线图、根据反照率生成光照效果等）。\n- **任务功能**：实现**文字到视觉、视觉到视觉、文字+视觉到视觉**等多种视频生成任务，例如：\n  - 文字生成视频（Text → Video）\n  - 视频分解（Video → Albedo/Normal/Alpha）\n  - 视频重光照（Relighting）、重贴图（Retexturing）、背景替换等。\n\n---\n\n### (2) 论文想解决什么问题？\n现有的视频扩散模型（Video Diffusion Models）虽然强大，但通常**一个模型只能做一种任务**（例如只能从文字生成视频，或只能从视频生成法线图）。这导致：\n1. **灵活性差**：无法根据不同的输入条件灵活切换任务。\n2. **忽略模态关联**：不同视觉模态（如颜色、光照、形状）之间本应有关联，但分开训练会导致生成结果不一致。\n3. **数据效率低**：每个任务都需要大量标注数据训练。\n\n本文的目标是：**设计一个统一的框架，让一个模型能处理多种输入输出组合，并保持跨模态的一致性**。\n\n---\n\n### (3) 核心思路是什么？\n作者提出三个关键设计：\n\n1. **随机条件掩码（Stochastic Condition Masking, SCM）**  \n   训练时随机将某些模态作为“干净条件”，某些作为“带噪声的目标”，让模型学会**任意方向的条件生成**，而不是固定输入输出。\n\n2. **解耦门控LoRA（Decoupled Gated LoRA, DGL）**  \n   为每个视觉模态附加一个轻量化的LoRA模块，只在生成该模态时激活。这样既能适应不同模态的分布，又**不破坏基础模型的原有能力**。\n\n3. **跨模态自注意力（Cross-Modal Self-Attention, CMSA）**  \n   让不同模态在注意力层共享信息（共享Key/Value），但保持各自的查询（Query），促进**模态间的对齐与信息交换**。\n\n---\n\n### (4) 结果怎么样？\n- **性能优越**：在多个任务（文字生成、反照率估计、法线估计、视频抠图等）上达到或接近当前最优方法。\n- **泛化能力强**：即使只用**不到1000个视频**训练，也能在真实场景中表现良好，说明框架**数据效率高**。\n- **支持多种应用**：如视频重光照、材质编辑、背景替换等，展示了框架的实用性。\n\n---\n\n### (5) 模型结构与流程\n- **基础模型（基模）**：基于**预训练的视频扩散模型（VDM）**，例如 Stable Video Diffusion 或类似结构。\n- **整体流程**：\n  1. **输入阶段**：接受多模态输入（文字 + 一种或多种视觉模态）。\n  2. **编码与融合**：\n     - 文字通过CLIP等文本编码器得到文本特征。\n     - 视觉模态通过各自的编码器（如CNN或ViT）提取特征。\n     - 通过**跨模态自注意力（CMSA）**将不同模态的特征进行交互对齐。\n  3. **条件处理**：\n     - 训练时使用**随机条件掩码（SCM）**，随机选择一部分模态作为条件（保持干净），另一部分作为生成目标（添加噪声）。\n     - 推理时根据任务需求指定条件模态。\n  4. **生成阶段**：\n     - 扩散模型逐步去噪声生成目标模态。\n     - **解耦门控LoRA（DGL）**根据当前生成的目标模态激活对应的LoRA模块，调整生成过程。\n  5. **输出**：得到目标模态的视频序列（如RGB视频、法线图、Alpha通道等）。\n\n**流程图示意**：  \n```\n多模态输入 → 编码 → CMSA跨模态交互 → SCM条件选择 → 扩散去噪 + DGL模态适配 → 输出目标模态\n```\n\n---\n\n### 总结\n这篇论文的核心贡献是提出了一个**统一的多模态视频生成框架**，通过**随机条件掩码、解耦LoRA、跨模态注意力**三个设计，让一个模型能灵活处理多种视频生成任务，并保持跨模态一致性，同时数据效率很高。\n\n如果你对其中某个部分（比如LoRA、扩散模型、注意力机制）想了解更多，我可以进一步解释！",
+    "2605.00781": "我来为你解读这篇论文《Map2World》。我会用简单的语言来解释，假设你是一个有基础AI知识的低年级博士生。\n\n### (1) 这篇论文所在的任务是什么？\n- **任务输入**：\n  - **文本描述**：比如“生成一个有森林环绕的城市中心”\n  - **语义分割图**：用户画的一张地图，用不同颜色标记不同区域（比如蓝色=水域，绿色=森林，灰色=城市建筑区）\n- **任务输出**：\n  - **完整3D世界**：一个大规模、连贯的3D场景（不仅仅是单个物体，而是包含多个物体和环境的完整世界）\n- **任务功能**：\n  - 根据用户的地图布局和文字描述，自动生成对应的、细节丰富的3D虚拟世界。\n  - 主要用于游戏开发、虚拟现实、自动驾驶模拟等需要大规模3D环境的场景。\n\n### (2) 这篇论文想解决什么问题？\n这篇论文主要想解决**现有3D世界生成方法的三个核心缺陷**：\n1. **布局不灵活**：之前的方法（如SynCity）只能生成**网格状**（像棋盘一样）的3D世界，但真实世界的区域边界（比如森林、河流）是不规则的。\n2. **尺度不一致**：当生成多个3D“资产”（比如建筑、树木）拼成一个世界时，不同区域的物体**大小比例不协调**（比如城里的树和森林里的树一样大）。\n3. **细节粗糙**：生成的大规模世界往往**缺乏精细的细节**，看起来比较“空”或不真实。\n\n简单说：**他们想让用户能像画地图一样自由设计世界布局，并生成既连贯又细节丰富的3D场景。**\n\n### (3) 论文的核心思路是什么？\n核心思路是 **“分两步走” + “借用强大的现有模型”**：\n\n1. **第一步：搭建“骨架”**\n   - 使用一个叫 **TRELLIS** 的现成高质量3D生成模型作为“基模”。\n   - 不是让TRELLIS单独生成每个小方块，而是**让多个TRELLIS生成过程互相“对话”**。\n   - 通过一种叫 **“潜在空间融合”** 的技术，让相邻区域的生成过程共享信息，确保它们边界衔接自然，并且整个世界的物体大小比例一致。\n\n2. **第二步：添加“血肉”**\n   - 在第一步生成的“骨架世界”基础上，训练一个**细节增强网络**。\n   - 这个网络专门负责**添加精细的细节**（比如建筑上的窗户纹理、树叶的层次），同时**不破坏**第一步已经建立好的整体结构和比例。\n\n**关键创新**：他们设计了一种方法，能让用户画的**任意形状**的分割图（不仅是网格）去指导第一步的生成过程，实现了真正的布局自由。\n\n### (4) 结果怎么样？\n根据论文中的实验：\n- **在可控性和一致性上显著优于现有方法**：用户画什么形状的地图，就能生成什么形状的世界，且物体尺度全局一致。\n- **生成的场景更真实、细节更丰富**：比直接拼接3D资产的方法（如SynCity）在视觉连贯性和细节上更好。\n- **泛化能力强**：即使用于训练“世界生成”的数据不多，但因为巧妙地借用了TRELLIS这个强大基模的知识，模型也能处理各种不同类型的场景（城市、自然风景等）。\n\n### (5) 模型结构与整体流程\n**基模**：**TRELLIS**。它是一个先进的、基于扩散模型的3D生成器，擅长生成单个高质量的3D物体或小场景。\n\n**整体流程（结合论文方法描述）**：\n\n1. **输入处理**：\n   - 用户提供一张**语义分割图**（比如PNG图片）和对应的**文本提示**（如“蓝色区域是湖泊，绿色是森林”）。\n\n2. **步骤一：空间区域扩展（搭建骨架）**\n   - 将用户的分割图覆盖到整个3D世界空间上。\n   - **潜在空间融合**：将世界划分为许多重叠的3D方块。对于每个方块，用TRELLIS模型开始生成，但关键步骤在于——**相邻方块在生成过程中，会在它们的重叠区域交换信息（融合潜在特征）**。这确保了边界无缝衔接。\n   - **尺度感知优化**：同时，有一个优化过程确保不同区域（如“森林”区域和“城市”区域）的物体，其相对大小符合常识。\n\n3. **步骤二：细节增强（添加血肉）**\n   - 将上一步生成的、结构正确但略显粗糙的“骨架世界”输入到**细节增强网络**中。\n   - 这个网络是一个**U-Net结构的3D卷积神经网络**。它会分析局部细节和全局结构，然后**输出一个“细节残差”**——也就是需要添加的精细纹理和几何细节。\n   - 将这个细节残差加到“骨架世界”上，就得到了最终细节丰富的3D世界。\n\n4. **输出**：\n   - 一个**完整的、高分辨率的3D场景**，其布局与用户输入的分割图完全一致，且内部物体尺度协调、细节逼真。\n\n**流程图简化理解**：\n```\n用户输入（分割图 + 文本）\n        ↓\n[ 空间区域扩展模块 ]\n（利用TRELLIS基模，进行潜在空间融合）\n        ↓\n得到“粗糙但结构正确的3D骨架世界”\n        ↓\n[ 细节增强网络 ]\n（U-Net结构，添加精细细节）\n        ↓\n最终输出：细节丰富的、符合用户布局的3D世界\n```\n\n**总结**：这篇论文的核心是提出了一套方法，让用户可以**通过画地图的方式来“编程”一个3D世界**。它通过巧妙地协调多个现有3D生成器的工作，并额外添加一个细节增强步骤，解决了大规模3D生成中的布局死板、尺度失调和细节匮乏三大难题。"
+  },
+  "images_meta": {
+    "2605.00503": [
+      {
+        "path": "https://arxiv.org/html/2605.00503v1/x2.png",
+        "caption": "Figure 2:Overall training pipeline of EOSTok.The 1D ViT tokenizer and the autoregressive generative model are jointly trained. The training objectives include (1)reconstruction lossℒ𝖵𝖰−𝖵𝖠𝖤\\mathcal{L}_{\\mathsf{VQ-VAE}}that optimizes the tokenizer; (2)generative loss(next token prediction)ℒ𝖭𝖳𝖯\\mathcal{L}_{\\mathsf{NTP}}that optimizes AR model and supervises the latent space; (3)AR prediction reconstruction(APR) loss (section˜3.2)ℒ𝖠𝖯𝖱\\mathcal{L}_{\\mathsf{APR}}that decodes next token predictions to the pixel space and provides end-to-end generative feedback; and (4)representation alignment lossℒ𝖺𝗅𝗂𝗀𝗇\\mathcal{L}_{\\mathsf{align}}(section˜3.3) that aligns both the latent space and decoder to semantic VFM embeddings.",
+        "caption_zh": "图2：EOSTok的整体训练流程。一维视觉Transformer（ViT）分词器与自回归生成模型联合训练。训练目标包括：(1) 优化分词器的重建损失ℒ𝖵𝖰−𝖵𝖠𝖤；(2) 优化自回归模型并监督潜在空间的生成损失（下一词预测）ℒ𝖭𝖳𝖯；(3) 自回归预测重建（APR）损失ℒ𝖠𝖯𝖱（见第3.2节），该损失将下一词预测解码至像素空间并提供端到端的生成反馈；(4) 表征对齐损失ℒ𝖺𝗅𝗂𝗀𝗇（见第3.3节），用于将潜在空间和解码器与语义视觉基础模型（VFM）嵌入对齐。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00503v1/x4.png",
+        "caption": "Figure 4:Variants of representation injection into 1D VAE encoder.Image patches are passed to a vision foundation model (e.g., DINOv2) to extract semantic VFM embeddings. To inject this representation into the 1D ViT encoder, (a)direct Alignmentmeans aligning the latent space of tokenizers to the VFM embedding; (b)direct substitutionreplaces 2D image patches with the VFM embedding; and (c)implicit alignmentaligns the hidden patch embedding to VFM representation.",
+        "caption_zh": "图4：将表征注入一维VAE编码器的变体方法。图像块被输入视觉基础模型（如DINOv2）以提取语义VFM嵌入。为将此表征注入一维ViT编码器：（a）直接对齐指将分词器的潜在空间与VFM嵌入对齐；（b）直接替换指用VFM嵌入替代二维图像块；（c）隐式对齐指将隐藏的图像块嵌入与VFM表征对齐。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00503v1/x3.png",
+        "caption": "Figure 3:Next-token-prediction loss hacking the latent space.(a) NTP loss encourages the tokenizer to use only a subset of tokens in the codebook, and causes the codebook to collapse. This is alleviated by the APR loss, which regulates the latent space by end-to-end feedback from the pixel space. (b) The tokenizer hacks the NTP loss by using very few tokens.Table 1:Joint training with APR loss prevents latent space collapsing and improves AR generation quality.Numbers are reported by training a EOSTok-L model for 50 epochs. Images are generatedwithoutclassifier guidance and the prediction accuracy of the AR model is evaluated on the validation dataset. Code usage counts the code with a frequency of more than5%/K5\\%/Kon the validation dataset.rFID↓\\downarrowgFID↓\\downarrowAR Acc.Code UsageBaseline1.093.8211.8%99.8%Vanilla E2E4.928.0130.2%51.8%+ APR loss1.023.3211.9%99.7%",
+        "caption_zh": "图 3：下一词元预测损失对潜在空间的“破解”。(a) NTP 损失促使分词器仅使用码本中的部分词元，并导致码本坍缩。APR 损失通过来自像素空间的端到端反馈对潜在空间进行调节，从而缓解此问题。(b) 分词器通过使用极少数词元来“破解”NTP 损失。表 1：结合 APR 损失的联合训练可防止潜在空间坍缩并提升自回归生成质量。数值通过训练 EOSTok-L 模型 50 轮得到。图像生成过程未使用分类器引导，且自回归模型的预测精度在验证数据集上进行评估。“代码使用率”统计了在验证数据集上出现频率高于 5%/K 的编码数量。rFID↓ gFID↓ AR 准确率 代码使用率 基线 1.09 3.82 11.8% 99.8% 原始端到端 4.92 8.01 30.2% 51.8% + APR 损失 1.02 3.32 11.9% 99.7%",
+        "role": "pipeline_3"
+      }
+    ],
+    "2605.00658": [
+      {
+        "path": "https://arxiv.org/html/2605.00658v1/x2.png",
+        "caption": "Figure 2.Architecture of UniVidX (usingUniVid-Intrinsicas an example).Multimodal inputs are encoded and passed through Stochastic Condition Masking (SCM), which randomly assigns them as clean conditions or noisy targets. The DiT blocks are equipped with Decoupled Gated LoRA (DGL): distinct LoRAs are assigned to each modality and are activated only for target inputs while deactivated for conditions (indicated by the faded modules). Modality consistency is ensured via Cross-Modal Self-Attention (CMSA), where queries are modality-specific while keys/values are shared.",
+        "caption_zh": "图2. UniVidX 架构（以 UniVid-Intrinsics 为例）。多模态输入经编码后，通过随机条件掩码（SCM）进行处理，该模块随机将其分配为干净条件或噪声目标。DiT 块配备了解耦门控 LoRA（DGL）：每个模态分配有独立的 LoRA，且仅对目标输入激活，对条件输入则停用（以淡化模块表示）。跨模态自注意力（CMSA）确保模态一致性，其中查询为模态专用，而键/值则共享。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00658v1/x1.png",
+        "caption": "Figure 1.UniVidXis a unified multimodal framework designed for versatile video generation, which supports diverse paradigms (Text→\\toX, X→\\toX, and Text&X→\\toX; ’X’ denotes visual modality like albedo).\nWe instantiate this framework into two models: 1)UniVid-Intrinsic(top), which supports tasks including text-to-intrinsic, inverse rendering, and video relighting; and 2)UniVid-Alpha(bottom), which supports tasks including text-to-RGBA, video matting, and video inpainting.\nNotably, by leveraging VDM priors, both models demonstrate remarkable data efficiency, generalizing well despite being trained with small-scale data.",
+        "caption_zh": "图1. UniVidX 是一个统一的多模态视频生成框架，支持多样化范式（文本→X、X→X 及文本&X→X；其中‘X’代表如反照率等视觉模态）。我们将该框架具体化为两个模型：1) UniVid-Intrinsic（上图），支持文本生成内在属性、逆向渲染、视频重光照等任务；2) UniVid-Alpha（下图），支持文本生成RGBA、视频抠像、视频修复等任务。值得注意的是，通过利用视频扩散模型先验，两个模型均展现出显著的数据效率，仅使用小规模数据训练即能实现良好的泛化能力。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00658v1/x3.png",
+        "caption": "Figure 3.Visual comparison for text-to-intrinsic generation.Compared to IntrinsiX, which exhibits noticeable artifacts and modality misalignment (indicated byred boxes), ourUniVid-Intrinsicproduces superior results. Our method generates temporally coherent video clips with precise alignment across RGB, albedo, and normal maps, effectively capturing complex geometries and fine textures like the cat’s fur. Please zoom in to find more details.",
+        "caption_zh": "图 3：文本到本征生成的视觉对比。与 IntrinsiX 相比（其存在明显的伪影和模态失准，如红色框所示），我们的 UniVid-Intrinsic 产生了更优的结果。我们的方法生成了时间连贯的视频片段，在 RGB、反照率和法线贴图之间实现了精确对齐，有效捕捉了复杂几何和精细纹理（如猫毛）。请放大以查看更多细节。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2605.00781": [
+      {
+        "path": "https://arxiv.org/html/2605.00781v1/x2.png",
+        "caption": "Figure 2:Visualization of the overall generation pipeline.\nFirst, we estimate the structured latent for a large world conditioned by a segmentation map and a text prompt for each segment using latent fusion (top).\nThen, we further upscale the resolution of the generated scene using the detail enhancer.\nDetail enhancer includes an MLP layer to incorporate condition latent and noise, as well as a flow Transformer (bottom).",
+        "caption_zh": "图 2：整体生成流程的可视化。首先，我们通过潜在融合，基于分割图和各分段的文本提示，估计大范围场景的结构化潜在表示（上图）。随后，利用细节增强器进一步提升生成场景的分辨率。细节增强器包含一个用于融合条件潜在与噪声的 MLP 层，以及一个流式 Transformer（下图）。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00781v1/x1.png",
+        "caption": "Figure 1:(Left) A generated sample of the center of the city, where the four edges consist of green forest.\nOur model takes as input a segment map with text prompts for each segment and produces a world that corresponds to the input segment map (violet box) with high quality (blue and orange boxes).\n(Right) Two examples of generated worlds in large-scale.",
+        "caption_zh": "图 1：（左）生成的城市中心区域样本，其四周边缘为绿色森林环绕。本模型以包含各区域文本提示的分割图作为输入，并生成与输入分割图（紫色框）相对应的高质量虚拟世界（蓝色与橙色框）。（右）两个大规模生成虚拟世界的示例。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00781v1/fig/asset/qual_freeform/desertcastle_input.png",
+        "caption": "(a)(b)(c)(d)(a)(b)(c)(d)(a)(b)(c)(d)Figure 3:Qualitative results conditioned by arbitrary shaped segment maps with user-defined text prompts.\nOur model creates the 3D world corresponds to the input map regardless of its size and shape.\nWe note thatSyncity cannot generate the scene from such a complicated segment map.",
+        "caption_zh": "(a)(b)(c)(d)(a)(b)(c)(d)(a)(b)(c)(d)图3：基于任意形状分割图及用户定义文本提示的定性生成结果。无论输入分割图的尺寸与形状如何，我们的模型均能生成与之对应的三维场景。需要指出，Syncity无法从如此复杂的分割图中生成场景。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2604.23195": {
+      "abstract": "Analog circuit design relies heavily on reusing existing intellectual property (IP), yet searching across heterogeneous representations such as SPICE netlists, schematics, and functional descriptions remains challenging. Existing methods are largely limited to exact matching within a single modality, failing to capture cross-modal semantic relationships. To bridge this gap, we present AnalogRetriever, a unified tri-modal retrieval framework for analog circuit search. We first build a high-quality dataset on top of Masala-CHAI through a two-stage repair pipeline that raises the netlist compile rate from 22\\% to 100\\%. Built on this foundation, AnalogRetriever encodes schematics and descriptions with a vision-language model and netlists with a port-aware relational graph convolutional network, mapping all three modalities into a shared embedding space via curriculum contrastive learning. Experiments show that AnalogRetriever achieves an average Recall@1 of 75.2\\% across all six cross-modal retrieval directions, significantly outperforming existing baselines. When integrated into the AnalogCoder agentic framework as a retrieval-augmented generation module, it consistently improves functional pass rates and enables previously unsolved tasks to be completed. Our code and dataset will be released.",
+      "comments": "10 pages, 7 figures. Yihan Wang and Lei Li contributed equally to this paper"
+    },
+    "2604.24026": {
+      "abstract": "LLM agents increasingly rely on reusable skills, capability packages that combine instructions, control flow, constraints, and tool calls. In most current agent systems, however, skills are still represented by text-heavy artifacts, including SKILL{.}md-style documents and structured records whose machine-usable evidence remains embedded largely in natural-language descriptions. This poses a challenge for skill-centered agent systems: managing skill collections and using skills to support agent both require reasoning over invocation interfaces, execution structure, and concrete side effects that are often entangled in a single textual surface. An explicit representation of skill knowledge may therefore help make these artifacts easier for machines to acquire and leverage. Drawing on Memory Organization Packets, Script Theory, and Conceptual Dependency from Schank and Abelson's classical work on linguistic knowledge representation, we introduce what is, to our knowledge, the first structured representation for agent skill artifacts that disentangles skill-level scheduling signals, scene-level execution structure, and logic-level action and resource-use evidence: the Scheduling-Structural-Logical (SSL) representation. We instantiate SSL with an LLM-based normalizer and evaluate it on a corpus of skills in two tasks, Skill Discovery and Risk Assessment, and superiorly outperform the text-only baselines: in Skill Discovery, SSL improves MRR from 0.573 to 0.707; in Risk Assessment, it improves macro F1 from 0.744 to 0.787. These findings reveal that explicit, source-grounded structure makes agent skills easier to search and review. They also suggest that SSL is best understood as a practical step toward more inspectable, reusable, and operationally actionable skill representations for agent systems, rather than as a finished standard or an end-to-end mechanism for managing and using skills.",
+      "comments": "21 pages, 1 figure"
+    },
+    "2605.00416": {
+      "abstract": "Generalist robot policies increasingly benefit from large-scale pretraining, but offline data alone is insufficient for robust real-world deployment. Deployed robots encounter distribution shifts, long-tail failures, task variations, and human correction opportunities that fixed demonstration datasets cannot fully capture. We present Learning While Deploying (LWD), a fleet-scale offline-to-online reinforcement learning framework for continual post-training of generalist Vision-Language-Action (VLA) policies. Starting from a pretrained VLA policy, LWD closes the loop between deployment, shared physical experience, policy improvement, and redeployment by using autonomous rollouts and human interventions collected across a robot fleet. To stabilize learning from heterogeneous, sparse-reward fleet data, LWD combines Distributional Implicit Value Learning (DIVL) for robust value estimation with Q-learning via Adjoint Matching (QAM) for policy extraction in flow-based VLA action generators. We validate LWD on a fleet of 16 dual-arm robots across eight real-world manipulation tasks, including semantic grocery restocking and 3--5 minute long-horizon tasks. A single generalist policy improves as fleet experience accumulates, reaching an average success rate of 95%, with the largest gains on long-horizon tasks.",
+      "comments": "No"
+    },
+    "2605.00503": {
+      "abstract": "Autoregressive image modeling relies on visual tokenizers to compress images into compact latent representations. We design an end-to-end training pipeline that jointly optimizes reconstruction and generation, enabling direct supervision from generation results to the tokenizer. This contrasts with prior two-stage approaches that train tokenizers and generative models separately. We further investigate leveraging vision foundation models to improve 1D tokenizers for autoregressive modeling. Our autoregressive generative model achieves strong empirical results, including a state-of-the-art FID score of 1.48 without guidance on ImageNet 256x256 generation.",
+      "comments": "In ICML 2026 (Spotlight)"
+    },
+    "2605.00658": {
+      "abstract": "Recent progress has shown that video diffusion models (VDMs) can be repurposed for diverse multimodal graphics tasks. However, existing methods often train separate models for each problem setting, which fixes the input-output mapping and limits the modeling of correlations across modalities. We present UniVidX, a unified multimodal framework that leverages VDM priors for versatile video generation. UniVidX formulates pixel-aligned tasks as conditional generation in a shared multimodal space, adapts to modality-specific distributions while preserving the backbone's native priors, and promotes cross-modal consistency during synthesis. It is built on three key designs. Stochastic Condition Masking (SCM) randomly partitions modalities into clean conditions and noisy targets during training, enabling omni-directional conditional generation instead of fixed mappings. Decoupled Gated LoRA (DGL) introduces per-modality LoRAs that are activated when a modality serves as the generation target, preserving the strong priors of the VDM. Cross-Modal Self-Attention (CMSA) shares keys and values across modalities while keeping modality-specific queries, facilitating information exchange and inter-modal alignment. We instantiate UniVidX in two domains: UniVid-Intrinsic, for RGB videos and intrinsic maps including albedo, irradiance, and normal; and UniVid-Alpha, for blended RGB videos and their constituent RGBA layers. Experiments show that both models achieve performance competitive with state-of-the-art methods across distinct tasks and generalize robustly to in-the-wild scenarios, even when trained on fewer than 1,000 videos. Project page:this https URL",
+      "comments": "Project page: <a class=\"link-external link-https\" href=\"https://houyuanchen111.github.io/UniVidX.github.io/\" rel=\"external noopener nofollow\">this https URL</a> Accepted to ACM Transactions on Graphics (Proceedings of SIGGRAPH 2026)"
+    },
+    "2605.00754": {
+      "abstract": "Reward models (RMs) have become an indispensable fixture of the language model (LM) post-training playbook, enabling policy alignment and test-time scaling. Research on the application of RMs in code generation, however, has been comparatively sparse, with existing work largely focusing on execution feedback. This choice constrains post-training to optimizing functional correctness over self-contained executable code. In this work, we examine the training and evaluation of multilingual, multi-criteria code RMs. To this end, we first compile Themis-CodeRewardBench, a benchmark to evaluate code RMs across five preference dimensions (i.e., criteria) and eight programming languages, on which we profile 50+ code, math, and general-purpose RMs. Observing the limited proficiency of current RMs beyond scoring for functional correctness, we develop Themis-CodePreference, the largest open-source collection of code preferences to date (more than 350k preference pairs), and use it to train Themis-RM, a suite of multilingual code reward models for flexible multi-criteria scoring, ranging in size from 600M to 32B parameters. Our experiments and ablations demonstrate positive scaling trends, strong cross-lingual transfer when training on diverse preferences, and the importance of multi-criteria training for reliable code reward modeling.",
+      "comments": ""
+    },
+    "2605.00781": {
+      "abstract": "3D world generation is essential for applications such as immersive content creation or autonomous driving simulation. Recent advances in 3D world generation have shown promising results; however, these methods are constrained by grid layouts and suffer from inconsistencies in object scale throughout the entire world. In this work, we introduce a novel framework, Map2World, that first enables 3D world generation conditioned on user-defined segment maps of arbitrary shapes and scales, ensuring global-scale consistency and flexibility across expansive environments. To further enhance the quality, we propose a detail enhancer network that generates fine details of the world. The detail enhancer enables the addition of fine-grained details without compromising overall scene coherence by incorporating global structure information. We design the entire pipeline to leverage strong priors from asset generators, achieving robust generalization across diverse domains, even under limited training data for scene generation. Extensive experiments demonstrate that our method significantly outperforms existing approaches in user-controllability, scale consistency, and content coherence, enabling users to generate 3D worlds under more complex conditions.",
+      "comments": "project page: <a class=\"link-external link-https\" href=\"https://robot0321.github.io/Map2World/index.html\" rel=\"external noopener nofollow\">this https URL</a>"
+    },
+    "2605.00809": {
+      "abstract": "In this paper, we present \\textbf{Gen}erative \\textbf{L}anguage-\\textbf{I}mage \\textbf{P}re-training (GenLIP), a minimalist generative pretraining framework for Vision Transformers (ViTs) designed for multimodal large language models (MLLMs). To better align vision encoders with the autoregressive nature of LLMs, GenLIP trains a ViT to predict language tokens directly from visual tokens using a standard language modeling objective, without contrastive batch construction or an additional text decoder. This design offers three key advantages: (1) \\textbf{Simplicity}: a single transformer jointly models visual and textual tokens; (2) \\textbf{Scalability}: it scales effectively with both data and model size; and (3) \\textbf{Performance}: it achieves competitive or superior results across diverse multimodal benchmarks. Trained on 8B samples from Recap-DataComp-1B, GenLIP matches or surpasses strong baselines despite using substantially less pretraining data. After continued pretraining on multi-resolution images at native aspect ratios, GenLIP further improves on detail-sensitive tasks such as OCR and chart understanding, making it a strong foundation for vision encoders in MLLMs.",
+      "comments": "24 pages, 9 figures"
+    }
+  }
+}

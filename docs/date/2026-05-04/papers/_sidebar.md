@@ -1,0 +1,14 @@
+- [**2026-05-04 日报**](/2026-05-04/)
+
+  - **3D重建/生成**
+    - [Map2World | 分割地图生成三维世界](/2026-05-04/papers/2605.00781.md)
+  - **视频生成模型**
+    - [UniVidX | 统一框架多模态视频生成](/2026-05-04/papers/2605.00658.md)
+  - **图片生成模型**
+    - [End-to-End Autoregressive... | 端到端联合训练图像生成](/2026-05-04/papers/2605.00503.md)
+  - [**全量简报 (5 篇)**](/2026-05-04/briefs.md)
+    - [AnalogRetriever | 跨模态模拟电路检索框架  ](/2026-05-04/briefs.md?id=analogretriever)
+    - [From Skill Text to Skill Structure | 为智能体技能构建结构化表示  ](/2026-05-04/briefs.md?id=from-skill-text-to-skill-structure)
+    - [Learning while Deploying | 机器人持续部署学习](/2026-05-04/briefs.md?id=learning-while-deploying)
+    - [Themis | 训练多标准代码奖励模型](/2026-05-04/briefs.md?id=themis)
+    - [Let ViT Speak | 训练ViT直接生成语言描述](/2026-05-04/briefs.md?id=let-vit-speak)

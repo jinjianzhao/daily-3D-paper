@@ -26,18 +26,18 @@
 
 | 简称 | 简介 | 领域 | 论文全名 | Votes |
 |------|------|------|----------|------:|
-| [**The Last Human-Written Paper**](/2026-05-01/briefs.md?id=the-last-human-written-paper) | 用可执行研究包替代传统论文 | 科学知识表示与传播;研究流程与成果标准化;面向智能体的研究制品 | The Last Human-Written Paper: Agent-Native Research Artifacts | 10 |
+| [**The Last Human-Written Paper**](/2026-05-01/briefs.md?id=the-last-human-written-paper) | 用可执行研究包替代传统论文 | 科学知识表示与传播;研究流程与成果标准化;面向智能体的研究制品 | The Last Human-Written Paper: Agent-Native Research Artifacts | 12 |
 | [**Safety Drift After Fine-Tuning**](/2026-05-01/briefs.md?id=safety-drift-after-fine-tuning) | 微调后安全性会漂移 | 大模型安全;微调安全性评估;安全漂移分析 | Safety Drift After Fine-Tuning: Evidence from High-Stakes Domains |  |
-| [**Nemotron 3 Nano Omni**](/2026-05-01/briefs.md?id=nemotron-3-nano-omni) | 新型高效多模态模型发布 | 多模态大模型；视觉语言模型；多模态推理效率优化 | Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence | 15 |
+| [**Nemotron 3 Nano Omni**](/2026-05-01/briefs.md?id=nemotron-3-nano-omni) | 新型高效多模态模型发布 | 多模态大模型；视觉语言模型；多模态推理效率优化 | Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence | 16 |
 | [**Length Value Model**](/2026-05-01/briefs.md?id=length-value-model) | 剩余生成长度建模 | 自然语言处理;语言模型;生成长度控制 | Length Value Model: Scalable Value Pretraining for Token-Level Length Modeling | 19 |
-| [**Co-Evolving Policy...**](/2026-05-01/briefs.md?id=co-evolving-policy) | 共进化策略蒸馏统一专家能力 | 机器学习;强化学习;多模态智能体策略蒸馏 | Co-Evolving Policy Distillation | 43 |
-| [**Efficient Training...**](/2026-05-01/briefs.md?id=efficient-training) | 用消费级GPU高效微调大模型 | 自然语言处理;模型高效训练;流水线并行调度 | Efficient Training on Multiple Consumer GPUs with RoundPipe | 31 |
-| [**Step-level Optimization...**](/2026-05-01/briefs.md?id=step-level-optimization) | GUI智能体动态计算优化 | 智能体系统;人机交互;GUI任务执行 | Step-level Optimization for Efficient Computer-use Agents | 11 |
+| [**Co-Evolving Policy...**](/2026-05-01/briefs.md?id=co-evolving-policy) | 共进化策略蒸馏统一专家能力 | 机器学习;强化学习;多模态智能体策略蒸馏 | Co-Evolving Policy Distillation | 46 |
+| [**Efficient Training...**](/2026-05-01/briefs.md?id=efficient-training) | 用消费级GPU高效微调大模型 | 自然语言处理;模型高效训练;流水线并行调度 | Efficient Training on Multiple Consumer GPUs with RoundPipe | 34 |
+| [**Step-level Optimization...**](/2026-05-01/briefs.md?id=step-level-optimization) | GUI智能体动态计算优化 | 智能体系统;人机交互;GUI任务执行 | Step-level Optimization for Efficient Computer-use Agents | 13 |
 | [**Compliance versus Sensibility**](/2026-05-01/briefs.md?id=compliance-versus-sensibility) | 大模型推理的可控性研究 | 自然语言处理;语言模型推理;逻辑模式解耦 | Compliance versus Sensibility: On the Reasoning Controllability in Large Language Models | 5 |
-| [**Heterogeneous Scientific...**](/2026-05-01/briefs.md?id=heterogeneous-scientific) | 异构科学基础模型协作框架 | 人工智能系统;多智能体;科学基础模型协作 | Heterogeneous Scientific Foundation Model Collaboration | 192 |
+| [**Heterogeneous Scientific...**](/2026-05-01/briefs.md?id=heterogeneous-scientific) | 异构科学基础模型协作框架 | 人工智能系统;多智能体;科学基础模型协作 | Heterogeneous Scientific Foundation Model Collaboration | 193 |
 | [**InteractWeb-Bench**](/2026-05-01/briefs.md?id=interactweb-bench) | 多模态网站生成代理的盲执行问题 | 多模态交互;代码生成;网站生成基准 | InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation? | 9 |
 | [**Instruction-Guided Poetry...**](/2026-05-01/briefs.md?id=instruction-guided-poetry) | 阿拉伯语可控诗歌生成 | 自然语言处理;文本生成;指令微调诗歌生成 | Instruction-Guided Poetry Generation in Arabic and Its Dialects | 2 |
-| [**Claw-Eval-Live**](/2026-05-01/briefs.md?id=claw-eval-live) | 评估智能体实时工作流程的基准   | 自然语言处理;智能体评估;工作流自动化基准   | Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows | 29 |
+| [**Claw-Eval-Live**](/2026-05-01/briefs.md?id=claw-eval-live) | 评估智能体实时工作流程的基准   | 自然语言处理;智能体评估;工作流自动化基准   | Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows | 31 |
 | [**FlashRT**](/2026-05-01/briefs.md?id=flashrt) | 提升长上下文大模型对抗效率 | 自然语言处理;大语言模型安全;对抗攻击优化 | FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption |  |
-| [**Intern-Atlas**](/2026-05-01/briefs.md?id=intern-atlas) | 构建AI研究方法演化图谱   | 科学知识图谱;方法关系挖掘;演化链自动构建   | Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists | 30 |
+| [**Intern-Atlas**](/2026-05-01/briefs.md?id=intern-atlas) | 构建AI研究方法演化图谱   | 科学知识图谱;方法关系挖掘;演化链自动构建   | Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists | 37 |
 | [**Synthetic Computers...**](/2026-05-01/briefs.md?id=synthetic-computers) | 规模化合成计算机模拟长程办公任务 | Agentic AI;智能体模拟环境构建;办公环境合成与长程模拟 | Synthetic Computers at Scale for Long-Horizon Productivity Simulation | 15 |
