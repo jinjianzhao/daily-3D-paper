@@ -1,37 +1,33 @@
 # 2026-05-05 3D 论文日报
 
-共 **18** 篇，重点 **6** 篇
+共 **14** 篇，重点 **3** 篇
 
 ## 重点论文
 
 ### 3D重建/生成
 
-- [**Prox-E** | 基于原语抽象精细编辑三维模型 | Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions](/2026-05-05/papers/2604.23774.md)
-- [**Map2World** | 分段地图生成三维世界计算机图形学;三维场景生成;可控三维世界生成现有方法受网格限制且比例不一致，难以生成全局一致的三维世界提出Map2World框架，利用任意形状的分段地图控制生成，并引入细节增强网络提升质量 | Map2World: Segment Map Conditioned Text to 3D World Generation](/2026-05-05/papers/2605.00781.md)
+- [**Generative Modeling...** | 轨道空间粒子流匹配生成建模 | Generative Modeling with Orbit-Space Particle Flow Matching](/2026-05-05/papers/2605.02222.md)
 
 ### 视频生成模型
 
-- [**Talker-T2AV** | 联合音视频生成的口语人脸合成 | Talker-T2AV: Joint Talking Audio-Video Generation with Autoregressive Diffusion Modeling](/2026-05-05/papers/2604.23586.md)
-- [**UniVidX** | 多模态视频统一生成框架 | UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors](/2026-05-05/papers/2605.00658.md)
+- [**Motion-Aware Caching...** | 运动感知缓存加速视频生成 | Motion-Aware Caching for Efficient Autoregressive Video Generation](/2026-05-05/papers/2605.01725.md)
 
 ### 图片生成模型
 
-- [**When Do...** | 扩散模型多对象生成能力探究 | When Do Diffusion Models learn to Generate Multiple Objects?](/2026-05-05/papers/2605.00273.md)
-- [**End-to-End Autoregressive...** | 端到端自回归图像生成 | End-to-End Autoregressive Image Generation with 1D Semantic Tokenizer](/2026-05-05/papers/2605.00503.md)
+- [**ComboStoc** | 提升扩散模型组合覆盖能力 | ComboStoc: Combinatorial Stochasticity for Diffusion Generative Models](/2026-05-05/papers/2405.13729.md)
 
 ## [全量简报](/2026-05-05/briefs.md)
 
 | 简称 | 简介 | 领域 | 论文全名 | Votes |
 |------|------|------|----------|------:|
-| [**AnalogRetriever**](/2026-05-05/briefs.md?id=analogretriever) | 多模态模拟电路检索 | 电路设计；跨模态检索；模拟电路设计 | AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval | 1 |
-| [**From Skill Text to Skill Structure**](/2026-05-05/briefs.md?id=from-skill-text-to-skill-structure) | 提出大模型智能体的技能结构化表示方法 | 大语言模型与智能体;智能体技能管理;技能结构化表示 | From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills | 9 |
-| [**Better Models, Faster Training**](/2026-05-05/briefs.md?id=better-models,-faster-training) | 单细胞基础模型用sigmoid注意力替代softmax   | 计算生物学;单细胞数据分析;单细胞基础模型注意力机制   | Better Models, Faster Training: Sigmoid Attention for single-cell Foundation Models | 1 |
-| [**Web2BigTable**](/2026-05-05/briefs.md?id=web2bigtable) | 网络信息搜索与提取框架 | 自然语言处理;智能体系统;网络信息提取 | Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction | 25 |
-| [**Online Self-Calibration...**](/2026-05-05/briefs.md?id=online-self-calibration) | 在线自校准缓解视觉语言模型幻觉 | 多模态学习;视觉语言模型;幻觉缓解 | Online Self-Calibration Against Hallucination in Vision-Language Models | 1 |
-| [**Trees to Flows and Back**](/2026-05-05/briefs.md?id=trees-to-flows-and-back) | 统一决策树与扩散模型   | 机器学习;生成模型;树与扩散模型统一   | Trees to Flows and Back: Unifying Decision Trees and Diffusion Models | 3 |
-| [**Learning while Deploying**](/2026-05-05/briefs.md?id=learning-while-deploying) | 机器人部署时持续学习策略 | 机器人;机器人控制;大规模机器人策略持续训练 | Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies | 9 |
-| [**Stable-GFlowNet**](/2026-05-05/briefs.md?id=stable-gflownet) | 稳定生成流网络提升大模型红队攻击多样性   | 自然语言处理;语言模型安全评估;红队攻击生成   | Stable-GFlowNet: Toward Diverse and Robust LLM Red-Teaming via Contrastive Trajectory Balance | 9 |
-| [**Learning to...**](/2026-05-05/briefs.md?id=learning-to) | 多智能体黑盒协同优化学习 | 多智能体系统;分布式优化;黑盒共识优化 | Learning to Act and Cooperate for Distributed Black-Box Consensus Optimization | 1 |
-| [**Themis**](/2026-05-05/briefs.md?id=themis) | 训练多语言多准则代码奖励模型 | 自然语言处理;代码生成;奖励模型训练 | Themis: Training Robust Multilingual Code Reward Models for Flexible Multi-Criteria Scoring | 1 |
-| [**LASE**](/2026-05-05/briefs.md?id=lase) | 语音编码跨脚本一致性 | 语音合成;多语言语音克隆;跨脚本说话人编码 | LASE: Language-Adversarial Speaker Encoding for Indic Cross-Script Identity Preservation | 1 |
-| [**Let ViT Speak**](/2026-05-05/briefs.md?id=let-vit-speak) | 让ViT直接预测语言标记 | 计算机视觉;多模态学习;视觉语言预训练 | Let ViT Speak: Generative Language-Image Pre-training | 9 |
+| [**From Context to Skills**](/2026-05-05/briefs.md?id=from-context-to-skills) | 语言模型从上下文学习技能 | 自然语言处理;大语言模型;上下文技能学习 | From Context to Skills: Can Language Models Learn from Context Skillfully? | 59 |
+| [**Repetition over Diversity**](/2026-05-05/briefs.md?id=repetition-over-diversity) | 重复高质量数据提升德语模型训练效率 | 自然语言处理;语言模型预训练;德语语料过滤策略 | Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling | 11 |
+| [**Hierarchical Abstract...**](/2026-05-05/briefs.md?id=hierarchical-abstract) | 跨文档检索增强生成索引优化 | 自然语言处理;检索增强生成;知识库索引构建 | Hierarchical Abstract Tree for Cross-Document Retrieval-Augmented Generation | 1 |
+| [**Persistent Visual Memory**](/2026-05-05/briefs.md?id=persistent-visual-memory) | 保持长序列生成中视觉感知持续准确 | 多模态大模型;视觉语言理解;长序列视觉感知 | Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs | 11 |
+| [**OceanPile**](/2026-05-05/briefs.md?id=oceanpile) | 构建海洋多模态基础模型数据集 | 多模态学习;多模态大语言模型;海洋科学知识建模 | OceanPile: A Large-Scale Multimodal Ocean Corpus for Foundation Models | 8 |
+| [**Code World...**](/2026-05-05/briefs.md?id=code-world) | 评估代码生成模型风险 | 代码生成与推理;大语言模型安全评估;代码世界模型风险分级 | Code World Model Preparedness Report | 1 |
+| [**T^2PO**](/2026-05-05/briefs.md?id=t^2po) | 不确定性引导多轮智能体强化学习探索 | 强化学习;智能体强化学习;多轮交互探索稳定性 | T^2PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning | 2 |
+| [**PhysicianBench**](/2026-05-05/briefs.md?id=physicianbench) | 评估大模型在真实电子病历中的诊疗能力 | 自然语言处理;智能体与多智能体系统;医疗智能体评估 | PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments | 3 |
+| [**AcademiClaw**](/2026-05-05/briefs.md?id=academiclaw) | 学生为AI智能体设难题   | 机器学习;智能体评测;学术任务评测   | AcademiClaw: When Students Set Challenges for AI Agents | 3 |
+| [**Perceptual Flow...**](/2026-05-05/briefs.md?id=perceptual-flow) | 视觉推理的感知流网络   | 多模态学习;视觉语言模型;视觉可靠性提升   | Perceptual Flow Network for Visually Grounded Reasoning | 1 |
+| [**MolmoAct2**](/2026-05-05/briefs.md?id=molmoact2) | 开放机器人通用控制模型 | 机器人;具身智能;视觉语言动作模型 | MolmoAct2: Action Reasoning Models for Real-world Deployment | 64 |
