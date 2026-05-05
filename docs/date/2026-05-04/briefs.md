@@ -1,5 +1,22 @@
 # 2026-05-04 全量简报
 
+# Soft Anisotropic Diagrams for Differentiable Image Representation
+
+**【提出一种可微分的图像表示新方法】**
+
+**arXiv**: https://arxiv.org/abs/2604.21984  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.21984  
+**HF Paper**: https://hf-mirror.com/papers/2604.21984  
+
+## 简要摘要
+
+*计算机图形学;图像表示与建模;可微图像压缩*
+
+现有图像表示方法在压缩效率、重建质量和计算速度上存在权衡问题
+我们提出了软各向异性图（SAD），通过自适应站点参数化图像，实现了高质量、高效率的图像压缩和渲染，并支持可微分的正向与逆向任务处理
+
+---
+
 # AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval
 
 **【跨模态模拟电路检索框架  】**
@@ -7,7 +24,7 @@
 **arXiv**: https://arxiv.org/abs/2604.23195  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.23195  
 **HF Paper**: https://hf-mirror.com/papers/2604.23195  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -25,7 +42,7 @@
 **arXiv**: https://arxiv.org/abs/2604.24026  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.24026  
 **HF Paper**: https://hf-mirror.com/papers/2604.24026  
-**HF Votes**: 9
+**HF Votes**: 13
 
 ## 简要摘要
 
@@ -43,6 +60,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27124  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27124  
 **HF Paper**: https://hf-mirror.com/papers/2604.27124  
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -60,7 +78,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27221  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27221  
 **HF Paper**: https://hf-mirror.com/papers/2604.27221  
-**HF Votes**: 25
+**HF Votes**: 27
 
 ## 简要摘要
 
@@ -71,6 +89,24 @@
 
 ---
 
+# MASCing: Configurable Mixture-of-Experts Behavior via Activation Steering Masks
+
+**【通过掩码配置混合专家模型行为】**
+
+**arXiv**: https://arxiv.org/abs/2604.27818  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27818  
+**HF Paper**: https://hf-mirror.com/papers/2604.27818  
+**HF Votes**: 2
+
+## 简要摘要
+
+*大语言模型；模型安全；混合专家模型行为控制*
+
+混合专家模型因稀疏激活带来安全挑战，且针对不同安全目标重新训练成本高。
+提出MASCing框架，在不重新训练的情况下，通过优化掩码覆盖路由决策，灵活控制模型在特定安全场景下的行为。
+
+---
+
 # Online Self-Calibration Against Hallucination in Vision-Language Models
 
 **【大模型自我在线校准防幻觉】**
@@ -78,7 +114,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00323  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00323  
 **HF Paper**: https://hf-mirror.com/papers/2605.00323  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -89,6 +125,24 @@
 
 ---
 
+# Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games via Reinforcement Learning
+
+**【强化视觉语言模型长序列游戏决策】**
+
+**arXiv**: https://arxiv.org/abs/2605.00347  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00347  
+**HF Paper**: https://hf-mirror.com/papers/2605.00347  
+**HF Votes**: 8
+
+## 简要摘要
+
+*机器学习;强化学习;视觉语言模型决策训练*
+
+当前视觉语言模型在交互式决策任务中的应用尚受限于短序列环境或需要大量人工轨迹数据。
+本文提出一种改进的PPO算法与轻量级回合评估器，在100+回合的《超级马里奥大陆》游戏中高效训练视觉语言模型，显著提升了游戏进度与泛化能力。
+
+---
+
 # Trees to Flows and Back: Unifying Decision Trees and Diffusion Models
 
 **【决策树与扩散模型统一理论】**
@@ -96,7 +150,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00414  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00414  
 **HF Paper**: https://hf-mirror.com/papers/2605.00414  
-**HF Votes**: 3
+**HF Votes**: 5
 
 ## 简要摘要
 
@@ -114,7 +168,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00416  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00416  
 **HF Paper**: https://hf-mirror.com/papers/2605.00416  
-**HF Votes**: 9
+**HF Votes**: 10
 
 ## 简要摘要
 
@@ -132,7 +186,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00553  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00553  
 **HF Paper**: https://hf-mirror.com/papers/2605.00553  
-**HF Votes**: 9
+**HF Votes**: 12
 
 ## 简要摘要
 
@@ -150,7 +204,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00691  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00691  
 **HF Paper**: https://hf-mirror.com/papers/2605.00691  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -168,7 +222,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00754  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00754  
 **HF Paper**: https://hf-mirror.com/papers/2605.00754  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -204,7 +258,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00809  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00809  
 **HF Paper**: https://hf-mirror.com/papers/2605.00809  
-**HF Votes**: 9
+**HF Votes**: 13
 
 ## 简要摘要
 

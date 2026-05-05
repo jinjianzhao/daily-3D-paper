@@ -23,6 +23,10 @@
     ]
   },
   "base_info": {
+    "2604.21984": {
+      "title": "Soft Anisotropic Diagrams for Differentiable Image Representation",
+      "hf_link": "https://hf-mirror.com/papers/2604.21984"
+    },
     "2604.23195": {
       "title": "AnalogRetriever: Learning Cross-Modal Representations for Analog Circuit Retrieval",
       "hf_link": "https://hf-mirror.com/papers/2604.23195"
@@ -47,6 +51,10 @@
       "title": "Web2BigTable: A Bi-Level Multi-Agent LLM System for Internet-Scale Information Search and Extraction",
       "hf_link": "https://hf-mirror.com/papers/2604.27221"
     },
+    "2604.27818": {
+      "title": "MASCing: Configurable Mixture-of-Experts Behavior via Activation Steering Masks",
+      "hf_link": "https://hf-mirror.com/papers/2604.27818"
+    },
     "2605.00273": {
       "title": "When Do Diffusion Models learn to Generate Multiple Objects?",
       "hf_link": "https://hf-mirror.com/papers/2605.00273"
@@ -54,6 +62,10 @@
     "2605.00323": {
       "title": "Online Self-Calibration Against Hallucination in Vision-Language Models",
       "hf_link": "https://hf-mirror.com/papers/2605.00323"
+    },
+    "2605.00347": {
+      "title": "Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games via Reinforcement Learning",
+      "hf_link": "https://hf-mirror.com/papers/2605.00347"
     },
     "2605.00414": {
       "title": "Trees to Flows and Back: Unifying Decision Trees and Diffusion Models",
@@ -97,14 +109,17 @@
     }
   },
   "summaries": {
+    "2604.21984": "提出一种可微分的图像表示新方法\n计算机图形学;图像表示与建模;可微图像压缩\n现有图像表示方法在压缩效率、重建质量和计算速度上存在权衡问题\n我们提出了软各向异性图（SAD），通过自适应站点参数化图像，实现了高质量、高效率的图像压缩和渲染，并支持可微分的正向与逆向任务处理",
     "2604.23195": "跨模态模拟电路检索框架  \n计算机视觉;跨模态检索;模拟电路检索  \n模拟电路设计依赖复用现有设计，但跨异构表示形式的搜索仍具挑战。  \n提出AnalogRetriever框架，通过三模态编码与课程对比学习，将原理图、描述和网表映射到共享嵌入空间，显著提升了跨模态检索性能。",
     "2604.23586": "联合音视频生成说话人像\n计算机视觉;多模态生成;说话头合成\n现有联合音视频生成模型在处理说话人合成任务时，未能有效区分高层次语义关联与低层次细节渲染的差异。\n提出自回归扩散框架，共享主干处理高层语义，轻量级解码器分别优化音视频，提升了同步性与质量。",
     "2604.23774": "基于几何基元进行细粒度三维形状编辑  \n计算机图形学；三维形状编辑；基元引导的形状编辑  \n现有以2D为中心的3D编辑方法难以实现保持物体整体特征的局部精细结构编辑。  \n提出Prox-E框架，通过几何基元抽象引导3D生成模型，实现精细可控的局部编辑。",
     "2604.24026": "为智能体技能构建结构化表示  \n智能体系统;技能表示与管理;技能结构化表示  \n当前智能体技能主要依赖文本描述，难以被机器高效利用。  \n我们提出一种调度-结构-逻辑表示法，能显著提升技能检索与风险评估效果。",
     "2604.27124": "用S形注意力改进单细胞基础模型\n生物信息学;单细胞数据分析;注意力机制优化\n训练稳定的生物基础模型需要改进注意力机制\n我们发现用S形注意力替代软最大值注意力能提升表征质量、加快训练、增强稳定性，并开源了高效实现",
     "2604.27221": "网络信息搜索与提取系统\n自然语言处理;智能代理;大规模网络结构化搜索\n当前智能网络搜索系统在深度推理和广度聚合方面存在不足，难以同时满足需求。\n提出了Web2BigTable双层多智能体框架，通过协同与自我改进机制，在广度和深度搜索任务上均实现了最佳性能。",
+    "2604.27818": "通过掩码配置混合专家模型行为\n大语言模型；模型安全；混合专家模型行为控制\n混合专家模型因稀疏激活带来安全挑战，且针对不同安全目标重新训练成本高。\n提出MASCing框架，在不重新训练的情况下，通过优化掩码覆盖路由决策，灵活控制模型在特定安全场景下的行为。",
     "2605.00273": "扩散模型多物体生成能力探究\n计算机视觉;图像生成与分析;多物体图像合成\n探讨文本到图像扩散模型在多物体生成中不可靠的原因\n构建可控数据集研究场景复杂性与概念组合对生成性能的影响",
     "2605.00323": "大模型自我在线校准防幻觉\n多模态人工智能;视觉语言模型;幻觉校准\n大型视觉语言模型常产生图像中不存在的描述，即幻觉问题，现有方法存在监督与感知能力不匹配的局限。\n我们利用模型自身判别能力，提出在线自校准框架，通过构建偏好数据并优化，显著降低幻觉并提升多模态能力。",
+    "2605.00347": "强化视觉语言模型长序列游戏决策\n机器学习;强化学习;视觉语言模型决策训练\n当前视觉语言模型在交互式决策任务中的应用尚受限于短序列环境或需要大量人工轨迹数据。\n本文提出一种改进的PPO算法与轻量级回合评估器，在100+回合的《超级马里奥大陆》游戏中高效训练视觉语言模型，显著提升了游戏进度与泛化能力。",
     "2605.00414": "决策树与扩散模型统一理论\n机器学习;生成模型;模型统一理论\n决策树与扩散模型看似迥异，但本文从数学上揭示了它们在极限情况下的深层对应关系。\n本文提出了一个共享的优化原则，并据此开发了新的高效数据生成方法和知识蒸馏方法。",
     "2605.00416": "机器人持续部署学习\n机器人；强化学习；多任务操作策略\n通用机器人策略在真实部署中面临分布偏移、长尾故障等挑战，离线数据不足以支撑鲁棒应用。\n提出了一个基于机器人机群的离线到在线强化学习框架，通过共享实际部署经验与人类干预数据，持续改进通用视觉语言动作策略，并在真实机器人任务上验证了其性能提升。",
     "2605.00503": "端到端联合训练图像生成\n计算机视觉;图像生成;自回归图像建模\n自回归图像建模通常依赖视觉分词器将图像压缩为隐式表征。\n本文设计了一个端到端训练框架，联合优化重建与生成，并利用视觉基础模型提升一维分词器。",
@@ -247,6 +262,10 @@
     ]
   },
   "arxiv_details": {
+    "2604.21984": {
+      "abstract": "We introduce Soft Anisotropic Diagrams (SAD), an explicit and differentiable image representation parameterized by a set of adaptive sites in the image plane. In SAD, each site specifies an anisotropic metric and an additively weighted distance score, and we compute pixel colors as a softmax blend over a small per-pixel top-K subset of sites. We induce a soft anisotropic additively weighted Voronoi partition (i.e., an Apollonius diagram) with learnable per-site temperatures, preserving informative gradients while allowing clear, content-aligned boundaries and explicit ownership. Such a formulation enables efficient rendering by maintaining a per-query top-K map that approximates nearest neighbors under the same shading score, allowing GPU-friendly, fixed-size local computation. We update this list using our top-K propagation scheme inspired by jump flooding, augmented with stochastic injection to provide probabilistic global coverage. Training follows a GPU-first pipeline with gradient-weighted initialization, Adam optimization, and adaptive budget control through densification and pruning. Across standard benchmarks, SAD consistently outperforms Image-GS and Instant-NGP at matched bitrate. On Kodak, SAD reaches 46.0 dB PSNR with 2.2 s encoding time (vs. 28 s for Image-GS), and delivers 4-19 times end-to-end training speedups over state-of-the-art baselines. We demonstrate the effectiveness of SAD by showcasing the seamless integration with differentiable pipelines for forward and inverse problems, efficiency of fast random access, and compact storage.",
+      "comments": ""
+    },
     "2604.23195": {
       "abstract": "Analog circuit design relies heavily on reusing existing intellectual property (IP), yet searching across heterogeneous representations such as SPICE netlists, schematics, and functional descriptions remains challenging. Existing methods are largely limited to exact matching within a single modality, failing to capture cross-modal semantic relationships. To bridge this gap, we present AnalogRetriever, a unified tri-modal retrieval framework for analog circuit search. We first build a high-quality dataset on top of Masala-CHAI through a two-stage repair pipeline that raises the netlist compile rate from 22\\% to 100\\%. Built on this foundation, AnalogRetriever encodes schematics and descriptions with a vision-language model and netlists with a port-aware relational graph convolutional network, mapping all three modalities into a shared embedding space via curriculum contrastive learning. Experiments show that AnalogRetriever achieves an average Recall@1 of 75.2\\% across all six cross-modal retrieval directions, significantly outperforming existing baselines. When integrated into the AnalogCoder agentic framework as a retrieval-augmented generation module, it consistently improves functional pass rates and enables previously unsolved tasks to be completed. Our code and dataset will be released.",
       "comments": "10 pages, 7 figures. Yihan Wang and Lei Li contributed equally to this paper"
@@ -271,6 +290,10 @@
       "abstract": "Agentic web search increasingly faces two distinct demands: deep reasoning over a single target, and structured aggregation across many entities and heterogeneous sources. Current systems struggle on both fronts. Breadth-oriented tasks demand schema-aligned outputs with wide coverage and cross-entity consistency, while depth-oriented tasks require coherent reasoning over long, branching search trajectories. We introduce \\textbf{Web2BigTable}, a multi-agent framework for web-to-table search that supports both regimes. Web2BigTable adopts a bi-level architecture in which an upper-level orchestrator decomposes the task into sub-problems and lower-level worker agents solve them in parallel. Through a closed-loop run--verify--reflect process, the framework jointly improves decomposition and execution over time via persistent, human-readable external memory, with self-evolving updates to each single-agent. During execution, workers coordinate through a shared workspace that makes partial findings visible, allowing them to reduce redundant exploration, reconcile conflicting evidence, and adapt to emerging coverage gaps. Web2BigTable sets a new state of the art on WideSearch, reaching an Avg@4 Success Rate of \\textbf{38.50} ($7.5\\times$ the second best at 5.10), Row F1 of \\textbf{63.53} (+25.03 over the second best), and Item F1 of \\textbf{80.12} (+14.42 over the second best). It also generalises to depth-oriented search on XBench-DeepSearch, achieving 73.0 accuracy. Code is available atthis https URL.",
       "comments": ""
     },
+    "2604.27818": {
+      "abstract": "Mixture-of-Experts (MoE) architectures in Large Language Models (LLMs) have significantly reduced inference costs through sparse activation. However, this sparse activation paradigm also introduces new safety challenges. Since only a subset of experts is engaged for each input, model behavior becomes coupled to routing decisions, yielding a difficult-to-control mechanism that can vary across safety-relevant scenarios. At the same time, adapting model behavior through full fine-tuning or retraining is costly, especially when developers need to rapidly configure the same model for different safety objectives. We present MASCing (MoE Activation Steering Configuration), the first framework that enables flexible reconfiguration of MoE behavior across diverse safety scenarios without retraining. MASCing uses an LSTM-based surrogate model to capture cross-layer routing dependencies and map routing logits to downstream behaviors. It then optimizes a steering matrix to identify behavior-relevant expert circuits and, at inference time, applies steering masks to the routing gates to override expert selection. This enables targeted enhancement or suppression of specific behaviors while preserving general language utility. To demonstrate its reconfigurability, we apply MASCing to two different safety-related objectives and observe consistent gains with negligible overhead across seven open-source MoE models. For multi-turn jailbreak defense, it improves the average defense success rate from 52.5% to 83.9%, with gains of up to 89.2%. For adult-content generation, MASCing enables models to comply with such requests that would otherwise be refused, increasing the average generation success rate from 52.6% to 82.0%, with gains of up to 93.0%. These results establish MASCing as a practical, lightweight, and flexible framework for scenario-specific safety reconfiguration in MoE models.",
+      "comments": ""
+    },
     "2605.00273": {
       "abstract": "Text-to-image diffusion models achieve impressive visual fidelity, yet they remain unreliable in multi-object generation. Despite extensive empirical evidence of these failures, the underlying causes remain unclear. We begin by asking how much of this limitation arises from the data itself. To disentangle data effects, we consider two regimes across different dataset sizes: (1) concept generalization, where each individual concept is observed during training under potentially imbalanced data distributions, and (2) compositional generalization, where specific combinations of concepts are systematically held out. To study these regimes, we introduce mosaic (Multi-Object Spatial relations, AttrIbution, Counting), a controlled framework for dataset generation. By training diffusion models on mosaic, we find that scene complexity plays a dominant role rather than concept imbalance, and that counting is uniquely difficult to learn in low-data regimes. Moreover, compositional generalization collapses as more concept combinations are held out during training. These findings highlight fundamental limitations of diffusion models and motivate stronger inductive biases and data design for robust multi-object compositional generation.",
       "comments": "ICML2026"
@@ -278,6 +301,10 @@
     "2605.00323": {
       "abstract": "Large Vision-Language Models (LVLMs) often suffer from hallucinations, generating descriptions that include visual details absent from the input image. Recent preference alignment methods typically rely on supervision distilled from stronger models such as GPT. However, this offline paradigm introduces a Supervision-Perception Mismatch: the student model is forced to align with fine-grained details beyond its perceptual capacity, learning to guess rather than to see. To obtain reliable self-supervision for online learning, we identify a Generative-Discriminative Gap within LVLMs, where models exhibit higher accuracy on discriminative verification than open-ended generation. Leveraging this capability, we propose \\textbf{O}nline \\textbf{S}elf-\\textbf{CA}lib\\textbf{R}ation (OSCAR), a framework that integrates Monte Carlo Tree Search with a Dual-Granularity Reward Mechanism to construct preference data and iteratively refines the model via Direct Preference Optimization. Extensive experiments demonstrate that OSCAR achieves state-of-the-art performance on hallucination benchmarks while improving general multimodal capabilities.",
       "comments": "IJCAI 2026"
+    },
+    "2605.00347": {
+      "abstract": "Given the rapidly growing capabilities of vision-language models (VLMs), extending them to interactive decision-making tasks such as video games has emerged as a promising frontier. However, existing approaches either rely on large-scale supervised fine-tuning (SFT) on human trajectories or apply reinforcement learning (RL) only in relatively short-horizon settings (typically around 20--30 turns). In this work, we study RL-based training of VLMs for long-horizon decision-making in Super Mario Land, a visually grounded environment requiring 100+ turns of interaction with coordinated perception, reasoning, and action. We begin with a systematic investigation of key algorithmic components and propose an adapted variant of PPO with a lightweight turn-level critic, which substantially improves training stability and sample efficiency over critic-free methods such as GRPO and Reinforce++. We further show that pretrained VLMs provide strong action priors, significantly improving sample efficiency during RL training and reducing the need for manual design choices such as action engineering, compared to classical deep RL trained from scratch. Building on these insights, we introduce Odysseus, an open training framework for VLM agents, achieving substantial gains across multiple levels of the game and at least 3 times average game progresses than frontier models. Moreover, the trained models exhibit consistent improvements under both in-game and cross-game generalization settings, while maintaining general-domain capabilities. Overall, our results identify key ingredients for making RL stable and effective in long-horizon, multi-modal settings, and provide practical guidance for developing VLMs as embodied agents.",
+      "comments": ""
     },
     "2605.00414": {
       "abstract": "Decision trees and diffusion models are ostensibly disparate model classes, one discrete and hierarchical, the other continuous and dynamic. This work unifies the two by establishing a crisp mathematical correspondence between hierarchical decision trees and diffusion processes in appropriate limiting regimes. Our unification reveals a shared optimization principle: \\emph{Global Trajectory Score Matching (GTSM)}, for which gradient boosting (in an idealized version) is asymptotically optimal. We underscore the conceptual value of our work through two key practical instantiations: \\treeflow, which achieves competitive generation quality on tabular data with higher fidelity and a 2\\times computational speedup, and \\dsmtree, a novel distillation method that transfers hierarchical decision logic into neural networks, matching teacher performance within 2\\% on many benchmarks.",
