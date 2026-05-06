@@ -1,0 +1,240 @@
+{
+  "date": "2026-05-06",
+  "focus_ids": [
+    "2605.00632",
+    "2605.02222",
+    "2605.01725",
+    "2405.13729"
+  ],
+  "focus_sections": {
+    "3D重建/生成": [
+      "2605.00632",
+      "2605.02222"
+    ],
+    "视频生成模型": [
+      "2605.01725"
+    ],
+    "图片生成模型": [
+      "2405.13729"
+    ]
+  },
+  "base_info": {
+    "2405.13729": {
+      "title": "ComboStoc: Combinatorial Stochasticity for Diffusion Generative Models",
+      "hf_link": "https://hf-mirror.com/papers/2405.13729"
+    },
+    "2604.25154": {
+      "title": "Prior-Aligned Data Cleaning for Tabular Foundation Models",
+      "hf_link": "https://hf-mirror.com/papers/2604.25154"
+    },
+    "2604.27660": {
+      "title": "From Context to Skills: Can Language Models Learn from Context Skillfully?",
+      "hf_link": "https://hf-mirror.com/papers/2604.27660"
+    },
+    "2604.28075": {
+      "title": "Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling",
+      "hf_link": "https://hf-mirror.com/papers/2604.28075"
+    },
+    "2605.00529": {
+      "title": "Hierarchical Abstract Tree for Cross-Document Retrieval-Augmented Generation",
+      "hf_link": "https://hf-mirror.com/papers/2605.00529"
+    },
+    "2605.00632": {
+      "title": "BlenderRAG: High-Fidelity 3D Object Generation via Retrieval-Augmented Code Synthesis",
+      "hf_link": "https://hf-mirror.com/papers/2605.00632"
+    },
+    "2605.00814": {
+      "title": "Persistent Visual Memory: Sustaining Perception for Deep Generation in LVLMs",
+      "hf_link": "https://hf-mirror.com/papers/2605.00814"
+    },
+    "2605.00877": {
+      "title": "OceanPile: A Large-Scale Multimodal Ocean Corpus for Foundation Models",
+      "hf_link": "https://hf-mirror.com/papers/2605.00877"
+    },
+    "2605.00932": {
+      "title": "Code World Model Preparedness Report",
+      "hf_link": "https://hf-mirror.com/papers/2605.00932"
+    },
+    "2605.01725": {
+      "title": "Motion-Aware Caching for Efficient Autoregressive Video Generation",
+      "hf_link": "https://hf-mirror.com/papers/2605.01725"
+    },
+    "2605.02178": {
+      "title": "T^2PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning",
+      "hf_link": "https://hf-mirror.com/papers/2605.02178"
+    },
+    "2605.02222": {
+      "title": "Generative Modeling with Orbit-Space Particle Flow Matching",
+      "hf_link": "https://hf-mirror.com/papers/2605.02222"
+    },
+    "2605.02240": {
+      "title": "PhysicianBench: Evaluating LLM Agents in Real-World EHR Environments",
+      "hf_link": "https://hf-mirror.com/papers/2605.02240"
+    },
+    "2605.02661": {
+      "title": "AcademiClaw: When Students Set Challenges for AI Agents",
+      "hf_link": "https://hf-mirror.com/papers/2605.02661"
+    },
+    "2605.02730": {
+      "title": "Perceptual Flow Network for Visually Grounded Reasoning",
+      "hf_link": "https://hf-mirror.com/papers/2605.02730"
+    },
+    "2605.02881": {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "hf_link": "https://hf-mirror.com/papers/2605.02881"
+    }
+  },
+  "summaries": {
+    "2405.13729": "组合随机性提升扩散模型\n生成模型;扩散模型;组合空间覆盖优化\n现有扩散生成模型在训练时未能充分覆盖数据维度与属性的组合空间，可能限制生成性能。\n提出了ComboStoc方法，通过构建利用组合结构的随机过程来加速训练，并支持在测试时对不同维度进行异步控制。",
+    "2604.25154": "表格预训练模型的数据清洗对齐\n机器学习;表格数据学习;表格数据清洗对齐\n表格预训练模型在小数据集上零样本性能优异，但实际脏数据会与其训练先验不匹配，导致性能下降。\n提出强化学习框架L2C2，学习数据清洗操作序列以对齐先验，提升模型在真实脏数据上的准确率与校准。",
+    "2604.27660": "语言模型从上下文自动学习技能\n自然语言处理;上下文学习;技能自演化框架\n背景/任务：许多任务需要语言模型从超出其参数知识的复杂上下文中进行推理，这要求模型具备直接从上下文学习知识的能力。\n做了什么：提出了Ctx2Skill自演化框架，通过多智能体自博弈循环自动发现、提炼和选择上下文特定技能，无需人工监督或外部反馈，提升了多种骨干模型在上下文学习任务上的解决率。",
+    "2604.28075": "高质量重复优于数据多样\n自然语言处理;大语言模型;德语预训练\n研究德语大语言模型预训练中数据质量与多样性的权衡。\n构建层级过滤获得高质量德语数据，多次训练优于单次训练更多数据。",
+    "2605.00529": "跨文档检索增强生成树框架\n自然语言处理;检索增强生成;跨文档多跳问答\n现有树状检索增强生成方法在应对跨文档多跳问题时面临分布适应性差、结构孤立和抽象粒度粗的挑战。\n我们提出Psi-RAG框架，通过无先验假设的迭代合并与坍缩构建层次化抽象树索引，并设计多粒度检索代理，显著提升了跨文档多跳问答性能。",
+    "2605.00632": "利用检索增强代码生成高保真三维物体\n计算机图形学;三维建模;文本到代码生成\n现有模型从文本生成Blender代码时易出错且几何不一致。\n提出BlenderRAG系统，通过检索相似示例提升生成代码的正确率和对齐度。",
+    "2605.00814": "增强大视觉模型视觉感知力\n多模态人工智能;视觉语言模型;视觉注意力衰减\n自回归大视觉语言模型在生成长序列时，视觉注意力会随文本历史增长而衰减。\n提出轻量级持久视觉记忆模块，通过平行分支直接提供视觉嵌入，以维持深度生成中的视觉感知。",
+    "2605.00877": "构建海洋多模态基础模型数据集\n多模态大语言模型;多模态数据构建;海洋多模态数据整合\n海洋AI应用受限于缺乏大规模、高质量、对齐的多模态海洋数据。\n构建了包含统一数据源、高质量指令集和评估基准的大型海洋多模态语料库OceanPile。",
+    "2605.00932": "评估代码模型风险水平\n代码生成;代码推理;模型风险测试\n评估Meta代码模型的潜在风险\n模型无额外风险决定开源",
+    "2605.01725": "基于运动感知的视频生成加速\n计算机视觉;视频生成;自回归视频生成加速\n自回归视频生成方法能生成长视频，但因其顺序去噪过程计算成本高，实际应用受限。\n提出MotionCache框架，利用帧间差异感知像素运动，动态调整缓存重用策略，在保持生成质量的同时显著提升生成速度。",
+    "2605.02178": "稳定多轮智能体强化学习探索控制\n强化学习;多轮交互;探索效率\n针对多轮强化学习中探索效率低下导致训练不稳定的问题。\n提出了T^2PO框架，通过令牌级和轮级的不确定性引导控制精细探索，提升训练稳定性和任务性能。",
+    "2605.02222": "粒子系统生成模型新方法\n计算机图形学;三维生成;粒子流匹配\n针对粒子系统生成建模中因粒子排列对称性导致目标方差大、流形弯曲难以学习的问题。\n提出OGPP框架，通过轨道空间正则化、粒子索引嵌入和几何感知概率路径，在减少推理步骤和参数量的同时，提升了形状生成与重建的质量和效率。",
+    "2605.02240": "评估医疗LLM智能体在真实电子病历环境中的表现\n自然语言处理;智能体评估;医疗任务执行基准\n现有医疗智能体评测多集中于静态知识回忆或简单动作，无法反映真实临床长流程、复合型工作流的需求。\n我们提出了PhysicianBench基准，包含100个源自真实临床咨询的长流程任务，并在模拟真实电子病历环境中通过工具调用和结构化检查点评估了多个LLM智能体的能力，结果表明当前模型与真实临床工作流需求存在巨大差距。",
+    "2605.02661": "学生挑战AI智能体学术难题\n智能体评估;学术任务评测;复杂长程任务基准\n现有基准仅评估助手级任务，学术级AI能力未被充分检验。\n构建了学生提交的真实学术任务基准AcademiClaw，涵盖多领域复杂长程任务，并评估了前沿模型表现。",
+    "2605.02730": "改进视觉基础推理的感知流程\n多模态大模型;视觉语言基础模型;视觉基础推理矫正\n尽管大视觉语言模型取得成功，但其通用优化目标难以约束视觉轨迹，导致语言偏见与幻觉。\n提出感知流网络，通过解耦感知与推理、结合多维度奖励与邻近几何塑造，实现可解释且更有效的视觉推理。",
+    "2605.02881": "开放机器人动作推理模型  \n机器人;具身智能;视觉语言动作模型  \n当前机器人通用控制器存在闭源、硬件依赖、高延迟和成功率低等问题，难以实际部署。  \n提出开放模型MolmoAct2，包含专用推理骨干、新数据集、动作分词器、新架构及自适应推理方法，在多项评测中表现优异并开源。"
+  },
+  "deep_analysis": {
+    "2405.13729": "我来用简单的语言为你解读这篇论文。\n\n### (1) 任务是什么？\n这篇论文研究的是**扩散生成模型**（Diffusion Generative Models）。\n\n- **任务输入**：训练时是大量数据样本（如图像、3D形状）；推理时是随机噪声。\n- **任务输出**：生成高质量、逼真的新数据样本（如图像、3D形状）。\n- **任务功能**：从随机噪声开始，通过一个逐步去噪的过程，生成符合训练数据分布的新样本。比如从一堆纯噪声生成一张猫的图片。\n\n### (2) 想解决什么问题？\n作者发现现有扩散模型训练方式的一个**根本性局限**：\n\n- 现在的模型训练时，从噪声到数据的“路径”太单一。对于一张图片，模型会把所有像素（或所有图像块）的噪声程度同步地、均匀地从高变到低。\n- 但真实数据有**组合复杂性**。比如一张图，有的部分（如背景）可能很模糊（噪声多），有的部分（如前景物体）很清晰（噪声少），或者不同颜色通道的噪声程度不同。这种“不同部位有不同噪声程度”的组合情况，在传统训练中很少被覆盖到。\n- **问题**：这导致模型在遇到这些训练时没见过的、复杂的噪声组合情况时，生成效果会变差，限制了模型的性能。\n\n### (3) 核心思路是什么？\n**核心思路非常简单且巧妙**：让训练过程充分覆盖数据的“组合复杂性”。\n\n他们提出了 **ComboStoc（组合随机性）** 训练方案：\n\n- **传统方法**：用一个单一的“时间步” `t`（0到1之间）控制所有数据维度的噪声程度。`t=1`是纯数据，`t=0`是纯噪声。\n- **ComboStoc方法**：不再用一个`t`，而是**为数据的每一个维度（如图像的每个像素、每个通道，或3D形状的每个部件、每个属性）都独立地、随机地分配一个时间步**。\n    - 比如，一张图的左上角像素可能处于`t=0.3`（还比较模糊），而右下角像素可能处于`t=0.8`（已经很清晰）。\n    - 这个“时间步张量”的形状和原始数据一模一样。\n- **好处**：这样一次训练就能覆盖到“数据不同部分处于不同噪声状态”的**海量组合情况**，让模型学习到更鲁棒、更全面的生成能力。\n\n### (4) 结果怎么样？\n效果提升很明显：\n\n1.  **图像生成（ImageNet）**：\n    - 使用同样规模的模型（如SiT-XL），在同样的训练步数下，**FID指标（衡量生成图像质量，越低越好）显著优于之前的SOTA模型（DiT, SiT）**。\n    - 例如，训练400K步时，ComboStoc FID为15.69，优于SiT的17.2和DiT的19.5。\n\n2.  **结构化3D形状生成**：\n    - 对于具有复杂部件（如桌腿、桌面）和属性（如位置、大小）的3D形状，传统方法很难训练出有效的生成模型。\n    - **ComboStoc方法是成功训练出可用模型的关键**，证明了其对复杂组合结构数据的有效性。\n\n3.  **额外能力**：\n    - 由于模型是在“异步时间步”下训练的，因此在生成（推理）时，也可以**对不同部分采用不同的时间步进度**。\n    - 这实现了**分级控制**：例如，可以先生成物体的轮廓（让轮廓部分的时间步跑快点），再慢慢细化纹理（让纹理部分的时间步跑慢点），或者根据用户提供的部分信息（如草图）来引导生成。\n\n### (5) 模型结构与流程\n\n- **基模（Base Model）**：这篇论文没有提出全新的网络结构，而是**一种改进训练策略**，可以套用在现有的扩散模型框架上。文中实验主要基于两种先进的Transformer扩散模型：\n    1.  **DiT**：用于图像生成的扩散Transformer。\n    2.  **SiT**：DiT的改进版，使用更优的“流匹配”框架。\n\n- **整体流程（以训练为例）**：\n    1.  **输入准备**：取一个真实数据样本 `x1`（如图片）和对应的随机噪声样本 `z`。\n    2.  **生成组合时间步张量**：**这是ComboStoc的核心**。随机生成一个与 `x1` 形状完全相同的张量 `T`，`T` 中的每个元素都是在 [0, 1] 区间内独立随机采样的值，代表该数据维度对应的时间步。\n    3.  **构造训练样本**：根据每个维度独立的时间步 `T`，对 `x1` 和 `z` 进行线性插值，生成一个“噪声数据” `x_t`。公式可以简单理解为：`x_t = T * x1 + (1 - T) * z`（实际公式更复杂，但思想一致）。这样，`x_t` 的不同部分就包含了不同程度的噪声。\n    4.  **网络预测**：将 `x_t` 和 `T`（作为条件信息）一起输入到基模（如SiT网络）中。\n    5.  **计算损失**：网络的目标是预测从 `x_t` 朝向 `x1` 的“移动方向”（即速度场）。计算预测方向与真实方向的误差作为损失。\n    6.  **反向传播更新**：通过损失反向传播，更新网络参数。\n\n**一句话总结**：这篇论文的核心贡献是**通过为数据的每个维度独立分配随机噪声程度（时间步），让扩散模型在训练时就能见识到所有可能的噪声组合状态，从而学得更鲁棒，生成效果更好，还获得了异步生成的新能力。** 这是一个“四两拨千斤”的训练策略改进。",
+    "2605.00632": "好的，我们用通俗易懂的方式来解析这篇《BlenderRAG》论文。\n\n### （1）任务是什么？\n\n*   **任务输入**：一段用自然语言描述的、你想要创建的3D物体（例如：“一个带软垫的现代扶手椅” 或 “一座有尖顶的哥特式钟楼”）。\n*   **任务输出**：一段可以直接在**Blender**（一个流行的开源3D建模软件）里运行的**Python代码**。运行这段代码，就能在你的3D场景中**自动生成**你描述的那个物体。\n*   **任务功能**：实现“**文生3D**”，让用户（尤其是非专业建模师）能够通过简单的文字描述，快速、高质量地创建出复杂的3D模型，省去手动建模的繁琐过程。\n\n### （2）想解决什么问题？\n\n当前的大语言模型（LLM）直接写Blender代码时，主要有两个问题：\n1.  **语法错误多**：生成的代码经常有拼写错误、函数调用不对等低级问题，导致无法运行。\n2.  **几何一致性差**：即使代码能运行，生成的3D物体也经常“不像样”——比例失调、结构不合理、细节缺失，和文字描述不符。\n\n这篇论文想解决的就是：**如何让大模型稳定地生成既“能跑”又“好看”的3D物体代码，同时不增加用户的使用门槛。**\n\n### （3）核心思路是什么？\n\n**“抄优秀作业” + “万能范文库”**\n\n论文的核心思路是**检索增强生成（RAG）**。作者没有选择去“训练”或“微调”一个大模型（这很费钱费力），而是建立了一个**高质量的“范文数据库”**。\n\n1.  **建立范文库**：他们手动收集/制作了500个高质量的3D物体案例，每个案例都包含三部分：`文字描述`、`完美可运行的Blender代码`、`渲染效果图`。这就像是500篇不同题目的“满分作文”。\n2.  **“抄作业”流程**：\n    *   当你输入一段描述（比如“一个复古台灯”）时，系统会去范文库里**快速查找**和你描述最相似的几个案例（比如“现代落地灯”、“装饰壁灯”的范文）。\n    *   然后，把找到的这些“优秀范文”（包括它们的描述和代码）一起塞给大模型，并说：“看，这是别人写‘灯’的范文，请参照它们的结构和写法，给我写一个‘复古台灯’的代码。”\n    *   大模型有了“范文”作为参考，就能更好地理解任务要求，模仿正确的代码结构和语法，从而生成出质量高得多的代码。\n\n**简单总结**：与其让大模型“凭空想象”，不如给它看“标准答案”作为参考，引导它写出正确的代码。\n\n### （4）结果怎么样？\n\n效果提升非常显著：\n*   **成功率飙升**：生成的代码能**直接成功运行**的比例，从基线模型的 **40.8%** 提升到了 **70.0%**。\n*   **质量大幅提高**：生成的物体与输入描述的**语义匹配度**（用CLIP模型衡量）从 **0.41** 提升到了 **0.77**。这意味着生成的物体不仅代码能跑，而且**长得更像**你描述的东西了。\n*   **零训练，易部署**：整个系统**不需要训练任何模型**，只需要一个数据库和现成的LLM API（如ChatGPT、Claude等），可以在普通电脑上运行，非常方便。\n\n### （5）模型结构与整体流程\n\n这篇论文**没有提出一个新的神经网络模型**，而是设计了一个**系统框架**。它利用现有的、强大的**基模（如Claude Sonnet， GPT-5等）** 作为“写代码的大脑”。\n\n整体流程如下图所示，可以分解为以下几个步骤：\n\n**流程详解：**\n\n1.  **输入**：用户在Blender插件界面中输入一段文字描述（例如：“一个有玻璃门的木质书柜”）。\n2.  **检索（Retrieve）**：\n    *   系统使用一个**文本嵌入模型**（论中文中用的是Nomic-AI）将你的描述转换成一个“语义向量”（一串数字，代表这句话的意思）。\n    *   拿着这个向量，去之前建好的**向量数据库**（Qdrant）里进行搜索。这个数据库里存储了所有500个“范文”的描述文本所对应的向量。\n    *   数据库找出与你的描述向量**最相似**的**前3个“范文”**。\n3.  **增强（Augment）**：\n    *   系统把这3个检索到的“范文”的全部信息（`文字描述` + `对应的Blender代码`）抽取出来。\n    *   将这些信息作为“参考上下文”，和你**原始的输入描述**一起，组合成一个新的、更详细的**提示词**。\n4.  **生成（Generate）**：\n    *   这个组合好的提示词被发送给你**事先选择好的基模**（比如GPT-5）。\n    *   基模阅读提示词，理解你的要求，并**参考**提供的范文代码风格和结构，生成一段新的、针对你描述的“木质书柜”的Blender Python代码。\n5.  **输出与执行**：\n    *   生成的代码被直接送回Blender。\n    *   Blender的Python解释器**立即执行**这段代码。\n    *   几秒内，一个符合描述的3D书柜模型就出现在你的场景视图中。整个流程结束。\n\n**核心比喻**：这个系统就像一个**拥有超强记忆和模仿能力的编程助手**。它先快速翻阅自己的“经典案例集”（检索），找到类似的任务范本，然后结合你的新要求，仿照着写出了一份高质量的新代码。",
+    "2605.01725": "这篇论文研究的是 **高效的自回归视频生成** 领域。下面我用简单的语言为你梳理它的核心内容：\n\n### (1) 任务是什么？\n- **任务输入**：一段文本描述（例如：“一只猫在草地上奔跑”）。\n- **任务输出**：一段符合描述的视频（一系列连续的图像帧）。\n- **任务功能**：根据文本自动生成高质量、连贯的视频内容。\n\n### (2) 想解决什么问题？\n现有的自回归视频生成模型（如SkyReels-V2、MAGI-1）虽然能生成长视频，但**计算速度非常慢**。因为它们需要像“画画—修改—再修改”那样，对每一帧反复进行多步去噪处理，导致生成一个几秒的视频可能需要几十分钟，难以实用。\n\n**根本原因**：现有加速方法（如缓存技术）通常是“粗粒度”的——要么整个视频片段一起跳过计算，要么一起重新计算。这忽略了视频中不同区域（像素）的运动差异：**运动剧烈的区域（如奔跑的猫）需要更多计算来保证细节，而静止的背景则可以大胆跳过计算**。粗粒度缓存会导致要么算力浪费，要么视频质量下降（出现模糊或错误）。\n\n### (3) 核心思路是什么？\n论文提出了 **MotionCache** 框架，核心思想是 **“按需分配计算资源”**。\n\n- **关键发现**：通过理论分析，论文证明了缓存带来的误差与“残差不稳定度”直接相关，而残差不稳定度又和**像素的运动剧烈程度**高度相关。运动越剧烈，越需要频繁更新计算。\n- **如何实现**：\n  1. **运动感知**：用相邻帧之间的像素差异（简单计算）作为“运动重要性”的轻量级代理指标。差异大的地方就是运动区域。\n  2. **精细缓存**：不再是整个片段统一处理，而是对每一个“令牌”（可以理解为一小块图像区域）单独判断。**高运动重要性的令牌**就多计算、少用缓存；**低运动重要性的令牌**就少计算、多用缓存。\n  3. **两阶段策略**：\n     - **第一阶段（粗，热身）**：先正常计算一些步骤，建立视频的全局语义和结构。\n     - **第二阶段（细，加速）**：切换到上述的“运动重要性加权”缓存策略，动态决定每个令牌是更新计算还是直接复用缓存结果。\n\n### (4) 结果怎么样？\n在两个先进的视频生成模型上进行了测试：\n- **SkyReels-V2**：加速 **6.28倍**，生成质量（VBench指标）仅下降 **1%**。\n- **MAGI-1**：加速 **1.64倍**，生成质量几乎没变（仅下降 **0.01%**）。\n\n效果显著优于之前的缓存方法（如FlowCache、TeaCache），在显著提升速度的同时，更好地保持了视频的细节、纹理和时序连贯性。\n\n### (5) 模型结构与流程\n这篇论文的 **MotionCache 是一个加速框架，而不是一个全新的基座生成模型**。它像一个“加速插件”，可以应用到现有的自回归视频生成模型（**基模** 如 SkyReels-V2, MAGI-1）上。\n\n**整体流程**（结合文本生成视频的过程）：\n1.  **输入**：用户提供的文本提示（Prompt）。\n2.  **基模初始化**：基座模型（如SkyReels-V2）开始以自回归方式生成视频。它将视频分成多个连续的“块”（Chunk）依次生成。\n3.  **应用MotionCache加速每个块的生成**：\n    - **步骤A（热身阶段）**：对于当前要生成的视频块，先不使用缓存，按照原始方式完整计算前 K 个去噪步骤。这确保了视频块基本结构和内容的正确性。\n    - **步骤B（计算运动重要性图）**：利用当前已生成块的部分结果，计算块内相邻帧之间的差异，得到一张“运动重要性热力图”。图中每个位置的值代表该处像素的运动剧烈程度。\n    - **步骤C（精细化加速阶段）**：对于接下来的去噪步骤，不再统一处理：\n        - 对于运动重要性高的**令牌**（图像区域），**倾向于执行新的计算**，并将结果更新到缓存中。\n        - 对于运动重要性低的**令牌**（如静止背景），**倾向于直接复用缓存中之前步骤的结果**，跳过当前计算。\n        - 这个“倾向于”是通过一个基于运动重要性的权重来软性控制的，实现平滑过渡。\n4.  **循环与输出**：重复步骤3，直到当前视频块的所有去噪步骤完成。然后模型继续生成下一个视频块，直到生成整个视频序列。\n5.  **输出**：最终得到一段符合文本描述的视频。\n\n**简单比喻**：就像一个画家画一幅动态场景。他先（热身阶段）快速勾勒出整个画面的轮廓和主要角色。然后，对于画面中**静止的树木和天空（低运动）**，他后续就简单涂色，不多修改；而对于**正在奔跑的人物（高运动）**，他会花费更多笔触去仔细描绘动作和细节。MotionCache就是这个智能分配精力的“绘画策略”。",
+    "2605.02222": "好的，没问题。我会用简单易懂的语言，为你拆解这篇论文的核心内容。\n\n这篇论文研究的是 **“粒子系统的生成式建模”**。\n\n### (1) 任务是什么？\n*   **任务输入**：一个噪声分布。通常是一大堆在3D空间中随机、无结构排列的点（粒子）。\n*   **任务输出**：一个符合特定物理规律或几何形状的结构化粒子系统。比如：均匀分布的采样点、一个3D模型的点云、或者符合物理能量最低状态的粒子排布（如晶体结构）。\n*   **任务功能**：**生成**。给你一个描述（比如“生成一个飞机形状的点云”或“生成一个表面积最小的粒子膜”），模型能从噪声一步步“演化”出符合要求的粒子系统。\n\n### (2) 想解决什么问题？\n现有基于网格（像素、体素）的生成模型（如扩散模型）在直接用于粒子生成时，有两个核心问题：\n1.  **排列对称性**：粒子没有固定的顺序。交换两个粒子的编号，整个系统是完全一样的。现有的深度学习模型（如Transformer）需要给每个粒子一个“位置编码”来区分它们。但这种**人为引入的、无物理意义的编号**会让模型学习变得非常困难、低效，因为它需要为同一个物理状态学习无数种等价但编号不同的表示。\n2.  **忽略物理/几何属性**：粒子生活在真实的物理空间中，它们的运动（速度、加速度）和最终状态（如表面法向量）都是有物理意义的。但传统的生成模型只关心粒子最终落在哪里（位置），不关心它们是怎么“飞”过去的，浪费了丰富的几何信息。\n\n### (3) 核心思路是什么？\n论文提出了一个叫 **“轨道空间几何概率路径”** 的框架，核心是三个“妙招”：\n\n1.  **轨道空间“排序”**：既然粒子编号混乱是问题，那就**在生成过程的终点，强行给粒子们排一个唯一的、基于几何的“序”**。比如，按粒子到原点的距离排序，或者先选一个“代表”粒子，然后按其他粒子到这个“代表”的距离排序。这样就消除了排列的模糊性，让模型的学习目标变得清晰、唯一。\n2.  **粒子角色嵌入**：虽然最终要排序，但在生成过程中，不同粒子还是扮演不同角色（比如有的在中心，有的在边缘）。所以模型会给每个粒子一个**可学习的“角色编码”**，帮助它们学习各自在整体结构中的功能。\n3.  **几何概率路径**：既然粒子的运动有物理意义，那就设计一种特殊的“演化路径”，让粒子从噪声点到目标点的移动轨迹更平滑、更自然。更重要的是，这条路径在终点处的**移动速度方向，恰好可以编码几何属性（比如表面法向量）**。这样，模型在生成粒子位置的同时，**“顺带”就把法向量也生成了出来**，一举两得。\n\n### (4) 结果怎么样？\n效果非常好，在很多任务上超越了之前的SOTA方法：\n*   **最小表面积生成**：误差比之前方法小了**两个数量级**。\n*   **3D形状点云生成**：\n    *   在ShapeNet数据集上，只用**1/5的推理步数**就达到了之前最好方法的效果。\n    *   生成飞机的点云（用EMD指标衡量），效果媲美一个叫DiT-3D的巨型模型，但**参数量只有它的1/26，推理步数只有1/5**。\n*   **单形状编码**：只在3D空间操作（而非更高的6维空间），就能生成质量和带法向量的点云，效果和更复杂的6D生成器相当。\n\n### (5) 模型结构与流程\n这篇论文的基模是 **“流匹配”**。你可以把它想象成一个“粒子运输机”：它学习如何把一堆杂乱无章的粒子（噪声），沿着一条平滑的路径，搬运成我们想要的、结构化的粒子系统（数据）。\n\n**整体流程如下：**\n\n1.  **输入**：一组随机噪声粒子 `X_0`（无序，位置随机）。\n2.  **角色赋予**：给每个噪声粒子加上一个**可学习的“粒子索引嵌入”**，让它们初步有了身份标识。\n3.  **目标设定**：我们有一个目标粒子系统 `X_1`（例如，一个飞机的点云）。我们先对这个目标系统进行 **“轨道空间排序”**，给它一个唯一的、基于几何的排列顺序。\n4.  **路径构建**：对于时间 `t`（从0到1），我们构建一个**几何概率路径**。这条路径在 `t=0` 时是噪声 `X_0`，在 `t=1` 时是排序后的目标 `X_1`。路径的形状是精心设计的（如二次埃尔米特曲线），确保轨迹平滑，并且在终点 `t=1` 时，粒子的速度方向有意义（可表示法向量）。\n5.  **模型学习**：模型（通常是一个多层感知机MLP或Transformer）的核心任务是**预测速度场 `v_θ`**。它输入当前时间 `t` 和当前粒子状态 `X_t`，输出每个粒子下一步应该移动的速度。训练的目标是让预测的速度和真实路径上应有的速度尽量一致（流匹配损失）。\n6.  **推理生成**：\n    *   从噪声 `X_0` 开始。\n    *   用训练好的模型，根据当前粒子状态 `X_t` 和时间 `t`，预测速度 `v_θ`。\n    *   用这个速度更新粒子位置，得到 `X_{t+Δt}`。\n    *   重复这个过程，从 `t=0` 走到 `t=1`。\n    *   最终，我们就得到了一个有序的、结构化的粒子系统 `X_1`，并且每个粒子的最终速度方向可以解释为其法向量。\n\n**简单总结**：这篇论文就像给粒子生成这个任务设计了一套“交通规则”（轨道排序）和“专用车道”（几何路径），让“粒子运输机”（流匹配模型）跑得更快、更稳、还能捎带更多“货物”（法向量）。"
+  },
+  "images_meta": {
+    "2405.13729": [],
+    "2605.00632": [
+      {
+        "path": "https://arxiv.org/html/2605.00632v1/images/a_che_palle.jpg",
+        "caption": "Figure 2:BlenderRAG architecture: user queries (text/image) are embedded and matched against the Qdrant vector database. Retrieved triplets (text-code-image) provide context for LLM generation, producing executable Blender code through the integrated plugin interface.",
+        "caption_zh": "图 2：BlenderRAG 架构：用户查询（文本/图像）经嵌入后与 Qdrant 向量数据库匹配。检索到的三元组（文本-代码-图像）为 LLM 生成提供上下文，并通过集成的插件接口生成可执行的 Blender 代码。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00632v1/x1.png",
+        "caption": "Figure 1:Qualitative comparison: BlenderRAG with as backbone model Claude Sonnet 4.5 vs baseline models. RAG outputs exhibit superior geometric coherence, realistic proportions, and structural detail.",
+        "caption_zh": "图1：定性对比：以Claude Sonnet 4.5为骨干模型的BlenderRAG与基线模型对比。检索增强生成（RAG）的输出展现出更优的几何一致性、真实的比例关系和丰富的结构细节。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.00632v1/x3.png",
+        "caption": "Figure 4:Code length distribution for outdoor objects. Red points show original templates. Notable variation from simple Ball (∼\\sim3,000 chars) to elaborate Condominium (∼\\sim24,000 chars), capturing diverse structural complexity.",
+        "caption_zh": "图4：室外物体的代码长度分布。红点表示原始模板。从简单的球体（约3000字符）到精细的公寓楼（约24000字符）存在显著变化，体现了多样的结构复杂性。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2605.01725": [
+      {
+        "path": "https://arxiv.org/html/2605.01725v1/x4.png",
+        "caption": "Figure 4:Comparison of caching strategies in autoregressive video generation. The top panel illustrates traditional reuse strategies (e.g., TeaCache and FlowCache), which apply coarse-grained caching policies by treating an entire timestep or chunk as an atomic unit for skipping. This approach overlooks fine-grained intra-chunk redundancy, forcing a binary decision between full computation or full reuse. In contrast, our MotionCache (bottom panel) employs a fine-grained Motion-Aware caching policy, dynamically deciding for each individual token whether to reuse cached residuals or perform recomputation based on motion dynamics. The bottom right panel details the Inner Chunk Tokenwise Calculation mechanism: it first calculates motion importance based on intra-chunk frame differences, then applies an importance-weighted accumulation policy to generate a binary selection mask, where white regions indicate active tokens selected for computation and black regions denote inactive tokens retrieved from the cache.",
+        "caption_zh": "图 4：自回归视频生成中缓存策略的对比。上图展示了传统的重用策略（例如 TeaCache 和 FlowCache），其将整个时间步或数据块视为跳过的原子单元，采用粗粒度缓存策略。这种方法忽略了块内细粒度的冗余，迫使在完整计算或完整重用之间做出二元选择。相比之下，我们的 MotionCache（下图）采用了细粒度的运动感知缓存策略，根据运动动态为每个单独的 token 动态决定是重用缓存残差还是执行重新计算。右下角的子图详述了“块内 token 级计算机制”：首先基于块内帧间差异计算运动重要性，随后应用重要性加权累积策略生成二元选择掩码，其中白色区域表示被选中进行计算的活动 token，黑色区域表示从缓存中检索的非活动 token。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.01725v1/x5.png",
+        "caption": "Figure 5:Visualization of the ground-truth video frames versus the computed importance maps.\nThe labelffindicates the frame index within the video sequence.",
+        "caption_zh": "图 5：真实视频帧与计算所得重要性图谱的可视化对比。标签“f”表示该帧在视频序列中的索引。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.01725v1/x1.png",
+        "caption": "Figure 1:MotionCache accelerates video generation while maintaining high visual fidelity. On SkyReels-V2 and MAGI-1, our method achieves 6.28×\\timesand 1.64×\\timesspeedups with superior PSNR. In contrast, TeaCache fails to maintain texture details and FlowCache suffers from structural inconsistency, while MotionCache preserves both structural integrity and temporal coherence comparable to the Vanilla baseline.",
+        "caption_zh": "图1：MotionCache在保持高视觉保真度的同时加速视频生成。在SkyReels-V2和MAGI-1数据集上，我们的方法分别实现了6.28倍和1.64倍的加速，且具有更优的PSNR。相比之下，TeaCache难以保持纹理细节，FlowCache存在结构不一致性问题，而MotionCache在保持结构完整性和时间连贯性方面均与原始基准方法（Vanilla）相当。",
+        "role": "pipeline_3"
+      }
+    ],
+    "2605.02222": [
+      {
+        "path": "https://arxiv.org/html/2605.02222v1/x2.png",
+        "caption": "Figure 2.OGPP.Our framework integrates three key components: (i)orbit-space canonicalizationassigns canonical indices (0,1,2,3) toX1X_{1}while keepingX0X_{0}uncanonicalized, (ii)particle index embeddings(colored blocks) allow each index to specialize to its canonical role, and (iii)geometric probability pathsencode surface normals via arc-length-aware terminal velocities. Per-particle coordinates𝒙tii\\bm{x}_{t_{i}}^{i}and learnable per-index embeddings are fed into a NN, predicting velocities𝒖tiθ,i\\bm{u}_{t_{i}}^{\\theta,i}supervised by reference velocities𝒖tiref,i\\bm{u}_{t_{i}}^{\\text{ref},i}.",
+        "caption_zh": "图 2. OGPP。我们的框架整合了三个关键组件：(i) 轨道空间规范化为 X₁ 分配规范索引 (0, 1, 2, 3)，同时保持 X₀ 未规范化；(ii) 粒子索引嵌入（彩色块）允许每个索引专门化至其规范角色；(iii) 几何概率路径通过弧长感知的终端速度编码表面法线。每个粒子的坐标 𝒙_{t_i}^i 和可学习的每索引嵌入被输入神经网络，预测速度 𝒖_{t_i}^{θ, i}，并以参考速度 𝒖_{t_i}^{ref, i} 进行监督。",
+        "role": "pipeline_1"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.02222v1/x3.png",
+        "caption": "Figure 3.Conceptual illustration of the conditional distribution of the terminal endpointX10X_{1}^{0}for a fixed particle index0under different coupling strategies. Each figure shows five sampled(𝒙0,𝒙1)(\\bm{x}_{0},\\bm{x}_{1})pairs for particles with index0: gray points denote the noise positions𝒙0(i),0\\bm{x}_{0}^{(i),0}, blue points denote the corresponding targets𝒙1(i),0\\bm{x}_{1}^{(i),0}on the surface, and arrows indicate their displacements. Left: independent coupling(lipman2022flow); middle: OT-based coupling(song2023equivariant;klein2023equivariant); right: our orbit-space canonicalization. Independent and OT-based couplings spread the possible endpointsX10X_{1}^{0}around the surface, yielding a broad conditional distributionp​(X10∣Xt=𝒙,I=0)p(X_{1}^{0}\\mid X_{t}=\\bm{x},I=0), whereas orbit-space canonicalization concentrates them into a smaller region, which is expected to reduce the conditional covariance and simplify the velocity regression.",
+        "caption_zh": "图 3. 不同耦合策略下，针对固定粒子索引 0 的终端端点 $X_{1}^{0}$ 的条件分布概念示意图。各图展示了索引为 0 的粒子的五个采样 $(\\bm{x}_{0},\\bm{x}_{1})$ 对：灰色点表示噪声位置 $\\bm{x}_{0}^{(i),0}$，蓝色点表示表面上对应的目标位置 $\\bm{x}_{1}^{(i),0}$，箭头表示它们的位移。左：独立耦合（lipman2022flow）；中：基于最优传输的耦合（song2023equivariant；klein2023equivariant）；右：我们的轨道空间正则化方法。独立耦合与基于最优传输的耦合使可能的端点 $X_{1}^{0}$ 散布在表面周围，产生较宽的条件分布 $p(X_{1}^{0} \\mid X_{t}=\\bm{x}, I=0)$，而轨道空间正则化将其集中到更小的区域，这有望减少条件协方差并简化速度回归。",
+        "role": "pipeline_2"
+      },
+      {
+        "path": "https://arxiv.org/html/2605.02222v1/x5.png",
+        "caption": "Figure 5.Minimal surface generation with variable anchors (3–8).3-step generation results from a single conditional model trained on varying anchor counts. The generated boundaries appear smooth and accurate across diverse configurations.",
+        "caption_zh": "图 5. 使用可变锚点（3–8 个）生成最小曲面。图为在可变锚点数量上训练的单一条件模型的三步生成结果。在不同配置下，生成的边界均呈现平滑且准确的形态。",
+        "role": "pipeline_3"
+      }
+    ]
+  },
+  "arxiv_details": {
+    "2405.13729": {
+      "abstract": "In this paper, we study an under-explored but important factor of diffusion generative models, i.e., the combinatorial complexity. Data samples are generally high-dimensional, and for various structured generation tasks, additional attributes are combined to associate with data samples. We show that the space spanned by the combination of dimensions and attributes can be insufficiently covered by existing training schemes of diffusion generative models, potentially limiting test time performance. We present a simple fix to this problem by constructing stochastic processes that fully exploit the combinatorial structures, hence the name ComboStoc. Using this simple strategy, we show that network training is significantly accelerated across diverse data modalities, including images and 3D structured shapes. Moreover, ComboStoc enables a new way of test time generation which uses asynchronous time steps for different dimensions and attributes, thus allowing for varying degrees of control over them. Our code is available at:this https URL",
+      "comments": "ACM Transactions on Graphics, SIGGRAPH 2026"
+    },
+    "2604.25154": {
+      "abstract": "Tabular Foundation Models (TFMs) achieve state-of-the-art zero-shot accuracy on small tabular datasets by meta-learning over synthetic data-generating processes -- making them highly attractive for practitioners who cannot afford large annotated corpora. However, their in-context learning mechanism assumes approximately clean inputs: missing values, outliers, and duplicates in the real-world data create a prior mismatch that degrades both accuracy and confidence calibration simultaneously. Correcting this mismatch requires sequential decisions over cleaning operators whose interactions no static preprocessing rule can anticipate -a natural fit for reinforcement learning~(RL). We introduce L2C2, the first deep RL framework framing tabular data cleaning as prior alignment: a learned policy sequences operators to minimize the distributional gap between dirty input and the TFM's synthetic prior. Six experiments on ten OpenML benchmark datasets establish: 1) three of seven reward designs collapse to degenerate trivial cleaning strategies -- principled reward engineering is scientifically non-trivial; 2) the novel TFMAwareReward reward we propose selects structurally distinct pipelines on 4/10 datasets and achieves higher TabPFN accuracy on those diverging cases (mean 0.851 vs. 0.843; Wilcoxon p=0.063, n=4) while never underperforming; 3) parameterized cleaning actions improve best-found pipeline reward on 9/10 datasets (Wilcoxon p=0.004); and 4) a policy pre-trained on one single source dataset exceeds scratch training at the 2,000-step fine-tuning checkpoint on all three held-out datasets (up to +28.8% after full fine-tuning) demonstrating cross-dataset transfer of prior-alignment knowledge. These findings establish that prior alignment is a principled data preparation strategy for TFM deployment on real-world tabular data.",
+      "comments": "15 pages, 8 figures"
+    },
+    "2604.27660": {
+      "abstract": "Many real-world tasks require language models (LMs) to reason over complex contexts that exceed their parametric knowledge. This calls for context learning, where LMs directly learn relevant knowledge from the given context. An intuitive solution is inference-time skill augmentation: extracting the rules and procedures from context into natural-language skills. However, constructing such skills for context learning scenarios faces two challenges: the prohibitive cost of manual skill annotation for long, technically dense contexts, and the lack of external feedback for automated skill construction. In this paper, we propose Ctx2Skill, a self-evolving framework that autonomously discovers, refines, and selects context-specific skills without human supervision or external feedback. At its core, a multi-agent self-play loop has a Challenger that generates probing tasks and rubrics, a Reasoner that attempts to solve them guided by an evolving skill set, and a neutral Judge that provides binary feedback. Crucially, both the Challenger and the Reasoner evolve through accumulated skills: dedicated Proposer and Generator agents analyze failure cases and synthesize them into targeted skill updates for both sides, enabling automated skill discovery and refinement. To prevent adversarial collapse caused by increasingly extreme task generation and over-specialized skill accumulation, we further introduce a Cross-time Replay mechanism that identifies the skill set achieving the best balance across representative cases for the Reasoner side, ensuring robust and generalizable skill evolution. The resulting skills can be plugged into any language model to obtain better context learning capability. Evaluated on four context learning tasks from CL-bench, Ctx2Skill consistently improves solving rates across backbone models.",
+      "comments": ""
+    },
+    "2604.28075": {
+      "abstract": "Recent research has shown that filtering massive English web corpora into high-quality subsets significantly improves training efficiency. However, for high-resource non-English languages like German, French, or Japanese, aggressive filtering creates a strategic dilemma: should practitioners prioritize diversity by training once on large amounts of lightly filtered web data, or prioritize quality by strictly filtering for a high-quality core and repeating it over multiple epochs? We investigate this trade-off for German by constructing hierarchical quality filters applied to 500M web documents, comparing multi-epoch training on the filtered subsets against single-pass training on a diverse corpus. Our experiments across multiple model scales and token budgets show that repeating high-quality data consistently outperforms single-pass training on larger, less filtered sets. Notably, the performance gap persists even after 7 epochs. Our findings suggest that for non-English LLMs, semantic concentration through quality filtering offers a more viable path to efficient language modeling than simply maximizing unique data volume. We release our German language models (called Boldt), as well as our cleaned evaluation benchmarks to the research community. Our experiments indicate that they achieve state-of-the-art results despite training on 10-360x fewer tokens than comparable models.",
+      "comments": ""
+    },
+    "2605.00529": {
+      "abstract": "Retrieval-augmented generation (RAG) enhances large language models with external knowledge, and tree-based RAG organizes documents into hierarchical indexes to support queries at multiple granularities. However, existing Tree-RAG methods designed for single-document retrieval face critical challenges in scaling to cross-document multi-hop questions: (1) poor distribution adaptability, where $k$-means clustering introduces noise due to rigid distribution assumptions; (2) structural isolation, as tree indexes lack explicit cross-document connections; and (3) coarse abstraction, which obscures fine-grained details. To address these limitations, we propose $\\Psi$-RAG, a tree-RAG framework with two key components. First, a hierarchical abstract tree index built through an iterative \"merging and collapse\" process that adapts to data distributions without a priori assumption. Second, a multi-granular retrieval agent that intelligently interacts with the knowledge base with reorganized queries and an agent-powered hybrid retriever. $\\Psi$-RAG supports diverse tasks from token-level question answering to document-level summarization. On cross-document multi-hop QA benchmarks, it outperforms RAPTOR by 25.9% and HippoRAG 2 by 7.4% in average F1 score. Code is available atthis https URL.",
+      "comments": "ICML 2026"
+    },
+    "2605.00632": {
+      "abstract": "Automatic generation of executable Blender code from natural language remains challenging, with state-of-the-art LLMs producing frequent syntactic errors and geometrically inconsistent objects. We present BlenderRAG, a retrieval-augmented generation system that operates on a curated multimodal dataset of 500 expert-validated examples (text, code, image) across 50 object categories. By retrieving semantically similar examples during generation, BlenderRAG improves compilation success rates from 40.8% to 70.0% and semantic normalized alignment from 0.41 to 0.77 (CLIP similarity) across four state-of-the-art LLMs, without requiring fine-tuning or specialized hardware, making it immediately accessible for deployment. The dataset and code will be available atthis https URL.",
+      "comments": ""
+    },
+    "2605.00814": {
+      "abstract": "While autoregressive Large Vision-Language Models (LVLMs) demonstrate remarkable proficiency in multimodal tasks, they face a \"Visual Signal Dilution\" phenomenon, where the accumulation of textual history expands the attention partition function, causing visual attention to decay inversely with generated sequence length. To counteract this, we propose Persistent Visual Memory (PVM), a lightweight learnable module designed to ensure sustained, on-demand visual perception. Integrated as a parallel branch alongside the Feed-Forward Network (FFN) in LVLMs, PVM establishes a distance-agnostic retrieval pathway that directly provides visual embeddings for precise visual perception, thereby structurally mitigating the signal suppression inherent to deep generation. Extensive experiments on Qwen3-VL models demonstrate that PVM brings notable improvements with negligible parameter overhead, delivering consistent average accuracy gains across both 4B and 8B scales, particularly in complex reasoning tasks that demand persistent visual perception. Furthermore, in-depth analysis reveals that PVM can resist length-induced signal decay and accelerate internal prediction convergence.",
+      "comments": ""
+    },
+    "2605.00877": {
+      "abstract": "The vast and underexplored ocean plays a critical role in regulating global climate and supporting marine biodiversity, yet artificial intelligence has so far delivered limited impact in this domain due to a fundamental data bottleneck. Specifically, ocean data are highly fragmented across disparate sources and inherently exhibit multi-modal, high-noise, and weakly labeled characteristics, lacking unified schemas and semantic alignment. Although Multimodal Large Language Models (MLLMs) have achieved remarkable success in general domains, their application to ocean science remains severely constrained by the absence of large-scale, well-aligned multimodal datasets tailored to marine environments. To bridge this gap, we introduce OceanPile, a large-scale multimodal corpus designed for ocean foundation models. It comprises three key components: OceanCorpus, a unified collection integrating sonar data, underwater imagery, marine science visuals, and scientific text from diverse authoritative sources; OceanInstruction, a high-quality instruction dataset synthesized via a novel pipeline guided by a hierarchical Ocean Concept Knowledge Graph; and OceanBenchmark, a manually curated evaluation benchmark for rigorous assessment. We establish a multi-stage quality control process to ensure scientific validity and alignment across modalities. Experimental validation demonstrates significant performance improvements for models trained on our data. All datasets are publicly released to advance the field of marine artificial intelligence and empower domain-specific MLLMs.",
+      "comments": "Work in progress"
+    },
+    "2605.00932": {
+      "abstract": "This report documents the preparedness assessment of Code World Model (CWM), a model for code generation and reasoning about code from Meta. We conducted pre-release testing across domains identified in our Frontier AI Framework as potentially presenting catastrophic risks, and also evaluated the model's misaligned propensities. Our assessment found that CWM does not pose additional frontier risks beyond those present in the current AI ecosystem. We therefore release it as an open-weight model.",
+      "comments": "25 pages, 3 figures"
+    },
+    "2605.01725": {
+      "abstract": "Autoregressive video generation paradigms offer theoretical promise for long video synthesis, yet their practical deployment is hindered by the computational burden of sequential iterative denoising. While cache reuse strategies can accelerate generation by skipping redundant denoising steps, existing methods rely on coarse-grained chunk-level skipping that fails to capture fine-grained pixel dynamics. This oversight is critical: pixels with high motion require more denoising steps to prevent error accumulation, while static pixels tolerate aggressive skipping. We formalize this insight theoretically by linking cache errors to residual instability, and propose MotionCache, a motion-aware cache framework that exploits inter-frame differences as a lightweight proxy for pixel-level motion characteristics. MotionCache employs a coarse-to-fine strategy: an initial warm-up phase establishes semantic coherence, followed by motion-weighted cache reuse that dynamically adjusts update frequencies per token. Extensive experiments on state-of-the-art models like SkyReels-V2 and MAGI-1 demonstrate that MotionCache achieves significant speedups of $\\textbf{6.28}\\times$ and $\\textbf{1.64}\\times$ respectively, while effectively preserving generation quality (VBench: $1\\%\\downarrow$ and $0.01\\%\\downarrow$ respectively). The code is available atthis https URL.",
+      "comments": "20 pages"
+    },
+    "2605.02178": {
+      "abstract": "Recent progress in multi-turn reinforcement learning (RL) has significantly improved reasoning LLMs' performances on complex interactive tasks. Despite advances in stabilization techniques such as fine-grained credit assignment and trajectory filtering, instability remains pervasive and often leads to training collapse. We argue that this instability stems from inefficient exploration in multi-turn settings, where policies continue to generate low-information actions that neither reduce uncertainty nor advance task progress. To address this issue, we propose Token- and Turn-level Policy Optimization (T$^2$PO), an uncertainty-aware framework that explicitly controls exploration at fine-grained levels. At the token level, T$^2$PO monitors uncertainty dynamics and triggers a thinking intervention once the marginal uncertainty change falls below a threshold. At the turn level, T$^2$PO identifies interactions with negligible exploration progress and dynamically resamples such turns to avoid wasted rollouts. We evaluate T$^2$PO in diverse environments, including WebShop, ALFWorld, and Search QA, demonstrating substantial gains in training stability and performance improvements with better exploration efficiency. Code is available at:this https URL.",
+      "comments": "25 pages, 7 figures, 8 tables. Accepted to ICML 2026 as a Spotlight Paper"
+    },
+    "2605.02222": {
+      "abstract": "We present Orbit-Space Geometric Probability Paths (OGPP), a particle-native flow-matching framework for generative modeling of particle systems. OGPP is motivated by two insights: (i) particles are defined up to permutation symmetries, so anonymous indexing inflates per-index target variance and yields curved, hard-to-learn flows; and (ii) particles live in physical space, so the flow terminal velocity has physical meaning and can encode geometric attributes, e.g., surface normals. OGPP instantiates three key components: (1) orbit-space canonicalization of the probability-path terminal endpoint, (2) particle index embeddings for role specialization, and (3) geometric probability paths with arc-length-aware terminal velocities that generate normals as a byproduct of the flow. We evaluate OGPP on minimal-surface benchmarks, where it reduces metric error by up to two orders of magnitude in a single inference step; on ShapeNet, where it matches the state of the art with 5x fewer steps and reaches airplane EMD comparable to DiT-3D with 26x fewer parameters and 5x fewer steps; and on single-shape encoding, where it produces normals and reconstructions competitive with 6D generators while operating entirely in 3D.",
+      "comments": ""
+    },
+    "2605.02240": {
+      "abstract": "We introduce PhysicianBench, a benchmark for evaluating LLM agents on physician tasks grounded in real clinical setting within electronic health record (EHR) environments. Existing medical agent benchmarks primarily focus on static knowledge recall, single-step atomic actions, or action intent without verifiable execution against the environment. As a result, they fail to capture the long-horizon, composite workflows that characterize real clinical systems. PhysicianBench comprises 100 long-horizon tasks adapted from real consultation cases between primary care and subspecialty physicians, with each task independently reviewed by a separate panel of physicians. Tasks are instantiated in an EHR environment with real patient records and accessed through the same standard APIs used by commercial EHR vendors. Tasks span 21 specialties (e.g., cardiology, endocrinology, oncology, psychiatry) and diverse workflow types (e.g., diagnosis interpretation, medication prescribing, treatment planning), requiring an average of 27 tool calls per task. Solving each task requires retrieving data across encounters, reasoning over heterogeneous clinical information, executing consequential clinical actions, and producing clinical documentation. Each task is decomposed into structured checkpoints (670 in total across the benchmark) capturing distinct stages of completion graded by task-specific scripts with execution-grounded verification. Across 13 proprietary and open-source LLM agents, the best-performing model achieves only 46% success rate (pass@1), while open-source models reach at most 19%, revealing a substantial gap between current agent capabilities and the demands of real-world clinical workflows. PhysicianBench provides a realistic and execution-grounded benchmark for measuring progress toward autonomous clinical agents.",
+      "comments": ""
+    },
+    "2605.02661": {
+      "abstract": "Benchmarks within the OpenClaw ecosystem have thus far evaluated exclusively assistant-level tasks, leaving the academic-level capabilities of OpenClaw largely unexamined. We introduce AcademiClaw, a bilingual benchmark of 80 complex, long-horizon tasks sourced directly from university students' real academic workflows -- homework, research projects, competitions, and personal projects -- that they found current AI agents unable to solve effectively. Curated from 230 student-submitted candidates through rigorous expert review, the final task set spans 25+ professional domains, ranging from olympiad-level mathematics and linguistics problems to GPU-intensive reinforcement learning and full-stack system debugging, with 16 tasks requiring CUDA GPU execution. Each task executes in an isolated Docker sandbox and is scored on task completion by multi-dimensional rubrics combining six complementary techniques, with an independent five-category safety audit providing additional behavioral analysis. Experiments on six frontier models show that even the best achieves only a 55\\% pass rate. Further analysis uncovers sharp capability boundaries across task domains, divergent behavioral strategies among models, and a disconnect between token consumption and output quality, providing fine-grained diagnostic signals beyond what aggregate metrics reveal. We hope that AcademiClaw and its open-sourced data and code can serve as a useful resource for the OpenClaw community, driving progress toward agents that are more capable and versatile across the full breadth of real-world academic demands. All data and code are available atthis https URL.",
+      "comments": ""
+    },
+    "2605.02730": {
+      "abstract": "Despite the success of Large-Vision Language Models (LVLMs), general optimization objectives (e.g., standard MLE) fail to constrain visual trajectories, leading to language bias and hallucination. To mitigate this, current methods introduce geometric priors from visual experts as additional supervision. However, we observe that such supervision is typically suboptimal: it is biased toward geometric precision and offers limited reasoning utility. To bridge this gap, we propose Perceptual Flow Network (PFlowNet), which eschews rigid alignment with the expert priors and achieves interpretable yet more effective visual reasoning. Specifically, PFlowNet decouples perception from reasoning to establish a self-conditioned generation process. Based on this, it integrates multi-dimensional rewards with vicinal geometric shaping via variational reinforcement learning, thereby facilitating reasoning-oriented perceptual behaviors while preserving visual reliability. PFlowNet delivers a provable performance guarantee and competitive empirical results, particularly setting new SOTA records on V* Bench (90.6%) and MME-RealWorld-lite (67.0%).",
+      "comments": "36 pages with 17 figures, Accepted at ICML 2026"
+    },
+    "2605.02881": {
+      "abstract": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today's systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold for dependable use. We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe. We release three new datasets spanning low-to-medium cost platforms, including MolmoAct2-BimanualYAM, 720 hours of teleoperated bimanual trajectories that constitute the largest open bimanual dataset to date, together with quality-filtered Franka (DROID) and SO100/101 subsets. We provide OpenFAST, an open-weight, open-data action tokenizer trained on millions of trajectories across five embodiments. We redesign the architecture to graft a flow-matching continuous-action expert onto a discrete-token VLM via per-layer KV-cache conditioning. Finally, we propose MolmoThink, an adaptive-depth reasoning variant that re-predicts depth tokens only for scene regions that change between timesteps, retaining geometric grounding at a fraction of prior latency. In the most extensive empirical study of any open VLA to date, spanning 7 simulation and real-world benchmarks, MolmoAct2 outperforms strong baselines including Pi-05, while MolmoER surpasses GPT-5 and Gemini Robotics ER-1.5 across 13 embodied-reasoning benchmarks. We release model weights, training code, and complete training data. Project page:this https URL",
+      "comments": "31 pages, project page: <a class=\"link-external link-https\" href=\"https://allenai.org/blog/molmoact2\" rel=\"external noopener nofollow\">this https URL</a>"
+    }
+  }
+}

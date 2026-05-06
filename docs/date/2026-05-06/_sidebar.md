@@ -1,0 +1,22 @@
+- [**2026-05-06 日报**](/2026-05-06/)
+
+  - **3D重建/生成**
+    - [BlenderRAG | 利用检索增强代码生成高保真三维物体](/2026-05-06/papers/2605.00632.md)
+    - [Generative Modeling... | 粒子系统生成模型新方法](/2026-05-06/papers/2605.02222.md)
+  - **视频生成模型**
+    - [Motion-Aware Caching... | 基于运动感知的视频生成加速](/2026-05-06/papers/2605.01725.md)
+  - **图片生成模型**
+    - [ComboStoc | 组合随机性提升扩散模型](/2026-05-06/papers/2405.13729.md)
+  - [**全量简报 (12 篇)**](/2026-05-06/briefs.md)
+    - [Prior-Aligned Data... | 表格预训练模型的数据清洗对齐](/2026-05-06/briefs.md?id=prior-aligned-data)
+    - [From Context to Skills | 语言模型从上下文自动学习技能](/2026-05-06/briefs.md?id=from-context-to-skills)
+    - [Repetition over Diversity | 高质量重复优于数据多样](/2026-05-06/briefs.md?id=repetition-over-diversity)
+    - [Hierarchical Abstract... | 跨文档检索增强生成树框架](/2026-05-06/briefs.md?id=hierarchical-abstract)
+    - [Persistent Visual Memory | 增强大视觉模型视觉感知力](/2026-05-06/briefs.md?id=persistent-visual-memory)
+    - [OceanPile | 构建海洋多模态基础模型数据集](/2026-05-06/briefs.md?id=oceanpile)
+    - [Code World... | 评估代码模型风险水平](/2026-05-06/briefs.md?id=code-world)
+    - [T^2PO | 稳定多轮智能体强化学习探索控制](/2026-05-06/briefs.md?id=t^2po)
+    - [PhysicianBench | 评估医疗LLM智能体在真实电子病历环境中的表现](/2026-05-06/briefs.md?id=physicianbench)
+    - [AcademiClaw | 学生挑战AI智能体学术难题](/2026-05-06/briefs.md?id=academiclaw)
+    - [Perceptual Flow... | 改进视觉基础推理的感知流程](/2026-05-06/briefs.md?id=perceptual-flow)
+    - [MolmoAct2 | 开放机器人动作推理模型  ](/2026-05-06/briefs.md?id=molmoact2)

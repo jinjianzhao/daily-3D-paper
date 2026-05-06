@@ -1,5 +1,59 @@
 # 2026-05-05 全量简报
 
+# HiL-Bench (Human-in-Loop Benchmark): Do Agents Know When to Ask for Help?
+
+**【AI助手如何判断何时求助】**
+
+**arXiv**: https://arxiv.org/abs/2604.09408  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.09408  
+**HF Paper**: https://hf-mirror.com/papers/2604.09408  
+**HF Votes**: 1
+
+## 简要摘要
+
+*自然语言处理;智能体与交互;人机协作决策*
+
+当前智能体在处理信息不全的任务时难以判断何时应自主行动、何时需向人类求助，现有基准无法评估这一关键能力。
+提出新基准HiL-Bench和Ask-F1指标来评估智能体选择性求助的能力，发现前沿模型普遍存在判断缺陷，但通过强化学习可训练该能力。
+
+---
+
+# Prior-Aligned Data Cleaning for Tabular Foundation Models
+
+**【表格基础模型数据清洗对齐】**
+
+**arXiv**: https://arxiv.org/abs/2604.25154  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.25154  
+**HF Paper**: https://hf-mirror.com/papers/2604.25154  
+**HF Votes**: 1
+
+## 简要摘要
+
+*机器学习;数据预处理;表格数据清洗对齐*
+
+表格基础模型在干净数据上零样本性能优异，但实际数据存在缺失值等问题导致性能下降。
+提出强化学习框架L2C2，通过智能排序清洗操作对齐数据分布，提升模型准确率与泛化能力。
+
+---
+
+# Assessing Pancreatic Ductal Adenocarcinoma Vascular Invasion: the PDACVI Benchmark
+
+**【胰腺癌血管侵犯AI评估基准  】**
+
+**arXiv**: https://arxiv.org/abs/2604.27582  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27582  
+**HF Paper**: https://hf-mirror.com/papers/2604.27582  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;医学图像分析;胰腺癌血管侵犯评估  *
+
+胰腺癌手术需准确评估肿瘤对血管的侵犯，但现有方法面临公开数据缺乏和诊断模糊的挑战。  
+研究者发布了包含多专家标注的数据集和评测基准，发现传统分割模型在关键区域表现不稳定，而考虑标注不确定性的概率模型更具鲁棒性。
+
+---
+
 # From Context to Skills: Can Language Models Learn from Context Skillfully?
 
 **【语言模型从上下文学习技能】**
@@ -7,7 +61,7 @@
 **arXiv**: https://arxiv.org/abs/2604.27660  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.27660  
 **HF Paper**: https://hf-mirror.com/papers/2604.27660  
-**HF Votes**: 59
+**HF Votes**: 120
 
 ## 简要摘要
 
@@ -25,7 +79,7 @@
 **arXiv**: https://arxiv.org/abs/2604.28075  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2604.28075  
 **HF Paper**: https://hf-mirror.com/papers/2604.28075  
-**HF Votes**: 11
+**HF Votes**: 13
 
 ## 简要摘要
 
@@ -43,7 +97,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00529  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00529  
 **HF Paper**: https://hf-mirror.com/papers/2605.00529  
-**HF Votes**: 1
+**HF Votes**: 3
 
 ## 简要摘要
 
@@ -61,7 +115,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00814  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00814  
 **HF Paper**: https://hf-mirror.com/papers/2605.00814  
-**HF Votes**: 11
+**HF Votes**: 12
 
 ## 简要摘要
 
@@ -79,7 +133,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00877  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00877  
 **HF Paper**: https://hf-mirror.com/papers/2605.00877  
-**HF Votes**: 8
+**HF Votes**: 10
 
 ## 简要摘要
 
@@ -90,6 +144,23 @@
 
 ---
 
+# Linking spatial biology and clinical histology via Haiku
+
+**【多模态医学图像分析】**
+
+**arXiv**: https://arxiv.org/abs/2605.00925  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00925  
+**HF Paper**: https://hf-mirror.com/papers/2605.00925  
+
+## 简要摘要
+
+*医学影像分析；多模态学习；空间生物学与临床病理对齐*
+
+整合分子、形态和临床数据对生物医学研究至关重要，但联合建模框架有限。
+提出Haiku三模态对比学习模型，实现跨模态检索、提升预测任务，并通过反事实分析探索生物学关联。
+
+---
+
 # Code World Model Preparedness Report
 
 **【评估代码生成模型风险】**
@@ -97,7 +168,7 @@
 **arXiv**: https://arxiv.org/abs/2605.00932  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.00932  
 **HF Paper**: https://hf-mirror.com/papers/2605.00932  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -108,6 +179,78 @@
 
 ---
 
+# Agentic AI Systems Should Be Designed as Marginal Token Allocators
+
+**【智能体按边际成本分配算力】**
+
+**arXiv**: https://arxiv.org/abs/2605.01214  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.01214  
+**HF Paper**: https://hf-mirror.com/papers/2605.01214  
+**HF Votes**: 1
+
+## 简要摘要
+
+*人工智能系统;智能体系统;计算资源分配*
+
+当前AI系统各层级在资源分配上各自为政，导致整体效率低下。
+提出将智能体AI系统视为边际令牌分配经济来统一设计与评估，并分析了四层经济结构及其共享的一阶条件，指出了常见失败模式和未来研究方向。
+
+---
+
+# Hallucinations Undermine Trust; Metacognition is a Way Forward
+
+**【大模型幻觉与信任问题研究】**
+
+**arXiv**: https://arxiv.org/abs/2605.01428  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.01428  
+**HF Paper**: https://hf-mirror.com/papers/2605.01428  
+**HF Votes**: 9
+
+## 简要摘要
+
+*自然语言处理;语言模型可靠性;幻觉检测与校准*
+
+尽管生成式AI在事实可靠性上取得进展，但幻觉问题仍是其应用于复杂场景时的重大隐患，根源在于模型难以区分已知与未知。
+论文提出通过实现“忠实的不确定性”这一元认知能力，使模型能诚实表达内在不确定性，从而在保持实用性的同时建立信任。
+
+---
+
+# Linear-Time Global Visual Modeling without Explicit Attention
+
+**【用动态参数实现线性全局建模】**
+
+**arXiv**: https://arxiv.org/abs/2605.01711  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.01711  
+**HF Paper**: https://hf-mirror.com/papers/2605.01711  
+**HF Votes**: 1
+
+## 简要摘要
+
+*计算机视觉;视觉模型架构;全局序列建模*
+
+现有研究多将Transformer的全局序列建模能力归因于显式注意力计算，但该过程存在二次复杂度瓶颈。
+本文提出将注意力数学重构为带动态参数的MLP，通过设计多种动态参数预测策略并集成到标准网络层，实现了线性复杂度下的高效全局建模。
+
+---
+
+# Counting as a minimal probe of language model reliability
+
+**【大型语言模型可靠性的计数测试】**
+
+**arXiv**: https://arxiv.org/abs/2605.02028  
+**AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02028  
+**HF Paper**: https://hf-mirror.com/papers/2605.02028  
+**HF Votes**: 2
+
+## 简要摘要
+
+*自然语言处理;语言模型评估;模型逻辑推理可靠性*
+
+当前大型语言模型在多项任务上表现优异，但其遵循规则的能力是否可靠尚不明确。
+研究者通过计数符号的简单测试，发现模型的规则遵循能力有限，依赖于类似“数手指”的有限内部状态。
+
+---
+
 # T^2PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning
 
 **【不确定性引导多轮智能体强化学习探索】**
@@ -115,7 +258,7 @@
 **arXiv**: https://arxiv.org/abs/2605.02178  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02178  
 **HF Paper**: https://hf-mirror.com/papers/2605.02178  
-**HF Votes**: 2
+**HF Votes**: 4
 
 ## 简要摘要
 
@@ -133,7 +276,7 @@
 **arXiv**: https://arxiv.org/abs/2605.02240  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02240  
 **HF Paper**: https://hf-mirror.com/papers/2605.02240  
-**HF Votes**: 3
+**HF Votes**: 6
 
 ## 简要摘要
 
@@ -151,7 +294,7 @@
 **arXiv**: https://arxiv.org/abs/2605.02661  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02661  
 **HF Paper**: https://hf-mirror.com/papers/2605.02661  
-**HF Votes**: 3
+**HF Votes**: 8
 
 ## 简要摘要
 
@@ -169,7 +312,7 @@
 **arXiv**: https://arxiv.org/abs/2605.02730  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02730  
 **HF Paper**: https://hf-mirror.com/papers/2605.02730  
-**HF Votes**: 1
+**HF Votes**: 2
 
 ## 简要摘要
 
@@ -187,7 +330,7 @@
 **arXiv**: https://arxiv.org/abs/2605.02881  
 **AlphaXiv**: https://www.alphaxiv.org/zh/overview/2605.02881  
 **HF Paper**: https://hf-mirror.com/papers/2605.02881  
-**HF Votes**: 64
+**HF Votes**: 160
 
 ## 简要摘要
 
